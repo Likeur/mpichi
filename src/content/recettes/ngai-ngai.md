@@ -2,11 +2,11 @@
 title: Ngai-ngai au poisson fumé
 description: Feuilles d’oseille de Guinée à la saveur acidulée, mijotées avec poisson fumé, tomate et oignon.
 region: Kinshasa & Kongo-Central
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Zobo%20Leaves%20%28Hibiscus%20Sabdariffa%29.jpg?width=1600
-imageAlt: Feuilles fraîches d’oseille de Guinée sur un marché
+image: /images/recettes/ngai-ngai.jpg
+imageAlt: Ngai-ngai mijoté servi dans un plat blanc
 imagePosition: center
-imageCredit: Blossom Ozurumba — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Zobo_Leaves_(Hibiscus_Sabdariffa).jpg
+imageCredit: Rita’s Notebook
+imageCreditUrl: https://ritasnotebook.com/2019/01/14/ngai-ngai-na-basolo-or-roselle-leaves-with-eggplant-stew/
 category: plat
 prepTime: 25 min
 cookTime: 40 min

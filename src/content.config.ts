@@ -7,7 +7,10 @@ const recettes = defineCollection({
     title: z.string(),
     description: z.string(),
     region: z.string().optional(),
-    image: z.string().url(),
+    image: z.string().refine(
+      (value) => value.startsWith('/') || z.string().url().safeParse(value).success,
+      'L’image doit être une URL absolue ou un chemin public commençant par /',
+    ),
     imageAlt: z.string(),
     imagePosition: z.string().default('center'),
     imageCredit: z.string(),

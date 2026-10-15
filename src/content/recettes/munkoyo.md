@@ -2,11 +2,11 @@
 title: Munkoyo
 description: Boisson céréalière légèrement acidulée, obtenue par fermentation courte d’une bouillie de maïs avec des racines de munkoyo.
 region: Haut-Katanga
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Udiwo%2C%20the%20making%20of%20a%20traditional%20beer%20and%20amahewu%20drinking%20gourd.jpg?width=1600
-imageAlt: Préparation d’une boisson céréalière traditionnelle et calebasse de service
+image: /images/recettes/munkoyo.png
+imageAlt: Munkoyo servi dans un verre et une carafe
 imagePosition: center
-imageCredit: CorsaMac — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Udiwo,_the_making_of_a_traditional_beer_and_amahewu_drinking_gourd.jpg
+imageCredit: Gastronomiac
+imageCreditUrl: https://www.gastronomiac.com/boissons_vins_alcool/munkoyo-boisson-africaine/
 category: boisson
 prepTime: 25 min + 24 h de fermentation
 cookTime: 20 min

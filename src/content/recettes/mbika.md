@@ -2,11 +2,11 @@
 title: Mbika
 description: Pâte de graines de courge pilées, assaisonnée puis cuite en papillote de feuilles pour obtenir une texture dense et fondante.
 region: Bassin du Congo
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Mbika.jpg?width=1600
-imageAlt: Mbika enveloppé dans des feuilles sur un étal congolais
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Le%20mets%20de%20pistache%20%28Nnam%20ngon%29.jpg?width=1600
+imageAlt: Gâteau de graines de courge cuit dans une feuille puis ouvert
 imagePosition: center
-imageCredit: OussamaHamama — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Mbika.jpg
+imageCredit: Alicepegie — Wikimedia Commons, CC BY-SA 4.0
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Le_mets_de_pistache_(Nnam_ngon).jpg
 category: plat
 prepTime: 30 min
 cookTime: 50 min

@@ -2,11 +2,11 @@
 title: Ntaba (chèvre grillée)
 description: Morceaux de chèvre marinés aux aromates puis grillés sur des braises, avec une surface bien dorée et une chair tendre.
 region: Kinshasa & Kongo-Central
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Ntaba%20or%20ngulu%20yako%20tumba.jpg?width=1600
-imageAlt: Morceaux de viande grillée servis dans un plat
+image: /images/recettes/ntaba.png
+imageAlt: Ntaba grillé aux oignons et poivrons servi sur une feuille de bananier
 imagePosition: center
-imageCredit: OussamaHamama — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Ntaba_or_ngulu_yako_tumba.jpg
+imageCredit: Nkenne
+imageCreditUrl: https://www.nkenne.com/blog/lingala-ntaba-goat-meat
 category: plat
 prepTime: 25 min + 2 h de marinade
 cookTime: 50 min

@@ -2,11 +2,11 @@
 title: Madesu
 description: Haricots fondants mijotés avec tomate, oignon et un peu d’huile de palme rouge.
 region: Kinshasa & Ouest de la RDC
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Tshaka%20Madesu.jpg?width=1600
-imageAlt: Plat congolais de haricots mijotés
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Ab%C9%94b%C9%94%20%28Haricots%20rouges%20pr%C3%A9par%C3%A9s%29%2002.jpg?width=1600
+imageAlt: Plat de haricots rouges cuits et mijotés
 imagePosition: center
-imageCredit: OussamaHamama — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Tshaka_Madesu.jpg
+imageCredit: Gbehlon — Wikimedia Commons, CC BY-SA 4.0
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Ab%C9%94b%C9%94_(Haricots_rouges_pr%C3%A9par%C3%A9s)_02.jpg
 category: plat
 prepTime: 20 min + 8 h de trempage
 cookTime: 1 h 30

@@ -2,11 +2,11 @@
 title: Kamundele
 description: Petites brochettes de bœuf marinées aux aromates et grillées vivement sur les braises.
 region: Kinshasa
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/KAMU%20NDELE%20-%20TIGE.jpg?width=1600
-imageAlt: Viande assaisonnée montée sur une tige pour être grillée
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Kamundele.jpg?width=1600
+imageAlt: Assiette de kamundele, brochettes de bœuf marinées, avec frites et légumes
 imagePosition: center
-imageCredit: OussamaHamama — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:KAMU_NDELE_-_TIGE.jpg
+imageCredit: Fanny Schertzer — Wikimedia Commons, CC BY-SA 4.0
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Kamundele.jpg
 category: plat
 prepTime: 25 min + 1 h de marinade
 cookTime: 15 min

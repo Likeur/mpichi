@@ -2,11 +2,11 @@
 title: Haricots à l’huile de palme
 description: Haricots mijotés jusqu’à devenir crémeux, puis liés avec oignons, tomate et huile de palme rouge.
 region: Ouest de la RDC
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Wanke%2C%20Ghanan%20meal.jpg?width=1600
-imageAlt: Plat africain composé de haricots, riz et accompagnements
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Feij%C3%A3o%20com%20%C3%B3leo%20de%20palma.jpg?width=1600
+imageAlt: Haricots mijotés à l’huile de palme servis avec un accompagnement
 imagePosition: center
-imageCredit: Temidayotinypoet — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Wanke,_Ghanan_meal.jpg
+imageCredit: Adriao — Wikimedia Commons, CC BY 3.0
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Feij%C3%A3o_com_%C3%B3leo_de_palma.jpg
 category: plat
 prepTime: 20 min + 8 h de trempage
 cookTime: 1 h 35
