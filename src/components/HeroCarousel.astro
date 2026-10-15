@@ -1,0 +1,144 @@
+---
+import PillButton from './PillButton.astro';
+
+export interface HeroSlide {
+  id: string;
+  title: string;
+  summary: string;
+  cta: { label: string; href: string };
+  image: string;
+  imageAlt: string;
+  imagePosition?: string;
+}
+
+interface Props {
+  slides: HeroSlide[];
+}
+
+const { slides } = Astro.props;
+---
+
+<section class="relative min-h-[780px] h-svh flex flex-col justify-end overflow-hidden image-grain" data-hero-carousel>
+  {
+    slides.map((slide, i) => (
+      <div
+        data-hero-slide
+        data-index={i}
+        class:list={['absolute inset-0 transition-opacity duration-1000 ease-out', i === 0 ? 'opacity-100' : 'opacity-0 pointer-events-none']}
+        aria-hidden={i !== 0}
+      >
+        <img
+          src={slide.image}
+          alt={slide.imageAlt}
+          class="h-full w-full object-cover scale-[1.015]"
+          style={`object-position: ${slide.imagePosition ?? 'center'}`}
+          loading={i === 0 ? 'eager' : 'lazy'}
+          fetchpriority={i === 0 ? 'high' : 'auto'}
+          data-scroll
+          data-scroll-speed="-0.04"
+        />
+        <div class="absolute inset-0 bg-black/22" />
+        <div class="absolute inset-0 bg-linear-to-r from-earth-900/80 via-earth-900/25 to-transparent" />
+        <div class="absolute inset-0 bg-linear-to-t from-earth-900/90 via-transparent to-earth-900/30" />
+      </div>
+    ))
+  }
+
+  <div class="relative z-10 px-grid-margin pb-20 sm:pb-24 pt-36 max-w-[1200px] mx-auto w-full">
+    {
+      slides.map((slide, i) => (
+        <div
+          data-hero-content
+          data-index={i}
+          data-stagger
+          class:list={['max-w-[790px] transition-all duration-700', i === 0 ? 'opacity-100' : 'hidden']}
+        >
+          <h1 class="text-display-hero whitespace-pre-line text-balance">{slide.title}</h1>
+          <p class="mt-6 max-w-md text-sm sm:text-base leading-relaxed text-creme-100/72">{slide.summary}</p>
+          <div class="mt-7">
+            <PillButton href={slide.cta.href} label={slide.cta.label} />
+          </div>
+        </div>
+      ))
+    }
+  </div>
+
+  <button
+    type="button"
+    data-hero-next
+    class="hidden lg:flex absolute right-5 top-1/2 -translate-y-1/2 z-20 items-center justify-center text-[9px] font-medium uppercase tracking-[.2em] text-creme-100/75 hover:text-white transition-colors"
+    style="writing-mode: vertical-rl"
+    aria-label="Afficher la recette suivante"
+  >
+    Recette · <span data-hero-current>01</span>
+  </button>
+</section>
+
+<script>
+  let cleanupHeroCarousels = () => {};
+
+  function initHeroCarousel(root: HTMLElement) {
+    const slides = [...root.querySelectorAll('[data-hero-slide]')];
+    const contents = [...root.querySelectorAll('[data-hero-content]')];
+    const next = root.querySelector('[data-hero-next]');
+    const currentLabel = root.querySelector('[data-hero-current]');
+    let current = 0;
+    let timer: ReturnType<typeof setInterval> | undefined;
+
+    function goTo(index: number) {
+      if (index === current || !slides.length) return;
+      current = index;
+
+      slides.forEach((el, i) => {
+        const active = i === index;
+        el.classList.toggle('opacity-100', active);
+        el.classList.toggle('opacity-0', !active);
+        el.classList.toggle('pointer-events-none', !active);
+        el.setAttribute('aria-hidden', String(!active));
+      });
+
+      contents.forEach((el, i) => {
+        const active = i === index;
+        el.classList.toggle('hidden', !active);
+        el.classList.toggle('opacity-100', active);
+      });
+
+      if (currentLabel) currentLabel.textContent = String(index + 1).padStart(2, '0');
+    }
+
+    const handleNext = () => {
+      goTo((current + 1) % slides.length);
+      resetTimer();
+    };
+
+    next?.addEventListener('click', handleNext);
+
+    function resetTimer() {
+      if (timer) clearInterval(timer);
+      timer = setInterval(() => {
+        goTo((current + 1) % slides.length);
+      }, 7000);
+    }
+
+    resetTimer();
+
+    return () => {
+      if (timer) clearInterval(timer);
+      next?.removeEventListener('click', handleNext);
+    };
+  }
+
+  function initHeroCarousels() {
+    cleanupHeroCarousels();
+    const cleanups: Array<() => void> = [];
+
+    document.querySelectorAll('[data-hero-carousel]').forEach((el) => {
+      if (el instanceof HTMLElement) cleanups.push(initHeroCarousel(el));
+    });
+
+    cleanupHeroCarousels = () => cleanups.forEach((cleanup) => cleanup());
+  }
+
+  document.addEventListener('astro:before-swap', () => cleanupHeroCarousels());
+  document.addEventListener('astro:page-load', initHeroCarousels);
+</script>

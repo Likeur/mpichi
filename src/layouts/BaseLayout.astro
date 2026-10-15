@@ -1,0 +1,417 @@
+---
+import '../styles/global.css';
+import 'locomotive-scroll/dist/locomotive-scroll.css';
+import FloatingNav from '../components/FloatingNav.astro';
+import { ClientRouter } from 'astro:transitions';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Cuisine congolaise — recettes, régions et traditions de la RDC' } =
+  Astro.props;
+const fullTitle = title === 'Accueil' ? 'Mpichi — Cuisine congolaise' : `${title} | Mpichi`;
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&display=swap"
+      rel="stylesheet"
+    />
+    <ClientRouter />
+    <title>{fullTitle}</title>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <FloatingNav transition:persist />
+    <svg
+      aria-hidden="true"
+      class="pointer-events-none fixed h-0 w-0 overflow-hidden"
+      focusable="false"
+    >
+      <filter
+        id="mpichi-image-displacement"
+        x="-6%"
+        y="-6%"
+        width="112%"
+        height="112%"
+        color-interpolation-filters="sRGB"
+      >
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.009 0.018"
+          numOctaves="1"
+          seed="7"
+          result="waveNoise"
+        >
+          <animate
+            data-wave-animation
+            attributeName="baseFrequency"
+            values="0.009 0.018;0.014 0.024;0.008 0.016"
+            keyTimes="0;0.52;1"
+            dur="650ms"
+            begin="indefinite"
+            fill="freeze"
+          />
+        </feTurbulence>
+        <feDisplacementMap
+          in="SourceGraphic"
+          in2="waveNoise"
+          scale="0"
+          xChannelSelector="R"
+          yChannelSelector="B"
+        >
+          <animate
+            data-wave-animation
+            attributeName="scale"
+            values="0;28;16;0"
+            keyTimes="0;0.38;0.7;1"
+            dur="650ms"
+            begin="indefinite"
+            fill="freeze"
+          />
+        </feDisplacementMap>
+      </filter>
+    </svg>
+
+    <main class="flex-1">
+      <slot />
+    </main>
+
+    <footer class="bg-earth-900 text-creme-200/80 mt-auto">
+      <div
+        class="mx-auto max-w-[1200px] px-grid-margin py-16 sm:py-20 grid gap-12 md:grid-cols-[1.35fr_.5fr_.7fr_.75fr]"
+        data-stagger
+      >
+        <div class="max-w-md">
+          <p class="font-display text-5xl font-light tracking-tight text-creme-100">Mpichi</p>
+          <p class="mt-5 text-sm leading-relaxed text-creme-200/60">
+            Des recettes congolaises racontées par leurs gestes, leurs régions et celles et ceux qui les
+            transmettent.
+          </p>
+        </div>
+        <div class="flex flex-col gap-3 text-[10px] uppercase tracking-[.16em]">
+          <p class="mb-2 text-creme-200/35">Explorer</p>
+          <a href="/recettes" class="hover:text-white transition-colors">Recettes</a>
+          <a href="/faq" class="hover:text-white transition-colors">FAQ</a>
+        </div>
+        <div class="flex flex-col gap-3 text-[10px] uppercase tracking-[.16em]">
+          <p class="mb-2 text-creme-200/35">Informations</p>
+          <a href="/mentions-legales" class="hover:text-white transition-colors">Mentions légales</a>
+          <a href="/confidentialite" class="hover:text-white transition-colors">Confidentialité</a>
+        </div>
+        <div class="text-[10px] uppercase tracking-[.16em]">
+          <p class="mb-5 text-creme-200/35">Crédits photo</p>
+          <p class="normal-case tracking-normal leading-relaxed text-creme-200/55">
+            Photographies sous licences Creative Commons.<br />Crédit détaillé sur chaque recette.
+          </p>
+        </div>
+      </div>
+      <div class="mx-grid-margin border-t border-white/10 py-6 grid gap-4 text-[9px] uppercase tracking-[.16em] text-creme-200/35 sm:grid-cols-3 sm:items-center">
+        <p>© {new Date().getFullYear()} Mpichi</p>
+        <p class="flex items-center gap-1.5 sm:justify-center">
+          Fait avec
+          <svg viewBox="0 0 24 24" class="size-3 text-mpichi-red" aria-label="amour">
+            <path
+              fill="currentColor"
+              d="M12 21s-7.2-4.35-9.55-8.5C.64 9.3 2.14 5.5 5.8 4.75A5.45 5.45 0 0 1 12 7.2a5.45 5.45 0 0 1 6.2-2.45c3.66.75 5.16 4.55 3.35 7.75C19.2 16.65 12 21 12 21Z"
+            />
+          </svg>
+          en RDC par
+          <a
+            href="https://likeur.xyz"
+            target="_blank"
+            rel="noreferrer"
+            class="text-creme-200/70 underline decoration-white/20 underline-offset-4 transition-colors hover:text-white"
+          >
+            Likeur
+          </a>
+        </p>
+        <p class="sm:text-right">Kinshasa · RDC</p>
+      </div>
+    </footer>
+
+    <script>
+      import LocomotiveScroll from 'locomotive-scroll';
+
+      let locomotive: LocomotiveScroll | undefined;
+      let locomotiveStartTimer: number | undefined;
+      let revealObserver: IntersectionObserver | undefined;
+      let sharedSource: HTMLElement | undefined;
+      let sharedTarget: HTMLElement | undefined;
+      let sharedFrom = '';
+      let sharedTo = '';
+      let transitionSequence = 0;
+      let transitionReleaseTimer: number | undefined;
+      const catalogReturnKey = 'mpichi:catalog-return';
+
+      function primeRevealTargets(root: ParentNode = document) {
+        root.querySelectorAll<HTMLElement>('[data-stagger]').forEach((group) => {
+          [...group.children].forEach((child, index) => {
+            if (!(child instanceof HTMLElement)) return;
+            if (child.hasAttribute('data-reveal-static')) {
+              delete child.dataset.reveal;
+              child.classList.remove('is-visible');
+              child.style.removeProperty('--reveal-delay');
+              return;
+            }
+            child.dataset.reveal = '';
+            child.style.setProperty('--reveal-delay', `${Math.min(index * 85, 510)}ms`);
+          });
+        });
+      }
+
+      function teardownMotion() {
+        if (locomotiveStartTimer !== undefined) {
+          window.clearTimeout(locomotiveStartTimer);
+          locomotiveStartTimer = undefined;
+        }
+        revealObserver?.disconnect();
+        revealObserver = undefined;
+        locomotive?.destroy();
+        locomotive = undefined;
+        document.documentElement.classList.remove('has-motion');
+      }
+
+      function initMotion() {
+        teardownMotion();
+
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        primeRevealTargets();
+
+        if (!reduceMotion) {
+          locomotiveStartTimer = window.setTimeout(() => {
+            locomotiveStartTimer = undefined;
+            locomotive = new LocomotiveScroll({
+              lenisOptions: {
+                duration: 1.05,
+                smoothWheel: true,
+                wheelMultiplier: 0.85,
+                touchMultiplier: 1,
+              },
+            });
+          }, 80);
+        }
+
+        const targets = document.querySelectorAll<HTMLElement>('[data-reveal]');
+        if (reduceMotion) {
+          targets.forEach((target) => target.classList.add('is-visible'));
+          document.documentElement.removeAttribute('data-defer-recipe-reveal');
+          return;
+        }
+
+        document.documentElement.classList.add('has-motion');
+
+        revealObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+              entry.target.classList.add('is-visible');
+              revealObserver?.unobserve(entry.target);
+            });
+          },
+          { rootMargin: '0px 0px -8% 0px', threshold: 0.08 },
+        );
+
+        targets.forEach((target) => {
+          if (
+            document.documentElement.hasAttribute('data-defer-recipe-reveal') &&
+            target.closest('[data-recipe-intro], [data-recipe-body]')
+          ) {
+            return;
+          }
+          if (!target.classList.contains('is-visible')) revealObserver?.observe(target);
+        });
+      }
+
+      function releaseRecipeIntro() {
+        const root = document.documentElement;
+        if (!root.hasAttribute('data-defer-recipe-reveal')) return;
+        root.removeAttribute('data-defer-recipe-reveal');
+
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            document
+              .querySelectorAll<HTMLElement>('[data-recipe-intro] [data-reveal]')
+              .forEach((target) => target.classList.add('is-visible'));
+
+            document
+              .querySelectorAll<HTMLElement>('[data-recipe-body] [data-reveal]')
+              .forEach((target) => {
+                const bounds = target.getBoundingClientRect();
+                if (bounds.top < window.innerHeight * 1.08 && bounds.bottom > 0) {
+                  target.classList.add('is-visible');
+                } else {
+                  revealObserver?.observe(target);
+                }
+              });
+          });
+        });
+      }
+
+      function rememberCatalogPosition(recipePath: string) {
+        sessionStorage.setItem(
+          catalogReturnKey,
+          JSON.stringify({
+            recipePath,
+            scrollY: window.scrollY,
+          }),
+        );
+      }
+
+      function restoreCatalogPosition() {
+        const root = document.documentElement;
+        if (!root.hasAttribute('data-restore-catalog')) return;
+
+        let scrollY: number | undefined;
+        try {
+          const saved = JSON.parse(sessionStorage.getItem(catalogReturnKey) ?? '{}') as {
+            recipePath?: string;
+            scrollY?: number;
+          };
+          if (saved.recipePath === sharedFrom && Number.isFinite(saved.scrollY)) {
+            scrollY = saved.scrollY;
+          }
+        } catch {
+          sessionStorage.removeItem(catalogReturnKey);
+        }
+
+        if (scrollY === undefined) {
+          const sourcePath = CSS.escape(sharedFrom);
+          document
+            .querySelector<HTMLElement>(`a[href="${sourcePath}"]`)
+            ?.scrollIntoView({ block: 'center' });
+        } else {
+          window.scrollTo(0, scrollY);
+          requestAnimationFrame(() => window.scrollTo(0, scrollY));
+        }
+
+        root.removeAttribute('data-restore-catalog');
+      }
+
+      function clearSharedTransition() {
+        if (sharedSource) sharedSource.style.viewTransitionName = '';
+        if (sharedTarget) sharedTarget.style.viewTransitionName = '';
+        document.documentElement.removeAttribute('data-recipe-transition');
+        sharedSource = undefined;
+        sharedTarget = undefined;
+        sharedFrom = '';
+        sharedTo = '';
+      }
+
+      document.addEventListener('astro:before-preparation', (event) => {
+        transitionSequence += 1;
+        if (transitionReleaseTimer !== undefined) {
+          window.clearTimeout(transitionReleaseTimer);
+          transitionReleaseTimer = undefined;
+        }
+        clearSharedTransition();
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+        const transitionEvent = event as Event & { sourceElement?: Element; to?: URL };
+        const anchor = transitionEvent.sourceElement?.closest('a');
+        if (!anchor || !transitionEvent.to) return;
+
+        sharedFrom = window.location.pathname;
+        sharedTo = transitionEvent.to.pathname;
+
+        const entersRecipe = sharedTo.startsWith('/recettes/');
+        const leavesRecipe = sharedFrom.startsWith('/recettes/') && sharedTo === '/recettes';
+        if (!entersRecipe && !leavesRecipe) return;
+
+        document.documentElement.setAttribute(
+          'data-recipe-transition',
+          entersRecipe ? 'enter' : 'leave',
+        );
+
+        if (entersRecipe && sharedFrom === '/recettes') {
+          rememberCatalogPosition(sharedTo);
+        }
+
+        document
+          .querySelectorAll<SVGElement & { beginElement?: () => void }>('[data-wave-animation]')
+          .forEach((animation) => animation.beginElement?.());
+
+        sharedSource =
+          anchor.querySelector<HTMLElement>('[data-recipe-image]') ??
+          anchor
+            .closest('[data-recipe-item]')
+            ?.querySelector<HTMLElement>('[data-recipe-image]') ??
+          document.querySelector<HTMLElement>('[data-hero-slide].opacity-100 img') ??
+          document.querySelector<HTMLElement>('[data-recipe-hero]') ??
+          undefined;
+
+        if (sharedSource) sharedSource.style.viewTransitionName = 'recipe-image';
+      });
+
+      document.addEventListener('astro:before-swap', (event) => {
+        teardownMotion();
+
+        const transitionEvent = event as Event & {
+          newDocument?: Document;
+          viewTransition?: ViewTransition;
+        };
+        const nextDocument = transitionEvent.newDocument;
+        if (!nextDocument) return;
+
+        primeRevealTargets(nextDocument);
+
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (!reduceMotion) nextDocument.documentElement.classList.add('has-motion');
+
+        if (!sharedSource) return;
+
+        if (sharedTo.startsWith('/recettes/')) {
+          sharedTarget = nextDocument.querySelector<HTMLElement>('[data-recipe-hero]') ?? undefined;
+        } else if (sharedTo === '/recettes') {
+          const sourcePath = CSS.escape(sharedFrom);
+          sharedTarget =
+            nextDocument.querySelector<HTMLElement>(`a[href="${sourcePath}"] [data-recipe-image]`) ?? undefined;
+        }
+
+        if (sharedTarget) sharedTarget.style.viewTransitionName = 'recipe-image';
+        if (sharedTarget) {
+          nextDocument.documentElement.setAttribute(
+            'data-recipe-transition',
+            sharedTo.startsWith('/recettes/') ? 'enter' : 'leave',
+          );
+        }
+        if (sharedTarget && sharedTo.startsWith('/recettes/') && !reduceMotion) {
+          nextDocument.documentElement.setAttribute('data-defer-recipe-reveal', '');
+        }
+        if (sharedTo === '/recettes') {
+          nextDocument.documentElement.setAttribute('data-restore-catalog', '');
+        }
+
+        const sequence = transitionSequence;
+        const finishTransition = () => {
+          if (sequence !== transitionSequence) return;
+          transitionReleaseTimer = window.setTimeout(() => {
+            if (sequence !== transitionSequence) return;
+            transitionReleaseTimer = undefined;
+            clearSharedTransition();
+            releaseRecipeIntro();
+          }, 48);
+        };
+
+        const transitionFinished = transitionEvent.viewTransition?.finished;
+        if (transitionFinished) {
+          transitionFinished.finally(finishTransition);
+        } else {
+          finishTransition();
+        }
+      });
+
+      document.addEventListener('astro:after-swap', restoreCatalogPosition);
+      document.addEventListener('astro:page-load', initMotion);
+    </script>
+  </body>
+</html>

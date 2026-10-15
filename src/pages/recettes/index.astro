@@ -1,0 +1,150 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import EditorialRecipeCard from '../../components/EditorialRecipeCard.astro';
+
+const recipes = (await getCollection('recettes')).sort((a, b) =>
+  a.data.title.localeCompare(b.data.title, 'fr'),
+);
+
+const getSearchText = (recipe: (typeof recipes)[number]) =>
+  [
+    recipe.data.title,
+    recipe.data.description,
+    recipe.data.region,
+    recipe.data.category,
+    ...recipe.data.tags,
+  ]
+    .filter(Boolean)
+    .join(' ');
+---
+
+<BaseLayout title="Recettes" description="Catalogue des recettes congolaises Mpichi.">
+  <section class="pt-28 pb-12 bg-earth-dark min-h-[50svh] flex items-end border-b border-white/10">
+    <div class="px-grid-margin max-w-[1200px] mx-auto w-full">
+      <div class="grid lg:grid-cols-12 gap-8 items-end" data-stagger>
+        <div class="lg:col-span-8">
+          <h1 class="text-display-hero">Les recettes.</h1>
+        </div>
+        <p class="lg:col-span-4 text-sm leading-6 text-creme-200/60 max-w-md">
+          Des plats du quotidien et des jours de fête, documentés avec leurs gestes, leur région et leur
+          histoire.
+        </p>
+      </div>
+      <p class="mt-10 text-[9px] uppercase tracking-[.16em] text-creme-200/35">
+        {String(recipes.length).padStart(2, '0')} recette{recipes.length > 1 ? 's' : ''}
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-creme-100 py-12 sm:py-16">
+    <div class="px-grid-margin max-w-[1200px] mx-auto" data-recipe-search>
+      <div class="mb-5 grid md:grid-cols-2 gap-8 md:items-end" data-stagger>
+        <h2 class="font-display text-3xl sm:text-4xl font-light text-earth-900">Tout le répertoire</h2>
+        <label class="relative block md:max-w-md md:ml-auto w-full">
+          <span class="sr-only">Rechercher une recette</span>
+          <svg
+            class="absolute left-0 top-1/2 -translate-y-1/2 text-earth-900/40"
+            width="17"
+            height="17"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.5"></circle>
+            <path d="m16 16 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+          </svg>
+          <input
+            type="search"
+            data-search-input
+            placeholder="Rechercher un plat, une région…"
+            autocomplete="off"
+            class="w-full border-0 border-b border-earth-900/25 bg-transparent py-3 pl-7 pr-9 text-sm text-earth-900 placeholder:text-earth-900/40 outline-none transition-colors focus:border-earth-900"
+          />
+          <button
+            type="button"
+            data-search-clear
+            class="absolute right-0 top-1/2 -translate-y-1/2 hidden size-8 items-center justify-center text-earth-900/45 hover:text-earth-900"
+            aria-label="Effacer la recherche"
+          >
+            ×
+          </button>
+        </label>
+      </div>
+      <div class="mb-8 border-t border-earth-900/12 pt-4">
+        <p data-search-status aria-live="polite" class="text-[9px] uppercase tracking-[.16em] text-earth-900/45">
+          {String(recipes.length).padStart(2, '0')} recette{recipes.length > 1 ? 's' : ''}
+        </p>
+      </div>
+      {
+        recipes.length === 0 ? (
+          <p class="text-earth-900/60">Aucune recette pour le moment.</p>
+        ) : (
+          <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-16 list-none p-0 m-0">
+            {recipes.map((recipe, index) => (
+              <li
+                data-recipe-item
+                data-search={getSearchText(recipe)}
+                data-reveal={index >= 3 ? '' : undefined}
+                style={index >= 3 ? `--reveal-delay: ${((index - 3) % 3) * 85}ms` : undefined}
+              >
+                <EditorialRecipeCard recipe={recipe} priority={index < 3} />
+              </li>
+            ))}
+          </ul>
+        )
+      }
+      <p data-search-empty hidden class="py-16 text-center font-display text-3xl font-light text-earth-900/55">
+        Aucune recette ne correspond à cette recherche.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  function initRecipeSearch() {
+    const root = document.querySelector<HTMLElement>('[data-recipe-search]');
+    if (!root || root.dataset.searchReady === 'true') return;
+    root.dataset.searchReady = 'true';
+
+    const input = root.querySelector<HTMLInputElement>('[data-search-input]');
+    const clear = root.querySelector<HTMLButtonElement>('[data-search-clear]');
+    const status = root.querySelector<HTMLElement>('[data-search-status]');
+    const empty = root.querySelector<HTMLElement>('[data-search-empty]');
+    const items = [...root.querySelectorAll<HTMLElement>('[data-recipe-item]')];
+
+    if (!input || !clear || !status || !empty) return;
+
+    const normalize = (value: string) =>
+      value
+        .normalize('NFD')
+        .replace(/\p{Diacritic}/gu, '')
+        .toLocaleLowerCase('fr')
+        .trim();
+
+    const update = () => {
+      const query = normalize(input.value);
+      let matches = 0;
+
+      items.forEach((item) => {
+        const visible = !query || normalize(item.dataset.search ?? '').includes(query);
+        item.hidden = !visible;
+        if (visible) matches += 1;
+      });
+
+      status.textContent = `${String(matches).padStart(2, '0')} recette${matches > 1 ? 's' : ''}`;
+      empty.hidden = matches !== 0;
+      clear.classList.toggle('hidden', !query);
+      clear.classList.toggle('flex', Boolean(query));
+    };
+
+    input.addEventListener('input', update);
+    clear.addEventListener('click', () => {
+      input.value = '';
+      update();
+      input.focus();
+    });
+  }
+
+  document.addEventListener('astro:page-load', initRecipeSearch);
+</script>

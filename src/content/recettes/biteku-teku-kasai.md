@@ -1,0 +1,39 @@
+---
+title: Biteku-teku du Kasaï
+description: Feuilles d’amarante rapidement mijotées avec oignon, tomate et une touche d’arachide.
+region: Grand Kasaï
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Amaranth%20Greens%20%28Doodo%29.jpg?width=1600
+imageAlt: Feuilles fraîches d’amarante utilisées pour le biteku-teku
+imagePosition: center
+imageCredit: Nabunje Leticia — Wikimedia Commons, CC BY-SA 4.0
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Amaranth_Greens_(Doodo).jpg
+category: plat
+prepTime: 20 min
+cookTime: 25 min
+servings: 6
+difficulty: facile
+featured: false
+tags:
+  - Grand Kasaï
+  - amarante
+  - biteku-teku
+  - légumes
+ingredients:
+  - 3 bottes de feuilles d’amarante
+  - 2 tomates mûres, concassées
+  - 1 gros oignon, émincé
+  - 80 g d’arachides grillées et pilées
+  - 2 c. à soupe d’huile
+  - 1 petit piment, facultatif
+  - Sel
+  - 150 ml d’eau
+steps:
+  - Détacher les feuilles, conserver les tiges tendres et laver le tout plusieurs fois.
+  - Émincer grossièrement les feuilles et les tiges.
+  - Faire revenir l’oignon dans l’huile, puis ajouter les tomates et le piment.
+  - Ajouter l’amarante et l’eau, couvrir et laisser cuire une dizaine de minutes.
+  - Incorporer les arachides pilées, saler et mélanger.
+  - Poursuivre la cuisson à découvert jusqu’à ce que les feuilles soient tendres et la sauce légèrement liée.
+---
+
+Le biteku-teku est populaire au Kasaï et dans d’autres régions de la RDC. Il se mange avec le bidia et peut aussi être préparé sans arachides.

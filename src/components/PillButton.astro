@@ -1,0 +1,40 @@
+---
+interface Props {
+  href: string;
+  label: string;
+  variant?: 'cream' | 'outline' | 'ink';
+}
+
+const { href, label, variant = 'cream' } = Astro.props;
+
+const pillClass = {
+  cream: 'bg-creme-100 text-earth-900 hover:bg-white',
+  outline: 'border border-creme-200/30 text-creme-100 hover:bg-white/5',
+  ink: 'bg-earth-900 text-creme-100 hover:bg-aged-oak',
+}[variant];
+
+const iconClass = variant === 'ink' ? 'bg-creme-100 text-earth-900' : 'bg-earth-900 text-creme-100';
+---
+
+<a
+  href={href}
+  class:list={[
+    'group inline-flex items-center gap-3 rounded-full pl-6 pr-2 py-2 text-sm font-semibold transition-colors',
+    pillClass,
+  ]}
+>
+  <span>{label}</span>
+  <span
+    class:list={['flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-transform group-hover:translate-x-0.5', iconClass]}
+    aria-hidden="true"
+  >
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M3 7h8M8 4l3 3-3 3"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+    </svg>
+  </span>
+</a>
