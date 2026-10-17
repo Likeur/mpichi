@@ -204,7 +204,7 @@ export const ui = {
       'Les polices sont chargées depuis Google Fonts et certaines photographies depuis Wikimedia Commons. Lors de ces chargements, ces services peuvent recevoir des informations techniques telles que votre adresse IP, votre navigateur et l’heure de la requête, conformément à leurs propres politiques.',
     'privacy.cookies.title': 'Cookies et mesure d’audience',
     'privacy.cookies.body':
-      'Dans sa version actuelle, Mpichi ne dépose aucun cookie publicitaire et n’utilise aucun outil de mesure d’audience.',
+      'Mpichi utilise Google Analytics (G-WLFG0GGT90) pour mesurer l’audience de façon agrégée. Aucun cookie publicitaire n’est déposé. Vous pouvez limiter la mesure via les réglages de votre navigateur ou des extensions de protection de la vie privée.',
     'privacy.contact.title': 'Vos questions',
     'privacy.contact.body':
       'Pour toute question relative à la confidentialité, contactez l’éditeur depuis',
@@ -420,7 +420,7 @@ export const ui = {
       'Fonts are loaded from Google Fonts and some photographs from Wikimedia Commons. During those requests, those services may receive technical information such as your IP address, browser, and request time, according to their own policies.',
     'privacy.cookies.title': 'Cookies and analytics',
     'privacy.cookies.body':
-      'In its current version, Mpichi sets no advertising cookies and uses no audience-measurement tool.',
+      'Mpichi uses Google Analytics (G-WLFG0GGT90) for aggregated audience measurement. No advertising cookies are set. You can limit measurement through your browser settings or privacy extensions.',
     'privacy.contact.title': 'Your questions',
     'privacy.contact.body':
       'For any privacy-related question, contact the publisher at',

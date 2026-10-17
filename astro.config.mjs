@@ -34,6 +34,7 @@ export default defineConfig({
     }),
   ],
   vite: {
-    plugins: [tailwindcss()],
+    // Tailwind’s Vite plugin types can disagree with Astro’s bundled Vite copy.
+    plugins: [/** @type {any} */ (tailwindcss())],
   },
 });

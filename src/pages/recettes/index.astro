@@ -518,7 +518,7 @@ const ogRecipe = recipes.find(({ recipe }) => recipe.data.featured)?.localized ?
       { once: true },
     );
 
-    input.addEventListener('input', update);
+    input.addEventListener('input', () => update());
     clear.addEventListener('click', () => {
       input.value = '';
       update();

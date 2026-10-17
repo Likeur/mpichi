@@ -57,6 +57,8 @@ Version anglaise : [http://localhost:4321/en](http://localhost:4321/en)
 | `npm run dev` | Serveur de développement |
 | `npm run build` | Build statique dans `dist/` |
 | `npm run preview` | Prévisualisation du build |
+| `npm run check` | `astro check` (types / lint Astro) |
+| `npm run ci` | `check` puis `build` (équivalent CI) |
 | `npm run astro` | CLI Astro |
 
 Variable d’environnement optionnelle :
@@ -183,10 +185,17 @@ Les **photos** restent sous la licence de leurs auteurs. Voir le crédit de chaq
 - Contenu et site : [Likeur](https://github.com/Likeur) · [likeur.xyz](https://likeur.xyz)
 - Images : Wikimedia Commons et sources citées sur chaque recette
 
+## CI
+
+Chaque push / PR sur `main` exécute GitHub Actions (`.github/workflows/ci.yml`) : `npm ci`, `astro check`, `astro build`.
+
+En local : `npm run ci`.
+
 ## Contribuer
 
 1. Fork
 2. Branche (`git checkout -b feature/ma-recette`)
-3. Pull request
+3. `npm run ci`
+4. Pull request
 
 Issues bienvenues pour bugs, recettes ou idées produit.

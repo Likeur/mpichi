@@ -40,12 +40,33 @@
   }
 
   a,
-  button {
+  button,
+  summary,
+  input,
+  select,
+  textarea {
     -webkit-tap-highlight-color: transparent;
   }
 
   button {
     cursor: pointer;
+  }
+
+  :focus {
+    outline: none;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-mpichi-red);
+    outline-offset: 3px;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  summary:focus-visible,
+  input:focus-visible {
+    outline: 2px solid var(--color-mpichi-red);
+    outline-offset: 3px;
   }
 
   img {

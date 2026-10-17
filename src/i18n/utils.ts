@@ -7,7 +7,8 @@ import { slugFromRecipeId } from '../lib/recipe-theme';
 
 export function getLocaleFromUrl(url: URL): Locale {
   const [, maybeLocale] = url.pathname.split('/');
-  return isLocale(maybeLocale ?? '') ? maybeLocale : defaultLocale;
+  const candidate = maybeLocale ?? '';
+  return isLocale(candidate) ? candidate : defaultLocale;
 }
 
 export function localePath(path: string, locale: Locale = defaultLocale): string {
@@ -33,7 +34,7 @@ export function switchLocalePath(pathname: string, target: Locale): string {
 export function useTranslations(locale: Locale) {
   return function t(key: UiKey, vars?: Record<string, string | number>) {
     const dictionary = ui[locale] ?? ui[defaultLocale];
-    let value = dictionary[key] ?? ui[defaultLocale][key] ?? key;
+    let value: string = dictionary[key] ?? ui[defaultLocale][key] ?? key;
     if (vars) {
       for (const [name, replacement] of Object.entries(vars)) {
         value = value.replaceAll(`{${name}}`, String(replacement));
