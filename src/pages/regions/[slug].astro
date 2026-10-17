@@ -1,0 +1,128 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import EditorialRecipeCard from '../../components/EditorialRecipeCard.astro';
+import type { Locale } from '../../i18n/config';
+import { localePath, recipeCountLabel, useTranslations } from '../../i18n/utils';
+import { absoluteUrl } from '../../lib/site';
+import { pageCanonical, resolveOrigin } from '../../lib/seo';
+import { getRegionTaxonomies, type RegionTaxonomy } from '../../lib/taxonomy';
+
+export async function getStaticPaths() {
+  const regions = await getRegionTaxonomies('fr');
+  return regions.map((region) => ({
+    params: { slug: region.slug },
+    props: { regionSlug: region.slug, lang: 'fr' as Locale },
+  }));
+}
+
+interface Props {
+  regionSlug: string;
+  lang?: Locale;
+}
+
+const lang = Astro.props.lang ?? 'fr';
+const t = useTranslations(lang);
+const regions = await getRegionTaxonomies(lang);
+const region = regions.find((item) => item.slug === Astro.props.regionSlug) as RegionTaxonomy;
+const origin = resolveOrigin(Astro.site);
+const pageUrl = pageCanonical(Astro.url.pathname, origin);
+const ogRecipe = region.recipes[0]?.localized;
+const countLabel = recipeCountLabel(lang, region.recipes.length);
+
+const collectionJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: region.label,
+  description: t('regions.detailDescription', { region: region.label }),
+  url: pageUrl,
+  inLanguage: lang === 'en' ? 'en' : 'fr',
+  about: {
+    '@type': 'Place',
+    name: region.label,
+    containedInPlace: {
+      '@type': 'Country',
+      name: lang === 'en' ? 'Democratic Republic of the Congo' : 'République démocratique du Congo',
+    },
+  },
+  mainEntity: {
+    '@type': 'ItemList',
+    numberOfItems: region.recipes.length,
+    itemListElement: region.recipes.map(({ localized }, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: localized.title,
+      url: absoluteUrl(localePath(`/recettes/${localized.slug}`, lang), origin),
+    })),
+  },
+};
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: t('nav.home'),
+      item: absoluteUrl(localePath('/', lang), origin),
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: t('regions.title'),
+      item: absoluteUrl(localePath('/regions', lang), origin),
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: region.label,
+      item: pageUrl,
+    },
+  ],
+};
+---
+
+<BaseLayout
+  title={region.label}
+  description={t('regions.detailDescription', { region: region.label })}
+  lang={lang}
+  image={ogRecipe?.image}
+  imageAlt={ogRecipe?.imageAlt}
+  jsonLd={[collectionJsonLd, breadcrumbJsonLd]}
+>
+  <section class="pt-28 pb-12 bg-earth-dark min-h-[46svh] flex items-end border-b border-white/10">
+    <div class="px-grid-margin max-w-[1200px] mx-auto w-full">
+      <a
+        href={localePath('/regions', lang)}
+        class="text-[9px] uppercase tracking-[.17em] text-creme-100/55 hover:text-white transition-colors"
+        data-reveal
+        style="--reveal-delay: 40ms"
+      >
+        {t('regions.back')}
+      </a>
+      <div class="mt-8 grid lg:grid-cols-12 gap-8 items-end" data-stagger>
+        <div class="lg:col-span-8">
+          <h1 class="text-display-hero">{region.label}</h1>
+        </div>
+        <p class="lg:col-span-4 text-sm leading-6 text-creme-200/60 max-w-md">
+          {t('regions.detailIntro')}
+        </p>
+      </div>
+      <p class="mt-10 text-[9px] uppercase tracking-[.16em] text-creme-200/35">{countLabel}</p>
+    </div>
+  </section>
+
+  <section class="bg-creme-100 py-12 sm:py-16">
+    <div class="px-grid-margin max-w-[1200px] mx-auto">
+      <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-16 list-none p-0 m-0">
+        {
+          region.recipes.map(({ recipe }, index) => (
+            <li data-reveal={index >= 3 ? '' : undefined} style={index >= 3 ? `--reveal-delay: ${((index - 3) % 3) * 85}ms` : undefined}>
+              <EditorialRecipeCard recipe={recipe} priority={index < 3} lang={lang} />
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import type { Locale } from '../../i18n/config';
+import type { UiKey } from '../../i18n/ui';
+import { localePath, recipeCountLabel, useTranslations } from '../../i18n/utils';
+import { absoluteUrl } from '../../lib/site';
+import { pageCanonical, resolveOrigin } from '../../lib/seo';
+import { getCategoryTaxonomies } from '../../lib/taxonomy';
+
+interface Props {
+  lang?: Locale;
+}
+
+const lang = Astro.props.lang ?? 'fr';
+const t = useTranslations(lang);
+const categories = await getCategoryTaxonomies(lang);
+const origin = resolveOrigin(Astro.site);
+const pageUrl = pageCanonical(Astro.url.pathname, origin);
+
+const itemListJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: t('categories.title'),
+  description: t('categories.description'),
+  url: pageUrl,
+  inLanguage: lang === 'en' ? 'en' : 'fr',
+  mainEntity: {
+    '@type': 'ItemList',
+    numberOfItems: categories.length,
+    itemListElement: categories.map((category, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: t(`category.${category.slug}` as UiKey),
+      url: absoluteUrl(localePath(`/categories/${category.slug}`, lang), origin),
+    })),
+  },
+};
+---
+
+<BaseLayout
+  title={t('categories.title')}
+  description={t('categories.description')}
+  lang={lang}
+  jsonLd={itemListJsonLd}
+>
+  <section class="pt-28 pb-12 bg-earth-dark min-h-[50svh] flex items-end border-b border-white/10">
+    <div class="px-grid-margin max-w-[1200px] mx-auto w-full">
+      <div class="grid lg:grid-cols-12 gap-8 items-end" data-stagger>
+        <div class="lg:col-span-8">
+          <h1 class="text-display-hero">{t('categories.hero')}</h1>
+        </div>
+        <p class="lg:col-span-4 text-sm leading-6 text-creme-200/60 max-w-md">
+          {t('categories.intro')}
+        </p>
+      </div>
+      <p class="mt-10 text-[9px] uppercase tracking-[.16em] text-creme-200/35">
+        {recipeCountLabel(lang, categories.reduce((sum, category) => sum + category.recipes.length, 0))}
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-creme-100 py-12 sm:py-16 text-earth-900">
+    <div class="px-grid-margin max-w-[900px] mx-auto">
+      {
+        categories.length === 0 ? (
+          <p class="text-earth-900/60">{t('categories.empty')}</p>
+        ) : (
+          <ul class="list-none p-0 m-0 divide-y divide-earth-900/10" data-stagger>
+            {categories.map((category) => (
+              <li>
+                <a
+                  href={localePath(`/categories/${category.slug}`, lang)}
+                  class="group flex items-baseline justify-between gap-6 py-5 transition-colors"
+                >
+                  <span class="font-display text-2xl sm:text-3xl font-light text-earth-900 group-hover:text-mpichi-red transition-colors">
+                    {t(`category.${category.slug}` as UiKey)}
+                  </span>
+                  <span class="shrink-0 text-[9px] uppercase tracking-[.16em] text-earth-900/40">
+                    {recipeCountLabel(lang, category.recipes.length)}
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        )
+      }
+    </div>
+  </section>
+</BaseLayout>

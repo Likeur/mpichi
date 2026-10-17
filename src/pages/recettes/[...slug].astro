@@ -4,9 +4,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import PillButton from '../../components/PillButton.astro';
 import { slugFromRecipeId } from '../../lib/recipe-theme';
 import type { Locale } from '../../i18n/config';
+import type { UiKey } from '../../i18n/ui';
 import { localePath, localizeRecipe, useTranslations } from '../../i18n/utils';
 import { absoluteUrl, toIsoDuration } from '../../lib/site';
 import { pageCanonical, resolveOrigin } from '../../lib/seo';
+import { regionSlugFromKey } from '../../lib/taxonomy';
 
 export async function getStaticPaths() {
   const recipes = await getCollection('recettes');
@@ -29,6 +31,10 @@ const localized = localizeRecipe(recipe, lang);
 const origin = resolveOrigin(Astro.site);
 const pageUrl = pageCanonical(Astro.url.pathname, origin);
 const catalogUrl = absoluteUrl(localePath('/recettes', lang), origin);
+const regionSlug = regionSlugFromKey(recipe.data.region);
+const regionHref = regionSlug ? localePath(`/regions/${regionSlug}`, lang) : undefined;
+const categoryHref = localePath(`/categories/${localized.category}`, lang);
+const categoryLabel = t(`category.${localized.category}` as UiKey);
 
 const prepIso = toIsoDuration(localized.prepTime);
 const cookIso = toIsoDuration(localized.cookTime);
@@ -169,13 +175,25 @@ const breadcrumbJsonLd = {
           style="--reveal-delay: 210ms"
         >
           {
-            localized.region && (
+            localized.region && regionHref && (
               <div class="col-span-2">
                 <dt class="text-creme-100/35">{t('recipe.region')}</dt>
-                <dd class="mt-1 text-creme-100">{localized.region}</dd>
+                <dd class="mt-1 text-creme-100">
+                  <a href={regionHref} class="hover:text-white transition-colors underline decoration-creme-100/25 underline-offset-4">
+                    {localized.region}
+                  </a>
+                </dd>
               </div>
             )
           }
+          <div class="col-span-2">
+            <dt class="text-creme-100/35">{t('recipe.category')}</dt>
+            <dd class="mt-1 text-creme-100">
+              <a href={categoryHref} class="hover:text-white transition-colors underline decoration-creme-100/25 underline-offset-4">
+                {categoryLabel}
+              </a>
+            </dd>
+          </div>
           <div>
             <dt class="text-creme-100/35">{t('recipe.prep')}</dt>
             <dd class="mt-1 text-creme-100">{localized.prepTime}</dd>

@@ -11,7 +11,8 @@
 
 - **Bilingue FR / EN** — localisation UI + 38 recettes traduites, switch de langue dans la nav, `hreflang`
 - **Accueil éditorial** avec carrousel héro, sections patrimoine et recettes mises en avant
-- **Catalogue** avec recherche locale (titre, région, catégorie, tags)
+- **Catalogue** avec recherche locale, filtres (catégorie, difficulté, région) et pagination
+- **Pages taxonomiques** : index et fiches par `/regions` et `/categories` (FR/EN)
 - **Fiches détail** : temps, portions, difficulté, ingrédients, étapes, crédit photo
 - **SEO** : canonical, Open Graph / Twitter, sitemap XML, `robots.txt`, JSON-LD (`WebSite` + SearchAction, `Recipe`, FAQ), page 404 bilingue
 - **Découverte IA / GEO** : `llms.txt`, `llms-full.txt`, `humans.txt`
@@ -88,10 +89,13 @@ mpichi/
 │   ├── lib/
 │   │   ├── seo.ts
 │   │   ├── site.ts
+│   │   ├── taxonomy.ts           # Régions / catégories
 │   │   └── recipe-theme.ts
 │   ├── pages/
 │   │   ├── index.astro           # Accueil FR
 │   │   ├── recettes/             # Catalogue + fiches FR
+│   │   ├── regions/              # Index + pages par région
+│   │   ├── categories/           # Index + pages par catégorie
 │   │   ├── en/                   # Miroir EN
 │   │   ├── llms.txt.ts
 │   │   └── llms-full.txt.ts

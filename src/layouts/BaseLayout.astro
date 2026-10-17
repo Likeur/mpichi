@@ -179,6 +179,8 @@ const structured = [websiteJsonLd(lang, origin), ...(jsonLd ? (Array.isArray(jso
         <div class="flex flex-col gap-3 text-[10px] uppercase tracking-[.16em]">
           <p class="mb-2 text-creme-200/35">{t('footer.explore')}</p>
           <a href={localePath('/recettes', lang)} class="hover:text-white transition-colors">{t('nav.recipes')}</a>
+          <a href={localePath('/regions', lang)} class="hover:text-white transition-colors">{t('regions.title')}</a>
+          <a href={localePath('/categories', lang)} class="hover:text-white transition-colors">{t('categories.title')}</a>
           <a href={localePath('/faq', lang)} class="hover:text-white transition-colors">FAQ</a>
         </div>
         <div class="flex flex-col gap-3 text-[10px] uppercase tracking-[.16em]">

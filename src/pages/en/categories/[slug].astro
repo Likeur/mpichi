@@ -1,0 +1,16 @@
+---
+import CategoryPage from '../../categories/[slug].astro';
+import { getCategoryTaxonomies, type RecipeCategory } from '../../../lib/taxonomy';
+
+export async function getStaticPaths() {
+  const categories = await getCategoryTaxonomies('en');
+  return categories.map((category) => ({
+    params: { slug: category.slug },
+    props: { categorySlug: category.slug as RecipeCategory, lang: 'en' as const },
+  }));
+}
+
+const { categorySlug, lang } = Astro.props;
+---
+
+<CategoryPage categorySlug={categorySlug} lang={lang} />

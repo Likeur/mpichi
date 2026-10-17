@@ -1,0 +1,16 @@
+---
+import RegionPage from '../../regions/[slug].astro';
+import { getRegionTaxonomies } from '../../../lib/taxonomy';
+
+export async function getStaticPaths() {
+  const regions = await getRegionTaxonomies('en');
+  return regions.map((region) => ({
+    params: { slug: region.slug },
+    props: { regionSlug: region.slug, lang: 'en' as const },
+  }));
+}
+
+const { regionSlug, lang } = Astro.props;
+---
+
+<RegionPage regionSlug={regionSlug} lang={lang} />

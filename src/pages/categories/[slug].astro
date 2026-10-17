@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import EditorialRecipeCard from '../../components/EditorialRecipeCard.astro';
+import type { Locale } from '../../i18n/config';
+import type { UiKey } from '../../i18n/ui';
+import { localePath, recipeCountLabel, useTranslations } from '../../i18n/utils';
+import { absoluteUrl } from '../../lib/site';
+import { pageCanonical, resolveOrigin } from '../../lib/seo';
+import { getCategoryTaxonomies, type CategoryTaxonomy, type RecipeCategory } from '../../lib/taxonomy';
+
+export async function getStaticPaths() {
+  const categories = await getCategoryTaxonomies('fr');
+  return categories.map((category) => ({
+    params: { slug: category.slug },
+    props: { categorySlug: category.slug, lang: 'fr' as Locale },
+  }));
+}
+
+interface Props {
+  categorySlug: RecipeCategory;
+  lang?: Locale;
+}
+
+const lang = Astro.props.lang ?? 'fr';
+const t = useTranslations(lang);
+const categories = await getCategoryTaxonomies(lang);
+const category = categories.find((item) => item.slug === Astro.props.categorySlug) as CategoryTaxonomy;
+const label = t(`category.${category.slug}` as UiKey);
+const origin = resolveOrigin(Astro.site);
+const pageUrl = pageCanonical(Astro.url.pathname, origin);
+const ogRecipe = category.recipes[0]?.localized;
+const countLabel = recipeCountLabel(lang, category.recipes.length);
+
+const collectionJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: label,
+  description: t('categories.detailDescription', { category: label }),
+  url: pageUrl,
+  inLanguage: lang === 'en' ? 'en' : 'fr',
+  mainEntity: {
+    '@type': 'ItemList',
+    numberOfItems: category.recipes.length,
+    itemListElement: category.recipes.map(({ localized }, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: localized.title,
+      url: absoluteUrl(localePath(`/recettes/${localized.slug}`, lang), origin),
+    })),
+  },
+};
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: t('nav.home'),
+      item: absoluteUrl(localePath('/', lang), origin),
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: t('categories.title'),
+      item: absoluteUrl(localePath('/categories', lang), origin),
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: label,
+      item: pageUrl,
+    },
+  ],
+};
+---
+
+<BaseLayout
+  title={label}
+  description={t('categories.detailDescription', { category: label })}
+  lang={lang}
+  image={ogRecipe?.image}
+  imageAlt={ogRecipe?.imageAlt}
+  jsonLd={[collectionJsonLd, breadcrumbJsonLd]}
+>
+  <section class="pt-28 pb-12 bg-earth-dark min-h-[46svh] flex items-end border-b border-white/10">
+    <div class="px-grid-margin max-w-[1200px] mx-auto w-full">
+      <a
+        href={localePath('/categories', lang)}
+        class="text-[9px] uppercase tracking-[.17em] text-creme-100/55 hover:text-white transition-colors"
+        data-reveal
+        style="--reveal-delay: 40ms"
+      >
+        {t('categories.back')}
+      </a>
+      <div class="mt-8 grid lg:grid-cols-12 gap-8 items-end" data-stagger>
+        <div class="lg:col-span-8">
+          <h1 class="text-display-hero">{label}</h1>
+        </div>
+        <p class="lg:col-span-4 text-sm leading-6 text-creme-200/60 max-w-md">
+          {t('categories.detailIntro')}
+        </p>
+      </div>
+      <p class="mt-10 text-[9px] uppercase tracking-[.16em] text-creme-200/35">{countLabel}</p>
+    </div>
+  </section>
+
+  <section class="bg-creme-100 py-12 sm:py-16">
+    <div class="px-grid-margin max-w-[1200px] mx-auto">
+      <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-16 list-none p-0 m-0">
+        {
+          category.recipes.map(({ recipe }, index) => (
+            <li data-reveal={index >= 3 ? '' : undefined} style={index >= 3 ? `--reveal-delay: ${((index - 3) % 3) * 85}ms` : undefined}>
+              <EditorialRecipeCard recipe={recipe} priority={index < 3} lang={lang} />
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
