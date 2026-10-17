@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --port 4321 --strictPort",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"

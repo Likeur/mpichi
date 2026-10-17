@@ -1,0 +1,108 @@
+---
+interface Option {
+  value: string;
+  label: string;
+}
+
+interface Props {
+  name: string;
+  label: string;
+  allLabel: string;
+  options: Option[];
+  value?: string;
+}
+
+const { name, label, allLabel, options, value = '' } = Astro.props;
+const selected = options.find((option) => option.value === value);
+const display = selected?.label ?? allLabel;
+---
+
+<div class="relative min-w-0" data-dropdown data-dropdown-name={name} data-dropdown-value={value}>
+  <span class="mb-3 block text-[9px] uppercase tracking-[.16em] text-earth-900/40">{label}</span>
+  <button
+    type="button"
+    class="flex w-full items-center justify-between gap-3 border-0 border-b border-earth-900/25 bg-transparent py-2.5 text-left text-sm text-earth-900 outline-none transition-colors hover:border-earth-900 focus-visible:border-earth-900"
+    data-dropdown-trigger
+    aria-haspopup="listbox"
+    aria-expanded="false"
+  >
+    <span class="truncate" data-dropdown-label>{display}</span>
+    <svg
+      class="size-3.5 shrink-0 text-earth-900/45 transition-transform duration-200 ease-out data-[open=true]:rotate-180"
+      data-dropdown-chevron
+      width="14"
+      height="14"
+      viewBox="0 0 14 14"
+      fill="none"
+      aria-hidden="true"
+    >
+      <path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"
+      ></path>
+    </svg>
+  </button>
+  <ul
+    class="dropdown-panel absolute left-0 right-0 top-[calc(100%+0.4rem)] z-30 max-h-64 origin-top overflow-y-auto border border-earth-900/10 bg-creme-50 py-2 shadow-[0_18px_40px_rgba(42,27,21,0.12)]"
+    data-dropdown-panel
+    data-state="closed"
+    role="listbox"
+    hidden
+  >
+    <li role="option">
+      <button
+        type="button"
+        class="flex w-full px-4 py-2.5 text-left text-sm text-earth-900/70 transition-colors hover:bg-earth-900/5 hover:text-earth-900 data-[selected=true]:font-medium data-[selected=true]:text-earth-900"
+        data-dropdown-option
+        data-value=""
+        data-label={allLabel}
+        data-selected={value === '' ? 'true' : 'false'}
+      >
+        {allLabel}
+      </button>
+    </li>
+    {
+      options.map((option) => (
+        <li role="option">
+          <button
+            type="button"
+            class="flex w-full px-4 py-2.5 text-left text-sm text-earth-900/70 transition-colors hover:bg-earth-900/5 hover:text-earth-900 data-[selected=true]:font-medium data-[selected=true]:text-earth-900"
+            data-dropdown-option
+            data-value={option.value}
+            data-label={option.label}
+            data-selected={value === option.value ? 'true' : 'false'}
+          >
+            {option.label}
+          </button>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<style>
+  .dropdown-panel {
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-0.4rem) scale(0.98);
+    transition:
+      opacity 180ms ease,
+      transform 180ms ease;
+  }
+
+  .dropdown-panel[data-state='open'] {
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  .dropdown-panel[data-state='closed'] {
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-0.4rem) scale(0.98);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .dropdown-panel {
+      transition: none;
+    }
+  }
+</style>

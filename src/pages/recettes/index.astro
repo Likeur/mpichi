@@ -2,8 +2,10 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EditorialRecipeCard from '../../components/EditorialRecipeCard.astro';
+import FilterDropdown from '../../components/FilterDropdown.astro';
 import type { Locale } from '../../i18n/config';
-import { localizeRecipe, recipeCountLabel, useTranslations } from '../../i18n/utils';
+import { localePath, localizeRecipe, recipeCountLabel, useTranslations } from '../../i18n/utils';
+import type { UiKey } from '../../i18n/ui';
 
 interface Props {
   lang?: Locale;
@@ -25,6 +27,30 @@ const getSearchText = (item: (typeof recipes)[number]) =>
   ]
     .filter(Boolean)
     .join(' ');
+
+const categoryOptions = (['plat', 'accompagnement', 'boisson', 'dessert'] as const)
+  .filter((category) => recipes.some(({ localized }) => localized.category === category))
+  .map((category) => ({
+    value: category,
+    label: t(`category.${category}` as UiKey),
+  }));
+
+const difficultyOptions = (['facile', 'moyen', 'avancé'] as const)
+  .filter((difficulty) => recipes.some(({ recipe }) => recipe.data.difficulty === difficulty))
+  .map((difficulty) => ({
+    value: difficulty,
+    label: t(`difficulty.${difficulty}` as UiKey),
+  }));
+
+const regionOptions = [
+  ...new Set(
+    recipes
+      .map(({ localized }) => localized.region)
+      .filter((region): region is string => Boolean(region)),
+  ),
+]
+  .sort((a, b) => a.localeCompare(b, lang))
+  .map((region) => ({ value: region, label: region }));
 
 const countLabel = recipeCountLabel(lang, recipes.length);
 const countSingular = t('recipes.count', { n: '00' }).replace('00', '{n}');
@@ -61,6 +87,8 @@ const ogRecipe = recipes.find(({ recipe }) => recipe.data.featured)?.localized ?
       data-recipe-search
       data-count-singular={countSingular}
       data-count-plural={countPlural}
+      data-page-size="9"
+      data-page-label={t('recipes.page')}
     >
       <div class="mb-5 grid md:grid-cols-2 gap-8 md:items-end" data-stagger>
         <h2 class="font-display text-3xl sm:text-4xl font-light text-earth-900">{t('recipes.catalog')}</h2>
@@ -94,7 +122,57 @@ const ogRecipe = recipes.find(({ recipe }) => recipe.data.featured)?.localized ?
           </button>
         </label>
       </div>
-      <div class="mb-8 border-t border-earth-900/12 pt-4">
+
+      <div class="mb-8 space-y-5 border-t border-earth-900/12 pt-5" data-recipe-filters>
+        <div class="flex flex-wrap items-end justify-between gap-4">
+          <p class="text-[9px] uppercase tracking-[.16em] text-earth-900/40">{t('recipes.filters')}</p>
+          <div class="flex flex-wrap items-center gap-4">
+            <a
+              href={localePath('/regions', lang)}
+              class="text-[9px] uppercase tracking-[.16em] text-earth-900/45 underline decoration-earth-900/20 underline-offset-4 transition-colors hover:text-earth-900"
+            >
+              {t('recipes.exploreRegions')}
+            </a>
+            <a
+              href={localePath('/categories', lang)}
+              class="text-[9px] uppercase tracking-[.16em] text-earth-900/45 underline decoration-earth-900/20 underline-offset-4 transition-colors hover:text-earth-900"
+            >
+              {t('recipes.exploreCategories')}
+            </a>
+            <button
+              type="button"
+              data-filters-reset
+              hidden
+              class="text-[9px] uppercase tracking-[.16em] text-earth-900/45 underline decoration-earth-900/20 underline-offset-4 transition-colors hover:text-earth-900"
+            >
+              {t('recipes.resetFilters')}
+            </button>
+          </div>
+        </div>
+
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+          <FilterDropdown
+            name="category"
+            label={t('recipes.filterCategory')}
+            allLabel={t('recipes.filterAll')}
+            options={categoryOptions}
+          />
+          <FilterDropdown
+            name="difficulty"
+            label={t('recipes.filterDifficulty')}
+            allLabel={t('recipes.filterAll')}
+            options={difficultyOptions}
+          />
+          <FilterDropdown
+            name="region"
+            label={t('recipes.filterRegion')}
+            allLabel={t('recipes.filterAllRegions')}
+            options={regionOptions}
+          />
+        </div>
+      </div>
+
+      <div class="mb-8">
         <p data-search-status aria-live="polite" class="text-[9px] uppercase tracking-[.16em] text-earth-900/45">
           {countLabel}
         </p>
@@ -104,10 +182,13 @@ const ogRecipe = recipes.find(({ recipe }) => recipe.data.featured)?.localized ?
           <p class="text-earth-900/60">{t('recipes.empty')}</p>
         ) : (
           <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-16 list-none p-0 m-0">
-            {recipes.map(({ recipe }, index) => (
+            {recipes.map(({ recipe, localized }, index) => (
               <li
                 data-recipe-item
                 data-search={getSearchText(recipes[index])}
+                data-category={localized.category}
+                data-difficulty={recipe.data.difficulty}
+                data-region={localized.region ?? ''}
                 data-reveal={index >= 3 ? '' : undefined}
                 style={index >= 3 ? `--reveal-delay: ${((index - 3) % 3) * 85}ms` : undefined}
               >
@@ -120,6 +201,32 @@ const ogRecipe = recipes.find(({ recipe }) => recipe.data.featured)?.localized ?
       <p data-search-empty hidden class="py-16 text-center font-display text-3xl font-light text-earth-900/55">
         {t('recipes.noMatch')}
       </p>
+
+      <nav
+        class="mt-16 flex flex-col items-center gap-5 border-t border-earth-900/12 pt-8 sm:flex-row sm:justify-between"
+        data-pagination
+        aria-label={t('recipes.pagination')}
+        hidden
+      >
+        <p class="text-[9px] uppercase tracking-[.16em] text-earth-900/45" data-pagination-status></p>
+        <div class="flex items-center gap-2">
+          <button
+            type="button"
+            data-pagination-prev
+            class="min-w-24 border-b border-transparent pb-1 text-[10px] uppercase tracking-[.16em] text-earth-900/45 transition-colors hover:border-earth-900/30 hover:text-earth-900 disabled:pointer-events-none disabled:opacity-30"
+          >
+            {t('recipes.prevPage')}
+          </button>
+          <div class="flex items-center gap-1" data-pagination-pages></div>
+          <button
+            type="button"
+            data-pagination-next
+            class="min-w-24 border-b border-transparent pb-1 text-[10px] uppercase tracking-[.16em] text-earth-900/45 transition-colors hover:border-earth-900/30 hover:text-earth-900 disabled:pointer-events-none disabled:opacity-30"
+          >
+            {t('recipes.nextPage')}
+          </button>
+        </div>
+      </nav>
     </div>
   </section>
 </BaseLayout>
@@ -134,11 +241,109 @@ const ogRecipe = recipes.find(({ recipe }) => recipe.data.featured)?.localized ?
     const clear = root.querySelector<HTMLButtonElement>('[data-search-clear]');
     const status = root.querySelector<HTMLElement>('[data-search-status]');
     const empty = root.querySelector<HTMLElement>('[data-search-empty]');
+    const reset = root.querySelector<HTMLButtonElement>('[data-filters-reset]');
+    const pagination = root.querySelector<HTMLElement>('[data-pagination]');
+    const paginationStatus = root.querySelector<HTMLElement>('[data-pagination-status]');
+    const paginationPages = root.querySelector<HTMLElement>('[data-pagination-pages]');
+    const prevButton = root.querySelector<HTMLButtonElement>('[data-pagination-prev]');
+    const nextButton = root.querySelector<HTMLButtonElement>('[data-pagination-next]');
+    const dropdowns = [...root.querySelectorAll<HTMLElement>('[data-dropdown]')];
     const items = [...root.querySelectorAll<HTMLElement>('[data-recipe-item]')];
     const singular = root.dataset.countSingular ?? '{n}';
     const plural = root.dataset.countPlural ?? '{n}';
+    const pageLabelTemplate = root.dataset.pageLabel ?? 'Page {current} / {total}';
+    const pageSize = Math.max(1, Number(root.dataset.pageSize ?? 9) || 9);
 
-    if (!input || !clear || !status || !empty) return;
+    if (
+      !input ||
+      !clear ||
+      !status ||
+      !empty ||
+      !reset ||
+      !pagination ||
+      !paginationStatus ||
+      !paginationPages ||
+      !prevButton ||
+      !nextButton
+    ) {
+      return;
+    }
+
+    let currentPage = 1;
+
+    const getDropdown = (name: string) =>
+      dropdowns.find((dropdown) => dropdown.dataset.dropdownName === name);
+
+    const getValue = (name: string) => getDropdown(name)?.dataset.dropdownValue ?? '';
+
+    const setDropdownValue = (name: string, value: string) => {
+      const dropdown = getDropdown(name);
+      if (!dropdown) return;
+      dropdown.dataset.dropdownValue = value;
+      const options = [...dropdown.querySelectorAll<HTMLButtonElement>('[data-dropdown-option]')];
+      const match = options.find((option) => (option.dataset.value ?? '') === value) ?? options[0];
+      const label = dropdown.querySelector<HTMLElement>('[data-dropdown-label]');
+      if (label && match) label.textContent = match.dataset.label ?? '';
+      options.forEach((option) => {
+        option.dataset.selected = String((option.dataset.value ?? '') === value);
+      });
+    };
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const closeDropdown = (dropdown: HTMLElement) => {
+      const trigger = dropdown.querySelector<HTMLButtonElement>('[data-dropdown-trigger]');
+      const panel = dropdown.querySelector<HTMLElement>('[data-dropdown-panel]');
+      const chevron = dropdown.querySelector<HTMLElement>('[data-dropdown-chevron]');
+      if (!trigger || !panel || panel.dataset.state === 'closed' && panel.hidden) return;
+
+      trigger.setAttribute('aria-expanded', 'false');
+      if (chevron) chevron.dataset.open = 'false';
+      panel.dataset.state = 'closed';
+
+      const finish = () => {
+        panel.hidden = true;
+        panel.removeEventListener('transitionend', onEnd);
+      };
+
+      const onEnd = (event: TransitionEvent) => {
+        if (event.target !== panel || event.propertyName !== 'opacity') return;
+        finish();
+      };
+
+      if (reduceMotion) {
+        finish();
+        return;
+      }
+
+      panel.addEventListener('transitionend', onEnd);
+      window.setTimeout(finish, 220);
+    };
+
+    const closeAll = (except?: HTMLElement) => {
+      dropdowns.forEach((dropdown) => {
+        if (dropdown !== except) closeDropdown(dropdown);
+      });
+    };
+
+    const openDropdown = (dropdown: HTMLElement) => {
+      closeAll(dropdown);
+      const trigger = dropdown.querySelector<HTMLButtonElement>('[data-dropdown-trigger]');
+      const panel = dropdown.querySelector<HTMLElement>('[data-dropdown-panel]');
+      const chevron = dropdown.querySelector<HTMLElement>('[data-dropdown-chevron]');
+      if (!trigger || !panel) return;
+
+      trigger.setAttribute('aria-expanded', 'true');
+      if (chevron) chevron.dataset.open = 'true';
+      panel.hidden = false;
+      panel.dataset.state = 'closed';
+
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          panel.dataset.state = 'open';
+        });
+      });
+    };
 
     const normalize = (value: string) =>
       value
@@ -147,35 +352,171 @@ const ogRecipe = recipes.find(({ recipe }) => recipe.data.featured)?.localized ?
         .toLocaleLowerCase('fr')
         .trim();
 
-    const syncUrl = (raw: string) => {
+    const syncUrl = () => {
       const url = new URL(window.location.href);
-      const trimmed = raw.trim();
-      if (trimmed) url.searchParams.set('q', trimmed);
+      const query = input.value.trim();
+      const category = getValue('category');
+      const difficulty = getValue('difficulty');
+      const region = getValue('region');
+
+      if (query) url.searchParams.set('q', query);
       else url.searchParams.delete('q');
-      const next = `${url.pathname}${url.search}${url.hash}`;
-      window.history.replaceState({}, '', next);
+      if (category) url.searchParams.set('category', category);
+      else url.searchParams.delete('category');
+      if (difficulty) url.searchParams.set('difficulty', difficulty);
+      else url.searchParams.delete('difficulty');
+      if (region) url.searchParams.set('region', region);
+      else url.searchParams.delete('region');
+      if (currentPage > 1) url.searchParams.set('page', String(currentPage));
+      else url.searchParams.delete('page');
+
+      window.history.replaceState({}, '', `${url.pathname}${url.search}${url.hash}`);
     };
 
-    const update = () => {
-      const query = normalize(input.value);
-      let matches = 0;
+    const renderPagination = (totalPages: number) => {
+      pagination.hidden = totalPages <= 1;
+      paginationStatus.textContent = pageLabelTemplate
+        .replace('{current}', String(currentPage).padStart(2, '0'))
+        .replace('{total}', String(totalPages).padStart(2, '0'));
 
-      items.forEach((item) => {
-        const visible = !query || normalize(item.dataset.search ?? '').includes(query);
-        item.hidden = !visible;
-        if (visible) matches += 1;
+      prevButton.disabled = currentPage <= 1;
+      nextButton.disabled = currentPage >= totalPages;
+
+      paginationPages.replaceChildren();
+      for (let page = 1; page <= totalPages; page += 1) {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.textContent = String(page).padStart(2, '0');
+        button.dataset.paginationPage = String(page);
+        button.className =
+          'min-w-9 px-2 py-1 text-[10px] uppercase tracking-[.16em] transition-colors ' +
+          (page === currentPage
+            ? 'text-earth-900 border-b border-earth-900'
+            : 'text-earth-900/40 hover:text-earth-900');
+        button.setAttribute('aria-current', page === currentPage ? 'page' : 'false');
+        button.addEventListener('click', () => {
+          currentPage = page;
+          update({ keepPage: true, scroll: true });
+        });
+        paginationPages.append(button);
+      }
+    };
+
+    const update = (options: { keepPage?: boolean; scroll?: boolean } = {}) => {
+      const query = normalize(input.value);
+      const category = getValue('category');
+      const difficulty = getValue('difficulty');
+      const region = getValue('region');
+
+      const matched = items.filter((item) => {
+        const matchesQuery = !query || normalize(item.dataset.search ?? '').includes(query);
+        const matchesCategory = !category || item.dataset.category === category;
+        const matchesDifficulty = !difficulty || item.dataset.difficulty === difficulty;
+        const matchesRegion = !region || item.dataset.region === region;
+        return matchesQuery && matchesCategory && matchesDifficulty && matchesRegion;
       });
 
-      const padded = String(matches).padStart(2, '0');
-      status.textContent = (matches > 1 ? plural : singular).replace('{n}', padded);
-      empty.hidden = matches !== 0;
+      const totalPages = Math.max(1, Math.ceil(matched.length / pageSize));
+      if (!options.keepPage) currentPage = 1;
+      currentPage = Math.min(Math.max(1, currentPage), totalPages);
+
+      const start = (currentPage - 1) * pageSize;
+      const end = start + pageSize;
+
+      items.forEach((item) => {
+        item.hidden = true;
+      });
+      matched.forEach((item, index) => {
+        item.hidden = index < start || index >= end;
+      });
+
+      const padded = String(matched.length).padStart(2, '0');
+      status.textContent = (matched.length > 1 ? plural : singular).replace('{n}', padded);
+      empty.hidden = matched.length !== 0;
       clear.classList.toggle('hidden', !query);
       clear.classList.toggle('flex', Boolean(query));
-      syncUrl(input.value);
+      reset.hidden = !Boolean(query || category || difficulty || region);
+      renderPagination(matched.length === 0 ? 0 : totalPages);
+      if (matched.length === 0) pagination.hidden = true;
+      syncUrl();
+
+      if (options.scroll) {
+        root.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+      }
     };
 
-    const initial = new URLSearchParams(window.location.search).get('q');
-    if (initial) input.value = initial;
+    const validValues = (name: string) => {
+      const dropdown = getDropdown(name);
+      if (!dropdown) return new Set<string>(['']);
+      return new Set(
+        [...dropdown.querySelectorAll<HTMLButtonElement>('[data-dropdown-option]')].map(
+          (option) => option.dataset.value ?? '',
+        ),
+      );
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const initialQuery = params.get('q');
+    const initialPage = Number(params.get('page') ?? 1);
+    if (initialQuery) input.value = initialQuery;
+    if (Number.isFinite(initialPage) && initialPage > 1) currentPage = Math.floor(initialPage);
+
+    (['category', 'difficulty', 'region'] as const).forEach((name) => {
+      const value = params.get(name) ?? '';
+      if (validValues(name).has(value)) setDropdownValue(name, value);
+    });
+
+    dropdowns.forEach((dropdown) => {
+      const trigger = dropdown.querySelector<HTMLButtonElement>('[data-dropdown-trigger]');
+      const options = [...dropdown.querySelectorAll<HTMLButtonElement>('[data-dropdown-option]')];
+      if (!trigger) return;
+
+      trigger.addEventListener('click', () => {
+        const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+        if (isOpen) closeDropdown(dropdown);
+        else openDropdown(dropdown);
+      });
+
+      options.forEach((option) => {
+        option.addEventListener('click', () => {
+          setDropdownValue(dropdown.dataset.dropdownName ?? '', option.dataset.value ?? '');
+          closeDropdown(dropdown);
+          update();
+        });
+      });
+    });
+
+    prevButton.addEventListener('click', () => {
+      if (currentPage <= 1) return;
+      currentPage -= 1;
+      update({ keepPage: true, scroll: true });
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentPage += 1;
+      update({ keepPage: true, scroll: true });
+    });
+
+    const onDocumentClick = (event: MouseEvent) => {
+      const target = event.target as Node | null;
+      if (!target || dropdowns.some((dropdown) => dropdown.contains(target))) return;
+      closeAll();
+    };
+
+    const onDocumentKeydown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') closeAll();
+    };
+
+    document.addEventListener('click', onDocumentClick);
+    document.addEventListener('keydown', onDocumentKeydown);
+    document.addEventListener(
+      'astro:before-preparation',
+      () => {
+        document.removeEventListener('click', onDocumentClick);
+        document.removeEventListener('keydown', onDocumentKeydown);
+      },
+      { once: true },
+    );
 
     input.addEventListener('input', update);
     clear.addEventListener('click', () => {
@@ -184,7 +525,16 @@ const ogRecipe = recipes.find(({ recipe }) => recipe.data.featured)?.localized ?
       input.focus();
     });
 
-    if (initial) update();
+    reset.addEventListener('click', () => {
+      input.value = '';
+      setDropdownValue('category', '');
+      setDropdownValue('difficulty', '');
+      setDropdownValue('region', '');
+      closeAll();
+      update();
+    });
+
+    update({ keepPage: true });
   }
 
   document.addEventListener('astro:page-load', initRecipeSearch);

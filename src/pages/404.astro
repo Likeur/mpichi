@@ -40,15 +40,19 @@ const copy = {
   noindex
 >
   <section
-    class="min-h-[70svh] bg-earth-dark border-b border-white/10 flex items-end pt-32 pb-16 sm:pb-20"
+    class="min-h-svh bg-earth-dark border-b border-white/10 flex items-end pt-32 pb-16 sm:pb-20"
     data-not-found
     data-copy={JSON.stringify(copy)}
   >
     <div class="px-grid-margin mx-auto w-full max-w-[1200px]">
-      <p class="text-[9px] uppercase tracking-[.16em] text-creme-200/40" data-nf-code>
+      <p
+        class="font-display text-[clamp(5.5rem,18vw,11rem)] font-bold leading-none tracking-tight text-creme-100"
+        data-nf-code
+        aria-hidden="true"
+      >
         {copy.fr.code}
       </p>
-      <div class="mt-8 grid lg:grid-cols-12 gap-8 items-end">
+      <div class="mt-6 grid lg:grid-cols-12 gap-8 items-end">
         <h1 class="text-display-hero lg:col-span-8" data-nf-hero>{copy.fr.hero}</h1>
         <p class="lg:col-span-4 text-sm leading-6 text-creme-200/60 max-w-md" data-nf-intro>
           {copy.fr.intro}
