@@ -18,6 +18,8 @@ Mpichi est un site éditorial bilingue (français / anglais) qui documente la cu
 - [Home (EN)](${absoluteUrl('/en/', origin)}): English home
 - [Recettes (FR)](${absoluteUrl('/recettes/', origin)}): Catalogue complet des recettes
 - [Recipes (EN)](${absoluteUrl('/en/recettes/', origin)}): Full recipe catalogue
+- [Guides (FR)](${absoluteUrl('/guides/', origin)}): Guides éditoriaux (pondu, moambe, marché)
+- [Guides (EN)](${absoluteUrl('/en/guides/', origin)}): Editorial guides in English
 - [FAQ (FR)](${absoluteUrl('/faq/', origin)}): Questions sur la démarche éditoriale
 - [FAQ (EN)](${absoluteUrl('/en/faq/', origin)}): Editorial FAQ in English
 

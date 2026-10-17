@@ -2,6 +2,7 @@ import type { CollectionEntry } from 'astro:content';
 import { defaultLocale, isLocale, type Locale } from './config';
 import { ui, type UiKey } from './ui';
 import { recipeTranslationsEn } from './recipes-en';
+import { guideTranslationsEn } from './guides-en';
 import { slugFromRecipeId } from '../lib/recipe-theme';
 
 export function getLocaleFromUrl(url: URL): Locale {
@@ -110,4 +111,38 @@ export function isRecipeDetailPath(pathname: string) {
 
 export function isRecipeCatalogPath(pathname: string) {
   return pathname === '/recettes' || pathname === '/en/recettes';
+}
+
+export type LocalizedGuide = {
+  slug: string;
+  title: string;
+  description: string;
+  intro: string;
+  body?: string;
+  image: string;
+  imageAlt: string;
+  imageCredit: string;
+  imageCreditUrl: string;
+  relatedRecipes: string[];
+  order: number;
+};
+
+export function localizeGuide(guide: CollectionEntry<'guides'>, locale: Locale): LocalizedGuide {
+  const slug = slugFromRecipeId(guide.id);
+  const translated = locale === 'en' ? guideTranslationsEn[slug] : undefined;
+  const base = guide.data;
+
+  return {
+    slug,
+    title: translated?.title ?? base.title,
+    description: translated?.description ?? base.description,
+    intro: translated?.intro ?? base.intro,
+    body: translated?.body,
+    image: base.image,
+    imageAlt: translated?.imageAlt ?? base.imageAlt,
+    imageCredit: base.imageCredit,
+    imageCreditUrl: base.imageCreditUrl,
+    relatedRecipes: base.relatedRecipes,
+    order: base.order,
+  };
 }

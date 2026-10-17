@@ -13,7 +13,8 @@
 - **Accueil éditorial** avec carrousel héro, sections patrimoine et recettes mises en avant
 - **Catalogue** avec recherche locale, filtres (catégorie, difficulté, région) et pagination
 - **Pages taxonomiques** : index et fiches par `/regions` et `/categories` (FR/EN)
-- **Fiches détail** : temps, portions ajustables (+/− personnes), partager, imprimer, recettes liées, crédit photo
+- **Guides éditoriaux** : `/guides` (pondu, moambe, marché) FR/EN
+- **Fiches détail** : temps, portions ajustables (+/− personnes), partager, imprimer, recettes liées, note sources/transmission, crédit photo
 - **SEO** : canonical, Open Graph / Twitter, sitemap XML, `robots.txt`, JSON-LD (`WebSite` + SearchAction, `Recipe`, FAQ), page 404 bilingue
 - **Découverte IA / GEO** : `llms.txt`, `llms-full.txt`, `humans.txt`
 - **Navigation flottante**, View Transitions Astro, Locomotive Scroll
@@ -79,7 +80,9 @@ mpichi/
 │   └── images/recettes/          # Images locales
 ├── src/
 │   ├── components/               # Hero, cartes, nav…
-│   ├── content/recettes/         # Markdown FR (source)
+│   ├── content/
+│   │   ├── recettes/             # Markdown FR (source)
+│   │   └── guides/               # Guides éditoriaux FR
 │   ├── i18n/
 │   │   ├── config.ts
 │   │   ├── ui.ts                 # Chaînes UI FR/EN

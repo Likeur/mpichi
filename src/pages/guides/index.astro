@@ -1,0 +1,88 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import type { Locale } from '../../i18n/config';
+import { localePath, localizeGuide, useTranslations } from '../../i18n/utils';
+import { absoluteUrl } from '../../lib/site';
+import { pageCanonical, resolveOrigin } from '../../lib/seo';
+
+interface Props {
+  lang?: Locale;
+}
+
+const lang = Astro.props.lang ?? 'fr';
+const t = useTranslations(lang);
+const guides = (await getCollection('guides'))
+  .map((guide) => localizeGuide(guide, lang))
+  .sort((a, b) => a.order - b.order || a.title.localeCompare(b.title, lang));
+
+const origin = resolveOrigin(Astro.site);
+const pageUrl = pageCanonical(Astro.url.pathname, origin);
+
+const itemListJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: t('guides.title'),
+  description: t('guides.description'),
+  url: pageUrl,
+  inLanguage: lang === 'en' ? 'en' : 'fr',
+  mainEntity: {
+    '@type': 'ItemList',
+    numberOfItems: guides.length,
+    itemListElement: guides.map((guide, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: guide.title,
+      url: absoluteUrl(localePath(`/guides/${guide.slug}`, lang), origin),
+    })),
+  },
+};
+---
+
+<BaseLayout
+  title={t('guides.title')}
+  description={t('guides.description')}
+  lang={lang}
+  image={guides[0]?.image}
+  imageAlt={guides[0]?.imageAlt}
+  jsonLd={itemListJsonLd}
+>
+  <section class="pt-28 pb-12 bg-earth-dark min-h-[50svh] flex items-end border-b border-white/10">
+    <div class="px-grid-margin max-w-[1200px] mx-auto w-full">
+      <div class="grid lg:grid-cols-12 gap-8 items-end" data-stagger>
+        <div class="lg:col-span-8">
+          <h1 class="text-display-hero">{t('guides.hero')}</h1>
+        </div>
+        <p class="lg:col-span-4 text-sm leading-6 text-creme-200/60 max-w-md">
+          {t('guides.intro')}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-creme-100 py-12 sm:py-16 text-earth-900">
+    <div class="px-grid-margin max-w-[900px] mx-auto">
+      {
+        guides.length === 0 ? (
+          <p class="text-earth-900/60">{t('guides.empty')}</p>
+        ) : (
+          <ul class="list-none p-0 m-0 divide-y divide-earth-900/10" data-stagger>
+            {guides.map((guide) => (
+              <li class="py-8 first:pt-0">
+                <a href={localePath(`/guides/${guide.slug}`, lang)} class="group block">
+                  <h2 class="font-display text-2xl sm:text-3xl font-light text-earth-900 group-hover:text-mpichi-red transition-colors">
+                    {guide.title}
+                  </h2>
+                  <p class="mt-3 max-w-2xl text-sm leading-relaxed text-earth-900/60">{guide.intro}</p>
+                  <p class="mt-4 text-[9px] uppercase tracking-[.16em] text-earth-900/40 underline decoration-earth-900/20 underline-offset-4">
+                    {t('guides.read')}
+                  </p>
+                </a>
+              </li>
+            ))}
+          </ul>
+        )
+      }
+    </div>
+  </section>
+</BaseLayout>

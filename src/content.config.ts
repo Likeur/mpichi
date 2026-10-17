@@ -27,4 +27,22 @@ const recettes = defineCollection({
   }),
 });
 
-export const collections = { recettes };
+const guides = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/guides' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    intro: z.string(),
+    image: z.string().refine(
+      (value) => value.startsWith('/') || z.string().url().safeParse(value).success,
+      'L’image doit être une URL absolue ou un chemin public commençant par /',
+    ),
+    imageAlt: z.string(),
+    imageCredit: z.string(),
+    imageCreditUrl: z.string().url(),
+    relatedRecipes: z.array(z.string()).default([]),
+    order: z.number().default(0),
+  }),
+});
+
+export const collections = { recettes, guides };

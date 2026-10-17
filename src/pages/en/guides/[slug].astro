@@ -1,0 +1,17 @@
+---
+import { getCollection } from 'astro:content';
+import GuidePage from '../../guides/[slug].astro';
+import { slugFromRecipeId } from '../../../lib/recipe-theme';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guides');
+  return guides.map((guide) => ({
+    params: { slug: slugFromRecipeId(guide.id) },
+    props: { guide, lang: 'en' as const },
+  }));
+}
+
+const { guide, lang } = Astro.props;
+---
+
+<GuidePage guide={guide} lang={lang} />
