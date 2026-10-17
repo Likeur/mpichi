@@ -364,3 +364,47 @@ html[data-recipe-transition]::view-transition-new(recipe-image) {
     animation: none !important;
   }
 }
+
+@media print {
+  @page {
+    margin: 1.4cm;
+  }
+
+  body {
+    background: white !important;
+    color: #1c1410 !important;
+  }
+
+  [data-print-hide],
+  header.fixed,
+  footer,
+  .image-grain,
+  [data-recipe-overlay],
+  [data-recipe-related] {
+    display: none !important;
+  }
+
+  [data-recipe-hero] {
+    position: static !important;
+    max-height: 220px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  header.relative {
+    min-height: 0 !important;
+    color: #1c1410 !important;
+  }
+
+  header.relative a,
+  header.relative p,
+  header.relative dt,
+  header.relative dd,
+  header.relative h1 {
+    color: #1c1410 !important;
+  }
+
+  [data-recipe-body] {
+    background: white !important;
+  }
+}

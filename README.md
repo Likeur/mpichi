@@ -13,7 +13,7 @@
 - **Accueil éditorial** avec carrousel héro, sections patrimoine et recettes mises en avant
 - **Catalogue** avec recherche locale, filtres (catégorie, difficulté, région) et pagination
 - **Pages taxonomiques** : index et fiches par `/regions` et `/categories` (FR/EN)
-- **Fiches détail** : temps, portions, difficulté, ingrédients, étapes, crédit photo
+- **Fiches détail** : temps, portions ajustables (+/− personnes), partager, imprimer, recettes liées, crédit photo
 - **SEO** : canonical, Open Graph / Twitter, sitemap XML, `robots.txt`, JSON-LD (`WebSite` + SearchAction, `Recipe`, FAQ), page 404 bilingue
 - **Découverte IA / GEO** : `llms.txt`, `llms-full.txt`, `humans.txt`
 - **Navigation flottante**, View Transitions Astro, Locomotive Scroll

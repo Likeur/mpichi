@@ -1,6 +1,7 @@
 ---
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import EditorialRecipeCard from '../../components/EditorialRecipeCard.astro';
 import PillButton from '../../components/PillButton.astro';
 import { slugFromRecipeId } from '../../lib/recipe-theme';
 import type { Locale } from '../../i18n/config';
@@ -9,6 +10,7 @@ import { localePath, localizeRecipe, useTranslations } from '../../i18n/utils';
 import { absoluteUrl, toIsoDuration } from '../../lib/site';
 import { pageCanonical, resolveOrigin } from '../../lib/seo';
 import { regionSlugFromKey } from '../../lib/taxonomy';
+import { pickRelatedRecipes } from '../../lib/related-recipes';
 
 export async function getStaticPaths() {
   const recipes = await getCollection('recettes');
@@ -35,6 +37,9 @@ const regionSlug = regionSlugFromKey(recipe.data.region);
 const regionHref = regionSlug ? localePath(`/regions/${regionSlug}`, lang) : undefined;
 const categoryHref = localePath(`/categories/${localized.category}`, lang);
 const categoryLabel = t(`category.${localized.category}` as UiKey);
+const allRecipes = await getCollection('recettes');
+const related = pickRelatedRecipes(recipe, allRecipes, 3);
+const peopleTemplate = t('recipe.people', { n: '__N__' });
 
 const prepIso = toIsoDuration(localized.prepTime);
 const cookIso = toIsoDuration(localized.cookTime);
@@ -159,6 +164,7 @@ const breadcrumbJsonLd = {
         class="text-[9px] uppercase tracking-[.17em] text-creme-100/65 hover:text-white transition-colors"
         data-reveal
         style="--reveal-delay: 40ms"
+        data-print-hide
       >
         {t('recipe.back')}
       </a>
@@ -204,7 +210,9 @@ const breadcrumbJsonLd = {
           </div>
           <div>
             <dt class="text-creme-100/35">{t('recipe.servings')}</dt>
-            <dd class="mt-1 text-creme-100">{t('recipe.people', { n: localized.servings })}</dd>
+            <dd class="mt-1 text-creme-100" data-servings-display>
+              {t('recipe.people', { n: localized.servings })}
+            </dd>
           </div>
           <div>
             <dt class="text-creme-100/35">{t('recipe.level')}</dt>
@@ -219,14 +227,114 @@ const breadcrumbJsonLd = {
         class="absolute right-grid-margin bottom-3 text-[8px] uppercase tracking-[.12em] text-white/45 hover:text-white/80"
         data-reveal
         style="--reveal-delay: 300ms"
+        data-print-hide
       >
         {t('recipe.photo')} · {localized.imageCredit}
       </a>
     </div>
   </header>
 
-  <article class="bg-creme-100 text-earth-900" data-recipe-body>
+  <article
+    class="bg-creme-100 text-earth-900"
+    data-recipe-body
+    data-recipe-tools
+    data-locale={lang}
+    data-base-servings={localized.servings}
+    data-people-template={peopleTemplate}
+    data-share-title={localized.title}
+    data-share-text={localized.description}
+    data-share-url={pageUrl}
+    data-share-copied={t('recipe.shareCopied')}
+  >
     <div class="px-grid-margin max-w-[1050px] mx-auto py-10 sm:py-16">
+      <div
+        class="mb-10 flex flex-col gap-5 border-b border-earth-900/12 pb-6 sm:flex-row sm:items-center sm:justify-between"
+        data-print-hide
+        data-reveal-static
+      >
+        <div
+          class="flex items-center gap-3"
+          role="group"
+          aria-label={t('recipe.scale')}
+        >
+          <svg
+            class="size-[18px] text-earth-900/55"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <circle cx="9" cy="8" r="3.25" stroke="currentColor" stroke-width="1.5"></circle>
+            <circle cx="16.5" cy="9" r="2.5" stroke="currentColor" stroke-width="1.5"></circle>
+            <path
+              d="M3.5 18.5c.6-2.8 2.7-4.5 5.5-4.5s4.9 1.7 5.5 4.5"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            ></path>
+            <path
+              d="M14.5 14.2c1.5-.5 3.2-.3 4.6.8.9.7 1.5 1.7 1.9 2.9"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+          <button
+            type="button"
+            data-servings-minus
+            class="flex size-8 items-center justify-center text-earth-900/45 transition-colors hover:text-earth-900 disabled:pointer-events-none disabled:opacity-30"
+            aria-label={t('recipe.decreaseServings')}
+          >
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M3 7h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+          </button>
+          <span
+            class="min-w-6 text-center font-display text-xl font-light tabular-nums text-earth-900"
+            data-servings-count
+            aria-live="polite"
+          >
+            {localized.servings}
+          </span>
+          <button
+            type="button"
+            data-servings-plus
+            class="flex size-8 items-center justify-center text-earth-900/45 transition-colors hover:text-earth-900 disabled:pointer-events-none disabled:opacity-30"
+            aria-label={t('recipe.increaseServings')}
+          >
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M7 3v8M3 7h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="flex items-center gap-5">
+          <button
+            type="button"
+            data-share
+            class="inline-flex items-center gap-2 text-[10px] uppercase tracking-[.16em] text-earth-900/45 transition-colors hover:text-earth-900"
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="18" cy="5" r="2.5" stroke="currentColor" stroke-width="1.5"></circle>
+              <circle cx="6" cy="12" r="2.5" stroke="currentColor" stroke-width="1.5"></circle>
+              <circle cx="18" cy="19" r="2.5" stroke="currentColor" stroke-width="1.5"></circle>
+              <path d="M8.2 10.8 15.8 6.7M8.2 13.2l7.6 4.1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+            <span data-share-label>{t('recipe.share')}</span>
+          </button>
+          <button
+            type="button"
+            data-print
+            class="inline-flex items-center gap-2 text-[10px] uppercase tracking-[.16em] text-earth-900/45 transition-colors hover:text-earth-900"
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M7 8V4h10v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M7 16H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
+              <path d="M7 13h10v7H7v-7Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
+            </svg>
+            <span>{t('recipe.print')}</span>
+          </button>
+        </div>
+      </div>
+
       <div class="grid md:grid-cols-12 gap-14 md:gap-8" data-stagger>
         <section class="md:col-span-4" data-reveal-static>
           <h2 class="font-display text-3xl font-light">{t('recipe.ingredients')}</h2>
@@ -237,7 +345,7 @@ const breadcrumbJsonLd = {
                   <span class="text-mpichi-red shrink-0" aria-hidden="true">
                     ·
                   </span>
-                  <span>{item}</span>
+                  <span data-ingredient data-base={item}>{item}</span>
                 </li>
               ))
             }
@@ -275,9 +383,114 @@ const breadcrumbJsonLd = {
         )
       }
 
-      <div class="mt-16 pt-8 border-t border-earth-900/12">
+      {
+        related.length > 0 && (
+          <section class="mt-20 pt-12 border-t border-earth-900/12" data-recipe-related data-reveal-static>
+            <div class="mb-10 max-w-xl">
+              <h2 class="font-display text-3xl font-light text-earth-900">{t('recipe.related')}</h2>
+              <p class="mt-3 text-sm leading-relaxed text-earth-900/55">{t('recipe.relatedIntro')}</p>
+            </div>
+            <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-14 list-none p-0 m-0">
+              {related.map((item) => (
+                <li>
+                  <EditorialRecipeCard recipe={item} priority={false} lang={lang} />
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
+      }
+
+      <div class="mt-16 pt-8 border-t border-earth-900/12" data-print-hide>
         <PillButton href={localePath('/recettes', lang)} label={t('recipe.backCta')} variant="ink" />
       </div>
     </div>
   </article>
 </BaseLayout>
+
+<script>
+  import { scaleIngredientText, scaleServings } from '../../lib/portions';
+
+  function initRecipeTools() {
+    const root = document.querySelector<HTMLElement>('[data-recipe-tools]');
+    if (!root || root.dataset.toolsReady === 'true') return;
+    root.dataset.toolsReady = 'true';
+
+    const locale = (root.dataset.locale === 'en' ? 'en' : 'fr') as 'fr' | 'en';
+    const baseServings = Math.max(1, Number(root.dataset.baseServings ?? 1) || 1);
+    const minServings = 1;
+    const maxServings = Math.max(baseServings * 4, 12);
+    const peopleTemplate = root.dataset.peopleTemplate ?? '{n}';
+    const shareTitle = root.dataset.shareTitle ?? document.title;
+    const shareText = root.dataset.shareText ?? '';
+    const shareUrl = root.dataset.shareUrl ?? window.location.href;
+    const shareCopied = root.dataset.shareCopied ?? 'OK';
+
+    const servingsDisplay = document.querySelector<HTMLElement>('[data-servings-display]');
+    const servingsCount = root.querySelector<HTMLElement>('[data-servings-count]');
+    const minusButton = root.querySelector<HTMLButtonElement>('[data-servings-minus]');
+    const plusButton = root.querySelector<HTMLButtonElement>('[data-servings-plus]');
+    const ingredients = [...root.querySelectorAll<HTMLElement>('[data-ingredient]')];
+    const shareButton = root.querySelector<HTMLButtonElement>('[data-share]');
+    const shareLabel = root.querySelector<HTMLElement>('[data-share-label]');
+    const printButton = root.querySelector<HTMLButtonElement>('[data-print]');
+
+    let servings = baseServings;
+
+    const applyServings = (next: number) => {
+      servings = Math.min(maxServings, Math.max(minServings, next));
+      const factor = servings / baseServings;
+
+      ingredients.forEach((item) => {
+        const base = item.dataset.base ?? item.textContent ?? '';
+        item.textContent = scaleIngredientText(base, factor, locale);
+      });
+
+      if (servingsCount) servingsCount.textContent = String(servings);
+      if (servingsDisplay) {
+        servingsDisplay.textContent = peopleTemplate.replace(
+          '__N__',
+          scaleServings(baseServings, factor, locale),
+        );
+      }
+      if (minusButton) minusButton.disabled = servings <= minServings;
+      if (plusButton) plusButton.disabled = servings >= maxServings;
+    };
+
+    minusButton?.addEventListener('click', () => applyServings(servings - 1));
+    plusButton?.addEventListener('click', () => applyServings(servings + 1));
+    applyServings(baseServings);
+
+    shareButton?.addEventListener('click', async () => {
+      const payload = { title: shareTitle, text: shareText, url: shareUrl };
+      try {
+        if (navigator.share) {
+          await navigator.share(payload);
+          return;
+        }
+      } catch {
+        /* user cancelled or share failed — fall through to clipboard */
+      }
+
+      try {
+        await navigator.clipboard.writeText(shareUrl);
+        if (shareLabel) {
+          const previous = shareLabel.textContent;
+          shareLabel.textContent = shareCopied;
+          window.setTimeout(() => {
+            shareLabel.textContent = previous;
+          }, 1600);
+        }
+      } catch {
+        window.prompt(shareCopied, shareUrl);
+      }
+    });
+
+    printButton?.addEventListener('click', () => {
+      window.print();
+    });
+  }
+
+  initRecipeTools();
+  document.addEventListener('astro:page-load', initRecipeTools);
+</script>
