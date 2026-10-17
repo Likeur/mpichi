@@ -1,53 +1,52 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import EditorialPage from '../components/EditorialPage.astro';
+import type { Locale } from '../i18n/config';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang?: Locale;
+}
+
+const lang = Astro.props.lang ?? 'fr';
+const t = useTranslations(lang);
 ---
 
-<BaseLayout title="Politique de confidentialité" description="Politique de confidentialité du site Mpichi.">
-  <EditorialPage
-    title="Confidentialité."
-    introduction="Une présentation claire des données utilisées lors de votre consultation de Mpichi."
-  >
+<BaseLayout title={t('privacy.title')} description={t('privacy.description')} lang={lang}>
+  <EditorialPage title={t('privacy.hero')} introduction={t('privacy.intro')}>
     <div class="grid gap-12 md:grid-cols-12 md:gap-y-16">
       <section class="md:col-span-8" data-reveal>
-        <h2 class="font-display text-3xl font-light">Données collectées</h2>
-        <p class="mt-5 text-[15px] leading-7 text-earth-900/65">
-          Mpichi ne propose actuellement ni compte utilisateur, ni formulaire, ni espace de commentaire. Le
-          site ne collecte donc pas directement votre nom, votre adresse électronique ou vos coordonnées.
-        </p>
+        <h2 class="font-display text-3xl font-light">{t('privacy.data.title')}</h2>
+        <p class="mt-5 text-[15px] leading-7 text-earth-900/65">{t('privacy.data.body')}</p>
       </section>
 
       <section class="md:col-span-8" data-reveal>
-        <h2 class="font-display text-3xl font-light">Stockage local</h2>
-        <p class="mt-5 text-[15px] leading-7 text-earth-900/65">
-          Une information temporaire peut être enregistrée dans votre navigateur afin de restaurer votre
-          position dans le catalogue après la consultation d’une recette. Elle reste dans la session du
-          navigateur et n’est pas transmise à Mpichi.
-        </p>
+        <h2 class="font-display text-3xl font-light">{t('privacy.local.title')}</h2>
+        <p class="mt-5 text-[15px] leading-7 text-earth-900/65">{t('privacy.local.body')}</p>
       </section>
 
       <section class="md:col-span-8" data-reveal>
-        <h2 class="font-display text-3xl font-light">Services externes</h2>
-        <p class="mt-5 text-[15px] leading-7 text-earth-900/65">
-          Les polices sont chargées depuis Google Fonts et certaines photographies depuis Wikimedia Commons.
-          Lors de ces chargements, ces services peuvent recevoir des informations techniques telles que votre
-          adresse IP, votre navigateur et l’heure de la requête, conformément à leurs propres politiques.
-        </p>
+        <h2 class="font-display text-3xl font-light">{t('privacy.external.title')}</h2>
+        <p class="mt-5 text-[15px] leading-7 text-earth-900/65">{t('privacy.external.body')}</p>
       </section>
 
       <section class="md:col-span-8" data-reveal>
-        <h2 class="font-display text-3xl font-light">Cookies et mesure d’audience</h2>
-        <p class="mt-5 text-[15px] leading-7 text-earth-900/65">
-          Dans sa version actuelle, Mpichi ne dépose aucun cookie publicitaire et n’utilise aucun outil de
-          mesure d’audience.
-        </p>
+        <h2 class="font-display text-3xl font-light">{t('privacy.cookies.title')}</h2>
+        <p class="mt-5 text-[15px] leading-7 text-earth-900/65">{t('privacy.cookies.body')}</p>
       </section>
 
       <section class="md:col-span-8" data-reveal>
-        <h2 class="font-display text-3xl font-light">Vos questions</h2>
+        <h2 class="font-display text-3xl font-light">{t('privacy.contact.title')}</h2>
         <p class="mt-5 text-[15px] leading-7 text-earth-900/65">
-          Pour toute question relative à la confidentialité, contactez l’éditeur depuis
-          <a href="https://likeur.xyz" target="_blank" rel="noreferrer" class="underline underline-offset-4 hover:text-mpichi-red">likeur.xyz</a>.
+          {t('privacy.contact.body')}{' '}
+          <a
+            href="https://likeur.xyz"
+            target="_blank"
+            rel="noreferrer"
+            class="underline underline-offset-4 hover:text-mpichi-red"
+          >
+            likeur.xyz
+          </a>.
         </p>
       </section>
     </div>

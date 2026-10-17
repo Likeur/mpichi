@@ -19,7 +19,7 @@
 
   --color-moss: #405142;
   --color-moss-deep: #101912;
-  --spacing-grid-margin: clamp(16px, 1.35vw, 26px);
+  --spacing-grid-margin: clamp(1.5rem, 5vw, 2.75rem);
 }
 
 @layer base {

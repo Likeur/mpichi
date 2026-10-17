@@ -3,19 +3,53 @@ import '../styles/global.css';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
 import FloatingNav from '../components/FloatingNav.astro';
 import { ClientRouter } from 'astro:transitions';
+import type { Locale } from '../i18n/config';
+import { localePath, useTranslations } from '../i18n/utils';
+import {
+  defaultOgImage,
+  hreflangUrls,
+  pageCanonical,
+  resolveOrigin,
+  websiteJsonLd,
+} from '../lib/seo';
+import { SITE_AUTHOR, SITE_NAME } from '../lib/site';
 
 interface Props {
   title: string;
   description?: string;
+  lang?: Locale;
+  image?: string;
+  imageAlt?: string;
+  type?: 'website' | 'article';
+  noindex?: boolean;
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
-const { title, description = 'Cuisine congolaise — recettes, régions et traditions de la RDC' } =
-  Astro.props;
-const fullTitle = title === 'Accueil' ? 'Mpichi — Cuisine congolaise' : `${title} | Mpichi`;
+const lang = Astro.props.lang ?? 'fr';
+const t = useTranslations(lang);
+const {
+  title,
+  description = t('meta.defaultDescription'),
+  image,
+  imageAlt,
+  type = 'website',
+  noindex = false,
+  jsonLd,
+} = Astro.props;
+const fullTitle =
+  title === t('meta.homeTitle') ? t('meta.siteName') : `${title} | Mpichi`;
+const photoCredits = t('footer.photoCreditsBody').split('\n');
+
+const origin = resolveOrigin(Astro.site);
+const canonical = pageCanonical(Astro.url.pathname, origin);
+const alternates = hreflangUrls(Astro.url.pathname, origin);
+const ogImage = image?.startsWith('http') ? image : image ? `${origin}${image}` : defaultOgImage(origin);
+const ogLocale = lang === 'en' ? 'en_US' : 'fr_CD';
+const structured = [websiteJsonLd(lang, origin), ...(jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [])];
 ---
 
 <!doctype html>
-<html lang="fr">
+<html lang={lang}>
   <head>
     <!-- Google tag (gtag.js) -->
     <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-WLFG0GGT90"></script>
@@ -30,7 +64,41 @@ const fullTitle = title === 'Accueil' ? 'Mpichi — Cuisine congolaise' : `${tit
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    <meta name="author" content={SITE_AUTHOR} />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#2a1b15" />
+    <meta name="color-scheme" content="dark light" />
+    {noindex ? (
+      <meta name="robots" content="noindex, nofollow" />
+    ) : (
+      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    )}
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="fr" href={alternates.fr} />
+    <link rel="alternate" hreflang="en" href={alternates.en} />
+    <link rel="alternate" hreflang="x-default" href={alternates.fr} />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM instructions" />
+    <link rel="author" type="text/plain" href="/humans.txt" />
+    <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={ogLocale} />
+    <meta property="og:locale:alternate" content={lang === 'en' ? 'fr_CD' : 'en_US'} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:alt" content={imageAlt || fullTitle} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -39,9 +107,10 @@ const fullTitle = title === 'Accueil' ? 'Mpichi — Cuisine congolaise' : `${tit
     />
     <ClientRouter />
     <title>{fullTitle}</title>
+    <script type="application/ld+json" set:html={JSON.stringify(structured.length === 1 ? structured[0] : structured)} />
   </head>
   <body class="min-h-screen flex flex-col">
-    <FloatingNav transition:persist />
+    <FloatingNav lang={lang} />
     <svg
       aria-hidden="true"
       class="pointer-events-none fixed h-0 w-0 overflow-hidden"
@@ -104,38 +173,37 @@ const fullTitle = title === 'Accueil' ? 'Mpichi — Cuisine congolaise' : `${tit
         <div class="max-w-md">
           <p class="font-display text-5xl font-light tracking-tight text-creme-100">Mpichi</p>
           <p class="mt-5 text-sm leading-relaxed text-creme-200/60">
-            Des recettes congolaises racontées par leurs gestes, leurs régions et celles et ceux qui les
-            transmettent.
+            {t('footer.tagline')}
           </p>
         </div>
         <div class="flex flex-col gap-3 text-[10px] uppercase tracking-[.16em]">
-          <p class="mb-2 text-creme-200/35">Explorer</p>
-          <a href="/recettes" class="hover:text-white transition-colors">Recettes</a>
-          <a href="/faq" class="hover:text-white transition-colors">FAQ</a>
+          <p class="mb-2 text-creme-200/35">{t('footer.explore')}</p>
+          <a href={localePath('/recettes', lang)} class="hover:text-white transition-colors">{t('nav.recipes')}</a>
+          <a href={localePath('/faq', lang)} class="hover:text-white transition-colors">FAQ</a>
         </div>
         <div class="flex flex-col gap-3 text-[10px] uppercase tracking-[.16em]">
-          <p class="mb-2 text-creme-200/35">Informations</p>
-          <a href="/mentions-legales" class="hover:text-white transition-colors">Mentions légales</a>
-          <a href="/confidentialite" class="hover:text-white transition-colors">Confidentialité</a>
+          <p class="mb-2 text-creme-200/35">{t('footer.info')}</p>
+          <a href={localePath('/mentions-legales', lang)} class="hover:text-white transition-colors">{t('footer.legal')}</a>
+          <a href={localePath('/confidentialite', lang)} class="hover:text-white transition-colors">{t('footer.privacy')}</a>
         </div>
         <div class="text-[10px] uppercase tracking-[.16em]">
-          <p class="mb-5 text-creme-200/35">Crédits photo</p>
+          <p class="mb-5 text-creme-200/35">{t('footer.photoCredits')}</p>
           <p class="normal-case tracking-normal leading-relaxed text-creme-200/55">
-            Photographies sous licences Creative Commons.<br />Crédit détaillé sur chaque recette.
+            {photoCredits[0]}<br />{photoCredits[1]}
           </p>
         </div>
       </div>
       <div class="mx-grid-margin border-t border-white/10 py-6 grid gap-4 text-[9px] uppercase tracking-[.16em] text-creme-200/35 sm:grid-cols-3 sm:items-center">
         <p>© {new Date().getFullYear()} Mpichi</p>
         <p class="flex items-center gap-1.5 sm:justify-center">
-          Fait avec
-          <svg viewBox="0 0 24 24" class="size-3 text-mpichi-red" aria-label="amour">
+          {t('footer.madeWith')}
+          <svg viewBox="0 0 24 24" class="size-3 text-mpichi-red" aria-label={t('footer.love')}>
             <path
               fill="currentColor"
               d="M12 21s-7.2-4.35-9.55-8.5C.64 9.3 2.14 5.5 5.8 4.75A5.45 5.45 0 0 1 12 7.2a5.45 5.45 0 0 1 6.2-2.45c3.66.75 5.16 4.55 3.35 7.75C19.2 16.65 12 21 12 21Z"
             />
           </svg>
-          en RDC par
+          {t('footer.inDrcBy')}
           <a
             href="https://likeur.xyz"
             target="_blank"
@@ -333,8 +401,10 @@ const fullTitle = title === 'Accueil' ? 'Mpichi — Cuisine congolaise' : `${tit
         sharedFrom = window.location.pathname;
         sharedTo = transitionEvent.to.pathname;
 
-        const entersRecipe = sharedTo.startsWith('/recettes/');
-        const leavesRecipe = sharedFrom.startsWith('/recettes/') && sharedTo === '/recettes';
+        const isDetail = (path: string) => /\/recettes\/.+/.test(path);
+        const isCatalog = (path: string) => path === '/recettes' || path === '/en/recettes';
+        const entersRecipe = isDetail(sharedTo);
+        const leavesRecipe = isDetail(sharedFrom) && isCatalog(sharedTo);
         if (!entersRecipe && !leavesRecipe) return;
 
         document.documentElement.setAttribute(
@@ -342,7 +412,7 @@ const fullTitle = title === 'Accueil' ? 'Mpichi — Cuisine congolaise' : `${tit
           entersRecipe ? 'enter' : 'leave',
         );
 
-        if (entersRecipe && sharedFrom === '/recettes') {
+        if (entersRecipe && isCatalog(sharedFrom)) {
           rememberCatalogPosition(sharedTo);
         }
 
@@ -379,9 +449,12 @@ const fullTitle = title === 'Accueil' ? 'Mpichi — Cuisine congolaise' : `${tit
 
         if (!sharedSource) return;
 
-        if (sharedTo.startsWith('/recettes/')) {
+        const toDetail = /\/recettes\/.+/.test(sharedTo);
+        const toCatalog = sharedTo === '/recettes' || sharedTo === '/en/recettes';
+
+        if (toDetail) {
           sharedTarget = nextDocument.querySelector<HTMLElement>('[data-recipe-hero]') ?? undefined;
-        } else if (sharedTo === '/recettes') {
+        } else if (toCatalog) {
           const sourcePath = CSS.escape(sharedFrom);
           sharedTarget =
             nextDocument.querySelector<HTMLElement>(`a[href="${sourcePath}"] [data-recipe-image]`) ?? undefined;
@@ -391,13 +464,13 @@ const fullTitle = title === 'Accueil' ? 'Mpichi — Cuisine congolaise' : `${tit
         if (sharedTarget) {
           nextDocument.documentElement.setAttribute(
             'data-recipe-transition',
-            sharedTo.startsWith('/recettes/') ? 'enter' : 'leave',
+            toDetail ? 'enter' : 'leave',
           );
         }
-        if (sharedTarget && sharedTo.startsWith('/recettes/') && !reduceMotion) {
+        if (sharedTarget && toDetail && !reduceMotion) {
           nextDocument.documentElement.setAttribute('data-defer-recipe-reveal', '');
         }
-        if (sharedTo === '/recettes') {
+        if (toCatalog) {
           nextDocument.documentElement.setAttribute('data-restore-catalog', '');
         }
 

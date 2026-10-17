@@ -5,7 +5,15 @@ import HeroCarousel from '../components/HeroCarousel.astro';
 import type { HeroSlide } from '../components/HeroCarousel.astro';
 import OriginRecipeCard from '../components/OriginRecipeCard.astro';
 import EditorialRecipeCard from '../components/EditorialRecipeCard.astro';
+import type { Locale } from '../i18n/config';
+import { localePath, localizeRecipe, useTranslations } from '../i18n/utils';
 
+interface Props {
+  lang?: Locale;
+}
+
+const lang = Astro.props.lang ?? 'fr';
+const t = useTranslations(lang);
 const allRecipes = await getCollection('recettes');
 const featured = allRecipes.filter((r) => r.data.featured);
 const railRecipes = featured.length > 0 ? featured : allRecipes;
@@ -15,76 +23,84 @@ const heroContent = [
   {
     id: 'mpichi',
     imageSlug: 'soso-lumba-lumba',
-    title: 'Mpichi,\nla cuisine en héritage.',
-    summary:
-      'Un répertoire vivant des recettes de la République démocratique du Congo, de leurs gestes et de leurs territoires.',
+    titleKey: 'home.hero.mpichi.title' as const,
+    summaryKey: 'home.hero.mpichi.summary' as const,
   },
   {
     id: 'liboke-poisson',
     imageSlug: 'liboke-poisson',
-    title: 'Le liboke,\nle fleuve à table.',
-    summary: 'Du poisson, des aromates et le parfum d’une feuille chauffée sur la braise.',
+    titleKey: 'home.hero.liboke.title' as const,
+    summaryKey: 'home.hero.liboke.summary' as const,
   },
   {
     id: 'pondu',
     imageSlug: 'pondu',
-    title: 'Le pondu se prépare\navec le temps.',
-    summary: 'Un geste patient, transmis de cuisine en cuisine, jusqu’à la texture juste.',
+    titleKey: 'home.hero.pondu.title' as const,
+    summaryKey: 'home.hero.pondu.summary' as const,
   },
   {
     id: 'moambe-poulet',
     imageSlug: 'moambe-poulet',
-    title: 'Moambe.\nUn plat, mille foyers.',
-    summary: 'Une sauce profonde, un poulet longuement mijoté et le repas qui rassemble.',
+    titleKey: 'home.hero.moambe.title' as const,
+    summaryKey: 'home.hero.moambe.summary' as const,
   },
 ];
 
 const heroSlides: HeroSlide[] = heroContent
   .filter(({ imageSlug }) => byId[imageSlug])
-  .map(({ id, imageSlug, title, summary }) => ({
-    id,
-    title,
-    summary,
-    cta: { label: 'Découvrir toutes les recettes', href: '/recettes' },
-    image: byId[imageSlug].data.image,
-    imageAlt: byId[imageSlug].data.imageAlt,
-    imagePosition: byId[imageSlug].data.imagePosition,
-  }));
+  .map(({ id, imageSlug, titleKey, summaryKey }) => {
+    const source = byId[imageSlug];
+    const localized = localizeRecipe(source, lang);
+    return {
+      id,
+      title: t(titleKey),
+      summary: t(summaryKey),
+      cta: { label: t('home.hero.cta'), href: localePath('/recettes', lang) },
+      image: localized.image,
+      imageAlt: localized.imageAlt,
+      imagePosition: localized.imagePosition,
+    };
+  });
 
 const heritageImage = {
   src: 'https://commons.wikimedia.org/wiki/Special:Redirect/file/A%20woman%20mixing%20dough%20to%20make%20bread%20in%20the%20town%20of%20Masi%20Manimba%2C%20DRC%20%287610450604%29.jpg?width=1600',
-  alt: 'Une femme pétrit une pâte à Masi-Manimba, en République démocratique du Congo',
+  alt: t('home.heritage.alt'),
   credit: 'Russell Watkins / DFID — CC BY-SA 2.0',
   url: 'https://commons.wikimedia.org/wiki/File:A_woman_mixing_dough_to_make_bread_in_the_town_of_Masi_Manimba,_DRC_(7610450604).jpg',
 };
+
+const processSteps = [
+  ['01', t('home.process.01.title'), t('home.process.01.body')],
+  ['02', t('home.process.02.title'), t('home.process.02.body')],
+  ['03', t('home.process.03.title'), t('home.process.03.body')],
+  ['04', t('home.process.04.title'), t('home.process.04.body')],
+];
 ---
 
-<BaseLayout title="Accueil">
+<BaseLayout title={t('meta.homeTitle')} lang={lang}>
   <HeroCarousel slides={heroSlides} />
 
   <section class="py-20 sm:py-28 bg-earth-dark border-t border-white/5">
-    <div class="px-grid-margin max-w-[1200px] mx-auto">
+    <div class="max-w-[1200px] mx-auto pl-6 pr-6 sm:pl-10 sm:pr-10">
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10" data-reveal>
         <div>
           <h2 class="font-display text-4xl sm:text-6xl font-light tracking-tight text-creme-100">
-            À chaque plat, son territoire.
+            {t('home.rail.title')}
           </h2>
         </div>
         <a
-          href="/recettes"
+          href={localePath('/recettes', lang)}
           class="text-[10px] uppercase tracking-[.16em] text-creme-200/60 hover:text-white transition-colors shrink-0"
         >
-          Toutes les recettes&nbsp;&nbsp;↗
+          {t('home.rail.link')}&nbsp;&nbsp;↗
         </a>
       </div>
       <div
-        class="flex gap-5 sm:gap-6 overflow-x-auto hide-scrollbar snap-x snap-mandatory py-6 -my-6 -mx-grid-margin px-grid-margin"
+        class="flex gap-5 sm:gap-6 overflow-x-auto hide-scrollbar snap-x snap-mandatory py-6 -my-6 -mx-6 px-6 sm:-mx-10 sm:px-10"
         data-recipe-rail
         data-reveal
       >
-        {railRecipes.map((recipe) => (
-          <OriginRecipeCard recipe={recipe} />
-        ))}
+        {railRecipes.map((recipe) => <OriginRecipeCard recipe={recipe} lang={lang} />)}
       </div>
     </div>
   </section>
@@ -106,22 +122,21 @@ const heritageImage = {
             rel="noreferrer"
             class="absolute bottom-3 right-3 text-[8px] uppercase tracking-[.13em] text-white/60 hover:text-white"
           >
-            Photo · {heritageImage.credit}
+            {t('recipe.photo')} · {heritageImage.credit}
           </a>
         </div>
         <div class="lg:col-span-4 lg:col-start-9 lg:pt-28" data-stagger>
           <h2 class="font-display text-4xl sm:text-5xl font-light leading-[.98] tracking-tight">
-            Une cuisine vivante, jamais figée.
+            {t('home.heritage.title')}
           </h2>
           <p class="mt-7 text-[15px] leading-7 text-earth-900/65">
-            Mpichi documente les recettes telles qu’elles se transmettent&nbsp;: par les gestes, les souvenirs,
-            les saisons et ce que l’on trouve au marché. Chaque foyer apporte sa mesure, son temps et sa voix.
+            {t('home.heritage.body')}
           </p>
           <a
-            href="/recettes"
+            href={localePath('/recettes', lang)}
             class="mt-9 inline-flex items-center gap-4 text-[10px] font-medium uppercase tracking-[.16em]"
           >
-            Découvrir les recettes
+            {t('home.heritage.cta')}
             <span class="flex size-10 items-center justify-center rounded-full border border-earth-900/25 transition-colors hover:bg-earth-900 hover:text-creme-50">→</span>
           </a>
         </div>
@@ -132,23 +147,20 @@ const heritageImage = {
   <section class="bg-moss-deep py-20 sm:py-28 overflow-hidden">
     <div class="px-grid-margin max-w-[1200px] mx-auto">
       <h2 class="font-display text-4xl sm:text-6xl font-light tracking-tight text-creme-100 max-w-3xl" data-reveal>
-        Une recette commence bien avant la marmite.
+        {t('home.process.title')}
       </h2>
       <ol class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 border-t border-creme-100/15 list-none p-0" data-stagger>
-        {[
-          ['01', 'Le marché', 'Choisir les feuilles, le poisson, les aromates et les produits de saison.'],
-          ['02', 'Le geste', 'Piler, envelopper, braiser ou laisser mijoter sans brusquer.'],
-          ['03', 'Le temps', 'La cuisson donne au plat sa profondeur et rassemble les parfums.'],
-          ['04', 'La table', 'Servir au centre, partager et transmettre la recette en la racontant.'],
-        ].map(([number, title, copy]) => (
-          <li class="py-7 sm:px-5 first:pl-0 border-b sm:border-b-0 sm:border-r last:border-r-0 border-creme-100/15">
-            <div class="flex items-baseline justify-between gap-4">
-              <h3 class="font-display text-2xl font-light text-creme-100">{title}</h3>
-              <span class="font-display text-xl text-creme-200/45">{number}</span>
-            </div>
-            <p class="mt-3 text-sm leading-6 text-creme-200/55">{copy}</p>
-          </li>
-        ))}
+        {
+          processSteps.map(([number, title, copy]) => (
+            <li class="py-7 sm:px-5 first:pl-0 border-b sm:border-b-0 sm:border-r last:border-r-0 border-creme-100/15">
+              <div class="flex items-baseline justify-between gap-4">
+                <h3 class="font-display text-2xl font-light text-creme-100">{title}</h3>
+                <span class="font-display text-xl text-creme-200/45">{number}</span>
+              </div>
+              <p class="mt-3 text-sm leading-6 text-creme-200/55">{copy}</p>
+            </li>
+          ))
+        }
       </ol>
     </div>
   </section>
@@ -158,20 +170,21 @@ const heritageImage = {
       <header class="grid lg:grid-cols-12 gap-6 items-end mb-14" data-stagger>
         <div class="lg:col-span-7">
           <h2 class="font-display text-4xl sm:text-6xl font-light tracking-tight text-earth-900">
-            Recettes, lieux, mémoires.
+            {t('home.carnet.title')}
           </h2>
         </div>
         <p class="lg:col-span-4 lg:col-start-9 text-sm leading-6 text-earth-900/60">
-          Trois portes d’entrée dans une cuisine congolaise plurielle, de la feuille de manioc au poisson du
-          fleuve.
+          {t('home.carnet.body')}
         </p>
       </header>
       <ul class="grid sm:grid-cols-2 lg:grid-cols-12 gap-x-6 gap-y-12 list-none p-0 m-0" data-stagger>
-        {allRecipes.slice(0, 3).map((recipe, i) => (
-          <li class:list={[i === 0 ? 'lg:col-span-6' : 'lg:col-span-3', i === 1 && 'lg:mt-20']}>
-            <EditorialRecipeCard recipe={recipe} />
-          </li>
-        ))}
+        {
+          allRecipes.slice(0, 3).map((recipe, i) => (
+            <li class:list={[i === 0 ? 'lg:col-span-6' : 'lg:col-span-3', i === 1 && 'lg:mt-20']}>
+              <EditorialRecipeCard recipe={recipe} lang={lang} />
+            </li>
+          ))
+        }
       </ul>
     </div>
   </section>

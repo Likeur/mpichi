@@ -1,53 +1,51 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import EditorialPage from '../components/EditorialPage.astro';
+import type { Locale } from '../i18n/config';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang?: Locale;
+}
+
+const lang = Astro.props.lang ?? 'fr';
+const t = useTranslations(lang);
 
 const questions = [
-  {
-    question: 'Les recettes sont-elles identiques dans toute la RDC ?',
-    answer:
-      'Non. Un même plat change selon la région, la saison, le marché et les habitudes du foyer. Mpichi présente une manière de faire parmi d’autres et précise son ancrage lorsqu’il est connu.',
-  },
-  {
-    question: 'Comment les recettes sont-elles documentées ?',
-    answer:
-      'Nous croisons les usages transmis, les sources disponibles et le contexte régional. Les quantités sont rendues lisibles sans effacer la part de geste, d’expérience et d’adaptation propre à chaque cuisine.',
-  },
-  {
-    question: 'Puis-je proposer une recette ou une correction ?',
-    answer:
-      'Oui. Les variantes, précisions linguistiques et récits de transmission sont bienvenus. Vous pouvez contacter Likeur depuis le lien présent dans le pied de page.',
-  },
-  {
-    question: 'Les niveaux de difficulté sont-ils absolus ?',
-    answer:
-      'Ils sont indicatifs. Ils tiennent compte du nombre de gestes, du temps de préparation et de la disponibilité habituelle des ingrédients.',
-  },
-  {
-    question: 'Comment sont choisis les visuels ?',
-    answer:
-      'Les photographies servent à documenter un plat, un ingrédient ou un geste. Leur auteur et leur licence sont indiqués sur les pages concernées.',
-  },
-  {
-    question: 'Mpichi fournit-il des conseils médicaux ou nutritionnels ?',
-    answer:
-      'Non. Les contenus sont culinaires et culturels. En cas d’allergie, de régime spécifique ou de question de santé, demandez conseil à un professionnel qualifié.',
-  },
+  { question: t('faq.q1'), answer: t('faq.a1') },
+  { question: t('faq.q2'), answer: t('faq.a2') },
+  { question: t('faq.q3'), answer: t('faq.a3') },
+  { question: t('faq.q4'), answer: t('faq.a4') },
+  { question: t('faq.q5'), answer: t('faq.a5') },
+  { question: t('faq.q6'), answer: t('faq.a6') },
 ];
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: questions.map(({ question, answer }) => ({
+    '@type': 'Question',
+    name: question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: answer,
+    },
+  })),
+};
 ---
 
-<BaseLayout title="FAQ" description="Questions fréquentes sur les recettes et la démarche éditoriale de Mpichi.">
-  <EditorialPage
-    title="Questions fréquentes."
-    introduction="Quelques repères sur notre manière de raconter, documenter et partager la cuisine congolaise."
-  >
+<BaseLayout title={t('faq.title')} description={t('faq.description')} lang={lang} jsonLd={faqJsonLd}>
+  <EditorialPage title={t('faq.hero')} introduction={t('faq.intro')}>
     <div class="divide-y divide-earth-900/15 border-y border-earth-900/15">
       {
         questions.map(({ question, answer }) => (
           <details class="group py-6" data-reveal>
             <summary class="flex cursor-pointer list-none items-start justify-between gap-8">
               <span class="font-display text-2xl font-light sm:text-3xl">{question}</span>
-              <span class="mt-1 text-xl text-mpichi-red transition-transform duration-300 group-open:rotate-45" aria-hidden="true">
+              <span
+                class="mt-1 text-xl text-mpichi-red transition-transform duration-300 group-open:rotate-45"
+                aria-hidden="true"
+              >
                 +
               </span>
             </summary>

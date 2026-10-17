@@ -1,45 +1,114 @@
 ---
-import { getCollection, render } from 'astro:content';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PillButton from '../../components/PillButton.astro';
 import { slugFromRecipeId } from '../../lib/recipe-theme';
+import type { Locale } from '../../i18n/config';
+import { localePath, localizeRecipe, useTranslations } from '../../i18n/utils';
+import { absoluteUrl, toIsoDuration } from '../../lib/site';
+import { pageCanonical, resolveOrigin } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const recipes = await getCollection('recettes');
   return recipes.map((recipe) => ({
     params: { slug: slugFromRecipeId(recipe.id) },
-    props: { recipe },
+    props: { recipe, lang: 'fr' as Locale },
   }));
 }
 
+interface Props {
+  recipe: CollectionEntry<'recettes'>;
+  lang?: Locale;
+}
+
+const lang = Astro.props.lang ?? 'fr';
+const t = useTranslations(lang);
 const { recipe } = Astro.props;
 const { Content } = await render(recipe);
-const {
-  title,
-  description,
-  region,
-  image,
-  imageAlt,
-  imagePosition,
-  imageCredit,
-  imageCreditUrl,
-  prepTime,
-  cookTime,
-  servings,
-  difficulty,
-  ingredients,
-  steps,
-} = recipe.data;
+const localized = localizeRecipe(recipe, lang);
+const origin = resolveOrigin(Astro.site);
+const pageUrl = pageCanonical(Astro.url.pathname, origin);
+const catalogUrl = absoluteUrl(localePath('/recettes', lang), origin);
 
+const recipeJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Recipe',
+  name: localized.title,
+  description: localized.description,
+  image: [localized.image],
+  author: {
+    '@type': 'Organization',
+    name: 'Mpichi',
+    url: absoluteUrl('/', origin),
+  },
+  inLanguage: lang === 'en' ? 'en' : 'fr',
+  recipeCategory: localized.category,
+  recipeCuisine: lang === 'en' ? 'Congolese' : 'Congolaise',
+  keywords: localized.tags.join(', '),
+  recipeYield: String(localized.servings),
+  prepTime: toIsoDuration(localized.prepTime),
+  cookTime: toIsoDuration(localized.cookTime),
+  recipeIngredient: localized.ingredients,
+  recipeInstructions: localized.steps.map((text, index) => ({
+    '@type': 'HowToStep',
+    position: index + 1,
+    text,
+  })),
+  ...(localized.region
+    ? {
+        contentLocation: {
+          '@type': 'Place',
+          name: localized.region,
+          containedInPlace: {
+            '@type': 'Country',
+            name: lang === 'en' ? 'Democratic Republic of the Congo' : 'République démocratique du Congo',
+          },
+        },
+      }
+    : {}),
+};
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: t('nav.home'),
+      item: absoluteUrl(localePath('/', lang), origin),
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: t('nav.recipes'),
+      item: catalogUrl,
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: localized.title,
+      item: pageUrl,
+    },
+  ],
+};
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout
+  title={localized.title}
+  description={localized.description}
+  lang={lang}
+  image={localized.image}
+  imageAlt={localized.imageAlt}
+  type="article"
+  jsonLd={[recipeJsonLd, breadcrumbJsonLd]}
+>
   <header class="relative min-h-[70svh] flex items-end overflow-hidden">
     <img
-      src={image}
-      alt={imageAlt}
+      src={localized.image}
+      alt={localized.imageAlt}
       class="absolute inset-0 h-full w-full object-cover"
-      style={`object-position: ${imagePosition}`}
+      style={`object-position: ${localized.imagePosition}`}
       fetchpriority="high"
       data-recipe-hero
     />
@@ -54,56 +123,60 @@ const {
       data-recipe-intro
     >
       <a
-        href="/recettes"
+        href={localePath('/recettes', lang)}
         class="text-[9px] uppercase tracking-[.17em] text-creme-100/65 hover:text-white transition-colors"
         data-reveal
         style="--reveal-delay: 40ms"
       >
-        ← Catalogue
+        {t('recipe.back')}
       </a>
       <div class="mt-10 grid lg:grid-cols-12 gap-8 items-end">
         <div class="lg:col-span-8" data-stagger>
-          <h1 class="text-display-hero">{title}</h1>
-          <p class="mt-6 text-base sm:text-lg text-creme-100/78 max-w-2xl leading-relaxed">{description}</p>
+          <h1 class="text-display-hero">{localized.title}</h1>
+          <p class="mt-6 text-base sm:text-lg text-creme-100/78 max-w-2xl leading-relaxed">
+            {localized.description}
+          </p>
         </div>
         <dl
           class="lg:col-span-3 lg:col-start-10 grid grid-cols-2 gap-y-5 gap-x-4 border-t border-creme-100/25 pt-5 text-[9px] uppercase tracking-[.14em] text-creme-100/65"
           data-reveal
           style="--reveal-delay: 210ms"
         >
-          {region && (
-            <div class="col-span-2">
-              <dt class="text-creme-100/35">Région</dt>
-              <dd class="mt-1 text-creme-100">{region}</dd>
-            </div>
-          )}
+          {
+            localized.region && (
+              <div class="col-span-2">
+                <dt class="text-creme-100/35">{t('recipe.region')}</dt>
+                <dd class="mt-1 text-creme-100">{localized.region}</dd>
+              </div>
+            )
+          }
           <div>
-            <dt class="text-creme-100/35">Préparation</dt>
-            <dd class="mt-1 text-creme-100">{prepTime}</dd>
+            <dt class="text-creme-100/35">{t('recipe.prep')}</dt>
+            <dd class="mt-1 text-creme-100">{localized.prepTime}</dd>
           </div>
           <div>
-            <dt class="text-creme-100/35">Cuisson</dt>
-            <dd class="mt-1 text-creme-100">{cookTime}</dd>
+            <dt class="text-creme-100/35">{t('recipe.cook')}</dt>
+            <dd class="mt-1 text-creme-100">{localized.cookTime}</dd>
           </div>
           <div>
-            <dt class="text-creme-100/35">À table</dt>
-            <dd class="mt-1 text-creme-100">{servings} personnes</dd>
+            <dt class="text-creme-100/35">{t('recipe.servings')}</dt>
+            <dd class="mt-1 text-creme-100">{t('recipe.people', { n: localized.servings })}</dd>
           </div>
           <div>
-            <dt class="text-creme-100/35">Niveau</dt>
-            <dd class="mt-1 text-creme-100 capitalize">{difficulty}</dd>
+            <dt class="text-creme-100/35">{t('recipe.level')}</dt>
+            <dd class="mt-1 text-creme-100 capitalize">{localized.difficulty}</dd>
           </div>
         </dl>
       </div>
       <a
-        href={imageCreditUrl}
+        href={localized.imageCreditUrl}
         target="_blank"
         rel="noreferrer"
         class="absolute right-grid-margin bottom-3 text-[8px] uppercase tracking-[.12em] text-white/45 hover:text-white/80"
         data-reveal
         style="--reveal-delay: 300ms"
       >
-        Photo · {imageCredit}
+        {t('recipe.photo')} · {localized.imageCredit}
       </a>
     </div>
   </header>
@@ -112,42 +185,54 @@ const {
     <div class="px-grid-margin max-w-[1050px] mx-auto py-10 sm:py-16">
       <div class="grid md:grid-cols-12 gap-14 md:gap-8" data-stagger>
         <section class="md:col-span-4" data-reveal-static>
-          <h2 class="font-display text-3xl font-light">Ingrédients</h2>
+          <h2 class="font-display text-3xl font-light">{t('recipe.ingredients')}</h2>
           <ul class="mt-6 space-y-3 text-earth-900/75 list-none p-0" data-stagger>
-            {ingredients.map((item) => (
-              <li class="flex gap-3 border-b border-earth-900/8 pb-3">
-                <span class="text-mpichi-red shrink-0" aria-hidden="true">·</span>
-                <span>{item}</span>
-              </li>
-            ))}
+            {
+              localized.ingredients.map((item) => (
+                <li class="flex gap-3 border-b border-earth-900/8 pb-3">
+                  <span class="text-mpichi-red shrink-0" aria-hidden="true">
+                    ·
+                  </span>
+                  <span>{item}</span>
+                </li>
+              ))
+            }
           </ul>
         </section>
 
         <section class="md:col-span-7 md:col-start-6" data-reveal-static>
-          <h2 class="font-display text-3xl font-light">Préparation</h2>
+          <h2 class="font-display text-3xl font-light">{t('recipe.steps')}</h2>
           <ol class="mt-6 space-y-6 list-none p-0 counter-reset-none" data-stagger>
-            {steps.map((step, i) => (
-              <li class="flex gap-4">
-                <span class="font-display text-xl text-mpichi-red/80 tabular-nums shrink-0">
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-                <span class="text-earth-900/75 leading-relaxed pt-0.5">{step}</span>
-              </li>
-            ))}
+            {
+              localized.steps.map((step, i) => (
+                <li class="flex gap-4">
+                  <span class="font-display text-xl text-mpichi-red/80 tabular-nums shrink-0">
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                  <span class="text-earth-900/75 leading-relaxed pt-0.5">{step}</span>
+                </li>
+              ))
+            }
           </ol>
         </section>
       </div>
 
       {
-        Content && (
+        lang === 'en' && localized.body ? (
           <div class="mt-16 pt-10 border-t border-earth-900/10 text-earth-900/75 leading-relaxed space-y-4 [&_p]:text-base">
-            <Content />
+            <p>{localized.body}</p>
           </div>
+        ) : (
+          Content && (
+            <div class="mt-16 pt-10 border-t border-earth-900/10 text-earth-900/75 leading-relaxed space-y-4 [&_p]:text-base">
+              <Content />
+            </div>
+          )
         )
       }
 
       <div class="mt-16 pt-8 border-t border-earth-900/12">
-        <PillButton href="/recettes" label="Retour au catalogue" variant="ink" />
+        <PillButton href={localePath('/recettes', lang)} label={t('recipe.backCta')} variant="ink" />
       </div>
     </div>
   </article>

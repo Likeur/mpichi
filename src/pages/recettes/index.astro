@@ -2,47 +2,63 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EditorialRecipeCard from '../../components/EditorialRecipeCard.astro';
+import type { Locale } from '../../i18n/config';
+import { localizeRecipe, recipeCountLabel, useTranslations } from '../../i18n/utils';
 
-const recipes = (await getCollection('recettes')).sort((a, b) =>
-  a.data.title.localeCompare(b.data.title, 'fr'),
-);
+interface Props {
+  lang?: Locale;
+}
 
-const getSearchText = (recipe: (typeof recipes)[number]) =>
+const lang = Astro.props.lang ?? 'fr';
+const t = useTranslations(lang);
+const recipes = (await getCollection('recettes'))
+  .map((recipe) => ({ recipe, localized: localizeRecipe(recipe, lang) }))
+  .sort((a, b) => a.localized.title.localeCompare(b.localized.title, lang));
+
+const getSearchText = (item: (typeof recipes)[number]) =>
   [
-    recipe.data.title,
-    recipe.data.description,
-    recipe.data.region,
-    recipe.data.category,
-    ...recipe.data.tags,
+    item.localized.title,
+    item.localized.description,
+    item.localized.region,
+    item.localized.category,
+    ...item.localized.tags,
   ]
     .filter(Boolean)
     .join(' ');
+
+const countLabel = recipeCountLabel(lang, recipes.length);
+const countSingular = t('recipes.count', { n: '00' }).replace('00', '{n}');
+const countPlural = t('recipes.countPlural', { n: '00' }).replace('00', '{n}');
 ---
 
-<BaseLayout title="Recettes" description="Catalogue des recettes congolaises Mpichi.">
+<BaseLayout title={t('recipes.title')} description={t('recipes.description')} lang={lang}>
   <section class="pt-28 pb-12 bg-earth-dark min-h-[50svh] flex items-end border-b border-white/10">
     <div class="px-grid-margin max-w-[1200px] mx-auto w-full">
       <div class="grid lg:grid-cols-12 gap-8 items-end" data-stagger>
         <div class="lg:col-span-8">
-          <h1 class="text-display-hero">Les recettes.</h1>
+          <h1 class="text-display-hero">{t('recipes.hero')}</h1>
         </div>
         <p class="lg:col-span-4 text-sm leading-6 text-creme-200/60 max-w-md">
-          Des plats du quotidien et des jours de fête, documentés avec leurs gestes, leur région et leur
-          histoire.
+          {t('recipes.intro')}
         </p>
       </div>
       <p class="mt-10 text-[9px] uppercase tracking-[.16em] text-creme-200/35">
-        {String(recipes.length).padStart(2, '0')} recette{recipes.length > 1 ? 's' : ''}
+        {countLabel}
       </p>
     </div>
   </section>
 
   <section class="bg-creme-100 py-12 sm:py-16">
-    <div class="px-grid-margin max-w-[1200px] mx-auto" data-recipe-search>
+    <div
+      class="px-grid-margin max-w-[1200px] mx-auto"
+      data-recipe-search
+      data-count-singular={countSingular}
+      data-count-plural={countPlural}
+    >
       <div class="mb-5 grid md:grid-cols-2 gap-8 md:items-end" data-stagger>
-        <h2 class="font-display text-3xl sm:text-4xl font-light text-earth-900">Tout le répertoire</h2>
+        <h2 class="font-display text-3xl sm:text-4xl font-light text-earth-900">{t('recipes.catalog')}</h2>
         <label class="relative block md:max-w-md md:ml-auto w-full">
-          <span class="sr-only">Rechercher une recette</span>
+          <span class="sr-only">{t('recipes.search')}</span>
           <svg
             class="absolute left-0 top-1/2 -translate-y-1/2 text-earth-900/40"
             width="17"
@@ -57,7 +73,7 @@ const getSearchText = (recipe: (typeof recipes)[number]) =>
           <input
             type="search"
             data-search-input
-            placeholder="Rechercher un plat, une région…"
+            placeholder={t('recipes.searchPlaceholder')}
             autocomplete="off"
             class="w-full border-0 border-b border-earth-900/25 bg-transparent py-3 pl-7 pr-9 text-sm text-earth-900 placeholder:text-earth-900/40 outline-none transition-colors focus:border-earth-900"
           />
@@ -65,7 +81,7 @@ const getSearchText = (recipe: (typeof recipes)[number]) =>
             type="button"
             data-search-clear
             class="absolute right-0 top-1/2 -translate-y-1/2 hidden size-8 items-center justify-center text-earth-900/45 hover:text-earth-900"
-            aria-label="Effacer la recherche"
+            aria-label={t('recipes.clear')}
           >
             ×
           </button>
@@ -73,29 +89,29 @@ const getSearchText = (recipe: (typeof recipes)[number]) =>
       </div>
       <div class="mb-8 border-t border-earth-900/12 pt-4">
         <p data-search-status aria-live="polite" class="text-[9px] uppercase tracking-[.16em] text-earth-900/45">
-          {String(recipes.length).padStart(2, '0')} recette{recipes.length > 1 ? 's' : ''}
+          {countLabel}
         </p>
       </div>
       {
         recipes.length === 0 ? (
-          <p class="text-earth-900/60">Aucune recette pour le moment.</p>
+          <p class="text-earth-900/60">{t('recipes.empty')}</p>
         ) : (
           <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-16 list-none p-0 m-0">
-            {recipes.map((recipe, index) => (
+            {recipes.map(({ recipe }, index) => (
               <li
                 data-recipe-item
-                data-search={getSearchText(recipe)}
+                data-search={getSearchText(recipes[index])}
                 data-reveal={index >= 3 ? '' : undefined}
                 style={index >= 3 ? `--reveal-delay: ${((index - 3) % 3) * 85}ms` : undefined}
               >
-                <EditorialRecipeCard recipe={recipe} priority={index < 3} />
+                <EditorialRecipeCard recipe={recipe} priority={index < 3} lang={lang} />
               </li>
             ))}
           </ul>
         )
       }
       <p data-search-empty hidden class="py-16 text-center font-display text-3xl font-light text-earth-900/55">
-        Aucune recette ne correspond à cette recherche.
+        {t('recipes.noMatch')}
       </p>
     </div>
   </section>
@@ -112,6 +128,8 @@ const getSearchText = (recipe: (typeof recipes)[number]) =>
     const status = root.querySelector<HTMLElement>('[data-search-status]');
     const empty = root.querySelector<HTMLElement>('[data-search-empty]');
     const items = [...root.querySelectorAll<HTMLElement>('[data-recipe-item]')];
+    const singular = root.dataset.countSingular ?? '{n}';
+    const plural = root.dataset.countPlural ?? '{n}';
 
     if (!input || !clear || !status || !empty) return;
 
@@ -132,7 +150,8 @@ const getSearchText = (recipe: (typeof recipes)[number]) =>
         if (visible) matches += 1;
       });
 
-      status.textContent = `${String(matches).padStart(2, '0')} recette${matches > 1 ? 's' : ''}`;
+      const padded = String(matches).padStart(2, '0');
+      status.textContent = (matches > 1 ? plural : singular).replace('{n}', padded);
       empty.hidden = matches !== 0;
       clear.classList.toggle('hidden', !query);
       clear.classList.toggle('flex', Boolean(query));

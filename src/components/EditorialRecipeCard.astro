@@ -1,39 +1,45 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import { slugFromRecipeId } from '../lib/recipe-theme';
+import type { Locale } from '../i18n/config';
+import { localePath, localizeRecipe, useTranslations } from '../i18n/utils';
 
 interface Props {
   recipe: CollectionEntry<'recettes'>;
   priority?: boolean;
+  lang?: Locale;
 }
 
+const lang = Astro.props.lang ?? 'fr';
+const t = useTranslations(lang);
 const { recipe, priority = false } = Astro.props;
-const { title, description, region, image, imageAlt, imagePosition, prepTime, cookTime } = recipe.data;
-const slug = slugFromRecipeId(recipe.id);
-const cardImage = image.replace(/([?&]width=)\d+/, '$1' + '900');
+const localized = localizeRecipe(recipe, lang);
+const href = localePath(`/recettes/${localized.slug}`, lang);
+const cardImage = localized.image.replace(/([?&]width=)\d+/, '$1' + '900');
 ---
 
 <article class="group relative flex h-full flex-col">
-  <a href={`/recettes/${slug}`} class="block overflow-hidden bg-aged-oak/10">
+  <a href={href} class="block overflow-hidden bg-aged-oak/10">
     <img
       src={cardImage}
-      alt={imageAlt}
+      alt={localized.imageAlt}
       loading={priority ? 'eager' : 'lazy'}
       fetchpriority={priority ? 'high' : 'auto'}
       decoding="async"
       data-recipe-image
       class="aspect-[4/3] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.025]"
-      style={`object-position: ${imagePosition}`}
+      style={`object-position: ${localized.imagePosition}`}
     />
   </a>
   <h3 class="mt-5 font-display text-2xl sm:text-[1.75rem] font-light text-earth-900 leading-[1.05]">
-    <a href={`/recettes/${slug}`} class="hover:text-mpichi-red transition-colors">{title}</a>
+    <a href={href} class="hover:text-mpichi-red transition-colors">{localized.title}</a>
   </h3>
-  {region && (
-    <p class="mt-2 text-[9px] uppercase tracking-[.15em] text-earth-900/50">{region}</p>
-  )}
-  <p class="mt-3 text-sm leading-relaxed text-earth-900/62 line-clamp-2">{description}</p>
+  {
+    localized.region && (
+      <p class="mt-2 text-[9px] uppercase tracking-[.15em] text-earth-900/50">{localized.region}</p>
+    )
+  }
+  <p class="mt-3 text-sm leading-relaxed text-earth-900/62 line-clamp-2">{localized.description}</p>
   <p class="mt-5 pt-3 border-t border-earth-900/10 text-[9px] uppercase tracking-[.14em] text-earth-900/45">
-    {prepTime} de préparation · {cookTime} de cuisson
+    {t('recipes.meta', { prep: localized.prepTime, cook: localized.cookTime })}
   </p>
 </article>

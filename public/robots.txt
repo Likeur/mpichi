@@ -1,0 +1,27 @@
+# Mpichi — crawl rules
+User-agent: *
+Allow: /
+
+# Generative / AI crawlers (explicit allow for GEO discovery)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://mpichi.likeur.xyz/sitemap-index.xml

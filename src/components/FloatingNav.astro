@@ -1,39 +1,60 @@
 ---
+import type { Locale } from '../i18n/config';
+import { useTranslations, localePath, switchLocalePath } from '../i18n/utils';
+
+interface Props {
+  lang?: Locale;
+}
+
+const lang = Astro.props.lang ?? 'fr';
+const t = useTranslations(lang);
 const path = Astro.url.pathname;
-const isRecettes = path.startsWith('/recettes');
+const bare = path.replace(/^\/en(?=\/|$)/, '') || '/';
+const isHome = bare === '/';
+const isRecettes = bare.startsWith('/recettes');
+const otherLang = lang === 'fr' ? 'en' : 'fr';
+const switchHref = switchLocalePath(path, otherLang);
 ---
 
 <header class="fixed top-5 left-0 right-0 z-50 px-grid-margin pointer-events-none">
   <div class="mx-auto max-w-[1200px] relative flex items-center justify-center min-h-14 pointer-events-auto">
     <nav
       class="flex h-14 w-full items-center justify-between gap-2 text-[9px] sm:text-[10px] font-medium uppercase tracking-[0.16em] text-creme-100/80"
-      aria-label="Navigation principale"
+      aria-label={t('nav.label')}
     >
-      <div class="flex flex-1 items-center min-w-0">
+      <div class="flex flex-1 items-center gap-5 min-w-0">
         <a
-          href="/"
-          class:list={['hover:text-white transition-colors truncate', path === '/' && 'text-white']}
+          href={localePath('/', lang)}
+          class:list={['hover:text-white transition-colors truncate', isHome && 'text-white']}
         >
-          Accueil
+          {t('nav.home')}
         </a>
       </div>
 
       <div class="w-14 sm:w-18 shrink-0" aria-hidden="true"></div>
 
-      <div class="flex flex-1 items-center justify-end min-w-0">
+      <div class="flex flex-1 items-center justify-end gap-5 min-w-0">
         <a
-          href="/recettes"
+          href={localePath('/recettes', lang)}
           class:list={['hover:text-white transition-colors', isRecettes && 'text-white']}
         >
-          Recettes
+          {t('nav.recipes')}
+        </a>
+        <a
+          href={switchHref}
+          class="hover:text-white transition-colors text-creme-100/55"
+          aria-label={t('nav.lang')}
+          data-lang-switch
+        >
+          {otherLang === 'en' ? 'EN' : 'FR'}
         </a>
       </div>
     </nav>
 
     <a
-      href="/"
+      href={localePath('/', lang)}
       class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex h-[66px] w-[54px] items-center justify-center transition-transform hover:-translate-y-[52%]"
-      aria-label="Mpichi — accueil"
+      aria-label={t('nav.logo')}
     >
       <svg viewBox="0 0 54 66" class="h-full w-full drop-shadow-[0_8px_18px_rgba(0,0,0,.35)]" aria-hidden="true">
         <path d="M27 2C38 2 47 11 47 22v20c0 11-9 20-20 20S7 53 7 42V22C7 11 16 2 27 2Z" fill="#c91f32"></path>

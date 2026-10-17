@@ -1,0 +1,17 @@
+---
+import { getCollection } from 'astro:content';
+import RecipePage from '../../recettes/[...slug].astro';
+import { slugFromRecipeId } from '../../../lib/recipe-theme';
+
+export async function getStaticPaths() {
+  const recipes = await getCollection('recettes');
+  return recipes.map((recipe) => ({
+    params: { slug: slugFromRecipeId(recipe.id) },
+    props: { recipe, lang: 'en' as const },
+  }));
+}
+
+const { recipe, lang } = Astro.props;
+---
+
+<RecipePage recipe={recipe} lang={lang} />

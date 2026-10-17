@@ -1,50 +1,49 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import EditorialPage from '../components/EditorialPage.astro';
+import type { Locale } from '../i18n/config';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang?: Locale;
+}
+
+const lang = Astro.props.lang ?? 'fr';
+const t = useTranslations(lang);
 ---
 
-<BaseLayout title="Mentions légales" description="Mentions légales du site éditorial Mpichi.">
-  <EditorialPage
-    title="Mentions légales."
-    introduction="Les informations essentielles concernant l’édition, les contenus et l’utilisation de Mpichi."
-  >
+<BaseLayout title={t('legal.title')} description={t('legal.description')} lang={lang}>
+  <EditorialPage title={t('legal.hero')} introduction={t('legal.intro')}>
     <div class="grid gap-12 md:grid-cols-12 md:gap-y-16">
       <section class="md:col-span-8" data-reveal>
-        <h2 class="font-display text-3xl font-light">Édition du site</h2>
-        <p class="mt-5 text-[15px] leading-7 text-earth-900/65">
-          Mpichi est un projet éditorial indépendant consacré aux cuisines de la République démocratique du
-          Congo. Il est conçu et réalisé en RDC par Likeur.
-        </p>
+        <h2 class="font-display text-3xl font-light">{t('legal.edition.title')}</h2>
+        <p class="mt-5 text-[15px] leading-7 text-earth-900/65">{t('legal.edition.p1')}</p>
         <p class="mt-4 text-[15px] leading-7 text-earth-900/65">
-          Pour toute demande relative au site, vous pouvez contacter l’éditeur depuis
-          <a href="https://likeur.xyz" target="_blank" rel="noreferrer" class="underline underline-offset-4 hover:text-mpichi-red">likeur.xyz</a>.
+          {t('legal.edition.p2')}{' '}
+          <a
+            href="https://likeur.xyz"
+            target="_blank"
+            rel="noreferrer"
+            class="underline underline-offset-4 hover:text-mpichi-red"
+          >
+            likeur.xyz
+          </a>.
         </p>
       </section>
 
       <section class="md:col-span-8" data-reveal>
-        <h2 class="font-display text-3xl font-light">Hébergement</h2>
-        <p class="mt-5 text-[15px] leading-7 text-earth-900/65">
-          Le site est actuellement présenté en environnement de développement. Les coordonnées de
-          l’hébergeur seront ajoutées lors de sa mise en production.
-        </p>
+        <h2 class="font-display text-3xl font-light">{t('legal.hosting.title')}</h2>
+        <p class="mt-5 text-[15px] leading-7 text-earth-900/65">{t('legal.hosting.body')}</p>
       </section>
 
       <section class="md:col-span-8" data-reveal>
-        <h2 class="font-display text-3xl font-light">Contenus et photographies</h2>
-        <p class="mt-5 text-[15px] leading-7 text-earth-900/65">
-          Les textes, la direction artistique et la structure éditoriale de Mpichi sont protégés par le droit
-          applicable. Les photographies restent la propriété de leurs auteurs et sont utilisées selon les
-          licences indiquées dans leurs crédits respectifs.
-        </p>
+        <h2 class="font-display text-3xl font-light">{t('legal.content.title')}</h2>
+        <p class="mt-5 text-[15px] leading-7 text-earth-900/65">{t('legal.content.body')}</p>
       </section>
 
       <section class="md:col-span-8" data-reveal>
-        <h2 class="font-display text-3xl font-light">Responsabilité</h2>
-        <p class="mt-5 text-[15px] leading-7 text-earth-900/65">
-          Les recettes sont proposées à titre culturel et informatif. Les pratiques culinaires pouvant varier
-          d’un foyer à l’autre, chacun reste responsable du choix des ingrédients, des conditions de
-          conservation, des allergies et de la cuisson des aliments.
-        </p>
+        <h2 class="font-display text-3xl font-light">{t('legal.liability.title')}</h2>
+        <p class="mt-5 text-[15px] leading-7 text-earth-900/65">{t('legal.liability.body')}</p>
       </section>
     </div>
   </EditorialPage>
