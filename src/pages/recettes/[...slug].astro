@@ -30,12 +30,37 @@ const origin = resolveOrigin(Astro.site);
 const pageUrl = pageCanonical(Astro.url.pathname, origin);
 const catalogUrl = absoluteUrl(localePath('/recettes', lang), origin);
 
+const prepIso = toIsoDuration(localized.prepTime);
+const cookIso = toIsoDuration(localized.cookTime);
+const totalIso = (() => {
+  const parse = (iso?: string) => {
+    if (!iso) return 0;
+    const h = Number(iso.match(/(\d+)H/)?.[1] ?? 0);
+    const m = Number(iso.match(/(\d+)M/)?.[1] ?? 0);
+    return h * 60 + m;
+  };
+  const total = parse(prepIso) + parse(cookIso);
+  if (!total) return undefined;
+  const hours = Math.floor(total / 60);
+  const minutes = total % 60;
+  if (hours && minutes) return `PT${hours}H${minutes}M`;
+  if (hours) return `PT${hours}H`;
+  return `PT${minutes}M`;
+})();
+
 const recipeJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Recipe',
+  '@id': pageUrl,
+  url: pageUrl,
+  mainEntityOfPage: pageUrl,
   name: localized.title,
   description: localized.description,
-  image: [localized.image],
+  image: [
+    localized.image.startsWith('http')
+      ? localized.image
+      : absoluteUrl(localized.image, origin),
+  ],
   author: {
     '@type': 'Organization',
     name: 'Mpichi',
@@ -46,8 +71,9 @@ const recipeJsonLd = {
   recipeCuisine: lang === 'en' ? 'Congolese' : 'Congolaise',
   keywords: localized.tags.join(', '),
   recipeYield: String(localized.servings),
-  prepTime: toIsoDuration(localized.prepTime),
-  cookTime: toIsoDuration(localized.cookTime),
+  prepTime: prepIso,
+  cookTime: cookIso,
+  ...(totalIso ? { totalTime: totalIso } : {}),
   recipeIngredient: localized.ingredients,
   recipeInstructions: localized.steps.map((text, index) => ({
     '@type': 'HowToStep',

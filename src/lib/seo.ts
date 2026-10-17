@@ -31,11 +31,14 @@ export function defaultOgImage(origin: string): string {
 }
 
 export function websiteJsonLd(locale: Locale, origin: string) {
+  const homePath = locale === 'en' ? '/en/' : '/';
+  const searchPath = localePath('/recettes/', locale);
+
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: SITE_NAME,
-    url: absoluteUrl(locale === 'en' ? '/en/' : '/', origin),
+    url: absoluteUrl(homePath, origin),
     inLanguage: locale === 'en' ? 'en' : 'fr-CD',
     description:
       locale === 'en'
@@ -50,6 +53,14 @@ export function websiteJsonLd(locale: Locale, origin: string) {
         name: SITE_AUTHOR,
         url: SITE_AUTHOR_URL,
       },
+    },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${absoluteUrl(searchPath, origin)}?q={search_term_string}`,
+      },
+      'query-input': 'required name=search_term_string',
     },
   };
 }

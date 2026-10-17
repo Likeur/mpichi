@@ -29,9 +29,16 @@ const getSearchText = (item: (typeof recipes)[number]) =>
 const countLabel = recipeCountLabel(lang, recipes.length);
 const countSingular = t('recipes.count', { n: '00' }).replace('00', '{n}');
 const countPlural = t('recipes.countPlural', { n: '00' }).replace('00', '{n}');
+const ogRecipe = recipes.find(({ recipe }) => recipe.data.featured)?.localized ?? recipes[0]?.localized;
 ---
 
-<BaseLayout title={t('recipes.title')} description={t('recipes.description')} lang={lang}>
+<BaseLayout
+  title={t('recipes.title')}
+  description={t('recipes.description')}
+  lang={lang}
+  image={ogRecipe?.image}
+  imageAlt={ogRecipe?.imageAlt}
+>
   <section class="pt-28 pb-12 bg-earth-dark min-h-[50svh] flex items-end border-b border-white/10">
     <div class="px-grid-margin max-w-[1200px] mx-auto w-full">
       <div class="grid lg:grid-cols-12 gap-8 items-end" data-stagger>
@@ -140,6 +147,15 @@ const countPlural = t('recipes.countPlural', { n: '00' }).replace('00', '{n}');
         .toLocaleLowerCase('fr')
         .trim();
 
+    const syncUrl = (raw: string) => {
+      const url = new URL(window.location.href);
+      const trimmed = raw.trim();
+      if (trimmed) url.searchParams.set('q', trimmed);
+      else url.searchParams.delete('q');
+      const next = `${url.pathname}${url.search}${url.hash}`;
+      window.history.replaceState({}, '', next);
+    };
+
     const update = () => {
       const query = normalize(input.value);
       let matches = 0;
@@ -155,7 +171,11 @@ const countPlural = t('recipes.countPlural', { n: '00' }).replace('00', '{n}');
       empty.hidden = matches !== 0;
       clear.classList.toggle('hidden', !query);
       clear.classList.toggle('flex', Boolean(query));
+      syncUrl(input.value);
     };
+
+    const initial = new URLSearchParams(window.location.search).get('q');
+    if (initial) input.value = initial;
 
     input.addEventListener('input', update);
     clear.addEventListener('click', () => {
@@ -163,6 +183,8 @@ const countPlural = t('recipes.countPlural', { n: '00' }).replace('00', '{n}');
       update();
       input.focus();
     });
+
+    if (initial) update();
   }
 
   document.addEventListener('astro:page-load', initRecipeSearch);

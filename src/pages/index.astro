@@ -77,7 +77,12 @@ const processSteps = [
 ];
 ---
 
-<BaseLayout title={t('meta.homeTitle')} lang={lang}>
+<BaseLayout
+  title={t('meta.homeTitle')}
+  lang={lang}
+  image={heroSlides[0]?.image}
+  imageAlt={heroSlides[0]?.imageAlt}
+>
   <HeroCarousel slides={heroSlides} />
 
   <section class="py-20 sm:py-28 bg-earth-dark border-t border-white/5">

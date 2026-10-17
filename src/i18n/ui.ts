@@ -150,6 +150,14 @@ export const ui = {
     'privacy.contact.title': 'Vos questions',
     'privacy.contact.body':
       'Pour toute question relative à la confidentialité, contactez l’éditeur depuis',
+    'notFound.title': 'Page introuvable',
+    'notFound.hero': 'Cette page s’est égarée.',
+    'notFound.intro':
+      'Le lien est peut-être ancien, ou la page n’existe plus. Revenez à l’accueil ou explorez le répertoire des recettes.',
+    'notFound.description': 'Page introuvable sur Mpichi.',
+    'notFound.home': 'Retour à l’accueil',
+    'notFound.recipes': 'Voir les recettes',
+    'notFound.code': 'Erreur 404',
   },
   en: {
     'meta.defaultDescription':
@@ -300,6 +308,14 @@ export const ui = {
     'privacy.contact.title': 'Your questions',
     'privacy.contact.body':
       'For any privacy-related question, contact the publisher at',
+    'notFound.title': 'Page not found',
+    'notFound.hero': 'This page has gone astray.',
+    'notFound.intro':
+      'The link may be outdated, or the page no longer exists. Head home or browse the recipe repertoire.',
+    'notFound.description': 'Page not found on Mpichi.',
+    'notFound.home': 'Back to home',
+    'notFound.recipes': 'Browse recipes',
+    'notFound.code': 'Error 404',
   },
 } as const satisfies Record<Locale, Record<string, string>>;
 

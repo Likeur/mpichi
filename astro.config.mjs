@@ -29,7 +29,8 @@ export default defineConfig({
       filter: (page) =>
         !page.includes('/llms') &&
         !page.endsWith('/robots.txt') &&
-        !page.includes('/404'),
+        !page.includes('/404') &&
+        !page.endsWith('/404.html'),
     }),
   ],
   vite: {

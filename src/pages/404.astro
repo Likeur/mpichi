@@ -1,0 +1,125 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PillButton from '../components/PillButton.astro';
+import { localePath, useTranslations } from '../i18n/utils';
+import type { Locale } from '../i18n/config';
+
+const fr = useTranslations('fr');
+const en = useTranslations('en');
+
+const copy = {
+  fr: {
+    title: fr('notFound.title'),
+    hero: fr('notFound.hero'),
+    intro: fr('notFound.intro'),
+    description: fr('notFound.description'),
+    home: fr('notFound.home'),
+    recipes: fr('notFound.recipes'),
+    code: fr('notFound.code'),
+    homeHref: localePath('/', 'fr'),
+    recipesHref: localePath('/recettes', 'fr'),
+  },
+  en: {
+    title: en('notFound.title'),
+    hero: en('notFound.hero'),
+    intro: en('notFound.intro'),
+    description: en('notFound.description'),
+    home: en('notFound.home'),
+    recipes: en('notFound.recipes'),
+    code: en('notFound.code'),
+    homeHref: localePath('/', 'en'),
+    recipesHref: localePath('/recettes', 'en'),
+  },
+} as const;
+---
+
+<BaseLayout
+  title={copy.fr.title}
+  description={copy.fr.description}
+  lang={'fr' satisfies Locale}
+  noindex
+>
+  <section
+    class="min-h-[70svh] bg-earth-dark border-b border-white/10 flex items-end pt-32 pb-16 sm:pb-20"
+    data-not-found
+    data-copy={JSON.stringify(copy)}
+  >
+    <div class="px-grid-margin mx-auto w-full max-w-[1200px]">
+      <p class="text-[9px] uppercase tracking-[.16em] text-creme-200/40" data-nf-code>
+        {copy.fr.code}
+      </p>
+      <div class="mt-8 grid lg:grid-cols-12 gap-8 items-end">
+        <h1 class="text-display-hero lg:col-span-8" data-nf-hero>{copy.fr.hero}</h1>
+        <p class="lg:col-span-4 text-sm leading-6 text-creme-200/60 max-w-md" data-nf-intro>
+          {copy.fr.intro}
+        </p>
+      </div>
+      <div class="mt-12 flex flex-wrap items-center gap-6">
+        <span data-nf-home-wrap>
+          <PillButton href={copy.fr.homeHref} label={copy.fr.home} variant="cream" />
+        </span>
+        <a
+          href={copy.fr.recipesHref}
+          class="inline-flex items-center gap-3 text-[10px] uppercase tracking-[.16em] text-creme-100/70 hover:text-white transition-colors"
+          data-nf-recipes
+        >
+          <span data-nf-recipes-label>{copy.fr.recipes}</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  function applyNotFoundLocale() {
+    const root = document.querySelector<HTMLElement>('[data-not-found]');
+    if (!root?.dataset.copy) return;
+
+    type Copy = {
+      title: string;
+      hero: string;
+      intro: string;
+      home: string;
+      recipes: string;
+      code: string;
+      homeHref: string;
+      recipesHref: string;
+    };
+
+    let pack: { fr: Copy; en: Copy };
+    try {
+      pack = JSON.parse(root.dataset.copy) as { fr: Copy; en: Copy };
+    } catch {
+      return;
+    }
+
+    const lang = window.location.pathname.startsWith('/en') ? 'en' : 'fr';
+    const strings = pack[lang];
+
+    document.documentElement.lang = lang;
+    document.title = `${strings.title} | Mpichi`;
+
+    const setText = (selector: string, value: string) => {
+      const el = root.querySelector(selector);
+      if (el) el.textContent = value;
+    };
+
+    setText('[data-nf-code]', strings.code);
+    setText('[data-nf-hero]', strings.hero);
+    setText('[data-nf-intro]', strings.intro);
+    setText('[data-nf-recipes-label]', strings.recipes);
+
+    const homeLink = root.querySelector<HTMLAnchorElement>('[data-nf-home-wrap] a');
+    if (homeLink) {
+      homeLink.href = strings.homeHref;
+      const label = homeLink.querySelector('span');
+      if (label) label.textContent = strings.home;
+    }
+
+    const recipesLink = root.querySelector<HTMLAnchorElement>('[data-nf-recipes]');
+    if (recipesLink) recipesLink.href = strings.recipesHref;
+  }
+
+  document.addEventListener('astro:page-load', applyNotFoundLocale);
+</script>

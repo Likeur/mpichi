@@ -13,7 +13,7 @@
 - **Accueil éditorial** avec carrousel héro, sections patrimoine et recettes mises en avant
 - **Catalogue** avec recherche locale (titre, région, catégorie, tags)
 - **Fiches détail** : temps, portions, difficulté, ingrédients, étapes, crédit photo
-- **SEO** : canonical, Open Graph / Twitter, sitemap XML, `robots.txt`, JSON-LD (`WebSite`, `Recipe`, FAQ)
+- **SEO** : canonical, Open Graph / Twitter, sitemap XML, `robots.txt`, JSON-LD (`WebSite` + SearchAction, `Recipe`, FAQ), page 404 bilingue
 - **Découverte IA / GEO** : `llms.txt`, `llms-full.txt`, `humans.txt`
 - **Navigation flottante**, View Transitions Astro, Locomotive Scroll
 - **Pages légales** : FAQ, mentions légales, confidentialité
@@ -148,7 +148,9 @@ mpichi/
 - Origin canonique : `https://mpichi.likeur.xyz` (`src/lib/site.ts`)
 - Sitemap : `/sitemap-index.xml`
 - Robots : `public/robots.txt`
-- Structured data : WebSite (layout) + Recipe / Breadcrumb (fiches) + FAQ
+- Structured data : WebSite + SearchAction (layout) + Recipe / Breadcrumb (fiches) + FAQ
+- Recherche catalogue partageable via `?q=`
+- Page 404 bilingue (`src/pages/404.astro`, `noindex`)
 - LLM : `/llms.txt` et `/llms-full.txt`
 
 ## Design
