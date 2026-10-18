@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
 import FloatingNav from '../components/FloatingNav.astro';
+import FavoritesInit from '../components/FavoritesInit.astro';
 import { ClientRouter } from 'astro:transitions';
 import type { Locale } from '../i18n/config';
 import { localePath, useTranslations } from '../i18n/utils';
@@ -187,6 +188,7 @@ const structured = [websiteJsonLd(lang, origin), ...(jsonLd ? (Array.isArray(jso
         <div class="flex flex-col gap-3 text-[10px] uppercase tracking-[.16em]">
           <p class="mb-2 text-creme-200/35">{t('footer.explore')}</p>
           <a href={localePath('/recettes', lang)} class="hover:text-white transition-colors">{t('nav.recipes')}</a>
+          <a href={localePath('/favoris', lang)} class="hover:text-white transition-colors">{t('nav.favorites')}</a>
           <a href={localePath('/guides', lang)} class="hover:text-white transition-colors">{t('guides.title')}</a>
           <a href={localePath('/regions', lang)} class="hover:text-white transition-colors">{t('regions.title')}</a>
           <a href={localePath('/categories', lang)} class="hover:text-white transition-colors">{t('categories.title')}</a>
@@ -507,5 +509,6 @@ const structured = [websiteJsonLd(lang, origin), ...(jsonLd ? (Array.isArray(jso
       document.addEventListener('astro:after-swap', restoreCatalogPosition);
       document.addEventListener('astro:page-load', initMotion);
     </script>
+    <FavoritesInit lang={lang} />
   </body>
 </html>

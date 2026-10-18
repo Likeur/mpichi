@@ -1,0 +1,77 @@
+---
+import type { Locale } from '../i18n/config';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  slug: string;
+  lang?: Locale;
+  variant?: 'ink' | 'cream' | 'overlay';
+  showLabel?: boolean;
+  class?: string;
+}
+
+const lang = Astro.props.lang ?? 'fr';
+const t = useTranslations(lang);
+const { slug, variant = 'ink', showLabel = false, class: className } = Astro.props;
+
+const tone = {
+  ink: 'text-earth-900/45 hover:text-earth-900 data-[active=true]:text-mpichi-red',
+  cream: 'text-creme-100/55 hover:text-white data-[active=true]:text-mpichi-red',
+  overlay:
+    'bg-black/35 text-white/85 backdrop-blur-[2px] hover:bg-black/45 hover:text-white data-[active=true]:text-mpichi-red',
+}[variant];
+---
+
+<button
+  type="button"
+  class:list={[
+    'inline-flex items-center transition-colors',
+    showLabel ? 'gap-2' : 'size-9 justify-center',
+    variant === 'overlay' && 'rounded-full',
+    showLabel && 'text-[10px] uppercase tracking-[.16em]',
+    tone,
+    className,
+  ]}
+  data-favorite-toggle
+  data-favorite-slug={slug}
+  data-label-add={t('favorites.add')}
+  data-label-remove={t('favorites.remove')}
+  aria-pressed="false"
+  aria-label={t('favorites.add')}
+>
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" class="shrink-0">
+    <path
+      class="favorite-heart-outline"
+      d="M12 20s-7.2-4.35-9.55-8.5C.64 8.3 2.14 4.5 5.8 3.75A5.45 5.45 0 0 1 12 6.2a5.45 5.45 0 0 1 6.2-2.45c3.66.75 5.16 4.55 3.35 7.75C19.2 15.65 12 20 12 20Z"
+      stroke="currentColor"
+      stroke-width="1.5"
+      stroke-linejoin="round"
+    ></path>
+    <path
+      class="favorite-heart-fill"
+      d="M12 20s-7.2-4.35-9.55-8.5C.64 8.3 2.14 4.5 5.8 3.75A5.45 5.45 0 0 1 12 6.2a5.45 5.45 0 0 1 6.2-2.45c3.66.75 5.16 4.55 3.35 7.75C19.2 15.65 12 20 12 20Z"
+      fill="currentColor"
+    ></path>
+  </svg>
+  {
+    showLabel && (
+      <span data-favorite-label class="favorite-label-add">
+        {t('nav.favorites')}
+      </span>
+    )
+  }
+</button>
+
+<style>
+  .favorite-heart-fill {
+    opacity: 0;
+  }
+
+  button[data-active='true'] .favorite-heart-outline {
+    opacity: 0;
+  }
+
+  button[data-active='true'] .favorite-heart-fill {
+    opacity: 1;
+  }
+</style>

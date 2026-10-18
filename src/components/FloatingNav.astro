@@ -12,63 +12,249 @@ const path = Astro.url.pathname;
 const bare = path.replace(/^\/en(?=\/|$)/, '') || '/';
 const isHome = bare === '/';
 const isRecettes = bare.startsWith('/recettes');
+const isFavorites = bare.startsWith('/favoris');
+const isGuides = bare.startsWith('/guides');
 const otherLang = lang === 'fr' ? 'en' : 'fr';
 const switchHref = switchLocalePath(path, otherLang);
+
+const mobileLinks = [
+  { href: localePath('/', lang), label: t('nav.home'), active: isHome },
+  { href: localePath('/recettes', lang), label: t('nav.recipes'), active: isRecettes },
+  { href: localePath('/favoris', lang), label: t('nav.favorites'), active: isFavorites },
+  { href: localePath('/guides', lang), label: t('guides.title'), active: isGuides },
+];
 ---
 
-<header class="fixed top-5 left-0 right-0 z-50 px-grid-margin pointer-events-none" data-print-hide>
-  <div class="mx-auto max-w-[1200px] relative flex items-center justify-center min-h-14 pointer-events-auto">
-    <nav
-      class="flex h-14 w-full items-center justify-between gap-2 text-[9px] sm:text-[10px] font-medium uppercase tracking-[0.16em] text-creme-100/80"
-      aria-label={t('nav.label')}
-    >
-      <div class="flex flex-1 items-center gap-5 min-w-0">
-        <a
-          href={localePath('/', lang)}
-          class:list={['hover:text-white transition-colors truncate', isHome && 'text-white']}
-        >
-          {t('nav.home')}
-        </a>
-      </div>
+<header class="fixed top-0 left-0 right-0 z-50 pointer-events-none" data-print-hide data-site-nav>
+  <div class="relative z-50 px-grid-margin pt-5 pointer-events-auto">
+    <div class="mx-auto max-w-[1200px] relative flex items-center justify-center min-h-14">
+      <!-- Desktop -->
+      <nav
+        class="hidden md:flex h-14 w-full items-center justify-between gap-2 text-[10px] font-medium uppercase tracking-[0.16em] text-creme-100/80"
+        aria-label={t('nav.label')}
+      >
+        <div class="flex flex-1 items-center gap-5 min-w-0">
+          <a
+            href={localePath('/', lang)}
+            class:list={['hover:text-white transition-colors truncate', isHome && 'text-white']}
+          >
+            {t('nav.home')}
+          </a>
+        </div>
 
-      <div class="w-14 sm:w-18 shrink-0" aria-hidden="true"></div>
+        <div class="w-18 shrink-0" aria-hidden="true"></div>
 
-      <div class="flex flex-1 items-center justify-end gap-5 min-w-0">
-        <a
-          href={localePath('/recettes', lang)}
-          class:list={['hover:text-white transition-colors', isRecettes && 'text-white']}
-        >
-          {t('nav.recipes')}
-        </a>
+        <div class="flex flex-1 items-center justify-end gap-5 min-w-0">
+          <a
+            href={localePath('/recettes', lang)}
+            class:list={['hover:text-white transition-colors', isRecettes && 'text-white']}
+          >
+            {t('nav.recipes')}
+          </a>
+          <a
+            href={localePath('/favoris', lang)}
+            class:list={['hover:text-white transition-colors', isFavorites && 'text-white']}
+          >
+            {t('nav.favorites')}
+          </a>
+          <a
+            href={switchHref}
+            class="hover:text-white transition-colors text-creme-100/55"
+            aria-label={t('nav.lang')}
+            data-lang-switch
+          >
+            {otherLang === 'en' ? 'EN' : 'FR'}
+          </a>
+        </div>
+      </nav>
+
+      <!-- Mobile bar -->
+      <div class="flex md:hidden h-14 w-full items-center justify-between">
         <a
           href={switchHref}
-          class="hover:text-white transition-colors text-creme-100/55"
+          class="relative z-10 text-[10px] font-medium uppercase tracking-[0.16em] text-creme-100/55 hover:text-white transition-colors"
           aria-label={t('nav.lang')}
           data-lang-switch
         >
           {otherLang === 'en' ? 'EN' : 'FR'}
         </a>
-      </div>
-    </nav>
 
-    <a
-      href={localePath('/', lang)}
-      class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex h-[66px] w-[54px] items-center justify-center transition-transform hover:-translate-y-[52%]"
-      aria-label={t('nav.logo')}
-    >
-      <svg viewBox="0 0 54 66" class="h-full w-full drop-shadow-[0_8px_18px_rgba(0,0,0,.35)]" aria-hidden="true">
-        <path d="M27 2C38 2 47 11 47 22v20c0 11-9 20-20 20S7 53 7 42V22C7 11 16 2 27 2Z" fill="#c91f32"></path>
-        <path d="M15 21c7-5 17-5 24 0" stroke="#efe5da" stroke-width="1.2" stroke-linecap="round" opacity=".7"></path>
-        <text
-          x="27"
-          y="43"
-          text-anchor="middle"
-          fill="#f5f0e9"
-          font-family="Georgia, serif"
-          font-size="24"
-          font-weight="500">M</text
+        <div class="w-11" aria-hidden="true"></div>
+
+        <button
+          type="button"
+          class="relative z-10 flex size-11 items-center justify-center text-creme-100"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="mobile-nav-panel"
+          aria-label={t('nav.open')}
+          data-label-open={t('nav.open')}
+          data-label-close={t('nav.close')}
         >
-      </svg>
-    </a>
+          <span class="sr-only" data-nav-toggle-label>{t('nav.open')}</span>
+          <span class="relative block h-3.5 w-5" aria-hidden="true">
+            <span
+              data-nav-line="top"
+              class="absolute left-0 top-0 h-px w-full bg-current transition-transform duration-200 origin-center"
+            ></span>
+            <span
+              data-nav-line="mid"
+              class="absolute left-0 top-1/2 h-px w-full -translate-y-1/2 bg-current transition-opacity duration-200"
+            ></span>
+            <span
+              data-nav-line="bot"
+              class="absolute left-0 bottom-0 h-px w-full bg-current transition-transform duration-200 origin-center"
+            ></span>
+          </span>
+        </button>
+      </div>
+
+      <a
+        href={localePath('/', lang)}
+        class="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 flex h-[66px] w-[54px] items-center justify-center transition-transform hover:-translate-y-[52%]"
+        aria-label={t('nav.logo')}
+        data-nav-logo
+      >
+        <svg viewBox="0 0 54 66" class="h-full w-full drop-shadow-[0_8px_18px_rgba(0,0,0,.35)]" aria-hidden="true">
+          <path d="M27 2C38 2 47 11 47 22v20c0 11-9 20-20 20S7 53 7 42V22C7 11 16 2 27 2Z" fill="#c91f32"></path>
+          <path d="M15 21c7-5 17-5 24 0" stroke="#efe5da" stroke-width="1.2" stroke-linecap="round" opacity=".7"></path>
+          <text
+            x="27"
+            y="43"
+            text-anchor="middle"
+            fill="#f5f0e9"
+            font-family="Georgia, serif"
+            font-size="24"
+            font-weight="500">M</text
+          >
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Mobile panel -->
+  <div
+    id="mobile-nav-panel"
+    class="md:hidden fixed inset-0 z-40 bg-earth-900/97 text-creme-100 opacity-0 pointer-events-none transition-opacity duration-300 data-[state=open]:opacity-100 data-[state=open]:pointer-events-auto"
+    data-nav-panel
+    data-state="closed"
+    hidden
+  >
+    <nav
+      class="flex h-full flex-col px-grid-margin pb-10 pt-28"
+      aria-label={t('nav.label')}
+    >
+      <ul class="mt-8 flex flex-1 flex-col justify-center gap-1 list-none p-0 m-0">
+        {
+          mobileLinks.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                class:list={[
+                  'block py-3 font-display text-4xl font-light tracking-tight transition-colors',
+                  link.active ? 'text-white' : 'text-creme-100/70 hover:text-white',
+                ]}
+                data-nav-link
+                aria-current={link.active ? 'page' : undefined}
+              >
+                {link.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <a
+        href={switchHref}
+        class="text-[11px] font-medium uppercase tracking-[0.18em] text-creme-100/45 hover:text-white transition-colors"
+        data-nav-link
+        data-lang-switch
+      >
+        {otherLang === 'en' ? 'English' : 'Français'}
+      </a>
+    </nav>
   </div>
 </header>
+
+<script>
+  function initSiteNav() {
+    const root = document.querySelector<HTMLElement>('[data-site-nav]');
+    if (!root) return;
+
+    const toggle = root.querySelector<HTMLButtonElement>('[data-nav-toggle]');
+    const panel = root.querySelector<HTMLElement>('[data-nav-panel]');
+    const label = root.querySelector<HTMLElement>('[data-nav-toggle-label]');
+    const lines = {
+      top: root.querySelector<HTMLElement>('[data-nav-line="top"]'),
+      mid: root.querySelector<HTMLElement>('[data-nav-line="mid"]'),
+      bot: root.querySelector<HTMLElement>('[data-nav-line="bot"]'),
+    };
+
+    if (!toggle || !panel) return;
+
+    const openLabel = toggle.dataset.labelOpen ?? 'Menu';
+    const closeLabel = toggle.dataset.labelClose ?? 'Close';
+
+    const setOpen = (open: boolean) => {
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? closeLabel : openLabel);
+      if (label) label.textContent = open ? closeLabel : openLabel;
+      panel.dataset.state = open ? 'open' : 'closed';
+      panel.hidden = !open;
+      document.documentElement.classList.toggle('nav-open', open);
+
+      if (lines.top && lines.mid && lines.bot) {
+        if (open) {
+          lines.top.style.transform = 'translateY(6.5px) rotate(45deg)';
+          lines.mid.style.opacity = '0';
+          lines.bot.style.transform = 'translateY(-6.5px) rotate(-45deg)';
+        } else {
+          lines.top.style.transform = '';
+          lines.mid.style.opacity = '';
+          lines.bot.style.transform = '';
+        }
+      }
+    };
+
+    // Always close after navigation / page load
+    setOpen(false);
+
+    if (root.dataset.navReady === 'true') return;
+    root.dataset.navReady = 'true';
+
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') !== 'true';
+      setOpen(open);
+    });
+
+    panel.querySelectorAll('[data-nav-link]').forEach((link) => {
+      link.addEventListener('click', () => setOpen(false));
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.matchMedia('(min-width: 768px)').matches) setOpen(false);
+    });
+  }
+
+  initSiteNav();
+  document.addEventListener('astro:page-load', initSiteNav);
+</script>
+
+<style>
+  :global(html.nav-open) {
+    overflow: hidden;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    [data-nav-panel],
+    [data-nav-line] {
+      transition-duration: 0.01ms !important;
+    }
+  }
+</style>

@@ -1,0 +1,70 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import EditorialRecipeCard from '../../components/EditorialRecipeCard.astro';
+import PillButton from '../../components/PillButton.astro';
+import type { Locale } from '../../i18n/config';
+import { localePath, localizeRecipe, recipeCountLabel, useTranslations } from '../../i18n/utils';
+
+interface Props {
+  lang?: Locale;
+}
+
+const lang = Astro.props.lang ?? 'fr';
+const t = useTranslations(lang);
+const recipes = (await getCollection('recettes'))
+  .map((recipe) => ({ recipe, localized: localizeRecipe(recipe, lang) }))
+  .sort((a, b) => a.localized.title.localeCompare(b.localized.title, lang));
+
+const countSingular = t('recipes.count', { n: '00' }).replace('00', '{n}');
+const countPlural = t('recipes.countPlural', { n: '00' }).replace('00', '{n}');
+---
+
+<BaseLayout title={t('favorites.title')} description={t('favorites.description')} lang={lang}>
+  <section class="pt-28 pb-12 bg-earth-dark min-h-[46svh] flex items-end border-b border-white/10">
+    <div class="px-grid-margin max-w-[1200px] mx-auto w-full">
+      <div class="grid lg:grid-cols-12 gap-8 items-end" data-stagger>
+        <div class="lg:col-span-8">
+          <h1 class="text-display-hero">{t('favorites.hero')}</h1>
+        </div>
+        <p class="lg:col-span-4 text-sm leading-6 text-creme-200/60 max-w-md">
+          {t('favorites.intro')}
+        </p>
+      </div>
+      <p
+        class="mt-10 text-[9px] uppercase tracking-[.16em] text-creme-200/35"
+        data-favorites-count
+      >
+        {recipeCountLabel(lang, 0)}
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-creme-100 py-12 sm:py-16">
+    <div class="px-grid-margin max-w-[1200px] mx-auto">
+      <div data-favorites-empty class="py-16 text-center">
+        <p class="font-display text-3xl font-light text-earth-900/55">{t('favorites.empty')}</p>
+        <p class="mt-4 text-sm text-earth-900/50">{t('favorites.emptyHint')}</p>
+        <div class="mt-10 flex justify-center">
+          <PillButton href={localePath('/recettes', lang)} label={t('favorites.browse')} variant="ink" />
+        </div>
+      </div>
+
+      <ul
+        class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-16 list-none p-0 m-0"
+        data-favorites-list
+        data-count-singular={countSingular}
+        data-count-plural={countPlural}
+        hidden
+      >
+        {
+          recipes.map(({ recipe, localized }, index) => (
+            <li data-favorite-item={localized.slug} hidden>
+              <EditorialRecipeCard recipe={recipe} priority={index < 3} lang={lang} />
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,155 @@
+---
+import type { Locale } from '../i18n/config';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang?: Locale;
+}
+
+const lang = Astro.props.lang ?? 'fr';
+const t = useTranslations(lang);
+---
+
+<div
+  class="pointer-events-none fixed inset-x-0 bottom-6 z-[80] flex justify-center px-grid-margin"
+  data-favorites-toast-root
+  data-toast-added={t('favorites.toastAdded')}
+  data-toast-removed={t('favorites.toastRemoved')}
+  data-toast-error={t('favorites.toastError')}
+  aria-live="polite"
+  aria-atomic="true"
+>
+  <p
+    data-favorites-toast
+    hidden
+    class="max-w-sm border border-earth-900/10 bg-creme-100 px-4 py-2.5 text-[10px] uppercase tracking-[.16em] text-earth-900 shadow-[0_12px_40px_rgba(18,12,9,.18)] transition-[opacity,transform] duration-200 data-[state=open]:opacity-100 data-[state=closed]:pointer-events-none data-[state=closed]:translate-y-2 data-[state=closed]:opacity-0 data-[tone=error]:border-mpichi-red/25 data-[tone=error]:text-mpichi-red"
+    data-state="closed"
+  ></p>
+</div>
+
+<script>
+  import {
+    FAVORITES_CHANGED_EVENT,
+    getFavorites,
+    toggleFavorite,
+  } from '../lib/favorites';
+
+  let toastTimer: number | undefined;
+
+  function syncFavoriteUi() {
+    const favorites = new Set(getFavorites());
+
+    document.querySelectorAll<HTMLButtonElement>('[data-favorite-toggle]').forEach((button) => {
+      const slug = button.dataset.favoriteSlug ?? '';
+      const active = favorites.has(slug);
+      button.dataset.active = String(active);
+      button.setAttribute('aria-pressed', String(active));
+      button.setAttribute(
+        'aria-label',
+        active ? (button.dataset.labelRemove ?? '') : (button.dataset.labelAdd ?? ''),
+      );
+    });
+
+    const items = [...document.querySelectorAll<HTMLElement>('[data-favorite-item]')];
+    if (items.length === 0) return;
+
+    let visible = 0;
+    items.forEach((item) => {
+      const slug = item.dataset.favoriteItem ?? '';
+      const show = favorites.has(slug);
+      item.hidden = !show;
+      if (show) visible += 1;
+    });
+
+    const empty = document.querySelector<HTMLElement>('[data-favorites-empty]');
+    const list = document.querySelector<HTMLElement>('[data-favorites-list]');
+    const count = document.querySelector<HTMLElement>('[data-favorites-count]');
+    const singular = list?.dataset.countSingular;
+    const plural = list?.dataset.countPlural;
+
+    if (empty) empty.hidden = visible !== 0;
+    if (list) list.hidden = visible === 0;
+    if (count && singular && plural) {
+      const padded = String(visible).padStart(2, '0');
+      count.textContent = (visible > 1 ? plural : singular).replace('{n}', padded);
+    }
+  }
+
+  function showFavoriteToast(kind: 'added' | 'removed' | 'error') {
+    const root = document.querySelector<HTMLElement>('[data-favorites-toast-root]');
+    const toast = document.querySelector<HTMLElement>('[data-favorites-toast]');
+    if (!root || !toast) return;
+
+    const message =
+      kind === 'added'
+        ? root.dataset.toastAdded
+        : kind === 'removed'
+          ? root.dataset.toastRemoved
+          : root.dataset.toastError;
+
+    if (!message) return;
+
+    if (toastTimer !== undefined) window.clearTimeout(toastTimer);
+
+    toast.hidden = false;
+    toast.dataset.tone = kind === 'error' ? 'error' : 'ok';
+    toast.textContent = message;
+    toast.dataset.state = 'closed';
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        toast.dataset.state = 'open';
+      });
+    });
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    toastTimer = window.setTimeout(
+      () => {
+        toast.dataset.state = 'closed';
+        window.setTimeout(
+          () => {
+            toast.hidden = true;
+          },
+          reduceMotion ? 0 : 200,
+        );
+      },
+      reduceMotion ? 1600 : 2200,
+    );
+  }
+
+  function initFavorites() {
+    syncFavoriteUi();
+
+    if (document.documentElement.dataset.favoritesReady === 'true') return;
+    document.documentElement.dataset.favoritesReady = 'true';
+
+    document.addEventListener('click', (event) => {
+      const target = event.target;
+      if (!(target instanceof Element)) return;
+      const button = target.closest<HTMLButtonElement>('[data-favorite-toggle]');
+      if (!button) return;
+
+      event.preventDefault();
+      event.stopPropagation();
+
+      const slug = button.dataset.favoriteSlug;
+      if (!slug) return;
+
+      const { ok, active } = toggleFavorite(slug);
+      syncFavoriteUi();
+      window.dispatchEvent(new CustomEvent(FAVORITES_CHANGED_EVENT));
+
+      if (!ok) {
+        showFavoriteToast('error');
+        return;
+      }
+
+      showFavoriteToast(active ? 'added' : 'removed');
+    });
+
+    window.addEventListener(FAVORITES_CHANGED_EVENT, syncFavoriteUi);
+  }
+
+  initFavorites();
+  document.addEventListener('astro:page-load', initFavorites);
+</script>

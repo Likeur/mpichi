@@ -2,6 +2,7 @@
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EditorialRecipeCard from '../../components/EditorialRecipeCard.astro';
+import FavoriteButton from '../../components/FavoriteButton.astro';
 import PillButton from '../../components/PillButton.astro';
 import { slugFromRecipeId } from '../../lib/recipe-theme';
 import type { Locale } from '../../i18n/config';
@@ -307,6 +308,7 @@ const breadcrumbJsonLd = {
           </button>
         </div>
         <div class="flex items-center gap-5">
+          <FavoriteButton slug={localized.slug} lang={lang} variant="ink" showLabel />
           <button
             type="button"
             data-share

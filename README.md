@@ -12,6 +12,7 @@
 - **Bilingue FR / EN** — localisation UI + 38 recettes traduites, switch de langue dans la nav, `hreflang`
 - **Accueil éditorial** avec carrousel héro, sections patrimoine et recettes mises en avant
 - **Catalogue** avec recherche locale, filtres (catégorie, difficulté, région) et pagination
+- **Favoris locaux** (localStorage, sans compte) — page `/favoris`
 - **Pages taxonomiques** : index et fiches par `/regions` et `/categories` (FR/EN)
 - **Guides éditoriaux** : `/guides` (pondu, moambe, marché) FR/EN
 - **Fiches détail** : temps, portions ajustables (+/− personnes), partager, imprimer, recettes liées, note sources/transmission, crédit photo

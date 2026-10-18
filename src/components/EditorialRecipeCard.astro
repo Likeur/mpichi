@@ -3,6 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 import type { Locale } from '../i18n/config';
 import { localePath, localizeRecipe, useTranslations } from '../i18n/utils';
 import { regionSlugFromKey } from '../lib/taxonomy';
+import FavoriteButton from './FavoriteButton.astro';
 
 interface Props {
   recipe: CollectionEntry<'recettes'>;
@@ -21,19 +22,24 @@ const cardImage = localized.image.replace(/([?&]width=)\d+/, '$1' + '900');
 ---
 
 <article class="group relative flex h-full flex-col">
-  <a href={href} class="block overflow-hidden bg-aged-oak/10">
-    <img
-      src={cardImage}
-      alt={localized.imageAlt}
-      loading={priority ? 'eager' : 'lazy'}
-      fetchpriority={priority ? 'high' : 'auto'}
-      decoding="async"
-      sizes="(min-width: 1024px) 360px, (min-width: 640px) 45vw, 92vw"
-      data-recipe-image
-      class="aspect-[4/3] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.025]"
-      style={`object-position: ${localized.imagePosition}`}
-    />
-  </a>
+  <div class="relative overflow-hidden bg-aged-oak/10">
+    <a href={href} class="block">
+      <img
+        src={cardImage}
+        alt={localized.imageAlt}
+        loading={priority ? 'eager' : 'lazy'}
+        fetchpriority={priority ? 'high' : 'auto'}
+        decoding="async"
+        sizes="(min-width: 1024px) 360px, (min-width: 640px) 45vw, 92vw"
+        data-recipe-image
+        class="aspect-[4/3] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.025]"
+        style={`object-position: ${localized.imagePosition}`}
+      />
+    </a>
+    <div class="absolute right-2.5 top-2.5 z-10" data-print-hide>
+      <FavoriteButton slug={localized.slug} lang={lang} variant="overlay" />
+    </div>
+  </div>
   <h3 class="mt-5 font-display text-2xl sm:text-[1.75rem] font-light text-earth-900 leading-[1.05]">
     <a href={href} class="hover:text-mpichi-red transition-colors">{localized.title}</a>
   </h3>
