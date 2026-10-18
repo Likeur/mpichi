@@ -13,7 +13,7 @@ export type RecipeTranslation = {
 
 export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
   "biteku-teku-kasai": {
-    "title": "Biteku-teku from Kasai",
+    "title": "Biteku-teku",
     "description": "Amaranth leaves quickly simmered with onion, tomato and a touch of peanut.",
     "region": "Greater Kasai",
     "imageAlt": "Fresh amaranth leaves used for biteku-teku",
@@ -41,9 +41,10 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Greater Kasai",
       "amaranth",
       "biteku-teku",
+      "lenga-lenga",
       "vegetables"
     ],
-    "body": "Biteku-teku is popular in Kasai and other regions of the DRC. It is eaten with bidia and can also be prepared without peanuts."
+    "body": "Biteku-teku is popular in Kasai and other regions of the DRC. In Kinshasa and the West, the same amaranth is often called lenga-lenga, more commonly simmered with tomato and palm oil. It is eaten with bidia and can also be prepared without peanuts."
   },
   "brochettes-grillons": {
     "title": "Cricket skewers",
@@ -77,7 +78,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     "body": "Edible insects have a long place in several Congolese regional cuisines and remain a valued source of protein."
   },
   "bukari-katanga": {
-    "title": "Bukari from Katanga",
+    "title": "Bukari",
     "description": "A soft maize-flour dough worked hot until smooth, dense and ready to accompany sauces.",
     "region": "Greater Katanga",
     "imageAlt": "Balls of maize fufu served in the Democratic Republic of the Congo",
@@ -229,37 +230,6 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     ],
     "body": "Fumbwa, also known as koko, is a forest vine leaf much loved in western Congo."
   },
-  "haricots-huile-palme": {
-    "title": "Beans in palm oil",
-    "description": "Dried beans slowly simmered with red palm oil, onion and chili until soft and fragrant.",
-    "region": "Western DRC",
-    "imageAlt": "African bean dish cooked with palm oil",
-    "prepTime": "20 min + 8 h soaking",
-    "cookTime": "1 h 35",
-    "ingredients": [
-      "400 g dried beans, soaked overnight",
-      "120 ml red palm oil",
-      "2 onions, chopped",
-      "2 tomatoes, crushed",
-      "2 garlic cloves",
-      "1 small chili",
-      "Salt",
-      "Water"
-    ],
-    "steps": [
-      "Drain the beans, cover with fresh water and cook until almost tender.",
-      "In another pan, heat the palm oil and sweat the onions, garlic, tomatoes and chili.",
-      "Add the beans with some of their cooking water and simmer until soft.",
-      "Season and reduce to the desired consistency.",
-      "Serve with rice, plantain or fufu."
-    ],
-    "tags": [
-      "beans",
-      "palm oil",
-      "simmered"
-    ],
-    "body": "A simple everyday dish whose depth comes from palm oil and patient cooking."
-  },
   "kamundele": {
     "title": "Kamundele",
     "description": "Meat skewers seasoned and grilled over coals until browned outside and juicy inside.",
@@ -319,34 +289,6 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Greater Katanga"
     ],
     "body": "Kapenta arrived in Katanga cooking through lake fisheries and everyday kitchen practice."
-  },
-  "lenga-lenga": {
-    "title": "Lenga-lenga",
-    "description": "Amaranth leaves simmered with onion and a little oil until tender and bright.",
-    "region": "Kinshasa & Western DRC",
-    "imageAlt": "Cooked amaranth greens",
-    "prepTime": "20 min",
-    "cookTime": "25 min",
-    "ingredients": [
-      "500 g amaranth leaves",
-      "1 onion, sliced",
-      "2 tbsp oil",
-      "1 tomato, optional",
-      "Salt",
-      "A little water"
-    ],
-    "steps": [
-      "Wash the leaves carefully and drain.",
-      "Sweat the onion in the oil, add the tomato if using.",
-      "Add the leaves and a splash of water, cover and cook 10 to 15 minutes.",
-      "Season and serve with fufu, rice or grilled fish."
-    ],
-    "tags": [
-      "amaranth",
-      "leaves",
-      "vegetables"
-    ],
-    "body": "Lenga-lenga is among the most common leafy greens on Congolese tables."
   },
   "liboke-poisson": {
     "title": "Fish liboke",
@@ -460,7 +402,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "simmered",
       "everyday"
     ],
-    "body": "Madesu is everyday cooking: economical, filling, and endlessly varied from one kitchen to another."
+    "body": "Madesu also covers the everyday palm-oil beans of many households. It is economical, filling, and endlessly varied from one kitchen to another."
   },
   "makayabu": {
     "title": "Makayabu",
@@ -920,7 +862,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     "body": "Pepe soupe is street heat: spicy, fragrant, and meant to be eaten without waiting."
   },
   "poisson-braise-kinkole": {
-    "title": "Grilled fish from Kinkole",
+    "title": "Grilled fish",
     "description": "Whole fish marinated with pili-pili and aromatics, grilled until the skin is smoky and the flesh juicy.",
     "region": "Kinshasa · Kinkole",
     "imageAlt": "Grilled fish at Kinkole",
@@ -1037,10 +979,10 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     "body": "Some versions add smoked fish; others stay plant-based and let the saka-madesu pairing lead."
   },
   "salade-kisangani": {
-    "title": "Kisangani salad",
+    "title": "Cabbage-carrot salad",
     "description": "A crunchy cabbage and carrot salad bound with mayonnaise, brightened with vinegar and finished with eggs.",
     "region": "Kisangani",
-    "imageAlt": "Kisangani salad",
+    "imageAlt": "Cabbage, carrot and egg salad",
     "prepTime": "20 min",
     "cookTime": "10 min",
     "ingredients": [
@@ -1126,5 +1068,413 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Kinshasa"
     ],
     "body": "Served with rice, fufu or makemba, soso ya sauce is a family dish whose seasoning shifts from house to house."
+  },
+  "poulet-mayo": {
+    title: "Poulet mayo",
+    description:
+      "Browned chicken pieces coated in a mayonnaise sauce lifted with garlic, mustard and pili-pili — a Kinshasa classic for tables and celebrations.",
+    region: "Kinshasa",
+    imageAlt: "Golden chicken ready to be coated in sauce",
+    prepTime: "25 min",
+    cookTime: "45 min",
+    ingredients: [
+      "1 chicken, cut into pieces",
+      "3 tbsp oil",
+      "2 onions, sliced",
+      "3 garlic cloves, crushed",
+      "1 tsp mustard",
+      "200 ml mayonnaise",
+      "1 tbsp lemon juice",
+      "Pili-pili, salt and pepper",
+      "1 stock cube, optional",
+    ],
+    steps: [
+      "Season the chicken and brown it in hot oil, then set aside.",
+      "In the same pot, soften the onions. Add the garlic, crumbled stock cube and a splash of water.",
+      "Return the chicken, cover and simmer 25 to 30 minutes until tender.",
+      "Off the heat, mix mayonnaise, mustard, lemon and pili-pili. Coat the still-warm chicken.",
+      "Stir gently so the sauce does not split. Serve with fries, rice or salad.",
+    ],
+    tags: ["chicken", "mayonnaise", "Kinshasa", "celebration"],
+    body: "Poulet mayo is neither moambe nor a tomato sauce: the cold mayonnaise liaison is added at the end. Mustard and chili levels vary widely from one household to another.",
+  },
+  "ntaba-sauce": {
+    title: "Ntaba in sauce",
+    description:
+      "Goat simmered slowly in a tomato and onion sauce — the stewed version of ntaba, distinct from the grilled one.",
+    region: "Kinshasa & Kongo-Central",
+    imageAlt: "Goat stew simmered in a brown sauce",
+    prepTime: "25 min",
+    cookTime: "1 h 45",
+    ingredients: [
+      "1.5 kg goat, cut into pieces",
+      "3 onions, sliced",
+      "4 ripe tomatoes, crushed",
+      "4 garlic cloves, crushed",
+      "2 cm ginger, grated",
+      "3 tbsp oil",
+      "1 small chili",
+      "1 stock cube",
+      "Salt, pepper and water",
+    ],
+    steps: [
+      "Brown the goat pieces in the oil. Set aside.",
+      "Sweat onions, garlic and ginger. Add the tomatoes and reduce for 10 minutes.",
+      "Return the meat with the cube, chili and water to cover. Bring to a boil.",
+      "Lower the heat, cover and simmer 1 h 15 to 1 h 30 until the goat is very tender.",
+      "Uncover to thicken the sauce if needed. Serve with rice, chikwangue or plantain.",
+    ],
+    tags: ["goat", "sauce", "simmered", "ntaba"],
+    body: "Unlike grilled ntaba over coals, this version stays entirely in the pot. Cooking time depends on the animal and the size of the pieces.",
+  },
+  "viande-ya-sauce": {
+    title: "Viande ya sauce",
+    description:
+      "Beef simmered in a generous tomato and onion sauce — everyday Kinshasa cooking, distinct from kamundele skewers.",
+    region: "Kinshasa",
+    imageAlt: "Tomato beef stew in a pot",
+    prepTime: "20 min",
+    cookTime: "1 h 30",
+    ingredients: [
+      "1 kg stewing beef",
+      "3 onions, sliced",
+      "4 tomatoes, crushed",
+      "3 garlic cloves",
+      "2 tbsp tomato paste, optional",
+      "3 tbsp oil",
+      "1 bay leaf",
+      "1 stock cube",
+      "Chili, salt and water",
+    ],
+    steps: [
+      "Brown the meat in oil in batches. Set aside.",
+      "Soften the onions, add garlic, tomatoes and paste. Cook 8 minutes.",
+      "Return the beef with bay leaf, cube and water to cover. Season lightly.",
+      "Simmer covered 1 h 15 to 1 h 30 until tender and the sauce has thickened.",
+      "Adjust the chili and serve with rice, fufu or potatoes.",
+    ],
+    tags: ["beef", "sauce", "tomato", "everyday"],
+    body: "Viande ya sauce is a table stew, not a street grill. Carrots or peppers are often added depending on the market.",
+  },
+  "poisson-moambe": {
+    title: "Fish moambe",
+    description:
+      "Firm fish simmered in palm-nut pulp sauce — river moambe, distinct from chicken moambe.",
+    region: "Kinshasa & Congo Basin",
+    imageAlt: "Fish moambe served with rice",
+    prepTime: "25 min",
+    cookTime: "50 min",
+    ingredients: [
+      "1.2 kg firm fish (captain, tilapia or similar), in steaks",
+      "350 ml palm-nut cream / pulp (moambe)",
+      "2 onions, sliced",
+      "2 tomatoes, crushed",
+      "2 garlic cloves",
+      "2 tbsp oil",
+      "Salt, chili and a little water",
+    ],
+    steps: [
+      "Season the fish and brown it quickly in oil, then set aside.",
+      "Sweat onions, garlic and tomatoes into a short sauce.",
+      "Add the moambe and half a glass of water. Stir and bring to a gentle simmer.",
+      "Return the fish, cover and cook 25 to 35 minutes without stirring too much.",
+      "Adjust seasoning and serve with white rice or chikwangue.",
+    ],
+    tags: ["moambe", "fish", "palm nut", "celebration"],
+    body: "Fish moambe needs flesh that holds during cooking. As with chicken, tinned pulp remains an honest base outside the fresh-nut season.",
+  },
+  "liboke-viande": {
+    title: "Meat liboke",
+    description:
+      "Meat marinated with aromatics, wrapped in banana leaves and steamed — the liboke gesture applied to meat, not fish.",
+    region: "Bandundu & Kongo-Central",
+    imageAlt: "Closed liboke pouch in leaves, ready to cook",
+    prepTime: "30 min + 1 h marinating",
+    cookTime: "1 h",
+    ingredients: [
+      "800 g beef or goat, in pieces",
+      "2 onions, sliced into rings",
+      "2 tomatoes, sliced",
+      "1 bell pepper, cut into strips",
+      "3 tbsp palm oil",
+      "2 garlic cloves, crushed",
+      "1 tsp grated ginger",
+      "Salt, chili, stock cube",
+      "4 large banana leaves",
+    ],
+    steps: [
+      "Mix oil, garlic, ginger, salt, chili and cube. Coat the meat and marinate for 1 hour.",
+      "Soften the banana leaves over the flame.",
+      "Fill each leaf with onion, tomato, pepper and meat. Drizzle with a little palm oil.",
+      "Close into a tight parcel.",
+      "Steam or bake at 180 °C for 50 to 60 minutes.",
+      "Serve opened at the table with plantain or fufu.",
+    ],
+    tags: ["meat", "banana leaf", "steam", "liboke"],
+    body: "Meat liboke uses the same gesture as fish liboke, with a longer cooking time to tenderise the flesh.",
+  },
+  "sauce-gombo": {
+    title: "Okra sauce",
+    description:
+      "Fresh okra simmered to its characteristic silky texture, with tomato, onion and optionally smoked fish or meat.",
+    region: "Kinshasa & Western DRC",
+    imageAlt: "Simmered okra stew",
+    prepTime: "20 min",
+    cookTime: "40 min",
+    ingredients: [
+      "500 g fresh okra",
+      "2 onions, sliced",
+      "2 tomatoes, crushed",
+      "2 tbsp palm oil or neutral oil",
+      "1 garlic clove",
+      "150 g smoked fish, optional",
+      "Salt, chili and a little water",
+    ],
+    steps: [
+      "Wash the okra, trim the ends and slice into rounds.",
+      "Sweat onion and garlic in the oil, add the tomatoes and cook 5 minutes.",
+      "Add the okra, a splash of water and the smoked fish if using.",
+      "Simmer over medium heat 25 to 30 minutes, stirring now and then, to the texture you want.",
+      "Season and serve with rice or fufu.",
+    ],
+    tags: ["okra", "gombo", "sauce", "vegetable"],
+    body: "Okra’s silkiness is managed through cooking time and water. Some households add a pinch of cooking soda; others prefer a shorter sauce.",
+  },
+  "kossa-kossa": {
+    title: "Kossa-kossa",
+    description:
+      "Dried shrimp soaked then simmered with tomato, onion and pili-pili — an iodised everyday Congolese sauce.",
+    region: "Kinshasa & Congo Basin",
+    imageAlt: "Dried shrimp used in cooking",
+    prepTime: "20 min + 30 min soaking",
+    cookTime: "35 min",
+    ingredients: [
+      "200 g kossa-kossa (dried shrimp)",
+      "2 onions, sliced",
+      "3 tomatoes, crushed",
+      "2 garlic cloves",
+      "2 tbsp palm oil",
+      "1 small chili",
+      "Salt and water",
+    ],
+    steps: [
+      "Rinse then soak the shrimp for 30 minutes. Drain.",
+      "Sweat onions and garlic in the oil. Add tomatoes and chili.",
+      "Add the shrimp and a little water. Simmer 25 minutes.",
+      "Taste before salting: dried shrimp are already salty and iodised.",
+      "Serve with rice, chikwangue or plantain.",
+    ],
+    tags: ["shrimp", "dried", "sauce", "tomato"],
+    body: "Kossa-kossa brings a concentrated sea taste. Quality at the market is read in colour and smell more than in size.",
+  },
+  "foie-boeuf-saute": {
+    title: "Sautéed beef liver",
+    description:
+      "Liver slices quickly seared with onion and chili — street-food and express cooking common in Kinshasa.",
+    region: "Kinshasa",
+    imageAlt: "Sautéed liver with onions in a pan",
+    prepTime: "15 min",
+    cookTime: "15 min",
+    ingredients: [
+      "600 g beef liver, sliced",
+      "2 onions, sliced",
+      "2 garlic cloves, chopped",
+      "2 tbsp oil",
+      "1 tbsp lemon juice",
+      "Chili, salt and pepper",
+    ],
+    steps: [
+      "Pat the liver dry and remove visible sinews. Season with salt, pepper and a little lemon.",
+      "Heat the oil high. Sear the liver 2 to 3 minutes per side. Set aside.",
+      "Quickly sweat the onions and garlic in the pan.",
+      "Return the liver, add chili and toss 1 to 2 minutes without overcooking.",
+      "Serve at once with bread, fries or rice.",
+    ],
+    tags: ["liver", "beef", "pan", "street food"],
+    body: "Liver hardens if it stays too long on the heat. In Kinshasa it is often sold as a hot street portion with plenty of onion.",
+  },
+  "porc-braise": {
+    title: "Braised pork",
+    description:
+      "Pork pieces marinated with aromatics then braised over coals to a golden crust — pork grilling previously missing from the catalogue.",
+    region: "Kinshasa",
+    imageAlt: "Pork grilled over coals",
+    prepTime: "25 min + 2 h marinating",
+    cookTime: "55 min",
+    ingredients: [
+      "1.5 kg pork (shoulder or neck), in pieces",
+      "2 onions, one grated",
+      "4 garlic cloves",
+      "2 cm ginger",
+      "2 tbsp lemon juice",
+      "2 tbsp oil",
+      "Chili, salt and pepper",
+    ],
+    steps: [
+      "Make a marinade with grated onion, garlic, ginger, lemon, oil, salt, pepper and chili.",
+      "Coat the pork and marinate 2 hours in the fridge.",
+      "Pre-cook in a pot 20 to 25 minutes with a little water and the marinade.",
+      "Drain, then braise over medium coals 20 to 30 minutes, basting with reserved juices.",
+      "Serve with raw onion, pili-pili and chikwangue or plantain.",
+    ],
+    tags: ["pork", "braise", "grill", "Kinshasa"],
+    body: "Braised pork differs from kamundele (small beef skewers) in cut, cooking time and meat. Pre-cooking before the coals varies from stall to stall.",
+  },
+  "bouillie-arachide": {
+    title: "Peanut porridge",
+    description:
+      "A thick porridge of flour and peanut paste, sweet and comforting — classic breakfast or snack, distinct from savoury mains.",
+    region: "Throughout the DRC",
+    imageAlt: "Bowl of creamy porridge",
+    prepTime: "10 min",
+    cookTime: "25 min",
+    ingredients: [
+      "120 g maize flour (or cassava flour)",
+      "80 g smooth peanut paste",
+      "1 l water",
+      "60 to 80 g sugar",
+      "1 pinch of salt",
+      "1 tsp vanilla or lemon zest, optional",
+    ],
+    steps: [
+      "Loosen the flour in 250 ml cold water until smooth.",
+      "Bring the rest of the water to a boil with the salt.",
+      "Pour in the flour mixture in a thin stream, stirring. Cook 12 to 15 minutes over medium heat, stirring constantly.",
+      "Stir in the peanut paste and sugar. Cook 5 to 8 minutes more until creamy.",
+      "Flavour if desired. Serve warm, plain or with a splash of milk.",
+    ],
+    tags: ["peanut", "porridge", "breakfast", "snack"],
+    body: "Porridge is also made with maize or cassava alone, without peanut. Thickness and sugar vary by household; peanut paste adds richness and a snack-time aroma.",
+  },
+  "beignets-banane": {
+    title: "Banana fritters",
+    description:
+      "Fritters made from sweet banana batter, golden and soft — different from mikate (yeasted dough) and makemba (plain fried plantain).",
+    region: "Kinshasa & Western DRC",
+    imageAlt: "Golden banana fritters",
+    prepTime: "15 min",
+    cookTime: "20 min",
+    ingredients: [
+      "4 very ripe sweet bananas",
+      "150 g flour",
+      "40 g sugar",
+      "1 egg",
+      "1 tsp baking powder",
+      "1 pinch of salt",
+      "1 tsp vanilla or nutmeg, optional",
+      "Frying oil",
+    ],
+    steps: [
+      "Mash the bananas into a smooth puree.",
+      "Add the egg, sugar, salt and vanilla. Mix.",
+      "Fold in the flour and baking powder to a thick batter that drops from a spoon.",
+      "Heat the oil over medium heat. Drop spoonfuls of batter.",
+      "Fry 2 to 3 minutes per side until golden. Drain and serve warm.",
+    ],
+    tags: ["banana", "fritter", "snack", "fried"],
+    body: "Ripe banana partly replaces sugar and carries the flavour. This is neither plain fried plantain (makemba) nor a yeasted water dough (mikate).",
+  },
+  "gateau-manioc": {
+    title: "Cassava cake",
+    description:
+      "A soft cake from grated cassava or cassava flour, sweet and fragrant — a snack and celebration dessert.",
+    region: "Throughout the DRC",
+    imageAlt: "Cassava cake cut into slices",
+    prepTime: "25 min",
+    cookTime: "45 min",
+    ingredients: [
+      "400 g grated sweet cassava (or 280 g cassava flour)",
+      "3 eggs",
+      "150 g sugar",
+      "100 ml oil or melted butter",
+      "150 ml milk (or coconut milk)",
+      "1 packet baking powder (11 g)",
+      "1 pinch of salt",
+      "1 tsp vanilla",
+    ],
+    steps: [
+      "Preheat the oven to 180 °C. Grease a tin.",
+      "If using fresh cassava, grate finely and press lightly to remove excess water.",
+      "Beat eggs and sugar until pale. Add oil, milk and vanilla.",
+      "Fold in the cassava (or flour), baking powder and salt. Mix without overworking.",
+      "Pour into the tin. Bake 40 to 50 minutes until a knife comes out clean.",
+      "Cool slightly before unmoulding. Serve in slices.",
+    ],
+    tags: ["cassava", "cake", "dessert", "snack"],
+    body: "Use only sweet cassava meant for eating. The flour version is more even; fresh grated cassava stays moister.",
+  },
+  "tangawisi": {
+    title: "Tangawisi",
+    description:
+      "Fresh ginger juice, sharp and tangy, sweetened to taste — a homemade drink common in Kinshasa and the diaspora.",
+    region: "Kinshasa",
+    imageAlt: "Glass of fresh ginger juice",
+    prepTime: "20 min + 1 h resting",
+    cookTime: "0 min",
+    ingredients: [
+      "250 g fresh ginger",
+      "1.5 l water",
+      "100 to 150 g sugar",
+      "Juice of 1 lemon (or 2 limes)",
+      "1 pinch of chili, optional",
+    ],
+    steps: [
+      "Wash and peel the ginger, cut into pieces.",
+      "Blend with 500 ml water to a coarse puree.",
+      "Add the rest of the water. Infuse 30 to 60 minutes at room temperature.",
+      "Strain through a fine cloth or sieve, pressing well.",
+      "Sweeten, add lemon (and chili if desired). Chill. Serve cold.",
+    ],
+    tags: ["ginger", "juice", "drink", "tangawisi"],
+    body: "Tangawisi is drunk iced, often after a spicy meal. Ginger and sugar levels vary widely from house to house.",
+  },
+  "jus-bissap": {
+    title: "Bissap juice",
+    description:
+      "A sweet infusion of dried hibiscus flowers (bissap), deep red and tart — a drink, distinct from ngai-ngai cooked as a dish.",
+    region: "Kinshasa & Western DRC",
+    imageAlt: "Glass of red bissap juice",
+    prepTime: "10 min + cooling",
+    cookTime: "20 min",
+    ingredients: [
+      "80 g dried bissap (hibiscus) flowers",
+      "2 l water",
+      "150 to 200 g sugar",
+      "Juice of 1 lemon, optional",
+      "A few mint leaves or a vanilla stick, optional",
+    ],
+    steps: [
+      "Rinse the flowers briefly. Bring them to a boil in the water.",
+      "Lower the heat and infuse 15 to 20 minutes.",
+      "Strain. Sweeten while still warm so the sugar dissolves.",
+      "Add lemon and aromatics if desired. Cool, then refrigerate.",
+      "Serve iced.",
+    ],
+    tags: ["bissap", "hibiscus", "juice", "drink"],
+    body: "Bissap as a drink is not ngai-ngai in sauce: same hibiscus flowers, different gesture — a sweet infusion here, a savoury simmer where ngai-ngai is a dish.",
+  },
+  "jus-passion": {
+    title: "Passion fruit juice",
+    description:
+      "Fresh passion fruit juice, tart and fragrant — a very common drink in Kinshasa and the diaspora.",
+    region: "Kinshasa",
+    imageAlt: "Glass of passion fruit juice",
+    prepTime: "15 min",
+    cookTime: "0 min",
+    ingredients: [
+      "12 ripe passion fruits",
+      "600 ml cold water",
+      "60 to 80 g sugar",
+      "Juice of ½ lemon, optional",
+    ],
+    steps: [
+      "Halve the fruits and scoop out the pulp (seeds included).",
+      "Blend briefly with the water, or mash the pulp into the water with a fork.",
+      "Strain for a smoother juice, or leave the seeds if you prefer.",
+      "Sweeten, add lemon if desired. Taste and adjust.",
+      "Serve very cold, with ice.",
+    ],
+    tags: ["passion fruit", "juice", "fruit", "drink"],
+    body: "In season, passion fruit is easy to find at the market. Out of season, frozen pulp remains an honest base for a homemade juice.",
   },
 };

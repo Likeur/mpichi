@@ -124,32 +124,6 @@ const ogRecipe = recipes.find(({ recipe }) => recipe.data.featured)?.localized ?
       </div>
 
       <div class="mb-8 space-y-5 border-t border-earth-900/12 pt-5" data-recipe-filters>
-        <div class="flex flex-wrap items-end justify-between gap-4">
-          <p class="text-[9px] uppercase tracking-[.16em] text-earth-900/40">{t('recipes.filters')}</p>
-          <div class="flex flex-wrap items-center gap-4">
-            <a
-              href={localePath('/regions', lang)}
-              class="text-[9px] uppercase tracking-[.16em] text-earth-900/45 underline decoration-earth-900/20 underline-offset-4 transition-colors hover:text-earth-900"
-            >
-              {t('recipes.exploreRegions')}
-            </a>
-            <a
-              href={localePath('/categories', lang)}
-              class="text-[9px] uppercase tracking-[.16em] text-earth-900/45 underline decoration-earth-900/20 underline-offset-4 transition-colors hover:text-earth-900"
-            >
-              {t('recipes.exploreCategories')}
-            </a>
-            <button
-              type="button"
-              data-filters-reset
-              hidden
-              class="text-[9px] uppercase tracking-[.16em] text-earth-900/45 underline decoration-earth-900/20 underline-offset-4 transition-colors hover:text-earth-900"
-            >
-              {t('recipes.resetFilters')}
-            </button>
-          </div>
-        </div>
-
         <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           <FilterDropdown
             name="category"
@@ -169,6 +143,16 @@ const ogRecipe = recipes.find(({ recipe }) => recipe.data.featured)?.localized ?
             allLabel={t('recipes.filterAllRegions')}
             options={regionOptions}
           />
+        </div>
+        <div class="flex justify-end">
+          <button
+            type="button"
+            data-filters-reset
+            hidden
+            class="text-[9px] uppercase tracking-[.16em] text-earth-900/45 transition-colors hover:text-earth-900"
+          >
+            {t('recipes.resetFilters')}
+          </button>
         </div>
       </div>
 

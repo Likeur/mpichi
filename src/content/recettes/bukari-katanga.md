@@ -1,5 +1,5 @@
 ---
-title: Bukari du Katanga
+title: Bukari
 description: Pâte souple de farine de maïs, travaillée à chaud jusqu’à devenir lisse, dense et prête à accompagner les sauces.
 region: Grand Katanga
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Fufu%20Balls.jpg?width=1600

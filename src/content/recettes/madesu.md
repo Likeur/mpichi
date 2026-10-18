@@ -35,4 +35,4 @@ steps:
   - Ajouter le piment entier et mijoter encore 15 minutes. Retirer le laurier et rectifier le sel avant de servir.
 ---
 
-Cette base simple connaît de nombreuses variantes domestiques, parfois enrichies de poisson fumé ou préparées sans tomate.
+Les madesu désignent aussi, plus largement, les haricots à l’huile de palme du quotidien. Cette base simple connaît de nombreuses variantes domestiques, parfois enrichies de poisson fumé ou préparées sans tomate.

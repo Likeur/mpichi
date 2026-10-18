@@ -1,5 +1,5 @@
 ---
-title: Poisson braisé de Kinkole
+title: Poisson braisé
 description: Poisson entier mariné au pili-pili et aux aromates, grillé jusqu’à obtenir une peau fumée et une chair juteuse.
 region: Kinshasa · Kinkole
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Poisson%20brais%C3%A9%20%C3%A0%20Kinkole.jpg?width=1400

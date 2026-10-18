@@ -1,9 +1,9 @@
 ---
-title: Salade de Kisangani
+title: Salade chou-carotte
 description: Salade croquante de chou et carotte, liée à la mayonnaise, relevée au vinaigre et garnie d’œufs.
 region: Kisangani
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Salade-kisangani.jpg?width=1600
-imageAlt: Salade de chou, carotte et œuf préparée à Kisangani
+imageAlt: Salade de chou, carotte et œuf
 imagePosition: center
 imageCredit: Bampati — Wikimedia Commons, CC BY-SA 4.0
 imageCreditUrl: https://commons.wikimedia.org/wiki/File:Salade-kisangani.jpg

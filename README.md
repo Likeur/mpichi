@@ -9,7 +9,7 @@
 
 ## Fonctionnalités
 
-- **Bilingue FR / EN** — localisation UI + 38 recettes traduites, switch de langue dans la nav, `hreflang`
+- **Bilingue FR / EN** — localisation UI + 51 recettes traduites, switch de langue dans la nav, `hreflang`
 - **Accueil éditorial** avec carrousel héro, sections patrimoine et recettes mises en avant
 - **Catalogue** avec recherche locale, filtres (catégorie, difficulté, région) et pagination
 - **Favoris locaux** (localStorage, sans compte) — page `/favoris`

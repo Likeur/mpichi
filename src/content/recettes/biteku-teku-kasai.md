@@ -1,5 +1,5 @@
 ---
-title: Biteku-teku du Kasaï
+title: Biteku-teku
 description: Feuilles d’amarante rapidement mijotées avec oignon, tomate et une touche d’arachide.
 region: Grand Kasaï
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Amaranth%20Greens%20%28Doodo%29.jpg?width=1600
@@ -17,6 +17,7 @@ tags:
   - Grand Kasaï
   - amarante
   - biteku-teku
+  - lenga-lenga
   - légumes
 ingredients:
   - 3 bottes de feuilles d’amarante
@@ -36,4 +37,4 @@ steps:
   - Poursuivre la cuisson à découvert jusqu’à ce que les feuilles soient tendres et la sauce légèrement liée.
 ---
 
-Le biteku-teku est populaire au Kasaï et dans d’autres régions de la RDC. Il se mange avec le bidia et peut aussi être préparé sans arachides.
+Le biteku-teku est populaire au Kasaï et dans d’autres régions de la RDC. À Kinshasa et à l’Ouest, la même amarante est souvent appelée lenga-lenga, plus fréquemment mijotée à la tomate et à l’huile de palme. Il se mange avec le bidia et peut aussi être préparé sans arachides.

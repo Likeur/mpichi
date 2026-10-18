@@ -9,7 +9,7 @@ imageCreditUrl: https://commons.wikimedia.org/wiki/File:Liboke_entrouvert_01.JPG
 relatedRecipes:
   - liboke-poisson
   - poisson-braise-kinkole
-  - lenga-lenga
+  - biteku-teku-kasai
 order: 3
 ---
 
