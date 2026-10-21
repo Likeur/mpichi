@@ -9,17 +9,28 @@
     "preview": "astro preview",
     "check": "astro check",
     "ci": "npm run check && npm run build",
-    "astro": "astro"
+    "astro": "astro",
+    "remotion": "remotion studio remotion/index.ts --port 3333",
+    "remotion:render": "remotion render remotion/index.ts MpichiPresentation out/mpichi-presentation.mp4 --port=3456 --browser-executable=\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --gl=angle"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
+    "@remotion/cli": "4.0.537",
+    "@remotion/google-fonts": "4.0.537",
+    "@remotion/media-utils": "4.0.537",
     "@tailwindcss/vite": "^4.0.0",
     "astro": "^5.2.0",
     "locomotive-scroll": "^5.0.1",
-    "tailwindcss": "^4.0.0"
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.537",
+    "tailwindcss": "^4.0.0",
+    "zod": "4.5.4"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
     "@vite-pwa/astro": "^1.2.0",
     "typescript": "^5.9.3"
   }
