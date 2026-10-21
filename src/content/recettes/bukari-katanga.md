@@ -1,6 +1,7 @@
 ---
 title: Bukari
-description: Pâte souple de farine de maïs, travaillée à chaud jusqu’à devenir lisse, dense et prête à accompagner les sauces.
+seoTitle: Recette bukari — fufu de maïs katanga
+description: "Recette de bukari : pâte de farine de maïs travaillée à chaud jusqu’à devenir lisse et dense — accompagnement central du Grand Katanga (Lubumbashi)."
 region: Grand Katanga
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Fufu%20Balls.jpg?width=1600
 imageAlt: Boules de fufu de maïs servies en République démocratique du Congo
@@ -14,10 +15,15 @@ servings: 6
 difficulty: moyen
 featured: false
 tags:
-  - Grand Katanga
-  - maïs
   - bukari
+  - fufu maïs
+  - bidia
+  - Grand Katanga
   - Lubumbashi
+relatedRecipes:
+  - chikwangue
+  - matembele-katanga
+  - kapenta-tomates
 ingredients:
   - 500 g de farine fine de maïs blanc
   - 1,2 l d’eau
@@ -31,4 +37,6 @@ steps:
   - Façonner en portions avec une louche mouillée et servir immédiatement.
 ---
 
-Le bukari occupe une place centrale dans les repas du Grand Katanga. Il accompagne les légumes-feuilles, le poisson et les viandes en sauce.
+Le **bukari** (parfois rapproché du bidia / fufu de maïs) occupe le centre de la table au Grand Katanga : légumes-feuilles, poisson et viandes en sauce s’y accrochent. À l’Ouest, l’équivalent fermenté de manioc est plutôt la [chikwangue](/recettes/chikwangue/).
+
+Sauces de la région : [matembele aux arachides](/recettes/matembele-katanga/), [kapenta aux tomates](/recettes/kapenta-tomates/).

@@ -1,6 +1,7 @@
 ---
 title: Poulet mayo
-description: Morceaux de poulet dorés puis nappés d’une sauce mayonnaise relevée d’ail, moutarde et pili-pili — un classique des tables et des fêtes à Kinshasa.
+seoTitle: Recette poulet mayo kinshasa
+description: "Recette de poulet mayo : poulet doré nappé d’une mayonnaise relevée d’ail, moutarde et pili-pili — classique des tables et fêtes à Kinshasa."
 region: Kinshasa
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Poulet%20brais%C3%A9.jpg?width=1600
 imageAlt: Poulet doré prêt à être nappé de sauce
@@ -14,10 +15,20 @@ servings: 6
 difficulty: facile
 featured: false
 tags:
-  - poulet
+  - poulet mayo
   - mayonnaise
+  - poulet
   - Kinshasa
   - fête
+relatedRecipes:
+  - moambe-poulet
+  - soso-ya-sauce
+  - salade-kisangani
+video:
+  youtube: https://www.youtube.com/watch?v=BDqiBBBVNz0
+  title: Poulet mayo — recette congolaise
+  credit: Noelia's Cooking
+  creditUrl: https://www.youtube.com/@NoeliasCooking
 ingredients:
   - 1 poulet coupé en morceaux
   - 3 c. à soupe d’huile
@@ -36,4 +47,6 @@ steps:
   - Remuer délicatement pour enrober sans faire tourner la sauce. Servir avec frites, riz ou salade.
 ---
 
-Le poulet mayo n’est ni une moambe ni une sauce tomate : la liaison froide à la mayonnaise arrive en fin de cuisson. Les dosages de moutarde et de piment varient beaucoup d’un foyer à l’autre.
+Le **poulet mayo** n’est ni une moambe ni une sauce tomate : la liaison froide à la mayonnaise arrive en fin de cuisson. Moutarde et piment se dosent très librement d’un foyer à l’autre.
+
+Autre poulet de fête : [poulet à la moambe](/recettes/moambe-poulet/). En sauce tomate : [soso ya sauce](/recettes/soso-ya-sauce/).

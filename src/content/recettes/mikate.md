@@ -1,6 +1,7 @@
 ---
 title: Mikate
-description: Beignets congolais à la pâte levée, croustillants en surface, moelleux à cœur et servis encore chauds.
+seoTitle: Recette mikate — beignets congolais
+description: "Recette de mikate : beignets congolais à la pâte levée, croustillants dehors, moelleux dedans — street food et goûter de Kinshasa."
 region: Kinshasa
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Golden%20Mikat%C3%A9.jpg?width=1600
 imageAlt: Mikate dorés, les beignets congolais
@@ -14,9 +15,20 @@ servings: 8
 difficulty: facile
 featured: true
 tags:
+  - mikate
+  - beignets congolais
   - beignet
   - levure
-  - goûter
+  - Kinshasa
+relatedRecipes:
+  - beignets-banane
+  - tangawisi
+  - kamundele
+video:
+  youtube: https://www.youtube.com/watch?v=tdNfm_lZ2aM
+  title: Comment faire les mikate congolais
+  credit: Cuisine Kamchef
+  creditUrl: https://www.youtube.com/@cuisinekamchef
 ingredients:
   - 500 g de farine
   - 80 g de sucre
@@ -35,4 +47,6 @@ steps:
   - Égoutter et servir tiède, nature ou avec de la pâte d’arachide.
 ---
 
-Dans les rues de Kinshasa, les mikate se dégustent au petit-déjeuner ou au goûter, souvent accompagnés de pâte d’arachide.
+Les **mikate** sont les beignets congolais de rue et de maison : à Kinshasa on les croise au petit-déjeuner ou au goûter, souvent avec de la pâte d’arachide. La pâte doit lever suffisamment pour rester légère après friture.
+
+À boire à côté : [tangawisi](/recettes/tangawisi/) (jus de gingembre). Autre douceur de rue : [beignets de banane](/recettes/beignets-banane/).

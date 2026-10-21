@@ -1,6 +1,7 @@
 ---
 title: Kamundele
-description: Petites brochettes de bœuf marinées aux aromates et grillées vivement sur les braises.
+seoTitle: Recette kamundele — brochettes kinshasa
+description: "Recette de kamundele : brochettes de bœuf marinées aux aromates et grillées sur braises — street food emblématique de Kinshasa."
 region: Kinshasa
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Kamundele.jpg?width=1600
 imageAlt: Assiette de kamundele, brochettes de bœuf marinées, avec frites et légumes
@@ -14,10 +15,20 @@ servings: 4
 difficulty: facile
 featured: false
 tags:
+  - kamundele
   - brochettes
+  - street food kinshasa
   - bœuf
   - grillade
-  - cuisine de rue
+relatedRecipes:
+  - ntaba
+  - mikate
+  - viande-ya-sauce
+video:
+  youtube: https://www.youtube.com/watch?v=dZ9_2GbYuU4
+  title: Kamundele — brochettes de bœuf
+  credit: ALPHA'S KITCHEN
+  creditUrl: https://www.youtube.com/@alphaskitchen949
 ingredients:
   - 700 g de bœuf tendre
   - 1 oignon, râpé
@@ -35,4 +46,6 @@ steps:
   - Servir aussitôt avec des rondelles d’oignon, du pili-pili et, selon l’envie, de la chikwangue.
 ---
 
-Le kamundele se rencontre comme encas de rue ou grillade de partage; l’assaisonnement change volontiers d’un vendeur à l’autre.
+Le **kamundele** est l’encas de rue kinshasaise par excellence : petites brochettes, marinade pimentée, braises vives. L’assaisonnement change d’un vendeur à l’autre.
+
+Autre grillade de partage : le [ntaba (chèvre grillée)](/recettes/ntaba/). Pour un bœuf mijoté plutôt que grillé, voir [viande ya sauce](/recettes/viande-ya-sauce/).

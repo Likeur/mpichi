@@ -3,9 +3,9 @@ import type { Locale } from './config';
 export const ui = {
   fr: {
     'meta.defaultDescription':
-      'Cuisine congolaise — recettes, régions et traditions de la RDC',
+      'Mpichi répertorie le catalogue des recettes congolaises de la RDC : pondu, moambe, liboke et plus. Gestes, régions et traditions documentés.',
     'meta.homeTitle': 'Accueil',
-    'meta.siteName': 'Mpichi — Cuisine congolaise',
+    'meta.siteName': 'Mpichi — Catalogue de recettes congolaises',
     'nav.home': 'Accueil',
     'nav.recipes': 'Recettes',
     'nav.favorites': 'Favoris',
@@ -28,7 +28,7 @@ export const ui = {
     'favorites.toastRemoved': 'Retiré des favoris',
     'favorites.toastError': 'Impossible d’enregistrer le favori',
     'footer.tagline':
-      'Des recettes congolaises racontées par leurs gestes, leurs régions et celles et ceux qui les transmettent.',
+      'Un catalogue de recettes congolaises racontées par leurs gestes, leurs régions et celles et ceux qui les transmettent.',
     'footer.explore': 'Explorer',
     'footer.info': 'Informations',
     'footer.legal': 'Mentions légales',
@@ -42,7 +42,7 @@ export const ui = {
     'home.hero.cta': 'Découvrir toutes les recettes',
     'home.hero.mpichi.title': 'Mpichi,\nla cuisine en héritage.',
     'home.hero.mpichi.summary':
-      'Un répertoire vivant des recettes de la République démocratique du Congo, de leurs gestes et de leurs territoires.',
+      'Un catalogue vivant qui répertorie les recettes de la République démocratique du Congo, leurs gestes et leurs territoires.',
     'home.hero.liboke.title': 'Le liboke,\nle fleuve à table.',
     'home.hero.liboke.summary':
       'Du poisson, des aromates et le parfum d’une feuille chauffée sur la braise.',
@@ -76,19 +76,21 @@ export const ui = {
     'home.carnet.body':
       'Trois portes d’entrée dans une cuisine congolaise plurielle, de la feuille de manioc au poisson du fleuve.',
     'recipes.title': 'Recettes',
+    'recipes.pageTitle': 'Catalogue de recettes congolaises',
     'recipes.hero': 'Les recettes.',
     'recipes.intro':
-      'Des plats du quotidien et des jours de fête, documentés avec leurs gestes, leur région et leur histoire.',
+      'Le catalogue Mpichi répertorie des plats du quotidien et des jours de fête, documentés avec leurs gestes, leur région et leur histoire.',
     'recipes.count': '{n} recette',
     'recipes.countPlural': '{n} recettes',
-    'recipes.catalog': 'Tout le répertoire',
+    'recipes.catalog': 'Tout le catalogue',
     'recipes.search': 'Rechercher une recette',
     'recipes.searchPlaceholder': 'Rechercher un plat, une région…',
     'recipes.clear': 'Effacer la recherche',
     'recipes.empty': 'Aucune recette pour le moment.',
     'recipes.noMatch': 'Aucune recette ne correspond à cette recherche.',
     'recipes.meta': '{prep} de préparation · {cook} de cuisson',
-    'recipes.description': 'Catalogue des recettes congolaises Mpichi.',
+    'recipes.description':
+      'Catalogue qui répertorie les recettes congolaises de la RDC : recherche, filtres par région et catégorie, fiches détaillées.',
     'recipes.filters': 'Filtres',
     'recipes.filterCategory': 'Catégorie',
     'recipes.filterDifficulty': 'Niveau',
@@ -136,7 +138,10 @@ export const ui = {
     'recipe.ingredients': 'Ingrédients',
     'recipe.steps': 'Préparation',
     'recipe.photo': 'Photo',
+    'recipe.video': 'Tutoriel vidéo',
+    'recipe.videoCredit': 'Vidéo',
     'recipe.backCta': 'Retour au catalogue',
+
     'recipe.tools': 'Actions',
     'recipe.scale': 'Portions',
     'recipe.decreaseServings': 'Enlever une personne',
@@ -166,24 +171,27 @@ export const ui = {
     'faq.intro':
       'Quelques repères sur notre manière de raconter, documenter et partager la cuisine congolaise.',
     'faq.description':
-      'Questions fréquentes sur les recettes et la démarche éditoriale de Mpichi.',
-    'faq.q1': 'Les recettes sont-elles identiques dans toute la RDC ?',
+      'Questions fréquentes sur le catalogue de recettes congolaises Mpichi et sa démarche éditoriale.',
+    'faq.q1': 'Qu’est-ce que Mpichi ?',
     'faq.a1':
-      'Non. Un même plat change selon la région, la saison, le marché et les habitudes du foyer. Mpichi présente une manière de faire parmi d’autres et précise son ancrage lorsqu’il est connu.',
-    'faq.q2': 'Comment les recettes sont-elles documentées ?',
+      'Mpichi est un site éditorial qui répertorie un catalogue de recettes congolaises de la République démocratique du Congo. Chaque fiche documente un plat avec ses gestes, sa région et son contexte de transmission, en français et en anglais.',
+    'faq.q2': 'Les recettes sont-elles identiques dans toute la RDC ?',
     'faq.a2':
-      'Nous croisons les usages transmis, les sources disponibles et le contexte régional. Les quantités sont rendues lisibles sans effacer la part de geste, d’expérience et d’adaptation propre à chaque cuisine.',
-    'faq.q3': 'Puis-je proposer une recette ou une correction ?',
+      'Non. Un même plat change selon la région, la saison, le marché et les habitudes du foyer. Mpichi présente une manière de faire parmi d’autres et précise son ancrage lorsqu’il est connu.',
+    'faq.q3': 'Comment les recettes sont-elles documentées ?',
     'faq.a3':
-      'Oui. Les variantes, précisions linguistiques et récits de transmission sont bienvenus. Vous pouvez contacter Likeur depuis le lien présent dans le pied de page.',
-    'faq.q4': 'Les niveaux de difficulté sont-ils absolus ?',
+      'Nous croisons les usages transmis, les sources disponibles et le contexte régional. Les quantités sont rendues lisibles sans effacer la part de geste, d’expérience et d’adaptation propre à chaque cuisine.',
+    'faq.q4': 'Puis-je proposer une recette ou une correction ?',
     'faq.a4':
-      'Ils sont indicatifs. Ils tiennent compte du nombre de gestes, du temps de préparation et de la disponibilité habituelle des ingrédients.',
-    'faq.q5': 'Comment sont choisis les visuels ?',
+      'Oui. Les variantes, précisions linguistiques et récits de transmission sont bienvenus. Vous pouvez contacter Likeur depuis le lien présent dans le pied de page.',
+    'faq.q5': 'Les niveaux de difficulté sont-ils absolus ?',
     'faq.a5':
-      'Les photographies servent à documenter un plat, un ingrédient ou un geste. Leur auteur et leur licence sont indiqués sur les pages concernées.',
-    'faq.q6': 'Mpichi fournit-il des conseils médicaux ou nutritionnels ?',
+      'Ils sont indicatifs. Ils tiennent compte du nombre de gestes, du temps de préparation et de la disponibilité habituelle des ingrédients.',
+    'faq.q6': 'Comment sont choisis les visuels ?',
     'faq.a6':
+      'Les photographies servent à documenter un plat, un ingrédient ou un geste. Leur auteur et leur licence sont indiqués sur les pages concernées.',
+    'faq.q7': 'Mpichi fournit-il des conseils médicaux ou nutritionnels ?',
+    'faq.a7':
       'Non. Les contenus sont culinaires et culturels. En cas d’allergie, de régime spécifique ou de question de santé, demandez conseil à un professionnel qualifié.',
     'legal.title': 'Mentions légales',
     'legal.hero': 'Mentions légales.',
@@ -235,9 +243,9 @@ export const ui = {
   },
   en: {
     'meta.defaultDescription':
-      'Congolese cuisine — recipes, regions and traditions from the DRC',
+      'Mpichi catalogues Congolese recipes from the DRC: pondu, moambe, liboke and more. Gestures, regions and traditions, documented.',
     'meta.homeTitle': 'Home',
-    'meta.siteName': 'Mpichi — Congolese cuisine',
+    'meta.siteName': 'Mpichi — Catalogue of Congolese recipes',
     'nav.home': 'Home',
     'nav.recipes': 'Recipes',
     'nav.favorites': 'Saved',
@@ -260,7 +268,7 @@ export const ui = {
     'favorites.toastRemoved': 'Removed from favorites',
     'favorites.toastError': 'Could not save this favorite',
     'footer.tagline':
-      'Congolese recipes told through their gestures, their regions, and the people who pass them on.',
+      'A catalogue of Congolese recipes told through their gestures, their regions, and the people who pass them on.',
     'footer.explore': 'Explore',
     'footer.info': 'Information',
     'footer.legal': 'Legal notice',
@@ -274,7 +282,7 @@ export const ui = {
     'home.hero.cta': 'Discover all recipes',
     'home.hero.mpichi.title': 'Mpichi,\ncuisine as heritage.',
     'home.hero.mpichi.summary':
-      'A living repertoire of recipes from the Democratic Republic of the Congo, their gestures and their territories.',
+      'A living catalogue that lists recipes from the Democratic Republic of the Congo, their gestures and their territories.',
     'home.hero.liboke.title': 'Liboke,\nthe river at the table.',
     'home.hero.liboke.summary':
       'Fish, aromatics, and the scent of a leaf warmed over the coals.',
@@ -308,19 +316,21 @@ export const ui = {
     'home.carnet.body':
       'Three doorways into a plural Congolese cuisine, from cassava leaves to river fish.',
     'recipes.title': 'Recipes',
+    'recipes.pageTitle': 'Catalogue of Congolese recipes',
     'recipes.hero': 'The recipes.',
     'recipes.intro':
-      'Everyday dishes and festive ones, documented with their gestures, their region, and their story.',
+      'The Mpichi catalogue lists everyday and festive dishes, documented with their gestures, their region, and their story.',
     'recipes.count': '{n} recipe',
     'recipes.countPlural': '{n} recipes',
-    'recipes.catalog': 'The full repertoire',
+    'recipes.catalog': 'The full catalogue',
     'recipes.search': 'Search a recipe',
     'recipes.searchPlaceholder': 'Search a dish, a region…',
     'recipes.clear': 'Clear search',
     'recipes.empty': 'No recipes yet.',
     'recipes.noMatch': 'No recipe matches this search.',
     'recipes.meta': '{prep} prep · {cook} cook',
-    'recipes.description': 'Catalogue of Congolese recipes on Mpichi.',
+    'recipes.description':
+      'A catalogue that lists Congolese recipes from the DRC: search, filters by region and category, detailed recipe pages.',
     'recipes.filters': 'Filters',
     'recipes.filterCategory': 'Category',
     'recipes.filterDifficulty': 'Level',
@@ -368,7 +378,10 @@ export const ui = {
     'recipe.ingredients': 'Ingredients',
     'recipe.steps': 'Method',
     'recipe.photo': 'Photo',
+    'recipe.video': 'Video tutorial',
+    'recipe.videoCredit': 'Video',
     'recipe.backCta': 'Back to catalogue',
+
     'recipe.tools': 'Actions',
     'recipe.scale': 'Servings',
     'recipe.decreaseServings': 'Remove one person',
@@ -398,24 +411,27 @@ export const ui = {
     'faq.intro':
       'A few notes on how we tell, document, and share Congolese cuisine.',
     'faq.description':
-      'Frequently asked questions about Mpichi recipes and editorial approach.',
-    'faq.q1': 'Are recipes the same across the whole DRC?',
+      'Frequently asked questions about the Mpichi catalogue of Congolese recipes and its editorial approach.',
+    'faq.q1': 'What is Mpichi?',
     'faq.a1':
-      'No. The same dish changes with the region, the season, the market, and household habits. Mpichi presents one way among others and notes its regional roots when known.',
-    'faq.q2': 'How are the recipes documented?',
+      'Mpichi is an editorial site that catalogues Congolese recipes from the Democratic Republic of the Congo. Each page documents a dish with its gestures, region, and transmission context, in French and English.',
+    'faq.q2': 'Are recipes the same across the whole DRC?',
     'faq.a2':
-      'We cross transmitted practices, available sources, and regional context. Quantities are made readable without erasing the gesture, experience, and adaptation of each kitchen.',
-    'faq.q3': 'Can I suggest a recipe or a correction?',
+      'No. The same dish changes with the region, the season, the market, and household habits. Mpichi presents one way among others and notes its regional roots when known.',
+    'faq.q3': 'How are the recipes documented?',
     'faq.a3':
-      'Yes. Variants, linguistic notes, and stories of transmission are welcome. You can contact Likeur through the link in the footer.',
-    'faq.q4': 'Are difficulty levels absolute?',
+      'We cross transmitted practices, available sources, and regional context. Quantities are made readable without erasing the gesture, experience, and adaptation of each kitchen.',
+    'faq.q4': 'Can I suggest a recipe or a correction?',
     'faq.a4':
-      'They are indicative. They consider the number of gestures, preparation time, and how commonly ingredients are available.',
-    'faq.q5': 'How are the images chosen?',
+      'Yes. Variants, linguistic notes, and stories of transmission are welcome. You can contact Likeur through the link in the footer.',
+    'faq.q5': 'Are difficulty levels absolute?',
     'faq.a5':
-      'Photographs document a dish, an ingredient, or a gesture. Their author and license are listed on the relevant pages.',
-    'faq.q6': 'Does Mpichi give medical or nutritional advice?',
+      'They are indicative. They consider the number of gestures, preparation time, and how commonly ingredients are available.',
+    'faq.q6': 'How are the images chosen?',
     'faq.a6':
+      'Photographs document a dish, an ingredient, or a gesture. Their author and license are listed on the relevant pages.',
+    'faq.q7': 'Does Mpichi give medical or nutritional advice?',
+    'faq.a7':
       'No. The content is culinary and cultural. For allergies, specific diets, or health questions, consult a qualified professional.',
     'legal.title': 'Legal notice',
     'legal.hero': 'Legal notice.',

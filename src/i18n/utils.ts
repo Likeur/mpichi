@@ -55,6 +55,7 @@ export function recipeCountLabel(locale: Locale, count: number) {
 export type LocalizedRecipe = {
   slug: string;
   title: string;
+  seoTitle?: string;
   description: string;
   region?: string;
   imageAlt: string;
@@ -72,7 +73,9 @@ export type LocalizedRecipe = {
   servings: number;
   category: CollectionEntry<'recettes'>['data']['category'];
   featured: boolean;
+  video?: CollectionEntry<'recettes'>['data']['video'];
 };
+
 
 export function localizeRecipe(
   recipe: CollectionEntry<'recettes'>,
@@ -86,6 +89,7 @@ export function localizeRecipe(
   return {
     slug,
     title: translated?.title ?? base.title,
+    seoTitle: translated?.seoTitle ?? base.seoTitle,
     description: translated?.description ?? base.description,
     region: translated?.region ?? base.region,
     imageAlt: translated?.imageAlt ?? base.imageAlt,
@@ -103,6 +107,7 @@ export function localizeRecipe(
     servings: base.servings,
     category: base.category,
     featured: base.featured,
+    video: base.video,
   };
 }
 
@@ -117,6 +122,7 @@ export function isRecipeCatalogPath(pathname: string) {
 export type LocalizedGuide = {
   slug: string;
   title: string;
+  seoTitle?: string;
   description: string;
   intro: string;
   body?: string;
@@ -136,6 +142,7 @@ export function localizeGuide(guide: CollectionEntry<'guides'>, locale: Locale):
   return {
     slug,
     title: translated?.title ?? base.title,
+    seoTitle: translated?.seoTitle ?? base.seoTitle,
     description: translated?.description ?? base.description,
     intro: translated?.intro ?? base.intro,
     body: translated?.body,

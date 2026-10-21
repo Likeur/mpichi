@@ -11,7 +11,8 @@ import {
   hreflangUrls,
   pageCanonical,
   resolveOrigin,
-  websiteJsonLd,
+  siteGraphJsonLd,
+  siteLogoUrl,
 } from '../lib/seo';
 import { SITE_AUTHOR, SITE_NAME } from '../lib/site';
 
@@ -45,8 +46,16 @@ const origin = resolveOrigin(Astro.site);
 const canonical = pageCanonical(Astro.url.pathname, origin);
 const alternates = hreflangUrls(Astro.url.pathname, origin);
 const ogImage = image?.startsWith('http') ? image : image ? `${origin}${image}` : defaultOgImage(origin);
+const logoUrl = siteLogoUrl(origin);
 const ogLocale = lang === 'en' ? 'en_US' : 'fr_CD';
-const structured = [websiteJsonLd(lang, origin), ...(jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [])];
+const pageNodes = (jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : []).map((node) => {
+  const { '@context': _ctx, ...rest } = node as Record<string, unknown>;
+  return rest;
+});
+const structured = {
+  '@context': 'https://schema.org',
+  '@graph': [...siteGraphJsonLd(lang, origin)['@graph'], ...pageNodes],
+};
 ---
 
 <!doctype html>
@@ -74,6 +83,8 @@ const structured = [websiteJsonLd(lang, origin), ...(jsonLd ? (Array.isArray(jso
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <meta name="author" content={SITE_AUTHOR} />
+    <meta name="application-name" content={SITE_NAME} />
+    <meta name="apple-mobile-web-app-title" content={SITE_NAME} />
     <meta name="generator" content={Astro.generator} />
     <meta name="theme-color" content="#2a1b15" />
     <meta name="color-scheme" content="dark light" />
@@ -82,16 +93,23 @@ const structured = [websiteJsonLd(lang, origin), ...(jsonLd ? (Array.isArray(jso
     ) : (
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     )}
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <link rel="canonical" href={canonical} />
     <link rel="alternate" hreflang="fr" href={alternates.fr} />
     <link rel="alternate" hreflang="en" href={alternates.en} />
     <link rel="alternate" hreflang="x-default" href={alternates.fr} />
     <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM instructions" />
+    <link rel="alternate" type="text/plain" href="/llms-full.txt" title="Full recipe index for LLMs" />
     <link rel="author" type="text/plain" href="/humans.txt" />
     <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
     <link rel="manifest" href="/site.webmanifest" />
+    {/* Google Search favicon: PNG ≥48×48 (SVG alone is often ignored) */}
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="mask-icon" href="/favicon.svg" color="#c91f32" />
 
     <meta property="og:type" content={type} />
     <meta property="og:site_name" content={SITE_NAME} />
@@ -102,6 +120,7 @@ const structured = [websiteJsonLd(lang, origin), ...(jsonLd ? (Array.isArray(jso
     <meta property="og:locale:alternate" content={lang === 'en' ? 'fr_CD' : 'en_US'} />
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:alt" content={imageAlt || fullTitle} />
+    <meta property="og:logo" content={logoUrl} />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={fullTitle} />
@@ -116,7 +135,7 @@ const structured = [websiteJsonLd(lang, origin), ...(jsonLd ? (Array.isArray(jso
     />
     <ClientRouter />
     <title>{fullTitle}</title>
-    <script type="application/ld+json" set:html={JSON.stringify(structured.length === 1 ? structured[0] : structured)} />
+    <script type="application/ld+json" set:html={JSON.stringify(structured)} />
   </head>
   <body class="min-h-screen flex flex-col">
     <FloatingNav lang={lang} />

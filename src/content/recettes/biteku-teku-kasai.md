@@ -1,6 +1,7 @@
 ---
 title: Biteku-teku
-description: Feuilles d’amarante rapidement mijotées avec oignon, tomate et une touche d’arachide.
+seoTitle: Recette biteku-teku (lenga-lenga)
+description: "Recette de biteku-teku : amarante mijotée avec oignon, tomate et arachide — plat du Grand Kasaï, aussi appelé lenga-lenga à Kinshasa."
 region: Grand Kasaï
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Amaranth%20Greens%20%28Doodo%29.jpg?width=1600
 imageAlt: Feuilles fraîches d’amarante utilisées pour le biteku-teku
@@ -14,11 +15,15 @@ servings: 6
 difficulty: facile
 featured: false
 tags:
-  - Grand Kasaï
-  - amarante
   - biteku-teku
   - lenga-lenga
+  - amarante
+  - Grand Kasaï
   - légumes
+relatedRecipes:
+  - matembele-katanga
+  - ngai-ngai
+  - pondu
 ingredients:
   - 3 bottes de feuilles d’amarante
   - 2 tomates mûres, concassées
@@ -37,4 +42,6 @@ steps:
   - Poursuivre la cuisson à découvert jusqu’à ce que les feuilles soient tendres et la sauce légèrement liée.
 ---
 
-Le biteku-teku est populaire au Kasaï et dans d’autres régions de la RDC. À Kinshasa et à l’Ouest, la même amarante est souvent appelée lenga-lenga, plus fréquemment mijotée à la tomate et à l’huile de palme. Il se mange avec le bidia et peut aussi être préparé sans arachides.
+Le **biteku-teku** est populaire au Kasaï. À Kinshasa et à l’Ouest, la même amarante s’appelle souvent **lenga-lenga**, plus fréquemment mijotée à la tomate et à l’huile de palme. On le mange avec le bidia ; on peut aussi omettre les arachides.
+
+Autres légumes-feuilles : [matembele](/recettes/matembele-katanga/), [pondu](/recettes/pondu/). Contexte marché : [guide du marché](/guides/marche/).

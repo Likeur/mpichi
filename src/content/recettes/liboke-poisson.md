@@ -1,6 +1,7 @@
 ---
 title: Liboke de poisson
-description: Poisson mariné aux épices, enveloppé dans des feuilles de bananier et cuit à la vapeur — parfumé et fondant.
+seoTitle: Recette liboke de poisson
+description: "Recette de liboke de poisson (maboke) : poisson mariné aux épices, enveloppé dans des feuilles de bananier et cuit à la vapeur — parfumé et fondant."
 region: Bas-Congo & Bandundu
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Liboke%20entrouvert%2001.JPG?width=1920
 imageAlt: Un liboke entrouvert dans ses feuilles, prêt à être dégusté
@@ -14,9 +15,20 @@ servings: 4
 difficulty: facile
 featured: true
 tags:
+  - liboke
+  - maboke
   - poisson
   - feuille de bananier
   - vapeur
+relatedRecipes:
+  - liboke-viande
+  - chikwangue
+  - poisson-braise-kinkole
+video:
+  youtube: https://www.youtube.com/watch?v=gu9hWD_x1XA
+  title: Liboke — papillote congolaise
+  credit: Noella Kasongo TV
+  creditUrl: https://www.youtube.com/@noellakasongotv7197
 ingredients:
   - 4 filets ou darnes de capitaine / tilapia
   - 2 oignons, en rondelles
@@ -34,3 +46,7 @@ steps:
   - Cuire à la vapeur (panier ou marmite) ou au four à 180 °C pendant 35 à 45 minutes.
   - Servir le liboke ouvert à table, avec plantain mûr ou fufu.
 ---
+
+Le **liboke de poisson** (aussi dit maboke) est à la fois une technique et un plat : la feuille de bananier enferme le poisson, retient le jus et parfume la chair. Sans feuilles fraîches, papier cuisson + aluminium restent une substitution honnête en diaspora.
+
+Autre papillote : [liboke de viande](/recettes/liboke-viande/). Pour le contexte marché et saison, voir le [guide du marché](/guides/marche/).

@@ -1,6 +1,7 @@
 ---
 title: Poisson braisé
-description: Poisson entier mariné au pili-pili et aux aromates, grillé jusqu’à obtenir une peau fumée et une chair juteuse.
+seoTitle: Recette poisson braisé à Kinkole
+description: "Recette de poisson braisé façon Kinkole : poisson entier mariné au pili-pili et aux aromates, grillé jusqu’à peau fumée et chair juteuse — classique de Kinshasa."
 region: Kinshasa · Kinkole
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Poisson%20brais%C3%A9%20%C3%A0%20Kinkole.jpg?width=1400
 imageAlt: Poisson braisé servi avec du plantain et de la chikwangue à Kinkole
@@ -14,9 +15,15 @@ servings: 4
 difficulty: facile
 featured: true
 tags:
-  - poisson
-  - braise
+  - poisson braisé
+  - Kinkole
   - Kinshasa
+  - grill
+  - pili-pili
+relatedRecipes:
+  - pepe-soupe-ya-ngolo
+  - liboke-poisson
+  - makemba
 ingredients:
   - 1 gros tilapia ou capitaine entier, vidé et écaillé
   - 2 oignons
@@ -35,4 +42,6 @@ steps:
   - Servir avec des rondelles d’oignon, de la tomate, du plantain grillé et de la chikwangue.
 ---
 
-À Kinkole et Maluku, le poisson braisé se déguste dans les bistrots installés près du fleuve Congo.
+Le **poisson braisé** de Kinkole (et Maluku) est un repère de la street food kinshasaise : marinade pimentée, fumée de braise, table près du fleuve. Au four ou au grill domestique, gardez une chaleur moyenne pour ne pas dessécher la chair.
+
+Autre grand poisson de Kinshasa : la [pepe soupe ya ngolo](/recettes/pepe-soupe-ya-ngolo/). En papillote : [liboke de poisson](/recettes/liboke-poisson/).

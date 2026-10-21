@@ -8,10 +8,18 @@ import { slugFromRecipeId } from '../../lib/recipe-theme';
 import type { Locale } from '../../i18n/config';
 import type { UiKey } from '../../i18n/ui';
 import { localePath, localizeRecipe, useTranslations } from '../../i18n/utils';
+import RecipeVideo from '../../components/RecipeVideo.astro';
 import { absoluteUrl, toIsoDuration } from '../../lib/site';
 import { pageCanonical, resolveOrigin } from '../../lib/seo';
 import { regionSlugFromKey } from '../../lib/taxonomy';
 import { pickRelatedRecipes } from '../../lib/related-recipes';
+import {
+  youtubeEmbedUrl,
+  youtubeThumbnailUrl,
+  youtubeVideoId,
+  youtubeWatchUrl,
+} from '../../lib/youtube';
+
 
 export async function getStaticPaths() {
   const recipes = await getCollection('recettes');
@@ -39,8 +47,14 @@ const regionHref = regionSlug ? localePath(`/regions/${regionSlug}`, lang) : und
 const categoryHref = localePath(`/categories/${localized.category}`, lang);
 const categoryLabel = t(`category.${localized.category}` as UiKey);
 const allRecipes = await getCollection('recettes');
-const related = pickRelatedRecipes(recipe, allRecipes, 3);
+const bySlug = new Map(allRecipes.map((entry) => [slugFromRecipeId(entry.id), entry]));
+const curatedRelated = (recipe.data.relatedRecipes ?? [])
+  .map((slug) => bySlug.get(slug))
+  .filter((entry): entry is CollectionEntry<'recettes'> => Boolean(entry));
+const related =
+  curatedRelated.length > 0 ? curatedRelated.slice(0, 3) : pickRelatedRecipes(recipe, allRecipes, 3);
 const peopleTemplate = t('recipe.people', { n: '__N__' });
+const pageTitle = localized.seoTitle ?? localized.title;
 
 const prepIso = toIsoDuration(localized.prepTime);
 const cookIso = toIsoDuration(localized.cookTime);
@@ -59,6 +73,19 @@ const totalIso = (() => {
   if (hours) return `PT${hours}H`;
   return `PT${minutes}M`;
 })();
+
+const videoId = localized.video ? youtubeVideoId(localized.video.youtube) : undefined;
+const videoObject =
+  localized.video && videoId
+    ? {
+        '@type': 'VideoObject',
+        name: localized.video.title,
+        description: localized.description,
+        thumbnailUrl: [youtubeThumbnailUrl(videoId)],
+        contentUrl: youtubeWatchUrl(videoId),
+        embedUrl: youtubeEmbedUrl(videoId),
+      }
+    : undefined;
 
 const recipeJsonLd = {
   '@context': 'https://schema.org',
@@ -92,6 +119,7 @@ const recipeJsonLd = {
     position: index + 1,
     text,
   })),
+  ...(videoObject ? { video: videoObject } : {}),
   ...(localized.region
     ? {
         contentLocation: {
@@ -105,6 +133,7 @@ const recipeJsonLd = {
       }
     : {}),
 };
+
 
 const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
@@ -133,7 +162,7 @@ const breadcrumbJsonLd = {
 ---
 
 <BaseLayout
-  title={localized.title}
+  title={pageTitle}
   description={localized.description}
   lang={lang}
   image={localized.image}
@@ -370,6 +399,18 @@ const breadcrumbJsonLd = {
           </ol>
         </section>
       </div>
+
+      {
+        localized.video && (
+          <RecipeVideo
+            youtube={localized.video.youtube}
+            title={localized.video.title}
+            credit={localized.video.credit}
+            creditUrl={localized.video.creditUrl}
+            lang={lang}
+          />
+        )
+      }
 
       {
         lang === 'en' && localized.body ? (

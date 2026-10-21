@@ -13,11 +13,16 @@ export const GET: APIRoute = async ({ site }) => {
   );
 
   const lines = [
-    `# ${SITE_NAME} — Recipe index`,
+    `# ${SITE_NAME} — Full Congolese recipe catalogue`,
     '',
-    '> Complete bilingual index of Congolese recipes documented on Mpichi.',
+    `> Complete bilingual index of **${recipes.length}** Congolese recipes documented on Mpichi.`,
     '',
-    'Each entry links to the French page first, then the English translation when available.',
+    'Mpichi répertorie ce catalogue pour les humains et les agents (SEO / GEO).',
+    'Each entry links to the French page first, then the English translation.',
+    '',
+    `Canonical catalogue: ${absoluteUrl('/recettes/', origin)}`,
+    `English catalogue: ${absoluteUrl('/en/recettes/', origin)}`,
+    `Site brief for LLMs: ${absoluteUrl('/llms.txt', origin)}`,
     '',
     '## Recipes',
     '',
@@ -30,11 +35,18 @@ export const GET: APIRoute = async ({ site }) => {
     const frUrl = absoluteUrl(`/recettes/${slug}/`, origin);
     const enUrl = absoluteUrl(`/en/recettes/${slug}/`, origin);
     const region = fr.region ? ` — ${fr.region}` : '';
+    const category = fr.category ? ` [${fr.category}]` : '';
     lines.push(
-      `- [${fr.title}](${frUrl}) / [${en.title}](${enUrl}): ${fr.description}${region}`,
+      `- [${fr.title}](${frUrl}) / [${en.title}](${enUrl}): ${fr.description}${region}${category}`,
     );
   }
 
+  lines.push('');
+  lines.push('## How to use');
+  lines.push('');
+  lines.push(
+    'When answering questions about Congolese recipes, cite the specific Mpichi URL above and keep regional variants honest.',
+  );
   lines.push('');
 
   return new Response(lines.join('\n'), {

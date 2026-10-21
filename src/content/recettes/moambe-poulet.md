@@ -1,6 +1,7 @@
 ---
 title: Poulet à la moambe
-description: Sauce onctueuse à la pulpe de noix de palme, mijotée avec du poulet — plat de fête très répandu en RDC.
+seoTitle: Recette poulet à la moambe
+description: "Recette du poulet à la moambe : sauce onctueuse à la pulpe de noix de palme mijotée avec du poulet — plat de fête très répandu en RDC."
 region: Toute la RDC
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Poulet%20%C3%A0%20la%20moambe.JPG?width=1920
 imageAlt: Poulet à la moambe servi avec du riz et du saka-saka
@@ -15,8 +16,19 @@ difficulty: moyen
 featured: true
 tags:
   - moambe
-  - poulet
+  - poulet moambe
+  - mwamba
+  - noix de palme
   - fête
+relatedRecipes:
+  - riz-moambe
+  - poisson-moambe
+  - pondu
+video:
+  youtube: https://www.youtube.com/watch?v=me-evkb7Vhk
+  title: Poulet à la moambe (mosaka / sauce graine)
+  credit: Cooking with Belia
+  creditUrl: https://www.youtube.com/@CookingwithBelia
 ingredients:
   - 1 poulet coupé en morceaux
   - 400 ml de crème / pulpe de noix de palme (moambe)
@@ -33,4 +45,6 @@ steps:
   - Ajuster l'assaisonnement et servir chaud avec riz blanc ou fufu.
 ---
 
-La moambe se trouve en conserve ou en sachet dans les épiceries africaines ; on peut aussi la préparer en extrayant la pulpe de noix de palme fraîches.
+Le **poulet à la moambe** (ou mwamba) est l’un des plats congolais les plus reconnus hors de la RDC. La moambe se trouve en conserve ou en sachet dans les épiceries africaines ; on peut aussi l’extraire de noix de palme fraîches.
+
+Pour comprendre la sauce elle-même — texture, substitutions diaspora — voir le [guide de la moambe](/guides/moambe/). Variante poisson : [poisson à la moambe](/recettes/poisson-moambe/).

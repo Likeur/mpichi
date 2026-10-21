@@ -1,6 +1,7 @@
 ---
 title: Makemba
-description: Bananes plantain mûres, dorées à l’extérieur et fondantes à cœur, servies comme accompagnement ou en-cas.
+seoTitle: Recette makemba — plantains frits
+description: "Recette de makemba : plantains mûrs frits dorés dehors et fondants dedans — accompagnement ou en-cas congolais partout en RDC."
 region: Toute la RDC
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Makemba-Banana%20fry%20with%20Mayonnaise-Traditional%20Congolese%20Food.jpg?width=1200
 imageAlt: Makemba, bananes plantain frites à la congolaise
@@ -14,9 +15,15 @@ servings: 4
 difficulty: facile
 featured: false
 tags:
+  - makemba
+  - plantains frits
   - plantain
   - friture
   - rapide
+relatedRecipes:
+  - lituma
+  - poisson-braise-kinkole
+  - madesu
 ingredients:
   - 4 bananes plantain mûres
   - Huile de friture
@@ -30,4 +37,4 @@ steps:
   - Servir chaud avec du poisson, une viande en sauce ou des haricots.
 ---
 
-Plus la peau du plantain est jaune et tachetée de noir, plus les makemba seront douces et caramélisées.
+Plus la peau du plantain est jaune et tachetée de noir, plus les **makemba** seront douces et caramélisées. Elles accompagnent souvent un [poisson braisé](/recettes/poisson-braise-kinkole/) ou des [madesu](/recettes/madesu/). Plantain vert pilé : [lituma](/recettes/lituma/).

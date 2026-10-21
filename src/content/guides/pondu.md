@@ -1,6 +1,7 @@
 ---
 title: Le pondu, un geste de patience
-description: "Comment les feuilles de manioc deviennent pondu — du marché à la marmite, entre transmission et variantes familiales."
+seoTitle: Comment faire le pondu (saka-saka)
+description: "Guide : comment faire le pondu (saka-saka) — feuilles de manioc du marché à la marmite, gestes, temps de cuisson et variantes familiales en RDC."
 intro: "Un plat du quotidien qui demande du temps, de l’écoute et une main sûre."
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Un%20plat%20de%20feuille%20de%20Manioc%20et%20du%20fufu.jpg?width=1600
 imageAlt: Feuilles de manioc cuisinées et servies avec du fufu
@@ -13,11 +14,11 @@ relatedRecipes:
 order: 1
 ---
 
-Le pondu — aussi appelé saka-saka — n’est pas seulement une recette. C’est un rythme : laver, ébouillanter, hacher, enrober d’huile de palme, puis laisser le feu faire son travail sans brusquer.
+Le **pondu** — aussi appelé **saka-saka** — n’est pas seulement une recette. C’est un rythme : laver, ébouillanter, hacher, enrober d’huile de palme, puis laisser le feu faire son travail sans brusquer. Pour la fiche avec quantités : [recette pondu](/recettes/pondu/).
 
 ## Ce que l’on choisit au marché
 
-Les feuilles peuvent arriver fraîches, déjà pilées ou congelées. Chaque forme change le temps de cuisson et la texture finale. L’huile de palme rouge donne la profondeur ; le poisson fumé, quand il est là, apporte le caractère du foyer.
+Les feuilles peuvent arriver fraîches, déjà pilées ou congelées. Chaque forme change le temps de cuisson et la texture finale. L’huile de palme rouge donne la profondeur ; le poisson fumé, quand il est là, apporte le caractère du foyer. Voir aussi le [guide du marché](/guides/marche/).
 
 ## Le temps, vraiment
 
@@ -25,6 +26,6 @@ Beaucoup de gestes se jugent à l’œil et au nez. La sauce doit devenir créme
 
 ## Une manière parmi d’autres
 
-Selon les régions et les familles, le pondu se prépare avec ou sans poisson, plus ou moins pimenté, servi avec fufu, chikwangue ou riz. Mpichi en documente une version lisible, sans prétendre fixer la seule bonne.
+Selon les régions et les familles, le pondu se prépare avec ou sans poisson, plus ou moins pimenté, servi avec fufu, [chikwangue](/recettes/chikwangue/) ou riz. Avec des haricots, on parle de [saka-madesu](/recettes/saka-madesu/). Mpichi en documente une version lisible, sans prétendre fixer la seule bonne.
 
 La transmission reste vivante : on corrige une quantité, on ajoute une habitude, on raconte pourquoi on fait ainsi le vendredi ou le jour de fête.

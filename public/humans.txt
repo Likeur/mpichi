@@ -1,11 +1,12 @@
 /* TEAM */
 Editor: Likeur
 Site: https://likeur.xyz
-Location: Democratic Republic of the Congo
+Location: Kinshasa, Democratic Republic of the Congo
 
 /* SITE */
 Name: Mpichi
-Purpose: Congolese culinary heritage — recipes, gestures, regions
-Languages: French, English
-Standards: HTML5, Schema.org, llms.txt
+URL: https://mpichi.likeur.xyz
+Purpose: Catalogue of Congolese recipes (RDC) — dishes, gestures, regions, transmission
+Languages: French (fr-CD), English
+Standards: HTML5, Schema.org (Organization, WebSite, Recipe, FAQPage, CollectionPage), llms.txt
 Softwares: Astro, Tailwind CSS

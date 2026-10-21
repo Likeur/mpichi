@@ -1,6 +1,7 @@
 ---
 title: Makayabu aux tomates
-description: Poisson salé soigneusement dessalé puis mijoté dans une sauce courte aux tomates, oignons et piment.
+seoTitle: Recette makayabu aux tomates
+description: "Recette de makayabu : poisson salé dessalé puis mijoté dans une sauce courte aux tomates, oignons et piment — classique du bassin du Congo."
 region: Kinshasa & bassin du Congo
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Bacalhau%20%28Porto%29.jpg?width=1200
 imageAlt: Morceaux de morue salée présentés sur un étal
@@ -14,10 +15,20 @@ servings: 4
 difficulty: moyen
 featured: false
 tags:
+  - makayabu
   - poisson salé
   - tomate
   - oignon
-  - makayabu
+  - morue
+relatedRecipes:
+  - mbisi-ya-kokalinga
+  - poisson-braise-kinkole
+  - chikwangue
+video:
+  youtube: https://www.youtube.com/watch?v=6HYc2cOKt0Y
+  title: Makayabu au fumbwa — poisson salé congolais
+  credit: Stories Supper
+  creditUrl: https://www.youtube.com/@storiessupper5519
 ingredients:
   - 600 g de poisson salé séché
   - 4 tomates mûres, concassées
@@ -35,4 +46,6 @@ steps:
   - Couvrir et mijoter doucement 15 à 20 minutes sans trop remuer. Poivrer et servir avec chikwangue, fufu ou plantain.
 ---
 
-Le mot makayabu désigne couramment le poisson salé; l’espèce et la quantité de tomate varient selon l’approvisionnement et les habitudes familiales.
+**Makayabu** désigne couramment le poisson salé séché en RDC ; l’espèce et la quantité de tomate varient selon l’approvisionnement. Le dessalage est l’étape critique : trop de sel, et le plat est difficile à sauver.
+
+Servir avec [chikwangue](/recettes/chikwangue/). Autre poisson de table : [mbisi ya kokalinga](/recettes/mbisi-ya-kokalinga/).

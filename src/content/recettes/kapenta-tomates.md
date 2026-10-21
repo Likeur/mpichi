@@ -1,6 +1,7 @@
 ---
 title: Kapenta aux tomates
-description: Petits poissons kapenta poêlés puis nappés d’une sauce vive aux tomates et aux oignons.
+seoTitle: Recette kapenta aux tomates
+description: "Recette de kapenta aux tomates : petits poissons (frais ou séchés) poêlés puis nappés d’une sauce tomate-oignon — classique du Haut-Katanga et du Tanganyika."
 region: Haut-Katanga & Tanganyika
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Kapenta%2004.jpg?width=1600
 imageAlt: Petits poissons kapenta préparés pour un repas
@@ -18,6 +19,11 @@ tags:
   - poisson
   - tomate
   - Haut-Katanga
+  - Tanganyika
+relatedRecipes:
+  - bukari-katanga
+  - matembele-katanga
+  - makayabu
 ingredients:
   - 400 g de kapenta frais ou séchés
   - 4 tomates mûres, concassées
@@ -35,4 +41,4 @@ steps:
   - Laisser mijoter à découvert 5 minutes, poivrer et servir avec du bukari, du riz ou du plantain.
 ---
 
-Autour des lacs Tanganyika et Moero, le kapenta peut être frais ou séché, ce qui modifie autant le rinçage que l’assaisonnement.
+Autour des lacs Tanganyika et Moero, le **kapenta** peut être frais ou séché — cela change le rinçage et l’assaisonnement. On le sert souvent avec du [bukari](/recettes/bukari-katanga/) ou des [matembele](/recettes/matembele-katanga/).

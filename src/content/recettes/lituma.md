@@ -1,6 +1,7 @@
 ---
 title: Lituma
-description: Plantains verts cuits puis pilés en une pâte souple, façonnée en portions pour accompagner sauces et poissons.
+seoTitle: Recette lituma — plantain pilé
+description: "Recette de lituma : plantains verts cuits puis pilés en pâte souple — accompagnement de la Cuvette / Équateur, cousin du foutou."
 region: Cuvette centrale
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Foutou%20%C3%A0%20la%20sauce%20graine.JPG?width=1600
 imageAlt: Boule de plantain pilé servie avec une sauce
@@ -14,10 +15,15 @@ servings: 4
 difficulty: moyen
 featured: false
 tags:
+  - lituma
+  - plantain pilé
   - plantain
-  - pilé
-  - accompagnement
   - Équateur
+  - accompagnement
+relatedRecipes:
+  - makemba
+  - chikwangue
+  - liboke-poisson
 ingredients:
   - 6 bananes plantains vertes
   - Eau
@@ -31,4 +37,4 @@ steps:
   - Huiler légèrement les mains ou une louche, façonner quatre portions et servir chaud.
 ---
 
-La texture du lituma dépend de la maturité du plantain et du pilage; certaines familles y associent aussi du manioc.
+Le **lituma** est le plantain vert pilé de la Cuvette : texture élastique, portions à la louche, parfait avec sauces et poissons. Certaines familles y mêlent un peu de manioc. Autre plantain : les [makemba](/recettes/makemba/) (frits, mûrs). Autre amidon : [chikwangue](/recettes/chikwangue/).

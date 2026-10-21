@@ -7,6 +7,9 @@ import OriginRecipeCard from '../components/OriginRecipeCard.astro';
 import EditorialRecipeCard from '../components/EditorialRecipeCard.astro';
 import type { Locale } from '../i18n/config';
 import { localePath, localizeRecipe, useTranslations } from '../i18n/utils';
+import { absoluteUrl } from '../lib/site';
+import { pageCanonical, resolveOrigin } from '../lib/seo';
+import { slugFromRecipeId } from '../lib/recipe-theme';
 
 interface Props {
   lang?: Locale;
@@ -75,13 +78,57 @@ const processSteps = [
   ['03', t('home.process.03.title'), t('home.process.03.body')],
   ['04', t('home.process.04.title'), t('home.process.04.body')],
 ];
+
+const origin = resolveOrigin(Astro.site);
+const pageUrl = pageCanonical(Astro.url.pathname, origin);
+const homeJsonLd = {
+  '@type': 'WebPage',
+  '@id': `${pageUrl}#webpage`,
+  url: pageUrl,
+  name: t('meta.siteName'),
+  description: t('meta.defaultDescription'),
+  inLanguage: lang === 'en' ? 'en' : 'fr-CD',
+  isPartOf: { '@id': `${origin}/#website` },
+  about: {
+    '@type': 'Thing',
+    name: lang === 'en' ? 'Congolese cuisine' : 'Cuisine congolaise',
+  },
+  primaryImageOfPage: heroSlides[0]?.image
+    ? {
+        '@type': 'ImageObject',
+        url: heroSlides[0].image.startsWith('http')
+          ? heroSlides[0].image
+          : absoluteUrl(heroSlides[0].image, origin),
+      }
+    : undefined,
+  mainEntity: {
+    '@type': 'ItemList',
+    name: lang === 'en' ? 'Featured Congolese recipes' : 'Recettes congolaises mises en avant',
+    numberOfItems: railRecipes.length,
+    itemListElement: railRecipes.slice(0, 12).map((recipe, index) => {
+      const localized = localizeRecipe(recipe, lang);
+      return {
+        '@type': 'ListItem',
+        position: index + 1,
+        name: localized.title,
+        url: absoluteUrl(localePath(`/recettes/${slugFromRecipeId(recipe.id)}`, lang), origin),
+      };
+    }),
+  },
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', '[data-hero-summary]'],
+  },
+};
 ---
 
 <BaseLayout
   title={t('meta.homeTitle')}
+  description={t('meta.defaultDescription')}
   lang={lang}
   image={heroSlides[0]?.image}
   imageAlt={heroSlides[0]?.imageAlt}
+  jsonLd={homeJsonLd}
 >
   <HeroCarousel slides={heroSlides} />
 

@@ -1,6 +1,7 @@
 ---
 title: Pondu (saka-saka)
-description: Feuilles de manioc écrasées, cuites à l'huile de palme avec oignons et poisson fumé — un classique du quotidien congolais.
+seoTitle: Recette pondu (saka-saka) — feuilles de manioc
+description: "Recette de pondu (saka-saka) : feuilles de manioc mijotées à l’huile de palme avec oignons et poisson fumé — classique du quotidien en RDC."
 region: Kinshasa & Cuvette
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Un%20plat%20de%20feuille%20de%20Manioc%20et%20du%20fufu.jpg?width=1600
 imageAlt: Feuilles de manioc cuisinées et servies avec du fufu
@@ -14,9 +15,20 @@ servings: 6
 difficulty: moyen
 featured: true
 tags:
-  - manioc
+  - pondu
+  - saka-saka
+  - feuilles de manioc
   - huile de palme
   - traditionnel
+relatedRecipes:
+  - chikwangue
+  - saka-madesu
+  - fumbwa-arachides
+video:
+  youtube: https://www.youtube.com/watch?v=F8FIY5xvJIU
+  title: Pondu — Cook With Me (cuisine congolaise)
+  credit: Ketsia TV
+  creditUrl: https://www.youtube.com/@ketsiatv2601
 ingredients:
   - 2 kg de feuilles de manioc (pondu) fraîches ou congelées
   - 200 ml d'huile de palme rouge
@@ -34,4 +46,6 @@ steps:
   - Incorporer le poisson fumé en morceaux, assaisonner et laisser encore 15 minutes. Servir avec fufu, chikwanga ou riz.
 ---
 
-Le pondu se prépare aussi en version végétarienne, sans poisson ni viande, pour les jours de jeûne ou les repas du vendredi dans certaines familles.
+Le **pondu**, aussi appelé **saka-saka** ou mpondu, est la recette de feuilles de manioc la plus cherchée de la cuisine congolaise. On le prépare aussi en version végétarienne, sans poisson ni viande, pour les jours de jeûne ou les repas du vendredi dans certaines familles.
+
+Pour le geste, le marché et les variantes régionales, lire le [guide du pondu](/guides/pondu/). En accompagnement, beaucoup de foyers servent la [chikwangue](/recettes/chikwangue/) ou le fufu.

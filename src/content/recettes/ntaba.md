@@ -1,6 +1,7 @@
 ---
 title: Ntaba (chèvre grillée)
-description: Morceaux de chèvre marinés aux aromates puis grillés sur des braises, avec une surface bien dorée et une chair tendre.
+seoTitle: Recette ntaba — chèvre grillée
+description: "Recette de ntaba : chèvre marinée aux aromates puis grillée sur braises — grillade congolaise typique de Kinshasa et du Kongo-Central."
 region: Kinshasa & Kongo-Central
 image: /images/recettes/ntaba.png
 imageAlt: Ntaba grillé aux oignons et poivrons servi sur une feuille de bananier
@@ -14,10 +15,20 @@ servings: 6
 difficulty: moyen
 featured: false
 tags:
+  - ntaba
+  - chèvre grillée
   - chèvre
   - grillade
-  - braises
   - Kinshasa
+relatedRecipes:
+  - kamundele
+  - ntaba-sauce
+  - porc-braise
+video:
+  youtube: https://www.youtube.com/watch?v=M8QkmorG_cg
+  title: Ntaba ya kotumba — chèvre grillée
+  credit: shecooksitall
+  creditUrl: https://www.youtube.com/@shecooksitall
 ingredients:
   - 1,5 kg de chèvre avec quelques morceaux sur l’os
   - 2 oignons, dont un râpé
@@ -35,4 +46,6 @@ steps:
   - Émincer le second oignon et le servir avec le ntaba, accompagné de chikwangue, de plantain ou de pili-pili.
 ---
 
-Selon les gargotes et les familles, le ntaba peut être précuit plus ou moins longtemps avant de passer sur les braises.
+Le **ntaba** (chèvre en lingala) est une grillade de partage : précuisson pour attendrir, puis braises pour dorer. Selon les gargotes, le temps avant le grill varie beaucoup.
+
+En sauce plutôt qu’au feu : [ntaba en sauce](/recettes/ntaba-sauce/). Autre brochette de rue : [kamundele](/recettes/kamundele/).

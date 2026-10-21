@@ -1,6 +1,7 @@
 ---
 title: Ngai-ngai au poisson fumé
-description: Feuilles d’oseille de Guinée à la saveur acidulée, mijotées avec poisson fumé, tomate et oignon.
+seoTitle: Recette ngai-ngai au poisson fumé
+description: "Recette de ngai-ngai : feuilles d’oseille de Guinée acidulées, mijotées avec poisson fumé, tomate et oignon — plat du Kongo-Central et de Kinshasa."
 region: Kinshasa & Kongo-Central
 image: /images/recettes/ngai-ngai.jpg
 imageAlt: Ngai-ngai mijoté servi dans un plat blanc
@@ -14,10 +15,15 @@ servings: 4
 difficulty: facile
 featured: false
 tags:
+  - ngai-ngai
   - oseille
+  - oseille de Guinée
   - poisson fumé
   - feuilles
-  - acidulé
+relatedRecipes:
+  - pondu
+  - fumbwa-arachides
+  - makayabu
 ingredients:
   - 500 g de feuilles de ngai-ngai
   - 250 g de poisson fumé
@@ -35,4 +41,6 @@ steps:
   - Déposer le poisson et le piment, puis cuire encore 15 minutes à feu doux. Saler avec retenue et servir avec du fufu ou du riz.
 ---
 
-L’acidité naturelle du ngai-ngai est recherchée; tomate, poisson et matière grasse peuvent être dosés différemment selon les cuisines.
+Le **ngai-ngai** (oseille de Guinée / roselle) se reconnaît à son acidité franche. Tomate, poisson fumé et matière grasse se dosent différemment selon les cuisines.
+
+Autre plat de feuilles : le [pondu](/recettes/pondu/). Autre usage du poisson fumé / salé : [makayabu aux tomates](/recettes/makayabu/).

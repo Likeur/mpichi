@@ -5,6 +5,8 @@ const recettes = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/recettes' }),
   schema: z.object({
     title: z.string(),
+    /** Title tag SEO (H1 reste `title`). */
+    seoTitle: z.string().optional(),
     description: z.string(),
     region: z.string().optional(),
     image: z.string().refine(
@@ -24,13 +26,27 @@ const recettes = defineCollection({
     steps: z.array(z.string()),
     tags: z.array(z.string()).default([]),
     featured: z.boolean().default(false),
+    /** Slugs de recettes liées (sinon scoring automatique). */
+    relatedRecipes: z.array(z.string()).default([]),
+    /** Tutoriel YouTube externe (crédit obligatoire). */
+    video: z
+      .object({
+        youtube: z.string().url(),
+        title: z.string(),
+        credit: z.string(),
+        creditUrl: z.string().url().optional(),
+      })
+      .optional(),
   }),
 });
+
 
 const guides = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/guides' }),
   schema: z.object({
     title: z.string(),
+    /** Title tag SEO (H1 reste `title`). */
+    seoTitle: z.string().optional(),
     description: z.string(),
     intro: z.string(),
     image: z.string().refine(

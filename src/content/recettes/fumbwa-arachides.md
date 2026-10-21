@@ -1,6 +1,7 @@
 ---
 title: Fumbwa aux arachides
-description: Feuilles de fumbwa finement émincées, mijotées avec une sauce d’arachide jusqu’à devenir tendres et onctueuses.
+seoTitle: Recette fumbwa aux arachides
+description: "Recette de fumbwa (koko) aux arachides : feuilles finement émincées, mijotées dans une sauce d’arachide jusqu’à devenir tendres et onctueuses."
 region: Kongo Central
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Mfumbwa%20-%20sauce%20with%20fufu.jpg?width=1400
 imageAlt: Sauce de fumbwa aux arachides servie avec du fufu
@@ -14,9 +15,20 @@ servings: 6
 difficulty: moyen
 featured: true
 tags:
-  - feuilles
+  - fumbwa
+  - koko
   - arachide
+  - feuilles
   - végétal
+relatedRecipes:
+  - pondu
+  - chikwangue
+  - matembele-katanga
+video:
+  youtube: https://www.youtube.com/watch?v=6Z0ZWvsMhCg
+  title: Fumbwa congolaise — tutoriel complet
+  credit: letsCOOKwithELLE
+  creditUrl: https://www.youtube.com/@letsCOOKwithELLE
 ingredients:
   - 500 g de feuilles de fumbwa émincées
   - 200 g de pâte d’arachide non sucrée
@@ -35,4 +47,6 @@ steps:
   - Rectifier l’assaisonnement et servir avec du fufu ou de la chikwangue.
 ---
 
-Le fumbwa est aussi appelé koko selon les régions. La sauce doit cuire doucement pour que l’arachide développe toute sa rondeur.
+Le **fumbwa** (aussi appelé **koko**, okazi ou eru selon les régions) n’est pas du pondu : ce sont des feuilles de liane forestière, souvent vendues déjà émincées. La sauce doit cuire doucement pour que l’arachide développe toute sa rondeur.
+
+Autre grand plat de feuilles : le [pondu (saka-saka)](/recettes/pondu/). Servir volontiers avec de la [chikwangue](/recettes/chikwangue/).

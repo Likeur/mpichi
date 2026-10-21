@@ -1,6 +1,7 @@
 ---
 title: Saka-madesu
-description: Feuilles de manioc pilées et haricots mijotés ensemble dans une sauce onctueuse à l’huile de palme.
+seoTitle: Recette saka-madesu
+description: "Recette de saka-madesu : feuilles de manioc (pondu) et haricots mijotés ensemble à l’huile de palme — duo classique de l’Ouest de la RDC."
 region: Ouest de la RDC
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Tshaka%20Madesu%20%28Beans%20%EF%BC%86%20cassava%20leaves%20stew%29.jpg?width=1600
 imageAlt: Ragoût de feuilles de manioc et de haricots
@@ -14,10 +15,20 @@ servings: 6
 difficulty: moyen
 featured: false
 tags:
-  - feuilles de manioc
+  - saka-madesu
+  - pondu
   - haricots
+  - feuilles de manioc
   - huile de palme
-  - mijoté
+relatedRecipes:
+  - madesu
+  - pondu
+  - chikwangue
+video:
+  youtube: https://www.youtube.com/watch?v=9W0kTyJsO84
+  title: Tchaka madesu — feuilles de manioc aux haricots
+  credit: shecooksitall
+  creditUrl: https://www.youtube.com/@shecooksitall
 ingredients:
   - 400 g de haricots secs, trempés une nuit
   - 800 g de feuilles de manioc pilées, fraîches ou surgelées
@@ -35,4 +46,6 @@ steps:
   - Saler, ajuster la consistance et servir avec du fufu ou de la chikwangue.
 ---
 
-Certaines versions ajoutent du poisson fumé, tandis que d’autres restent végétales et mettent au premier plan le duo saka-madesu.
+Le **saka-madesu** réunit deux piliers du quotidien : le saka (pondu / feuilles de manioc) et les madesu (haricots). Certaines versions ajoutent du poisson fumé ; d’autres restent végétales.
+
+Séparé, voir aussi [pondu](/recettes/pondu/) et [madesu](/recettes/madesu/). Accompagnement : [chikwangue](/recettes/chikwangue/).

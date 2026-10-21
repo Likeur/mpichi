@@ -1,6 +1,7 @@
 ---
 title: Matembele aux arachides
-description: Feuilles de patate douce mijotées avec tomate et arachides pilées, un légume tendre servi avec le bukari.
+seoTitle: Recette matembele aux arachides
+description: "Recette de matembele : feuilles de patate douce mijotées avec tomate et arachides — légume du Grand Katanga, souvent servi avec le bukari."
 region: Grand Katanga
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Edible%20sweet%20potato%20leaves%20%28matembele%29.jpg?width=1600
 imageAlt: Feuilles fraîches de patate douce appelées matembele
@@ -14,10 +15,15 @@ servings: 6
 difficulty: facile
 featured: false
 tags:
-  - Grand Katanga
   - matembele
   - feuilles de patate douce
   - arachides
+  - Grand Katanga
+  - Lubumbashi
+relatedRecipes:
+  - bukari-katanga
+  - kapenta-tomates
+  - fumbwa-arachides
 ingredients:
   - 3 bottes de feuilles de patate douce
   - 100 g d’arachides grillées et pilées
@@ -36,4 +42,4 @@ steps:
   - Remuer de temps en temps et servir lorsque la sauce est liée et les feuilles bien tendres.
 ---
 
-Les matembele sont consommées dans plusieurs régions congolaises. Dans le Grand Katanga, elles font partie des légumes qui accompagnent couramment le bukari.
+Les **matembele** (feuilles de patate douce) se cuisinent dans plusieurs régions ; au Grand Katanga, elles accompagnent couramment le [bukari](/recettes/bukari-katanga/). Autre sauce arachide de feuilles : [fumbwa](/recettes/fumbwa-arachides/).

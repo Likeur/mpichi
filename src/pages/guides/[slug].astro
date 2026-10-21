@@ -34,6 +34,8 @@ const related = localized.relatedRecipes
   .map((slug) => allRecipes.find((recipe) => slugFromRecipeId(recipe.id) === slug))
   .filter((recipe): recipe is CollectionEntry<'recettes'> => Boolean(recipe));
 
+const pageTitle = localized.seoTitle ?? localized.title;
+
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -80,7 +82,7 @@ const breadcrumbJsonLd = {
 ---
 
 <BaseLayout
-  title={localized.title}
+  title={pageTitle}
   description={localized.description}
   lang={lang}
   image={localized.image}

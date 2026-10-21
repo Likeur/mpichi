@@ -6,6 +6,9 @@ import FilterDropdown from '../../components/FilterDropdown.astro';
 import type { Locale } from '../../i18n/config';
 import { localePath, localizeRecipe, recipeCountLabel, useTranslations } from '../../i18n/utils';
 import type { UiKey } from '../../i18n/ui';
+import { absoluteUrl } from '../../lib/site';
+import { pageCanonical, resolveOrigin } from '../../lib/seo';
+import { slugFromRecipeId } from '../../lib/recipe-theme';
 
 interface Props {
   lang?: Locale;
@@ -56,14 +59,42 @@ const countLabel = recipeCountLabel(lang, recipes.length);
 const countSingular = t('recipes.count', { n: '00' }).replace('00', '{n}');
 const countPlural = t('recipes.countPlural', { n: '00' }).replace('00', '{n}');
 const ogRecipe = recipes.find(({ recipe }) => recipe.data.featured)?.localized ?? recipes[0]?.localized;
+
+const origin = resolveOrigin(Astro.site);
+const pageUrl = pageCanonical(Astro.url.pathname, origin);
+const catalogJsonLd = {
+  '@type': 'CollectionPage',
+  '@id': `${pageUrl}#catalogue`,
+  name: t('recipes.pageTitle'),
+  description: t('recipes.description'),
+  url: pageUrl,
+  inLanguage: lang === 'en' ? 'en' : 'fr-CD',
+  isPartOf: { '@id': `${origin}/#website` },
+  about: {
+    '@type': 'Thing',
+    name: lang === 'en' ? 'Congolese cuisine' : 'Cuisine congolaise',
+  },
+  mainEntity: {
+    '@type': 'ItemList',
+    name: t('recipes.pageTitle'),
+    numberOfItems: recipes.length,
+    itemListElement: recipes.slice(0, 40).map(({ recipe, localized }, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: localized.title,
+      url: absoluteUrl(localePath(`/recettes/${slugFromRecipeId(recipe.id)}`, lang), origin),
+    })),
+  },
+};
 ---
 
 <BaseLayout
-  title={t('recipes.title')}
+  title={t('recipes.pageTitle')}
   description={t('recipes.description')}
   lang={lang}
   image={ogRecipe?.image}
   imageAlt={ogRecipe?.imageAlt}
+  jsonLd={catalogJsonLd}
 >
   <section class="pt-28 pb-12 bg-earth-dark min-h-[50svh] flex items-end border-b border-white/10">
     <div class="px-grid-margin max-w-[1200px] mx-auto w-full">

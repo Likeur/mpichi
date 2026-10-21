@@ -1,6 +1,7 @@
 ---
 title: Tangawisi
-description: Jus de gingembre frais, piquant et acidulé, sucré à convenance — la boisson maison très répandue à Kinshasa et dans la diaspora.
+seoTitle: Recette tangawisi — jus de gingembre
+description: "Recette de tangawisi : jus de gingembre frais, piquant et acidulé, sucré à convenance — boisson maison de Kinshasa et de la diaspora."
 region: Kinshasa
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Jus%20de%20gingembre.jpg?width=1600
 imageAlt: Verre de jus de gingembre frais
@@ -14,10 +15,15 @@ servings: 6
 difficulty: facile
 featured: false
 tags:
-  - gingembre
-  - jus
-  - boisson
   - tangawisi
+  - jus de gingembre
+  - gingembre
+  - boisson
+  - Kinshasa
+relatedRecipes:
+  - jus-bissap
+  - jus-passion
+  - mikate
 ingredients:
   - 250 g de gingembre frais
   - 1,5 l d’eau
@@ -32,4 +38,4 @@ steps:
   - Sucrer, ajouter le citron (et le piment si souhaité). Réfrigérer. Servir bien frais.
 ---
 
-Le tangawisi se boit glacé, souvent après un repas épicé. Le dosage de gingembre et de sucre varie fortement d’une maison à l’autre.
+Le **tangawisi** (jus de gingembre) se boit glacé, souvent après un repas épicé. Dosage de gingembre et de sucre : très libre selon les maisons. Autres boissons : [jus de bissap](/recettes/jus-bissap/), [jus de passion](/recettes/jus-passion/). Avec des [mikate](/recettes/mikate/) au goûter.

@@ -1,6 +1,7 @@
 ---
 title: Chikwangue
-description: Pâte de manioc fermentée, enveloppée dans des feuilles puis cuite longuement à la vapeur, ferme et légèrement acidulée.
+seoTitle: Recette chikwangue — pain de manioc
+description: "Recette de chikwangue (kwanga) : pâte de manioc fermentée enveloppée dans des feuilles et cuite à la vapeur — accompagnement ferme et légèrement acidulé de la RDC."
 region: Bassin du Congo
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Chikwang-Traditional%20Congolese%20Food.jpg?width=1200
 imageAlt: Chikwangue congolaise enveloppée dans ses feuilles
@@ -14,9 +15,15 @@ servings: 8
 difficulty: avancé
 featured: false
 tags:
+  - chikwangue
+  - kwanga
   - manioc
+  - fufu
   - fermentation
-  - feuille
+relatedRecipes:
+  - pondu
+  - liboke-poisson
+  - bukari-katanga
 ingredients:
   - 1 kg de pâte de manioc fermentée prête à cuire
   - Grandes feuilles de bananier ou feuilles adaptées à la cuisson
@@ -31,4 +38,6 @@ steps:
   - Laisser tiédir avant de déballer. Couper en tranches et servir avec une sauce, du poisson ou du pondu.
 ---
 
-La préparation traditionnelle du manioc cru demande une fermentation et un traitement maîtrisés. Cette version part d’une pâte fermentée prête à cuire.
+La **chikwangue** (ou **kwanga**) est le « pain » de manioc fermenté de nombreuses tables congolaises. La fermentation du manioc cru demande un savoir-faire ; cette fiche part d’une pâte fermentée déjà prête à cuire, plus accessible en ville et en diaspora.
+
+Elle accompagne souvent le [pondu](/recettes/pondu/) ou un [liboke de poisson](/recettes/liboke-poisson/). Au Katanga, le cousin de maïs s’appelle plutôt [bukari](/recettes/bukari-katanga/).

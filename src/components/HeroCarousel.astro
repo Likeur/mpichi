@@ -54,7 +54,12 @@ const { slides } = Astro.props;
           class:list={['max-w-[790px] transition-all duration-700', i === 0 ? 'opacity-100' : 'hidden']}
         >
           <h1 class="text-display-hero whitespace-pre-line text-balance">{slide.title}</h1>
-          <p class="mt-6 max-w-md text-sm sm:text-base leading-relaxed text-creme-100/72">{slide.summary}</p>
+          <p
+            class="mt-6 max-w-md text-sm sm:text-base leading-relaxed text-creme-100/72"
+            data-hero-summary
+          >
+            {slide.summary}
+          </p>
           <div class="mt-7">
             <PillButton href={slide.cta.href} label={slide.cta.label} />
           </div>

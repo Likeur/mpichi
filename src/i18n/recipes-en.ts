@@ -1,5 +1,6 @@
 export type RecipeTranslation = {
   title: string;
+  seoTitle?: string;
   description: string;
   region?: string;
   imageAlt: string;
@@ -14,7 +15,8 @@ export type RecipeTranslation = {
 export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
   "biteku-teku-kasai": {
     "title": "Biteku-teku",
-    "description": "Amaranth leaves quickly simmered with onion, tomato and a touch of peanut.",
+    "seoTitle": "Biteku-teku recipe (lenga-lenga)",
+    "description": "Biteku-teku recipe: amaranth simmered with onion, tomato and peanut — Greater Kasai dish, also called lenga-lenga in Kinshasa.",
     "region": "Greater Kasai",
     "imageAlt": "Fresh amaranth leaves used for biteku-teku",
     "prepTime": "20 min",
@@ -38,13 +40,13 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Continue cooking uncovered until the leaves are tender and the sauce lightly thickened."
     ],
     "tags": [
-      "Greater Kasai",
-      "amaranth",
       "biteku-teku",
       "lenga-lenga",
+      "amaranth",
+      "Greater Kasai",
       "vegetables"
     ],
-    "body": "Biteku-teku is popular in Kasai and other regions of the DRC. In Kinshasa and the West, the same amaranth is often called lenga-lenga, more commonly simmered with tomato and palm oil. It is eaten with bidia and can also be prepared without peanuts."
+    "body": "Biteku-teku is popular in Kasai. In Kinshasa and the West, the same amaranth is often called lenga-lenga, more commonly simmered with tomato and palm oil. Eat with bidia; peanuts are optional."
   },
   "brochettes-grillons": {
     "title": "Cricket skewers",
@@ -79,7 +81,8 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
   },
   "bukari-katanga": {
     "title": "Bukari",
-    "description": "A soft maize-flour dough worked hot until smooth, dense and ready to accompany sauces.",
+    "seoTitle": "Bukari recipe — Katanga maize fufu",
+    "description": "Bukari recipe: hot-worked maize flour dough until smooth and dense—the central starch of Greater Katanga (Lubumbashi).",
     "region": "Greater Katanga",
     "imageAlt": "Balls of maize fufu served in the Democratic Republic of the Congo",
     "prepTime": "5 min",
@@ -98,16 +101,18 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Shape portions with a wet ladle and serve immediately."
     ],
     "tags": [
-      "Greater Katanga",
-      "maize",
       "bukari",
+      "maize fufu",
+      "bidia",
+      "Greater Katanga",
       "Lubumbashi"
     ],
-    "body": "Bukari sits at the center of meals in Greater Katanga. It accompanies leafy greens, fish and meats in sauce."
+    "body": "Bukari (sometimes linked to bidia / maize fufu) anchors meals in Greater Katanga: leafy greens, fish and stewed meats cling to it. In the West, fermented cassava “bread” is more often chikwangue."
   },
   "chikwangue": {
     "title": "Chikwangue",
-    "description": "Fermented cassava dough wrapped in leaves and steamed for a long time—firm and lightly tangy.",
+    "seoTitle": "Chikwangue recipe — Congolese cassava bread",
+    "description": "Chikwangue (kwanga) recipe: fermented cassava dough wrapped in leaves and steamed—firm, lightly tangy Congolese staple.",
     "region": "Congo Basin",
     "imageAlt": "Congolese chikwangue wrapped in its leaves",
     "prepTime": "40 min",
@@ -127,11 +132,13 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Let cool slightly before unwrapping. Slice and serve with a sauce, fish or pondu."
     ],
     "tags": [
+      "chikwangue",
+      "kwanga",
       "cassava",
-      "fermentation",
-      "leaf"
+      "fufu",
+      "fermentation"
     ],
-    "body": "Traditional preparation of raw cassava requires controlled fermentation and handling. This version starts from fermented dough ready to cook."
+    "body": "Chikwangue (or kwanga) is the fermented cassava “bread” of many Congolese tables. Raw cassava fermentation needs skill; this version starts from ready-to-cook fermented dough, easier in cities and abroad. It often accompanies pondu or fish liboke; in Katanga the maize cousin is bukari."
   },
   "croquettes-manioc": {
     "title": "Cassava croquettes",
@@ -199,7 +206,8 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
   },
   "fumbwa-arachides": {
     "title": "Fumbwa with peanuts",
-    "description": "Finely shredded fumbwa leaves simmered in a peanut sauce until tender and silky.",
+    "seoTitle": "Fumbwa with peanuts recipe",
+    "description": "Fumbwa (koko) with peanuts recipe: shredded forest leaves simmered in peanut sauce until tender and silky—western Congo classic.",
     "region": "Kongo Central",
     "imageAlt": "Fumbwa peanut sauce served with fufu",
     "prepTime": "30 min",
@@ -224,15 +232,18 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Serve with fufu, chikwangue or rice."
     ],
     "tags": [
-      "leaves",
+      "fumbwa",
+      "koko",
       "peanut",
+      "leaves",
       "vegetable"
     ],
-    "body": "Fumbwa, also known as koko, is a forest vine leaf much loved in western Congo."
+    "body": "Fumbwa (also called koko, okazi or eru) is not pondu: it is a forest vine leaf, often sold already shredded. Cook the sauce gently so the peanut paste turns round and creamy. Serve with chikwangue or fufu."
   },
   "kamundele": {
     "title": "Kamundele",
-    "description": "Meat skewers seasoned and grilled over coals until browned outside and juicy inside.",
+    "seoTitle": "Kamundele recipe — Kinshasa skewers",
+    "description": "Kamundele recipe: beef skewers marinated with aromatics and grilled over coals—emblematic Kinshasa street food.",
     "region": "Kinshasa",
     "imageAlt": "Meat skewers grilling over coals",
     "prepTime": "25 min + 1 h marinating",
@@ -254,15 +265,18 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Serve hot with chili sauce and chikwangue or fries."
     ],
     "tags": [
-      "skewer",
-      "grilled",
-      "meat"
+      "kamundele",
+      "skewers",
+      "Kinshasa street food",
+      "beef",
+      "grill"
     ],
-    "body": "Kamundele is a street-food staple in Kinshasa, eaten standing or shared at the table."
+    "body": "Kamundele is Kinshasa street food at its core: small skewers, chili marinade, hot coals. Seasoning shifts from one vendor to the next. Another shared grill is ntaba (goat)."
   },
   "kapenta-tomates": {
     "title": "Kapenta with tomatoes",
-    "description": "Small dried lake fish fried then simmered with tomato and onion, a relish of Greater Katanga.",
+    "seoTitle": "Kapenta with tomatoes recipe",
+    "description": "Kapenta with tomatoes recipe: small fish (fresh or dried) fried then simmered in tomato-onion sauce — Haut-Katanga and Tanganyika classic.",
     "region": "Haut-Katanga & Tanganyika",
     "imageAlt": "Dried kapenta fish",
     "prepTime": "20 min",
@@ -285,14 +299,17 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     ],
     "tags": [
       "kapenta",
+      "fish",
       "tomato",
-      "Greater Katanga"
+      "Haut-Katanga",
+      "Tanganyika"
     ],
-    "body": "Kapenta arrived in Katanga cooking through lake fisheries and everyday kitchen practice."
+    "body": "Around Lakes Tanganyika and Mweru, kapenta may be fresh or dried — that changes rinsing and seasoning. Often served with bukari or matembele."
   },
   "liboke-poisson": {
     "title": "Fish liboke",
-    "description": "Fish marinated with spices, wrapped in banana leaves and steamed—fragrant and tender.",
+    "seoTitle": "Fish liboke recipe (maboke)",
+    "description": "Fish liboke (maboke) recipe: spice-marinated fish wrapped in banana leaves and steamed—fragrant, tender Congolese packet cooking.",
     "region": "Kongo-Central & Bandundu",
     "imageAlt": "An opened liboke in its leaves, ready to eat",
     "prepTime": "30 min",
@@ -314,15 +331,18 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Open at the table and serve with chikwangue or plantain."
     ],
     "tags": [
+      "liboke",
+      "maboke",
       "fish",
       "banana leaf",
       "steam"
     ],
-    "body": "Liboke is both a cooking method and a dish: the leaf protects the fish and perfumes it."
+    "body": "Fish liboke (also called maboke) is both a technique and a dish: the banana leaf seals the juices and perfumes the flesh. Without fresh leaves, baking paper plus foil is an honest diaspora substitute."
   },
   "lituma": {
     "title": "Lituma",
-    "description": "Green plantains pounded into a dense, smooth puree, a staple of eastern Congo.",
+    "seoTitle": "Lituma recipe — pounded plantain",
+    "description": "Lituma recipe: green plantains cooked then pounded into a soft dough — Cuvette / Equateur side, related to foutou.",
     "region": "Central Cuvette",
     "imageAlt": "Plantain puree served with a sauce",
     "prepTime": "15 min",
@@ -339,11 +359,13 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Shape into portions and serve with a sauce or leafy greens."
     ],
     "tags": [
+      "lituma",
+      "pounded plantain",
       "plantain",
-      "accompaniment",
-      "eastern DRC"
+      "Equateur",
+      "accompaniment"
     ],
-    "body": "Lituma accompanies sauces the way fufu or bukari does in other regions."
+    "body": "Lituma is green plantain pounded in the Cuvette: elastic texture, ladle portions, ideal with sauces and fish. Some families mix in a little cassava. Ripe fried plantain is makemba; another starch is chikwangue."
   },
   "loso-petits-pois": {
     "title": "Loso with green peas",
@@ -377,7 +399,8 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
   },
   "madesu": {
     "title": "Madesu",
-    "description": "Dried beans simmered until creamy with onion, tomato and a touch of chili.",
+    "seoTitle": "Madesu recipe — Congolese beans",
+    "description": "Madesu recipe: tender beans simmered with tomato, onion and red palm oil—everyday Congolese comfort food from the DRC.",
     "region": "Kinshasa & Western DRC",
     "imageAlt": "Bowl of cooked beans",
     "prepTime": "20 min + 8 h soaking",
@@ -398,18 +421,21 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Season and serve with rice or chikwangue."
     ],
     "tags": [
+      "madesu",
+      "Congolese beans",
       "beans",
-      "simmered",
+      "palm oil",
       "everyday"
     ],
-    "body": "Madesu also covers the everyday palm-oil beans of many households. It is economical, filling, and endlessly varied from one kitchen to another."
+    "body": "Madesu means the everyday palm-oil beans of Congolese kitchens—economical, filling, endlessly varied. Add cassava leaves and you get saka-madesu; serve with chikwangue or rice."
   },
   "makayabu": {
     "title": "Makayabu",
-    "description": "Salted dried fish soaked, then simmered in a tomato and onion sauce.",
+    "seoTitle": "Makayabu with tomatoes recipe",
+    "description": "Makayabu recipe: salted dried fish soaked then simmered in a short tomato, onion and chili sauce—Congo Basin classic.",
     "region": "Kinshasa & Congo Basin",
     "imageAlt": "Salted dried fish dish",
-    "prepTime": "25 min + 12 h de dessalage",
+    "prepTime": "25 min + 12 h soaking",
     "cookTime": "35 min",
     "ingredients": [
       "400 g makayabu (salted dried fish)",
@@ -427,15 +453,18 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Serve with rice, plantain or fufu."
     ],
     "tags": [
+      "makayabu",
       "salted fish",
       "tomato",
+      "onion",
       "sauce"
     ],
-    "body": "Makayabu keeps well and travels far; soaking time depends on how salty the fish is."
+    "body": "Makayabu usually means salted dried fish in the DRC; species and tomato quantity vary. Desalting is the critical step—too much salt and the dish is hard to rescue. Serve with chikwangue."
   },
   "makemba": {
     "title": "Makemba",
-    "description": "Ripe plantains, golden outside and soft within, served as a side or a snack.",
+    "seoTitle": "Makemba recipe — fried plantains",
+    "description": "Makemba recipe: ripe plantains fried golden outside and soft within — Congolese side or snack across the DRC.",
     "region": "Across the DRC",
     "imageAlt": "Makemba, Congolese fried plantains",
     "prepTime": "10 min",
@@ -453,11 +482,13 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Serve hot."
     ],
     "tags": [
+      "makemba",
+      "fried plantains",
       "plantain",
       "frying",
       "quick"
     ],
-    "body": "Makemba sits beside grilled fish, sauces and street snacks across the country."
+    "body": "The yellower and more freckled the peel, the sweeter and more caramelised the makemba. Often served with grilled fish or madesu. Green pounded plantain is lituma."
   },
   "manioc-grille": {
     "title": "Grilled cassava",
@@ -487,7 +518,8 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
   },
   "matembele-katanga": {
     "title": "Matembele with peanuts",
-    "description": "Sweet potato leaves simmered with tomato and pounded peanuts, a tender green served with bukari.",
+    "seoTitle": "Matembele with peanuts recipe",
+    "description": "Matembele recipe: sweet potato leaves simmered with tomato and peanuts — Greater Katanga green, often served with bukari.",
     "region": "Greater Katanga",
     "imageAlt": "Fresh sweet potato leaves called matembele",
     "prepTime": "25 min",
@@ -509,12 +541,13 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Season and serve with bukari."
     ],
     "tags": [
-      "Greater Katanga",
       "matembele",
       "sweet potato leaves",
-      "peanuts"
+      "peanuts",
+      "Greater Katanga",
+      "Lubumbashi"
     ],
-    "body": "Matembele is a Katanga green that pairs naturally with bukari and grilled meats."
+    "body": "Matembele (sweet potato leaves) are cooked in several regions; in Greater Katanga they commonly accompany bukari. Another peanut leaf stew: fumbwa."
   },
   "mayebo": {
     "title": "Mayebo",
@@ -630,7 +663,8 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
   },
   "mikate": {
     "title": "Mikate",
-    "description": "Congolese yeasted doughnuts, crisp outside, soft inside, served still warm.",
+    "seoTitle": "Mikate recipe — Congolese doughnuts",
+    "description": "Mikate recipe: Congolese yeasted doughnuts, crisp outside and soft inside—Kinshasa street snack and home treat.",
     "region": "Kinshasa",
     "imageAlt": "Golden mikate, Congolese doughnuts",
     "prepTime": "20 min",
@@ -651,15 +685,18 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Drain and serve warm."
     ],
     "tags": [
-      "doughnut",
+      "mikate",
+      "Congolese doughnuts",
       "yeast",
+      "Kinshasa",
       "snack"
     ],
-    "body": "Mikate fill markets and family kitchens, eaten plain or with a drink."
+    "body": "Mikate are Congolese street and home doughnuts: in Kinshasa they appear at breakfast or tea time, often with peanut paste. Let the dough rise fully so they stay light after frying. Pair with tangawisi (ginger juice)."
   },
   "moambe-poulet": {
     "title": "Chicken moambe",
-    "description": "A silky palm-nut sauce simmered with chicken—a festive dish found across the DRC.",
+    "seoTitle": "Chicken moambe recipe",
+    "description": "Chicken moambe recipe: silky palm-nut sauce simmered with chicken—a festive Congolese dish found across the DRC.",
     "region": "Across the DRC",
     "imageAlt": "Chicken moambe served in a dish",
     "prepTime": "25 min",
@@ -682,11 +719,13 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Serve with rice, fufu or chikwangue."
     ],
     "tags": [
-      "chicken",
+      "moambe",
+      "chicken moambe",
+      "mwamba",
       "palm nut",
       "celebration"
     ],
-    "body": "Moambe gathers the table: each household adjusts thickness, heat and accompaniments."
+    "body": "Chicken moambe (mwamba) is one of the Congolese dishes best known abroad. Palm cream comes in tins or sachets in African grocery stores; you can also extract it from fresh palm nuts. Each household adjusts thickness, heat and sides."
   },
   "mujibujibu": {
     "title": "Mujibujibu",
@@ -748,7 +787,8 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
   },
   "ngai-ngai": {
     "title": "Ngai-ngai",
-    "description": "Congolese sorrel leaves simmered with onion and a little oil until soft and pleasantly tart.",
+    "seoTitle": "Ngai-ngai with smoked fish recipe",
+    "description": "Ngai-ngai recipe: tart Guinean sorrel leaves simmered with smoked fish, tomato and onion—Kinshasa and Kongo-Central classic.",
     "region": "Kinshasa & Kongo-Central",
     "imageAlt": "Hibiscus sabdariffa leaves",
     "prepTime": "25 min",
@@ -768,11 +808,13 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Season and serve with fufu or rice."
     ],
     "tags": [
+      "ngai-ngai",
       "sorrel",
-      "leaves",
-      "tart"
+      "Guinean sorrel",
+      "smoked fish",
+      "leaves"
     ],
-    "body": "Ngai-ngai brings a bright acidity that cuts through rich sauces and starches."
+    "body": "Ngai-ngai (Guinean sorrel / roselle) is prized for its sharp acidity. Tomato, smoked fish and fat are dosed differently from kitchen to kitchen. Another leaf stew to compare: pondu."
   },
   "nsafu-grilles": {
     "title": "Grilled nsafu",
@@ -801,7 +843,8 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
   },
   "ntaba": {
     "title": "Ntaba (grilled goat)",
-    "description": "Goat pieces marinated with aromatics then grilled over coals, browned outside and tender within.",
+    "seoTitle": "Ntaba recipe — grilled goat",
+    "description": "Ntaba recipe: goat marinated with aromatics then grilled over coals—Congolese grill food from Kinshasa and Kongo-Central.",
     "region": "Kinshasa & Kongo-Central",
     "imageAlt": "Pieces of grilled meat served on a plate",
     "prepTime": "25 min + 2 h marinating",
@@ -824,16 +867,18 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Slice the second onion and serve it with the ntaba, alongside chikwangue, plantain or pili-pili."
     ],
     "tags": [
+      "ntaba",
+      "grilled goat",
       "goat",
       "grill",
-      "coals",
       "Kinshasa"
     ],
-    "body": "Depending on the grill stand and the family, ntaba may be pre-cooked for more or less time before it meets the coals."
+    "body": "Ntaba (goat in Lingala) is sharing food: a pre-cook to tenderise, then coals to brown. Grill stands vary the time before grilling widely. For a stewed version, see ntaba in sauce; for street skewers, kamundele."
   },
   "pepe-soupe-ya-ngolo": {
     "title": "Pepe soupe ya ngolo",
-    "description": "A hot catfish soup scented with ginger, garlic and pili-pili, as served in Kinshasa streets.",
+    "seoTitle": "Pepe soupe ya ngolo recipe",
+    "description": "Pepe soupe ya ngolo recipe: spicy catfish soup with ginger, garlic and pili-pili—Kinshasa street-food heat.",
     "region": "Kinshasa",
     "imageAlt": "Bowl of pepe soupe ya ngolo",
     "prepTime": "25 min",
@@ -855,15 +900,18 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Serve very hot with bread or boiled plantain."
     ],
     "tags": [
-      "soup",
+      "pepe soupe",
+      "ngolo",
       "catfish",
+      "soup",
       "Kinshasa"
     ],
-    "body": "Pepe soupe is street heat: spicy, fragrant, and meant to be eaten without waiting."
+    "body": "“Ngolo” means catfish in Lingala. Pepe soupe ya ngolo is a short, fragrant broth from Kinshasa stalls—eaten hot, often with chikwangue. Street heat: spicy, aromatic, no waiting."
   },
   "poisson-braise-kinkole": {
     "title": "Grilled fish",
-    "description": "Whole fish marinated with pili-pili and aromatics, grilled until the skin is smoky and the flesh juicy.",
+    "seoTitle": "Kinkole grilled fish recipe",
+    "description": "Kinkole-style grilled fish recipe: whole fish marinated with pili-pili and aromatics, grilled until smoky skin and juicy flesh—Kinshasa classic.",
     "region": "Kinshasa · Kinkole",
     "imageAlt": "Grilled fish at Kinkole",
     "prepTime": "25 min",
@@ -882,15 +930,18 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Serve with plantain, fries or a raw onion salad."
     ],
     "tags": [
-      "fish",
+      "grilled fish",
+      "Kinkole",
+      "Kinshasa",
       "grill",
-      "Kinkole"
+      "pili-pili"
     ],
-    "body": "Kinkole is famous for its braised fish by the river—smoke, chili and sharing."
+    "body": "Braised fish at Kinkole (and Maluku) is a Kinshasa street landmark: chili marinade, coal smoke, tables by the Congo River. On a home grill, keep medium heat so the flesh stays juicy."
   },
   "pondu": {
     "title": "Pondu (saka-saka)",
-    "description": "Pound cassava leaves cooked in palm oil with onions and smoked fish—a everyday Congolese classic.",
+    "seoTitle": "Pondu recipe (saka-saka) — cassava leaves",
+    "description": "Pondu (saka-saka) recipe: cassava leaves simmered in palm oil with onions and smoked fish—everyday Congolese classic from the DRC.",
     "region": "Kinshasa & Cuvette",
     "imageAlt": "Plate of cassava leaves with fufu",
     "prepTime": "45 min",
@@ -911,11 +962,13 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Serve with fufu, chikwangue or rice."
     ],
     "tags": [
+      "pondu",
+      "saka-saka",
       "cassava leaves",
       "palm oil",
       "everyday"
     ],
-    "body": "Pondu, or saka-saka, demands time: the long cook softens the leaves and builds the sauce."
+    "body": "Pondu—also called saka-saka or mpondu—is the cassava-leaf stew most associated with Congolese home cooking. A vegetarian version without fish or meat is common on fasting days. The long simmer softens the leaves and builds the sauce; serve with chikwangue or fufu."
   },
   "riz-moambe": {
     "title": "Rice with moambe",
@@ -948,7 +1001,8 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
   },
   "saka-madesu": {
     "title": "Saka-madesu",
-    "description": "Pound cassava leaves and beans simmered together in a silky palm-oil sauce.",
+    "seoTitle": "Saka-madesu recipe",
+    "description": "Saka-madesu recipe: cassava leaves (pondu) and beans simmered together in palm oil—classic Western DRC pairing.",
     "region": "Western DRC",
     "imageAlt": "Stew of cassava leaves and beans",
     "prepTime": "30 min + 8 h soaking",
@@ -971,12 +1025,13 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Season, adjust the consistency and serve with fufu or chikwangue."
     ],
     "tags": [
-      "cassava leaves",
+      "saka-madesu",
+      "pondu",
       "beans",
-      "palm oil",
-      "simmered"
+      "cassava leaves",
+      "palm oil"
     ],
-    "body": "Some versions add smoked fish; others stay plant-based and let the saka-madesu pairing lead."
+    "body": "Saka-madesu joins two everyday pillars: saka (pondu / cassava leaves) and madesu (beans). Some versions add smoked fish; others stay plant-based. See also separate pondu and madesu pages."
   },
   "salade-kisangani": {
     "title": "Cabbage-carrot salad",
@@ -1071,8 +1126,9 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
   },
   "poulet-mayo": {
     title: "Poulet mayo",
+    seoTitle: "Poulet mayo recipe — Kinshasa",
     description:
-      "Browned chicken pieces coated in a mayonnaise sauce lifted with garlic, mustard and pili-pili — a Kinshasa classic for tables and celebrations.",
+      "Poulet mayo recipe: browned chicken coated in mayonnaise with garlic, mustard and pili-pili — a Kinshasa classic for tables and celebrations.",
     region: "Kinshasa",
     imageAlt: "Golden chicken ready to be coated in sauce",
     prepTime: "25 min",
@@ -1095,8 +1151,8 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Off the heat, mix mayonnaise, mustard, lemon and pili-pili. Coat the still-warm chicken.",
       "Stir gently so the sauce does not split. Serve with fries, rice or salad.",
     ],
-    tags: ["chicken", "mayonnaise", "Kinshasa", "celebration"],
-    body: "Poulet mayo is neither moambe nor a tomato sauce: the cold mayonnaise liaison is added at the end. Mustard and chili levels vary widely from one household to another.",
+    tags: ["poulet mayo", "mayonnaise", "chicken", "Kinshasa", "celebration"],
+    body: "Poulet mayo is neither moambe nor a tomato sauce: the cold mayonnaise liaison is added at the end. Mustard and chili levels vary widely. Another celebration chicken: moambe; for tomato sauce, see soso ya sauce.",
   },
   "ntaba-sauce": {
     title: "Ntaba in sauce",
@@ -1405,8 +1461,9 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
   },
   "tangawisi": {
     title: "Tangawisi",
+    seoTitle: "Tangawisi recipe — ginger juice",
     description:
-      "Fresh ginger juice, sharp and tangy, sweetened to taste — a homemade drink common in Kinshasa and the diaspora.",
+      "Tangawisi recipe: fresh ginger juice, sharp and tangy, sweetened to taste — homemade drink of Kinshasa and the diaspora.",
     region: "Kinshasa",
     imageAlt: "Glass of fresh ginger juice",
     prepTime: "20 min + 1 h resting",
@@ -1425,8 +1482,8 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Strain through a fine cloth or sieve, pressing well.",
       "Sweeten, add lemon (and chili if desired). Chill. Serve cold.",
     ],
-    tags: ["ginger", "juice", "drink", "tangawisi"],
-    body: "Tangawisi is drunk iced, often after a spicy meal. Ginger and sugar levels vary widely from house to house.",
+    tags: ["tangawisi", "ginger juice", "ginger", "drink", "Kinshasa"],
+    body: "Tangawisi (ginger juice) is drunk iced, often after a spicy meal. Ginger and sugar levels vary widely. Other drinks: bissap, passion fruit. Pair with mikate at snack time.",
   },
   "jus-bissap": {
     title: "Bissap juice",
