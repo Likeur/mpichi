@@ -388,6 +388,25 @@ const catalogJsonLd = {
       window.history.replaceState({}, '', `${url.pathname}${url.search}${url.hash}`);
     };
 
+    /** First / last + fenêtre autour de la page courante, avec « … » au milieu. */
+    const paginationItems = (current: number, total: number): Array<number | 'ellipsis'> => {
+      if (total <= 5) {
+        return Array.from({ length: total }, (_, index) => index + 1);
+      }
+
+      const siblings = 1;
+      const left = Math.max(2, current - siblings);
+      const right = Math.min(total - 1, current + siblings);
+      const items: Array<number | 'ellipsis'> = [1];
+
+      if (left > 2) items.push('ellipsis');
+      for (let page = left; page <= right; page += 1) items.push(page);
+      if (right < total - 1) items.push('ellipsis');
+      items.push(total);
+
+      return items;
+    };
+
     const renderPagination = (totalPages: number) => {
       pagination.hidden = totalPages <= 1;
       paginationStatus.textContent = pageLabelTemplate
@@ -398,7 +417,18 @@ const catalogJsonLd = {
       nextButton.disabled = currentPage >= totalPages;
 
       paginationPages.replaceChildren();
-      for (let page = 1; page <= totalPages; page += 1) {
+      for (const item of paginationItems(currentPage, totalPages)) {
+        if (item === 'ellipsis') {
+          const dots = document.createElement('span');
+          dots.textContent = '…';
+          dots.setAttribute('aria-hidden', 'true');
+          dots.className =
+            'min-w-9 px-1 py-1 text-center text-[10px] tracking-[.16em] text-earth-900/35';
+          paginationPages.append(dots);
+          continue;
+        }
+
+        const page = item;
         const button = document.createElement('button');
         button.type = 'button';
         button.textContent = String(page).padStart(2, '0');
