@@ -13,8 +13,12 @@ const SKIP_PREFIXES = [
   '/llms',
   '/humans.txt',
   '/site.webmanifest',
+  '/manifest.webmanifest',
+  '/sw.js',
+  '/workbox-',
   '/og-default',
 ];
+
 
 function shouldSkip(pathname: string) {
   if (pathname === '/404' || pathname === '/404/') return true;

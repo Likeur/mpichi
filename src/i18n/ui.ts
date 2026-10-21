@@ -27,7 +27,12 @@ export const ui = {
     'favorites.toastAdded': 'Ajouté aux favoris',
     'favorites.toastRemoved': 'Retiré des favoris',
     'favorites.toastError': 'Impossible d’enregistrer le favori',
+    'pwa.offlineReady': 'Catalogue prêt hors connexion',
+    'pwa.needRefresh': 'Nouvelle version disponible',
+    'pwa.reload': 'Actualiser',
+    'pwa.dismiss': 'Fermer',
     'footer.tagline':
+
       'Un catalogue de recettes congolaises racontées par leurs gestes, leurs régions et celles et ceux qui les transmettent.',
     'footer.explore': 'Explorer',
     'footer.info': 'Informations',
@@ -269,7 +274,12 @@ export const ui = {
     'favorites.toastAdded': 'Saved to favorites',
     'favorites.toastRemoved': 'Removed from favorites',
     'favorites.toastError': 'Could not save this favorite',
+    'pwa.offlineReady': 'Catalogue ready offline',
+    'pwa.needRefresh': 'A new version is available',
+    'pwa.reload': 'Reload',
+    'pwa.dismiss': 'Dismiss',
     'footer.tagline':
+
       'A catalogue of Congolese recipes told through their gestures, their regions, and the people who pass them on.',
     'footer.explore': 'Explore',
     'footer.info': 'Information',

@@ -3,7 +3,9 @@ import '../styles/global.css';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
 import FloatingNav from '../components/FloatingNav.astro';
 import FavoritesInit from '../components/FavoritesInit.astro';
+import PwaRegister from '../components/PwaRegister.astro';
 import { ClientRouter } from 'astro:transitions';
+import { pwaInfo } from 'virtual:pwa-info';
 import type { Locale } from '../i18n/config';
 import { localePath, useTranslations } from '../i18n/utils';
 import {
@@ -15,6 +17,7 @@ import {
   siteLogoUrl,
 } from '../lib/seo';
 import { SITE_AUTHOR, SITE_NAME } from '../lib/site';
+
 
 interface Props {
   title: string;
@@ -87,6 +90,9 @@ const structured = {
     <meta name="apple-mobile-web-app-title" content={SITE_NAME} />
     <meta name="generator" content={Astro.generator} />
     <meta name="theme-color" content="#2a1b15" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="color-scheme" content="dark light" />
     {noindex ? (
       <meta name="robots" content="noindex, nofollow" />
@@ -102,7 +108,7 @@ const structured = {
     <link rel="alternate" type="text/plain" href="/llms-full.txt" title="Full recipe index for LLMs" />
     <link rel="author" type="text/plain" href="/humans.txt" />
     <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
-    <link rel="manifest" href="/site.webmanifest" />
+    {pwaInfo ? <Fragment set:html={pwaInfo.webManifest.linkTag} /> : <link rel="manifest" href="/site.webmanifest" />}
     {/* Google Search favicon: PNG ≥48×48 (SVG alone is often ignored) */}
     <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
@@ -110,6 +116,7 @@ const structured = {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="mask-icon" href="/favicon.svg" color="#c91f32" />
+
 
     <meta property="og:type" content={type} />
     <meta property="og:site_name" content={SITE_NAME} />
@@ -529,5 +536,6 @@ const structured = {
       document.addEventListener('astro:page-load', initMotion);
     </script>
     <FavoritesInit lang={lang} />
+    <PwaRegister lang={lang} />
   </body>
 </html>

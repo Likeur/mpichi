@@ -1,0 +1,99 @@
+---
+/**
+ * Registers the service worker and shows a short toast when the
+ * catalogue is ready offline / when a new version is available.
+ */
+import type { Locale } from '../i18n/config';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang?: Locale;
+}
+
+const lang = Astro.props.lang ?? 'fr';
+const t = useTranslations(lang);
+---
+
+<script src="../pwa.ts"></script>
+
+<div
+  id="pwa-toast"
+  class="pointer-events-none fixed inset-x-0 bottom-0 z-50 flex justify-center p-4 opacity-0 transition-opacity duration-300 data-[show=true]:pointer-events-auto data-[show=true]:opacity-100"
+  role="status"
+  aria-live="polite"
+  hidden
+  data-offline-ready={t('pwa.offlineReady')}
+  data-need-refresh={t('pwa.needRefresh')}
+  data-reload={t('pwa.reload')}
+  data-dismiss={t('pwa.dismiss')}
+>
+  <div
+    class="flex max-w-md items-center gap-4 border border-creme-100/15 bg-earth-900 px-4 py-3 text-creme-100 shadow-lg"
+  >
+    <p id="pwa-toast-message" class="text-sm leading-snug text-creme-100/85"></p>
+    <div class="flex shrink-0 items-center gap-2">
+      <button
+        type="button"
+        id="pwa-refresh"
+        class="hidden text-[10px] uppercase tracking-[.14em] text-creme-100 underline decoration-creme-100/30 underline-offset-4 hover:decoration-creme-100"
+      >
+        {t('pwa.reload')}
+      </button>
+      <button
+        type="button"
+        id="pwa-close"
+        class="text-[10px] uppercase tracking-[.14em] text-creme-100/55 hover:text-creme-100"
+      >
+        {t('pwa.dismiss')}
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function initPwaToast() {
+    const toast = document.querySelector<HTMLElement>('#pwa-toast');
+    if (!toast || toast.dataset.ready === 'true') return;
+    toast.dataset.ready = 'true';
+
+    const message = toast.querySelector<HTMLElement>('#pwa-toast-message');
+    const refreshBtn = toast.querySelector<HTMLButtonElement>('#pwa-refresh');
+    const closeBtn = toast.querySelector<HTMLButtonElement>('#pwa-close');
+    if (!message || !refreshBtn || !closeBtn) return;
+
+    let hideTimer = 0;
+
+    const hide = () => {
+      toast.dataset.show = 'false';
+      toast.hidden = true;
+      refreshBtn.classList.add('hidden');
+      window.clearTimeout(hideTimer);
+    };
+
+    const show = (text: string, withRefresh: boolean) => {
+      message.textContent = text;
+      refreshBtn.classList.toggle('hidden', !withRefresh);
+      toast.hidden = false;
+      toast.dataset.show = 'true';
+      window.clearTimeout(hideTimer);
+      if (!withRefresh) {
+        hideTimer = window.setTimeout(hide, 4500);
+      }
+    };
+
+    closeBtn.addEventListener('click', hide);
+    refreshBtn.addEventListener('click', () => {
+      window.location.reload();
+    });
+
+    document.addEventListener('mpichi:offline-ready', () => {
+      show(toast.dataset.offlineReady ?? '', false);
+    });
+    document.addEventListener('mpichi:need-refresh', () => {
+      show(toast.dataset.needRefresh ?? '', true);
+    });
+  }
+
+  initPwaToast();
+  document.addEventListener('astro:page-load', initPwaToast);
+</script>
