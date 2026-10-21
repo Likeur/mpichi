@@ -24,6 +24,11 @@ relatedRecipes:
   - pepe-soupe-ya-ngolo
   - liboke-poisson
   - makemba
+video:
+  youtube: https://www.youtube.com/watch?v=Zm0Dx2EZYA8
+  title: Poisson braisé à la poêle (style Kin)
+  credit: Eureka Africanfood
+  creditUrl: https://www.youtube.com/@eurekaafricanfood
 ingredients:
   - 1 gros tilapia ou capitaine entier, vidé et écaillé
   - 2 oignons

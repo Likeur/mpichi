@@ -18,6 +18,11 @@ tags:
   - tomate
   - huile de palme
   - forêt
+video:
+  youtube: https://www.youtube.com/watch?v=IblVFJj828w
+  title: Mayebo (avec mbinzo et poisson fumé)
+  credit: Esther Mariam TV
+  creditUrl: https://www.youtube.com/@esthermariam2587
 ingredients:
   - 700 g de champignons comestibles fermes
   - 3 tomates mûres, concassées

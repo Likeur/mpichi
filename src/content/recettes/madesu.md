@@ -24,6 +24,11 @@ relatedRecipes:
   - saka-madesu
   - loso-petits-pois
   - chikwangue
+video:
+  youtube: https://www.youtube.com/watch?v=jV-tYOLILH0
+  title: Madesu — haricots à la congolaise
+  credit: shecooksitall
+  creditUrl: https://www.youtube.com/@shecooksitall
 ingredients:
   - 500 g de haricots rouges ou bruns secs
   - 2 oignons, émincés

@@ -18,6 +18,11 @@ tags:
   - hibiscus
   - jus
   - boisson
+video:
+  youtube: https://www.youtube.com/watch?v=2cUQilpkRBA
+  title: Jus de bissap (hibiscus)
+  credit: Mounira recette
+  creditUrl: https://www.youtube.com/@mounirarecette8339
 ingredients:
   - 80 g de fleurs de bissap (hibiscus) séchées
   - 2 l d’eau

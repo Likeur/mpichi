@@ -24,6 +24,11 @@ relatedRecipes:
   - pondu
   - liboke-poisson
   - bukari-katanga
+video:
+  youtube: https://www.youtube.com/watch?v=RY8R-3kdUPs
+  title: Bâton de manioc (kwanga / chikwangue)
+  credit: Eureka Africanfood
+  creditUrl: https://www.youtube.com/@eurekaafricanfood
 ingredients:
   - 1 kg de pâte de manioc fermentée prête à cuire
   - Grandes feuilles de bananier ou feuilles adaptées à la cuisson

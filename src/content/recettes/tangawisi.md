@@ -24,6 +24,11 @@ relatedRecipes:
   - jus-bissap
   - jus-passion
   - mikate
+video:
+  youtube: https://www.youtube.com/watch?v=Pl2Sbd2CoV4
+  title: Jus de gingembre (tangawisi) à l’ananas
+  credit: CUISINE FACILE.M
+  creditUrl: https://www.youtube.com/@cuisinefacile.m7599
 ingredients:
   - 250 g de gingembre frais
   - 1,5 l d’eau

@@ -24,6 +24,11 @@ relatedRecipes:
   - bukari-katanga
   - matembele-katanga
   - makayabu
+video:
+  youtube: https://www.youtube.com/watch?v=SbBwQSLKl8c
+  title: Kapenta / matemba aux tomates (style voisin)
+  credit: Infoods Specials
+  creditUrl: https://www.youtube.com/@InfoodsSpecials
 ingredients:
   - 400 g de kapenta frais ou séchés
   - 4 tomates mûres, concassées

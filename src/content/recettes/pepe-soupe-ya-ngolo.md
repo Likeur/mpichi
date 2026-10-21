@@ -24,6 +24,11 @@ relatedRecipes:
   - poisson-braise-kinkole
   - chikwangue
   - mikate
+video:
+  youtube: https://www.youtube.com/watch?v=zABZ3T4WJiQ
+  title: Mboto ya pepe soupu — soupe pimentée
+  credit: Variety Cuisine
+  creditUrl: https://www.youtube.com/@VarietyCuisine
 ingredients:
   - 1 kg de poisson-chat nettoyé et coupé en tronçons
   - 3 tomates, concassées

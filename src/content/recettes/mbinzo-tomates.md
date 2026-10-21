@@ -17,6 +17,11 @@ tags:
   - chenilles
   - tomate
   - Bandundu
+video:
+  youtube: https://www.youtube.com/watch?v=IblVFJj828w
+  title: Mbinzo et mayebo au poisson fumé
+  credit: Esther Mariam TV
+  creditUrl: https://www.youtube.com/@esthermariam2587
 ingredients:
   - 300 g de chenilles séchées comestibles
   - 3 tomates mûres, concassées

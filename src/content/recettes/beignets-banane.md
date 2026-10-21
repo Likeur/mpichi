@@ -18,6 +18,11 @@ tags:
   - beignet
   - goûter
   - friture
+video:
+  youtube: https://www.youtube.com/watch?v=21RnvnCHpb8
+  title: Beignets / mikate à la banane
+  credit: letsCOOKwithELLE
+  creditUrl: https://www.youtube.com/@letsCOOKwithELLE
 ingredients:
   - 4 bananes douces bien mûres
   - 150 g de farine

@@ -24,6 +24,11 @@ relatedRecipes:
   - matembele-katanga
   - ngai-ngai
   - pondu
+video:
+  youtube: https://www.youtube.com/watch?v=SAdbi6jks-E
+  title: Biteku-teku / lenga-lenga (callaloo)
+  credit: The Blue Fufu
+  creditUrl: https://www.youtube.com/@TheBlueFufu
 ingredients:
   - 3 bottes de feuilles d’amarante
   - 2 tomates mûres, concassées

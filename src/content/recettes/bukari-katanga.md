@@ -24,6 +24,11 @@ relatedRecipes:
   - chikwangue
   - matembele-katanga
   - kapenta-tomates
+video:
+  youtube: https://www.youtube.com/watch?v=pv5yJ1A6pzA
+  title: Fufu congolais (bukari / pâtes)
+  credit: Cook with Nahima
+  creditUrl: https://www.youtube.com/@CookwithNahima
 ingredients:
   - 500 g de farine fine de maïs blanc
   - 1,2 l d’eau

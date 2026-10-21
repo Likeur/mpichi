@@ -18,6 +18,11 @@ tags:
   - braise
   - grillade
   - Kinshasa
+video:
+  youtube: https://www.youtube.com/watch?v=7O4QoxSgMbc
+  title: Porc braisé (choukouya)
+  credit: Yao Raissa
+  creditUrl: https://www.youtube.com/@yaoraissa
 ingredients:
   - 1,5 kg de porc (échine ou épaule) en morceaux
   - 2 oignons, dont un râpé

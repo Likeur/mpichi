@@ -18,6 +18,11 @@ tags:
   - okra
   - sauce
   - végétal
+video:
+  youtube: https://www.youtube.com/watch?v=gRIy4k406wM
+  title: Sauce gombo
+  credit: Cleo Touch Gourmet
+  creditUrl: https://www.youtube.com/@CleoTouchGourmet
 ingredients:
   - 500 g de gombos frais
   - 2 oignons, émincés

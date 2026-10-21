@@ -24,6 +24,11 @@ relatedRecipes:
   - makemba
   - chikwangue
   - liboke-poisson
+video:
+  youtube: https://www.youtube.com/watch?v=e3XR71FdHMg
+  title: Lituma — purée de plantains
+  credit: Cooking With Pierrette
+  creditUrl: https://www.youtube.com/@cookingwithpierrette7335
 ingredients:
   - 6 bananes plantains vertes
   - Eau

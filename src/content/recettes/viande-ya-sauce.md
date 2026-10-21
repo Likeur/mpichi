@@ -18,6 +18,11 @@ tags:
   - sauce
   - tomate
   - quotidien
+video:
+  youtube: https://www.youtube.com/watch?v=Gqx9-j7xEhI
+  title: Viande en sauce — côtes de porc (Kinshasa)
+  credit: ALPHA'S KITCHEN
+  creditUrl: https://www.youtube.com/@alphaskitchen949
 ingredients:
   - 1 kg de bœuf à mijoter
   - 3 oignons, émincés

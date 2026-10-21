@@ -1,7 +1,7 @@
 # Candidats YouTube — plats Mpichi
 
 Liste de travail pour brancher des tutoriels vidéo.  
-**Statut** : vagues A + B **branchées** (oct. 2026) — embed + `VideoObject` sur les fiches listées. Remplacer une URL si une meilleure vidéo apparaît.
+**Statut** : vagues A + B + C **branchées** (oct. 2026) — miniature cliquable → YouTube + `VideoObject`. UI : pas d’iframe (anti-bot).
 
 ## Format frontmatter
 
@@ -15,7 +15,9 @@ video:
 
 Règle : **1 vidéo principale YouTube** par fiche. TikTok = lien secondaire plus tard.
 
-## Embarqué actuellement
+## Embarqué (30 fiches)
+
+### Vagues A–B
 
 | Slug | ID | Chaîne |
 | --- | --- | --- |
@@ -29,6 +31,36 @@ Règle : **1 vidéo principale YouTube** par fiche. TikTok = lien secondaire plu
 | `poulet-mayo` | `BDqiBBBVNz0` | Noelia's Cooking |
 | `saka-madesu` | `9W0kTyJsO84` | shecooksitall |
 | `makayabu` | `6HYc2cOKt0Y` | Stories Supper |
+
+### Vague C (recherche suite)
+
+| Slug | ID | Chaîne | Note |
+| --- | --- | --- | --- |
+| `chikwangue` | `RY8R-3kdUPs` | Eureka Africanfood | bâton / kwanga |
+| `bukari-katanga` | `pv5yJ1A6pzA` | Cook with Nahima | fufu congolais |
+| `tangawisi` | `Pl2Sbd2CoV4` | CUISINE FACILE.M | gingembre + ananas |
+| `matembele-katanga` | `TSUKXZ1puyY` | shecooksitall | |
+| `makemba` | `xHaECoQ2_Mg` | letsCOOKwithELLE | |
+| `lituma` | `e3XR71FdHMg` | Cooking With Pierrette | |
+| `madesu` | `jV-tYOLILH0` | shecooksitall | |
+| `biteku-teku-kasai` | `SAdbi6jks-E` | The Blue Fufu | lenga-lenga |
+| `ngai-ngai` | `4Xf6Bp-5zRU` | letsCOOKwithELLE | |
+| `pepe-soupe-ya-ngolo` | `zABZ3T4WJiQ` | Variety Cuisine | pepe soupu |
+| `poisson-braise-kinkole` | `Zm0Dx2EZYA8` | Eureka Africanfood | pas « Kinkole » au titre |
+| `porc-braise` | `7O4QoxSgMbc` | Yao Raissa | |
+| `sauce-gombo` | `gRIy4k406wM` | Cleo Touch Gourmet | |
+| `beignets-banane` | `21RnvnCHpb8` | letsCOOKwithELLE | mikate banane |
+| `jus-bissap` | `2cUQilpkRBA` | Mounira recette | |
+| `mbika` | `I4QVyzQgztQ` | ALPHA'S KITCHEN | |
+| `mbinzo-tomates` | `IblVFJj828w` | Esther Mariam TV | + mayebo |
+| `mayebo` | `IblVFJj828w` | Esther Mariam TV | même vidéo |
+| `kapenta-tomates` | `SbBwQSLKl8c` | Infoods Specials | style zambien (proche) |
+| `viande-ya-sauce` | `Gqx9-j7xEhI` | ALPHA'S KITCHEN | côtes en sauce |
+
+## Sans vidéo fiable (21)
+
+Peu ou pas de tutoriel YouTube clairement aligné :  
+`bouillie-arachide`, `brochettes-grillons`, `croquettes-manioc`, `escargots-congolaise`, `foie-boeuf-saute`, `gateau-manioc`, `jus-passion`, `kossa-kossa`, `liboke-viande`, `loso-petits-pois`, `manioc-grille`, `mbisi-ya-kokalinga`, `mujibujibu`, `munkoyo`, `nsafu-grilles`, `ntaba-sauce`, `poisson-moambe`, `riz-moambe`, `salade-kisangani`, `soso-lumba-lumba`, `soso-ya-sauce`.
 
 ---
 

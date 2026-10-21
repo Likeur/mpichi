@@ -24,6 +24,11 @@ relatedRecipes:
   - bukari-katanga
   - kapenta-tomates
   - fumbwa-arachides
+video:
+  youtube: https://www.youtube.com/watch?v=TSUKXZ1puyY
+  title: Matembele — feuilles de patate douce
+  credit: shecooksitall
+  creditUrl: https://www.youtube.com/@shecooksitall
 ingredients:
   - 3 bottes de feuilles de patate douce
   - 100 g d’arachides grillées et pilées

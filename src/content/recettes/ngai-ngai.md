@@ -24,6 +24,11 @@ relatedRecipes:
   - pondu
   - fumbwa-arachides
   - makayabu
+video:
+  youtube: https://www.youtube.com/watch?v=4Xf6Bp-5zRU
+  title: Ngai-ngai ya musaka au poisson fumé
+  credit: letsCOOKwithELLE
+  creditUrl: https://www.youtube.com/@letsCOOKwithELLE
 ingredients:
   - 500 g de feuilles de ngai-ngai
   - 250 g de poisson fumé

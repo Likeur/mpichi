@@ -17,6 +17,11 @@ tags:
   - graines de courge
   - papillote
   - mbika
+video:
+  youtube: https://www.youtube.com/watch?v=I4QVyzQgztQ
+  title: Mbika (egusi) — recette congolaise
+  credit: ALPHA'S KITCHEN
+  creditUrl: https://www.youtube.com/@alphaskitchen949
 ingredients:
   - 400 g de graines de courge décortiquées
   - 1 oignon, finement haché

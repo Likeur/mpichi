@@ -24,6 +24,11 @@ relatedRecipes:
   - lituma
   - poisson-braise-kinkole
   - madesu
+video:
+  youtube: https://www.youtube.com/watch?v=xHaECoQ2_Mg
+  title: Makemba — plantains frits
+  credit: letsCOOKwithELLE
+  creditUrl: https://www.youtube.com/@letsCOOKwithELLE
 ingredients:
   - 4 bananes plantain mûres
   - Huile de friture
