@@ -21,9 +21,10 @@ tags:
   - Grand Katanga
   - Lubumbashi
 relatedRecipes:
-  - chikwangue
+  - fufu-manioc
+  - sombe
   - matembele-katanga
-  - kapenta-tomates
+
 video:
   youtube: https://www.youtube.com/watch?v=pv5yJ1A6pzA
   title: Fufu congolais (bukari / pâtes)

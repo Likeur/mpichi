@@ -21,9 +21,10 @@ tags:
   - huile de palme
   - quotidien
 relatedRecipes:
+  - loso-na-madesu
   - saka-madesu
-  - loso-petits-pois
   - chikwangue
+
 video:
   youtube: https://www.youtube.com/watch?v=jV-tYOLILH0
   title: Madesu — haricots à la congolaise
@@ -48,4 +49,5 @@ steps:
 
 Les **madesu** désignent les haricots à l’huile de palme du quotidien congolais. Cette base simple connaît de nombreuses variantes : parfois enrichies de poisson fumé, parfois sans tomate.
 
-Quand on ajoute les feuilles de manioc, on parle de [saka-madesu](/recettes/saka-madesu/). Servir avec [chikwangue](/recettes/chikwangue/) ou riz.
+Quand on ajoute les feuilles de manioc, on parle de [saka-madesu](/recettes/saka-madesu/). Riz et haricots ensemble : [loso na madesu](/recettes/loso-na-madesu/). Servir aussi avec [chikwangue](/recettes/chikwangue/).
+

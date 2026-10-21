@@ -21,9 +21,10 @@ tags:
   - grillade
   - Kinshasa
 relatedRecipes:
+  - sauce-pili-pili
   - kamundele
   - ntaba-sauce
-  - porc-braise
+
 video:
   youtube: https://www.youtube.com/watch?v=M8QkmorG_cg
   title: Ntaba ya kotumba — chèvre grillée

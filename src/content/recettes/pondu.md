@@ -21,9 +21,10 @@ tags:
   - huile de palme
   - traditionnel
 relatedRecipes:
+  - sombe
   - chikwangue
   - saka-madesu
-  - fumbwa-arachides
+
 video:
   youtube: https://www.youtube.com/watch?v=F8FIY5xvJIU
   title: Pondu — Cook With Me (cuisine congolaise)
@@ -48,4 +49,5 @@ steps:
 
 Le **pondu**, aussi appelé **saka-saka** ou mpondu, est la recette de feuilles de manioc la plus cherchée de la cuisine congolaise. On le prépare aussi en version végétarienne, sans poisson ni viande, pour les jours de jeûne ou les repas du vendredi dans certaines familles.
 
-Pour le geste, le marché et les variantes régionales, lire le [guide du pondu](/guides/pondu/). En accompagnement, beaucoup de foyers servent la [chikwangue](/recettes/chikwangue/) ou le fufu.
+Pour le geste, le marché et les variantes régionales, lire le [guide du pondu](/guides/pondu/). À l’Est, le même geste porte souvent le nom de [sombe](/recettes/sombe/). En accompagnement : [chikwangue](/recettes/chikwangue/) ou [fufu de manioc](/recettes/fufu-manioc/).
+

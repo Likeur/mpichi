@@ -21,9 +21,10 @@ tags:
   - fufu
   - fermentation
 relatedRecipes:
+  - fufu-manioc
   - pondu
   - liboke-poisson
-  - bukari-katanga
+
 video:
   youtube: https://www.youtube.com/watch?v=RY8R-3kdUPs
   title: Bâton de manioc (kwanga / chikwangue)

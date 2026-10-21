@@ -21,9 +21,10 @@ tags:
   - Kinshasa
   - fête
 relatedRecipes:
+  - soso-ya-kotumba
   - moambe-poulet
   - soso-ya-sauce
-  - salade-kisangani
+
 video:
   youtube: https://www.youtube.com/watch?v=BDqiBBBVNz0
   title: Poulet mayo — recette congolaise
@@ -49,4 +50,5 @@ steps:
 
 Le **poulet mayo** n’est ni une moambe ni une sauce tomate : la liaison froide à la mayonnaise arrive en fin de cuisson. Moutarde et piment se dosent très librement d’un foyer à l’autre.
 
-Autre poulet de fête : [poulet à la moambe](/recettes/moambe-poulet/). En sauce tomate : [soso ya sauce](/recettes/soso-ya-sauce/).
+Grillade : [soso ya kotumba](/recettes/soso-ya-kotumba/). Autre poulet de fête : [poulet à la moambe](/recettes/moambe-poulet/). En sauce tomate : [soso ya sauce](/recettes/soso-ya-sauce/).
+

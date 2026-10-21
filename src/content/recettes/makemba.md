@@ -21,9 +21,10 @@ tags:
   - friture
   - rapide
 relatedRecipes:
+  - plantains-vapeur
   - lituma
   - poisson-braise-kinkole
-  - madesu
+
 video:
   youtube: https://www.youtube.com/watch?v=xHaECoQ2_Mg
   title: Makemba — plantains frits
@@ -42,4 +43,5 @@ steps:
   - Servir chaud avec du poisson, une viande en sauce ou des haricots.
 ---
 
-Plus la peau du plantain est jaune et tachetée de noir, plus les **makemba** seront douces et caramélisées. Elles accompagnent souvent un [poisson braisé](/recettes/poisson-braise-kinkole/) ou des [madesu](/recettes/madesu/). Plantain vert pilé : [lituma](/recettes/lituma/).
+Plus la peau du plantain est jaune et tachetée de noir, plus les **makemba** seront douces et caramélisées. Elles accompagnent souvent un [poisson braisé](/recettes/poisson-braise-kinkole/) ou des [madesu](/recettes/madesu/). Sans friture : [plantains à la vapeur](/recettes/plantains-vapeur/). Plantain vert pilé : [lituma](/recettes/lituma/).
+
