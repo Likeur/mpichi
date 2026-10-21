@@ -13,12 +13,8 @@ import { absoluteUrl, toIsoDuration } from '../../lib/site';
 import { pageCanonical, resolveOrigin } from '../../lib/seo';
 import { regionSlugFromKey } from '../../lib/taxonomy';
 import { pickRelatedRecipes } from '../../lib/related-recipes';
-import {
-  youtubeEmbedUrl,
-  youtubeThumbnailUrl,
-  youtubeVideoId,
-  youtubeWatchUrl,
-} from '../../lib/youtube';
+import { youtubeThumbnailUrl, youtubeVideoId, youtubeWatchUrl } from '../../lib/youtube';
+
 
 
 export async function getStaticPaths() {
@@ -83,7 +79,6 @@ const videoObject =
         description: localized.description,
         thumbnailUrl: [youtubeThumbnailUrl(videoId)],
         contentUrl: youtubeWatchUrl(videoId),
-        embedUrl: youtubeEmbedUrl(videoId),
       }
     : undefined;
 

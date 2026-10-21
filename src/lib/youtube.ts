@@ -29,10 +29,6 @@ function isYoutubeId(value: string | null | undefined): value is string {
   return Boolean(value && /^[\w-]{11}$/.test(value));
 }
 
-export function youtubeEmbedUrl(videoId: string): string {
-  return `https://www.youtube-nocookie.com/embed/${videoId}`;
-}
-
 export function youtubeWatchUrl(videoId: string): string {
   return `https://www.youtube.com/watch?v=${videoId}`;
 }
@@ -40,3 +36,4 @@ export function youtubeWatchUrl(videoId: string): string {
 export function youtubeThumbnailUrl(videoId: string): string {
   return `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
 }
+

@@ -140,7 +140,9 @@ export const ui = {
     'recipe.photo': 'Photo',
     'recipe.video': 'Tutoriel vidéo',
     'recipe.videoCredit': 'Vidéo',
+    'recipe.videoWatch': 'Voir sur YouTube',
     'recipe.backCta': 'Retour au catalogue',
+
 
     'recipe.tools': 'Actions',
     'recipe.scale': 'Portions',
@@ -380,7 +382,9 @@ export const ui = {
     'recipe.photo': 'Photo',
     'recipe.video': 'Video tutorial',
     'recipe.videoCredit': 'Video',
+    'recipe.videoWatch': 'Watch on YouTube',
     'recipe.backCta': 'Back to catalogue',
+
 
     'recipe.tools': 'Actions',
     'recipe.scale': 'Servings',
