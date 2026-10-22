@@ -21,9 +21,10 @@ tags:
   - Haut-Katanga
   - Tanganyika
 relatedRecipes:
+  - sambaza
   - bukari-katanga
   - matembele-katanga
-  - makayabu
+
 video:
   youtube: https://www.youtube.com/watch?v=SbBwQSLKl8c
   title: Kapenta / matemba aux tomates (style voisin)
@@ -46,4 +47,5 @@ steps:
   - Laisser mijoter à découvert 5 minutes, poivrer et servir avec du bukari, du riz ou du plantain.
 ---
 
-Autour des lacs Tanganyika et Moero, le **kapenta** peut être frais ou séché — cela change le rinçage et l’assaisonnement. On le sert souvent avec du [bukari](/recettes/bukari-katanga/) ou des [matembele](/recettes/matembele-katanga/).
+Autour des lacs Tanganyika et Moero, le **kapenta** peut être frais ou séché — cela change le rinçage et l’assaisonnement. Cousin du lac Tanganyika : [sambaza](/recettes/sambaza/). On le sert souvent avec du [bukari](/recettes/bukari-katanga/) ou des [matembele](/recettes/matembele-katanga/).
+
