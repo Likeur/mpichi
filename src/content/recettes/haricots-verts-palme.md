@@ -35,7 +35,7 @@ ingredients:
 steps:
   - Laver les haricots, les couper en tronçons si trop longs. Blanchir 4 minutes dans l’eau bouillante salée, égoutter.
   - Chauffer l’huile de palme. Faire fondre l’oignon, ajouter l’ail et les tomates 5 minutes.
-  - Incorporer les haricots et l’eau. Couvrir 8 à 10 minutes : ils doivent rester un peu croquants.
+  - "Incorporer les haricots et l’eau. Couvrir 8 à 10 minutes : ils doivent rester un peu croquants."
   - Saler, pimenter. Servir avec riz, poisson ou viande.
 ---
 
