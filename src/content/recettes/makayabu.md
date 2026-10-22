@@ -21,9 +21,10 @@ tags:
   - oignon
   - morue
 relatedRecipes:
+  - poisson-fume-tomates
   - mbisi-ya-kokalinga
-  - poisson-braise-kinkole
   - chikwangue
+
 video:
   youtube: https://www.youtube.com/watch?v=6HYc2cOKt0Y
   title: Makayabu au fumbwa — poisson salé congolais
@@ -48,4 +49,5 @@ steps:
 
 **Makayabu** désigne couramment le poisson salé séché en RDC ; l’espèce et la quantité de tomate varient selon l’approvisionnement. Le dessalage est l’étape critique : trop de sel, et le plat est difficile à sauver.
 
-Servir avec [chikwangue](/recettes/chikwangue/). Autre poisson de table : [mbisi ya kokalinga](/recettes/mbisi-ya-kokalinga/).
+Servir avec [chikwangue](/recettes/chikwangue/). Poisson fumé (pas salé) : [poisson fumé aux tomates](/recettes/poisson-fume-tomates/). Autre poisson de table : [mbisi ya kokalinga](/recettes/mbisi-ya-kokalinga/).
+

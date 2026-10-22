@@ -21,9 +21,10 @@ tags:
   - Grand Katanga
   - Lubumbashi
 relatedRecipes:
+  - bidia
   - fufu-manioc
-  - sombe
-  - matembele-katanga
+  - sambaza
+
 
 video:
   youtube: https://www.youtube.com/watch?v=pv5yJ1A6pzA

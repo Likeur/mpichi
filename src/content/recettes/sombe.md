@@ -3,11 +3,11 @@ title: Sombe
 seoTitle: Recette sombe — feuilles de manioc (Katanga / Kivu)
 description: "Recette de sombe : feuilles de manioc longuement mijotées à l’huile de palme — nom et geste de l’Est de la RDC, cousin du pondu de l’Ouest."
 region: Grand Katanga
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Sombe.jpg?width=1600
-imageAlt: Plat de sombe, feuilles de manioc cuisinées
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Saka%20saka.jpg?width=1600
+imageAlt: Plat de sombe, feuilles de manioc mijotées
 imagePosition: center
-imageCredit: Sagiomhza — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Sombe.jpg
+imageCredit: Angéla Bérénice GOUNOUMOUNDJOU — Wikimedia Commons, CC BY-SA 4.0
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Saka_saka.jpg
 category: plat
 prepTime: 40 min
 cookTime: 1 h 30

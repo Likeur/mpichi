@@ -21,9 +21,10 @@ tags:
   - accompagnement
   - rapide
 relatedRecipes:
+  - igname-bouillie
   - makemba
   - lituma
-  - poisson-braise-kinkole
+
 ingredients:
   - 4 bananes plantain vertes ou juste jaunes
   - Eau

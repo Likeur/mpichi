@@ -21,9 +21,10 @@ tags:
   - Grand Kasaï
   - légumes
 relatedRecipes:
+  - ndunda
   - matembele-katanga
-  - ngai-ngai
-  - pondu
+  - bidia
+
 video:
   youtube: https://www.youtube.com/watch?v=SAdbi6jks-E
   title: Biteku-teku / lenga-lenga (callaloo)
@@ -47,6 +48,7 @@ steps:
   - Poursuivre la cuisson à découvert jusqu’à ce que les feuilles soient tendres et la sauce légèrement liée.
 ---
 
-Le **biteku-teku** est populaire au Kasaï. À Kinshasa et à l’Ouest, la même amarante s’appelle souvent **lenga-lenga**, plus fréquemment mijotée à la tomate et à l’huile de palme. On le mange avec le bidia ; on peut aussi omettre les arachides.
+Le **biteku-teku** est populaire au Kasaï. À Kinshasa, les légumes verts du quotidien s’appellent plutôt [ndunda](/recettes/ndunda/) ; la même amarante est aussi dite **lenga-lenga**. On le mange avec la [bidia](/recettes/bidia/) ; on peut omettre les arachides.
 
-Autres légumes-feuilles : [matembele](/recettes/matembele-katanga/), [pondu](/recettes/pondu/). Contexte marché : [guide du marché](/guides/marche/).
+Autres feuilles : [matembele](/recettes/matembele-katanga/), [pondu](/recettes/pondu/). Contexte marché : [guide du marché](/guides/marche/).
+

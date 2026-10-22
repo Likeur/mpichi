@@ -18,6 +18,10 @@ tags:
   - okra
   - sauce
   - végétal
+relatedRecipes:
+  - aubergines-africaines
+  - ndunda
+  - poisson-fume-tomates
 video:
   youtube: https://www.youtube.com/watch?v=gRIy4k406wM
   title: Sauce gombo
