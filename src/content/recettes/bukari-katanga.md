@@ -21,8 +21,8 @@ tags:
   - Grand Katanga
   - Lubumbashi
 relatedRecipes:
-  - bidia
   - fufu-manioc
+  - chikwangue
   - sambaza
 
 
@@ -44,6 +44,6 @@ steps:
   - Façonner en portions avec une louche mouillée et servir immédiatement.
 ---
 
-Le **bukari** (parfois rapproché du bidia / fufu de maïs) occupe le centre de la table au Grand Katanga : légumes-feuilles, poisson et viandes en sauce s’y accrochent. À l’Ouest, l’équivalent fermenté de manioc est plutôt la [chikwangue](/recettes/chikwangue/).
+Le **bukari** (pâte de maïs, aussi appelée *bidia* au Kasaï) occupe le centre de la table au Grand Katanga : légumes-feuilles, poisson et viandes en sauce s’y accrochent. À l’Ouest, l’équivalent fermenté de manioc est plutôt la [chikwangue](/recettes/chikwangue/) ; le [fufu de manioc](/recettes/fufu-manioc/) reste l’autre grand geste de pâte.
 
 Sauces de la région : [matembele aux arachides](/recettes/matembele-katanga/), [kapenta aux tomates](/recettes/kapenta-tomates/).

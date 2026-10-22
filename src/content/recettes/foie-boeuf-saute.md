@@ -18,6 +18,10 @@ tags:
   - bœuf
   - poêle
   - cuisine de rue
+relatedRecipes:
+  - brochettes-foie
+  - kamundele
+  - sauce-pili-pili
 ingredients:
   - 600 g de foie de bœuf, en tranches
   - 2 oignons, émincés

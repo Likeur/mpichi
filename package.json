@@ -10,14 +10,16 @@
     "check": "astro check",
     "ci": "npm run check && npm run build",
     "astro": "astro",
+    "export-dataset": "npm --prefix mpichi-dataset run export",
     "remotion": "remotion studio remotion/index.ts --port 3333",
-    "remotion:render": "remotion render remotion/index.ts MpichiPresentation out/mpichi-presentation.mp4 --port=3456 --browser-executable=\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --gl=angle"
+    "remotion:render": "remotion render remotion/index.ts MpichiShow out/mpichi-show.mp4 --port=3456 --browser-executable=\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --gl=angle"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
     "@remotion/cli": "4.0.537",
     "@remotion/google-fonts": "4.0.537",
     "@remotion/media-utils": "4.0.537",
+    "@remotion/transitions": "4.0.537",
     "@tailwindcss/vite": "^4.0.0",
     "astro": "^5.2.0",
     "locomotive-scroll": "^5.0.1",

@@ -21,9 +21,9 @@ tags:
   - huile de palme
   - quotidien
 relatedRecipes:
+  - haricots-verts-palme
   - loso-na-madesu
   - saka-madesu
-  - chikwangue
 
 video:
   youtube: https://www.youtube.com/watch?v=jV-tYOLILH0

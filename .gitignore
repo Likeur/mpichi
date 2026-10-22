@@ -3,6 +3,9 @@ dist/
 out/
 .astro/
 
+# separate open-data repo (https://github.com/Likeur/mpichi-dataset)
+mpichi-dataset/
+
 # dependencies
 node_modules/
 
@@ -16,6 +19,7 @@ pnpm-debug.log*
 .env
 .env.protobuf
 .env.*
+!.env.example
 
 # macOS
 .DS_Store

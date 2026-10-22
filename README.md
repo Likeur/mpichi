@@ -5,11 +5,13 @@
 > *Un répertoire vivant des recettes de la RDC, de leurs gestes et de leurs territoires.*
 
 **Site en production :** [https://mpichi.likeur.xyz](https://mpichi.likeur.xyz)  
-**Dépôt :** [github.com/Likeur/mpichi](https://github.com/Likeur/mpichi)
+**Dépôt :** [github.com/Likeur/mpichi](https://github.com/Likeur/mpichi)  
+**Dataset open source :** [`mpichi-dataset/`](mpichi-dataset/) — recettes bilingues JSONL / instruction pairs (CC BY 4.0), destiné à la recherche et au fine-tuning d’IA locales ([README du dataset](mpichi-dataset/README.md))
 
 ## Fonctionnalités
 
-- **Bilingue FR / EN** — localisation UI + 51 recettes traduites, switch de langue dans la nav, `hreflang`
+- **Bilingue FR / EN** — localisation UI + recettes traduites, switch de langue dans la nav, `hreflang`
+- **Dataset open** — export machine-readable (`mpichi-dataset`) pour recherche & LLM locaux
 - **Accueil éditorial** avec carrousel héro, sections patrimoine et recettes mises en avant
 - **Catalogue** avec recherche locale, filtres (catégorie, difficulté, région) et pagination
 - **Favoris locaux** (localStorage, sans compte) — page `/favoris`
@@ -61,6 +63,7 @@ Version anglaise : [http://localhost:4321/en](http://localhost:4321/en)
 | `npm run check` | `astro check` (types / lint Astro) |
 | `npm run ci` | `check` puis `build` (équivalent CI) |
 | `npm run astro` | CLI Astro |
+| `npm run export-dataset` | Régénère [`mpichi-dataset/data`](mpichi-dataset/data) (JSONL, splits, instruction pairs) |
 
 Variable d’environnement optionnelle :
 
@@ -74,6 +77,7 @@ SITE=https://mpichi.likeur.xyz npm run build
 
 ```
 mpichi/
+├── mpichi-dataset/               # Dataset open (CC BY 4.0) — JSONL + SFT pairs
 ├── public/
 │   ├── favicon.svg
 │   ├── og-default.jpg

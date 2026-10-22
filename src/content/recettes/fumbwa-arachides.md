@@ -21,6 +21,7 @@ tags:
   - feuilles
   - végétal
 relatedRecipes:
+  - sauce-arachide
   - pondu
   - chikwangue
   - matembele-katanga

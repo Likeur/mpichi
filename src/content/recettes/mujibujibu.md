@@ -36,4 +36,4 @@ steps:
   - Remuer délicatement, ajuster la consistance avec un peu d’eau et rectifier le sel.
 ---
 
-Plat transmis dans les familles luba du Kasaï, le mujibujibu est servi avec le bidia, du riz ou de la chikwangue.
+Plat transmis dans les familles luba du Kasaï, le mujibujibu est servi avec le [bukari](/recettes/bukari-katanga/) (bidia), du riz ou de la [chikwangue](/recettes/chikwangue/).

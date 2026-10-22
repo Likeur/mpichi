@@ -18,6 +18,10 @@ tags:
   - braise
   - grillade
   - Kinshasa
+relatedRecipes:
+  - ngulu-ya-sauce
+  - makoso
+  - kamundele
 video:
   youtube: https://www.youtube.com/watch?v=7O4QoxSgMbc
   title: Porc braisé (choukouya)
