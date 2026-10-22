@@ -3,10 +3,10 @@ title: Makemba na mbisi
 seoTitle: Recette makemba na mbisi — plantains et poisson
 description: "Recette de makemba na mbisi : plantains frits servis avec du poisson (frit, braisé ou en sauce) — assiette composée très courante en RDC."
 region: Toute la RDC
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/FRIED%20PLANTAIN%20FISH.jpg?width=1600
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/FRIED_PLANTAIN_FISH.jpg?width=1600
 imageAlt: Plantains frits servis avec du poisson
 imagePosition: center
-imageCredit: Precious654 — Wikimedia Commons, CC BY-SA 4.0
+imageCredit: Offordile234 — Wikimedia Commons, CC BY-SA 4.0
 imageCreditUrl: https://commons.wikimedia.org/wiki/File:FRIED_PLANTAIN_FISH.jpg
 category: plat
 prepTime: 20 min
@@ -36,7 +36,7 @@ ingredients:
 steps:
   - Saler, poivrer et citronner le poisson. Le faire dorer à la poêle ou le braiser. Réserver.
   - Éplucher les plantains, les couper en tranches et les frire jusqu’à doré. Égoutter et saler.
-  - Option sauce courte : faire revenir oignon et ail, ajouter tomates et un fond d’eau, 8 minutes. Napper le poisson.
+  - "Option sauce courte : faire revenir oignon et ail, ajouter tomates et un fond d’eau, 8 minutes. Napper le poisson."
   - Dresser makemba et mbisi dans la même assiette. Servir aussitôt.
 ---
 

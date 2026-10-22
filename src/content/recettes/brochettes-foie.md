@@ -35,7 +35,7 @@ ingredients:
 steps:
   - Mélanger oignon, ail, citron, huile, sel, poivre et pili-pili. Enrober le foie et mariner 30 minutes au frais.
   - Enfiler les dés sur les brochettes sans trop serrer.
-  - Griller sur braises vives 3 à 4 minutes par côté : le foie doit rester rosée à l’intérieur.
+  - "Griller sur braises vives 3 à 4 minutes par côté : le foie doit rester rosée à l’intérieur."
   - Servir aussitôt avec oignon cru, pili-pili et pain ou frites.
 ---
 
