@@ -21,9 +21,9 @@ tags:
   - friture
   - rapide
 relatedRecipes:
+  - makemba-na-mbisi
   - plantains-vapeur
   - lituma
-  - poisson-braise-kinkole
 
 video:
   youtube: https://www.youtube.com/watch?v=xHaECoQ2_Mg

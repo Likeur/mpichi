@@ -21,9 +21,9 @@ tags:
   - fufu
   - fermentation
 relatedRecipes:
+  - chikwangue-grillee
   - fufu-manioc
   - pondu
-  - liboke-poisson
 
 video:
   youtube: https://www.youtube.com/watch?v=RY8R-3kdUPs

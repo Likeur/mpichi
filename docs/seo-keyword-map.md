@@ -107,7 +107,7 @@ Une fiche = un plat. Primaires = nom du plat + « recette ».
 | comment faire le pondu | préparer saka-saka, pondu étape par étape | `/guides/pondu/` | `ok` (vague 3) |
 | sauce moambe | comment faire la moambe, mwamba | `/guides/moambe/` | `ok` (vague 3) |
 | marché congolaise cuisine | ingrédients cuisine congolaise, substitutions | `/guides/marche/` | `ok` (vague 3) |
-| comment faire le fufu | fufu manioc, bidia | `créer` → `/guides/fufu/` (ou renforcer fiches bukari/chikwangue) | `créer` |
+| comment faire le fufu | fufu manioc, bukari | `créer` → `/guides/fufu/` (ou renforcer fiches bukari/chikwangue) | `créer` |
 | comment faire la chikwangue | kwanga | `/recettes/chikwangue/` (+ guide optionnel) | `renforcer` |
 
 ---
@@ -117,7 +117,7 @@ Une fiche = un plat. Primaires = nom du plat + « recette ».
 | Mot-clé principal | Secondaires | URL | Statut |
 | --- | --- | --- | --- |
 | chikwangue | kwanga, pain de manioc | `/recettes/chikwangue/` | `ok` (vague 1) |
-| bukari | fufu maïs katanga, bidia | `/recettes/bukari-katanga/` | `ok` (vague 2) |
+| bukari | fufu maïs katanga, bidia (alias) | `/recettes/bukari-katanga/` | `ok` (vague 2) |
 | lituma | purée plantain | `/recettes/lituma/` | `ok` (vague 3) |
 | makemba | plantains frits | `/recettes/makemba/` | `ok` (vague 3) |
 | riz à la moambe | — | `/recettes/riz-moambe/` | `renforcer` |

@@ -37,4 +37,4 @@ steps:
   - Ciseler le reste des feuilles, les ajouter en fin de cuisson et poursuivre 5 minutes à feu doux.
 ---
 
-Aussi appelé tshiluabenyi, ce poulet parfumé au lumba-lumba est associé aux cuisines du Kasaï. Le bidia est son accompagnement naturel.
+Aussi appelé tshiluabenyi, ce poulet parfumé au lumba-lumba est associé aux cuisines du Kasaï. Le [bukari](/recettes/bukari-katanga/) (bidia) est son accompagnement naturel.

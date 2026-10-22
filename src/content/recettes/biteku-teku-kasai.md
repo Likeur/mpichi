@@ -23,7 +23,7 @@ tags:
 relatedRecipes:
   - ndunda
   - matembele-katanga
-  - bidia
+  - bukari-katanga
 
 video:
   youtube: https://www.youtube.com/watch?v=SAdbi6jks-E
@@ -48,7 +48,7 @@ steps:
   - Poursuivre la cuisson à découvert jusqu’à ce que les feuilles soient tendres et la sauce légèrement liée.
 ---
 
-Le **biteku-teku** est populaire au Kasaï. À Kinshasa, les légumes verts du quotidien s’appellent plutôt [ndunda](/recettes/ndunda/) ; la même amarante est aussi dite **lenga-lenga**. On le mange avec la [bidia](/recettes/bidia/) ; on peut omettre les arachides.
+Le **biteku-teku** est populaire au Kasaï. À Kinshasa, les légumes verts du quotidien s’appellent plutôt [ndunda](/recettes/ndunda/) ; la même amarante est aussi dite **lenga-lenga**. On le mange avec le [bukari](/recettes/bukari-katanga/) (bidia au Kasaï) ; on peut omettre les arachides.
 
 Autres feuilles : [matembele](/recettes/matembele-katanga/), [pondu](/recettes/pondu/). Contexte marché : [guide du marché](/guides/marche/).
 

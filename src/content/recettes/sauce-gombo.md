@@ -19,8 +19,8 @@ tags:
   - sauce
   - végétal
 relatedRecipes:
+  - dongo-dongo
   - aubergines-africaines
-  - ndunda
   - poisson-fume-tomates
 video:
   youtube: https://www.youtube.com/watch?v=gRIy4k406wM

@@ -13,6 +13,7 @@ const bare = path.replace(/^\/en(?=\/|$)/, '') || '/';
 const isHome = bare === '/';
 const isRecettes = bare.startsWith('/recettes');
 const isFavorites = bare.startsWith('/favoris');
+const isPropose = bare.startsWith('/proposer');
 const isGuides = bare.startsWith('/guides');
 const otherLang = lang === 'fr' ? 'en' : 'fr';
 const switchHref = switchLocalePath(path, otherLang);
@@ -21,6 +22,7 @@ const mobileLinks = [
   { href: localePath('/', lang), label: t('nav.home'), active: isHome },
   { href: localePath('/recettes', lang), label: t('nav.recipes'), active: isRecettes },
   { href: localePath('/favoris', lang), label: t('nav.favorites'), active: isFavorites },
+  { href: localePath('/proposer', lang), label: t('nav.propose'), active: isPropose },
   { href: localePath('/guides', lang), label: t('guides.title'), active: isGuides },
 ];
 ---
@@ -56,6 +58,12 @@ const mobileLinks = [
             class:list={['hover:text-white transition-colors', isFavorites && 'text-white']}
           >
             {t('nav.favorites')}
+          </a>
+          <a
+            href={localePath('/proposer', lang)}
+            class:list={['hover:text-white transition-colors', isPropose && 'text-white']}
+          >
+            {t('nav.propose')}
           </a>
           <a
             href={switchHref}

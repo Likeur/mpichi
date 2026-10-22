@@ -9,6 +9,7 @@ export const ui = {
     'nav.home': 'Accueil',
     'nav.recipes': 'Recettes',
     'nav.favorites': 'Favoris',
+    'nav.propose': 'Proposer',
     'nav.label': 'Navigation principale',
     'nav.logo': 'Mpichi — accueil',
     'nav.lang': 'Langue',
@@ -192,7 +193,46 @@ export const ui = {
       'Nous croisons les usages transmis, les sources disponibles et le contexte régional. Les quantités sont rendues lisibles sans effacer la part de geste, d’expérience et d’adaptation propre à chaque cuisine.',
     'faq.q4': 'Puis-je proposer une recette ou une correction ?',
     'faq.a4':
-      'Oui. Les variantes, précisions linguistiques et récits de transmission sont bienvenus. Vous pouvez contacter Likeur depuis le lien présent dans le pied de page.',
+      'Oui. Les variantes, précisions linguistiques et récits de transmission sont bienvenus. Utilisez la page Proposer une recette, ou contactez Likeur depuis le pied de page.',
+    'propose.title': 'Proposer une recette',
+    'propose.hero': 'Proposer une recette.',
+    'propose.intro':
+      'Transmettez un plat, une variante ou une précision. Les propositions sont relues avant d’entrer dans le catalogue.',
+    'propose.description':
+      'Proposez une recette congolaise pour le catalogue Mpichi — titre, région, ingrédients et gestes.',
+    'propose.body':
+      'Décrivez le plat tel qu’il se prépare chez vous : noms locaux, gestes, proportions approximatives. Une photo libre de droits (ou un lien) aide à documenter la fiche.',
+    'propose.process':
+      'Après envoi, la proposition arrive à la rédaction Mpichi. Si elle est retenue, elle est écrite en fiche Markdown, illustrée et publiée à la main — il n’y a pas de publication automatique.',
+    'propose.name': 'Votre nom',
+    'propose.namePlaceholder': 'Optionnel',
+    'propose.email': 'E-mail',
+    'propose.emailPlaceholder': 'pour vous répondre',
+    'propose.recipeTitle': 'Nom du plat',
+    'propose.recipeTitlePlaceholder': 'ex. Ntaba en sauce, tangawisi…',
+    'propose.region': 'Région ou ville',
+    'propose.regionPlaceholder': 'ex. Kinshasa, Grand Kasaï…',
+    'propose.category': 'Catégorie',
+    'propose.categoryEmpty': 'Choisir',
+    'propose.ingredients': 'Ingrédients',
+    'propose.ingredientsPlaceholder': 'Un ingrédient par ligne, avec quantités si possible.',
+    'propose.steps': 'Préparation',
+    'propose.stepsPlaceholder': 'Les gestes dans l’ordre, comme vous les feriez à la maison.',
+    'propose.notes': 'Notes & transmission',
+    'propose.notesPlaceholder': 'Variantes, noms linguistiques, souvenirs de table…',
+    'propose.photo': 'Lien photo (optionnel)',
+    'propose.photoPlaceholder': 'https://…',
+    'propose.photoHint':
+      'Préférez une image sous licence libre (Wikimedia Commons, etc.) ou une photo dont vous détenez les droits.',
+    'propose.moderation':
+      'En envoyant ce formulaire, vous acceptez que vos coordonnées et le contenu soient transmis à la rédaction Mpichi via Formspree, uniquement pour traiter la proposition.',
+    'propose.submit': 'Envoyer la proposition',
+    'propose.sending': 'Envoi…',
+    'propose.success': 'Merci — votre proposition est bien arrivée. Nous la relisons avec attention.',
+    'propose.error': 'L’envoi a échoué. Réessayez dans un instant, ou écrivez via likeur.xyz.',
+    'propose.notConfigured':
+      'Le formulaire n’est pas encore branché (identifiant Formspree manquant). En attendant, contactez Likeur via likeur.xyz.',
+    'propose.subject': 'Mpichi — proposition de recette',
     'faq.q5': 'Les niveaux de difficulté sont-ils absolus ?',
     'faq.a5':
       'Ils sont indicatifs. Ils tiennent compte du nombre de gestes, du temps de préparation et de la disponibilité habituelle des ingrédients.',
@@ -228,13 +268,13 @@ export const ui = {
     'privacy.description': 'Politique de confidentialité du site Mpichi.',
     'privacy.data.title': 'Données collectées',
     'privacy.data.body':
-      'Mpichi ne propose actuellement ni compte utilisateur, ni formulaire, ni espace de commentaire. Le site ne collecte donc pas directement votre nom, votre adresse électronique ou vos coordonnées.',
+      'Mpichi ne propose pas de compte utilisateur ni d’espace de commentaire. Si vous utilisez la page « Proposer une recette », le nom, l’e-mail et le contenu de la proposition sont transmis à Formspree puis à la rédaction, uniquement pour traiter votre message.',
     'privacy.local.title': 'Stockage local',
     'privacy.local.body':
       'Votre navigateur peut conserver localement vos recettes favorites et, le cas échéant, votre position dans le catalogue. Ces données restent sur votre appareil et ne sont pas transmises à Mpichi.',
     'privacy.external.title': 'Services externes',
     'privacy.external.body':
-      'Les polices sont chargées depuis Google Fonts et certaines photographies depuis Wikimedia Commons. Lors de ces chargements, ces services peuvent recevoir des informations techniques telles que votre adresse IP, votre navigateur et l’heure de la requête, conformément à leurs propres politiques.',
+      'Les polices sont chargées depuis Google Fonts et certaines photographies depuis Wikimedia Commons. Les propositions de recettes passent par Formspree. Lors de ces chargements ou envois, ces services peuvent recevoir des informations techniques (adresse IP, navigateur, heure de la requête) conformément à leurs propres politiques.',
     'privacy.cookies.title': 'Cookies et mesure d’audience',
     'privacy.cookies.body':
       'Mpichi utilise Google Analytics (G-WLFG0GGT90) pour mesurer l’audience de façon agrégée. Aucun cookie publicitaire n’est déposé. Vous pouvez limiter la mesure via les réglages de votre navigateur ou des extensions de protection de la vie privée.',
@@ -258,6 +298,7 @@ export const ui = {
     'nav.home': 'Home',
     'nav.recipes': 'Recipes',
     'nav.favorites': 'Saved',
+    'nav.propose': 'Suggest',
     'nav.label': 'Main navigation',
     'nav.logo': 'Mpichi — home',
     'nav.lang': 'Language',
@@ -441,7 +482,46 @@ export const ui = {
       'We cross transmitted practices, available sources, and regional context. Quantities are made readable without erasing the gesture, experience, and adaptation of each kitchen.',
     'faq.q4': 'Can I suggest a recipe or a correction?',
     'faq.a4':
-      'Yes. Variants, linguistic notes, and stories of transmission are welcome. You can contact Likeur through the link in the footer.',
+      'Yes. Variants, linguistic notes, and stories of transmission are welcome. Use the Suggest a recipe page, or contact Likeur from the footer.',
+    'propose.title': 'Suggest a recipe',
+    'propose.hero': 'Suggest a recipe.',
+    'propose.intro':
+      'Share a dish, a variation, or a clarification. Suggestions are reviewed before they enter the catalogue.',
+    'propose.description':
+      'Suggest a Congolese recipe for the Mpichi catalogue — title, region, ingredients and gestures.',
+    'propose.body':
+      'Describe the dish as it is cooked at home: local names, gestures, approximate quantities. A freely licensed photo (or a link) helps document the page.',
+    'propose.process':
+      'After you send it, the suggestion reaches the Mpichi editorial desk. If it is selected, it is written as a Markdown recipe, illustrated, and published by hand — there is no automatic publishing.',
+    'propose.name': 'Your name',
+    'propose.namePlaceholder': 'Optional',
+    'propose.email': 'Email',
+    'propose.emailPlaceholder': 'so we can reply',
+    'propose.recipeTitle': 'Dish name',
+    'propose.recipeTitlePlaceholder': 'e.g. Ntaba in sauce, tangawisi…',
+    'propose.region': 'Region or city',
+    'propose.regionPlaceholder': 'e.g. Kinshasa, Greater Kasai…',
+    'propose.category': 'Category',
+    'propose.categoryEmpty': 'Choose',
+    'propose.ingredients': 'Ingredients',
+    'propose.ingredientsPlaceholder': 'One ingredient per line, with quantities if you can.',
+    'propose.steps': 'Method',
+    'propose.stepsPlaceholder': 'The gestures in order, as you would cook at home.',
+    'propose.notes': 'Notes & transmission',
+    'propose.notesPlaceholder': 'Variants, linguistic names, table memories…',
+    'propose.photo': 'Photo link (optional)',
+    'propose.photoPlaceholder': 'https://…',
+    'propose.photoHint':
+      'Prefer an image under a free license (Wikimedia Commons, etc.) or a photo you own the rights to.',
+    'propose.moderation':
+      'By sending this form, you agree that your contact details and content are sent to the Mpichi editorial team via Formspree, solely to process the suggestion.',
+    'propose.submit': 'Send suggestion',
+    'propose.sending': 'Sending…',
+    'propose.success': 'Thank you — your suggestion arrived. We will review it carefully.',
+    'propose.error': 'Sending failed. Try again shortly, or write via likeur.xyz.',
+    'propose.notConfigured':
+      'The form is not wired yet (missing Formspree id). Meanwhile, contact Likeur via likeur.xyz.',
+    'propose.subject': 'Mpichi — recipe suggestion',
     'faq.q5': 'Are difficulty levels absolute?',
     'faq.a5':
       'They are indicative. They consider the number of gestures, preparation time, and how commonly ingredients are available.',
@@ -477,13 +557,13 @@ export const ui = {
     'privacy.description': 'Privacy policy for the Mpichi website.',
     'privacy.data.title': 'Data collected',
     'privacy.data.body':
-      'Mpichi currently offers no user account, form, or comment space. The site therefore does not directly collect your name, email address, or contact details.',
+      'Mpichi has no user accounts or comment space. If you use the “Suggest a recipe” page, your name, email, and proposal content are sent through Formspree to the editorial team, solely to process your message.',
     'privacy.local.title': 'Local storage',
     'privacy.local.body':
       'Your browser may store your saved recipes locally and, when needed, your position in the catalogue. This data stays on your device and is not sent to Mpichi.',
     'privacy.external.title': 'External services',
     'privacy.external.body':
-      'Fonts are loaded from Google Fonts and some photographs from Wikimedia Commons. During those requests, those services may receive technical information such as your IP address, browser, and request time, according to their own policies.',
+      'Fonts are loaded from Google Fonts and some photographs from Wikimedia Commons. Recipe suggestions go through Formspree. During those loads or submissions, those services may receive technical information (IP address, browser, request time) according to their own policies.',
     'privacy.cookies.title': 'Cookies and analytics',
     'privacy.cookies.body':
       'Mpichi uses Google Analytics (G-WLFG0GGT90) for aggregated audience measurement. No advertising cookies are set. You can limit measurement through your browser settings or privacy extensions.',

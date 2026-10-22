@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import EditorialPage from '../components/EditorialPage.astro';
+import ProposeForm from '../components/ProposeForm.astro';
+import type { Locale } from '../i18n/config';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang?: Locale;
+}
+
+const lang = Astro.props.lang ?? 'fr';
+const t = useTranslations(lang);
+const endpoint = (import.meta.env.PUBLIC_FORMSPREE_ENDPOINT as string | undefined)?.trim() ?? '';
+---
+
+<BaseLayout title={t('propose.title')} description={t('propose.description')} lang={lang}>
+  <EditorialPage title={t('propose.hero')} introduction={t('propose.intro')}>
+    <div class="mb-12 max-w-2xl space-y-4 text-[15px] leading-7 text-earth-900/70" data-reveal>
+      <p>{t('propose.body')}</p>
+      <p>{t('propose.process')}</p>
+    </div>
+    <div data-reveal>
+      <ProposeForm lang={lang} endpoint={endpoint} />
+    </div>
+  </EditorialPage>
+</BaseLayout>
