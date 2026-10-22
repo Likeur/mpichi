@@ -18,6 +18,10 @@ tags:
   - jus
   - fruit
   - boisson
+relatedRecipes:
+  - jus-mangue
+  - jus-ananas
+  - tangawisi
 ingredients:
   - 12 fruits de la passion bien mûrs
   - 600 ml d’eau froide
@@ -32,3 +36,5 @@ steps:
 ---
 
 En saison, le fruit de la passion se trouve facilement au marché. Hors saison, la pulpe surgelée reste une base honnête pour un jus maison.
+
+Autres jus : [mangue](/recettes/jus-mangue/), [ananas](/recettes/jus-ananas/), [tangawisi](/recettes/tangawisi/).

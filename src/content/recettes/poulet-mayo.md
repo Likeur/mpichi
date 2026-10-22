@@ -21,9 +21,9 @@ tags:
   - Kinshasa
   - fête
 relatedRecipes:
+  - pain-mayonnaise
   - soso-ya-kotumba
   - moambe-poulet
-  - soso-ya-sauce
 
 video:
   youtube: https://www.youtube.com/watch?v=BDqiBBBVNz0

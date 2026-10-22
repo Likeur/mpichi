@@ -18,6 +18,10 @@ tags:
   - hibiscus
   - jus
   - boisson
+relatedRecipes:
+  - jus-mangue
+  - jus-ananas
+  - jus-passion
 video:
   youtube: https://www.youtube.com/watch?v=2cUQilpkRBA
   title: Jus de bissap (hibiscus)
@@ -38,3 +42,5 @@ steps:
 ---
 
 Le bissap boisson n’est pas le ngai-ngai en sauce : mêmes fleurs d’hibiscus, geste différent — infusion sucrée ici, mijotage salé là où le ngai-ngai est un plat.
+
+Autres jus : [mangue](/recettes/jus-mangue/), [ananas](/recettes/jus-ananas/), [passion](/recettes/jus-passion/).

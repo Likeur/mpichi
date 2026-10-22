@@ -18,6 +18,10 @@ tags:
   - beignet
   - goûter
   - friture
+relatedRecipes:
+  - mikate
+  - beignets-manioc
+  - bouillie-mais
 video:
   youtube: https://www.youtube.com/watch?v=21RnvnCHpb8
   title: Beignets / mikate à la banane
@@ -40,4 +44,4 @@ steps:
   - Frire 2 à 3 minutes de chaque côté jusqu’à dorure. Égoutter et servir tiède.
 ---
 
-La banane mûre remplace en partie le sucre et donne le goût. Ce n’est ni un plantain frit (makemba), ni une pâte levée à l’eau (mikate).
+La banane mûre remplace en partie le sucre et donne le goût. Ce n’est ni un plantain frit (makemba), ni une pâte levée à l’eau ([mikate](/recettes/mikate/)), ni des [beignets de manioc](/recettes/beignets-manioc/).

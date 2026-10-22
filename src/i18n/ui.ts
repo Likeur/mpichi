@@ -158,6 +158,8 @@ export const ui = {
     'recipe.print': 'Imprimer',
     'recipe.related': 'Dans le même esprit',
     'recipe.relatedIntro': 'D’autres recettes proches par territoire ou par gestes.',
+    'recipe.variants': 'Variantes',
+    'recipe.variantsIntro': 'D’autres façons de préparer ce plat — gestes proches, ingrédients différents.',
     'recipe.transmission': 'Sources & transmission',
     'recipe.transmissionBody':
       'Cette fiche s’appuie sur des usages transmis et des sources disponibles. Les quantités aident à démarrer ; chaque foyer ajuste selon le marché, la saison et sa mémoire.',
@@ -405,6 +407,8 @@ export const ui = {
     'recipe.print': 'Print',
     'recipe.related': 'In the same spirit',
     'recipe.relatedIntro': 'Other recipes close by territory or by gesture.',
+    'recipe.variants': 'Variations',
+    'recipe.variantsIntro': 'Other ways to cook this dish — similar gestures, different ingredients.',
     'recipe.transmission': 'Sources & transmission',
     'recipe.transmissionBody':
       'This page draws on transmitted practices and available sources. Quantities help you start; each household adjusts for market, season, and memory.',

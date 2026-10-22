@@ -18,6 +18,10 @@ tags:
   - bouillie
   - petit-déjeuner
   - goûter
+relatedRecipes:
+  - bouillie-mais
+  - mikate
+  - beignets-banane
 ingredients:
   - 120 g de farine de maïs (ou de manioc)
   - 80 g de pâte d’arachide lisse
@@ -33,4 +37,4 @@ steps:
   - Parfumer si souhaité. Servir tiède, nature ou avec un filet de lait.
 ---
 
-On prépare aussi la bouillie au seul maïs ou au manioc, sans arachide. L’épaisseur et le sucre varient selon les maisons ; la pâte d’arachide apporte richesse et parfum de goûter.
+On prépare aussi la bouillie au seul maïs ou au manioc, sans arachide — voir la [bouillie de maïs](/recettes/bouillie-mais/). L’épaisseur et le sucre varient selon les maisons ; la pâte d’arachide apporte richesse et parfum de goûter.
