@@ -1,7 +1,7 @@
 ---
 import type { Locale } from '../i18n/config';
 import { useTranslations } from '../i18n/utils';
-import { youtubeThumbnailUrl, youtubeVideoId, youtubeWatchUrl } from '../lib/youtube';
+import { youtubeEmbedUrl, youtubeVideoId, youtubeWatchUrl } from '../lib/youtube';
 
 interface Props {
   youtube: string;
@@ -15,44 +15,25 @@ const { youtube, title, credit, creditUrl, lang = 'fr' } = Astro.props;
 const t = useTranslations(lang);
 const videoId = youtubeVideoId(youtube);
 const watchUrl = videoId ? youtubeWatchUrl(videoId) : undefined;
+const embedUrl = videoId ? youtubeEmbedUrl(videoId) : undefined;
 ---
 
 {
-  videoId && watchUrl && (
+  videoId && watchUrl && embedUrl && (
     <section class="mt-16 pt-10 border-t border-earth-900/10" data-recipe-video data-reveal-static>
       <h2 class="font-display text-3xl font-light text-earth-900">{t('recipe.video')}</h2>
       <p class="mt-3 max-w-2xl text-sm leading-relaxed text-earth-900/55">{title}</p>
-      <a
-        href={watchUrl}
-        target="_blank"
-        rel="noreferrer"
-        class="group relative mt-6 block aspect-video max-w-3xl overflow-hidden bg-earth-900 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-earth-900"
-        aria-label={`${t('recipe.videoWatch')} — ${title}`}
-      >
-        <img
-          src={youtubeThumbnailUrl(videoId)}
-          alt=""
-          width="480"
-          height="360"
-          class="h-full w-full object-cover transition duration-500 ease-out group-hover:scale-[1.03]"
+      <div class="relative mt-6 aspect-video max-w-3xl overflow-hidden bg-earth-900">
+        <iframe
+          src={embedUrl}
+          title={title}
+          class="absolute inset-0 h-full w-full border-0"
           loading="lazy"
-          decoding="async"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
         />
-        <span
-          class="absolute inset-0 bg-earth-900/35 transition-colors duration-300 group-hover:bg-earth-900/45"
-          aria-hidden="true"
-        />
-        <span
-          class="absolute inset-0 flex items-center justify-center"
-          aria-hidden="true"
-        >
-          <span class="flex size-14 items-center justify-center rounded-full bg-white/95 text-earth-900 shadow-sm transition duration-300 group-hover:scale-105 sm:size-16">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" class="ml-0.5">
-              <path d="M8 5.14v13.72L19 12 8 5.14Z"></path>
-            </svg>
-          </span>
-        </span>
-      </a>
+      </div>
       <p class="mt-3 text-[9px] uppercase tracking-[.14em] text-earth-900/40">
         {t('recipe.videoCredit')} ·{' '}
         {creditUrl ? (
@@ -74,7 +55,7 @@ const watchUrl = videoId ? youtubeWatchUrl(videoId) : undefined;
           rel="noreferrer"
           class="text-earth-900/55 underline decoration-earth-900/20 underline-offset-4 transition-colors hover:text-earth-900"
         >
-          YouTube
+          {t('recipe.videoWatch')}
         </a>
       </p>
     </section>

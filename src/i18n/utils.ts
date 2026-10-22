@@ -52,6 +52,18 @@ export function recipeCountLabel(locale: Locale, count: number) {
     : t('recipes.count', { n: padded });
 }
 
+export type LocalizedRecipeVariant = {
+  id: string;
+  title: string;
+  description?: string;
+  image?: string;
+  imageAlt?: string;
+  imageCredit?: string;
+  imageCreditUrl?: string;
+  ingredients: string[];
+  steps: string[];
+};
+
 export type LocalizedRecipe = {
   slug: string;
   title: string;
@@ -74,6 +86,7 @@ export type LocalizedRecipe = {
   category: CollectionEntry<'recettes'>['data']['category'];
   featured: boolean;
   video?: CollectionEntry<'recettes'>['data']['video'];
+  variants: LocalizedRecipeVariant[];
 };
 
 
@@ -85,6 +98,21 @@ export function localizeRecipe(
   const t = useTranslations(locale);
   const base = recipe.data;
   const translated = locale === 'en' ? recipeTranslationsEn[slug] : undefined;
+  const translatedVariants = translated?.variants;
+  const variants: LocalizedRecipeVariant[] = (base.variants ?? []).map((variant) => {
+    const override = translatedVariants?.find((entry) => entry.id === variant.id);
+    return {
+      id: variant.id,
+      title: override?.title ?? variant.title,
+      description: override?.description ?? variant.description,
+      image: variant.image,
+      imageAlt: override?.imageAlt ?? variant.imageAlt,
+      imageCredit: variant.imageCredit,
+      imageCreditUrl: variant.imageCreditUrl,
+      ingredients: override?.ingredients ?? variant.ingredients,
+      steps: override?.steps ?? variant.steps,
+    };
+  });
 
   return {
     slug,
@@ -108,6 +136,7 @@ export function localizeRecipe(
     category: base.category,
     featured: base.featured,
     video: base.video,
+    variants,
   };
 }
 

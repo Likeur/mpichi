@@ -1,3 +1,12 @@
+export type RecipeVariantTranslation = {
+  id: string;
+  title: string;
+  description?: string;
+  imageAlt?: string;
+  ingredients: string[];
+  steps: string[];
+};
+
 export type RecipeTranslation = {
   title: string;
   seoTitle?: string;
@@ -10,6 +19,7 @@ export type RecipeTranslation = {
   steps: string[];
   tags: string[];
   body?: string;
+  variants?: RecipeVariantTranslation[];
 };
 
 export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
@@ -238,7 +248,53 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "leaves",
       "vegetable"
     ],
-    "body": "Fumbwa (also called koko, okazi or eru) is not pondu: it is a forest vine leaf, often sold already shredded. Cook the sauce gently so the peanut paste turns round and creamy. Serve with chikwangue or fufu."
+    "body": "Fumbwa (also called koko, okazi or eru) is not pondu: it is a forest vine leaf, often sold already shredded. Cook the sauce gently so the peanut paste turns round and creamy. Serve with chikwangue or fufu.",
+    variants: [
+      {
+        id: "sans-poisson",
+        title: "Without smoked fish",
+        description: "Peanut sauce and leaves alone — fully plant-based.",
+        imageAlt: "Fumbwa peanut sauce served with fufu",
+        ingredients: [
+          "500 g shredded fumbwa leaves",
+          "200 g unsweetened peanut paste",
+          "2 onions, finely chopped",
+          "2 ripe tomatoes, crushed",
+          "2 garlic cloves",
+          "3 tbsp palm oil",
+          "Salt, chili and water"
+        ],
+        steps: [
+          "Rinse the fumbwa and drain well.",
+          "Sweat onions and garlic, add tomatoes then fumbwa with a glass of water.",
+          "Simmer covered 30 minutes.",
+          "Stir in diluted peanut paste and cook gently another 25 minutes.",
+          "Season and serve with fufu or chikwangue."
+        ]
+      },
+      {
+        id: "sauce-courte",
+        title: "Shorter sauce",
+        description: "Less water, denser peanut — sticky texture some households prefer.",
+        ingredients: [
+          "500 g shredded fumbwa leaves",
+          "250 g unsweetened peanut paste",
+          "2 onions, finely chopped",
+          "1 ripe tomato, crushed",
+          "2 garlic cloves",
+          "3 tbsp palm oil",
+          "150 g smoked fish (optional)",
+          "Salt, chili and 150 ml water"
+        ],
+        steps: [
+          "Prepare onions, garlic and tomato as in the main recipe.",
+          "Add the fumbwa with only 150 ml water; simmer 25 minutes.",
+          "Stir in more peanut paste barely diluted.",
+          "Cook uncovered 20 minutes, stirring: the sauce should cling to the spoon.",
+          "Serve with chikwangue."
+        ]
+      }
+    ]
   },
   "kamundele": {
     "title": "Kamundele",
@@ -427,7 +483,52 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "palm oil",
       "everyday"
     ],
-    "body": "Madesu means the everyday palm-oil beans of Congolese kitchens—economical, filling, endlessly varied. Add cassava leaves and you get saka-madesu; serve with chikwangue or rice."
+    "body": "Madesu means the everyday palm-oil beans of Congolese kitchens—economical, filling, endlessly varied. Add cassava leaves and you get saka-madesu; serve with chikwangue or rice.",
+    variants: [
+      {
+        id: "poisson-fume",
+        title: "With smoked fish",
+        description: "Beans enriched with smoked fish — a savourier everyday plate.",
+        imageAlt: "Bowl of cooked red beans",
+        ingredients: [
+          "500 g dried red or brown beans",
+          "200 g smoked fish",
+          "2 onions, sliced",
+          "3 ripe tomatoes, crushed",
+          "3 tbsp red palm oil",
+          "2 garlic cloves, chopped",
+          "1 bay leaf",
+          "Salt and water"
+        ],
+        steps: [
+          "Soak and cook the beans as in the main recipe.",
+          "Soak the smoked fish 20 minutes, drain and break into pieces.",
+          "Make the onion-tomato palm-oil sauce, then add beans and fish.",
+          "Simmer gently 20 minutes. Salt lightly (the smoked fish is already salty).",
+          "Serve with rice or chikwangue."
+        ]
+      },
+      {
+        id: "sans-tomate",
+        title: "Without tomato",
+        description: "Palm oil, onion and beans only — a sober, very common version.",
+        ingredients: [
+          "500 g dried red or brown beans",
+          "2 onions, sliced",
+          "4 tbsp red palm oil",
+          "2 garlic cloves, chopped",
+          "1 bay leaf",
+          "1 whole small chili, optional",
+          "Salt and water"
+        ],
+        steps: [
+          "Soak and cook the beans with the bay leaf until tender.",
+          "Sweat onions and garlic in palm oil with no tomato.",
+          "Stir in the beans with a ladle of cooking water.",
+          "Add the chili, simmer 15 minutes. Salt and serve."
+        ]
+      }
+    ]
   },
   "makayabu": {
     "title": "Makayabu",
@@ -459,7 +560,53 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "onion",
       "sauce"
     ],
-    "body": "Makayabu usually means salted dried fish in the DRC; species and tomato quantity vary. Desalting is the critical step—too much salt and the dish is hard to rescue. Serve with chikwangue."
+    "body": "Makayabu usually means salted dried fish in the DRC; species and tomato quantity vary. Desalting is the critical step—too much salt and the dish is hard to rescue. Serve with chikwangue.",
+    variants: [
+      {
+        id: "fumbwa",
+        title: "Makayabu with fumbwa",
+        description: "Salted fish simmered with fumbwa leaves — diaspora and western classic.",
+        imageAlt: "Fumbwa sauce served with fufu",
+        ingredients: [
+          "600 g salted dried fish, desalted",
+          "400 g shredded fumbwa leaves",
+          "2 onions, sliced",
+          "2 tomatoes, crushed",
+          "3 tbsp oil",
+          "1 small chili, optional",
+          "Water"
+        ],
+        steps: [
+          "Desalt the makayabu as in the main recipe.",
+          "Sweat onions and tomatoes in oil, add the fumbwa and a glass of water.",
+          "Cover and simmer 25 minutes.",
+          "Add the fish and cook gently 15–20 minutes without stirring much.",
+          "Pepper and serve with chikwangue or fufu."
+        ]
+      },
+      {
+        id: "sauce-courte",
+        title: "Short sauce",
+        description: "Less tomato, drier sauce — salted fish stays in front.",
+        ingredients: [
+          "600 g salted dried fish",
+          "2 ripe tomatoes, crushed",
+          "2 large onions, sliced",
+          "2 garlic cloves, chopped",
+          "3 tbsp oil",
+          "1 small chili, optional",
+          "Black pepper",
+          "80 ml water"
+        ],
+        steps: [
+          "Desalt the fish (12 h, several water changes).",
+          "Sweat the onions, add garlic, tomatoes and chili; reduce only 8 minutes.",
+          "Add the fish with just 80 ml water.",
+          "Cover and simmer 15 minutes. The sauce should stay short and coating.",
+          "Pepper and serve."
+        ]
+      }
+    ]
   },
   "makemba": {
     "title": "Makemba",
@@ -725,7 +872,51 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "palm nut",
       "celebration"
     ],
-    "body": "Chicken moambe (mwamba) is one of the Congolese dishes best known abroad. Palm cream comes in tins or sachets in African grocery stores; you can also extract it from fresh palm nuts. Each household adjusts thickness, heat and sides."
+    "body": "Chicken moambe (mwamba) is one of the Congolese dishes best known abroad. Palm cream comes in tins or sachets in African grocery stores; you can also extract it from fresh palm nuts. Each household adjusts thickness, heat and sides.",
+    variants: [
+      {
+        id: "noix-fraiches",
+        title: "With fresh palm nuts",
+        description: "Extracting palm nuts — longer, more floral flavour.",
+        imageAlt: "Chicken moambe served with rice",
+        ingredients: [
+          "1 chicken, cut into pieces",
+          "800 g fresh palm nuts",
+          "2 onions",
+          "3 tomatoes",
+          "2 garlic cloves",
+          "Oil, salt, stock cube, chili",
+          "Water"
+        ],
+        steps: [
+          "Boil the palm nuts 20–30 minutes, crush them and dilute with hot water.",
+          "Strain the pulp for a smooth cream (fresh moambe).",
+          "Brown the chicken, set aside. Sweat onions, garlic and tomatoes.",
+          "Return the chicken, pour in the fresh moambe. Simmer gently 50 minutes to 1 hour.",
+          "Reduce until the sauce coats the meat. Serve with rice or fufu."
+        ]
+      },
+      {
+        id: "epicee",
+        title: "Very spicy version",
+        description: "Same sauce, a hard pili-pili hit for tables that like heat.",
+        ingredients: [
+          "1 chicken, cut into pieces",
+          "400 ml palm-nut cream / pulp (moambe)",
+          "2 onions",
+          "3 tomatoes",
+          "2 garlic cloves",
+          "2 to 3 fresh pili-pili chilies, chopped",
+          "Oil, salt, stock cube"
+        ],
+        steps: [
+          "Follow the main recipe until the chicken goes back into the sauce.",
+          "Add the chopped chilies with the moambe (keep the seeds for more heat).",
+          "Simmer 50 minutes to 1 hour; taste and adjust chili at the end.",
+          "Serve with rice, fufu and a small dish of pili-pili sauce on the side."
+        ]
+      }
+    ]
   },
   "mujibujibu": {
     "title": "Mujibujibu",
@@ -814,7 +1005,50 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "smoked fish",
       "leaves"
     ],
-    "body": "Ngai-ngai (Guinean sorrel / roselle) is prized for its sharp acidity. Tomato, smoked fish and fat are dosed differently from kitchen to kitchen. Another leaf stew to compare: pondu."
+    "body": "Ngai-ngai (Guinean sorrel / roselle) is prized for its sharp acidity. Tomato, smoked fish and fat are dosed differently from kitchen to kitchen. Another leaf stew to compare: pondu.",
+    variants: [
+      {
+        id: "vegetal",
+        title: "Without fish",
+        description: "Fully plant-based ngai-ngai — leaf acidity stays centre stage.",
+        imageAlt: "Simmered ngai-ngai served in a dish",
+        ingredients: [
+          "500 g ngai-ngai leaves",
+          "2 tomatoes, crushed",
+          "1 onion, sliced",
+          "3 tbsp palm or neutral oil",
+          "1 small chili, optional",
+          "Salt",
+          "300 ml water"
+        ],
+        steps: [
+          "Sort, wash and shred the leaves.",
+          "Sweat the onion in oil, add the tomatoes, cook 5 minutes.",
+          "Add the leaves and water. Cover and simmer 25–30 minutes.",
+          "Add chili, salt and serve with fufu or rice."
+        ]
+      },
+      {
+        id: "huile-neutre",
+        title: "With neutral oil",
+        description: "No palm oil — cleaner taste, sharper acidity.",
+        ingredients: [
+          "500 g ngai-ngai leaves",
+          "250 g smoked fish",
+          "2 tomatoes, crushed",
+          "1 onion, sliced",
+          "3 tbsp sunflower or peanut oil",
+          "1 small chili, optional",
+          "Salt",
+          "300 ml water"
+        ],
+        steps: [
+          "Follow the main recipe, swapping palm oil for neutral oil.",
+          "Do not brown the onion too much — keep a light sauce.",
+          "Salt at the end. Serve with fufu or rice."
+        ]
+      }
+    ]
   },
   "nsafu-grilles": {
     "title": "Grilled nsafu",
@@ -968,7 +1202,54 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "palm oil",
       "everyday"
     ],
-    "body": "Pondu—also called saka-saka or mpondu—is the cassava-leaf stew most associated with Congolese home cooking. A vegetarian version without fish or meat is common on fasting days. The long simmer softens the leaves and builds the sauce; serve with chikwangue or fufu."
+    "body": "Pondu—also called saka-saka or mpondu—is the cassava-leaf stew most associated with Congolese home cooking. A vegetarian version without fish or meat is common on fasting days. The long simmer softens the leaves and builds the sauce; serve with chikwangue or fufu.",
+    variants: [
+      {
+        id: "vegetarien",
+        title: "Vegetarian version",
+        description: "No fish or meat — fasting days or Friday meals.",
+        imageAlt: "Cooked cassava leaves served with fufu",
+        ingredients: [
+          "2 kg cassava leaves (pondu), fresh or frozen",
+          "200 ml red palm oil",
+          "3 medium onions, chopped",
+          "4 garlic cloves, crushed",
+          "2 vegetable stock cubes or salt",
+          "Chili to taste",
+          "Water"
+        ],
+        steps: [
+          "Wash the leaves, blanch briefly, then chop finely.",
+          "Sweat onions and garlic in palm oil until soft.",
+          "Add the pondu, coat with oil, then add a little water.",
+          "Cover and simmer gently 1 h to 1 h 15, stirring, until creamy.",
+          "Season (cube or salt, chili) and cook 10 minutes more. Serve with fufu or chikwangue."
+        ]
+      },
+      {
+        id: "viande",
+        title: "With meat",
+        description: "Same gesture, with simmered meat instead of smoked fish.",
+        imageAlt: "Plate of simmered cassava leaves",
+        ingredients: [
+          "2 kg cassava leaves (pondu), fresh or frozen",
+          "200 ml red palm oil",
+          "3 medium onions, chopped",
+          "4 garlic cloves, crushed",
+          "400 g beef or goat in small pieces",
+          "2 stock cubes",
+          "Salt and chili to taste",
+          "Water"
+        ],
+        steps: [
+          "Brown the meat in a little palm oil, then set aside.",
+          "In the same pot, sweat onions and garlic, add chopped pondu and a splash of water.",
+          "Cover and simmer gently 45 minutes.",
+          "Return the meat, add the rest of the oil and a little water. Cook another 45 minutes until creamy and tender.",
+          "Season and serve with fufu, chikwangue or rice."
+        ]
+      }
+    ]
   },
   "riz-moambe": {
     "title": "Rice with moambe",
@@ -1031,7 +1312,52 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "cassava leaves",
       "palm oil"
     ],
-    "body": "Saka-madesu joins two everyday pillars: saka (pondu / cassava leaves) and madesu (beans). Some versions add smoked fish; others stay plant-based. See also separate pondu and madesu pages."
+    "body": "Saka-madesu joins two everyday pillars: saka (pondu / cassava leaves) and madesu (beans). Some versions add smoked fish; others stay plant-based. See also separate pondu and madesu pages.",
+    variants: [
+      {
+        id: "poisson-fume",
+        title: "With smoked fish",
+        description: "Leaves, beans and smoked fish — a richer western version.",
+        imageAlt: "Stew of cassava leaves and beans",
+        ingredients: [
+          "400 g dried beans, soaked overnight",
+          "800 g pounded cassava leaves, fresh or frozen",
+          "200 g smoked fish",
+          "150 ml red palm oil",
+          "2 onions, chopped",
+          "2 garlic cloves, crushed",
+          "1 small chili",
+          "Salt",
+          "Water"
+        ],
+        steps: [
+          "Cook beans and leaves as in the main recipe until mid-cooked.",
+          "Soak the smoked fish 20 minutes, break it up and add with oil, onions and garlic.",
+          "Simmer another 30 minutes until the leaves are tender and the fish is integrated.",
+          "Salt lightly. Serve with fufu or chikwangue."
+        ]
+      },
+      {
+        id: "vegetal",
+        title: "Fully plant-based",
+        description: "No fish — pure leaves and beans for meat-free days.",
+        ingredients: [
+          "400 g dried beans, soaked overnight",
+          "800 g pounded cassava leaves, fresh or frozen",
+          "150 ml red palm oil",
+          "2 onions, chopped",
+          "2 garlic cloves, crushed",
+          "1 small chili",
+          "Salt",
+          "Water"
+        ],
+        steps: [
+          "Follow the main recipe as written (already without fish).",
+          "Cook the leaves thoroughly — no raw bitterness.",
+          "Salt at the end and serve with fufu or chikwangue."
+        ]
+      }
+    ]
   },
   "salade-kisangani": {
     "title": "Cabbage-carrot salad",
@@ -1563,6 +1889,51 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     ],
     tags: ["sombe", "cassava leaves", "Katanga", "Kivu", "palm oil"],
     body: "Sombe is the eastern name (Katanga, Kivu) for simmered cassava leaves—the same gesture as pondu / saka-saka in Kinshasa and the West. Oil, cooking time and smoked fish vary by household. In Lubumbashi it often sits beside bukari.",
+    variants: [
+      {
+        id: "vegetarien",
+        title: "Vegetarian version",
+        description: "Leaves alone, no fish or meat — common on lean days.",
+        imageAlt: "Plate of sombe, cooked cassava leaves",
+        ingredients: [
+          "2 kg cassava leaves, fresh or frozen, finely chopped",
+          "200 ml red palm oil",
+          "2 onions, chopped",
+          "3 garlic cloves, crushed",
+          "1 vegetable stock cube or salt",
+          "Pili-pili",
+          "Water"
+        ],
+        steps: [
+          "Wash the leaves, blanch briefly if needed, then chop finely.",
+          "Sweat onions and garlic in palm oil.",
+          "Add the leaves, coat with oil, add a little water.",
+          "Cover and simmer 1 h 15 on low heat, stirring, until creamy.",
+          "Season and serve with bukari or fufu."
+        ]
+      },
+      {
+        id: "viande",
+        title: "With meat",
+        description: "Sombe enriched with simmered meat — festive Katanga tables.",
+        ingredients: [
+          "2 kg cassava leaves, fresh or frozen, finely chopped",
+          "200 ml red palm oil",
+          "2 onions, chopped",
+          "3 garlic cloves, crushed",
+          "400 g beef in small pieces",
+          "1 stock cube",
+          "Salt and pili-pili",
+          "Water"
+        ],
+        steps: [
+          "Brown the meat, remove it. Sweat onions and garlic in the oil.",
+          "Add the leaves and a splash of water; simmer 45 minutes.",
+          "Return the meat and cook another 45 minutes until tender.",
+          "Season and serve with bukari."
+        ]
+      }
+    ]
   },
   "soso-ya-kotumba": {
     title: "Soso ya kotumba",
@@ -1715,7 +2086,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Loso na madesu recipe: rice and beans cooked together with onion, tomato and a little palm oil — an everyday Kinshasa plate.",
     region: "Kinshasa",
-    imageAlt: "Plate of rice and beans",
+    imageAlt: "White rice with stewed red beans",
     prepTime: "20 min + 8 h soaking",
     cookTime: "1 h 15",
     ingredients: [
@@ -1965,6 +2336,164 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     ],
     tags: ["taro", "malanga", "tuber", "Cuvette", "tomato sauce"],
     body: "Taro (often called malanga in markets) is cooked after a blanch to soften the tuber. In the Cuvette and forest it sits beside liboke and fish sauces.",
+  },
+  "jus-mangue": {
+    title: "Mango juice",
+    seoTitle: "Mango juice recipe",
+    description:
+      "Mango juice recipe: ripe mangoes blended with water and a little sugar — seasonal Kinshasa drink, cousin to passion fruit juice and bissap.",
+    region: "Kinshasa & Western DRC",
+    imageAlt: "Glass of mango juice",
+    prepTime: "15 min",
+    cookTime: "0 min",
+    ingredients: [
+      "4 very ripe mangoes",
+      "600 ml cold water",
+      "40 to 60 g sugar, depending on the fruit",
+      "Juice of ½ lemon, optional",
+    ],
+    steps: [
+      "Wash the mangoes, peel and remove the stone. Cut the flesh into pieces.",
+      "Blend with the water until smooth.",
+      "Taste: sweeten if needed, add lemon to brighten.",
+      "Strain for a smoother juice, or keep the pulp if you prefer.",
+      "Serve very cold, with ice.",
+    ],
+    tags: ["mango", "juice", "fruit", "drink", "seasonal"],
+    body: "Mango juice follows the mango season: when fruit is fully ripe, little sugar is needed. Out of season, frozen pulp remains an honest base.",
+  },
+  "jus-ananas": {
+    title: "Pineapple juice",
+    seoTitle: "Pineapple juice recipe",
+    description:
+      "Pineapple juice recipe: fresh pineapple blended with water — tart and fragrant, a market and home classic in Kinshasa.",
+    region: "Kinshasa & Western DRC",
+    imageAlt: "Glass of fresh pineapple juice",
+    prepTime: "20 min",
+    cookTime: "0 min",
+    ingredients: [
+      "1 ripe pineapple (about 1 kg)",
+      "500 ml cold water",
+      "30 to 50 g sugar, optional",
+      "Juice of ½ lemon, optional",
+    ],
+    steps: [
+      "Peel the pineapple, remove the fibrous core if needed, cut the flesh into cubes.",
+      "Blend with the water until fluid.",
+      "Strain through a fine sieve for a clearer juice, or keep the pulp.",
+      "Sweeten and add lemon to taste.",
+      "Serve iced.",
+    ],
+    tags: ["pineapple", "juice", "fruit", "drink"],
+    body: "Market pineapple makes a more fragrant juice than cartons. Very ripe fruit often needs no sugar.",
+  },
+  "jus-safou": {
+    title: "Safou juice",
+    seoTitle: "Safou (nsafu) juice recipe",
+    description:
+      "Safou juice recipe: nsafu pulp blended with water and a little sugar — seasonal Western DRC drink, distinct from grilled nsafu.",
+    region: "Western DRC",
+    imageAlt: "Nsafu (safou) ready to prepare",
+    prepTime: "20 min",
+    cookTime: "5 min",
+    ingredients: [
+      "10 ripe nsafu (safou)",
+      "700 ml water",
+      "50 to 80 g sugar",
+      "A pinch of salt, optional",
+    ],
+    steps: [
+      "Rinse the nsafu. Blanch 3–5 minutes in just-boiled water to soften (or grill briefly).",
+      "Open, remove the stone and collect all the pulp.",
+      "Blend the pulp with water into a creamy drink.",
+      "Sweeten, add a pinch of salt if desired. Taste and adjust.",
+      "Serve warm or cold; stir before drinking (the pulp settles).",
+    ],
+    tags: ["safou", "nsafu", "juice", "seasonal", "drink"],
+    body: "Safou juice extends the fruit’s season: the same buttery flesh as grilled nsafu, as a drink. The texture stays a little thick — that is intentional.",
+  },
+  "pain-mayonnaise": {
+    title: "Pain mayonnaise",
+    seoTitle: "Pain mayonnaise recipe — Kinshasa street sandwich",
+    description:
+      "Pain mayonnaise recipe: street baguette filled with mayonnaise, egg and optionally sausage or grilled meat — Kinshasa street-food snack.",
+    region: "Kinshasa",
+    imageAlt: "Street bread filled with egg, sausage and mayonnaise",
+    prepTime: "15 min",
+    cookTime: "10 min",
+    ingredients: [
+      "2 half baguettes or street rolls",
+      "4 tbsp mayonnaise",
+      "2 eggs",
+      "2 sausages or 100 g grilled meat, optional",
+      "1 small onion, sliced, optional",
+      "Chili powder or pili-pili sauce",
+      "Salt",
+    ],
+    steps: [
+      "Cook the eggs fried or as a thin omelette. Salt lightly.",
+      "If using sausages, brown them in a pan; otherwise warm the grilled meat.",
+      "Open the bread without splitting it fully. Spread mayonnaise generously.",
+      "Fill with egg, sausage or meat, and onion if using.",
+      "Dust with chili. Serve at once, still warm.",
+    ],
+    tags: ["pain mayonnaise", "sandwich", "street food", "Kinshasa", "mayonnaise"],
+    body: "Pain mayonnaise is Kinshasa street fuel: not a sit-down plate, but a quick sandwich between errands. Mayo binds everything; chili does the rest.",
+  },
+  "beignets-manioc": {
+    title: "Cassava fritters",
+    seoTitle: "Cassava fritters recipe",
+    description:
+      "Cassava fritters recipe: grated sweet cassava bound into a batter then fried — a snack distinct from mikate (leavened dough) and banana fritters.",
+    region: "Across the DRC",
+    imageAlt: "Golden fried cassava fritters",
+    prepTime: "25 min",
+    cookTime: "20 min",
+    ingredients: [
+      "600 g sweet cassava, peeled and finely grated",
+      "80 g flour",
+      "40 g sugar",
+      "1 egg",
+      "1 tsp baking powder",
+      "A pinch of salt",
+      "Frying oil",
+    ],
+    steps: [
+      "Squeeze the grated cassava in a cloth to remove excess water.",
+      "Mix cassava, flour, sugar, salt, baking powder and egg into a batter that holds.",
+      "Heat the oil over medium heat. Shape small patties or spoonfuls.",
+      "Fry 3–4 minutes per side until crisp and golden.",
+      "Drain on paper. Serve warm, plain or with peanut paste.",
+    ],
+    tags: ["cassava", "fritter", "snack", "frying"],
+    body: "Cassava fritters keep the tuber’s taste: firmer than mikate, less sweet than banana fritters. Use only sweet cassava meant for eating.",
+  },
+  "bouillie-mais": {
+    title: "Maize porridge",
+    seoTitle: "Maize porridge recipe",
+    description:
+      "Maize porridge recipe: fine maize flour cooked in water until creamy, then sweetened — breakfast and snack, distinct from peanut porridge.",
+    region: "Across the DRC",
+    imageAlt: "Bowl of maize porridge",
+    prepTime: "5 min",
+    cookTime: "20 min",
+    ingredients: [
+      "150 g fine maize flour",
+      "1 l water",
+      "60 to 80 g sugar",
+      "A pinch of salt",
+      "1 tsp vanilla or lemon zest, optional",
+      "Milk, to serve, optional",
+    ],
+    steps: [
+      "Loosen the flour in 250 ml cold water until lump-free.",
+      "Bring the rest of the water to a boil with the salt.",
+      "Pour in the flour mixture in a thin stream while stirring hard.",
+      "Cook 12–15 minutes over medium heat, stirring constantly, until creamy.",
+      "Stir in the sugar and flavouring. Serve warm, plain or with a splash of milk.",
+    ],
+    tags: ["maize", "porridge", "breakfast", "snack"],
+    body: "Maize porridge is the simple snack without peanut — lighter than peanut porridge. Thickness is set with water; some households like it almost firm.",
   },
 };
 

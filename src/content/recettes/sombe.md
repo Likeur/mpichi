@@ -45,6 +45,45 @@ steps:
   - Couvrir et mijoter à feu doux 1 h à 1 h 15 en remuant souvent, jusqu’à texture crémeuse.
   - Incorporer le poisson fumé ou la viande, le cube, le sel et le piment. Cuire encore 15 minutes.
   - Servir avec bukari, fufu ou riz.
+variants:
+  - id: vegetarien
+    title: Version végétarienne
+    description: Feuilles seules, sans poisson ni viande — courant pour les jours maigres.
+    image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Saka%20saka.jpg?width=800
+    imageAlt: Plat de sombe, feuilles de manioc mijotées
+    imageCredit: Angéla Bérénice GOUNOUMOUNDJOU — Wikimedia Commons, CC BY-SA 4.0
+    imageCreditUrl: https://commons.wikimedia.org/wiki/File:Saka_saka.jpg
+    ingredients:
+      - 2 kg de feuilles de manioc fraîches ou congelées, finement hachées
+      - 200 ml d’huile de palme rouge
+      - 2 oignons, hachés
+      - 3 gousses d’ail, écrasées
+      - 1 cube de bouillon végétal ou sel
+      - Pili-pili
+      - Eau
+    steps:
+      - Laver les feuilles, les ébouillanter brièvement si besoin, puis les hacher finement.
+      - Faire revenir oignons et ail dans l’huile de palme.
+      - Ajouter les feuilles, les enrober d’huile, mouiller d’un peu d’eau.
+      - Couvrir et mijoter 1 h 15 à feu doux en remuant, jusqu’à texture crémeuse.
+      - Assaisonner et servir avec bukari ou fufu.
+  - id: viande
+    title: À la viande
+    description: Sombe enrichi de viande mijotée — tablées de fête au Katanga.
+    ingredients:
+      - 2 kg de feuilles de manioc fraîches ou congelées, finement hachées
+      - 200 ml d’huile de palme rouge
+      - 2 oignons, hachés
+      - 3 gousses d’ail, écrasées
+      - 400 g de bœuf en petits morceaux
+      - 1 cube de bouillon
+      - Sel et pili-pili
+      - Eau
+    steps:
+      - Faire dorer la viande, la retirer. Faire revenir oignons et ail dans l’huile.
+      - Ajouter les feuilles et un fond d’eau ; mijoter 45 minutes.
+      - Remettre la viande, poursuivre 45 minutes jusqu’à tendreté.
+      - Assaisonner et servir avec bukari.
 ---
 
 Le **sombe** désigne, surtout à l’Est (Katanga, Kivu), les feuilles de manioc mijotées — le même geste que le [pondu](/recettes/pondu/) / saka-saka à Kinshasa et à l’Ouest, sous un autre nom. Les proportions d’huile, la longueur de cuisson et l’ajout de poisson fumé varient d’un foyer à l’autre.

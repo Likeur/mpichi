@@ -44,6 +44,43 @@ steps:
   - Faire fondre l’oignon dans l’huile, ajouter les tomates et cuire 5 minutes.
   - Ajouter les feuilles et l’eau. Couvrir et laisser mijoter 15 minutes, le temps qu’elles s’assouplissent.
   - Déposer le poisson et le piment, puis cuire encore 15 minutes à feu doux. Saler avec retenue et servir avec du fufu ou du riz.
+variants:
+  - id: vegetal
+    title: Sans poisson
+    description: Ngai-ngai purement végétal — l’acidité des feuilles reste au centre.
+    image: /images/recettes/ngai-ngai.jpg
+    imageAlt: Ngai-ngai mijoté servi dans un plat
+    imageCredit: Rita’s Notebook
+    imageCreditUrl: https://ritasnotebook.com/2019/01/14/ngai-ngai-na-basolo-or-roselle-leaves-with-eggplant-stew/
+    ingredients:
+      - 500 g de feuilles de ngai-ngai
+      - 2 tomates, concassées
+      - 1 oignon, émincé
+      - 3 c. à soupe d’huile de palme ou d’huile neutre
+      - 1 petit piment, facultatif
+      - Sel
+      - 300 ml d’eau
+    steps:
+      - Trier, laver et émincer les feuilles.
+      - Faire fondre l’oignon dans l’huile, ajouter les tomates, cuire 5 minutes.
+      - Ajouter les feuilles et l’eau. Couvrir et mijoter 25 à 30 minutes.
+      - Pimenter, saler et servir avec fufu ou riz.
+  - id: huile-neutre
+    title: À l’huile neutre
+    description: Sans huile de palme — goût plus clair, acidité plus nette.
+    ingredients:
+      - 500 g de feuilles de ngai-ngai
+      - 250 g de poisson fumé
+      - 2 tomates, concassées
+      - 1 oignon, émincé
+      - 3 c. à soupe d’huile de tournesol ou d’arachide
+      - 1 petit piment, facultatif
+      - Sel
+      - 300 ml d’eau
+    steps:
+      - Suivre la recette principale en remplaçant l’huile de palme par l’huile neutre.
+      - "Ne pas trop colorer l’oignon : garder une sauce claire."
+      - Saler en fin de cuisson. Servir avec fufu ou riz.
 ---
 
 Le **ngai-ngai** (oseille de Guinée / roselle) se reconnaît à son acidité franche. Tomate, poisson fumé et matière grasse se dosent différemment selon les cuisines.

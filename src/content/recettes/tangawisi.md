@@ -21,8 +21,8 @@ tags:
   - boisson
   - Kinshasa
 relatedRecipes:
-  - jus-bissap
-  - jus-passion
+  - jus-ananas
+  - jus-mangue
   - mikate
 video:
   youtube: https://www.youtube.com/watch?v=Pl2Sbd2CoV4
@@ -43,4 +43,4 @@ steps:
   - Sucrer, ajouter le citron (et le piment si souhaité). Réfrigérer. Servir bien frais.
 ---
 
-Le **tangawisi** (jus de gingembre) se boit glacé, souvent après un repas épicé. Dosage de gingembre et de sucre : très libre selon les maisons. Autres boissons : [jus de bissap](/recettes/jus-bissap/), [jus de passion](/recettes/jus-passion/). Avec des [mikate](/recettes/mikate/) au goûter.
+Le **tangawisi** (jus de gingembre) se boit glacé, souvent après un repas épicé. Dosage de gingembre et de sucre : très libre selon les maisons. Autres boissons : [jus d’ananas](/recettes/jus-ananas/), [jus de mangue](/recettes/jus-mangue/). Avec des [mikate](/recettes/mikate/) au goûter.

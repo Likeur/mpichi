@@ -17,6 +17,10 @@ tags:
   - nsafu
   - safou
   - grillé
+relatedRecipes:
+  - jus-safou
+  - plantains-vapeur
+  - makemba
 ingredients:
   - 8 nsafu mûrs
   - Sel fin
@@ -28,4 +32,4 @@ steps:
   - Ouvrir, retirer le noyau, saler très légèrement et déguster chaud.
 ---
 
-Le nsafu, aussi appelé safou, possède une chair riche et beurrée. Il peut aussi être plongé quelques minutes dans de l’eau tout juste bouillie.
+Le nsafu, aussi appelé safou, possède une chair riche et beurrée. Il peut aussi être plongé quelques minutes dans de l’eau tout juste bouillie. En boisson de saison : [jus de safou](/recettes/jus-safou/).

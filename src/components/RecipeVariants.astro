@@ -1,0 +1,119 @@
+---
+import type { Locale } from '../i18n/config';
+import type { LocalizedRecipeVariant } from '../i18n/utils';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  variants: LocalizedRecipeVariant[];
+  lang?: Locale;
+}
+
+const { variants, lang = 'fr' } = Astro.props;
+const t = useTranslations(lang);
+---
+
+{
+  variants.length > 0 && (
+    <section class="mt-20 pt-12 border-t border-earth-900/12" data-recipe-variants data-reveal-static>
+      <div class="mb-8 max-w-xl">
+        <h2 class="font-display text-3xl font-light text-earth-900">{t('recipe.variants')}</h2>
+        <p class="mt-3 text-sm leading-relaxed text-earth-900/55">{t('recipe.variantsIntro')}</p>
+      </div>
+
+      <div class="max-w-3xl divide-y divide-earth-900/12 border-y border-earth-900/12">
+        {variants.map((variant) => (
+          <details name="recipe-variants" class="group">
+            <summary class="flex cursor-pointer list-none items-center gap-4 py-5 outline-none transition-colors marker:content-none [&::-webkit-details-marker]:hidden focus-visible:bg-earth-900/[0.03]">
+              {variant.image ? (
+                <span class="relative block size-[4.5rem] shrink-0 overflow-hidden bg-earth-900/5 sm:size-20">
+                  <img
+                    src={variant.image}
+                    alt={variant.imageAlt ?? ''}
+                    width="160"
+                    height="160"
+                    class="h-full w-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </span>
+              ) : null}
+              <span class="min-w-0 flex-1">
+                <span class="block font-display text-xl font-light text-earth-900 sm:text-2xl">
+                  {variant.title}
+                </span>
+                {variant.description ? (
+                  <span class="mt-1 block text-sm leading-relaxed text-earth-900/55">
+                    {variant.description}
+                  </span>
+                ) : null}
+              </span>
+              <span
+                class="shrink-0 text-earth-900/35 transition duration-300 group-open:rotate-45"
+                aria-hidden="true"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 5v14M5 12h14"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+            </summary>
+
+            <div class="grid gap-10 pb-8 pt-1 sm:grid-cols-12 sm:gap-8">
+              <div class="sm:col-span-5">
+                <h3 class="text-[9px] uppercase tracking-[.16em] text-earth-900/40">
+                  {t('recipe.ingredients')}
+                </h3>
+                <ul class="mt-4 list-none space-y-2.5 p-0 text-sm text-earth-900/75">
+                  {variant.ingredients.map((item) => (
+                    <li class="flex gap-3 border-b border-earth-900/8 pb-2.5">
+                      <span class="shrink-0 text-mpichi-red" aria-hidden="true">
+                        ·
+                      </span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div class="sm:col-span-7">
+                <h3 class="text-[9px] uppercase tracking-[.16em] text-earth-900/40">
+                  {t('recipe.steps')}
+                </h3>
+                <ol class="mt-4 list-none space-y-4 p-0">
+                  {variant.steps.map((step, i) => (
+                    <li class="flex gap-3 text-sm leading-relaxed text-earth-900/75">
+                      <span class="shrink-0 font-display text-base tabular-nums text-mpichi-red/80">
+                        {String(i + 1).padStart(2, '0')}
+                      </span>
+                      <span class="pt-0.5">{step}</span>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+              {variant.image && variant.imageCredit ? (
+                <p class="sm:col-span-12 text-[9px] uppercase tracking-[.14em] text-earth-900/35">
+                  {t('recipe.photo')} ·{' '}
+                  {variant.imageCreditUrl ? (
+                    <a
+                      href={variant.imageCreditUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      class="underline decoration-earth-900/20 underline-offset-4 transition-colors hover:text-earth-900/55"
+                    >
+                      {variant.imageCredit}
+                    </a>
+                  ) : (
+                    variant.imageCredit
+                  )}
+                </p>
+              ) : null}
+            </div>
+          </details>
+        ))}
+      </div>
+    </section>
+  )
+}

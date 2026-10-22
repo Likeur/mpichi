@@ -37,6 +37,28 @@ const recettes = defineCollection({
         creditUrl: z.string().url().optional(),
       })
       .optional(),
+    /** Autres façons de préparer le même plat (affichées en accordéon). */
+    variants: z
+      .array(
+        z.object({
+          id: z.string(),
+          title: z.string(),
+          description: z.string().optional(),
+          image: z
+            .string()
+            .refine(
+              (value) => value.startsWith('/') || z.string().url().safeParse(value).success,
+              'L’image doit être une URL absolue ou un chemin public commençant par /',
+            )
+            .optional(),
+          imageAlt: z.string().optional(),
+          imageCredit: z.string().optional(),
+          imageCreditUrl: z.string().url().optional(),
+          ingredients: z.array(z.string()),
+          steps: z.array(z.string()),
+        }),
+      )
+      .default([]),
   }),
 });
 

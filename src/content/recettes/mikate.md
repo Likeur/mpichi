@@ -22,8 +22,8 @@ tags:
   - Kinshasa
 relatedRecipes:
   - beignets-banane
+  - beignets-manioc
   - tangawisi
-  - kamundele
 video:
   youtube: https://www.youtube.com/watch?v=tdNfm_lZ2aM
   title: Comment faire les mikate congolais
@@ -49,4 +49,4 @@ steps:
 
 Les **mikate** sont les beignets congolais de rue et de maison : à Kinshasa on les croise au petit-déjeuner ou au goûter, souvent avec de la pâte d’arachide. La pâte doit lever suffisamment pour rester légère après friture.
 
-À boire à côté : [tangawisi](/recettes/tangawisi/) (jus de gingembre). Autre douceur de rue : [beignets de banane](/recettes/beignets-banane/).
+À boire à côté : [tangawisi](/recettes/tangawisi/) (jus de gingembre). Autres douceurs : [beignets de banane](/recettes/beignets-banane/), [beignets de manioc](/recettes/beignets-manioc/).

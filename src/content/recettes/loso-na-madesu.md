@@ -3,11 +3,11 @@ title: Loso na madesu
 seoTitle: Recette loso na madesu — riz aux haricots
 description: "Recette de loso na madesu : riz et haricots mijotés ensemble avec oignon, tomate et un peu d’huile de palme — assiette du quotidien à Kinshasa."
 region: Kinshasa
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Rice%20and%20beans.jpg?width=1600
-imageAlt: Assiette de riz et haricots
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Red%20Beans%20and%20Rice.jpg?width=1600
+imageAlt: Riz blanc et haricots rouges en sauce
 imagePosition: center
-imageCredit: Mohammad Ali Huzam — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Rice_and_beans.jpg
+imageCredit: Arnold Gatilao — Wikimedia Commons, CC BY 2.0
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Red_Beans_and_Rice.jpg
 category: plat
 prepTime: 20 min + 8 h de trempage
 cookTime: 1 h 15
