@@ -96,7 +96,14 @@ const catalogJsonLd = {
   imageAlt={ogRecipe?.imageAlt}
   jsonLd={catalogJsonLd}
 >
-  <section class="pt-28 pb-12 bg-earth-dark min-h-[50svh] flex items-end border-b border-white/10">
+  <div
+    data-recipe-search
+    data-count-singular={countSingular}
+    data-count-plural={countPlural}
+    data-page-size="9"
+    data-page-label={t('recipes.page')}
+  >
+  <section class="pt-28 pb-10 bg-earth-dark border-b border-white/10">
     <div class="px-grid-margin max-w-[1200px] mx-auto w-full">
       <div class="grid lg:grid-cols-12 gap-8 items-end" data-stagger>
         <div class="lg:col-span-8">
@@ -106,92 +113,84 @@ const catalogJsonLd = {
           {t('recipes.intro')}
         </p>
       </div>
-      <p class="mt-10 text-[9px] uppercase tracking-[.16em] text-creme-200/35">
-        {countLabel}
-      </p>
-    </div>
-  </section>
 
-  <section class="bg-creme-100 py-12 sm:py-16">
-    <div
-      class="px-grid-margin max-w-[1200px] mx-auto"
-      data-recipe-search
-      data-count-singular={countSingular}
-      data-count-plural={countPlural}
-      data-page-size="9"
-      data-page-label={t('recipes.page')}
-    >
-      <div class="mb-5 grid md:grid-cols-2 gap-8 md:items-end" data-stagger>
-        <h2 class="font-display text-3xl sm:text-4xl font-light text-earth-900">{t('recipes.catalog')}</h2>
-        <label class="relative block md:max-w-md md:ml-auto w-full">
-          <span class="sr-only">{t('recipes.search')}</span>
-          <svg
-            class="absolute left-0 top-1/2 -translate-y-1/2 text-earth-900/40"
-            width="17"
-            height="17"
-            viewBox="0 0 24 24"
-            fill="none"
-            aria-hidden="true"
-          >
-            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.5"></circle>
-            <path d="m16 16 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-          </svg>
-          <input
-            type="search"
-            data-search-input
-            placeholder={t('recipes.searchPlaceholder')}
-            autocomplete="off"
-            class="w-full border-0 border-b border-earth-900/25 bg-transparent py-3 pl-7 pr-9 text-sm text-earth-900 placeholder:text-earth-900/40 outline-none transition-colors focus:border-earth-900"
-          />
-          <button
-            type="button"
-            data-search-clear
-            class="absolute right-0 top-1/2 -translate-y-1/2 hidden size-8 items-center justify-center text-earth-900/45 hover:text-earth-900"
-            aria-label={t('recipes.clear')}
-          >
-            ×
-          </button>
-        </label>
-      </div>
+      <label class="relative mt-10 block max-w-xl" data-reveal>
+        <span class="sr-only">{t('recipes.search')}</span>
+        <svg
+          class="absolute left-0 top-1/2 -translate-y-1/2 text-creme-100/45"
+          width="17"
+          height="17"
+          viewBox="0 0 24 24"
+          fill="none"
+          aria-hidden="true"
+        >
+          <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.5"></circle>
+          <path d="m16 16 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg>
+        <input
+          type="search"
+          data-search-input
+          placeholder={t('recipes.searchPlaceholder')}
+          autocomplete="off"
+          class="w-full border-0 border-b border-white/25 bg-transparent py-3 pl-7 pr-9 text-sm text-creme-100 placeholder:text-creme-100/40 outline-none transition-colors focus:border-white/60"
+        />
+        <button
+          type="button"
+          data-search-clear
+          class="absolute right-0 top-1/2 -translate-y-1/2 hidden size-8 items-center justify-center text-creme-100/45 hover:text-creme-100"
+          aria-label={t('recipes.clear')}
+        >
+          ×
+        </button>
+      </label>
 
-      <div class="mb-8 space-y-5 border-t border-earth-900/12 pt-5" data-recipe-filters>
+      <div class="mt-8 space-y-5" data-recipe-filters data-reveal style="--reveal-delay: 60ms">
         <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           <FilterDropdown
             name="category"
             label={t('recipes.filterCategory')}
             allLabel={t('recipes.filterAll')}
             options={categoryOptions}
+            tone="cream"
           />
           <FilterDropdown
             name="difficulty"
             label={t('recipes.filterDifficulty')}
             allLabel={t('recipes.filterAll')}
             options={difficultyOptions}
+            tone="cream"
           />
           <FilterDropdown
             name="region"
             label={t('recipes.filterRegion')}
             allLabel={t('recipes.filterAllRegions')}
             options={regionOptions}
+            tone="cream"
           />
         </div>
-        <div class="flex justify-end">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <p
+            class="text-[9px] uppercase tracking-[.16em] text-creme-200/35"
+            data-search-status
+            aria-live="polite"
+          >
+            {countLabel}
+          </p>
           <button
             type="button"
             data-filters-reset
             hidden
-            class="text-[9px] uppercase tracking-[.16em] text-earth-900/45 transition-colors hover:text-earth-900"
+            class="text-[9px] uppercase tracking-[.16em] text-creme-200/45 transition-colors hover:text-creme-100"
           >
             {t('recipes.resetFilters')}
           </button>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="mb-8">
-        <p data-search-status aria-live="polite" class="text-[9px] uppercase tracking-[.16em] text-earth-900/45">
-          {countLabel}
-        </p>
-      </div>
+  <section class="bg-creme-100 py-10 sm:py-14">
+    <div class="px-grid-margin max-w-[1200px] mx-auto">
       {
         recipes.length === 0 ? (
           <p class="text-earth-900/60">{t('recipes.empty')}</p>
@@ -244,9 +243,12 @@ const catalogJsonLd = {
       </nav>
     </div>
   </section>
+  </div>
 </BaseLayout>
 
 <script>
+  import { trackEvent } from '../../lib/analytics';
+
   function initRecipeSearch() {
     const root = document.querySelector<HTMLElement>('[data-recipe-search]');
     if (!root || root.dataset.searchReady === 'true') return;
@@ -285,9 +287,30 @@ const catalogJsonLd = {
     }
 
     let currentPage = 1;
+    let searchTrackTimer: number | undefined;
+    let lastTrackedSearch = '';
 
     const getDropdown = (name: string) =>
       dropdowns.find((dropdown) => dropdown.dataset.dropdownName === name);
+
+    const trackSearch = () => {
+      const query = input.value.trim();
+      const category = getValue('category');
+      const difficulty = getValue('difficulty');
+      const region = getValue('region');
+      if (!query && !category && !difficulty && !region) return;
+
+      const signature = [query, category, difficulty, region].join('|');
+      if (signature === lastTrackedSearch) return;
+      lastTrackedSearch = signature;
+
+      trackEvent('search_catalog', {
+        search_term: query.slice(0, 80),
+        filter_category: category,
+        filter_difficulty: difficulty,
+        filter_region: region.slice(0, 80),
+      });
+    };
 
     const getValue = (name: string) => getDropdown(name)?.dataset.dropdownValue ?? '';
 
@@ -484,6 +507,9 @@ const catalogJsonLd = {
       renderPagination(matched.length === 0 ? 0 : totalPages);
       if (matched.length === 0) pagination.hidden = true;
       syncUrl();
+
+      if (searchTrackTimer !== undefined) window.clearTimeout(searchTrackTimer);
+      searchTrackTimer = window.setTimeout(trackSearch, 700);
 
       if (options.scroll) {
         root.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });

@@ -55,9 +55,20 @@ const mobileLinks = [
           </a>
           <a
             href={localePath('/favoris', lang)}
-            class:list={['hover:text-white transition-colors', isFavorites && 'text-white']}
+            class:list={[
+              'relative inline-flex items-center gap-1.5 hover:text-white transition-colors',
+              isFavorites && 'text-white',
+            ]}
+            data-nav-favorites
+            data-favorites-label={t('nav.favorites')}
           >
             {t('nav.favorites')}
+            <span
+              data-favorites-badge
+              hidden
+              class="inline-flex min-w-4 items-center justify-center rounded-full bg-mpichi-red px-1 py-0.5 text-[8px] font-medium leading-none tracking-normal text-white tabular-nums"
+              aria-hidden="true"
+            ></span>
           </a>
           <a
             href={localePath('/proposer', lang)}
@@ -159,13 +170,24 @@ const mobileLinks = [
               <a
                 href={link.href}
                 class:list={[
-                  'block py-3 font-display text-4xl font-light tracking-tight transition-colors',
+                  'inline-flex items-center gap-3 py-3 font-display text-4xl font-light tracking-tight transition-colors',
                   link.active ? 'text-white' : 'text-creme-100/70 hover:text-white',
                 ]}
                 data-nav-link
+                {...(link.href.includes('/favoris')
+                  ? { 'data-nav-favorites': '', 'data-favorites-label': link.label }
+                  : {})}
                 aria-current={link.active ? 'page' : undefined}
               >
                 {link.label}
+                {link.href.includes('/favoris') && (
+                  <span
+                    data-favorites-badge
+                    hidden
+                    class="inline-flex min-w-5 items-center justify-center rounded-full bg-mpichi-red px-1.5 py-1 text-[10px] font-medium leading-none tracking-normal text-white tabular-nums"
+                    aria-hidden="true"
+                  ></span>
+                )}
               </a>
             </li>
           ))

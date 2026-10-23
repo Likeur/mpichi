@@ -3,6 +3,7 @@ import '../styles/global.css';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
 import FloatingNav from '../components/FloatingNav.astro';
 import FavoritesInit from '../components/FavoritesInit.astro';
+import AnalyticsInit from '../components/AnalyticsInit.astro';
 import PwaRegister from '../components/PwaRegister.astro';
 import { ClientRouter } from 'astro:transitions';
 import { pwaInfo } from 'virtual:pwa-info';
@@ -59,6 +60,8 @@ const structured = {
   '@context': 'https://schema.org',
   '@graph': [...siteGraphJsonLd(lang, origin)['@graph'], ...pageNodes],
 };
+const googleSiteVerification =
+  (import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION as string | undefined)?.trim() ?? '';
 ---
 
 <!doctype html>
@@ -74,16 +77,30 @@ const structured = {
       gtag('js', new Date());
       gtag('config', 'G-WLFG0GGT90', { send_page_view: false });
 
-      document.addEventListener('astro:page-load', () => {
-        gtag('event', 'page_view', {
-          page_title: document.title,
-          page_location: window.location.href,
-          page_path: window.location.pathname + window.location.search,
+      (function () {
+        var allowed = { 'mpichi.likeur.xyz': 1, localhost: 1, '127.0.0.1': 1 };
+        var bot =
+          /bot|crawler|spider|slurp|headless|lighthouse|pagespeed|pingdom|preview|facebookexternalhit|whatsapp|telegram/i;
+        function canTrack() {
+          return Boolean(allowed[location.hostname]) && !bot.test(navigator.userAgent || '');
+        }
+        document.addEventListener('astro:page-load', function () {
+          if (!canTrack()) return;
+          gtag('event', 'page_view', {
+            page_title: document.title,
+            page_location: window.location.href,
+            page_path: window.location.pathname + window.location.search,
+          });
         });
-      });
+      })();
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {
+      googleSiteVerification && (
+        <meta name="google-site-verification" content={googleSiteVerification} />
+      )
+    }
     <meta name="description" content={description} />
     <meta name="author" content={SITE_AUTHOR} />
     <meta name="application-name" content={SITE_NAME} />
@@ -537,6 +554,7 @@ const structured = {
       document.addEventListener('astro:page-load', initMotion);
     </script>
     <FavoritesInit lang={lang} />
+    <AnalyticsInit />
     <PwaRegister lang={lang} />
   </body>
 </html>

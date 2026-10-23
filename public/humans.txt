@@ -10,3 +10,15 @@ Purpose: Catalogue of Congolese recipes (RDC) — dishes, gestures, regions, tra
 Languages: French (fr-CD), English
 Standards: HTML5, Schema.org (Organization, WebSite, Recipe, FAQPage, CollectionPage), llms.txt
 Softwares: Astro, Tailwind CSS
+
+/* GROWTH — UTM templates (always tag posts; avoid opaque Direct traffic) */
+LinkedIn weekly:
+  https://mpichi.likeur.xyz/recettes/SLUG/?utm_source=linkedin&utm_medium=social&utm_campaign=weekly&utm_content=SLUG
+Katanga / Lubumbashi pack:
+  https://mpichi.likeur.xyz/recettes/?region=Grand%20Katanga&utm_source=linkedin&utm_medium=social&utm_campaign=katanga
+WhatsApp Lubumbashi:
+  https://mpichi.likeur.xyz/recettes/?region=Grand%20Katanga&utm_source=whatsapp&utm_medium=social&utm_campaign=lubumbashi
+
+/* ANALYTICS — mark as GA4 key events */
+favorite_add, favorite_remove, propose_submit, recipe_share, search_catalog
+Also filter hostname ≠ mpichi.likeur.xyz and known bot traffic in GA4 Admin.

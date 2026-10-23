@@ -12,6 +12,10 @@ const lang = Astro.props.lang ?? 'fr';
 const { recipe } = Astro.props;
 const localized = localizeRecipe(recipe, lang);
 const href = localePath(`/recettes/${localized.slug}`, lang);
+const imageAt = (width: number) =>
+  localized.image.replace(/([?&]width=)\d+/, `$1${width}`);
+const cardImage = imageAt(640);
+const cardSrcSet = `${imageAt(400)} 400w, ${imageAt(640)} 640w, ${imageAt(800)} 800w`;
 ---
 
 <a
@@ -20,10 +24,14 @@ const href = localePath(`/recettes/${localized.slug}`, lang);
 >
   <div class="relative aspect-[4/5] overflow-hidden bg-aged-oak">
     <img
-      src={localized.image}
+      src={cardImage}
+      srcset={cardSrcSet}
       alt={localized.imageAlt}
       loading="lazy"
       decoding="async"
+      width="640"
+      height="800"
+      sizes="(min-width: 1024px) 340px, (min-width: 640px) 310px, 72vw"
       data-recipe-image
       class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.035]"
       style={`object-position: ${localized.imagePosition}`}
