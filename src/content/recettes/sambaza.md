@@ -22,8 +22,8 @@ tags:
   - Est
 relatedRecipes:
   - kapenta-tomates
+  - ndagala-tomates
   - bukari-katanga
-  - matembele-katanga
 video:
   youtube: https://www.youtube.com/watch?v=SbBwQSLKl8c
   title: Petits poissons de lac aux tomates (style voisin)

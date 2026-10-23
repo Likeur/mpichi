@@ -3,11 +3,11 @@ title: Jus de safou
 seoTitle: Recette jus de safou (nsafu)
 description: "Recette de jus de safou : pulpe de nsafu mixée avec de l’eau et un peu de sucre — boisson de saison à l’Ouest de la RDC, distincte des nsafu grillés."
 region: Ouest de la RDC
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Dacryodes%20edulis%20-%20Nsafu%20-%20fruit%20preparation.jpg?width=1600
-imageAlt: Nsafu (safou) prêts à être préparés
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Cocktail%20of%20passion%20fruit%20juice%20and%20watermelon%20juice%20in%20a%20glass.jpg?width=1600
+imageAlt: Verre de jus de fruits à la pulpe
 imagePosition: center
-imageCredit: T.K. Naliaka — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Dacryodes_edulis_-_Nsafu_-_fruit_preparation.jpg
+imageCredit: B722N — Wikimedia Commons, CC BY-SA 4.0
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Cocktail_of_passion_fruit_juice_and_watermelon_juice_in_a_glass.jpg
 category: boisson
 prepTime: 20 min
 cookTime: 5 min

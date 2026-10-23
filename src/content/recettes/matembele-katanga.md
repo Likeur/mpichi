@@ -21,6 +21,7 @@ tags:
   - Grand Katanga
   - Lubumbashi
 relatedRecipes:
+  - mbala
   - bukari-katanga
   - kapenta-tomates
   - fumbwa-arachides

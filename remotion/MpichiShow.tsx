@@ -11,8 +11,8 @@ import {SceneBilingual} from './scenes/show/SceneBilingual';
 import {SceneOutro} from './scenes/show/SceneOutro';
 import {FPS, SCENE_PAD, TRANSITION_FRAMES, colors} from './lib/theme';
 
-/** Measured Amélie VO lengths (seconds) */
-const VO = [3.31, 3.0, 4.59, 5.9, 4.42, 4.15] as const;
+/** Measured Denise (Edge fr-FR-DeniseNeural) VO lengths (seconds) */
+const VO = [4.06, 4.87, 6.94, 8.78, 7.32, 6.26] as const;
 
 const sceneLen = (sec: number, extra = 0) =>
   Math.ceil(sec * FPS) + SCENE_PAD + extra;
