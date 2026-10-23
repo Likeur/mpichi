@@ -22,6 +22,12 @@ const featured = allRecipes.filter((r) => r.data.featured);
 const railRecipes = featured.length > 0 ? featured : allRecipes;
 
 const byId = Object.fromEntries(allRecipes.map((recipe) => [recipe.id.replace(/\.md$/, ''), recipe]));
+const southSlugs = ['kapenta-tomates', 'matembele-katanga', 'bukari-katanga', 'sambaza'] as const;
+const southRecipes = southSlugs.map((slug) => byId[slug]).filter(Boolean);
+const katangaCatalogHref =
+  lang === 'en'
+    ? `${localePath('/recettes', lang)}?region=${encodeURIComponent('Greater Katanga')}`
+    : `${localePath('/recettes', lang)}?region=${encodeURIComponent('Grand Katanga')}`;
 const heroContent = [
   {
     id: 'mpichi',
@@ -154,6 +160,57 @@ const homeJsonLd = {
       >
         {railRecipes.map((recipe) => <OriginRecipeCard recipe={recipe} lang={lang} />)}
       </div>
+    </div>
+  </section>
+
+  {
+    southRecipes.length > 0 && (
+      <section class="bg-creme-100 text-earth-900 py-20 sm:py-28 border-t border-earth-900/5">
+        <div class="px-grid-margin max-w-[1200px] mx-auto">
+          <header class="grid lg:grid-cols-12 gap-6 items-end mb-12" data-stagger>
+            <div class="lg:col-span-7">
+              <h2 class="font-display text-4xl sm:text-6xl font-light tracking-tight">
+                {t('home.south.title')}
+              </h2>
+            </div>
+            <div class="lg:col-span-4 lg:col-start-9">
+              <p class="text-sm leading-6 text-earth-900/60">{t('home.south.body')}</p>
+              <a
+                href={katangaCatalogHref}
+                class="mt-5 inline-flex text-[10px] uppercase tracking-[.16em] text-earth-900/55 transition-colors hover:text-earth-900"
+              >
+                {t('home.south.cta')}&nbsp;&nbsp;↗
+              </a>
+            </div>
+          </header>
+          <ul class="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12 list-none p-0 m-0" data-stagger>
+            {southRecipes.map((recipe) => (
+              <li>
+                <EditorialRecipeCard recipe={recipe} lang={lang} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    )
+  }
+
+  <section class="bg-earth-dark py-14 sm:py-16 border-t border-white/5">
+    <div class="px-grid-margin max-w-[1200px] mx-auto flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between" data-reveal>
+      <h2 class="font-display text-3xl sm:text-4xl font-light tracking-tight text-creme-100">
+        {t('home.hubs.title')}
+      </h2>
+      <nav class="flex flex-wrap gap-x-6 gap-y-3 text-[10px] uppercase tracking-[.16em] text-creme-200/55">
+        <a href={localePath('/regions', lang)} class="transition-colors hover:text-creme-100">
+          {t('home.hubs.regions')} ↗
+        </a>
+        <a href={localePath('/categories', lang)} class="transition-colors hover:text-creme-100">
+          {t('home.hubs.categories')} ↗
+        </a>
+        <a href={localePath('/guides', lang)} class="transition-colors hover:text-creme-100">
+          {t('home.hubs.guides')} ↗
+        </a>
+      </nav>
     </div>
   </section>
 

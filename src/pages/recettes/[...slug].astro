@@ -174,11 +174,16 @@ const breadcrumbJsonLd = {
 >
   <header class="relative min-h-[70svh] flex items-end overflow-hidden">
     <img
-      src={localized.image}
+      src={localized.image.replace(/([?&]width=)\d+/, '$11200')}
+      srcset={`${localized.image.replace(/([?&]width=)\d+/, '$1720')} 720w, ${localized.image.replace(/([?&]width=)\d+/, '$11200')} 1200w, ${localized.image.replace(/([?&]width=)\d+/, '$11600')} 1600w`}
+      sizes="100vw"
       alt={localized.imageAlt}
       class="absolute inset-0 h-full w-full object-cover"
       style={`object-position: ${localized.imagePosition}`}
+      width="1200"
+      height="900"
       fetchpriority="high"
+      decoding="async"
       data-recipe-hero
     />
     <div class="absolute inset-0 pointer-events-none" data-recipe-overlay>
@@ -461,6 +466,7 @@ const breadcrumbJsonLd = {
 </BaseLayout>
 
 <script>
+  import { trackEvent } from '../../lib/analytics';
   import { scaleIngredientText, scaleServings } from '../../lib/portions';
 
   function initRecipeTools() {
@@ -515,9 +521,12 @@ const breadcrumbJsonLd = {
 
     shareButton?.addEventListener('click', async () => {
       const payload = { title: shareTitle, text: shareText, url: shareUrl };
+      let method: 'native' | 'clipboard' | 'prompt' = 'clipboard';
       try {
         if (navigator.share) {
           await navigator.share(payload);
+          method = 'native';
+          trackEvent('recipe_share', { method, share_url: shareUrl });
           return;
         }
       } catch {
@@ -526,6 +535,7 @@ const breadcrumbJsonLd = {
 
       try {
         await navigator.clipboard.writeText(shareUrl);
+        method = 'clipboard';
         if (shareLabel) {
           const previous = shareLabel.textContent;
           shareLabel.textContent = shareCopied;
@@ -534,11 +544,14 @@ const breadcrumbJsonLd = {
           }, 1600);
         }
       } catch {
+        method = 'prompt';
         window.prompt(shareCopied, shareUrl);
       }
+      trackEvent('recipe_share', { method, share_url: shareUrl });
     });
 
     printButton?.addEventListener('click', () => {
+      trackEvent('recipe_print');
       window.print();
     });
   }

@@ -110,6 +110,19 @@ export const ui = {
     'recipes.nextPage': 'Suivant',
     'recipes.exploreRegions': 'Explorer les régions',
     'recipes.exploreCategories': 'Explorer les catégories',
+    'recipes.chipKatanga': 'Grand Katanga',
+    'recipes.chipTanganyika': 'Haut-Katanga',
+    'recipes.chipKinshasa': 'Kinshasa',
+    'recipes.chipKasai': 'Grand Kasaï',
+    'recipes.favoritesResume': 'Vous avez des recettes enregistrées —',
+    'home.south.title': 'Cuisine du Sud.',
+    'home.south.body':
+      'Kapenta, matembele, bukari, sambaza — les gestes du Katanga et de Lubumbashi, là où Mpichi trouve déjà son public.',
+    'home.south.cta': 'Voir le Grand Katanga',
+    'home.hubs.title': 'Entrer par le territoire.',
+    'home.hubs.regions': 'Régions',
+    'home.hubs.categories': 'Catégories',
+    'home.hubs.guides': 'Guides',
     'regions.title': 'Régions',
     'regions.hero': 'Les régions.',
     'regions.intro':
@@ -277,7 +290,7 @@ export const ui = {
       'Les polices sont chargées depuis Google Fonts et certaines photographies depuis Wikimedia Commons. Les propositions de recettes passent par Formspree. Lors de ces chargements ou envois, ces services peuvent recevoir des informations techniques (adresse IP, navigateur, heure de la requête) conformément à leurs propres politiques.',
     'privacy.cookies.title': 'Cookies et mesure d’audience',
     'privacy.cookies.body':
-      'Mpichi utilise Google Analytics (G-WLFG0GGT90) pour mesurer l’audience de façon agrégée. Aucun cookie publicitaire n’est déposé. Vous pouvez limiter la mesure via les réglages de votre navigateur ou des extensions de protection de la vie privée.',
+      'Mpichi utilise Google Analytics (G-WLFG0GGT90) pour mesurer l’audience de façon agrégée (pages vues, favoris, recherches catalogue, propositions, partages). Aucun cookie publicitaire n’est déposé. Vous pouvez limiter la mesure via les réglages de votre navigateur ou des extensions de protection de la vie privée.',
     'privacy.contact.title': 'Vos questions',
     'privacy.contact.body':
       'Pour toute question relative à la confidentialité, contactez l’éditeur depuis',
@@ -399,6 +412,19 @@ export const ui = {
     'recipes.nextPage': 'Next',
     'recipes.exploreRegions': 'Browse regions',
     'recipes.exploreCategories': 'Browse categories',
+    'recipes.chipKatanga': 'Greater Katanga',
+    'recipes.chipTanganyika': 'Haut-Katanga',
+    'recipes.chipKinshasa': 'Kinshasa',
+    'recipes.chipKasai': 'Greater Kasai',
+    'recipes.favoritesResume': 'You have saved recipes —',
+    'home.south.title': 'Southern cuisine.',
+    'home.south.body':
+      'Kapenta, matembele, bukari, sambaza — Katanga and Lubumbashi gestures, where Mpichi already finds its audience.',
+    'home.south.cta': 'See Greater Katanga',
+    'home.hubs.title': 'Enter by territory.',
+    'home.hubs.regions': 'Regions',
+    'home.hubs.categories': 'Categories',
+    'home.hubs.guides': 'Guides',
     'regions.title': 'Regions',
     'regions.hero': 'The regions.',
     'regions.intro':
@@ -566,7 +592,7 @@ export const ui = {
       'Fonts are loaded from Google Fonts and some photographs from Wikimedia Commons. Recipe suggestions go through Formspree. During those loads or submissions, those services may receive technical information (IP address, browser, request time) according to their own policies.',
     'privacy.cookies.title': 'Cookies and analytics',
     'privacy.cookies.body':
-      'Mpichi uses Google Analytics (G-WLFG0GGT90) for aggregated audience measurement. No advertising cookies are set. You can limit measurement through your browser settings or privacy extensions.',
+      'Mpichi uses Google Analytics (G-WLFG0GGT90) for aggregated audience measurement (page views, favorites, catalogue search, suggestions, shares). No advertising cookies are set. You can limit measurement through your browser settings or privacy extensions.',
     'privacy.contact.title': 'Your questions',
     'privacy.contact.body':
       'For any privacy-related question, contact the publisher at',

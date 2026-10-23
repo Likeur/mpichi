@@ -28,6 +28,7 @@ const t = useTranslations(lang);
 </div>
 
 <script>
+  import { trackEvent } from '../lib/analytics';
   import {
     FAVORITES_CHANGED_EVENT,
     getFavorites,
@@ -38,6 +39,7 @@ const t = useTranslations(lang);
 
   function syncFavoriteUi() {
     const favorites = new Set(getFavorites());
+    const total = favorites.size;
 
     document.querySelectorAll<HTMLButtonElement>('[data-favorite-toggle]').forEach((button) => {
       const slug = button.dataset.favoriteSlug ?? '';
@@ -48,6 +50,18 @@ const t = useTranslations(lang);
         'aria-label',
         active ? (button.dataset.labelRemove ?? '') : (button.dataset.labelAdd ?? ''),
       );
+    });
+
+    document.querySelectorAll<HTMLElement>('[data-favorites-badge]').forEach((badge) => {
+      const show = total > 0;
+      badge.hidden = !show;
+      badge.textContent = show ? String(total > 99 ? 99 : total) : '';
+    });
+
+    document.querySelectorAll<HTMLElement>('[data-nav-favorites]').forEach((link) => {
+      const label = link.dataset.favoritesLabel ?? '';
+      if (!label) return;
+      link.setAttribute('aria-label', total > 0 ? `${label} (${total})` : label);
     });
 
     const items = [...document.querySelectorAll<HTMLElement>('[data-favorite-item]')];
@@ -144,6 +158,9 @@ const t = useTranslations(lang);
         return;
       }
 
+      trackEvent(active ? 'favorite_add' : 'favorite_remove', {
+        recipe_slug: slug,
+      });
       showFavoriteToast(active ? 'added' : 'removed');
     });
 

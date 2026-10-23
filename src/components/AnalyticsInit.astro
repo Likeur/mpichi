@@ -1,0 +1,35 @@
+---
+/** Delegated outbound click tracking (YouTube, Commons credits, external links). */
+---
+
+<script>
+  import { trackEvent } from '../lib/analytics';
+
+  function initOutboundTracking() {
+    if (document.documentElement.dataset.analyticsOutbound === 'true') return;
+    document.documentElement.dataset.analyticsOutbound = 'true';
+
+    document.addEventListener('click', (event) => {
+      const target = event.target;
+      if (!(target instanceof Element)) return;
+      const link = target.closest<HTMLAnchorElement>('a[href]');
+      if (!link || link.target !== '_blank') return;
+
+      const href = link.href;
+      if (!href || href.startsWith(window.location.origin)) return;
+
+      let kind = 'external';
+      if (/youtube\.com|youtu\.be/.test(href)) kind = 'youtube';
+      else if (/wikimedia\.org|commons\.wikimedia/.test(href)) kind = 'commons';
+
+      trackEvent('outbound_click', {
+        link_url: href.slice(0, 500),
+        link_kind: kind,
+        link_text: (link.textContent ?? '').trim().slice(0, 100),
+      });
+    });
+  }
+
+  initOutboundTracking();
+  document.addEventListener('astro:page-load', initOutboundTracking);
+</script>

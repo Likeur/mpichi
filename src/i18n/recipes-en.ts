@@ -25,8 +25,8 @@ export type RecipeTranslation = {
 export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
   "biteku-teku-kasai": {
     "title": "Biteku-teku",
-    "seoTitle": "Biteku-teku recipe (lenga-lenga)",
-    "description": "Biteku-teku recipe: amaranth simmered with onion, tomato and peanut — Greater Kasai dish, also called lenga-lenga in Kinshasa.",
+    "seoTitle": "Biteku-teku / lenga-lenga recipe — Kasai amaranth",
+    "description": "Biteku-teku (lenga-lenga) recipe: amaranth simmered with onion, tomato and peanut — Greater Kasai dish, cousin to Kinshasa ndunda.",
     "region": "Greater Kasai",
     "imageAlt": "Fresh amaranth leaves used for biteku-teku",
     "prepTime": "20 min",
@@ -56,7 +56,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Greater Kasai",
       "vegetables"
     ],
-    "body": "Biteku-teku is popular in Kasai. In Kinshasa and the West, the same amaranth is often called lenga-lenga, more commonly simmered with tomato and palm oil. Eat with bukari (also called bidia in Kasai); peanuts are optional."
+    "body": "Biteku-teku is popular in Kasai. In Kinshasa, everyday greens are more often called [ndunda](/en/recettes/ndunda/); the same amaranth is also called **lenga-lenga**. Eat with [bukari](/en/recettes/bukari-katanga/) (bidia in Kasai); peanuts are optional.\n\n**Washing**: market amaranth often carries sand — rinse until the water runs clear.\n\n**Without peanut**: a lighter version, closer to Kinshasa ndunda; finish with a little palm oil if you have it.\n\nOther leaves: [matembele](/en/recettes/matembele-katanga/), [pondu](/en/recettes/pondu/). Market context: [market guide](/en/guides/marche/)."
   },
   "brochettes-grillons": {
     "title": "Cricket skewers",
@@ -1651,8 +1651,9 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
   },
   "foie-boeuf-saute": {
     title: "Sautéed beef liver",
+    seoTitle: "Sautéed beef liver recipe — Kinshasa street food",
     description:
-      "Liver slices quickly seared with onion and chili — street-food and express cooking common in Kinshasa.",
+      "Sautéed beef liver recipe: slices quickly seared with onion and chili — street snack and express plate common in Kinshasa.",
     region: "Kinshasa",
     imageAlt: "Sautéed liver with onions in a pan",
     prepTime: "15 min",
@@ -1672,8 +1673,8 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Return the liver, add chili and toss 1 to 2 minutes without overcooking.",
       "Serve at once with bread, fries or rice.",
     ],
-    tags: ["liver", "beef", "pan", "street food"],
-    body: "Liver hardens if it stays too long on the heat. In Kinshasa it is often sold as a hot street portion with plenty of onion.",
+    tags: ["liver", "beef", "pan", "street food", "Kinshasa"],
+    body: "Liver hardens if it stays too long on the heat. In Kinshasa it is often sold as a hot street portion with plenty of onion.\n\n**Market tip**: choose firm, bright-red liver without a strong smell. A short lemon marinade helps aroma and taste.\n\n**At the table**: hot bread, fries, or [loso mayonnaise](/en/recettes/loso-mayonnaise/). For other street grills, see [kamundele](/en/recettes/kamundele/) and [liver skewers](/en/recettes/brochettes-foie/).",
   },
   "porc-braise": {
     title: "Braised pork",

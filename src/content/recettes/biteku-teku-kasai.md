@@ -1,7 +1,7 @@
 ---
 title: Biteku-teku
-seoTitle: Recette biteku-teku (lenga-lenga)
-description: "Recette de biteku-teku : amarante mijotée avec oignon, tomate et arachide — plat du Grand Kasaï, aussi appelé lenga-lenga à Kinshasa."
+seoTitle: Recette biteku-teku / lenga-lenga — amarante du Kasaï
+description: "Recette de biteku-teku (lenga-lenga) : amarante mijotée avec oignon, tomate et arachide — plat du Grand Kasaï, cousin des ndunda de Kinshasa."
 region: Grand Kasaï
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Amaranth%20Greens%20%28Doodo%29.jpg?width=1600
 imageAlt: Feuilles fraîches d’amarante utilisées pour le biteku-teku
@@ -13,7 +13,7 @@ prepTime: 20 min
 cookTime: 25 min
 servings: 6
 difficulty: facile
-featured: false
+featured: true
 tags:
   - biteku-teku
   - lenga-lenga
@@ -24,6 +24,7 @@ relatedRecipes:
   - ndunda
   - matembele-katanga
   - bukari-katanga
+  - pondu
 
 video:
   youtube: https://www.youtube.com/watch?v=SAdbi6jks-E
@@ -49,6 +50,10 @@ steps:
 ---
 
 Le **biteku-teku** est populaire au Kasaï. À Kinshasa, les légumes verts du quotidien s’appellent plutôt [ndunda](/recettes/ndunda/) ; la même amarante est aussi dite **lenga-lenga**. On le mange avec le [bukari](/recettes/bukari-katanga/) (bidia au Kasaï) ; on peut omettre les arachides.
+
+**Lavage** : l’amarante de marché porte souvent du sable — rincer plusieurs eaux jusqu’à ce que l’eau reste claire.
+
+**Sans arachide** : version plus légère, plus proche des ndunda kin ; ajouter un filet d’huile de palme en fin de cuisson si disponible.
 
 Autres feuilles : [matembele](/recettes/matembele-katanga/), [pondu](/recettes/pondu/). Contexte marché : [guide du marché](/guides/marche/).
 

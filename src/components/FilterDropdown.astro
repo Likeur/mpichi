@@ -10,25 +10,42 @@ interface Props {
   allLabel: string;
   options: Option[];
   value?: string;
+  tone?: 'ink' | 'cream';
 }
 
-const { name, label, allLabel, options, value = '' } = Astro.props;
+const { name, label, allLabel, options, value = '', tone = 'ink' } = Astro.props;
 const selected = options.find((option) => option.value === value);
 const display = selected?.label ?? allLabel;
+const onDark = tone === 'cream';
 ---
 
 <div class="relative min-w-0" data-dropdown data-dropdown-name={name} data-dropdown-value={value}>
-  <span class="mb-3 block text-[9px] uppercase tracking-[.16em] text-earth-900/40">{label}</span>
+  <span
+    class:list={[
+      'mb-3 block text-[9px] uppercase tracking-[.16em]',
+      onDark ? 'text-creme-100/40' : 'text-earth-900/40',
+    ]}
+  >
+    {label}
+  </span>
   <button
     type="button"
-    class="flex w-full items-center justify-between gap-3 border-0 border-b border-earth-900/25 bg-transparent py-2.5 text-left text-sm text-earth-900 outline-none transition-colors hover:border-earth-900 focus-visible:border-earth-900"
+    class:list={[
+      'flex w-full items-center justify-between gap-3 border-0 border-b bg-transparent py-2.5 text-left text-sm outline-none transition-colors',
+      onDark
+        ? 'border-white/25 text-creme-100 hover:border-white/60 focus-visible:border-white/60'
+        : 'border-earth-900/25 text-earth-900 hover:border-earth-900 focus-visible:border-earth-900',
+    ]}
     data-dropdown-trigger
     aria-haspopup="listbox"
     aria-expanded="false"
   >
     <span class="truncate" data-dropdown-label>{display}</span>
     <svg
-      class="size-3.5 shrink-0 text-earth-900/45 transition-transform duration-200 ease-out data-[open=true]:rotate-180"
+      class:list={[
+        'size-3.5 shrink-0 transition-transform duration-200 ease-out data-[open=true]:rotate-180',
+        onDark ? 'text-creme-100/45' : 'text-earth-900/45',
+      ]}
       data-dropdown-chevron
       width="14"
       height="14"

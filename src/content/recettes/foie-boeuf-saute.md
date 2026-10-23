@@ -1,6 +1,7 @@
 ---
 title: Foie de bœuf sauté
-description: Tranches de foie rapidement saisies avec oignon et piment, encas de rue et plat express très courant à Kinshasa.
+seoTitle: Recette foie de bœuf sauté — street food Kinshasa
+description: "Recette de foie de bœuf sauté : tranches rapidement saisies avec oignon et piment — encas de rue et plat express très courant à Kinshasa."
 region: Kinshasa
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Pig%27s%20liver%20with%20sauteed%20onion.jpg?width=1600
 imageAlt: Foie sauté aux oignons dans une poêle
@@ -12,16 +13,18 @@ prepTime: 15 min
 cookTime: 15 min
 servings: 4
 difficulty: facile
-featured: false
+featured: true
 tags:
   - foie
   - bœuf
   - poêle
   - cuisine de rue
+  - Kinshasa
 relatedRecipes:
   - brochettes-foie
   - kamundele
   - sauce-pili-pili
+  - loso-mayonnaise
 ingredients:
   - 600 g de foie de bœuf, en tranches
   - 2 oignons, émincés
@@ -38,3 +41,7 @@ steps:
 ---
 
 Le foie durcit s’il reste trop longtemps sur le feu. À Kinshasa, on le trouve souvent en portion de rue, servi très chaud avec beaucoup d’oignon.
+
+**Astuce marché** : choisir un foie ferme, d’un rouge franc, sans odeur forte. Le citron en marinade courte aide à l’odeur et au goût.
+
+**À table** : pain chaud, frites, ou [loso mayonnaise](/recettes/loso-mayonnaise/). Pour d’autres grillades de rue, voir [kamundele](/recettes/kamundele/) et [brochettes de foie](/recettes/brochettes-foie/).

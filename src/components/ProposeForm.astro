@@ -181,6 +181,8 @@ const configured = Boolean(endpoint);
 </form>
 
 <script>
+  import { trackEvent } from '../lib/analytics';
+
   function initProposeForm() {
     const form = document.querySelector<HTMLFormElement>('[data-propose-form]');
     if (!form || form.dataset.ready === 'true') return;
@@ -220,6 +222,12 @@ const configured = Boolean(endpoint);
 
         form.reset();
         status.textContent = form.dataset.success ?? '';
+        trackEvent('propose_submit', {
+          recipe_title: String(data.recipeTitle ?? '').slice(0, 120),
+          recipe_region: String(data.region ?? '').slice(0, 80),
+          recipe_category: String(data.category ?? ''),
+          locale: String(data.locale ?? ''),
+        });
       } catch {
         status.textContent = form.dataset.error ?? '';
         status.classList.add('text-mpichi-red');
