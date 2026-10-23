@@ -21,9 +21,9 @@ tags:
   - accompagnement
   - simple
 relatedRecipes:
+  - beignets-igname
+  - mbala
   - plantains-vapeur
-  - poisson-fume-tomates
-  - sauce-pili-pili
 ingredients:
   - 1 kg d’igname
   - Eau

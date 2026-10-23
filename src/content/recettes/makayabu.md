@@ -3,11 +3,11 @@ title: Makayabu aux tomates
 seoTitle: Recette makayabu aux tomates
 description: "Recette de makayabu : poisson salé dessalé puis mijoté dans une sauce courte aux tomates, oignons et piment — classique du bassin du Congo."
 region: Kinshasa & bassin du Congo
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Bacalhau%20%28Porto%29.jpg?width=1200
-imageAlt: Morceaux de morue salée présentés sur un étal
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Bacalhau%20%C3%A0%20Gomes%20de%20S%C3%A1.jpg?width=1600
+imageAlt: Makayabu / morue salée préparée en plat mijoté
 imagePosition: center
-imageCredit: Sitomon — Wikimedia Commons, CC BY-SA 2.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Bacalhau_(Porto).jpg
+imageCredit: Adriao — Wikimedia Commons, CC BY-SA 3.0
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Bacalhau_%C3%A0_Gomes_de_S%C3%A1.jpg
 category: plat
 prepTime: 25 min + 12 h de dessalage
 cookTime: 35 min

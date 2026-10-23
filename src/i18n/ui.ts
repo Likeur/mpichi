@@ -203,7 +203,7 @@ export const ui = {
     'propose.body':
       'Décrivez le plat tel qu’il se prépare chez vous : noms locaux, gestes, proportions approximatives. Une photo libre de droits (ou un lien) aide à documenter la fiche.',
     'propose.process':
-      'Après envoi, la proposition arrive à la rédaction Mpichi. Si elle est retenue, elle est écrite en fiche Markdown, illustrée et publiée à la main — il n’y a pas de publication automatique.',
+      'Après envoi, la proposition arrive à la rédaction Mpichi. Si le plat est retenu, il sera publié sur le catalogue.',
     'propose.name': 'Votre nom',
     'propose.namePlaceholder': 'Optionnel',
     'propose.email': 'E-mail',
@@ -492,7 +492,7 @@ export const ui = {
     'propose.body':
       'Describe the dish as it is cooked at home: local names, gestures, approximate quantities. A freely licensed photo (or a link) helps document the page.',
     'propose.process':
-      'After you send it, the suggestion reaches the Mpichi editorial desk. If it is selected, it is written as a Markdown recipe, illustrated, and published by hand — there is no automatic publishing.',
+      'After you send it, the suggestion reaches the Mpichi editorial desk. If the dish is selected, it will be published in the catalogue.',
     'propose.name': 'Your name',
     'propose.namePlaceholder': 'Optional',
     'propose.email': 'Email',

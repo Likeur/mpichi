@@ -3,11 +3,11 @@ title: Loso mayonnaise
 seoTitle: Recette loso mayonnaise — riz mayo kinshasa
 description: "Recette de loso mayonnaise : riz nature mélangé ou nappé d’une mayonnaise relevée — accompagnement et street food très courant à Kinshasa."
 region: Kinshasa
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Salad%20and%20Rice.jpg?width=1600
-imageAlt: Assiette de riz servi avec sauce crémeuse
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Ensaladas%20de%20Argentina%20%28Arroz%20blanco%20con%20morr%C3%B3n%20verde%20y%20mayonesa%29.jpg?width=1600
+imageAlt: Riz blanc mélangé à la mayonnaise
 imagePosition: center
-imageCredit: Takeaway — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Salad_and_Rice.jpg
+imageCredit: Horacio Cambeiro — Wikimedia Commons, CC BY-SA 3.0
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Ensaladas_de_Argentina_(Arroz_blanco_con_morr%C3%B3n_verde_y_mayonesa).jpg
 category: accompagnement
 prepTime: 10 min
 cookTime: 25 min

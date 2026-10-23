@@ -22,8 +22,8 @@ tags:
   - Tanganyika
 relatedRecipes:
   - sambaza
+  - ndagala-tomates
   - bukari-katanga
-  - matembele-katanga
 
 video:
   youtube: https://www.youtube.com/watch?v=SbBwQSLKl8c
