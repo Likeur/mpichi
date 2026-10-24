@@ -27,18 +27,30 @@ const mobileLinks = [
 ];
 ---
 
-<header class="fixed top-0 left-0 right-0 z-50 pointer-events-none" data-print-hide data-site-nav>
-  <div class="relative z-50 px-grid-margin pt-5 pointer-events-auto">
+<header
+  class="fixed top-0 left-0 right-0 z-50 pointer-events-none"
+  data-print-hide
+  data-site-nav
+  data-nav-hidden="false"
+  data-nav-on="dark"
+>
+  <!-- Transform only the bar — not the mobile panel (fixed + parent transform breaks the overlay). -->
+  <div
+    class="relative z-50 transition-transform duration-300 ease-out will-change-transform data-[nav-hidden=true]:-translate-y-full"
+    data-nav-bar
+    data-nav-hidden="false"
+  >
+  <div class="px-grid-margin pt-5 pointer-events-auto">
     <div class="mx-auto max-w-[1200px] relative flex items-center justify-center min-h-14">
       <!-- Desktop -->
       <nav
-        class="hidden md:flex h-14 w-full items-center justify-between gap-2 text-[10px] font-medium uppercase tracking-[0.16em] text-creme-100/80"
+        class="nav-ink hidden md:flex h-14 w-full items-center justify-between gap-2 text-[10px] font-medium uppercase tracking-[0.16em] transition-colors duration-200"
         aria-label={t('nav.label')}
       >
         <div class="flex flex-1 items-center gap-5 min-w-0">
           <a
             href={localePath('/', lang)}
-            class:list={['hover:text-white transition-colors truncate', isHome && 'text-white']}
+            class:list={['nav-ink-link transition-colors truncate', isHome && 'nav-ink-active']}
           >
             {t('nav.home')}
           </a>
@@ -49,15 +61,15 @@ const mobileLinks = [
         <div class="flex flex-1 items-center justify-end gap-5 min-w-0">
           <a
             href={localePath('/recettes', lang)}
-            class:list={['hover:text-white transition-colors', isRecettes && 'text-white']}
+            class:list={['nav-ink-link transition-colors', isRecettes && 'nav-ink-active']}
           >
             {t('nav.recipes')}
           </a>
           <a
             href={localePath('/favoris', lang)}
             class:list={[
-              'relative inline-flex items-center gap-1.5 hover:text-white transition-colors',
-              isFavorites && 'text-white',
+              'nav-ink-link relative inline-flex items-center gap-1.5 transition-colors',
+              isFavorites && 'nav-ink-active',
             ]}
             data-nav-favorites
             data-favorites-label={t('nav.favorites')}
@@ -72,13 +84,13 @@ const mobileLinks = [
           </a>
           <a
             href={localePath('/proposer', lang)}
-            class:list={['hover:text-white transition-colors', isPropose && 'text-white']}
+            class:list={['nav-ink-link transition-colors', isPropose && 'nav-ink-active']}
           >
             {t('nav.propose')}
           </a>
           <a
             href={switchHref}
-            class="hover:text-white transition-colors text-creme-100/55"
+            class="nav-ink-muted transition-colors"
             aria-label={t('nav.lang')}
             data-lang-switch
           >
@@ -91,7 +103,7 @@ const mobileLinks = [
       <div class="flex md:hidden h-14 w-full items-center justify-between">
         <a
           href={switchHref}
-          class="relative z-10 text-[10px] font-medium uppercase tracking-[0.16em] text-creme-100/55 hover:text-white transition-colors"
+          class="nav-ink-muted relative z-10 text-[10px] font-medium uppercase tracking-[0.16em] transition-colors"
           aria-label={t('nav.lang')}
           data-lang-switch
         >
@@ -102,7 +114,7 @@ const mobileLinks = [
 
         <button
           type="button"
-          class="relative z-10 flex size-11 items-center justify-center text-creme-100"
+          class="nav-ink relative z-10 flex size-11 items-center justify-center transition-colors duration-200"
           data-nav-toggle
           aria-expanded="false"
           aria-controls="mobile-nav-panel"
@@ -150,17 +162,18 @@ const mobileLinks = [
       </a>
     </div>
   </div>
+  </div>
 
-  <!-- Mobile panel -->
+  <!-- Mobile panel: sibling of the bar so it stays viewport-fixed with a solid backdrop -->
   <div
     id="mobile-nav-panel"
-    class="md:hidden fixed inset-0 z-40 bg-earth-900/97 text-creme-100 opacity-0 pointer-events-none transition-opacity duration-300 data-[state=open]:opacity-100 data-[state=open]:pointer-events-auto"
+    class="md:hidden fixed inset-0 z-40 min-h-dvh bg-earth-900 text-creme-100 opacity-0 pointer-events-none transition-opacity duration-300 data-[state=open]:opacity-100 data-[state=open]:pointer-events-auto"
     data-nav-panel
     data-state="closed"
     hidden
   >
     <nav
-      class="flex h-full flex-col px-grid-margin pb-10 pt-28"
+      class="flex h-full min-h-dvh flex-col px-grid-margin pb-10 pt-28"
       aria-label={t('nav.label')}
     >
       <ul class="mt-8 flex flex-1 flex-col justify-center gap-1 list-none p-0 m-0">
@@ -224,6 +237,69 @@ const mobileLinks = [
     const openLabel = toggle.dataset.labelOpen ?? 'Menu';
     const closeLabel = toggle.dataset.labelClose ?? 'Close';
 
+    const bar = root.querySelector<HTMLElement>('[data-nav-bar]');
+
+    const LIGHT_CLASS = /\bbg-creme-(?:50|100|200)\b/;
+    const DARK_CLASS = /\bbg-earth-(?:dark|900)\b|\bbg-aged-oak(?:-soft)?\b/;
+
+    const classListOf = (el: Element) => {
+      if (typeof el.className === 'string') return el.className;
+      return el.getAttribute('class') ?? '';
+    };
+
+    const ownSurface = (el: Element): 'light' | 'dark' | null => {
+      if (el instanceof HTMLElement) {
+        const explicit = el.dataset.navSurface;
+        if (explicit === 'light' || explicit === 'dark') return explicit;
+      }
+      const cls = classListOf(el);
+      if (LIGHT_CLASS.test(cls)) return 'light';
+      if (DARK_CLASS.test(cls)) return 'dark';
+      return null;
+    };
+
+    const surfaceNodes = () =>
+      document.querySelectorAll<HTMLElement>(
+        '[data-nav-surface], section, article, [data-recipe-hero], [data-hero]',
+      );
+
+    // Lenis/Locomotive often skip native scroll events — read geometry instead.
+    const updateTone = () => {
+      if (document.documentElement.classList.contains('nav-open')) {
+        root.dataset.navOn = 'dark';
+        return;
+      }
+
+      const sampleY = Math.min(64, Math.max(36, Math.round(window.innerHeight * 0.08)));
+      let tone: 'light' | 'dark' = 'dark';
+      let bestTop = -Infinity;
+
+      surfaceNodes().forEach((el) => {
+        const surface = ownSurface(el);
+        if (!surface) return;
+        const rect = el.getBoundingClientRect();
+        if (rect.bottom <= sampleY || rect.top > sampleY) return;
+        // Prefer the innermost / latest section covering the nav band
+        if (rect.top >= bestTop) {
+          bestTop = rect.top;
+          tone = surface;
+        }
+      });
+
+      root.dataset.navOn = tone;
+    };
+
+    const setHidden = (hidden: boolean) => {
+      if (document.documentElement.classList.contains('nav-open')) {
+        root.dataset.navHidden = 'false';
+        if (bar) bar.dataset.navHidden = 'false';
+        return;
+      }
+      const value = String(hidden);
+      root.dataset.navHidden = value;
+      if (bar) bar.dataset.navHidden = value;
+    };
+
     const setOpen = (open: boolean) => {
       toggle.setAttribute('aria-expanded', String(open));
       toggle.setAttribute('aria-label', open ? closeLabel : openLabel);
@@ -231,6 +307,8 @@ const mobileLinks = [
       panel.dataset.state = open ? 'open' : 'closed';
       panel.hidden = !open;
       document.documentElement.classList.toggle('nav-open', open);
+      if (open) setHidden(false);
+      updateTone();
 
       if (lines.top && lines.mid && lines.bot) {
         if (open) {
@@ -245,43 +323,137 @@ const mobileLinks = [
       }
     };
 
-    // Always close after navigation / page load
+    // Always close after navigation / page load and show the bar
     setOpen(false);
+    setHidden(false);
+    requestAnimationFrame(updateTone);
 
-    if (root.dataset.navReady === 'true') return;
-    root.dataset.navReady = 'true';
+    const navWindow = window as Window & { __mpichiNavCleanup?: () => void };
+    navWindow.__mpichiNavCleanup?.();
 
-    toggle.addEventListener('click', () => {
+    let lastY = window.scrollY;
+    let ticking = false;
+
+    const onFrame = () => {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(() => {
+        const y = window.scrollY;
+        updateTone();
+        if (y < 32) {
+          setHidden(false);
+          lastY = y;
+          ticking = false;
+          return;
+        }
+
+        const delta = y - lastY;
+        if (Math.abs(delta) >= 8) {
+          // Scroll bas → disparaît ; scroll haut → revient
+          setHidden(delta > 0);
+          lastY = y;
+        }
+        ticking = false;
+      });
+    };
+
+    const onToggle = () => {
       const open = toggle.getAttribute('aria-expanded') !== 'true';
       setOpen(open);
-    });
+    };
 
-    panel.querySelectorAll('[data-nav-link]').forEach((link) => {
-      link.addEventListener('click', () => setOpen(false));
-    });
-
-    document.addEventListener('keydown', (event) => {
+    const onKeydown = (event: KeyboardEvent) => {
       if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
         setOpen(false);
         toggle.focus();
       }
+    };
+
+    const onResize = () => {
+      if (window.matchMedia('(min-width: 768px)').matches) setOpen(false);
+      updateTone();
+    };
+
+    toggle.addEventListener('click', onToggle);
+
+    const panelLinks = [...panel.querySelectorAll('[data-nav-link]')];
+    panelLinks.forEach((link) => {
+      link.addEventListener('click', () => setOpen(false));
     });
 
-    window.addEventListener('resize', () => {
-      if (window.matchMedia('(min-width: 768px)').matches) setOpen(false);
+    document.addEventListener('keydown', onKeydown);
+    window.addEventListener('resize', onResize);
+    // Native scroll (fallback) + Lenis/Locomotive custom event from BaseLayout
+    window.addEventListener('scroll', onFrame, { passive: true });
+    window.addEventListener('mpichi:scroll', onFrame);
+
+    // Geometry observer — works even when scroll events are swallowed
+    const toneObserver = new IntersectionObserver(() => updateTone(), {
+      root: null,
+      rootMargin: '0px 0px -88% 0px',
+      threshold: [0, 0.01, 0.1, 0.5, 1],
     });
+    surfaceNodes().forEach((el) => {
+      if (ownSurface(el)) toneObserver.observe(el);
+    });
+
+    navWindow.__mpichiNavCleanup = () => {
+      toggle.removeEventListener('click', onToggle);
+      document.removeEventListener('keydown', onKeydown);
+      window.removeEventListener('resize', onResize);
+      window.removeEventListener('scroll', onFrame);
+      window.removeEventListener('mpichi:scroll', onFrame);
+      toneObserver.disconnect();
+    };
   }
 
   initSiteNav();
   document.addEventListener('astro:page-load', initSiteNav);
 </script>
 
-<style>
-  :global(html.nav-open) {
+<style is:global>
+  html.nav-open {
     overflow: hidden;
   }
 
+  [data-site-nav] {
+    --nav-ink: rgba(239, 229, 218, 0.88);
+    --nav-ink-muted: rgba(239, 229, 218, 0.7);
+    --nav-ink-strong: #ffffff;
+  }
+
+  [data-site-nav][data-nav-on='light'] {
+    --nav-ink: #1a120e;
+    --nav-ink-muted: rgba(18, 12, 9, 0.72);
+    --nav-ink-strong: #120c09;
+  }
+
+  [data-site-nav] .nav-ink {
+    color: var(--nav-ink);
+  }
+
+  [data-site-nav] .nav-ink-link {
+    color: var(--nav-ink);
+  }
+
+  [data-site-nav] .nav-ink-link:hover,
+  [data-site-nav] .nav-ink-active {
+    color: var(--nav-ink-strong);
+  }
+
+  [data-site-nav] .nav-ink-muted {
+    color: var(--nav-ink-muted);
+  }
+
+  [data-site-nav] .nav-ink-muted:hover {
+    color: var(--nav-ink-strong);
+  }
+
   @media (prefers-reduced-motion: reduce) {
+    [data-nav-bar] {
+      transition: none !important;
+    }
+
     [data-nav-panel],
     [data-nav-line] {
       transition-duration: 0.01ms !important;

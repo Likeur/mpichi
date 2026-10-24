@@ -1,7 +1,7 @@
 /* TEAM */
 Editor: Likeur
 Site: https://likeur.xyz
-Location: Kinshasa, Democratic Republic of the Congo
+Location: Lubumbashi, Democratic Republic of the Congo
 
 /* SITE */
 Name: Mpichi

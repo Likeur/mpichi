@@ -172,7 +172,7 @@ const breadcrumbJsonLd = {
   type="article"
   jsonLd={[recipeJsonLd, breadcrumbJsonLd]}
 >
-  <header class="relative min-h-[70svh] flex items-end overflow-hidden">
+  <header class="relative min-h-[70svh] flex items-end overflow-hidden" data-nav-surface="dark">
     <img
       src={localized.image.replace(/([?&]width=)\d+/, '$11200')}
       srcset={`${localized.image.replace(/([?&]width=)\d+/, '$1720')} 720w, ${localized.image.replace(/([?&]width=)\d+/, '$11200')} 1200w, ${localized.image.replace(/([?&]width=)\d+/, '$11600')} 1600w`}
@@ -273,6 +273,7 @@ const breadcrumbJsonLd = {
 
   <article
     class="bg-creme-100 text-earth-900"
+    data-nav-surface="light"
     data-recipe-body
     data-recipe-tools
     data-locale={lang}

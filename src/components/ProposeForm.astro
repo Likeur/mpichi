@@ -1,6 +1,7 @@
 ---
 import type { Locale } from '../i18n/config';
 import { useTranslations } from '../i18n/utils';
+import { SITE_CONTACT_EMAIL, SITE_WHATSAPP_URL } from '../lib/site';
 
 interface Props {
   lang?: Locale;
@@ -11,6 +12,9 @@ const lang = Astro.props.lang ?? 'fr';
 const t = useTranslations(lang);
 const { endpoint } = Astro.props;
 const configured = Boolean(endpoint);
+const mailtoPhotos = `mailto:${SITE_CONTACT_EMAIL}?subject=${encodeURIComponent(
+  lang === 'en' ? 'Mpichi — dish photo' : 'Mpichi — photo de plat',
+)}`;
 ---
 
 {
@@ -158,6 +162,28 @@ const configured = Boolean(endpoint);
     />
     <span class="mt-2 block text-[12px] leading-5 text-earth-900/45">{t('propose.photoHint')}</span>
   </label>
+
+  <p class="text-[13px] leading-6 text-earth-900/65">
+    {t('propose.photoContact')}{' '}
+    <a
+      href={mailtoPhotos}
+      class="underline decoration-earth-900/25 underline-offset-4 transition-colors hover:text-earth-900"
+    >
+      {t('propose.photoContactEmail')}
+    </a>
+    {' '}
+    {t('propose.photoContactOr')}
+    {' '}
+    <a
+      href={SITE_WHATSAPP_URL}
+      target="_blank"
+      rel="noreferrer"
+      class="underline decoration-earth-900/25 underline-offset-4 transition-colors hover:text-earth-900"
+    >
+      WhatsApp
+    </a>
+    .
+  </p>
 
   <p class="text-[12px] leading-5 text-earth-900/45">{t('propose.moderation')}</p>
 

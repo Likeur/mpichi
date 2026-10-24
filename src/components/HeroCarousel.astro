@@ -18,7 +18,11 @@ interface Props {
 const { slides } = Astro.props;
 ---
 
-<section class="relative min-h-[780px] h-svh flex flex-col justify-end overflow-hidden image-grain" data-hero-carousel>
+<section
+  class="relative min-h-[780px] h-svh flex flex-col justify-end overflow-hidden image-grain"
+  data-hero-carousel
+  data-nav-surface="dark"
+>
   {
     slides.map((slide, i) => (
       <div

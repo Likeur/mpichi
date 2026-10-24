@@ -7,7 +7,10 @@ interface Props {
 const { title, introduction } = Astro.props;
 ---
 
-<section class="min-h-[46svh] bg-earth-dark border-b border-white/10 flex items-end pt-32 pb-14 sm:pb-18">
+<section
+  class="min-h-[46svh] bg-earth-dark border-b border-white/10 flex items-end pt-32 pb-14 sm:pb-18"
+  data-nav-surface="dark"
+>
   <div class="px-grid-margin mx-auto grid w-full max-w-[1200px] gap-8 lg:grid-cols-12 lg:items-end">
     <h1 class="text-display-hero lg:col-span-8" data-reveal-static>{title}</h1>
     <p class="max-w-md text-sm leading-6 text-creme-200/60 lg:col-span-4" data-reveal-static>
@@ -16,7 +19,7 @@ const { title, introduction } = Astro.props;
   </div>
 </section>
 
-<section class="bg-creme-100 py-16 text-earth-900 sm:py-24">
+<section class="bg-creme-100 py-16 text-earth-900 sm:py-24" data-nav-surface="light">
   <div class="px-grid-margin mx-auto max-w-[900px]">
     <slot />
   </div>
