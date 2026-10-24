@@ -236,7 +236,11 @@ export const ui = {
     'propose.photo': 'Lien photo (optionnel)',
     'propose.photoPlaceholder': 'https://…',
     'propose.photoHint':
-      'Préférez une image sous licence libre (Wikimedia Commons, etc.) ou une photo dont vous détenez les droits.',
+      'Si vous avez déjà une image en ligne (Wikimedia Commons, Drive public, etc.), collez le lien ici.',
+    'propose.photoContact':
+      'Pour envoyer une photo du plat (fichier), contactez-moi par',
+    'propose.photoContactEmail': 'e-mail',
+    'propose.photoContactOr': 'ou',
     'propose.moderation':
       'En envoyant ce formulaire, vous acceptez que vos coordonnées et le contenu soient transmis à la rédaction Mpichi via Formspree, uniquement pour traiter la proposition.',
     'propose.submit': 'Envoyer la proposition',
@@ -538,7 +542,10 @@ export const ui = {
     'propose.photo': 'Photo link (optional)',
     'propose.photoPlaceholder': 'https://…',
     'propose.photoHint':
-      'Prefer an image under a free license (Wikimedia Commons, etc.) or a photo you own the rights to.',
+      'If you already have an image online (Wikimedia Commons, public Drive, etc.), paste the link here.',
+    'propose.photoContact': 'To send a dish photo (file), contact me by',
+    'propose.photoContactEmail': 'email',
+    'propose.photoContactOr': 'or',
     'propose.moderation':
       'By sending this form, you agree that your contact details and content are sent to the Mpichi editorial team via Formspree, solely to process the suggestion.',
     'propose.submit': 'Send suggestion',

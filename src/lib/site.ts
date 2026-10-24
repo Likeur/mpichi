@@ -3,6 +3,8 @@ export const SITE_NAME = 'Mpichi';
 export const SITE_URL = 'https://mpichi.likeur.xyz';
 export const SITE_AUTHOR = 'Likeur';
 export const SITE_AUTHOR_URL = 'https://likeur.xyz';
+export const SITE_CONTACT_EMAIL = 'jacksimba28@gmail.com';
+export const SITE_WHATSAPP_URL = 'https://wa.me/+243973387383';
 export const DEFAULT_OG_IMAGE = '/og-default.jpg';
 
 export function absoluteUrl(path = '/', origin = SITE_URL): string {

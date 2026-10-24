@@ -270,7 +270,7 @@ const googleSiteVerification =
             Likeur
           </a>
         </p>
-        <p class="sm:text-right">Kinshasa · RDC</p>
+        <p class="sm:text-right">Lubumbashi · RDC</p>
       </div>
     </footer>
 
@@ -331,6 +331,10 @@ const googleSiteVerification =
                 smoothWheel: true,
                 wheelMultiplier: 0.85,
                 touchMultiplier: 1,
+              },
+              // Native scroll events are unreliable under Lenis — notify the nav tone sync.
+              scrollCallback: () => {
+                window.dispatchEvent(new CustomEvent('mpichi:scroll'));
               },
             });
           }, 80);
