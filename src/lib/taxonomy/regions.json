@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "regions": [
+    {
+      "id": "nationwide",
+      "label": { "fr": "Toute la RDC", "en": "Across the DRC" },
+      "match": ["Toute la RDC"]
+    },
+    {
+      "id": "kinshasa",
+      "label": { "fr": "Kinshasa", "en": "Kinshasa" },
+      "match": ["Kinshasa", "Kinshasa · Kinkole"]
+    },
+    {
+      "id": "kinshasa_west",
+      "label": { "fr": "Kinshasa & Ouest de la RDC", "en": "Kinshasa & western DRC" },
+      "match": ["Kinshasa & Ouest de la RDC"]
+    },
+    {
+      "id": "kinshasa_basin",
+      "label": { "fr": "Kinshasa & bassin du Congo", "en": "Kinshasa & Congo Basin" },
+      "match": ["Kinshasa & bassin du Congo", "Kinshasa & fleuve Congo", "Bassin du Congo & Kinshasa"]
+    },
+    {
+      "id": "kinshasa_cuvette",
+      "label": { "fr": "Kinshasa & Cuvette", "en": "Kinshasa & Cuvette" },
+      "match": ["Kinshasa & Cuvette"]
+    },
+    {
+      "id": "kinshasa_kongo",
+      "label": { "fr": "Kinshasa & Kongo-Central", "en": "Kinshasa & Kongo-Central" },
+      "match": ["Kinshasa & Kongo-Central"]
+    },
+    {
+      "id": "ouest",
+      "label": { "fr": "Ouest de la RDC", "en": "Western DRC" },
+      "match": ["Ouest de la RDC"]
+    },
+    {
+      "id": "kongo_central",
+      "label": { "fr": "Kongo-Central", "en": "Kongo-Central" },
+      "match": ["Kongo Central", "Kongo-Central"]
+    },
+    {
+      "id": "bandundu",
+      "label": { "fr": "Bandundu / Grand Bandundu", "en": "Bandundu / Greater Bandundu" },
+      "match": ["Grand Bandundu", "Bandundu & Kongo-Central", "Bas-Congo & Bandundu"]
+    },
+    {
+      "id": "bassin_congo",
+      "label": { "fr": "Bassin du Congo", "en": "Congo Basin" },
+      "match": ["Bassin du Congo", "Bassin du Congo & Cuvette", "Forêts du bassin du Congo"]
+    },
+    {
+      "id": "cuvette",
+      "label": { "fr": "Cuvette centrale", "en": "Central Cuvette" },
+      "match": ["Cuvette centrale", "Cuvette centrale & Kongo-Central"]
+    },
+    {
+      "id": "grand_kasai",
+      "label": { "fr": "Grand Kasaï", "en": "Greater Kasai" },
+      "match": ["Grand Kasaï", "Kasaï-Central"]
+    },
+    {
+      "id": "grand_katanga",
+      "label": { "fr": "Grand Katanga", "en": "Greater Katanga" },
+      "match": ["Grand Katanga"]
+    },
+    {
+      "id": "haut_katanga_tanganyika",
+      "label": { "fr": "Haut-Katanga & Tanganyika", "en": "Haut-Katanga & Tanganyika" },
+      "match": ["Haut-Katanga & Tanganyika", "Haut-Katanga", "Sud-Est de la RDC"]
+    },
+    {
+      "id": "kivu",
+      "label": { "fr": "Nord-Kivu & Sud-Kivu", "en": "North & South Kivu" },
+      "match": ["Nord-Kivu & Sud-Kivu"]
+    },
+    {
+      "id": "kisangani",
+      "label": { "fr": "Kisangani", "en": "Kisangani" },
+      "match": ["Kisangani"]
+    }
+  ],
+  "fallback": {
+    "id": "other",
+    "label": { "fr": "Autre / non classé", "en": "Other / unclassified" }
+  }
+}
