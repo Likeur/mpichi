@@ -198,9 +198,13 @@ En local : `npm run ci`.
 
 ## Contribuer
 
+Voir **[CONTRIBUTING.md](./CONTRIBUTING.md)** pour le guide détaillé (recettes, code, dataset, PR) et le **[code de conduite](./CODE_OF_CONDUCT.md)**.
+
+En résumé :
+
 1. Fork
 2. Branche (`git checkout -b feature/ma-recette`)
 3. `npm run ci`
 4. Pull request
 
-Issues bienvenues pour bugs, recettes ou idées produit.
+Sans Git, proposez une fiche via [mpichi.likeur.xyz/proposer](https://mpichi.likeur.xyz/proposer). Issues bienvenues pour bugs, recettes ou idées produit.
