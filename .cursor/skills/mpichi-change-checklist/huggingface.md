@@ -33,6 +33,9 @@ Ne pas laisser HF sur une vieille révision (ex. v1.0.x) alors que GitHub est en
 | `data/splits/valid.jsonl` | `data/splits/valid.jsonl` |
 | `data/instruction/pairs.jsonl` | `data/instruction/pairs.jsonl` |
 | `data/instruction/pairs.json` | `data/instruction/pairs.json` |
+| `data/eval/qa.jsonl` | `data/eval/qa.jsonl` |
+| `examples/rag_demo.py` | `examples/rag_demo.py` |
+| `examples/BASELINE.md` | `examples/BASELINE.md` |
 | `schema/recipe.schema.json` | `schema/recipe.schema.json` |
 | `enrichment/aliases.json` | `enrichment/aliases.json` |
 | `LICENSE-DATA` | `LICENSE-DATA` |
