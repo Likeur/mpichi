@@ -40,6 +40,9 @@ Ne pas laisser HF sur une vieille révision (ex. v1.0.x) alors que GitHub est en
 | `enrichment/aliases.json` | `enrichment/aliases.json` |
 | `LICENSE-DATA` | `LICENSE-DATA` |
 | `CITATION.cff` | `CITATION.cff` |
+| `paper/mpichi-dataset-preprint.md` | `paper/mpichi-dataset-preprint.md` |
+| `metadata/croissant.json` | `metadata/croissant.json` |
+| `.zenodo.json` | `.zenodo.json` |
 
 Message de commit HF : inclure la version, ex. `Release v1.2.0 — Lot 2 aliases`.
 
