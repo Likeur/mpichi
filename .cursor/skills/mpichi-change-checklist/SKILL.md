@@ -108,6 +108,6 @@ Semver : **patch** = docs/CI/fix mineur · **minor** = recettes/aliases/couvertu
 | 2 | Aliases linguistiques |
 | 3 | Régions normalisées + ingrédients structurés (fait v1.3.0) |
 | 4 | Exemples ML / eval (fait v1.4.0) |
-| 5 | Zenodo / distribution |
+| 5 | Zenodo / distribution + preprint (fait v1.5.0 ; DOI à mint côté Zenodo) |
 
 Ne pas démarrer le lot N+1 sans checklist du lot N (export + validate + docs).
