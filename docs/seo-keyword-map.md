@@ -96,6 +96,10 @@ Une fiche = un plat. Primaires = nom du plat + « recette ».
 
 **Vague 3 livrée** (2026-10-21) : guides pondu / moambe / marché + matembele, biteku-teku, kapenta, lituma, makemba, tangawisi.
 
+**Vague 4 livrée** (2026-10-25) — Lot 1 couverture Est / Kasaï / Katanga : andazi-tanganyika, mukeke-grille, pilau-kivu, bugali-kivu, haricots-maharage, chou-mijote-est, sukuma-est, tilapia-bugali, mbinzo-grillees, mbala-grillee (+ variante bidia sur bukari).
+
+**Vague 5 livrée** (2026-10-25) — Lot 1 Kasaï / Katanga / Est : makosso-pommes, ntaba-mijotee-kasai, haricots-nguba-kasai, poisson-fume-bidia, pommes-sautees-katanga, brochettes-lubumbashi, viande-sechee-tomates, loso-sauce-katanga, sambousa-pommes.
+
 **Suite possible** : hubs régions (Kinshasa, Katanga, Kasaï) + catégories + reste du catalogue.
 
 ---

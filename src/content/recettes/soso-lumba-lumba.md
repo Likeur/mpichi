@@ -1,5 +1,6 @@
 ---
 title: Soso ya lumba-lumba
+seoTitle: Recette soso ya lumba-lumba — poulet basilic du Kasaï
 description: Poulet du Kasaï mijoté dans une sauce fraîche et très parfumée au basilic africain.
 region: Grand Kasaï
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Fufu%20%26%20Chicken.jpg?width=1600
