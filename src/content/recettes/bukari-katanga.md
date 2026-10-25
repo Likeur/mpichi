@@ -24,8 +24,18 @@ relatedRecipes:
   - fufu-manioc
   - chikwangue
   - sambaza
-
-
+  - bugali-kivu
+variants:
+  - id: bidia-kasai
+    title: Bidia (nom kasaien)
+    description: Au Grand Kasaï, la même pâte de maïs s’appelle souvent bidia — même geste, autre nom de table.
+    ingredients:
+      - 500 g de farine fine de maïs blanc
+      - 1,2 l d’eau
+      - 1 pincée de sel, facultative
+    steps:
+      - Suivre les mêmes étapes que le bukari katangais.
+      - Servir avec légumes, poisson ou viande en sauce du Kasaï (biteku-teku, mbinzo, etc.).
 video:
   youtube: https://www.youtube.com/watch?v=pv5yJ1A6pzA
   title: Fufu congolais (bukari / pâtes)
@@ -44,6 +54,6 @@ steps:
   - Façonner en portions avec une louche mouillée et servir immédiatement.
 ---
 
-Le **bukari** (pâte de maïs, aussi appelée *bidia* au Kasaï) occupe le centre de la table au Grand Katanga : légumes-feuilles, poisson et viandes en sauce s’y accrochent. À l’Ouest, l’équivalent fermenté de manioc est plutôt la [chikwangue](/recettes/chikwangue/) ; le [fufu de manioc](/recettes/fufu-manioc/) reste l’autre grand geste de pâte.
+Le **bukari** (pâte de maïs, aussi appelée *bidia* au Kasaï) occupe le centre de la table au Grand Katanga : légumes-feuilles, poisson et viandes en sauce s’y accrochent. Au Kivu, le cousin proche est le [bugali](/recettes/bugali-kivu/). À l’Ouest, l’équivalent fermenté de manioc est plutôt la [chikwangue](/recettes/chikwangue/) ; le [fufu de manioc](/recettes/fufu-manioc/) reste l’autre grand geste de pâte.
 
 Sauces de la région : [matembele aux arachides](/recettes/matembele-katanga/), [kapenta aux tomates](/recettes/kapenta-tomates/).
