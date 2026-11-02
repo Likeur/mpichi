@@ -24,6 +24,8 @@ relatedRecipes:
   - ntaba
   - mikate
   - viande-ya-sauce
+  - brochettes-boeuf
+  - brochettes-poulet
 video:
   youtube: https://www.youtube.com/watch?v=dZ9_2GbYuU4
   title: Kamundele — brochettes de bœuf

@@ -18,6 +18,7 @@ tags:
   - safou
   - grillé
 relatedRecipes:
+  - nsafu-sauce
   - jus-safou
   - plantains-vapeur
   - makemba

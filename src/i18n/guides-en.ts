@@ -77,4 +77,31 @@ Documenting a recipe also means documenting that journey. Quantities help you st
 
 Cooking Congolese food elsewhere often means finding the African grocery that brings that market closer — then adapting, as people always have.`,
   },
+  fufu: {
+    title: 'Fufu, the everyday paste',
+    seoTitle: 'How to make fufu (cassava, maize, plantain)',
+    description:
+      'Guide: how to make fufu — cassava flour, maize bugali/bukari, plantain fufu — gestures, differences and pairings in the DRC.',
+    intro: 'A paste you pinch, a sauce you scoop: the simplest table duo.',
+    imageAlt: 'A ball of fufu (foufou) served as a side',
+    body: `The word **fufu** often means **cassava** paste, but Congolese tables know several cousins: maize flour ([bukari / bugali](/en/recettes/bukari-katanga/)), plantain ([plantain fufu](/en/recettes/fufu-plantain/) or [lituma](/en/recettes/lituma/)), and the fermented stick ([chikwangue](/en/recettes/chikwangue/)), which is not a spatula-worked paste.
+
+## The shared gesture
+
+Hot water, a flour, a sturdy spatula. Start as a light porridge, then add flour while working against the pot walls until a smooth mass that pulls away. Too much water: soft paste. Too much flour at once: lumps. Quantities: [cassava fufu](/en/recettes/fufu-manioc/).
+
+## Cassava, maize, plantain
+
+- **Cassava**: neutral, elastic — Kinshasa, West, Cuvette.
+- **Maize (bugali / bukari / bidia)**: East and Katanga / Kasai; same technique, different flour.
+- **Plantain**: mashed fruit or flour by household; sweeter, often with fish or red sauce.
+
+## What to serve it with
+
+Fufu is almost never eaten alone: [pondu](/en/recettes/pondu/), [moambe](/en/recettes/moambe-poulet/), meat sauces, fish, vegetables. Pinch a ball, make a hollow, scoop the sauce.
+
+## What Mpichi documents
+
+Separate cards so distinct gestures are not merged (boiled ≠ fried, cassava ≠ maize). This guide orients; the recipes give proportions. See also the [market guide](/en/guides/marche/) for flours and diaspora substitutions.`,
+  },
 };

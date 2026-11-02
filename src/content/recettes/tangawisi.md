@@ -21,6 +21,8 @@ tags:
   - boisson
   - Kinshasa
 relatedRecipes:
+  - jus-tamarin
+  - jus-bissap
   - jus-ananas
   - jus-mangue
   - mikate

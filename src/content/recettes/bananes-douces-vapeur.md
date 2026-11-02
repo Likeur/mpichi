@@ -21,6 +21,7 @@ tags:
   - dessert
   - simple
 relatedRecipes:
+  - bananes-caramel
   - plantains-vapeur
   - makemba
   - beignets-banane

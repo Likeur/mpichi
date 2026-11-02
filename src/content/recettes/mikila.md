@@ -21,6 +21,7 @@ tags:
   - sauce tomate
   - fête
 relatedRecipes:
+  - mikila-arachide
   - viande-ya-sauce
   - soso-ya-sauce
   - fufu-manioc

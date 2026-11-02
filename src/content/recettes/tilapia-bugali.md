@@ -21,7 +21,8 @@ tags:
   - lac
   - poisson
 relatedRecipes:
-  - bugali-kivu
+  - nyama-bugali-kivu
+  - bukari-katanga
   - poisson-kivu-grille
   - sambaza
 ingredients:
@@ -40,4 +41,4 @@ steps:
   - Servir le poisson sur ou à côté du bugali, oignons et citron à part.
 ---
 
-**Tilapia + bugali** : assiette type des bords de lac quand le marché propose du frais. Moins « sauce longue » que le [poisson moambe](/recettes/poisson-moambe/) ; plus direct que les [ndagala](/recettes/ndagala-tomates/). Pour la pâte seule : [bugali](/recettes/bugali-kivu/).
+**Tilapia + bugali** : assiette type des bords de lac quand le marché propose du frais. Moins « sauce longue » que le [poisson moambe](/recettes/poisson-moambe/) ; plus direct que les [ndagala](/recettes/ndagala-tomates/). Pour la pâte seule : [bugali](/recettes/bukari-katanga/).

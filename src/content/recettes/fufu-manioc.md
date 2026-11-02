@@ -23,7 +23,10 @@ tags:
 relatedRecipes:
   - chikwangue
   - bukari-katanga
+  - fufu-plantain
+  - lituma
   - pondu
+  - moambe-poulet
 video:
   youtube: https://www.youtube.com/watch?v=pv5yJ1A6pzA
   title: Fufu congolais — geste de la pâte
@@ -42,6 +45,6 @@ steps:
   - Façonner en boules avec une louche mouillée. Servir aussitôt avec une sauce.
 ---
 
-Le **fufu de manioc** (parfois appelé simplement fufu ou foufou) se pince à la main pour ramasser la sauce. Il ne se confond pas avec le [bukari](/recettes/bukari-katanga/) (farine de maïs, Est) ni avec la [chikwangue](/recettes/chikwangue/) (bâton fermenté).
+Le **fufu de manioc** (parfois appelé simplement fufu ou foufou) se pince à la main pour ramasser la sauce. Il ne se confond pas avec le [bukari](/recettes/bukari-katanga/) (farine de maïs, Est) ni avec la [chikwangue](/recettes/chikwangue/) (bâton fermenté). Vue d’ensemble : [guide fufu](/guides/fufu/).
 
 Classiques à côté : [pondu](/recettes/pondu/), [sombe](/recettes/sombe/), [moambe](/recettes/moambe-poulet/).

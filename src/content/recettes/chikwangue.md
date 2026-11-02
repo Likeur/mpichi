@@ -3,11 +3,11 @@ title: Chikwangue
 seoTitle: Recette chikwangue — pain de manioc
 description: "Recette de chikwangue (kwanga) : pâte de manioc fermentée enveloppée dans des feuilles et cuite à la vapeur — accompagnement ferme et légèrement acidulé de la RDC."
 region: Bassin du Congo
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Chikwang-Traditional%20Congolese%20Food.jpg?width=1200
-imageAlt: Chikwangue congolaise enveloppée dans ses feuilles
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Cassava%20Bread%20-%20cassava%20cooked%20in%20leaf%20wrap%20(Kwanga%2C%20Chikwangue).jpg?width=1600
+imageAlt: Chikwangue (kwanga) cuite dans ses feuilles, bâtons emballés et déroulés
 imagePosition: center
-imageCredit: Rahul Tilak — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Chikwang-Traditional_Congolese_Food.jpg
+imageCredit: T.K. Naliaka — Wikimedia Commons, CC BY-SA 4.0
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Cassava_Bread_-_cassava_cooked_in_leaf_wrap_(Kwanga,_Chikwangue).jpg
 category: accompagnement
 prepTime: 40 min
 cookTime: 1 h 30
@@ -22,6 +22,7 @@ tags:
   - fermentation
 relatedRecipes:
   - chikwangue-grillee
+  - mbisi-na-kwanga
   - fufu-manioc
   - pondu
 

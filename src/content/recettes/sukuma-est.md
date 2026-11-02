@@ -21,7 +21,7 @@ tags:
   - Kivu
   - Est
 relatedRecipes:
-  - bugali-kivu
+  - bukari-katanga
   - ndunda
   - chou-mijote-est
 ingredients:
@@ -39,4 +39,4 @@ steps:
   - Servir aussitôt avec bugali ou riz.
 ---
 
-**Sukuma wiki** (« pousser la semaine » en swahili) : le vert bon marché qui allonge les repas. Au Kivu le geste croise l’Est africain ; à Kinshasa on parlerait plutôt de [ndunda](/recettes/ndunda/). Accompagnement naturel : [bugali](/recettes/bugali-kivu/).
+**Sukuma wiki** (« pousser la semaine » en swahili) : le vert bon marché qui allonge les repas. Au Kivu le geste croise l’Est africain ; à Kinshasa on parlerait plutôt de [ndunda](/recettes/ndunda/). Accompagnement naturel : [bugali](/recettes/bukari-katanga/).

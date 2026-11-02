@@ -18,6 +18,10 @@ tags:
   - gâteau
   - dessert
   - goûter
+relatedRecipes:
+  - gateau-arachide
+  - beignets-manioc
+  - bouillie-mais
 ingredients:
   - 400 g de manioc doux râpé (ou 280 g de farine de manioc)
   - 3 œufs

@@ -18,6 +18,11 @@ tags:
   - fermentation
   - boisson
   - Haut-Katanga
+relatedRecipes:
+  - malafu-vin-palme
+  - tangawisi
+  - jus-bissap
+  - bouillie-mais
 ingredients:
   - 300 g de farine de maïs
   - 2,5 l d’eau potable

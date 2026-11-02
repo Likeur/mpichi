@@ -22,6 +22,8 @@ tags:
   - vapeur
 relatedRecipes:
   - liboke-viande
+  - liboke-legumes
+  - liboke-champignons
   - chikwangue
   - poisson-braise-kinkole
 video:

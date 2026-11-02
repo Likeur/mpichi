@@ -3,11 +3,11 @@ title: Mbala grillée
 seoTitle: Recette mbala grillée — patate douce au feu
 description: "Recette de mbala grillée : patates douces cuites sous la braise ou au four jusqu’à la peau caramélisée — tubercule simple du Kasaï et d’ailleurs."
 region: Grand Kasaï
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Sweet%20potato.jpg?width=1600
-imageAlt: Patates douces cuites, type mbala
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Roasted%20Sweet%20Potato.jpg?width=1600
+imageAlt: Patate douce (mbala) rôtie / grillée, peau caramélisée
 imagePosition: center
-imageCredit: Kwabena — Wikimedia Commons, CC BY 3.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Sweet_potato.jpg
+imageCredit: Nizil Shah — Wikimedia Commons, CC BY-SA 4.0
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Roasted_Sweet_Potato.jpg
 category: accompagnement
 prepTime: 5 min
 cookTime: 40 min

@@ -89,6 +89,40 @@ Une fiche = un plat. Primaires = nom du plat + « recette ».
 | mujibujibu | — | `/recettes/mujibujibu/` | `renforcer` |
 | escargots à la congolaise | — | `/recettes/escargots-congolaise/` | `renforcer` |
 | brochettes de grillons | — | `/recettes/brochettes-grillons/` | `renforcer` |
+| bœuf à la moambe | viande moambe, beef moambe | `/recettes/moambe-boeuf/` | `ok` (vague A) |
+| pondu au poisson | pondu ya mbisi | `/recettes/pondu-poisson/` | `ok` (vague A) |
+| loso na mbisi | riz au poisson | `/recettes/loso-na-mbisi/` | `ok` (vague A) |
+| ngolo grillé | poisson-chat grillé | `/recettes/ngolo-grille/` | `ok` (vague A) |
+| crevettes du fleuve | crevettes Congo | `/recettes/crevettes-fleuve/` | `ok` (vague A) |
+| liboke de légumes | maboke légumes | `/recettes/liboke-legumes/` | `ok` (vague A) |
+| brochettes de bœuf | brochettes bœuf Kinshasa | `/recettes/brochettes-boeuf/` | `ok` (vague B) |
+| brochettes de poulet | — | `/recettes/brochettes-poulet/` | `ok` (vague B) |
+| porc ya kotumba | porc grillé | `/recettes/porc-ya-kotumba/` | `ok` (vague B) |
+| tripes mijotées | abats Kinshasa | `/recettes/tripes-mijotees/` | `ok` (vague B) |
+| spaghetti Kinshasa | pâtes sauce congolaise | `/recettes/spaghetti-kinshasa/` | `ok` (vague B) |
+| patate douce frite | mbala frit | `/recettes/patate-douce-frite/` | `ok` (vague C) |
+| fufu de plantain | foutou banane | `/recettes/fufu-plantain/` | `ok` (vague C) |
+| manioc frit bâtonnets | cassava fries | `/recettes/manioc-frites/` | `ok` (vague C) |
+| maïs grillé | — | `/recettes/mais-grille/` | `ok` (vague C) |
+| maïs bouilli | — | `/recettes/mais-bouilli/` | `ok` (vague C) |
+| igname en sauce | — | `/recettes/igname-sauce/` | `ok` (vague C) |
+| poisson Kisangani | poisson fleuve Kisangani | `/recettes/poisson-kisangani/` | `ok` (vague D) |
+| mbisi na kwanga | poisson chikwangue Kongo | `/recettes/mbisi-na-kwanga/` | `ok` (vague D) |
+| nsafu en sauce | safou sauce | `/recettes/nsafu-sauce/` | `ok` (vague D) |
+| nyama bugali | viande bugali Kivu | `/recettes/nyama-bugali-kivu/` | `ok` (vague D) |
+| liboke champignons | maboke champignons | `/recettes/liboke-champignons/` | `ok` (vague D) |
+| taro sauce arachide | malanga arachide | `/recettes/taro-sauce/` | `ok` (vague D) |
+| jus de tamarin | tamarinier boisson | `/recettes/jus-tamarin/` | `ok` (vague E) |
+| malafu vin de palme | palm wine | `/recettes/malafu-vin-palme/` | `ok` (vague E, service) |
+| gâteau arachide | cake nguba | `/recettes/gateau-arachide/` | `ok` (vague E) |
+| bananes au caramel | bananes caramélisées | `/recettes/bananes-caramel/` | `ok` (vague E) |
+| lait caillé | lait fermenté | `/recettes/lait-caille/` | `ok` (vague E) |
+| bonbons arachide | caramel arachide | `/recettes/bonbons-arachide/` | `ok` (vague E) |
+| crevettes grillées | crevettes braise | `/recettes/crevettes-grillees/` | `ok` (vague F) |
+| côtes de porc | travers porc | `/recettes/cotes-porc/` | `ok` (vague F) |
+| mikila arachide | queue bœuf arachide | `/recettes/mikila-arachide/` | `ok` (vague F) |
+| chou Kinshasa | chou mijoté capital | `/recettes/chou-kinshasa/` | `ok` (vague F) |
+| comment faire le fufu | fufu manioc bugali | `/guides/fufu/` | `ok` (vague F) |
 
 **Vague 1 livrée** (2026-10-21) : pondu, moambe-poulet, liboke-poisson, fumbwa, mikate, poisson-braise-kinkole, pepe-soupe-ya-ngolo, chikwangue.
 
@@ -100,7 +134,19 @@ Une fiche = un plat. Primaires = nom du plat + « recette ».
 
 **Vague 5 livrée** (2026-10-25) — Lot 1 Kasaï / Katanga / Est : makosso-pommes, ntaba-mijotee-kasai, haricots-nguba-kasai, poisson-fume-bidia, pommes-sautees-katanga, brochettes-lubumbashi, viande-sechee-tomates, loso-sauce-katanga, sambousa-pommes.
 
-**Suite possible** : hubs régions (Kinshasa, Katanga, Kasaï) + catégories + reste du catalogue.
+**Vague A / vague 1 livrée** (2026-11-02) — phares manquants : moambe-boeuf, pondu-poisson, loso-na-mbisi, ngolo-grille, crevettes-fleuve, liboke-legumes.
+
+**Vague B / vague 2 livrée** (2026-11-02) — street Kinshasa : brochettes-boeuf, brochettes-poulet, porc-ya-kotumba, tripes-mijotees, spaghetti-kinshasa.
+
+**Vague C / vague 3 livrée** (2026-11-02) — féculents : patate-douce-frite, fufu-plantain, manioc-frites, mais-grille, mais-bouilli, igname-sauce (patate douce bouillie = `mbala`).
+
+**Vague D / vague 4 livrée** (2026-11-02) — régions sous-couvertes : poisson-kisangani, mbisi-na-kwanga, nsafu-sauce, nyama-bugali-kivu, liboke-champignons, taro-sauce.
+
+**Vague E / vague 5 livrée** (2026-11-02) — boissons & desserts : jus-tamarin, malafu-vin-palme, gateau-arachide, bananes-caramel, lait-caille, bonbons-arachide (`beignets-haricot` omis).
+
+**Vague F / vague 6 livrée** (2026-11-02) — renfort + polish : crevettes-grillees, cotes-porc, mikila-arachide, chou-kinshasa + guide `/guides/fufu/` + ship dataset v1.6.0.
+
+**Suite** : hubs régions / catégories si besoin ; releases mineures suivantes.
 
 ---
 
@@ -111,7 +157,7 @@ Une fiche = un plat. Primaires = nom du plat + « recette ».
 | comment faire le pondu | préparer saka-saka, pondu étape par étape | `/guides/pondu/` | `ok` (vague 3) |
 | sauce moambe | comment faire la moambe, mwamba | `/guides/moambe/` | `ok` (vague 3) |
 | marché congolaise cuisine | ingrédients cuisine congolaise, substitutions | `/guides/marche/` | `ok` (vague 3) |
-| comment faire le fufu | fufu manioc, bukari | `créer` → `/guides/fufu/` (ou renforcer fiches bukari/chikwangue) | `créer` |
+| comment faire le fufu | fufu manioc, bukari | `/guides/fufu/` | `ok` (vague F) |
 | comment faire la chikwangue | kwanga | `/recettes/chikwangue/` (+ guide optionnel) | `renforcer` |
 
 ---
@@ -121,7 +167,7 @@ Une fiche = un plat. Primaires = nom du plat + « recette ».
 | Mot-clé principal | Secondaires | URL | Statut |
 | --- | --- | --- | --- |
 | chikwangue | kwanga, pain de manioc | `/recettes/chikwangue/` | `ok` (vague 1) |
-| bukari | fufu maïs katanga, bidia (alias) | `/recettes/bukari-katanga/` | `ok` (vague 2) |
+| bukari | fufu maïs, bugali, bidia, ugali (alias) | `/recettes/bukari-katanga/` | `ok` (bugali fusionné, redirect) |
 | lituma | purée plantain | `/recettes/lituma/` | `ok` (vague 3) |
 | makemba | plantains frits | `/recettes/makemba/` | `ok` (vague 3) |
 | riz à la moambe | — | `/recettes/riz-moambe/` | `renforcer` |
@@ -150,10 +196,16 @@ Une fiche = un plat. Primaires = nom du plat + « recette ».
 | --- | --- | --- | --- |
 | tangawisi | jus gingembre congolaise | `/recettes/tangawisi/` | `ok` (vague 3) |
 | jus de bissap | bissap congolaise | `/recettes/jus-bissap/` | `renforcer` |
+| jus de tamarin | tamarinier | `/recettes/jus-tamarin/` | `ok` (vague E) |
+| malafu / vin de palme | — | `/recettes/malafu-vin-palme/` | `ok` (vague E, service) |
 | jus fruit de la passion | — | `/recettes/jus-passion/` | `renforcer` |
 | munkoyo | — | `/recettes/munkoyo/` | `renforcer` |
 | beignets de banane | — | `/recettes/beignets-banane/` | `renforcer` |
 | gâteau au manioc | — | `/recettes/gateau-manioc/` | `renforcer` |
+| gâteau arachide | cake nguba | `/recettes/gateau-arachide/` | `ok` (vague E) |
+| bananes au caramel | — | `/recettes/bananes-caramel/` | `ok` (vague E) |
+| lait caillé | — | `/recettes/lait-caille/` | `ok` (vague E) |
+| bonbons arachide | — | `/recettes/bonbons-arachide/` | `ok` (vague E) |
 | bouillie d’arachide | — | `/recettes/bouillie-arachide/` | `renforcer` |
 | boissons congolaises | — | `/categories/boisson/` | `renforcer` |
 | desserts congolais | — | `/categories/dessert/` | `renforcer` |

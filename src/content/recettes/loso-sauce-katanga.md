@@ -3,11 +3,11 @@ title: Loso ya sauce
 seoTitle: Recette loso ya sauce — riz sauce tomate Katanga
 description: "Recette de loso ya sauce : riz blanc servi avec une sauce tomate à la viande — assiette du quotidien à Lubumbashi, distincte du loso mayonnaise de Kinshasa."
 region: Grand Katanga
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Repas%20pour%20petit%20d%C3%A9jeuner.jpg?width=1600
-imageAlt: Assiette congolaise avec fufu, légume et sauce
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Jollof%20rice.jpg?width=1600
+imageAlt: Assiette de riz en sauce tomate, type loso ya sauce
 imagePosition: center
-imageCredit: BamLifa — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Repas_pour_petit_d%C3%A9jeuner.jpg
+imageCredit: Salamisa — Wikimedia Commons, domaine public
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Jollof_rice.jpg
 category: plat
 prepTime: 20 min
 cookTime: 45 min

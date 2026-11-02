@@ -4,7 +4,7 @@ seoTitle: Recette mbala — patate douce
 description: "Recette de mbala : patates douces bouillies ou rôties jusqu’à fondre — tubercule du quotidien, distinct des feuilles matembele."
 region: Toute la RDC
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Sweet%20potato.jpg?width=1600
-imageAlt: Patates douces (mbala) cuites
+imageAlt: Patates douces (mbala) bouillies, chair jaune
 imagePosition: center
 imageCredit: Kwabena — Wikimedia Commons, CC BY 3.0
 imageCreditUrl: https://commons.wikimedia.org/wiki/File:Sweet_potato.jpg
@@ -24,6 +24,8 @@ relatedRecipes:
   - matembele-katanga
   - igname-bouillie
   - plantains-vapeur
+  - patate-douce-frite
+  - mbala-grillee
 ingredients:
   - 1 kg de patates douces (mbala)
   - Eau
@@ -36,4 +38,4 @@ steps:
   - "Variante : rôtir au four ou sur braises 40 minutes pour une peau caramélisée."
 ---
 
-**Mbala** désigne la **patate douce** (le tubercule). Les [matembele](/recettes/matembele-katanga/) sont les **feuilles** de la même plante — autre geste, autre fiche. Cousins féculents : [igname bouillie](/recettes/igname-bouillie/), [plantains à la vapeur](/recettes/plantains-vapeur/).
+**Mbala** désigne la **patate douce** (le tubercule). Version feu : [mbala grillée](/recettes/mbala-grillee/). Version friture : [patate douce frite](/recettes/patate-douce-frite/). Les [matembele](/recettes/matembele-katanga/) sont les **feuilles** de la même plante — autre geste, autre fiche. Cousins féculents : [igname bouillie](/recettes/igname-bouillie/), [plantains à la vapeur](/recettes/plantains-vapeur/).

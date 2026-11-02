@@ -22,7 +22,7 @@ tags:
   - Est
 relatedRecipes:
   - madesu
-  - bugali-kivu
+  - bukari-katanga
   - saka-madesu
 ingredients:
   - 400 g de haricots rouges secs (trempés une nuit) ou 800 g cuits
@@ -41,4 +41,4 @@ steps:
   - Servir avec bugali, riz ou plantain.
 ---
 
-**Maharage** (swahili) : les haricots de l’Est, cousins des [madesu](/recettes/madesu/) de l’Ouest. Au Kivu on les colle souvent au [bugali](/recettes/bugali-kivu/). Moins « sauce arachide » que certains plats kasaiens : ici tomate, oignon, patience.
+**Maharage** (swahili) : les haricots de l’Est, cousins des [madesu](/recettes/madesu/) de l’Ouest. Au Kivu on les colle souvent au [bugali](/recettes/bukari-katanga/). Moins « sauce arachide » que certains plats kasaiens : ici tomate, oignon, patience.

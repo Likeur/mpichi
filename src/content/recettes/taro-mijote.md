@@ -21,7 +21,9 @@ tags:
   - Cuvette
   - sauce tomate
 relatedRecipes:
+  - taro-sauce
   - igname-bouillie
+  - igname-sauce
   - liboke-poisson
   - chikwangue
 ingredients:

@@ -17,6 +17,10 @@ tags:
   - Kisangani
   - chou
   - carotte
+relatedRecipes:
+  - poisson-kisangani
+  - loso-na-mbisi
+  - chou-mijote-est
 ingredients:
   - 1 petit chou blanc
   - 3 carottes

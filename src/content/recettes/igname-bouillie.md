@@ -24,6 +24,7 @@ relatedRecipes:
   - beignets-igname
   - mbala
   - plantains-vapeur
+  - igname-sauce
 ingredients:
   - 1 kg d’igname
   - Eau

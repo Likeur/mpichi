@@ -21,6 +21,7 @@ tags:
   - feuilles
   - végétal
 relatedRecipes:
+  - mbisi-na-kwanga
   - sauce-arachide
   - pondu
   - chikwangue

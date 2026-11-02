@@ -19,9 +19,11 @@ tags:
   - jus
   - boisson
 relatedRecipes:
+  - jus-tamarin
   - jus-mangue
   - jus-ananas
   - jus-passion
+  - tangawisi
 video:
   youtube: https://www.youtube.com/watch?v=2cUQilpkRBA
   title: Jus de bissap (hibiscus)

@@ -3,7 +3,7 @@ title: Mbinzo aux tomates
 description: Chenilles séchées réhydratées puis mijotées avec tomate, oignon et pili-pili, une spécialité riche en saveurs.
 region: Grand Bandundu
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/RDC%20plat%20de%20chenilles.jpg?width=1600
-imageAlt: Plat congolais de chenilles cuisinées
+imageAlt: Mbinzo (chenilles) mijotées en sauce, plat congolais
 imagePosition: center
 imageCredit: Serein — Wikimedia Commons, CC BY-SA 3.0
 imageCreditUrl: https://commons.wikimedia.org/wiki/File:RDC_plat_de_chenilles.jpg

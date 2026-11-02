@@ -21,6 +21,7 @@ tags:
   - Équateur
   - accompagnement
 relatedRecipes:
+  - fufu-plantain
   - makemba
   - chikwangue
   - liboke-poisson

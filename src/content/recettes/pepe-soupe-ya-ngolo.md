@@ -21,6 +21,7 @@ tags:
   - soupe
   - Kinshasa
 relatedRecipes:
+  - ngolo-grille
   - poisson-braise-kinkole
   - chikwangue
   - mikate

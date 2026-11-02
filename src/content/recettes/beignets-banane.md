@@ -19,6 +19,7 @@ tags:
   - goûter
   - friture
 relatedRecipes:
+  - bananes-caramel
   - mikate
   - beignets-manioc
   - bouillie-mais

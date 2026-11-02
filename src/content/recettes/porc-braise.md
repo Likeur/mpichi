@@ -19,6 +19,8 @@ tags:
   - grillade
   - Kinshasa
 relatedRecipes:
+  - cotes-porc
+  - porc-ya-kotumba
   - ngulu-ya-sauce
   - makoso
   - kamundele

@@ -18,6 +18,10 @@ tags:
   - tomate
   - huile de palme
   - forêt
+relatedRecipes:
+  - liboke-champignons
+  - mbinzo-tomates
+  - chikwangue
 video:
   youtube: https://www.youtube.com/watch?v=IblVFJj828w
   title: Mayebo (avec mbinzo et poisson fumé)

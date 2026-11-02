@@ -23,7 +23,9 @@ tags:
 relatedRecipes:
   - sombe
   - chikwangue
+  - fufu-manioc
   - saka-madesu
+  - pondu-poisson
 
 video:
   youtube: https://www.youtube.com/watch?v=F8FIY5xvJIU

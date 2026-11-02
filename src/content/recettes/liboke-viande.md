@@ -18,6 +18,10 @@ tags:
   - feuille de bananier
   - vapeur
   - liboke
+relatedRecipes:
+  - liboke-poisson
+  - liboke-legumes
+  - chikwangue
 ingredients:
   - 800 g de bœuf ou de chèvre en morceaux
   - 2 oignons, en rondelles

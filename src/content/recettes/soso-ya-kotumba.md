@@ -24,6 +24,8 @@ relatedRecipes:
   - poulet-mayo
   - sauce-pili-pili
   - porc-braise
+  - porc-ya-kotumba
+  - brochettes-poulet
 video:
   youtube: https://www.youtube.com/watch?v=4RR_NDiEe90
   title: Soso ya kotumba — poulet grillé / rôti

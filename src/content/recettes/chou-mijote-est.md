@@ -21,7 +21,8 @@ tags:
   - Est
   - accompagnement
 relatedRecipes:
-  - bugali-kivu
+  - chou-kinshasa
+  - bukari-katanga
   - sukuma-est
   - ndunda
 ingredients:
@@ -40,4 +41,4 @@ steps:
   - Servir chaud avec bugali, riz ou viande grillée.
 ---
 
-Le **chou mijoté** est un légume de table à l’Est, moins chanté que le [pondu](/recettes/pondu/) mais très présent dès que le marché en propose. On le pose à côté du [bugali](/recettes/bugali-kivu/). Autre vert du quotidien swahili : [sukuma](/recettes/sukuma-est/).
+Le **chou mijoté** est un légume de table à l’Est, moins chanté que le [pondu](/recettes/pondu/) mais très présent dès que le marché en propose. On le pose à côté du [bugali](/recettes/bukari-katanga/). Autre vert du quotidien swahili : [sukuma](/recettes/sukuma-est/).

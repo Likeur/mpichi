@@ -23,7 +23,9 @@ tags:
 relatedRecipes:
   - riz-moambe
   - poisson-moambe
+  - moambe-boeuf
   - pondu
+  - fufu-manioc
 video:
   youtube: https://www.youtube.com/watch?v=me-evkb7Vhk
   title: Poulet à la moambe (mosaka / sauce graine)

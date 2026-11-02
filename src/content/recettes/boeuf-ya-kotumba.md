@@ -24,6 +24,8 @@ relatedRecipes:
   - soso-ya-kotumba
   - kamundele
   - viande-ya-sauce
+  - porc-ya-kotumba
+  - brochettes-boeuf
 ingredients:
   - 1,2 kg de bœuf (basse côte, paleron ou rumsteck) en gros morceaux
   - 2 oignons, dont un râpé

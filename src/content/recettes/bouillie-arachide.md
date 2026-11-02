@@ -19,6 +19,8 @@ tags:
   - petit-déjeuner
   - goûter
 relatedRecipes:
+  - gateau-arachide
+  - bonbons-arachide
   - bouillie-mais
   - mikate
   - beignets-banane

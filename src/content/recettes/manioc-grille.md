@@ -17,6 +17,11 @@ tags:
   - manioc
   - braises
   - accompagnement
+relatedRecipes:
+  - manioc-frites
+  - beignets-manioc
+  - croquettes-manioc
+  - fufu-manioc
 ingredients:
   - 1 kg de manioc doux
   - 1 c. à soupe d’huile

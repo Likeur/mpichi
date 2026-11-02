@@ -3,11 +3,11 @@ title: Bouillie de maïs
 seoTitle: Recette bouillie de maïs
 description: "Recette de bouillie de maïs : farine de maïs cuite à l’eau jusqu’à texture crémeuse, sucrée — petit-déjeuner et goûter, distincte de la bouillie d’arachide."
 region: Toute la RDC
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Bouillie%20de%20ma%C3%AFs%201.JPG?width=1600
-imageAlt: Bol de bouillie de maïs
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Uji.jpg?width=1600
+imageAlt: Bol de bouillie de maïs (uji) crémeuse
 imagePosition: center
-imageCredit: Jessica Sagou — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Bouillie_de_ma%C3%AFs_1.JPG
+imageCredit: Gakuro — Wikimedia Commons, CC BY-SA 3.0
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Uji.jpg
 category: dessert
 prepTime: 5 min
 cookTime: 20 min
@@ -20,6 +20,8 @@ tags:
   - petit-déjeuner
   - goûter
 relatedRecipes:
+  - mais-bouilli
+  - mais-grille
   - bouillie-arachide
   - mikate
   - tangawisi

@@ -1,7 +1,7 @@
 ---
 title: Bukari
-seoTitle: Recette bukari — fufu de maïs katanga
-description: "Recette de bukari : pâte de farine de maïs travaillée à chaud jusqu’à devenir lisse et dense — accompagnement central du Grand Katanga (Lubumbashi)."
+seoTitle: Recette bukari / bugali / bidia — fufu de maïs
+description: "Recette de bukari (aussi bugali, bidia) : pâte de farine de maïs travaillée à chaud jusqu’à devenir lisse et dense — accompagnement central à l’Est et au Sud de la RDC."
 region: Grand Katanga
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Fufu%20Balls.jpg?width=1600
 imageAlt: Boules de fufu de maïs servies en République démocratique du Congo
@@ -16,16 +16,28 @@ difficulty: moyen
 featured: false
 tags:
   - bukari
-  - fufu maïs
+  - bugali
   - bidia
+  - fufu maïs
+  - ugali
   - Grand Katanga
-  - Lubumbashi
+  - Kivu
 relatedRecipes:
   - fufu-manioc
   - chikwangue
   - sambaza
-  - bugali-kivu
+  - haricots-maharage
 variants:
+  - id: bugali-kivu
+    title: Bugali (nom du Kivu)
+    description: Au Nord-Kivu et Sud-Kivu, la même pâte de maïs s’appelle bugali (proche de l’ugali est-africain) — même geste, autre nom de table.
+    ingredients:
+      - 500 g de farine fine de maïs blanc
+      - 1,2 l d’eau
+      - 1 pincée de sel, facultative
+    steps:
+      - Suivre les mêmes étapes que le bukari.
+      - Servir avec légumes de l’Est (chou mijoté, sukuma, maharage) ou poisson de lac.
   - id: bidia-kasai
     title: Bidia (nom kasaien)
     description: Au Grand Kasaï, la même pâte de maïs s’appelle souvent bidia — même geste, autre nom de table.
@@ -54,6 +66,6 @@ steps:
   - Façonner en portions avec une louche mouillée et servir immédiatement.
 ---
 
-Le **bukari** (pâte de maïs, aussi appelée *bidia* au Kasaï) occupe le centre de la table au Grand Katanga : légumes-feuilles, poisson et viandes en sauce s’y accrochent. Au Kivu, le cousin proche est le [bugali](/recettes/bugali-kivu/). À l’Ouest, l’équivalent fermenté de manioc est plutôt la [chikwangue](/recettes/chikwangue/) ; le [fufu de manioc](/recettes/fufu-manioc/) reste l’autre grand geste de pâte.
+Le **bukari** est la pâte de maïs du Grand Katanga ; au Kivu on dit *bugali*, au Kasaï *bidia* — **un seul geste**, des noms de table différents (voir les variantes). À l’Ouest, l’équivalent fermenté de manioc est plutôt la [chikwangue](/recettes/chikwangue/) ; le [fufu de manioc](/recettes/fufu-manioc/) reste l’autre grand geste de pâte.
 
 Sauces de la région : [matembele aux arachides](/recettes/matembele-katanga/), [kapenta aux tomates](/recettes/kapenta-tomates/).

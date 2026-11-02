@@ -46,6 +46,6 @@ steps:
   - Laisser reposer 5 minutes couvert, égrener à la fourchette et servir.
 ---
 
-Le **pilau** (ou *pilaw*) circule dans l’Est swahilophone : épices, riz, viande. Au Kivu il côtoie le [bugali](/recettes/bugali-kivu/) et les plats de lac. Ce n’est pas le [loso mayonnaise](/recettes/loso-mayonnaise/) de Kinshasa : ici le riz boit le bouillon d’épices.
+Le **pilau** (ou *pilaw*) circule dans l’Est swahilophone : épices, riz, viande. Au Kivu il côtoie le [bugali](/recettes/bukari-katanga/) et les plats de lac. Ce n’est pas le [loso mayonnaise](/recettes/loso-mayonnaise/) de Kinshasa : ici le riz boit le bouillon d’épices.
 
 Photo d’ambiance est-africaine (crédit Commons) — le geste reste celui des foyers de Goma, Bukavu et alentours.
