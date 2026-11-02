@@ -23,3 +23,10 @@ pnpm-debug.log*
 
 # macOS
 .DS_Store
+
+# Remotion (kept out of this repo)
+remotion/
+remotion.config.ts
+public/music/
+public/video-assets/
+out/

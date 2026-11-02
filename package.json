@@ -10,31 +10,18 @@
     "check": "astro check",
     "ci": "npm run check && npm run build",
     "astro": "astro",
-    "export-dataset": "npm --prefix mpichi-dataset run export",
-    "remotion": "remotion studio remotion/index.ts --port 3333",
-    "remotion:render": "remotion render remotion/index.ts MpichiShow out/mpichi-show.mp4 --port=3456 --browser-executable=\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --gl=angle",
-    "remotion:render:vertical": "remotion render remotion/index.ts MpichiShowVertical out/mpichi-show-9x16.mp4 --port=3457 --browser-executable=\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --gl=angle",
-    "remotion:render:series": "mkdir -p out/series && remotion render remotion/index.ts SeriesMpi out/series/01-mpi.mp4 --port=3461 --browser-executable=\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --gl=angle && remotion render remotion/index.ts SeriesCatalogue out/series/02-catalogue.mp4 --port=3462 --browser-executable=\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --gl=angle && remotion render remotion/index.ts SeriesPondu out/series/03-pondu.mp4 --port=3463 --browser-executable=\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --gl=angle && remotion render remotion/index.ts SeriesLangues out/series/04-langues.mp4 --port=3464 --browser-executable=\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --gl=angle && remotion render remotion/index.ts SeriesFavoris out/series/05-favoris.mp4 --port=3465 --browser-executable=\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --gl=angle"
+    "export-dataset": "npm --prefix mpichi-dataset run export"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
-    "@remotion/cli": "4.0.537",
-    "@remotion/google-fonts": "4.0.537",
-    "@remotion/media-utils": "4.0.537",
-    "@remotion/transitions": "4.0.537",
     "@tailwindcss/vite": "^4.0.0",
     "astro": "^5.2.0",
     "locomotive-scroll": "^5.0.1",
-    "react": "19.3.1",
-    "react-dom": "19.3.1",
-    "remotion": "4.0.537",
     "tailwindcss": "^4.0.0",
     "zod": "4.5.4"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
-    "@types/react": "19.3.0",
-    "@types/react-dom": "19.3.0",
     "@vite-pwa/astro": "^1.2.0",
     "typescript": "^5.9.3"
   }
