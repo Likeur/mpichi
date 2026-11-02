@@ -1,6 +1,7 @@
 ---
 title: Porc braisé
-description: Morceaux de porc marinés aux aromates puis braisés sur les braises jusqu’à une croûte dorée — la grillade de porc absente du catalogue jusqu’ici.
+seoTitle: "Recette porc braisé"
+description: "Recette de porc braisé (en lingala : ngulu ya kotumba / ngulu braisé) : morceaux marinés puis braisés sur braises — grillade kin, distincte du porc en sauce."
 region: Kinshasa
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Cochon%20en%20feu.jpg?width=1600
 imageAlt: Porc grillé sur les braises
@@ -15,6 +16,7 @@ difficulty: moyen
 featured: false
 tags:
   - porc
+  - ngulu
   - braise
   - grillade
   - Kinshasa
@@ -44,5 +46,4 @@ steps:
   - Égoutter, puis braiser sur des braises moyennes 20 à 30 minutes en badigeonnant du jus réservé.
   - Servir avec oignon cru, pili-pili et chikwangue ou plantain.
 ---
-
-Le porc braisé se distingue des kamundele (bœuf en petites brochettes) par la pièce, la durée de cuisson et la matière. Selon les gargotes, la précuisson est plus ou moins poussée avant les braises.
+Le **porc braisé** (en lingala : *ngulu* pour porc ; souvent *ngulu ya kotumba* à la grillade) se distingue des [kamundele](/recettes/kamundele/) par la pièce et la durée. En sauce : [porc en sauce](/recettes/ngulu-ya-sauce/). Snack grillé proche : [porc grillé](/recettes/porc-ya-kotumba/).

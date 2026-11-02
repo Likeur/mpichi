@@ -8,12 +8,17 @@ const site = process.env.SITE || 'https://mpichi.likeur.xyz';
 
 export default defineConfig({
   site,
+  redirects: {
+    '/recettes/bugali-kivu': '/recettes/bukari-katanga/',
+    '/en/recettes/bugali-kivu': '/en/recettes/bukari-katanga/',
+    '/ln/recettes/bugali-kivu': '/ln/recettes/bukari-katanga/',
+  },
   devToolbar: {
     enabled: false,
   },
   i18n: {
     defaultLocale: 'fr',
-    locales: ['fr', 'en'],
+    locales: ['fr', 'en', 'ln'],
     routing: {
       prefixDefaultLocale: false,
     },
@@ -25,6 +30,7 @@ export default defineConfig({
         locales: {
           fr: 'fr-CD',
           en: 'en',
+          ln: 'ln',
         },
       },
       filter: (page) =>

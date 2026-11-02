@@ -1,7 +1,7 @@
 ---
-title: Soso ya kotumba
-seoTitle: Recette soso ya kotumba — poulet grillé
-description: "Recette de soso ya kotumba : poulet mariné aux aromates puis grillé ou rôti jusqu’à une peau croustillante — grillade congolaise distincte du poulet mayo."
+title: Poulet grillé
+seoTitle: "Recette poulet grillé — kotumba"
+description: "Recette de poulet grillé (en lingala : soso ya kotumba) : poulet mariné puis cuit sur braises — classique de table et de rue à Kinshasa."
 region: Kinshasa
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Poulet%20grill%C3%A9.jpg?width=1600
 imageAlt: Poulet grillé doré, prêt à servir
@@ -48,7 +48,4 @@ steps:
   - Griller sur braises moyennes (ou rôtir au four à 200 °C) 30 à 40 minutes en arrosant du jus réservé, jusqu’à peau dorée et chair cuite.
   - Servir avec sauce pili-pili, oignons crus, frites ou plantain.
 ---
-
-**Soso ya kotumba** (« poulet grillé » en lingala) mise sur la marinade et la braise — pas sur une sauce mayo ni une moambe. Au four, on cherche la même peau croustillante qu’au feu de bois.
-
-Variantes de poulet : [poulet mayo](/recettes/poulet-mayo/), [poulet à la moambe](/recettes/moambe-poulet/), [soso ya sauce](/recettes/soso-ya-sauce/).
+Le **poulet grillé** (en lingala : *soso ya kotumba*) mise sur la marinade et la braise — pas sur une sauce mayo ni une moambe. Pour la mayo : [poulet mayo](/recettes/poulet-mayo/). Condiment : [sauce pili-pili](/recettes/sauce-pili-pili/).

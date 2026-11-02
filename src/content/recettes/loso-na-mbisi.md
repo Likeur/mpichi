@@ -1,7 +1,7 @@
 ---
-title: Loso na mbisi
-seoTitle: Recette loso na mbisi — riz au poisson
-description: "Recette de loso na mbisi : riz mijoté ou servi avec du poisson en sauce tomate — assiette du quotidien à Kinshasa, cousine du loso na madesu."
+title: Riz au poisson
+seoTitle: "Recette riz au poisson"
+description: "Recette de riz au poisson (en lingala : loso na mbisi) : riz mijoté avec du poisson — classique de table kinshasaise."
 region: Kinshasa
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Fish_and_rice.jpg?width=1600
 imageAlt: Assiette de riz servi avec du poisson
@@ -41,5 +41,4 @@ steps:
   - À part (ou dans une seconde marmite), cuire le riz dans l'eau salée jusqu'à absorption.
   - Servir le riz nappé de sauce et de poisson, ou mélanger doucement en fin de cuisson si l'on veut un plat unique.
 ---
-
-**Loso na mbisi** (« riz et poisson ») complète [loso na madesu](/recettes/loso-na-madesu/) et le [loso mayonnaise](/recettes/loso-mayonnaise/) kinshasa. Poisson frit seul : [mbisi ya kokalinga](/recettes/mbisi-ya-kokalinga/). Assiette plantain + poisson : [makemba na mbisi](/recettes/makemba-na-mbisi/).
+Le **riz au poisson** (en lingala : *loso na mbisi*) complète le [riz aux haricots](/recettes/loso-na-madesu/) et le [riz mayonnaise](/recettes/loso-mayonnaise/) : ici le poisson porte le riz. Autre poisson de table : [pondu au poisson](/recettes/pondu-poisson/).

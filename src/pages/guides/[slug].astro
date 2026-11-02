@@ -3,7 +3,7 @@ import { getCollection, render, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EditorialRecipeCard from '../../components/EditorialRecipeCard.astro';
 import type { Locale } from '../../i18n/config';
-import { localePath, localizeGuide, useTranslations } from '../../i18n/utils';
+import { localePath, localizeGuide, schemaLanguage, useTranslations } from '../../i18n/utils';
 import { slugFromRecipeId } from '../../lib/recipe-theme';
 import { absoluteUrl } from '../../lib/site';
 import { pageCanonical, resolveOrigin } from '../../lib/seo';
@@ -47,7 +47,7 @@ const articleJsonLd = {
       : absoluteUrl(localized.image, origin),
   ],
   url: pageUrl,
-  inLanguage: lang === 'en' ? 'en' : 'fr',
+  inLanguage: schemaLanguage(lang),
   author: {
     '@type': 'Organization',
     name: 'Mpichi',
@@ -133,7 +133,7 @@ const breadcrumbJsonLd = {
   <article class="bg-creme-100 text-earth-900">
     <div class="px-grid-margin max-w-[720px] mx-auto py-12 sm:py-16">
       {
-        lang === 'en' && localized.body ? (
+        (lang === 'en' || lang === 'ln') && localized.body ? (
           <div class="space-y-5 text-[15px] leading-7 text-earth-900/75 [&_h2]:mt-10 [&_h2]:font-display [&_h2]:text-2xl [&_h2]:font-light [&_h2]:text-earth-900">
             {localized.body.split('\n\n').map((block) =>
               block.startsWith('## ') ? (

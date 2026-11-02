@@ -1,6 +1,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import type { Locale } from '../i18n/config';
 import { localizeRecipe, type LocalizedRecipe } from '../i18n/utils';
+import { regionIdFromKey } from './taxonomy/index';
 
 export const RECIPE_CATEGORIES = ['plat', 'accompagnement', 'boisson', 'dessert'] as const;
 export type RecipeCategory = (typeof RECIPE_CATEGORIES)[number];
@@ -54,9 +55,12 @@ export async function getRegionTaxonomies(locale: Locale): Promise<RegionTaxonom
 
     if (existing) {
       if (existing.key !== key) {
-        throw new Error(
-          `Collision de slug région « ${slug} » entre « ${existing.key} » et « ${key} »`,
-        );
+        const sameRegion = regionIdFromKey(existing.key) === regionIdFromKey(key);
+        if (!sameRegion) {
+          throw new Error(
+            `Collision de slug région « ${slug} » entre « ${existing.key} » et « ${key} »`,
+          );
+        }
       }
       existing.recipes.push({ recipe, localized });
       continue;

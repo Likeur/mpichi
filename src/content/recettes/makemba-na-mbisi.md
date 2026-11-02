@@ -1,7 +1,7 @@
 ---
-title: Makemba na mbisi
-seoTitle: Recette makemba na mbisi — plantains et poisson
-description: "Recette de makemba na mbisi : plantains frits servis avec du poisson (frit, braisé ou en sauce) — assiette composée très courante en RDC."
+title: Plantains frits au poisson
+seoTitle: "Recette plantains frits au poisson"
+description: "Recette de plantains frits au poisson (en lingala : makemba na mbisi) — duo plantain et poisson."
 region: Toute la RDC
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/FRIED_PLANTAIN_FISH.jpg?width=1600
 imageAlt: Plantains frits servis avec du poisson
@@ -39,5 +39,4 @@ steps:
   - "Option sauce courte : faire revenir oignon et ail, ajouter tomates et un fond d’eau, 8 minutes. Napper le poisson."
   - Dresser makemba et mbisi dans la même assiette. Servir aussitôt.
 ---
-
-**Makemba na mbisi** n’est pas une nouvelle technique : c’est le **mariage d’assiette** entre [makemba](/recettes/makemba/) et un poisson (braisé, frit ou fumé). À Kinshasa comme en province, c’est l’une des compositions les plus demandées.
+Les **plantains frits au poisson** (en lingala : *makemba na mbisi*) ne sont pas une nouvelle technique : c’est le mariage d’assiette entre [makemba](/recettes/makemba/) et un poisson du catalogue.

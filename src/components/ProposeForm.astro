@@ -13,7 +13,7 @@ const t = useTranslations(lang);
 const { endpoint } = Astro.props;
 const configured = Boolean(endpoint);
 const mailtoPhotos = `mailto:${SITE_CONTACT_EMAIL}?subject=${encodeURIComponent(
-  lang === 'en' ? 'Mpichi — dish photo' : 'Mpichi — photo de plat',
+  lang === 'en' ? 'Mpichi — dish photo' : lang === 'ln' ? 'Mpichi — photo ya bilei' : 'Mpichi — photo de plat',
 )}`;
 ---
 

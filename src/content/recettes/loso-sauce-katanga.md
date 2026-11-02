@@ -1,7 +1,7 @@
 ---
-title: Loso ya sauce
-seoTitle: Recette loso ya sauce — riz sauce tomate Katanga
-description: "Recette de loso ya sauce : riz blanc servi avec une sauce tomate à la viande — assiette du quotidien à Lubumbashi, distincte du loso mayonnaise de Kinshasa."
+title: Riz sauce tomate
+seoTitle: "Recette riz sauce tomate — Katanga"
+description: "Recette de riz en sauce tomate (en lingala : loso ya sauce) — assiette Katanga / Sud-Est."
 region: Grand Katanga
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Jollof%20rice.jpg?width=1600
 imageAlt: Assiette de riz en sauce tomate, type loso ya sauce
@@ -41,5 +41,4 @@ steps:
   - Remettre la viande, verser l’eau. Mijoter 25–30 minutes.
   - Assaisonner. Servir la sauce sur ou à côté du riz.
 ---
-
-**Loso ya sauce** à Lubumbashi : riz + sauce tomate, sans la mayonnaise du [loso mayonnaise](/recettes/loso-mayonnaise/) kin. Autre riz d’Est : [pilau du Kivu](/recettes/pilau-kivu/). Quand on veut la pâte : [bukari](/recettes/bukari-katanga/).
+Le **riz sauce tomate** (en lingala : *loso ya sauce*) à Lubumbashi : riz + sauce tomate, sans la mayonnaise du [riz mayonnaise](/recettes/loso-mayonnaise/).

@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import EditorialRecipeCard from '../../components/EditorialRecipeCard.astro';
 import FilterDropdown from '../../components/FilterDropdown.astro';
 import type { Locale } from '../../i18n/config';
-import { localePath, localizeRecipe, recipeCountLabel, useTranslations } from '../../i18n/utils';
+import { localePath, localizeRecipe, recipeCountLabel, useTranslations, schemaLanguage} from '../../i18n/utils';
 import type { UiKey } from '../../i18n/ui';
 import { absoluteUrl } from '../../lib/site';
 import { pageCanonical, resolveOrigin } from '../../lib/seo';
@@ -68,11 +68,11 @@ const catalogJsonLd = {
   name: t('recipes.pageTitle'),
   description: t('recipes.description'),
   url: pageUrl,
-  inLanguage: lang === 'en' ? 'en' : 'fr-CD',
+  inLanguage: schemaLanguage(lang),
   isPartOf: { '@id': `${origin}/#website` },
   about: {
     '@type': 'Thing',
-    name: lang === 'en' ? 'Congolese cuisine' : 'Cuisine congolaise',
+    name: lang === 'en' ? 'Congolese cuisine' : lang === 'ln' ? 'Bilei ya Congo' : 'Cuisine congolaise',
   },
   mainEntity: {
     '@type': 'ItemList',

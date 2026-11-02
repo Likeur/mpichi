@@ -1,7 +1,7 @@
 ---
-title: Pepe soupe ya ngolo
-seoTitle: Recette pepe soupe ya ngolo
-description: "Recette de pepe soupe ya ngolo : soupe de poisson-chat au gingembre, à l’ail et au pili-pili — street food pimentée de Kinshasa."
+title: Soupe pepe au poisson-chat
+seoTitle: "Recette soupe pepe au poisson-chat (ngolo)"
+description: "Recette de soupe pepe au poisson-chat (en lingala : pepe soupe ya ngolo) — bouillon pimenté au ngolo."
 region: Kinshasa
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Pepe%20soupe%20ya%20ngolo.jpg?width=1800
 imageAlt: Soupe ya ngolo, ragoût de poisson-chat vendu à Kinshasa
@@ -47,7 +47,4 @@ steps:
   - Déposer délicatement le poisson dans la marmite et cuire à feu moyen pendant 20 minutes sans trop remuer.
   - Poivrer, ajuster le sel et servir très chaud avec de la chikwangue ou du plantain.
 ---
-
-« **Ngolo** » désigne le poisson-chat en lingala. La **pepe soupe ya ngolo** est une soupe courte, très parfumée, typique des gargotes de Kinshasa : on la mange chaude, souvent avec de la [chikwangue](/recettes/chikwangue/).
-
-Pour un autre poisson de rue kinshasaise, voir le [poisson braisé de Kinkole](/recettes/poisson-braise-kinkole/).
+La **soupe pepe au poisson-chat** (en lingala : *pepe soupe ya ngolo* ; *ngolo* = poisson-chat) est une soupe courte, très parfumée, typique des tables qui aiment le piment. Version grillée du même poisson : [ngolo grillé](/recettes/ngolo-grille/).

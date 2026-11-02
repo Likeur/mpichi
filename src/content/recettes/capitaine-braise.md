@@ -1,7 +1,7 @@
 ---
 title: Capitaine braisé
-seoTitle: Recette capitaine braisé — perche du Nil
-description: "Recette de capitaine braisé : perche du Nil entière marinée aux aromates et grillée jusqu’à la peau fumée — grillade de fleuve, distincte du poisson de Kinkole."
+seoTitle: Recette poisson capitaine braisé — perche du Nil
+description: "Recette de poisson capitaine braisé : perche du Nil entière marinée aux aromates et grillée jusqu’à la peau fumée — grillade de fleuve, distincte du poisson de Kinkole."
 region: Kinshasa & bassin du Congo
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Poisson%20brais%C3%A9%20%C3%A0%20Kinkole.jpg?width=1400
 imageAlt: Gros poisson braisé servi avec accompagnements
@@ -41,4 +41,4 @@ steps:
   - Servir avec plantain, chikwangue, oignon cru et sauce pili-pili.
 ---
 
-Le **capitaine** désigne surtout la perche du Nil sur les marchés de Kinshasa : pièce plus large que beaucoup de poissons de braise du fleuve. La fiche [poisson braisé à Kinkole](/recettes/poisson-braise-kinkole/) reste le geste de rue générique ; ici l’espèce et la taille guident le temps de cuisson.
+Le **poisson capitaine braisé** (perche du Nil) est la grillade de fleuve quand le marché propose une belle pièce : plus large que beaucoup de poissons de braise. La fiche [poisson braisé à Kinkole](/recettes/poisson-braise-kinkole/) reste le geste de rue générique ; ici l’espèce et la taille guident le temps de cuisson.

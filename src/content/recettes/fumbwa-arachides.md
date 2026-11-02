@@ -2,7 +2,7 @@
 title: Fumbwa aux arachides
 seoTitle: Recette fumbwa aux arachides
 description: "Recette de fumbwa (koko) aux arachides : feuilles finement émincées, mijotées dans une sauce d’arachide jusqu’à devenir tendres et onctueuses."
-region: Kongo Central
+region: Kongo-Central
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Mfumbwa%20-%20sauce%20with%20fufu.jpg?width=1400
 imageAlt: Sauce de fumbwa aux arachides servie avec du fufu
 imagePosition: center

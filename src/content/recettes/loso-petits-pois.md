@@ -1,6 +1,7 @@
 ---
-title: Loso na petits pois
-description: Riz aux petits pois cuit dans un bouillon aromatique, simple, coloré et adapté aux grandes tablées.
+title: Riz aux petits pois
+seoTitle: "Recette riz aux petits pois — Kinshasa"
+description: "Recette de riz aux petits pois (en lingala on dit souvent loso na petits pois) : riz sauté ou mijoté avec des petits pois — accompagnement kin."
 region: Kinshasa
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Un%20plat%20du%20riz%20et%20des%20petits%20pois.jpg?width=1600
 imageAlt: Plat congolais de riz mélangé aux petits pois
@@ -34,5 +35,4 @@ steps:
   - Couvrir et cuire à feu doux pendant 15 minutes.
   - Ajouter les petits pois, couvrir de nouveau et poursuivre la cuisson 5 minutes. Laisser reposer avant d’égrener.
 ---
-
-Ce riz accompagne les viandes en sauce comme les poissons grillés. Les petits pois peuvent être remplacés ou complétés par des haricots cuits.
+Le **riz aux petits pois** (en lingala on dit souvent *loso na petits pois*) est un accompagnement kin simple. Cousins riz : [riz aux haricots](/recettes/loso-na-madesu/), [riz mayonnaise](/recettes/loso-mayonnaise/).

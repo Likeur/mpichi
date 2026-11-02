@@ -51,7 +51,9 @@ const canonical = pageCanonical(Astro.url.pathname, origin);
 const alternates = hreflangUrls(Astro.url.pathname, origin);
 const ogImage = image?.startsWith('http') ? image : image ? `${origin}${image}` : defaultOgImage(origin);
 const logoUrl = siteLogoUrl(origin);
-const ogLocale = lang === 'en' ? 'en_US' : 'fr_CD';
+const ogLocale = lang === 'en' ? 'en_US' : lang === 'ln' ? 'ln_CD' : 'fr_CD';
+const ogLocaleAlternates =
+  lang === 'fr' ? (['en_US', 'ln_CD'] as const) : lang === 'en' ? (['fr_CD', 'ln_CD'] as const) : (['fr_CD', 'en_US'] as const);
 const pageNodes = (jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : []).map((node) => {
   const { '@context': _ctx, ...rest } = node as Record<string, unknown>;
   return rest;
@@ -120,6 +122,7 @@ const googleSiteVerification =
     <link rel="canonical" href={canonical} />
     <link rel="alternate" hreflang="fr" href={alternates.fr} />
     <link rel="alternate" hreflang="en" href={alternates.en} />
+    <link rel="alternate" hreflang="ln" href={alternates.ln} />
     <link rel="alternate" hreflang="x-default" href={alternates.fr} />
     <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM instructions" />
     <link rel="alternate" type="text/plain" href="/llms-full.txt" title="Full recipe index for LLMs" />
@@ -141,7 +144,9 @@ const googleSiteVerification =
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content={ogLocale} />
-    <meta property="og:locale:alternate" content={lang === 'en' ? 'fr_CD' : 'en_US'} />
+    {ogLocaleAlternates.map((alternate) => (
+      <meta property="og:locale:alternate" content={alternate} />
+    ))}
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:alt" content={imageAlt || fullTitle} />
     <meta property="og:logo" content={logoUrl} />
@@ -463,7 +468,7 @@ const googleSiteVerification =
         sharedTo = transitionEvent.to.pathname;
 
         const isDetail = (path: string) => /\/recettes\/.+/.test(path);
-        const isCatalog = (path: string) => path === '/recettes' || path === '/en/recettes';
+        const isCatalog = (path: string) => path === '/recettes' || path === '/en/recettes' || path === '/ln/recettes';
         const entersRecipe = isDetail(sharedTo);
         const leavesRecipe = isDetail(sharedFrom) && isCatalog(sharedTo);
         if (!entersRecipe && !leavesRecipe) return;
@@ -511,7 +516,7 @@ const googleSiteVerification =
         if (!sharedSource) return;
 
         const toDetail = /\/recettes\/.+/.test(sharedTo);
-        const toCatalog = sharedTo === '/recettes' || sharedTo === '/en/recettes';
+        const toCatalog = sharedTo === '/recettes' || sharedTo === '/en/recettes' || sharedTo === '/ln/recettes';
 
         if (toDetail) {
           sharedTarget = nextDocument.querySelector<HTMLElement>('[data-recipe-hero]') ?? undefined;

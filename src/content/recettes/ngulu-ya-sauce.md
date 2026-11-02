@@ -1,7 +1,7 @@
 ---
-title: Ngulu ya sauce
-seoTitle: Recette ngulu ya sauce — porc en sauce
-description: "Recette de ngulu ya sauce : porc mijoté dans une sauce tomate-oignon jusqu’à fondre — plat de table kinshasaise, distinct du porc braisé sur braises."
+title: Porc en sauce
+seoTitle: "Recette porc en sauce"
+description: "Recette de porc en sauce (en lingala : ngulu ya sauce) : porc mijoté tomate-oignon — distinct du porc grillé."
 region: Kinshasa
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Cochon%20en%20feu.jpg?width=1600
 imageAlt: Porc cuit, prêt à être servi en sauce
@@ -22,6 +22,8 @@ tags:
   - mijoté
 relatedRecipes:
   - porc-braise
+  - porc-ya-kotumba
+  - cotes-porc
   - viande-ya-sauce
   - makoso
 ingredients:
@@ -41,5 +43,4 @@ steps:
   - Couvrir et mijoter à feu doux 50 à 60 minutes jusqu’à ce que la viande soit tendre et la sauce liée.
   - Rectifier l’assaisonnement. Servir avec riz, fufu, chikwangue ou plantain.
 ---
-
-**Ngulu** désigne le porc en lingala. Ici la cuisson est **en sauce**, pas sur les braises : pour la grillade, voir [porc braisé](/recettes/porc-braise/). Les pieds de porc ont leur propre fiche : [makoso](/recettes/makoso/).
+Le **porc en sauce** (en lingala : *ngulu ya sauce* ; *ngulu* = porc) est un mijoté, pas une grillade. Pour les braises : [porc grillé](/recettes/porc-ya-kotumba/) ou [porc braisé](/recettes/porc-braise/).

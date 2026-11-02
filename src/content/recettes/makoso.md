@@ -1,7 +1,7 @@
 ---
-title: Makoso
-seoTitle: Recette makoso — pieds de porc congolais
-description: "Recette de makoso : pieds de porc longuement mijotés dans un bouillon relevé aux aromates et au pili-pili — classique des fêtes et des tables kin."
+title: Pieds de porc
+seoTitle: "Recette pieds de porc (makoso)"
+description: "Recette de pieds de porc (en lingala : makoso) : longuement mijotés dans un bouillon relevé aux aromates et au pili-pili — classique des fêtes et des tables kin."
 region: Kinshasa
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Pig%27s%20trotters.jpg?width=1600
 imageAlt: Pieds de porc cuits, prêts à mijoter
@@ -21,6 +21,7 @@ tags:
   - Kinshasa
   - fête
 relatedRecipes:
+  - makosso-pommes
   - pepe-soupe-ya-ngolo
   - porc-braise
   - sauce-pili-pili
@@ -50,6 +51,6 @@ steps:
   - Rectifier l’assaisonnement. Servir très chaud avec pain, plantain ou fufu.
 ---
 
-Le **makoso** (pieds de porc) est un plat de patience et de fête : longtemps mijoté, souvent bien pimenté, servi dans un bouillon parfumé. Certaines tables le rapprochent d’un « pepper soup » ; d’autres le veulent plus lié, avec tomate.
+Les **pieds de porc** (en lingala : *makoso*) sont un plat de patience et de fête : longtemps mijotés, souvent bien pimentés, servis dans un bouillon parfumé. Certaines tables les rapprochent d’un « pepper soup » ; d’autres les veulent plus liés, avec tomate.
 
-Autre soupe pimentée : [pepe soupe ya ngolo](/recettes/pepe-soupe-ya-ngolo/). Grillade de porc : [porc braisé](/recettes/porc-braise/).
+Avec pommes de terre : [makosso aux pommes](/recettes/makosso-pommes/). Autre soupe pimentée : [soupe pepe au poisson-chat](/recettes/pepe-soupe-ya-ngolo/). Grillade : [porc braisé](/recettes/porc-braise/).

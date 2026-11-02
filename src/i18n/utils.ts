@@ -2,13 +2,44 @@ import type { CollectionEntry } from 'astro:content';
 import { defaultLocale, isLocale, type Locale } from './config';
 import { ui, type UiKey } from './ui';
 import { recipeTranslationsEn } from './recipes-en';
+import { recipeTranslationsLn } from './recipes-ln';
 import { guideTranslationsEn } from './guides-en';
+import { guideTranslationsLn } from './guides-ln';
 import { slugFromRecipeId } from '../lib/recipe-theme';
+
+const recipeTranslationsByLocale = {
+  en: recipeTranslationsEn,
+  ln: recipeTranslationsLn,
+} as const;
+
+const guideTranslationsByLocale = {
+  en: guideTranslationsEn,
+  ln: guideTranslationsLn,
+} as const;
 
 export function getLocaleFromUrl(url: URL): Locale {
   const [, maybeLocale] = url.pathname.split('/');
   const candidate = maybeLocale ?? '';
   return isLocale(candidate) ? candidate : defaultLocale;
+}
+
+/** BCP 47 / schema.org language tags used in JSON-LD and meta. */
+export function schemaLanguage(locale: Locale): string {
+  if (locale === 'en') return 'en';
+  if (locale === 'ln') return 'ln';
+  return 'fr-CD';
+}
+
+export function cuisineLabel(locale: Locale): string {
+  if (locale === 'en') return 'Congolese';
+  if (locale === 'ln') return 'ya Congo';
+  return 'Congolaise';
+}
+
+export function countryLabel(locale: Locale): string {
+  if (locale === 'en') return 'Democratic Republic of the Congo';
+  if (locale === 'ln') return 'République démocratique du Congo';
+  return 'République démocratique du Congo';
 }
 
 export function localePath(path: string, locale: Locale = defaultLocale): string {
@@ -97,7 +128,10 @@ export function localizeRecipe(
   const slug = slugFromRecipeId(recipe.id);
   const t = useTranslations(locale);
   const base = recipe.data;
-  const translated = locale === 'en' ? recipeTranslationsEn[slug] : undefined;
+  const translated =
+    locale === 'en' || locale === 'ln'
+      ? recipeTranslationsByLocale[locale][slug]
+      : undefined;
   const translatedVariants = translated?.variants;
   const variants: LocalizedRecipeVariant[] = (base.variants ?? []).map((variant) => {
     const override = translatedVariants?.find((entry) => entry.id === variant.id);
@@ -145,7 +179,7 @@ export function isRecipeDetailPath(pathname: string) {
 }
 
 export function isRecipeCatalogPath(pathname: string) {
-  return pathname === '/recettes' || pathname === '/en/recettes';
+  return pathname === '/recettes' || pathname === '/en/recettes' || pathname === '/ln/recettes';
 }
 
 export type LocalizedGuide = {
@@ -165,7 +199,10 @@ export type LocalizedGuide = {
 
 export function localizeGuide(guide: CollectionEntry<'guides'>, locale: Locale): LocalizedGuide {
   const slug = slugFromRecipeId(guide.id);
-  const translated = locale === 'en' ? guideTranslationsEn[slug] : undefined;
+  const translated =
+    locale === 'en' || locale === 'ln'
+      ? guideTranslationsByLocale[locale][slug]
+      : undefined;
   const base = guide.data;
 
   return {

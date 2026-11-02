@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import type { Locale } from '../../i18n/config';
 import type { UiKey } from '../../i18n/ui';
-import { localePath, recipeCountLabel, useTranslations } from '../../i18n/utils';
+import { localePath, recipeCountLabel, useTranslations, schemaLanguage} from '../../i18n/utils';
 import { absoluteUrl } from '../../lib/site';
 import { pageCanonical, resolveOrigin } from '../../lib/seo';
 import { getCategoryTaxonomies } from '../../lib/taxonomy';
@@ -23,7 +23,7 @@ const itemListJsonLd = {
   name: t('categories.title'),
   description: t('categories.description'),
   url: pageUrl,
-  inLanguage: lang === 'en' ? 'en' : 'fr',
+  inLanguage: schemaLanguage(lang),
   mainEntity: {
     '@type': 'ItemList',
     numberOfItems: categories.length,

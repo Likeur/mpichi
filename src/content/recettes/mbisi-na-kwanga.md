@@ -1,7 +1,7 @@
 ---
-title: Mbisi na kwanga
-seoTitle: Recette mbisi na kwanga — poisson et chikwangue
-description: "Recette de mbisi na kwanga : poisson en sauce courte servi avec kwanga (chikwangue) — duo classique du Kongo-Central et de l’Ouest."
+title: Poisson et chikwangue
+seoTitle: "Recette poisson et chikwangue — Kongo-Central"
+description: "Recette de poisson servi avec chikwangue (en lingala : mbisi na kwanga) — duo classique du Kongo-Central."
 region: Kongo-Central
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Kwanga.jpg?width=1600
 imageAlt: Kwanga / chikwangue, pain de manioc
@@ -41,5 +41,4 @@ steps:
   - Réchauffer ou griller légèrement la kwanga (voir aussi [chikwangue grillée](/recettes/chikwangue-grillee/)).
   - Servir le poisson et sa sauce avec des tranches de kwanga pour prendre la sauce.
 ---
-
-**Mbisi na kwanga** est l’assiette poisson + [chikwangue / kwanga](/recettes/chikwangue/) côté Kongo-Central : la pâte de manioc remplace souvent le riz. Autre classique ouest : [fumbwa aux arachides](/recettes/fumbwa-arachides/).
+Le **poisson avec chikwangue** (en lingala : *mbisi na kwanga*) est l’assiette du Kongo-Central : la pâte de manioc remplace souvent le riz. Autre classique ouest : [fumbwa aux arachides](/recettes/fumbwa-arachides/).

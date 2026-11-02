@@ -1,7 +1,7 @@
 ---
-title: Nyama na bugali
-seoTitle: Recette viande au bugali — Kivu
-description: "Recette de nyama na bugali : viande mijotée en sauce servie avec bugali — assiette viande + pâte de maïs du Kivu, distincte du duo tilapia-bugali."
+title: Viande au bugali
+seoTitle: "Recette viande au bugali — Kivu"
+description: "Recette de viande au bugali (en swahili / lingala de table : nyama na bugali) — viande en sauce avec pâte de maïs du Kivu."
 region: Nord-Kivu & Sud-Kivu
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/African%20meal(ugali%20nyama).jpg?width=1600
 imageAlt: Assiette ugali / bugali avec viande en sauce
@@ -43,5 +43,4 @@ steps:
   - Découvrir pour épaissir la sauce si besoin. Rectifier piment et sel.
   - Préparer le bugali à part. Servir la viande nappée à côté ou sur le bugali, éventuellement avec [sukuma](/recettes/sukuma-est/).
 ---
-
-**Nyama na bugali** est le pendant viande du [tilapia au bugali](/recettes/tilapia-bugali/) : même pâte de maïs de l’Est, sauce longue. Pour la pâte seule : [bukari / bugali](/recettes/bukari-katanga/).
+La **viande au bugali** (en lingala / swahili de table : *nyama na bugali*) est le pendant viande du [tilapia au bugali](/recettes/tilapia-bugali/) : même pâte de maïs de l’Est, sauce longue. Pour la pâte seule : [bukari / bugali](/recettes/bukari-katanga/).

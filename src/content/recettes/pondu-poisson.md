@@ -1,7 +1,7 @@
 ---
 title: Pondu au poisson
-seoTitle: Recette pondu au poisson (pondu ya mbisi)
-description: "Recette de pondu au poisson : feuilles de manioc mijotées à l’huile de palme avec du poisson frais ou fumé — variante très demandée du saka-saka."
+seoTitle: "Recette pondu au poisson"
+description: "Recette de pondu au poisson (en lingala : pondu ya mbisi) : feuilles de manioc mijotées avec du poisson — variante du pondu."
 region: Kinshasa & Cuvette
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Feuilles_de_manioc.jpg?width=1600
 imageAlt: Feuilles de manioc fraîches, base du pondu au poisson
@@ -42,5 +42,4 @@ steps:
   - Ajouter le poisson (frais déjà salé, ou fumé en morceaux) et le cube. Poursuivre 25 à 35 minutes jusqu'à texture crémeuse.
   - Rectifier l'assaisonnement. Servir avec fufu, chikwangue ou riz.
 ---
-
-Le **pondu au poisson** (*pondu ya mbisi*) met le poisson au centre, là où la fiche [pondu (saka-saka)](/recettes/pondu/) le laisse optionnel. Même famille de feuilles : [saka-madesu](/recettes/saka-madesu/). Poisson fumé seul en sauce tomate : [poisson fumé aux tomates](/recettes/poisson-fume-tomates/).
+Le **pondu au poisson** (en lingala : *pondu ya mbisi*) place le poisson au centre, là où la fiche [pondu](/recettes/pondu/) le laisse optionnel. Même famille de feuilles : [saka-madesu](/recettes/saka-madesu/).

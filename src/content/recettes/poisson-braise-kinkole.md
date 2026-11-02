@@ -21,6 +21,7 @@ tags:
   - grill
   - pili-pili
 relatedRecipes:
+  - capitaine-braise
   - pepe-soupe-ya-ngolo
   - liboke-poisson
   - makemba

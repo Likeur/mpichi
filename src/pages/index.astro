@@ -6,7 +6,7 @@ import type { HeroSlide } from '../components/HeroCarousel.astro';
 import OriginRecipeCard from '../components/OriginRecipeCard.astro';
 import EditorialRecipeCard from '../components/EditorialRecipeCard.astro';
 import type { Locale } from '../i18n/config';
-import { localePath, localizeRecipe, useTranslations } from '../i18n/utils';
+import { localePath, localizeRecipe, schemaLanguage, useTranslations } from '../i18n/utils';
 import { absoluteUrl } from '../lib/site';
 import { pageCanonical, resolveOrigin } from '../lib/seo';
 import { slugFromRecipeId } from '../lib/recipe-theme';
@@ -24,10 +24,9 @@ const railRecipes = featured.length > 0 ? featured : allRecipes;
 const byId = Object.fromEntries(allRecipes.map((recipe) => [recipe.id.replace(/\.md$/, ''), recipe]));
 const southSlugs = ['kapenta-tomates', 'matembele-katanga', 'bukari-katanga', 'sambaza'] as const;
 const southRecipes = southSlugs.map((slug) => byId[slug]).filter(Boolean);
-const katangaCatalogHref =
-  lang === 'en'
-    ? `${localePath('/recettes', lang)}?region=${encodeURIComponent('Greater Katanga')}`
-    : `${localePath('/recettes', lang)}?region=${encodeURIComponent('Grand Katanga')}`;
+const katangaRegionLabel =
+  lang === 'en' ? 'Greater Katanga' : lang === 'ln' ? 'Katanga monene' : 'Grand Katanga';
+const katangaCatalogHref = `${localePath('/recettes', lang)}?region=${encodeURIComponent(katangaRegionLabel)}`;
 const heroContent = [
   {
     id: 'mpichi',
@@ -93,11 +92,11 @@ const homeJsonLd = {
   url: pageUrl,
   name: t('meta.siteName'),
   description: t('meta.defaultDescription'),
-  inLanguage: lang === 'en' ? 'en' : 'fr-CD',
+  inLanguage: schemaLanguage(lang),
   isPartOf: { '@id': `${origin}/#website` },
   about: {
     '@type': 'Thing',
-    name: lang === 'en' ? 'Congolese cuisine' : 'Cuisine congolaise',
+    name: lang === 'en' ? 'Congolese cuisine' : lang === 'ln' ? 'Bilei ya Congo' : 'Cuisine congolaise',
   },
   primaryImageOfPage: heroSlides[0]?.image
     ? {
@@ -109,7 +108,7 @@ const homeJsonLd = {
     : undefined,
   mainEntity: {
     '@type': 'ItemList',
-    name: lang === 'en' ? 'Featured Congolese recipes' : 'Recettes congolaises mises en avant',
+    name: lang === 'en' ? 'Featured Congolese recipes' : lang === 'ln' ? 'Ba recettes ya Congo oyo batyá liboso' : 'Recettes congolaises mises en avant',
     numberOfItems: railRecipes.length,
     itemListElement: railRecipes.slice(0, 12).map((recipe, index) => {
       const localized = localizeRecipe(recipe, lang);

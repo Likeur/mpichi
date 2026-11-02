@@ -1,7 +1,7 @@
 ---
-title: Bœuf ya kotumba
-seoTitle: Recette bœuf ya kotumba — bœuf grillé
-description: "Recette de bœuf ya kotumba : morceaux de bœuf marinés puis grillés jusqu’à une croûte fumée — grillade kinshasaise, distincte des kamundele en brochettes."
+title: Bœuf grillé
+seoTitle: "Recette bœuf grillé — kotumba"
+description: "Recette de bœuf grillé (en lingala : boeuf ya kotumba) : morceaux marinés puis cuits sur braises — grillade kin, distincte des petites brochettes kamundele."
 region: Kinshasa
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Kamundele.jpg?width=1600
 imageAlt: Viande de bœuf grillée servie en portion
@@ -42,5 +42,4 @@ steps:
   - Égoutter puis griller sur braises moyennes 15 à 20 minutes en badigeonnant du jus.
   - Servir avec oignon cru, sauce pili-pili, frites ou chikwangue.
 ---
-
-**Kotumba** renvoie au geste de grillade / rôti. Le [soso ya kotumba](/recettes/soso-ya-kotumba/) est le poulet ; ici c’est le **bœuf en pièces**, plus larges que les [kamundele](/recettes/kamundele/) en brochettes. Pour le bœuf mijoté, voir [viande ya sauce](/recettes/viande-ya-sauce/).
+Le **bœuf grillé** (en lingala : *boeuf ya kotumba*) reprend le geste *kotumba* (grillade / rôti). Le pendant poulet est le [poulet grillé](/recettes/soso-ya-kotumba/) ; les petites brochettes restent les [kamundele](/recettes/kamundele/).

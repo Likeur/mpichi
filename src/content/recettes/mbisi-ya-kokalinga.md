@@ -1,6 +1,7 @@
 ---
-title: Mbisi ya kokalinga
-description: Poisson entier assaisonné, fariné très légèrement puis frit jusqu’à devenir doré et croustillant.
+title: Poisson frit
+seoTitle: "Recette poisson frit"
+description: "Recette de poisson frit (en lingala : mbisi ya kokalinga) — frit jusqu’à croûte dorée."
 region: Kinshasa & fleuve Congo
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Jollof%20rice%20with%20fried%20fish%20and%20plantains%20garnished%20with%20cucumber%20and%20tomatoes.jpg?width=1600
 imageAlt: Poisson frit servi avec riz, plantains, concombre et tomates
@@ -34,5 +35,4 @@ steps:
   - Chauffer l’huile dans une grande poêle et frire les poissons 7 à 9 minutes de chaque côté, selon leur épaisseur.
   - Égoutter soigneusement et servir chaud avec oignons, plantain, chikwangue ou pili-pili.
 ---
-
-Le choix du poisson dépend des arrivages du fleuve, des lacs ou du marché; cette méthode convient à plusieurs poissons à chair ferme.
+Le **poisson frit** (en lingala : *mbisi ya kokalinga*) convient à plusieurs poissons selon les arrivages. Autre braise : [poisson braisé à Kinkole](/recettes/poisson-braise-kinkole/), [capitaine braisé](/recettes/capitaine-braise/).

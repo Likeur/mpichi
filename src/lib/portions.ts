@@ -19,7 +19,13 @@ function isMeasuredIngredient(rest: string): boolean {
   return MEASURED_REST.test(rest);
 }
 
-function formatDecimal(value: number, locale: 'fr' | 'en', maxFractionDigits: number): string {
+export type PortionLocale = 'fr' | 'en' | 'ln';
+
+function numberLocale(locale: PortionLocale): string {
+  return locale === 'en' ? 'en-US' : 'fr-FR';
+}
+
+function formatDecimal(value: number, locale: PortionLocale, maxFractionDigits: number): string {
   if (!Number.isFinite(value) || value <= 0) return '';
 
   const factor = 10 ** maxFractionDigits;
@@ -29,14 +35,14 @@ function formatDecimal(value: number, locale: 'fr' | 'en', maxFractionDigits: nu
     return String(Math.round(rounded));
   }
 
-  return rounded.toLocaleString(locale === 'en' ? 'en-US' : 'fr-FR', {
+  return rounded.toLocaleString(numberLocale(locale), {
     maximumFractionDigits: maxFractionDigits,
     minimumFractionDigits: 0,
   });
 }
 
 /** Quantités mesurées (g, ml…) : arrondi simple. */
-export function formatMeasuredQuantity(value: number, locale: 'fr' | 'en' = 'fr'): string {
+export function formatMeasuredQuantity(value: number, locale: PortionLocale = 'fr'): string {
   if (!Number.isFinite(value) || value <= 0) return '';
 
   const nearestInt = Math.round(value);
@@ -49,7 +55,7 @@ export function formatMeasuredQuantity(value: number, locale: 'fr' | 'en' = 'fr'
  * Pièces (oignons, gousses…) : décimales ajustées par demi-unité
  * (0,5 / 1 / 1,5 / 2…) — jamais 0,33 ni fractions.
  */
-export function formatPieceQuantity(value: number, locale: 'fr' | 'en' = 'fr'): string {
+export function formatPieceQuantity(value: number, locale: PortionLocale = 'fr'): string {
   if (!Number.isFinite(value) || value <= 0) return '';
 
   // Arrondi au demi le plus proche, minimum 0,5 pièce
@@ -61,7 +67,7 @@ export function formatPieceQuantity(value: number, locale: 'fr' | 'en' = 'fr'): 
 
 export function formatQuantity(
   value: number,
-  locale: 'fr' | 'en' = 'fr',
+  locale: PortionLocale = 'fr',
   mode: 'measured' | 'piece' = 'measured',
 ): string {
   return mode === 'piece' ? formatPieceQuantity(value, locale) : formatMeasuredQuantity(value, locale);
@@ -71,7 +77,7 @@ export function formatQuantity(
 export function scaleIngredientText(
   text: string,
   factor: number,
-  locale: 'fr' | 'en' = 'fr',
+  locale: PortionLocale = 'fr',
 ): string {
   if (factor === 1) return text;
 
@@ -89,6 +95,6 @@ export function scaleIngredientText(
   return `${scaled}${rest}`;
 }
 
-export function scaleServings(base: number, factor: number, locale: 'fr' | 'en' = 'fr'): string {
+export function scaleServings(base: number, factor: number, locale: PortionLocale = 'fr'): string {
   return formatMeasuredQuantity(base * factor, locale);
 }

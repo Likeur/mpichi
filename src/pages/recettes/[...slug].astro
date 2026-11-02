@@ -7,7 +7,14 @@ import PillButton from '../../components/PillButton.astro';
 import { slugFromRecipeId } from '../../lib/recipe-theme';
 import type { Locale } from '../../i18n/config';
 import type { UiKey } from '../../i18n/ui';
-import { localePath, localizeRecipe, useTranslations } from '../../i18n/utils';
+import {
+  countryLabel,
+  cuisineLabel,
+  localePath,
+  localizeRecipe,
+  schemaLanguage,
+  useTranslations,
+} from '../../i18n/utils';
 import RecipeVideo from '../../components/RecipeVideo.astro';
 import RecipeVariants from '../../components/RecipeVariants.astro';
 import { absoluteUrl, toIsoDuration } from '../../lib/site';
@@ -107,9 +114,9 @@ const recipeJsonLd = {
     name: 'Mpichi',
     url: absoluteUrl('/', origin),
   },
-  inLanguage: lang === 'en' ? 'en' : 'fr',
+  inLanguage: schemaLanguage(lang),
   recipeCategory: localized.category,
-  recipeCuisine: lang === 'en' ? 'Congolese' : 'Congolaise',
+  recipeCuisine: cuisineLabel(lang),
   keywords: localized.tags.join(', '),
   recipeYield: String(localized.servings),
   prepTime: prepIso,
@@ -129,7 +136,7 @@ const recipeJsonLd = {
           name: localized.region,
           containedInPlace: {
             '@type': 'Country',
-            name: lang === 'en' ? 'Democratic Republic of the Congo' : 'République démocratique du Congo',
+            name: countryLabel(lang),
           },
         },
       }
@@ -421,7 +428,7 @@ const breadcrumbJsonLd = {
       }
 
       {
-        lang === 'en' && localized.body ? (
+        (lang === 'en' || lang === 'ln') && localized.body ? (
           <div class="mt-16 pt-10 border-t border-earth-900/10 text-earth-900/75 leading-relaxed space-y-4 [&_p]:text-base">
             <p>{localized.body}</p>
           </div>
@@ -475,7 +482,11 @@ const breadcrumbJsonLd = {
     if (!root || root.dataset.toolsReady === 'true') return;
     root.dataset.toolsReady = 'true';
 
-    const locale = (root.dataset.locale === 'en' ? 'en' : 'fr') as 'fr' | 'en';
+    const localeAttr = root.dataset.locale;
+    const locale = (localeAttr === 'en' || localeAttr === 'ln' ? localeAttr : 'fr') as
+      | 'fr'
+      | 'en'
+      | 'ln';
     const baseServings = Math.max(1, Number(root.dataset.baseServings ?? 1) || 1);
     const minServings = 1;
     const maxServings = Math.max(baseServings * 4, 12);

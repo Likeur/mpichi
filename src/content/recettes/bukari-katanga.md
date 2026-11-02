@@ -1,7 +1,7 @@
 ---
 title: Bukari
-seoTitle: Recette bukari / bugali / bidia — fufu de maïs
-description: "Recette de bukari (aussi bugali, bidia) : pâte de farine de maïs travaillée à chaud jusqu’à devenir lisse et dense — accompagnement central à l’Est et au Sud de la RDC."
+seoTitle: Recette bukari fufu — fufu de maïs (bugali, bidia)
+description: "Recette de bukari fufu (aussi bugali, bidia) : le fufu de maïs de l’Est et du Sud de la RDC — pâte de farine de maïs travaillée à chaud jusqu’à devenir lisse et dense."
 region: Grand Katanga
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Fufu%20Balls.jpg?width=1600
 imageAlt: Boules de fufu de maïs servies en République démocratique du Congo
@@ -24,6 +24,7 @@ tags:
   - Kivu
 relatedRecipes:
   - fufu-manioc
+  - fufu-plantain
   - chikwangue
   - sambaza
   - haricots-maharage
@@ -66,6 +67,6 @@ steps:
   - Façonner en portions avec une louche mouillée et servir immédiatement.
 ---
 
-Le **bukari** est la pâte de maïs du Grand Katanga ; au Kivu on dit *bugali*, au Kasaï *bidia* — **un seul geste**, des noms de table différents (voir les variantes). À l’Ouest, l’équivalent fermenté de manioc est plutôt la [chikwangue](/recettes/chikwangue/) ; le [fufu de manioc](/recettes/fufu-manioc/) reste l’autre grand geste de pâte.
+En français courant, **bukari = fufu de maïs** (pas le fufu de manioc). Au Grand Katanga on dit bukari ; au Kivu *bugali* ; au Kasaï *bidia* — **un seul geste**, des noms de table différents (voir les variantes). Vue d’ensemble : [guide fufu](/guides/fufu/).
 
-Sauces de la région : [matembele aux arachides](/recettes/matembele-katanga/), [kapenta aux tomates](/recettes/kapenta-tomates/).
+À l’Ouest, l’équivalent fermenté de manioc est plutôt la [chikwangue](/recettes/chikwangue/) ; le [fufu de manioc](/recettes/fufu-manioc/) reste l’autre grand geste de pâte. Sauces de la région : [matembele aux arachides](/recettes/matembele-katanga/), [kapenta aux tomates](/recettes/kapenta-tomates/).

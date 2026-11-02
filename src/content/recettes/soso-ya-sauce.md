@@ -1,6 +1,7 @@
 ---
-title: Soso ya sauce
-description: Poulet mijoté dans une sauce tomate généreuse, relevée d’ail, de gingembre et de pili-pili.
+title: Poulet en sauce
+seoTitle: "Recette poulet en sauce"
+description: "Recette de poulet en sauce (en lingala : soso ya sauce) : poulet mijoté dans une sauce tomate-oignon — version en sauce du poulet grillé."
 region: Kinshasa
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Soso%20Ya%20Sauce.jpg?width=1600
 imageAlt: Poulet congolais mijoté dans une sauce rouge
@@ -35,5 +36,4 @@ steps:
   - Remettre le poulet, ajouter l’eau et le pili-pili, puis couvrir.
   - Laisser mijoter à feu doux 30 à 35 minutes. Découvrir en fin de cuisson si la sauce doit épaissir.
 ---
-
-Servi avec du riz, du fufu ou des makemba, le soso ya sauce appartient aux plats familiaux dont l’assaisonnement change d’une maison à l’autre.
+Le **poulet en sauce** (en lingala : *soso ya sauce*) se sert avec riz, fufu ou plantains. L’assaisonnement change d’une maison à l’autre ; le geste reste le mijoté tomate-oignon. Grillade : [poulet grillé](/recettes/soso-ya-kotumba/).

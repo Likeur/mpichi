@@ -1,7 +1,7 @@
 ---
-title: Soso ya lumba-lumba
-seoTitle: Recette soso ya lumba-lumba — poulet basilic du Kasaï
-description: Poulet du Kasaï mijoté dans une sauce fraîche et très parfumée au basilic africain.
+title: Poulet au basilic
+seoTitle: "Recette poulet au basilic — Kasaï"
+description: "Recette de poulet au basilic (en lingala : soso ya lumba-lumba) : poulet parfumé au basilic congolais — classique du Kasaï."
 region: Grand Kasaï
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Fufu%20%26%20Chicken.jpg?width=1600
 imageAlt: Poulet en sauce servi avec du fufu en République démocratique du Congo
@@ -37,5 +37,4 @@ steps:
   - Remettre le poulet, verser l’eau, couvrir et laisser mijoter 35 à 40 minutes.
   - Ciseler le reste des feuilles, les ajouter en fin de cuisson et poursuivre 5 minutes à feu doux.
 ---
-
-Aussi appelé tshiluabenyi, ce poulet parfumé au lumba-lumba est associé aux cuisines du Kasaï. Le [bukari](/recettes/bukari-katanga/) (bidia) est son accompagnement naturel.
+Le **poulet au basilic** (en lingala : *soso ya lumba-lumba*) parfume le poulet au basilic congolais — classique du Kasaï. Autre poulet : [poulet grillé](/recettes/soso-ya-kotumba/), [poulet mayo](/recettes/poulet-mayo/).

@@ -1,7 +1,7 @@
 ---
-title: Loso mayonnaise
-seoTitle: Recette loso mayonnaise — riz mayo kinshasa
-description: "Recette de loso mayonnaise : riz nature mélangé ou nappé d’une mayonnaise relevée — accompagnement et street food très courant à Kinshasa."
+title: Riz mayonnaise
+seoTitle: "Recette riz mayonnaise — Kinshasa"
+description: "Recette de riz mayonnaise (parfois appelé loso mayonnaise) : riz servi avec une mayo ail-piment — street food / table kin."
 region: Kinshasa
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Ensaladas%20de%20Argentina%20%28Arroz%20blanco%20con%20morr%C3%B3n%20verde%20y%20mayonesa%29.jpg?width=1600
 imageAlt: Riz blanc mélangé à la mayonnaise
@@ -39,5 +39,4 @@ steps:
   - Incorporer la sauce au riz encore chaud, ou servir le riz et napper au dernier moment.
   - Goûter et ajuster le sel. Servir avec poulet, poisson, brochettes ou seul.
 ---
-
-Le **loso mayonnaise** n’est pas un riz sauté : c’est le riz nature + la liaison froide à la mayo, cousin du [pain mayonnaise](/recettes/pain-mayonnaise/) et du [poulet mayo](/recettes/poulet-mayo/). À Kinshasa on le trouve autant en portion de rue qu’à table.
+Le **riz mayonnaise** (parfois appelé *loso mayonnaise*) est un geste street / table kin : riz + mayo ail-piment. Moins « un seul mijoté » que le [riz aux haricots](/recettes/loso-na-madesu/).

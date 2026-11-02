@@ -6,7 +6,7 @@ import regionsCatalog from './regions.json';
 
 export type RegionId = (typeof regionsCatalog.regions)[number]['id'] | 'other';
 
-export type RegionLabel = { fr: string; en: string };
+export type RegionLabel = { fr: string; en: string; ln: string };
 
 export function getRegionsCatalog() {
   return regionsCatalog;
@@ -25,6 +25,6 @@ export function regionIdFromKey(region?: string): RegionId {
 
 export function regionLabelFromId(id: RegionId): RegionLabel {
   const hit = regionsCatalog.regions.find((r) => r.id === id);
-  if (hit) return { fr: hit.label.fr, en: hit.label.en };
-  return { fr: regionsCatalog.fallback.label.fr, en: regionsCatalog.fallback.label.en };
+  if (hit) return { fr: hit.label.fr, en: hit.label.en, ln: hit.label.ln };
+  return { fr: regionsCatalog.fallback.label.fr, en: regionsCatalog.fallback.label.en, ln: regionsCatalog.fallback.label.ln };
 }

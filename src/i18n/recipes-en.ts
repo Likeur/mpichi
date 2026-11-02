@@ -91,9 +91,9 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
   },
   "bukari-katanga": {
     "title": "Bukari",
-    "seoTitle": "Bukari / bugali / bidia recipe — maize fufu",
+    "seoTitle": "Bukari fufu recipe — maize fufu (bugali, bidia)",
     "description":
-      "Bukari recipe (also bugali, bidia): hot-worked maize flour dough until smooth and dense — central starch in eastern and southern DRC.",
+      "Bukari fufu recipe (also bugali, bidia): maize fufu of eastern and southern DRC — hot-worked maize flour dough until smooth and dense.",
     "region": "Greater Katanga",
     "imageAlt": "Balls of maize fufu served in the Democratic Republic of the Congo",
     "prepTime": "5 min",
@@ -120,7 +120,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Greater Katanga",
       "Kivu"
     ],
-    "body": "Bukari is Greater Katanga’s maize paste; in Kivu people say *bugali*, in Kasai *bidia* — **one gesture**, different table names (see variants). In the West, fermented cassava “bread” is more often [chikwangue](/en/recettes/chikwangue/); [cassava fufu](/en/recettes/fufu-manioc/) is the other main dough.\n\nRegional sauces: [matembele with peanuts](/en/recettes/matembele-katanga/), [kapenta with tomatoes](/en/recettes/kapenta-tomates/).",
+    "body": "In plain English, **bukari = maize fufu** (not cassava fufu). In Greater Katanga people say bukari; in Kivu *bugali*; in Kasai *bidia* — **one gesture**, different table names (see variants). Overview: [fufu guide](/en/guides/fufu/).\n\nIn the West, fermented cassava “bread” is more often [chikwangue](/en/recettes/chikwangue/); [cassava fufu](/en/recettes/fufu-manioc/) is the other main dough. Regional sauces: [matembele with peanuts](/en/recettes/matembele-katanga/), [kapenta with tomatoes](/en/recettes/kapenta-tomates/).",
     "variants": [
       {
         "id": "bugali-kivu",
@@ -458,8 +458,9 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     "body": "Lituma is green plantain pounded in the Cuvette: elastic texture, ladle portions, ideal with sauces and fish. Some families mix in a little cassava. Ripe fried plantain is makemba; another starch is chikwangue."
   },
   "loso-petits-pois": {
-    "title": "Loso with green peas",
-    "description": "Rice with green peas cooked in an aromatic broth—simple, colorful and made for sharing.",
+    "title": "Rice with peas",
+    "seoTitle": "Rice with peas recipe — Kinshasa",
+    "description": "Rice with peas recipe (often called loso na petits pois): rice sautéed or simmered with peas — Kinshasa side.",
     "region": "Kinshasa",
     "imageAlt": "Congolese plate of rice mixed with green peas",
     "prepTime": "15 min",
@@ -485,7 +486,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "peas",
       "loso"
     ],
-    "body": "A Kinshasa classic for large tables, easy to stretch and always welcome."
+        body: "Rice with peas (often *loso na petits pois* in Lingala table speech) is a simple Kinshasa side. Cousins: [rice and beans](/en/recettes/loso-na-madesu/), [mayonnaise rice](/en/recettes/loso-mayonnaise/)."
   },
   "madesu": {
     "title": "Madesu",
@@ -840,7 +841,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "fried",
       "grilled"
     ],
-    "body": "Mbisi ya kokalinga simply means fish cooked in the pan or on the fire—everyday and festive at once."
+        body: "Fried fish (Lingala: *mbisi ya kokalinga*) fits several market fish. Other braises: [Kinkole braised fish](/en/recettes/poisson-braise-kinkole/), [grilled capitaine](/en/recettes/capitaine-braise/)."
   },
   "mikate": {
     "title": "Mikate",
@@ -1174,7 +1175,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "soup",
       "Kinshasa"
     ],
-    "body": "“Ngolo” means catfish in Lingala. Pepe soupe ya ngolo is a short, fragrant broth from Kinshasa stalls—eaten hot, often with chikwangue. Street heat: spicy, aromatic, no waiting."
+        body: "Pepe soup with catfish (Lingala: *pepe soupe ya ngolo*; *ngolo* = catfish) is a short, fragrant chili soup. Grilled twin: [grilled ngolo](/en/recettes/ngolo-grille/)."
   },
   "poisson-braise-kinkole": {
     "title": "Grilled fish",
@@ -1208,8 +1209,8 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
   },
   "pondu": {
     "title": "Pondu (saka-saka)",
-    "seoTitle": "Pondu recipe (saka-saka) — cassava leaves",
-    "description": "Pondu (saka-saka) recipe: cassava leaves simmered in palm oil with onions and smoked fish—everyday Congolese classic from the DRC.",
+    "seoTitle": "Pondu recipe — cassava leaves (with rice or fufu)",
+    "description": "Pondu (saka-saka) recipe: cassava leaves simmered in palm oil with onions and smoked fish—everyday Congolese classic, often served with rice and pondu or fufu.",
     "region": "Kinshasa & Cuvette",
     "imageAlt": "Plate of cassava leaves with fufu",
     "prepTime": "45 min",
@@ -1236,7 +1237,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "palm oil",
       "everyday"
     ],
-    "body": "Pondu—also called saka-saka or mpondu—is the cassava-leaf stew most associated with Congolese home cooking. A vegetarian version without fish or meat is common on fasting days. The long simmer softens the leaves and builds the sauce; serve with chikwangue or fufu.",
+    "body": "Pondu—also called saka-saka or mpondu—is the cassava-leaf stew most associated with Congolese home cooking. A common search phrasing is **rice and pondu**: the leaves with plain rice, [chikwangue](/en/recettes/chikwangue/), or [cassava fufu](/en/recettes/fufu-manioc/). A vegetarian version without fish or meat is common on fasting days.",
     variants: [
       {
         id: "vegetarien",
@@ -1449,7 +1450,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "basil",
       "Kasai"
     ],
-    "body": "Lumba-lumba gives this Kasai chicken its unmistakable perfume."
+        body: "Chicken with basil (Lingala: *soso ya lumba-lumba*) scents the bird with Congolese basil—a Kasai classic. Other chicken: [grilled chicken](/en/recettes/soso-ya-kotumba/), [poulet mayo](/en/recettes/poulet-mayo/)."
   },
   "soso-ya-sauce": {
     "title": "Soso ya sauce",
@@ -1482,7 +1483,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "tomato",
       "Kinshasa"
     ],
-    "body": "Served with rice, fufu or makemba, soso ya sauce is a family dish whose seasoning shifts from house to house."
+        body: "Chicken in sauce (Lingala: *soso ya sauce*) is served with rice, fufu or plantain. Grill counterpart: [grilled chicken](/en/recettes/soso-ya-kotumba/)."
   },
   "poulet-mayo": {
     title: "Poulet mayo",
@@ -1544,9 +1545,10 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     body: "Unlike grilled ntaba over coals, this version stays entirely in the pot. Cooking time depends on the animal and the size of the pieces.",
   },
   "viande-ya-sauce": {
-    title: "Viande ya sauce",
+    title: "Meat in sauce",
+    seoTitle: "Meat in sauce recipe",
     description:
-      "Beef simmered in a generous tomato and onion sauce — everyday Kinshasa cooking, distinct from kamundele skewers.",
+      "Meat in sauce recipe (Lingala: viande ya sauce): beef or red meat simmered in tomato sauce — everyday plate.",
     region: "Kinshasa",
     imageAlt: "Tomato beef stew in a pot",
     prepTime: "20 min",
@@ -1570,7 +1572,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Adjust the chili and serve with rice, fufu or potatoes.",
     ],
     tags: ["beef", "sauce", "tomato", "everyday"],
-    body: "Viande ya sauce is a table stew, not a street grill. Carrots or peppers are often added depending on the market.",
+    body: "Meat in sauce (Lingala: *viande ya sauce*) is a table simmer, not street grill. Carrots or peppers often stretch the pot.",
   },
   "poisson-moambe": {
     title: "Fish moambe",
@@ -1712,8 +1714,9 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
   },
   "porc-braise": {
     title: "Braised pork",
+    seoTitle: "Braised pork recipe",
     description:
-      "Pork pieces marinated with aromatics then braised over coals to a golden crust — pork grilling previously missing from the catalogue.",
+      "Braised pork recipe (Lingala: ngulu ya kotumba / ngulu braised): marinated pieces braised over coals — Kinshasa grill, distinct from pork in sauce.",
     region: "Kinshasa",
     imageAlt: "Pork grilled over coals",
     prepTime: "25 min + 2 h marinating",
@@ -1735,7 +1738,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Serve with raw onion, pili-pili and chikwangue or plantain.",
     ],
     tags: ["pork", "braise", "grill", "Kinshasa"],
-    body: "Braised pork differs from kamundele (small beef skewers) in cut, cooking time and meat. Pre-cooking before the coals varies from stall to stall.",
+    body: "Braised pork (Lingala: *ngulu* for pork; often *ngulu ya kotumba* on the grill) differs from [kamundele](/en/recettes/kamundele/) by cut and time. In sauce: [pork in sauce](/en/recettes/ngulu-ya-sauce/). Related grill snack: [grilled pork](/en/recettes/porc-ya-kotumba/).",
   },
   "bouillie-arachide": {
     title: "Peanut porridge",
@@ -1822,9 +1825,9 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
   },
   "tangawisi": {
     title: "Tangawisi",
-    seoTitle: "Tangawisi recipe — ginger juice",
+    seoTitle: "Tangawisi juice recipe — ginger juice",
     description:
-      "Tangawisi recipe: fresh ginger juice, sharp and tangy, sweetened to taste — homemade drink of Kinshasa and the diaspora.",
+      "Tangawisi juice (ginger juice) recipe: fresh ginger, sharp and tangy, sweetened to taste — homemade drink of Kinshasa and the diaspora.",
     region: "Kinshasa",
     imageAlt: "Glass of fresh ginger juice",
     prepTime: "20 min + 1 h resting",
@@ -1844,7 +1847,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Sweeten, add lemon (and chili if desired). Chill. Serve cold.",
     ],
     tags: ["tangawisi", "ginger juice", "ginger", "drink", "Kinshasa"],
-    body: "Tangawisi (ginger juice) is drunk iced, often after a spicy meal. Ginger and sugar levels vary widely. Other drinks: bissap, passion fruit. Pair with mikate at snack time.",
+    body: "**Tangawisi juice** (ginger juice) is drunk iced, often after a spicy meal. Ginger and sugar levels vary widely. Other drinks: [bissap](/en/recettes/jus-bissap/), [mango juice](/en/recettes/jus-mangue/), [tamarind juice](/en/recettes/jus-tamarin/). Pair with [mikate](/en/recettes/mikate/) at snack time.",
   },
   "jus-bissap": {
     title: "Bissap juice",
@@ -1971,10 +1974,10 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     ]
   },
   "soso-ya-kotumba": {
-    title: "Soso ya kotumba",
-    seoTitle: "Soso ya kotumba recipe — grilled chicken",
+    title: "Grilled chicken",
+    seoTitle: "Grilled chicken recipe — kotumba",
     description:
-      "Soso ya kotumba recipe: chicken marinated with aromatics then grilled or roasted until the skin is crisp — Congolese grill food, distinct from poulet mayo.",
+      "Grilled chicken recipe (Lingala: soso ya kotumba): marinated chicken cooked over coals — Kinshasa table and street classic.",
     region: "Kinshasa",
     imageAlt: "Golden grilled chicken ready to serve",
     prepTime: "25 min + 2 h marinade",
@@ -1998,7 +2001,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Serve with pili-pili sauce, raw onion, fries or plantain.",
     ],
     tags: ["soso ya kotumba", "grilled chicken", "braise", "Kinshasa", "street food"],
-    body: "Soso ya kotumba (“grilled chicken” in Lingala) is about marinade and fire—not mayo sauce or moambe. In the oven, aim for the same crisp skin as over wood coals.",
+    body: "Grilled chicken (Lingala: *soso ya kotumba*) is about marinade and coals—not mayo sauce or moambe. For mayo: [poulet mayo](/en/recettes/poulet-mayo/). Condiment: [pili-pili sauce](/en/recettes/sauce-pili-pili/).",
   },
   mikila: {
     title: "Mikila",
@@ -2034,10 +2037,10 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     body: "Mikila (oxtail) needs time: collagen melts into a sticky sauce typical of big tables. Common in the diaspora where frozen oxtail is easy to find.",
   },
   makoso: {
-    title: "Makoso",
-    seoTitle: "Makoso recipe — Congolese pig trotters",
+    title: "Pig trotters",
+    seoTitle: "Pig trotters recipe (makoso)",
     description:
-      "Makoso recipe: pig trotters simmered long in a fragrant, chili-forward broth — a Kinshasa feast classic.",
+      "Pig trotters recipe (Lingala: makoso): long-simmered trotters in a fragrant, chili-forward broth — a Kinshasa feast classic.",
     region: "Kinshasa",
     imageAlt: "Cooked pig trotters ready to simmer",
     prepTime: "35 min",
@@ -2064,7 +2067,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Adjust seasoning. Serve very hot with bread, plantain or fufu.",
     ],
     tags: ["makoso", "pig trotters", "pepper soup", "Kinshasa", "feast"],
-    body: "Makoso (pig trotters) is a patient feast dish: long-simmered, often spicy, served in a fragrant broth. Some tables treat it like pepper soup; others like it thicker with tomato.",
+    body: "**Pig trotters** (Lingala: *makoso*) are a patient feast dish: long-simmered, often spicy, served in a fragrant broth. Some tables treat it like pepper soup; others like it thicker with tomato. With potatoes: [makosso with potatoes](/en/recettes/makosso-pommes/). Chili soup cousin: [pepe soup with catfish](/en/recettes/pepe-soupe-ya-ngolo/).",
   },
   "fufu-manioc": {
     title: "Cassava fufu",
@@ -2116,10 +2119,10 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     body: "Steamed (or boiled) plantains stay neutral and starchy: they carry sauce without the caramelised sweetness of fried makemba. When pounded, they become lituma.",
   },
   "loso-na-madesu": {
-    title: "Loso na madesu",
-    seoTitle: "Loso na madesu recipe — rice and beans",
+    title: "Rice and beans",
+    seoTitle: "Rice and beans recipe",
     description:
-      "Loso na madesu recipe: rice and beans cooked together with onion, tomato and a little palm oil — an everyday Kinshasa plate.",
+      "Rice and beans recipe (Lingala: loso na madesu): rice cooked with beans — a simple, filling plate.",
     region: "Kinshasa",
     imageAlt: "White rice with stewed red beans",
     prepTime: "20 min + 8 h soaking",
@@ -2144,13 +2147,13 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Rest 5 minutes covered, then fluff with a fork. Adjust salt.",
     ],
     tags: ["loso na madesu", "rice and beans", "madesu", "Kinshasa", "everyday"],
-    body: "Loso na madesu (“rice and beans”) is a simple everyday plate: less saucy than madesu alone, more filling than plain rice. Cook the beans ahead to speed things up.",
+    body: "Rice and beans (Lingala: *loso na madesu*) is the everyday one-plate meal: less saucy than [madesu](/en/recettes/madesu/) alone. Leaves + beans: [saka-madesu](/en/recettes/saka-madesu/).",
   },
   "sauce-pili-pili": {
     title: "Pili-pili sauce",
-    seoTitle: "Congolese pili-pili sauce recipe",
+    seoTitle: "Pili-pili sauce — origin and Congolese recipe",
     description:
-      "Pili-pili sauce recipe: fresh chilies blended with garlic, onion and a little oil — a sharp condiment for grills, fish and Kinshasa tables.",
+      "Pili-pili sauce: origin of the Central African chili condiment and recipe — fresh chilies blended with garlic, onion and a little oil for grills and fish.",
     region: "Whole DRC",
     imageAlt: "Red chili sauce like piri-piri / pili-pili",
     prepTime: "15 min",
@@ -2174,7 +2177,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Serve in small amounts beside grills and fish.",
     ],
     tags: ["pili-pili", "chili sauce", "condiment", "grill", "chili"],
-    body: "Pili-pili sauce is not a main dish: it is the table’s heat. Every household doses chili differently; tomato softens, lemon brightens. Serve with grilled chicken, ntaba, braised fish or kamundele.",
+    body: "## Origin\n\n**Pili-pili** (also piri-piri) names the hot chili and, by extension, the sauce that goes with it across Central and Southern Africa. In the DRC it is not a brand: it is the table condiment — local chilies, garlic, sometimes tomato — dosed household by household. The word circulates in Lingala and Swahili as much as in Kinshasa French.\n\n## At the table\n\nPili-pili sauce is not a main dish: it is the table’s heat. Tomato softens, lemon brightens. Serve with [grilled chicken](/en/recettes/soso-ya-kotumba/), [ntaba](/en/recettes/ntaba/), [braised fish](/en/recettes/poisson-braise-kinkole/) or [kamundele](/en/recettes/kamundele/).",
   },
   sambaza: {
     title: "Sambaza with tomatoes",
@@ -2506,9 +2509,9 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
   },
   "capitaine-braise": {
     title: "Grilled capitaine",
-    seoTitle: "Grilled capitaine recipe — Nile perch",
+    seoTitle: "Braised capitaine fish recipe — Nile perch",
     description:
-      "Grilled capitaine recipe: whole Nile perch marinated with aromatics and grilled until the skin is smoky — river grillade, distinct from generic Kinkole braised fish.",
+      "Braised / grilled capitaine fish recipe: whole Nile perch marinated with aromatics and grilled until the skin is smoky — river grillade, distinct from generic Kinkole braised fish.",
     region: "Kinshasa & Congo Basin",
     imageAlt: "Large grilled fish served with sides",
     prepTime: "30 min + 1 h marinade",
@@ -2531,7 +2534,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Serve with plantain, chikwangue, raw onion and chili sauce.",
     ],
     tags: ["capitaine", "Nile perch", "grill", "Kinshasa", "river"],
-    body: "Capitaine usually means Nile perch in Kinshasa markets—a larger piece than many river fish. The Kinkole braised-fish page stays the generic street gesture; here species and size set the cooking time.",
+    body: "**Braised capitaine fish** (Nile perch) is the river grillade when the market has a large piece. The [Kinkole braised fish](/en/recettes/poisson-braise-kinkole/) page stays the generic street gesture; here species and size set the cooking time.",
   },
   "poisson-mayo": {
     title: "Fish mayo",
@@ -2564,10 +2567,10 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     body: "Like chicken mayo, the mayonnaise goes on at the end so it does not split. Fish mayo is a Kinshasa street and party plate; chili is always to taste.",
   },
   "ngulu-ya-sauce": {
-    title: "Ngulu in sauce",
-    seoTitle: "Ngulu ya sauce recipe — pork stew",
+    title: "Pork in sauce",
+    seoTitle: "Pork in sauce recipe",
     description:
-      "Ngulu ya sauce recipe: pork simmered in tomato-onion sauce until tender — Kinshasa table dish, distinct from charcoal-braised pork.",
+      "Pork in sauce recipe (Lingala: ngulu ya sauce): pork simmered with tomato and onion — distinct from grilled pork.",
     region: "Kinshasa",
     imageAlt: "Cooked pork ready to serve in sauce",
     prepTime: "25 min",
@@ -2591,13 +2594,13 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Adjust seasoning. Serve with rice, fufu, chikwangue or plantain.",
     ],
     tags: ["ngulu", "pork", "tomato sauce", "Kinshasa", "stew"],
-    body: "Ngulu means pork in Lingala. This page is the sauced stew, not the grill—see braised pork for charcoal. Pig’s trotters have their own page: makoso.",
+    body: "Pork in sauce (Lingala: *ngulu ya sauce*; *ngulu* = pork) is a simmer, not a grill. For coals: [grilled pork](/en/recettes/porc-ya-kotumba/) or [braised pork](/en/recettes/porc-braise/).",
   },
   "boeuf-ya-kotumba": {
-    title: "Beef ya kotumba",
-    seoTitle: "Beef ya kotumba recipe — grilled beef",
+    title: "Grilled beef",
+    seoTitle: "Grilled beef recipe — kotumba",
     description:
-      "Beef ya kotumba recipe: marinated beef pieces grilled to a smoky crust — Kinshasa grillade, distinct from kamundele skewers.",
+      "Grilled beef recipe (Lingala: boeuf ya kotumba): marinated pieces cooked over coals — Kinshasa grillade, distinct from small kamundele skewers.",
     region: "Kinshasa",
     imageAlt: "Grilled beef served as a portion",
     prepTime: "25 min + 2 h marinade",
@@ -2620,13 +2623,13 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Serve with raw onion, chili sauce, fries or chikwangue.",
     ],
     tags: ["beef", "kotumba", "grill", "Kinshasa", "braise"],
-    body: "Kotumba points to grilling or roasting. Soso ya kotumba is the chicken; here beef comes in larger pieces than kamundele skewers. For stewed beef, see viande ya sauce.",
+    body: "Grilled beef (Lingala: *boeuf ya kotumba*) uses the *kotumba* grill/roast gesture. Chicken twin: [grilled chicken](/en/recettes/soso-ya-kotumba/); small skewers stay [kamundele](/en/recettes/kamundele/).",
   },
   "loso-mayonnaise": {
-    title: "Loso mayonnaise",
-    seoTitle: "Loso mayonnaise recipe — Kinshasa mayo rice",
+    title: "Mayonnaise rice",
+    seoTitle: "Mayonnaise rice recipe — Kinshasa",
     description:
-      "Loso mayonnaise recipe: plain rice mixed or topped with seasoned mayonnaise — everyday Kinshasa side and street plate.",
+      "Mayonnaise rice recipe (sometimes called loso mayonnaise): rice with garlic-chili mayo — Kinshasa street / table food.",
     region: "Kinshasa",
     imageAlt: "Plate of rice served with a creamy sauce",
     prepTime: "10 min",
@@ -2648,7 +2651,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Taste and adjust salt. Serve with chicken, fish, skewers or on its own.",
     ],
     tags: ["loso", "rice", "mayonnaise", "Kinshasa", "street food"],
-    body: "Loso mayonnaise is not fried rice—it is plain rice plus a cold mayo dressing, cousin to pain mayonnaise and chicken mayo. In Kinshasa it shows up as street portions and table sides alike.",
+    body: "Mayonnaise rice (sometimes called *loso mayonnaise*) is a Kinshasa street/table gesture: rice + garlic-chili mayo. Less of a single stew than [rice and beans](/en/recettes/loso-na-madesu/).",
   },
   "poulet-pane": {
     title: "Breaded chicken",
@@ -2789,10 +2792,10 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     body: "This peanut sauce (often called nguba) is a base on its own—no fumbwa leaves. For leaves in peanut, see fumbwa with peanuts or matembele. Mbika uses squash seeds, not peanut.",
   },
   "makemba-na-mbisi": {
-    title: "Makemba na mbisi",
-    seoTitle: "Makemba na mbisi recipe — plantains and fish",
+    title: "Fried plantains with fish",
+    seoTitle: "Fried plantains with fish recipe",
     description:
-      "Makemba na mbisi recipe: fried plantains served with fish (fried, grilled or in sauce) — a very common composed plate across the DRC.",
+      "Fried plantains with fish recipe (Lingala: makemba na mbisi) — plantain and fish duo.",
     region: "Across the DRC",
     imageAlt: "Fried plantains served with fish",
     prepTime: "20 min",
@@ -2814,7 +2817,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Plate makemba and mbisi together. Serve at once.",
     ],
     tags: ["makemba", "mbisi", "plantain", "fish", "plate"],
-    body: "Makemba na mbisi is not a new technique—it is the plate pairing of fried plantains and fish (grilled, fried or smoked). In Kinshasa and across the provinces it is one of the most requested compositions.",
+    body: "Fried plantains with fish (Lingala: *makemba na mbisi*) is a plate pairing of [makemba](/en/recettes/makemba/) and fish—not a new technique.",
   },
   "chikwangue-grillee": {
     title: "Grilled chikwangue",
@@ -3543,10 +3546,10 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     body: "**Dried meat** travels well on the Katanga plateaus—like [kapenta](/en/recettes/kapenta-tomates/) on the lake side. Fresh cousin in sauce: [viande ya sauce](/en/recettes/viande-ya-sauce/).",
   },
   "loso-sauce-katanga": {
-    title: "Loso ya sauce",
-    seoTitle: "Loso ya sauce recipe — Katanga tomato rice",
+    title: "Rice with tomato sauce",
+    seoTitle: "Rice with tomato sauce recipe — Katanga",
     description:
-      "Loso ya sauce recipe: white rice with a tomato meat sauce — everyday Lubumbashi plate, distinct from Kinshasa loso mayonnaise.",
+      "Rice with tomato sauce recipe (Lingala: loso ya sauce) — Katanga / south-east plate.",
     region: "Greater Katanga",
     imageAlt: "Plate of rice in tomato sauce, like loso ya sauce",
     prepTime: "20 min",
@@ -3569,7 +3572,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Season. Serve the sauce on or beside the rice.",
     ],
     tags: ["loso", "rice", "Katanga", "Lubumbashi", "tomato sauce"],
-    body: "**Loso ya sauce** in Lubumbashi: rice + tomato sauce, without the mayonnaise of Kinshasa [loso mayonnaise](/en/recettes/loso-mayonnaise/). Other Eastern rice: [Kivu pilau](/en/recettes/pilau-kivu/). When you want the paste: [bukari](/en/recettes/bukari-katanga/).",
+    body: "Rice with tomato sauce (Lingala: *loso ya sauce*) in Lubumbashi: rice + tomato sauce, without the mayo of [mayonnaise rice](/en/recettes/loso-mayonnaise/).",
   },
   "sambousa-pommes": {
     title: "Potato sambousa",
@@ -3631,9 +3634,9 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
   },
   "pondu-poisson": {
     title: "Pondu with fish",
-    seoTitle: "Pondu with fish recipe (pondu ya mbisi)",
+    seoTitle: "Pondu with fish recipe",
     description:
-      "Pondu with fish recipe: cassava leaves simmered in palm oil with fresh or smoked fish — a much-requested saka-saka variant.",
+      "Pondu with fish recipe (Lingala: pondu ya mbisi): cassava leaves simmered with fish — a pondu variant.",
     region: "Kinshasa & Cuvette",
     imageAlt: "Fresh cassava leaves for pondu with fish",
     prepTime: "40 min",
@@ -3657,13 +3660,13 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Adjust seasoning. Serve with fufu, chikwangue or rice.",
     ],
     tags: ["pondu", "pondu ya mbisi", "saka-saka", "fish", "palm oil"],
-    body: "**Pondu with fish** (*pondu ya mbisi*) puts fish at the centre, where the main [pondu (saka-saka)](/en/recettes/pondu/) page leaves it optional. Same leaf family: [saka-madesu](/en/recettes/saka-madesu/). Smoked fish in tomato sauce: [smoked fish with tomatoes](/en/recettes/poisson-fume-tomates/).",
+    body: "Pondu with fish (Lingala: *pondu ya mbisi*) puts fish at the centre, where the main [pondu](/en/recettes/pondu/) page leaves it optional. Same leaf family: [saka-madesu](/en/recettes/saka-madesu/).",
   },
   "loso-na-mbisi": {
-    title: "Loso na mbisi",
-    seoTitle: "Loso na mbisi recipe — rice with fish",
+    title: "Rice with fish",
+    seoTitle: "Rice with fish recipe",
     description:
-      "Loso na mbisi recipe: rice cooked or served with fish in tomato sauce — everyday Kinshasa plate, cousin to loso na madesu.",
+      "Rice with fish recipe (Lingala: loso na mbisi): rice simmered with fish — a Kinshasa table classic.",
     region: "Kinshasa",
     imageAlt: "Plate of rice served with fish",
     prepTime: "20 min",
@@ -3686,7 +3689,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Serve rice topped with sauce and fish, or fold gently together for a one-pot plate.",
     ],
     tags: ["loso na mbisi", "rice fish", "Kinshasa", "everyday", "tomato"],
-    body: "**Loso na mbisi** (“rice and fish”) sits beside [loso na madesu](/en/recettes/loso-na-madesu/) and Kinshasa [loso mayonnaise](/en/recettes/loso-mayonnaise/). Fried fish alone: [mbisi ya kokalinga](/en/recettes/mbisi-ya-kokalinga/). Plantain + fish: [makemba na mbisi](/en/recettes/makemba-na-mbisi/).",
+    body: "Rice with fish (Lingala: *loso na mbisi*) sits beside [rice and beans](/en/recettes/loso-na-madesu/) and [mayonnaise rice](/en/recettes/loso-mayonnaise/). Another fish plate: [pondu with fish](/en/recettes/pondu-poisson/).",
   },
   "ngolo-grille": {
     title: "Grilled ngolo",
@@ -3832,10 +3835,10 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     body: "**Chicken skewers** are the stick snack; [soso ya kotumba](/en/recettes/soso-ya-kotumba/) remains chicken in pieces. Beef cousins: [beef skewers](/en/recettes/brochettes-boeuf/), [kamundele](/en/recettes/kamundele/).",
   },
   "porc-ya-kotumba": {
-    title: "Pork ya kotumba",
-    seoTitle: "Pork ya kotumba recipe — grilled pork",
+    title: "Grilled pork",
+    seoTitle: "Grilled pork recipe — kotumba",
     description:
-      "Pork ya kotumba recipe: marinated pork grilled over coals — the pork side of soso / beef kotumba, distinct from braised pork in sauce.",
+      "Grilled pork recipe (Lingala: porc ya kotumba / ngulu ya kotumba): marinated pork finished on coals — distinct from long-braised pork and pork in sauce.",
     region: "Kinshasa",
     imageAlt: "Grilled pork, ready to serve",
     prepTime: "25 min + 2 h marinade",
@@ -3858,7 +3861,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Serve with raw onion, pili-pili sauce, fries or plantain.",
     ],
     tags: ["pork", "kotumba", "grill", "Kinshasa", "street food"],
-    body: "**Pork ya kotumba** follows the grill gesture of [soso ya kotumba](/en/recettes/soso-ya-kotumba/) and [boeuf ya kotumba](/en/recettes/boeuf-ya-kotumba/). For long sauce: [braised pork](/en/recettes/porc-braise/) or [ngulu ya sauce](/en/recettes/ngulu-ya-sauce/).",
+    body: "Grilled pork (Lingala: *porc ya kotumba* / *ngulu ya kotumba*) follows the same grill gesture as [grilled chicken](/en/recettes/soso-ya-kotumba/) and [grilled beef](/en/recettes/boeuf-ya-kotumba/). For a stew: [pork in sauce](/en/recettes/ngulu-ya-sauce/).",
   },
   "tripes-mijotees": {
     title: "Simmered tripe",
@@ -4095,10 +4098,10 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     body: "**Kisangani fish** is the city’s simmered river-market plate: less pure grill than [Kinkole braised fish](/en/recettes/poisson-braise-kinkole/), saucier than [grilled ngolo](/en/recettes/ngolo-grille/). Same local table: [Kisangani salad](/en/recettes/salade-kisangani/).",
   },
   "mbisi-na-kwanga": {
-    title: "Mbisi na kwanga",
-    seoTitle: "Mbisi na kwanga recipe — fish with chikwangue",
+    title: "Fish with chikwangue",
+    seoTitle: "Fish with chikwangue recipe — Kongo-Central",
     description:
-      "Mbisi na kwanga recipe: fish in a short sauce served with kwanga (chikwangue) — classic Kongo-Central / western duo.",
+      "Fish with chikwangue recipe (Lingala: mbisi na kwanga) — classic Kongo-Central duo.",
     region: "Kongo-Central",
     imageAlt: "Kwanga / chikwangue cassava bread",
     prepTime: "20 min",
@@ -4121,7 +4124,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Serve fish and sauce with kwanga slices for scooping.",
     ],
     tags: ["mbisi", "kwanga", "chikwangue", "Kongo-Central", "fish"],
-    body: "**Mbisi na kwanga** is fish + [chikwangue / kwanga](/en/recettes/chikwangue/) on the Kongo-Central side: cassava paste often replaces rice. Another western classic: [fumbwa with peanuts](/en/recettes/fumbwa-arachides/).",
+    body: "Fish with chikwangue (Lingala: *mbisi na kwanga*) is the Kongo-Central plate: cassava paste often replaces rice. Another western classic: [fumbwa with peanuts](/en/recettes/fumbwa-arachides/).",
   },
   "nsafu-sauce": {
     title: "Nsafu in sauce",
@@ -4150,10 +4153,10 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     body: "**Nsafu in sauce** carries safou season past the snack: [grilled nsafu](/en/recettes/nsafu-grilles/) stay the coal gesture; here the buttery pulp binds a short sauce. Seasonal drink: [safou juice](/en/recettes/jus-safou/).",
   },
   "nyama-bugali-kivu": {
-    title: "Nyama na bugali",
+    title: "Meat with bugali",
     seoTitle: "Meat with bugali recipe — Kivu",
     description:
-      "Nyama na bugali recipe: meat simmered in sauce served with bugali — Kivu meat + maize paste plate, distinct from tilapia-bugali.",
+      "Meat with bugali recipe (table Lingala/Swahili: nyama na bugali) — sauced meat with Kivu maize paste.",
     region: "North & South Kivu",
     imageAlt: "Ugali / bugali plate with meat in sauce",
     prepTime: "25 min",
@@ -4178,7 +4181,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Cook bugali separately. Serve meat beside or on the bugali, optionally with [sukuma](/en/recettes/sukuma-est/).",
     ],
     tags: ["nyama", "bugali", "Kivu", "meat", "East"],
-    body: "**Nyama na bugali** is the meat counterpart to [tilapia with bugali](/en/recettes/tilapia-bugali/): same eastern maize paste, longer sauce. Paste alone: [bukari / bugali](/en/recettes/bukari-katanga/).",
+    body: "Meat with bugali (table Lingala/Swahili: *nyama na bugali*) is the meat counterpart to [tilapia with bugali](/en/recettes/tilapia-bugali/). Paste alone: [bukari / bugali](/en/recettes/bukari-katanga/).",
   },
   "liboke-champignons": {
     title: "Mushroom liboke",

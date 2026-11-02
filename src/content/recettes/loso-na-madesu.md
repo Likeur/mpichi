@@ -1,7 +1,7 @@
 ---
-title: Loso na madesu
-seoTitle: Recette loso na madesu — riz aux haricots
-description: "Recette de loso na madesu : riz et haricots mijotés ensemble avec oignon, tomate et un peu d’huile de palme — assiette du quotidien à Kinshasa."
+title: Riz aux haricots
+seoTitle: "Recette riz aux haricots"
+description: "Recette de riz aux haricots (en lingala : loso na madesu) : riz cuit avec des haricots — assiette simple et nourrissante."
 region: Kinshasa
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Red%20Beans%20and%20Rice.jpg?width=1600
 imageAlt: Riz blanc et haricots rouges en sauce
@@ -43,7 +43,4 @@ steps:
   - Baisser le feu, couvrir et cuire 18 à 20 minutes sans remuer, jusqu’à absorption.
   - Laisser reposer 5 minutes à couvert, puis égrener à la fourchette. Rectifier le sel.
 ---
-
-**Loso na madesu** (« riz et haricots ») est l’assiette simple du quotidien : moins de sauce que les [madesu](/recettes/madesu/) seuls, plus nourrissante qu’un riz nature. On peut cuire les haricots à part la veille pour aller plus vite.
-
-Variante feuilles + haricots : [saka-madesu](/recettes/saka-madesu/). Riz aux pois : [loso na petits pois](/recettes/loso-petits-pois/).
+Le **riz aux haricots** (en lingala : *loso na madesu*) est l’assiette simple du quotidien : moins de sauce longue que les [madesu](/recettes/madesu/) seuls, plus « un seul plat » que le riz nature. Variante feuilles + haricots : [saka-madesu](/recettes/saka-madesu/).

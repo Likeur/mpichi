@@ -1,6 +1,7 @@
 ---
-title: Viande ya sauce
-description: Bœuf mijoté dans une sauce tomate et oignon généreuse, plat de tous les jours à Kinshasa, bien distinct des brochettes kamundele.
+title: Viande en sauce
+seoTitle: "Recette viande en sauce"
+description: "Recette de viande en sauce (en lingala : viande ya sauce) : bœuf ou viande rouge mijotée dans une sauce tomate — plat du quotidien."
 region: Kinshasa
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Beef%20stew.jpg?width=1600
 imageAlt: Ragoût de bœuf à la tomate dans une casserole
@@ -40,5 +41,4 @@ steps:
   - Mijoter à couvert 1 h 15 à 1 h 30, jusqu’à ce que la viande soit tendre et la sauce liée.
   - Ajuster le piment et servir avec riz, fufu ou pommes de terre.
 ---
-
-La viande ya sauce est un mijoté de table, pas une grillade de rue. On la rallonge volontiers avec carottes ou poivrons selon le marché du jour.
+La **viande en sauce** (en lingala : *viande ya sauce*) est un mijoté de table, pas une grillade de rue. On la rallonge volontiers avec carottes ou poivrons selon le marché.

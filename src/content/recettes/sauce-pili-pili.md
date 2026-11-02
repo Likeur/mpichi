@@ -1,7 +1,7 @@
 ---
 title: Sauce pili-pili
-seoTitle: Recette sauce pili-pili congolaise
-description: "Recette de sauce pili-pili : piments frais mixés avec ail, oignon et un filet d’huile — condiment vif pour grillades, poisson et table kin."
+seoTitle: Sauce pili-pili — origine et recette congolaise
+description: "Sauce pili-pili : origine du condiment pimenté d’Afrique centrale et recette — piments frais mixés avec ail, oignon et un filet d’huile, pour grillades et poisson."
 region: Toute la RDC
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Piri%20piri.jpg?width=1600
 imageAlt: Sauce pimentée rouge type piri-piri / pili-pili
@@ -42,6 +42,10 @@ steps:
   - Servir en petite quantité à côté des grillades et des poissons.
 ---
 
-La **sauce pili-pili** n’est pas un plat : c’est le coup de feu de la table. Chaque foyer dose le piment à sa manière ; la tomate adoucit, le citron allège.
+## Origine
 
-À poser à côté du [soso ya kotumba](/recettes/soso-ya-kotumba/), du [ntaba](/recettes/ntaba/), du [poisson braisé](/recettes/poisson-braise-kinkole/) ou des [kamundele](/recettes/kamundele/).
+**Pili-pili** (aussi écrit piri-piri) désigne le piment fort et, par extension, la sauce qui l’accompagne en Afrique centrale et australe. En RDC, ce n’est pas une marque : c’est le condiment de table — piments locaux, ail, parfois tomate — dosé foyer par foyer. Le mot circule en lingala et swahili autant qu’en français de Kinshasa.
+
+## À table
+
+La sauce pili-pili n’est pas un plat : c’est le coup de feu. La tomate adoucit, le citron allège. À poser à côté du [soso ya kotumba](/recettes/soso-ya-kotumba/), du [ntaba](/recettes/ntaba/), du [poisson braisé](/recettes/poisson-braise-kinkole/) ou des [kamundele](/recettes/kamundele/).

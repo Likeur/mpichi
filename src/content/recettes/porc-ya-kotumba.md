@@ -1,7 +1,7 @@
 ---
-title: Porc ya kotumba
-seoTitle: Recette porc ya kotumba — porc grillé
-description: "Recette de porc ya kotumba : porc mariné puis grillé sur braises — version coté porc du soso / bœuf ya kotumba, distincte du porc braisé en sauce."
+title: Porc grillé
+seoTitle: "Recette porc grillé — kotumba"
+description: "Recette de porc grillé (en lingala : porc ya kotumba / ngulu ya kotumba) : porc mariné puis cuit sur braises — distinct du porc braisé long et du porc en sauce."
 region: Kinshasa
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Grilled_pork.jpg?width=1600
 imageAlt: Porc grillé doré, prêt à servir
@@ -42,5 +42,4 @@ steps:
   - Égoutter puis griller sur braises moyennes 25 à 30 minutes en badigeonnant, jusqu'à croûte dorée et chair cuite.
   - Servir avec oignon cru, sauce pili-pili, frites ou plantain.
 ---
-
-**Porc ya kotumba** suit le geste grillade du [soso ya kotumba](/recettes/soso-ya-kotumba/) et du [bœuf ya kotumba](/recettes/boeuf-ya-kotumba/). Pour le porc en sauce longue : [porc braisé](/recettes/porc-braise/) ou [ngulu ya sauce](/recettes/ngulu-ya-sauce/).
+Le **porc grillé** (en lingala : *porc ya kotumba* / *ngulu ya kotumba*) suit le geste grillade du [poulet grillé](/recettes/soso-ya-kotumba/) et du [bœuf grillé](/recettes/boeuf-ya-kotumba/). Pour un mijoté : [porc en sauce](/recettes/ngulu-ya-sauce/) ou [porc braisé](/recettes/porc-braise/) plus long.

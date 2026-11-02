@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "dev": "astro dev --port 4321 --strictPort",
+    "dev": "astro dev --port 4321 --strictPort --host 127.0.0.1",
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
@@ -12,7 +12,9 @@
     "astro": "astro",
     "export-dataset": "npm --prefix mpichi-dataset run export",
     "remotion": "remotion studio remotion/index.ts --port 3333",
-    "remotion:render": "remotion render remotion/index.ts MpichiShow out/mpichi-show.mp4 --port=3456 --browser-executable=\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --gl=angle"
+    "remotion:render": "remotion render remotion/index.ts MpichiShow out/mpichi-show.mp4 --port=3456 --browser-executable=\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --gl=angle",
+    "remotion:render:vertical": "remotion render remotion/index.ts MpichiShowVertical out/mpichi-show-9x16.mp4 --port=3457 --browser-executable=\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --gl=angle",
+    "remotion:render:series": "mkdir -p out/series && remotion render remotion/index.ts SeriesMpi out/series/01-mpi.mp4 --port=3461 --browser-executable=\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --gl=angle && remotion render remotion/index.ts SeriesCatalogue out/series/02-catalogue.mp4 --port=3462 --browser-executable=\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --gl=angle && remotion render remotion/index.ts SeriesPondu out/series/03-pondu.mp4 --port=3463 --browser-executable=\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --gl=angle && remotion render remotion/index.ts SeriesLangues out/series/04-langues.mp4 --port=3464 --browser-executable=\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --gl=angle && remotion render remotion/index.ts SeriesFavoris out/series/05-favoris.mp4 --port=3465 --browser-executable=\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --gl=angle"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",

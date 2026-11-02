@@ -1,6 +1,6 @@
 ---
-import type { Locale } from '../i18n/config';
-import { useTranslations, localePath, switchLocalePath } from '../i18n/utils';
+import { locales, localeLabels, localeNames, type Locale } from '../i18n/config';
+import { useTranslations, localePath, switchLocalePath, stripLocaleFromPath } from '../i18n/utils';
 
 interface Props {
   lang?: Locale;
@@ -9,14 +9,18 @@ interface Props {
 const lang = Astro.props.lang ?? 'fr';
 const t = useTranslations(lang);
 const path = Astro.url.pathname;
-const bare = path.replace(/^\/en(?=\/|$)/, '') || '/';
+const bare = stripLocaleFromPath(path);
 const isHome = bare === '/';
 const isRecettes = bare.startsWith('/recettes');
 const isFavorites = bare.startsWith('/favoris');
 const isPropose = bare.startsWith('/proposer');
 const isGuides = bare.startsWith('/guides');
-const otherLang = lang === 'fr' ? 'en' : 'fr';
-const switchHref = switchLocalePath(path, otherLang);
+const langOptions = locales.map((locale) => ({
+  locale,
+  label: localeNames[locale],
+  href: switchLocalePath(path, locale),
+  current: locale === lang,
+}));
 
 const mobileLinks = [
   { href: localePath('/', lang), label: t('nav.home'), active: isHome },
@@ -88,27 +92,110 @@ const mobileLinks = [
           >
             {t('nav.propose')}
           </a>
-          <a
-            href={switchHref}
-            class="nav-ink-muted transition-colors"
-            aria-label={t('nav.lang')}
-            data-lang-switch
-          >
-            {otherLang === 'en' ? 'EN' : 'FR'}
-          </a>
+          <div class="relative" data-lang-menu>
+            <button
+              type="button"
+              class="nav-ink-muted inline-flex items-center gap-1 transition-colors"
+              aria-label={t('nav.lang')}
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              data-lang-menu-trigger
+            >
+              <span data-lang-menu-label>{localeLabels[lang]}</span>
+              <svg
+                viewBox="0 0 12 12"
+                class="size-2.5 opacity-70 transition-transform duration-200 data-[open=true]:rotate-180"
+                aria-hidden="true"
+                data-lang-menu-chevron
+                data-open="false"
+              >
+                <path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <div
+              class="absolute right-0 top-[calc(100%+0.55rem)] z-50 min-w-[7.5rem] origin-top-right rounded-sm border border-white/12 bg-earth-900/95 py-1 shadow-[0_12px_28px_rgba(0,0,0,.28)] opacity-0 pointer-events-none transition-[opacity,transform] duration-150 data-[state=open]:opacity-100 data-[state=open]:pointer-events-auto data-[state=closed]:scale-[0.98] data-[state=open]:scale-100"
+              data-lang-menu-panel
+              data-state="closed"
+              hidden
+              role="listbox"
+              aria-label={t('nav.lang')}
+            >
+              {
+                langOptions.map((option) => (
+                  <a
+                    href={option.href}
+                    class:list={[
+                      'block px-3 py-1.5 text-[11px] font-medium tracking-wide transition-colors',
+                      option.current
+                        ? 'text-white'
+                        : 'text-creme-100/55 hover:text-white',
+                    ]}
+                    role="option"
+                    aria-selected={option.current}
+                    hreflang={option.locale}
+                    data-lang-switch
+                    data-nav-link={option.current ? undefined : ''}
+                  >
+                    {option.label}
+                  </a>
+                ))
+              }
+            </div>
+          </div>
         </div>
       </nav>
 
       <!-- Mobile bar -->
       <div class="flex md:hidden h-14 w-full items-center justify-between">
-        <a
-          href={switchHref}
-          class="nav-ink-muted relative z-10 text-[10px] font-medium uppercase tracking-[0.16em] transition-colors"
-          aria-label={t('nav.lang')}
-          data-lang-switch
-        >
-          {otherLang === 'en' ? 'EN' : 'FR'}
-        </a>
+        <div class="relative z-10" data-lang-menu>
+          <button
+            type="button"
+            class="nav-ink-muted inline-flex items-center gap-1 text-[10px] font-medium uppercase tracking-[0.16em] transition-colors"
+            aria-label={t('nav.lang')}
+            aria-expanded="false"
+            aria-haspopup="listbox"
+            data-lang-menu-trigger
+          >
+            <span data-lang-menu-label>{localeLabels[lang]}</span>
+            <svg
+              viewBox="0 0 12 12"
+              class="size-2.5 opacity-70 transition-transform duration-200 data-[open=true]:rotate-180"
+              aria-hidden="true"
+              data-lang-menu-chevron
+              data-open="false"
+            >
+              <path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <div
+            class="absolute left-0 top-[calc(100%+0.55rem)] z-50 min-w-[7.5rem] origin-top-left rounded-sm border border-white/12 bg-earth-900/95 py-1 shadow-[0_12px_28px_rgba(0,0,0,.28)] opacity-0 pointer-events-none transition-[opacity,transform] duration-150 data-[state=open]:opacity-100 data-[state=open]:pointer-events-auto data-[state=closed]:scale-[0.98] data-[state=open]:scale-100"
+            data-lang-menu-panel
+            data-state="closed"
+            hidden
+            role="listbox"
+            aria-label={t('nav.lang')}
+          >
+            {
+              langOptions.map((option) => (
+                <a
+                  href={option.href}
+                  class:list={[
+                    'block px-3 py-1.5 text-[11px] font-medium tracking-wide transition-colors',
+                    option.current
+                      ? 'text-white'
+                      : 'text-creme-100/55 hover:text-white',
+                  ]}
+                  role="option"
+                  aria-selected={option.current}
+                  hreflang={option.locale}
+                  data-lang-switch
+                >
+                  {option.label}
+                </a>
+              ))
+            }
+          </div>
+        </div>
 
         <div class="w-11" aria-hidden="true"></div>
 
@@ -206,14 +293,56 @@ const mobileLinks = [
           ))
         }
       </ul>
-      <a
-        href={switchHref}
-        class="text-[11px] font-medium uppercase tracking-[0.18em] text-creme-100/45 hover:text-white transition-colors"
-        data-nav-link
-        data-lang-switch
-      >
-        {otherLang === 'en' ? 'English' : 'Français'}
-      </a>
+      <div class="relative w-fit" data-lang-menu>
+        <button
+          type="button"
+          class="inline-flex items-center gap-1.5 text-[11px] font-medium uppercase tracking-[0.18em] text-creme-100/45 hover:text-white transition-colors"
+          aria-label={t('nav.lang')}
+          aria-expanded="false"
+          aria-haspopup="listbox"
+          data-lang-menu-trigger
+        >
+          <span data-lang-menu-label>{localeLabels[lang]}</span>
+          <svg
+            viewBox="0 0 12 12"
+            class="size-2.5 opacity-70 transition-transform duration-200 data-[open=true]:rotate-180"
+            aria-hidden="true"
+            data-lang-menu-chevron
+            data-open="false"
+          >
+            <path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div
+          class="absolute left-0 bottom-[calc(100%+0.55rem)] z-50 min-w-[7.5rem] origin-bottom-left rounded-sm border border-white/12 bg-earth-950 py-1 shadow-[0_12px_28px_rgba(0,0,0,.28)] opacity-0 pointer-events-none transition-[opacity,transform] duration-150 data-[state=open]:opacity-100 data-[state=open]:pointer-events-auto data-[state=closed]:scale-[0.98] data-[state=open]:scale-100"
+          data-lang-menu-panel
+          data-state="closed"
+          hidden
+          role="listbox"
+          aria-label={t('nav.lang')}
+        >
+          {
+            langOptions.map((option) => (
+              <a
+                href={option.href}
+                class:list={[
+                  'block px-3 py-1.5 text-[12px] font-medium tracking-wide transition-colors',
+                  option.current
+                    ? 'text-white'
+                    : 'text-creme-100/45 hover:text-white',
+                ]}
+                role="option"
+                aria-selected={option.current}
+                hreflang={option.locale}
+                data-nav-link
+                data-lang-switch
+              >
+                {option.label}
+              </a>
+            ))
+          }
+        </div>
+      </div>
     </nav>
   </div>
 </header>
@@ -222,6 +351,61 @@ const mobileLinks = [
   function initSiteNav() {
     const root = document.querySelector<HTMLElement>('[data-site-nav]');
     if (!root) return;
+
+    type NavWindow = Window & { __mpichiNavCleanup?: () => void };
+    const navWindow = window as NavWindow;
+    navWindow.__mpichiNavCleanup?.();
+
+    const getLangMenus = () => [...root.querySelectorAll<HTMLElement>('[data-lang-menu]')];
+    const closeLangMenu = (menu: HTMLElement) => {
+      const trigger = menu.querySelector<HTMLButtonElement>('[data-lang-menu-trigger]');
+      const langPanel = menu.querySelector<HTMLElement>('[data-lang-menu-panel]');
+      const chevron = menu.querySelector<HTMLElement>('[data-lang-menu-chevron]');
+      if (!trigger || !langPanel) return;
+      trigger.setAttribute('aria-expanded', 'false');
+      if (chevron) chevron.dataset.open = 'false';
+      langPanel.dataset.state = 'closed';
+      langPanel.hidden = true;
+    };
+    const closeAllLangMenus = (except?: HTMLElement) => {
+      getLangMenus().forEach((menu) => {
+        if (menu !== except) closeLangMenu(menu);
+      });
+    };
+    const openLangMenu = (menu: HTMLElement) => {
+      closeAllLangMenus(menu);
+      const trigger = menu.querySelector<HTMLButtonElement>('[data-lang-menu-trigger]');
+      const langPanel = menu.querySelector<HTMLElement>('[data-lang-menu-panel]');
+      const chevron = menu.querySelector<HTMLElement>('[data-lang-menu-chevron]');
+      if (!trigger || !langPanel) return;
+      trigger.setAttribute('aria-expanded', 'true');
+      if (chevron) chevron.dataset.open = 'true';
+      langPanel.hidden = false;
+      requestAnimationFrame(() => {
+        langPanel.dataset.state = 'open';
+      });
+    };
+
+    const onLangTriggerClick = (event: Event) => {
+      event.stopPropagation();
+      const trigger = event.currentTarget as HTMLButtonElement;
+      const menu = trigger.closest<HTMLElement>('[data-lang-menu]');
+      if (!menu) return;
+      const open = trigger.getAttribute('aria-expanded') === 'true';
+      if (open) closeLangMenu(menu);
+      else openLangMenu(menu);
+    };
+
+    getLangMenus().forEach((menu) => {
+      const trigger = menu.querySelector<HTMLButtonElement>('[data-lang-menu-trigger]');
+      trigger?.addEventListener('click', onLangTriggerClick);
+    });
+
+    const onLangOutsideClick = (event: MouseEvent) => {
+      const target = event.target as Node | null;
+      if (!target || getLangMenus().some((menu) => menu.contains(target))) return;
+      closeAllLangMenus();
+    };
 
     const toggle = root.querySelector<HTMLButtonElement>('[data-nav-toggle]');
     const panel = root.querySelector<HTMLElement>('[data-nav-panel]');
@@ -232,7 +416,18 @@ const mobileLinks = [
       bot: root.querySelector<HTMLElement>('[data-nav-line="bot"]'),
     };
 
-    if (!toggle || !panel) return;
+    if (!toggle || !panel) {
+      document.addEventListener('click', onLangOutsideClick);
+      navWindow.__mpichiNavCleanup = () => {
+        document.removeEventListener('click', onLangOutsideClick);
+        getLangMenus().forEach((menu) => {
+          menu
+            .querySelector<HTMLButtonElement>('[data-lang-menu-trigger]')
+            ?.removeEventListener('click', onLangTriggerClick);
+        });
+      };
+      return;
+    }
 
     const openLabel = toggle.dataset.labelOpen ?? 'Menu';
     const closeLabel = toggle.dataset.labelClose ?? 'Close';
@@ -326,10 +521,8 @@ const mobileLinks = [
     // Always close after navigation / page load and show the bar
     setOpen(false);
     setHidden(false);
+    closeAllLangMenus();
     requestAnimationFrame(updateTone);
-
-    const navWindow = window as Window & { __mpichiNavCleanup?: () => void };
-    navWindow.__mpichiNavCleanup?.();
 
     let lastY = window.scrollY;
     let ticking = false;
@@ -363,7 +556,9 @@ const mobileLinks = [
     };
 
     const onKeydown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+      if (event.key !== 'Escape') return;
+      closeAllLangMenus();
+      if (toggle.getAttribute('aria-expanded') === 'true') {
         setOpen(false);
         toggle.focus();
       }
@@ -371,6 +566,7 @@ const mobileLinks = [
 
     const onResize = () => {
       if (window.matchMedia('(min-width: 768px)').matches) setOpen(false);
+      closeAllLangMenus();
       updateTone();
     };
 
@@ -381,6 +577,7 @@ const mobileLinks = [
       link.addEventListener('click', () => setOpen(false));
     });
 
+    document.addEventListener('click', onLangOutsideClick);
     document.addEventListener('keydown', onKeydown);
     window.addEventListener('resize', onResize);
     // Native scroll (fallback) + Lenis/Locomotive custom event from BaseLayout
@@ -399,10 +596,16 @@ const mobileLinks = [
 
     navWindow.__mpichiNavCleanup = () => {
       toggle.removeEventListener('click', onToggle);
+      document.removeEventListener('click', onLangOutsideClick);
       document.removeEventListener('keydown', onKeydown);
       window.removeEventListener('resize', onResize);
       window.removeEventListener('scroll', onFrame);
       window.removeEventListener('mpichi:scroll', onFrame);
+      getLangMenus().forEach((menu) => {
+        menu
+          .querySelector<HTMLButtonElement>('[data-lang-menu-trigger]')
+          ?.removeEventListener('click', onLangTriggerClick);
+      });
       toneObserver.disconnect();
     };
   }
@@ -447,6 +650,21 @@ const mobileLinks = [
 
   [data-site-nav] .nav-ink-muted:hover {
     color: var(--nav-ink-strong);
+  }
+
+  [data-site-nav][data-nav-on='light'] [data-lang-menu-panel] {
+    border-color: rgba(18, 12, 9, 0.12);
+    background: rgba(245, 240, 233, 0.97);
+    box-shadow: 0 12px 28px rgba(18, 12, 9, 0.12);
+  }
+
+  [data-site-nav][data-nav-on='light'] [data-lang-menu-panel] a {
+    color: rgba(18, 12, 9, 0.55);
+  }
+
+  [data-site-nav][data-nav-on='light'] [data-lang-menu-panel] a:hover,
+  [data-site-nav][data-nav-on='light'] [data-lang-menu-panel] a[aria-selected='true'] {
+    color: #120c09;
   }
 
   @media (prefers-reduced-motion: reduce) {
