@@ -1,7 +1,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import type { Locale } from '../i18n/config';
 import { localizeRecipe, type LocalizedRecipe } from '../i18n/utils';
-import { regionIdFromKey } from './taxonomy/index';
+import { localizedRegionLabel, regionIdFromKey } from './taxonomy/index';
 
 export const RECIPE_CATEGORIES = ['plat', 'accompagnement', 'boisson', 'dessert'] as const;
 export type RecipeCategory = (typeof RECIPE_CATEGORIES)[number];
@@ -69,7 +69,7 @@ export async function getRegionTaxonomies(locale: Locale): Promise<RegionTaxonom
     bySlug.set(slug, {
       slug,
       key,
-      label: localized.region ?? key,
+      label: localizedRegionLabel(key, locale) ?? localized.region ?? key,
       recipes: [{ recipe, localized }],
     });
   }

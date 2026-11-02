@@ -22,7 +22,9 @@ function isMeasuredIngredient(rest: string): boolean {
 export type PortionLocale = 'fr' | 'en' | 'ln';
 
 function numberLocale(locale: PortionLocale): string {
-  return locale === 'en' ? 'en-US' : 'fr-FR';
+  if (locale === 'en') return 'en-US';
+  if (locale === 'ln') return 'fr-CD';
+  return 'fr-FR';
 }
 
 function formatDecimal(value: number, locale: PortionLocale, maxFractionDigits: number): string {

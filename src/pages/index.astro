@@ -6,10 +6,18 @@ import type { HeroSlide } from '../components/HeroCarousel.astro';
 import OriginRecipeCard from '../components/OriginRecipeCard.astro';
 import EditorialRecipeCard from '../components/EditorialRecipeCard.astro';
 import type { Locale } from '../i18n/config';
-import { localePath, localizeRecipe, schemaLanguage, useTranslations } from '../i18n/utils';
+import {
+  cuisineTopicLabel,
+  featuredListLabel,
+  localePath,
+  localizeRecipe,
+  schemaLanguage,
+  useTranslations,
+} from '../i18n/utils';
 import { absoluteUrl } from '../lib/site';
 import { pageCanonical, resolveOrigin } from '../lib/seo';
 import { slugFromRecipeId } from '../lib/recipe-theme';
+import { regionLabelFromId } from '../lib/taxonomy/index';
 
 interface Props {
   lang?: Locale;
@@ -24,8 +32,7 @@ const railRecipes = featured.length > 0 ? featured : allRecipes;
 const byId = Object.fromEntries(allRecipes.map((recipe) => [recipe.id.replace(/\.md$/, ''), recipe]));
 const southSlugs = ['kapenta-tomates', 'matembele-katanga', 'bukari-katanga', 'sambaza'] as const;
 const southRecipes = southSlugs.map((slug) => byId[slug]).filter(Boolean);
-const katangaRegionLabel =
-  lang === 'en' ? 'Greater Katanga' : lang === 'ln' ? 'Katanga monene' : 'Grand Katanga';
+const katangaRegionLabel = regionLabelFromId('grand_katanga')[lang];
 const katangaCatalogHref = `${localePath('/recettes', lang)}?region=${encodeURIComponent(katangaRegionLabel)}`;
 const heroContent = [
   {
@@ -96,7 +103,7 @@ const homeJsonLd = {
   isPartOf: { '@id': `${origin}/#website` },
   about: {
     '@type': 'Thing',
-    name: lang === 'en' ? 'Congolese cuisine' : lang === 'ln' ? 'Bilei ya Congo' : 'Cuisine congolaise',
+    name: cuisineTopicLabel(lang),
   },
   primaryImageOfPage: heroSlides[0]?.image
     ? {
@@ -108,7 +115,7 @@ const homeJsonLd = {
     : undefined,
   mainEntity: {
     '@type': 'ItemList',
-    name: lang === 'en' ? 'Featured Congolese recipes' : lang === 'ln' ? 'Ba recettes ya Congo oyo batyá liboso' : 'Recettes congolaises mises en avant',
+    name: featuredListLabel(lang),
     numberOfItems: railRecipes.length,
     itemListElement: railRecipes.slice(0, 12).map((recipe, index) => {
       const localized = localizeRecipe(recipe, lang);

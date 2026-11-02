@@ -61,7 +61,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "brochettes-grillons": {
     "title": "Brochettes de grillons",
     "description": "Grillons comestibles assaisonnés, montés en brochettes puis grillés jusqu'à devenir croustillants.",
-    "region": "Sud-Est de la RDC",
+    "region": "RDC ya sud-est",
     "imageAlt": "Brochette congolaise de grillons grillés",
     "prepTime": "min. 25",
     "cookTime": "min. 15",
@@ -76,10 +76,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     ],
     "steps": [
       "Utiliser uniquement ya grillons vendus pour l'alimentation mpe déjà nettoyés.",
-      "Mélanger ail, le gingembre, le citron, mafuta, le pili-pili, le muni mpe le poivre.",
-      "Enrober les grillons ya cette marinade mpe laisser reposer 15 minutes.",
+      "Balabala ail, le gingembre, le citron, mafuta, le pili-pili, muni mpe le poivre.",
+      "Enrober les grillons ya cette marinade mpe tika reposer 15 minutes.",
       "Les enfiler délicatement sur les brochettes sans trop les serrer.",
-      "Griller sur ya braises modérées ou dans une poêle très chaude pendant 8 à 12 minutes en les retournant.",
+      "Griller sur ya braises modérées to na poêle très ya moto na 8 à 12 minutes en les retournant.",
       "Salela immédiatement elongo na ya citron mpe ya pili-pili."
     ],
     "tags": [
@@ -146,7 +146,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
         ],
         "steps": [
           "Suivre les mêmes étapes que le bukari katangais.",
-          "Servir avec légumes, mbisi ou nyama en sauce ya Kasaï (biteku-teku, mbinzo, etc.)."
+          "Salela na légumes, poisson to viande en sauce ya Kasaï (biteku-teku, mbinzo, etc.)."
         ]
       }
     ]
@@ -154,23 +154,23 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "chikwangue": {
     "title": "Chikwangue",
     "description": "chikwangue (kwanga) : pâte ya manioc fermentée enveloppée dans ya feuilles mpe cuite na mvuke — accompagnement ferme mpe légèrement acidulé ya la RDC.",
-    "region": "Basen ya Congo",
+    "region": "Bassin ya Congo",
     "imageAlt": "Chikwangue (kwanga) cuite dans ses feuilles, bâtons emballés et déroulés",
     "prepTime": "min. 40",
     "cookTime": "ngonga 1 min. 30",
     "ingredients": [
       "1 kg ya pâte ya manioc fermentée prête à cuire",
-      "Grandes ndunda ya banane ou feuilles adaptées à la cuisson",
+      "Grandes ndunda ya banane ou feuilles adaptées à koteka",
       "Ficelle ya cuisine",
-      "mai pour la cuisson vapeur"
+      "mai pour koteka vapeur"
     ],
     "steps": [
-      "Assouplir matiti quelques secondes au-dessus d'une flamme ou dans mai chaude, puis les essuyer.",
+      "Assouplir matiti quelques secondes au-dessus d'une flamme to dans mai ya moto, sima les essuyer.",
       "Pétrir la pâte ya manioc jusqu'à ce qu'elle soit lisse mpe sans grumeaux.",
       "Former ya cylindres réguliers mpe les envelopper très serrés dans plusieurs épaisseurs ya feuilles.",
-      "Ficeler chaque paquet afin que mai ne pénètre pas pendant la cuisson.",
-      "Déposer les chikwangues dans un panier vapeur mpe cuire pendant 1 h 30.",
-      "Laisser tiédir avant ya déballer. Couper en tranches mpe servir avec une sauce, ya mbisi ou ya pondu."
+      "Ficeler chaque paquet afin que mai ne pénètre pas na koteka.",
+      "Tia les chikwangues dans un panier vapeur mpe teká na 1 h 30.",
+      "Tika ekóma mwa malili avant ya déballer. Kata en tranches mpe salela na une sauce, ya poisson to ya pondu."
     ],
     "tags": [
       "chikwangue",
@@ -200,12 +200,12 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "mafuta pour la friture"
     ],
     "steps": [
-      "Éplucher le manioc, retirer la fibre centrale mpe le couper en morceaux.",
-      "Le cuire dans une mai légèrement salée jusqu'à ce qu'il soit très tendre, puis bien l'égoutter.",
-      "Écraser le manioc encore chaud mpe le laisser tiédir.",
-      "Incorporer aluboka, ail, la ciboulette, l'œuf mpe la farine. Saler mpe poivrer.",
-      "Former ya petites croquettes avec les mains légèrement huilées.",
-      "Frire par petites quantités jusqu'à coloration dorée, puis égoutter sur ya papier absorbant."
+      "Éplucher le manioc, longola la fibre centrale mpe le kata na biteni.",
+      "Le teká dans une eau moke salée jusqu'à ce qu'il soit très tendre, sima bien l'égoutter.",
+      "Écraser le manioc encore chaud mpe le tika ekóma mwa malili.",
+      "Bakisa aluboka, ail, la ciboulette, l'œuf mpe la farine. Tia muni mpe poivrer.",
+      "Former ya petites croquettes na les mains moke huilées.",
+      "Frire par petites quantités jusqu'à coloration dorée, sima égoutter sur ya papier absorbant."
     ],
     "tags": [
       "manioc",
@@ -217,7 +217,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "escargots-congolaise": {
     "title": "Escargots à la congolaise",
     "description": "Chair d'escargot longuement attendrie puis mijotée dans une sauce relevée aux tomatisi, aluboka mpe poivrons.",
-    "region": "Cuvette centrale & Kongo-Central",
+    "region": "Cuvette ya kati mpe Kongo-Central",
     "imageAlt": "Plat africain d'escargots frits en sauce",
     "prepTime": "min. 30",
     "cookTime": "ngonga 1 min. 10",
@@ -232,11 +232,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "muni, poivre mpe mai"
     ],
     "steps": [
-      "Utiliser ya la chair issue d'une filière alimentaire; ne jamais cuisiner ya escargots ramassés sans identification, purge mpe préparation professionnelles.",
-      "Frotter la chair avec un peu ya muni, rincer abondamment puis la couvrir ya mai fraîche. Faire bouillir 35 à 45 minutes, jusqu'à ce qu'elle commence à s'attendrir.",
-      "Égoutter les escargots. Chauffer mafuta mpe les faire dorer 5 minutes, puis les réserver.",
-      "Dans la même marmite, faire revenir aluboka, ail mpe le poivron. Ajouter tomatisi mpe pili-pili, puis laisser réduire 10 minutes.",
-      "Remettre les escargots avec 150 ml ya mai mpe mijoter 15 minutes. Saler, poivrer mpe vérifier qu'ils sont bien cuits avant ya servir."
+      "Utiliser ya nyama ya mbuma issue d'une filière alimentaire; ne jamais cuisiner ya escargots ramassés sans identification, purge mpe préparation professionnelles.",
+      "Frotter nyama ya mbuma na un peu ya muni, rincer abondamment sima la funga ya mai fraîche. Bila 35 à 45 minutes, jusqu'à ce qu'elle commence à s'attendrir.",
+      "Égoutter les escargots. Fútbisa mafuta mpe les bimasisa 5 minutes, sima les tika na pembeni.",
+      "Dans la même marmite, bimasisa aluboka, ail mpe le poivron. Bakisa tomatisi mpe pili-pili, sima tika ekóma moke 10 minutes.",
+      "Remettre les escargots na 150 ml ya mai mpe mijoter 15 minutes. Tia muni, poivrer mpe vérifier qu'ils sont bien cuits avant ya salela."
     ],
     "tags": [
       "escargots",
@@ -265,12 +265,12 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Mai"
     ],
     "steps": [
-      "Rincer soigneusement le fumbwa puis l'égoutter.",
-      "Faire revenir aluboka mpe ail dans mafuta ya palme. Ajouter tomatisi mpe cuire jusqu'à obtenir une sauce.",
-      "Incorporer le fumbwa mpe mbisi fumé. Ajouter un verre ya mai, couvrir mpe laisser mijoter 30 minutes.",
-      "Délayer la pâte d'nguba avec un peu ya mai chaude puis la verser dans la marmite.",
-      "Poursuivre la cuisson à moto ya moke pendant 20 à 30 minutes, en remuant régulièrement.",
-      "Rectifier l'assaisonnement mpe servir avec ya fufu ou ya la chikwangue."
+      "Rincer soigneusement le fumbwa sima l'égoutter.",
+      "Bimasisa aluboka mpe ail na mafuta ya palme. Bakisa tomatisi mpe teká jusqu'à obtenir une sauce.",
+      "Bakisa le fumbwa mpe mbisi fumé. Bakisa un verre ya mai, funga mpe tika ekóla na moto ya moke 30 minutes.",
+      "Bakisa mpe balabala la pâte d'arachide na un peu ya mai ya moto sima la tema dans la marmite.",
+      "Kobakisela koteka à feu doux na 20 à 30 minutes, na kobabalala régulièrement.",
+      "Rectifier l'assaisonnement mpe salela na ya fufu to ya la chikwangue."
     ],
     "tags": [
       "fumbwa",
@@ -329,7 +329,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     ]
   },
   "kamundele": {
-    "title": "Kamundele",
+    "title": "Brochette ya kamundele",
     "description": "kamundele : brochettes ya bœuf marinées aux aromates mpe grillées sur braises — street food emblématique ya Kinshasa.",
     "region": "Kinshasa",
     "imageAlt": "Assiette de kamundele, brochettes de bœuf marinées, avec frites et légumes",
@@ -345,10 +345,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Muni mpe poivre"
     ],
     "steps": [
-      "Couper le bœuf en petits cubes réguliers afin qu'ils cuisent rapidement.",
-      "Mélanger aluboka, ail, le gingembre, le citron, mafuta, pili-pili, le muni mpe le poivre. Ajouter la nyama mpe laisser mariner 1 heure au frais.",
-      "Enfiler les morceaux serrés sur ya petites brochettes, puis laisser égoutter l'excédent ya marinade.",
-      "Griller sur ya braises bien prises pendant 8 à 12 minutes, en retournant souvent les brochettes.",
+      "Kata le bœuf en petits cubes réguliers afin qu'ils cuisent rapidement.",
+      "Balabala aluboka, ail, le gingembre, le citron, mafuta, pili-pili, muni mpe le poivre. Bakisa nyama mpe tika mariner 1 heure au frais.",
+      "Enfiler biteni serrés sur ya petites brochettes, sima tika égoutter l'excédent ya marinade.",
+      "Griller sur ya braises bien prises na 8 à 12 minutes, en retournant souvent les brochettes.",
       "Salela aussitôt elongo na ya rondelles d'aluboka, ya pili-pili mpe, selon l'envie, ya la chikwangue."
     ],
     "tags": [
@@ -430,7 +430,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "lituma": {
     "title": "Fufu ya makemba",
     "description": "lituma : plantains verts cuits puis pilés en pâte souple — accompagnement ya la Cuvette / Équateur, cousin ya foutou.",
-    "region": "Cuvette ya centrale",
+    "region": "Cuvette ya kati",
     "imageAlt": "Boule de plantain pilé servie avec une sauce",
     "prepTime": "min. 15",
     "cookTime": "min. 30",
@@ -440,10 +440,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1 c. à café ya mafuta pour façonner"
     ],
     "steps": [
-      "Couper les extrémités ya plantains, inciser la peau dans la longueur mpe les peler.",
-      "Couper la chair en gros tronçons, couvrir ya mai mpe cuire 20 à 25 minutes, jusqu'à ce qu'elle soit très tendre.",
-      "Ajouter, si nécessaire, quelques cuillerées ya mai ya cuisson mpe continuer à piler jusqu'à obtenir une pâte homogène mpe élastique.",
-      "Huiler légèrement les mains ou une louche, façonner quatre portions mpe servir chaud."
+      "Kata les extrémités ya plantains, inciser la peau dans la longueur mpe longola ekóti.",
+      "Kata nyama ya mbuma en gros tronçons, funga ya mai mpe teká 20 à 25 minutes, jusqu'à ce qu'elle soit très tendre.",
+      "Bakisa, si nécessaire, quelques cuillerées ya mai ya cuisson mpe continuer à piler jusqu'à obtenir une pâte homogène mpe élastique.",
+      "Huiler moke les mains to une louche, façonner quatre portions mpe salela chaud."
     ],
     "tags": [
       "lituma",
@@ -472,11 +472,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Muni mpe poivre"
     ],
     "steps": [
-      "Rincer le loso makenda mingi jusqu'à ce que mai soit presque claire, puis l'égoutter.",
-      "Faire revenir aluboka mpe la carotte dans mafuta pendant 5 minutes.",
-      "Ajouter le loso mpe remuer deux minutes pour bien enrober les grains.",
-      "Couvrir mpe cuire à moto ya moke pendant 15 minutes.",
-      "Ajouter les petits pois, couvrir ya nouveau mpe poursuivre la cuisson 5 minutes. Laisser reposer avant d'égrener."
+      "Rincer le riz plusieurs fois tii mai soit presque claire, sima l'égoutter.",
+      "Bimasisa aluboka mpe la carotte na mafuta na 5 minutes.",
+      "Bakisa le riz mpe balabala deux minutes pour bien enrober les grains.",
+      "Funga mpe teká à feu doux na 15 minutes.",
+      "Bakisa les petits pois, funga ya nouveau mpe kobakisela koteka 5 minutes. Tika reposer avant d'égrener."
     ],
     "tags": [
       "riz",
@@ -489,7 +489,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "madesu": {
     "title": "Madesu",
     "description": "madesu : haricots fondants mijotés na tomatisi, aluboka mpe mafuta ya palmier rouge — bilei ya quotidien en RDC.",
-    "region": "Kinshasa & Ouest de la RDC",
+    "region": "Kinshasa mpe Ouest ya RDC",
     "imageAlt": "Plat de haricots rouges cuits et mijotés",
     "prepTime": "min. 20 + ngonga 8 de kobomba",
     "cookTime": "ngonga 1 min. 30",
@@ -503,10 +503,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "muni mpe mai"
     ],
     "steps": [
-      "Faire tremper les haricots pendant une nuit, les égoutter puis les rincer.",
-      "Les couvrir largement ya mai fraîche, ajouter le laurier mpe cuire 60 à 75 minutes, jusqu'à ce qu'ils soient tendres. Saler en fin ya cuisson.",
-      "Laisser réduire la sauce pendant 10 minutes, puis incorporer les haricots avec une louche ya leur mai ya cuisson.",
-      "Ajouter pili-pili entier mpe mijoter encore 15 minutes. Retirer le laurier mpe rectifier le muni avant ya servir."
+      "Tia na mai madesu na butu moko, longola mai sima sukola.",
+      "Les funga largement ya mai fraîche, bakisa le laurier mpe teká 60 à 75 minutes, jusqu'à ce qu'ils soient tendres. Tia muni en fin ya cuisson.",
+      "tika ekóma moke la sauce na 10 minutes, sima bakisa madesu na une louche ya leur eau ya cuisson.",
+      "Bakisa pili-pili entier mpe mijoter encore 15 minutes. Longola le laurier mpe rectifier muni avant ya salela."
     ],
     "tags": [
       "madesu",
@@ -566,7 +566,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "makayabu": {
     "title": "Makayabu na tomatisi",
     "description": "makayabu : mbisi salé dessalé puis mijoté dans une sauce courte aux tomatisi, aluboka mpe piment — classique ya bassin ya Congo.",
-    "region": "Kinshasa & bassin du Congo",
+    "region": "Kinshasa mpe bassin ya Congo",
     "imageAlt": "Makayabu / morue salée préparée en plat mijoté",
     "prepTime": "min. 25 + ngonga 12 de dessalage",
     "cookTime": "min. 35",
@@ -579,11 +579,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Mai"
     ],
     "steps": [
-      "Couper mbisi en portions mpe le faire tremper 12 heures au frais en changeant mai trois ou quatre fois.",
-      "Goûter un petit éclat cuit pour vérifier le muni. Si nécessaire, couvrir mbisi ya mai fraîche, frémir 5 minutes puis égoutter.",
-      "Chauffer mafuta mpe faire revenir aluboka jusqu'à ce qu'ils deviennent souples. Ajouter ail, tomatisi mpe pili-pili.",
-      "Laisser réduire 10 minutes, déposer mbisi dans la sauce mpe verser 150 ml ya mai.",
-      "Couvrir mpe mijoter doucement 15 à 20 minutes sans trop remuer. Poivrer mpe servir avec chikwangue, fufu ou plantain."
+      "Kata mbisi en portions mpe le tia na mai 12 heures au frais en changeant mai trois to quatre fois.",
+      "Goûter un petit éclat cuit pour vérifier muni. Si nécessaire, funga mbisi ya mai fraîche, frémir 5 minutes sima égoutter.",
+      "Fútbisa mafuta mpe bimasisa aluboka jusqu'à ce qu'ils deviennent souples. Bakisa ail, tomatisi mpe pili-pili.",
+      "tika ekóma moke 10 minutes, tia mbisi dans la sauce mpe tema 150 ml ya mai.",
+      "Funga mpe mijoter doucement 15 à 20 minutes sans trop balabala. Poivrer mpe salela na chikwangue, fufu to plantain."
     ],
     "tags": [
       "makayabu",
@@ -642,7 +642,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     ]
   },
   "makemba": {
-    "title": "Makemba",
+    "title": "Makemba ya kokalinga",
     "description": "makemba : plantains mûrs frits dorés dehors mpe fondants dedans — accompagnement ou en-cas congolais partout en RDC.",
     "region": "Na RDC mobimba",
     "imageAlt": "Makemba, bananes plantain frites à la congolaise",
@@ -654,10 +654,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1 pincée ya muni"
     ],
     "steps": [
-      "Couper les extrémités ya plantains, inciser la peau dans la longueur puis les éplucher.",
-      "Tailler les bananes en rondelles épaisses ou en longues tranches biseautées.",
-      "Chauffer mafuta à feu moyen dans une poêle profonde.",
-      "Égoutter sur ya papier absorbant mpe saler légèrement.",
+      "Kata les extrémités ya plantains, inciser la peau dans la longueur sima les éplucher.",
+      "Tailler les bananes en rondelles épaisses to en longues tranches biseautées.",
+      "Fútbisa mafuta à feu moyen na poêle profonde.",
+      "Égoutter sur ya papier absorbant mpe tia muni moke.",
       "Salela chaud elongo na ya mbisi, une nyama en sauce ou ya haricots."
     ],
     "tags": [
@@ -683,11 +683,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Pili-pili pour servir"
     ],
     "steps": [
-      "Éplucher généreusement le manioc, le fendre mpe retirer la fibre centrale.",
-      "Couper en tronçons puis cuire dans une grande casserole ya mai pendant 15 à 20 minutes.",
-      "Égoutter lorsque les morceaux sont tendres mais encore fermes, puis les laisser sécher miniti moke.",
-      "Tourner régulièrement jusqu'à ce que toutes les faces soient dorées mpe légèrement fumées.",
-      "Saler mpe servir immédiatement avec ya pili-pili ou un mbisi grillé."
+      "Éplucher généreusement le manioc, le fendre mpe longola la fibre centrale.",
+      "Kata en tronçons sima teká dans une grande casserole ya mai na 15 à 20 minutes.",
+      "Égoutter lorsque biteni sont tendres mais encore fermes, sima les tika sécher quelques minutes.",
+      "Tourner régulièrement tii toutes les faces soient dorées mpe moke fumées.",
+      "Tia muni mpe salela immédiatement na ya pili-pili to un poisson grillé."
     ],
     "tags": [
       "manioc",
@@ -697,7 +697,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "body": "La précuisson assure un cœur tendre tandis que le passage sur les braises apporte le goût fumé. Le manioc doit toujours être correctement préparé et entièrement cuit."
   },
   "matembele-katanga": {
-    "title": "Matembele aux arachides",
+    "title": "Matembele na nguba",
     "description": "matembele : feuilles ya patate douce ebilisami na tomatisi mpe nguba — légume ya Katanga monene, souvent servi na le bukari.",
     "region": "Katanga monene",
     "imageAlt": "Feuilles fraîches de patate douce appelées matembele",
@@ -713,11 +713,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "250 ml ya mai"
     ],
     "steps": [
-      "Trier matiti, retirer les tiges les plus dures puis les laver soigneusement.",
-      "Émincer matiti mpe les faire cuire 10 minutes dans un fond ya mai.",
-      "Faire revenir aluboka dans mafuta, ajouter tomatisi mpe laisser réduire.",
-      "Ajouter mai progressivement, saler puis laisser mijoter à moto ya moke pendant 20 minutes.",
-      "Remuer ya temps en temps mpe servir lorsque la sauce est liée mpe matiti bien tendres."
+      "Trier matiti, longola les tiges les plus dures sima les sukola soigneusement.",
+      "Émincer matiti mpe les Teká 10 minutes dans un fond ya mai.",
+      "Bimasisa aluboka na mafuta, bakisa tomatisi mpe tika ekóma moke.",
+      "Bakisa mai progressivement, tia muni sima tika ekóla na moto ya moke à feu doux na 20 minutes.",
+      "Balabala ya temps en temps mpe salela lorsque la sauce est liée mpe matiti bien tendres."
     ],
     "tags": [
       "matembele",
@@ -732,7 +732,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "mayebo": {
     "title": "Mayebo na tomatisi",
     "description": "Champignons charnus mijotés na tomatisi, aluboka mpe mafuta ya palmier dans une sauce courte.",
-    "region": "Forêts du bassin du Congo",
+    "region": "Mituya ya bassin ya Congo",
     "imageAlt": "Grand champignon Termitomyces trouvé près du parc national de l'Upemba",
     "prepTime": "min. 25",
     "cookTime": "min. 30",
@@ -745,11 +745,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Muni mpe poivre"
     ],
     "steps": [
-      "Employer uniquement ya champignons cultivés ou formellement identifiés comme comestibles par une personne compétente. Les nettoyer mpe les couper en morceaux.",
-      "Chauffer mafuta mpe faire fondre aluboka pendant 5 minutes. Ajouter ail mpe tomatisi.",
-      "Laisser réduire la sauce 8 minutes, puis incorporer les champignons.",
-      "Couvrir mpe cuire 10 minutes dans leur mai, puis découvrir mpe poursuivre jusqu'à ce que la sauce nappe les morceaux.",
-      "Saler, poivrer mpe ajouter pili-pili selon le goût. Servir avec ya fufu ou ya la chikwangue."
+      "Employer uniquement ya champignons cultivés to formellement identifiés comme comestibles par une personne compétente. Les nettoyer mpe les kata na biteni.",
+      "Fútbisa mafuta mpe bimasisa aluboka na 5 minutes. Bakisa ail mpe tomatisi.",
+      "tika ekóma moke la sauce 8 minutes, sima bakisa les champignons.",
+      "Funga mpe teká 10 minutes dans leur eau, sima défunga mpe poursuivre tii la sauce nappe biteni.",
+      "Tia muni, poivrer mpe bakisa pili-pili selon le goût. Salela na ya fufu to ya la chikwangue."
     ],
     "tags": [
       "champignons",
@@ -762,7 +762,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "mbika": {
     "title": "Mbika",
     "description": "Pâte ya graines ya courge pilées, assaisonnée puis cuite en papillote ya feuilles pour obtenir une texture dense mpe fondante.",
-    "region": "Basen ya Congo",
+    "region": "Bassin ya Congo",
     "imageAlt": "Gâteau de graines de courge cuit dans une feuille puis ouvert",
     "prepTime": "min. 30",
     "cookTime": "min. 50",
@@ -775,10 +775,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "ndunda ya banane propres mpe assouplies"
     ],
     "steps": [
-      "Griller légèrement les graines à sec, sans les colorer, puis les laisser refroidir.",
-      "Piler ou mixer les graines jusqu'à obtenir une poudre fine.",
-      "Déposer la pâte au centre ya feuilles, replier soigneusement mpe ficeler les papillotes.",
-      "Cuire na mvuke pendant 45 à 50 minutes. Laisser reposer miniti moke avant d'ouvrir."
+      "Griller moke les graines à sec, sans les colorer, sima les tika refroidir.",
+      "Piler to mixer les graines jusqu'à obtenir une poudre fine.",
+      "Tia la pâte au centre ya feuilles, replier soigneusement mpe ficeler les papillotes.",
+      "Teká à la vapeur na 45 à 50 minutes. Tika reposer quelques minutes avant d'ouvrir."
     ],
     "tags": [
       "graines de courge",
@@ -803,11 +803,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Mai"
     ],
     "steps": [
-      "Trier les chenilles, les rincer makenda mingi puis les couvrir ya mai chaude pendant 20 minutes.",
-      "Égoutter mpe retirer les parties dures si nécessaire.",
-      "Faire revenir aluboka mpe ail dans mafuta jusqu'à ce qu'ils deviennent translucides.",
-      "Incorporer les chenilles mpe un petit verre ya mai. Couvrir mpe laisser mijoter 20 à 25 minutes.",
-      "Rectifier l'assaisonnement mpe servir avec ya fufu, ya la chikwangue ou ya loso."
+      "Trier les chenilles, sukola plusieurs fois sima les funga ya mai ya moto na 20 minutes.",
+      "Égoutter mpe longola les parties dures si nécessaire.",
+      "Bimasisa aluboka mpe ail na mafuta jusqu'à ce qu'ils deviennent translucides.",
+      "Bakisa les chenilles mpe un petit verre ya mai. Funga mpe tika ekóla na moto ya moke 20 à 25 minutes.",
+      "Rectifier l'assaisonnement mpe salela na ya fufu, ya la chikwangue to ya riz."
     ],
     "tags": [
       "chenilles",
@@ -819,7 +819,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "mbisi-ya-kokalinga": {
     "title": "Mbisi ya kokalinga",
     "description": "mbisi frit (en lingala : mbisi ya kokalinga) — frit jusqu'à croûte dorée.",
-    "region": "Kinshasa & fleuve Congo",
+    "region": "Kinshasa mpe ebale ya Congo",
     "imageAlt": "mbisi frit servi avec loso, plantains, concombre et tomatisi",
     "prepTime": "min. 25",
     "cookTime": "min. 20",
@@ -831,9 +831,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     ],
     "steps": [
       "Rincer rapidement mbisi, bien les sécher mpe pratiquer trois entailles sur chaque côté.",
-      "Mélanger ail, le citron, le gingembre, le muni mpe le poivre. Frotter mbisi avec cet assaisonnement mpe laisser reposer 15 minutes.",
-      "Chauffer mafuta dans une grande poêle mpe frire mbisi 7 à 9 minutes ya chaque côté, selon leur épaisseur.",
-      "Égoutter soigneusement mpe servir chaud avec aluboka, plantain, chikwangue ou pili-pili."
+      "Balabala ail, le citron, le gingembre, muni mpe le poivre. Frotter mbisi na cet assaisonnement mpe tika reposer 15 minutes.",
+      "Fútbisa mafuta dans une grande poêle mpe frire mbisi 7 à 9 minutes ya chaque côté, selon leur épaisseur.",
+      "Égoutter soigneusement mpe salela chaud na oignons, plantain, chikwangue to pili-pili."
     ],
     "tags": [
       "mbisi",
@@ -860,11 +860,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Pâte d'nguba pour accompagner (ya lingi)"
     ],
     "steps": [
-      "Délayer la levure mpe une cuillère ya sucre dans un peu ya mai tièya. Laisser mousser 10 minutes.",
-      "Mélanger la farine, le reste ya sucre mpe le muni dans un grand saladier.",
-      "Verser la levure puis ajouter progressivement mai. Battre la pâte jusqu'à ce qu'elle soit lisse, souple mpe collante.",
+      "Bakisa mpe balabala la levure mpe une cuillère ya sucre dans un peu ya mai tièya. Tika mousser 10 minutes.",
+      "Balabala la farine, oyo etikali ya sucre mpe muni dans un grand saladier.",
+      "Tema la levure sima bakisa progressivement mai. Battre la pâte jusqu'à ce qu'elle soit lisse, souple mpe collante.",
       "Frire les mikate par petites quantités en les retournant jusqu'à ce qu'ils soient uniformément dorés.",
-      "Égoutter mpe servir tièya, nature ou avec ya la pâte d'nguba."
+      "Égoutter mpe salela tièya, nature to na ya la pâte d'arachide."
     ],
     "tags": [
       "mikate",
@@ -971,11 +971,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "400 ml ya mai"
     ],
     "steps": [
-      "Trier mpe laver makenda mingi matiti ya courge, puis les découper finement.",
-      "Nettoyer mbisi fumé, retirer les arêtes accessibles mpe le partager en morceaux.",
-      "Mettre matiti dans une marmite avec mai mpe laisser tomber pendant 10 minutes.",
-      "Déposer mbisi fumé, couvrir mpe cuire à moto ya moke pendant environ 30 minutes.",
-      "Remuer délicatement, ajuster la consistance avec un peu ya mai mpe rectifier le muni."
+      "Trier mpe sukola plusieurs fois matiti ya courge, sima les dékata finement.",
+      "Nettoyer mbisi fumé, longola les arêtes accessibles mpe le partager na biteni.",
+      "Mettre matiti dans une marmite na mai mpe tika tomber na 10 minutes.",
+      "Tia mbisi fumé, funga mpe teká à feu doux na pene 30 minutes.",
+      "Balabala délicatement, ajuster la consistance na un peu ya mai mpe rectifier muni."
     ],
     "tags": [
       "Kasaï",
@@ -1000,10 +1000,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     ],
     "steps": [
       "Utiliser uniquement ya racines ya munkoyo vendues pour l'alimentation par une source fiable; ne pas récolter ni identifier soi-même une racine sauvage.",
-      "Délayer la farine dans 500 ml ya mai froide. Porter le reste ya mai à ébullition, ajouter le mélange mpe cuire 15 à 20 minutes en remuant.",
-      "Transvaser dans un récipient parfaitement propre mpe laisser refroidir jusqu'à température ambiante.",
-      "Rincer brièvement les racines, les fendre mpe les plonger dans la bouillie. Couvrir d'un linge propre mpe laisser fermenter 12 à 24 heures dans un endroit tempéré.",
-      "Retirer les racines, filtrer, sucrer si souhaité puis réfrigérer. Consommer bien frais dans les deux jours mpe jeter la boisson en cas d'odeur anormale ou ya moisissure."
+      "Bakisa mpe balabala la farine dans 500 ml ya mai ya malili. Porter oyo etikali ya mai à ébullition, bakisa mélange mpe teká 15 à 20 minutes na kobabalala.",
+      "Transvaser dans un récipient parfaitement propre mpe tika refroidir jusqu'à température ambiante.",
+      "Rincer brièvement les racines, les fendre mpe les tia na kati dans la bouillie. Funga d'un linge propre mpe tika fermenter 12 à 24 heures dans un endroit tempéré.",
+      "Longola les racines, filtrer, sucrer si souhaité sima réfrigérer. Consommer bien frais dans les deux jours mpe jeter la boisson en cas d'odeur anormale to ya moisissure."
     ],
     "tags": [
       "maïs",
@@ -1029,10 +1029,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "300 ml ya mai"
     ],
     "steps": [
-      "Trier matiti, retirer les tiges dures mpe les laver dans plusieurs eaux avant ya les émincer.",
-      "Nettoyer mbisi fumé, ôter les arêtes accessibles mpe le partager en morceaux.",
-      "Ajouter matiti mpe mai. Couvrir mpe laisser mijoter 15 minutes, le temps qu'elles s'assouplissent.",
-      "Déposer mbisi mpe pili-pili, puis cuire encore 15 minutes à moto ya moke. Saler avec retenue mpe servir avec ya fufu ou ya loso."
+      "Trier matiti, longola les tiges dures mpe les sukola dans plusieurs eaux avant ya les émincer.",
+      "Nettoyer mbisi fumé, ôter les arêtes accessibles mpe le partager na biteni.",
+      "Bakisa matiti mpe mai. Funga mpe tika ekóla na moto ya moke 15 minutes, le temps qu'elles s'assouplissent.",
+      "Tia mbisi mpe pili-pili, sima teká encore 15 minutes à feu doux. Tia muni na retenue mpe salela na ya fufu to ya riz."
     ],
     "tags": [
       "ngai-ngai",
@@ -1088,9 +1088,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     ]
   },
   "nsafu-grilles": {
-    "title": "Nsafu grillés",
+    "title": "Nsafu ya kotumba",
     "description": "Fruits ya safoutier doucement chauffés jusqu'à ce que leur peau violette s'assouplisse mpe que leur chair devienne crémeuse.",
-    "region": "RDC ya bwé",
+    "region": "Ouest ya RDC",
     "imageAlt": "Nsafu violets tournés pendant leur cuisson sur une grille",
     "prepTime": "min. 5",
     "cookTime": "min. 10",
@@ -1101,9 +1101,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "steps": [
       "Rincer les nsafu mpe les sécher soigneusement.",
       "Les poser sur une grille placée au-dessus ya braises douces.",
-      "Les tourner souvent pendant 6 à 10 minutes pour assouplir uniformément la peau mpe la pulpe.",
-      "Retirer les fruits lorsque la peau pâlit légèrement mpe que la chair cèya sous le doigt.",
-      "Ouvrir, retirer le noyau, saler très légèrement mpe déguster chaud."
+      "Les tourner souvent na 6 à 10 minutes pour assouplir uniformément la peau mpe la pulpe.",
+      "Longola les fruits lorsque la peau pâlit moke mpe que nyama ya mbuma cèya sous le doigt.",
+      "Ouvrir, longola mokuwa, tia muni très moke mpe déguster chaud."
     ],
     "tags": [
       "nsafu",
@@ -1130,11 +1130,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Muni mpe poivre"
     ],
     "steps": [
-      "Mélanger aluboka râpé, ail, le gingembre, le citron, mafuta, pili-pili, le muni mpe le poivre. Enrober la nyama mpe laisser mariner au frais pendant 2 heures.",
-      "Déposer la nyama dans une marmite avec la marinade mpe 200 ml ya mai. Couvrir mpe laisser cuire 25 à 30 minutes, jusqu'à ce qu'elle commence à s'attendrir.",
-      "Égoutter les morceaux en réservant un peu ya jus. Préparer ya braises moyennes mpe huiler légèrement la grille.",
+      "Balabala aluboka râpé, ail, le gingembre, le citron, mafuta, pili-pili, muni mpe le poivre. Enrober nyama mpe tika mariner au frais na 2 heures.",
+      "Tia nyama dans une marmite na la marinade mpe 200 ml ya mai. Funga mpe tika teká 25 à 30 minutes, jusqu'à ce qu'elle commence à s'attendrir.",
+      "Égoutter biteni na kotika na pembeni un peu ya jus. Bongisa ya braises ya kati mpe huiler moke grille.",
       "Griller la chèvre 15 à 20 minutes en la retournant régulièrement mpe en la badigeonnant d'un peu ya jus ya cuisson.",
-      "Émincer le second aluboka mpe le servir avec le ntaba, accompagné ya chikwangue, ya plantain ou ya pili-pili."
+      "Émincer le second oignon mpe le salela na le ntaba, accompagné ya chikwangue, ya plantain to ya pili-pili."
     ],
     "tags": [
       "ntaba",
@@ -1163,11 +1163,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "muni, poivre mpe mai"
     ],
     "steps": [
-      "Rincer les morceaux ya mbisi avec ya mai citronnée puis les égoutter.",
-      "Piler ou mixer ail, le gingembre, un aluboka, le céleri mpe le pili-pili.",
-      "Déposer tomatisi mpe le second aluboka dans une marmite avec un peu ya mai. Cuire 10 minutes.",
-      "Déposer délicatement mbisi dans la marmite mpe cuire à feu moyen pendant 20 minutes sans trop remuer.",
-      "Poivrer, ajuster le muni mpe servir très chaud avec ya la chikwangue ou ya plantain."
+      "Rincer biteni ya poisson na ya mai citronnée sima longola mai.",
+      "Piler to mixer ail, le gingembre, un oignon, le céleri mpe le pili-pili.",
+      "Tia tomatisi mpe le second oignon dans une marmite na un peu ya mai. Teká 10 minutes.",
+      "Tia délicatement mbisi dans la marmite mpe teká à feu moyen na 20 minutes sans trop balabala.",
+      "Poivrer, ajuster muni mpe salela ya moto mingi na ya la chikwangue to ya plantain."
     ],
     "tags": [
       "pepe soupe",
@@ -1194,10 +1194,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1 tomatisi mpe quelques herbes fraîches pour servir"
     ],
     "steps": [
-      "Pratiquer plusieurs entailles sur les deux côtés ya mbisi.",
-      "Mixer un aluboka avec ail, le gingembre, le jus ya citron, mafuta, le pili-pili, le muni mpe le poivre.",
-      "Cuire 12 à 15 minutes ya chaque côté en badigeonnant avec le reste ya marinade.",
-      "Servir avec ya rondelles d'aluboka, ya la tomatisi, ya plantain grillé mpe ya la chikwangue."
+      "Pratiquer plusieurs entailles sur les deux côtés ya poisson.",
+      "Mixer un oignon na ail, le gingembre, le jus ya citron, mafuta, le pili-pili, muni mpe le poivre.",
+      "Teká 12 à 15 minutes ya chaque côté en badigeonnant na oyo etikali ya marinade.",
+      "Salela na ya rondelles d'oignon, ya tomatisi, ya plantain grillé mpe ya la chikwangue."
     ],
     "tags": [
       "poisson braisé",
@@ -1304,11 +1304,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Muni"
     ],
     "steps": [
-      "Rincer le loso jusqu'à ce que mai soit presque claire, puis bien l'égoutter.",
-      "Mettre le concentré ya noix ya palme dans une marmite mpe le chauffer doucement avec aluboka mpe ail pendant 5 minutes.",
-      "Ajouter le loso mpe remuer 2 minutes afin d'enrober chaque grain.",
-      "Verser mai chaude, ajouter le laurier, pili-pili mpe le muni. Porter à frémissement.",
-      "Couvrir mpe cuire à feu très doux 18 à 22 minutes. Couper le feu, laisser reposer 10 minutes puis égrainer à la fourchette."
+      "Rincer le riz tii mai soit presque claire, sima bien l'égoutter.",
+      "Mettre le concentré ya noix ya palme dans une marmite mpe le fútbisa doucement na aluboka mpe ail na 5 minutes.",
+      "Bakisa le riz mpe balabala 2 minutes afin d'enrober chaque grain.",
+      "Tema mai ya moto, bakisa le laurier, pili-pili mpe muni. Bila tii etambola moke.",
+      "Funga mpe teká à feu très doux 18 à 22 minutes. Kata le feu, tika reposer 10 minutes sima égrainer à la fourchette."
     ],
     "tags": [
       "riz",
@@ -1321,7 +1321,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "saka-madesu": {
     "title": "Pondu na madesu",
     "description": "saka-madesu : matabisi ya manioc (pondu) (pondu) mpe haricots mijotés ensemble à mafuta ya palme — duo classique ya l'Ouest ya la RDC.",
-    "region": "RDC ya bwé",
+    "region": "Ouest ya RDC",
     "imageAlt": "Ragoût de matabisi ya manioc (pondu) et de haricots",
     "prepTime": "min. 30 + ngonga 8 de kobomba",
     "cookTime": "ngonga 2",
@@ -1336,11 +1336,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Mai"
     ],
     "steps": [
-      "Égoutter les haricots, les couvrir ya mai fraîche mpe les cuire environ 1 heure, jusqu'à ce qu'ils soient presque tendres.",
-      "Mettre matiti ya manioc pilées dans une grande marmite, couvrir ya mai mpe cuire na sanza pendant 45 minutes en remuant ya temps en temps.",
-      "Ajouter aluboka, ail, pili-pili mpe mafuta ya palme. Poursuivre la cuisson 20 minutes.",
-      "Incorporer les haricots avec un peu ya leur mai, puis laisser mijoter encore 25 à 30 minutes. matiti doivent être entièrement cuites mpe sans amertume crue.",
-      "Saler, ajuster la consistance mpe servir avec ya fufu ou ya la chikwangue."
+      "Égoutter madesu, les funga ya mai fraîche mpe les teká pene 1 heure, jusqu'à ce qu'ils soient presque tendres.",
+      "Mettre matiti ya manioc pilées dans une grande marmite, funga ya mai mpe teká à découvert na 45 minutes na kobabalala ya temps en temps.",
+      "Bakisa aluboka, ail, pili-pili mpe mafuta ya palme. Kobakisela koteka 20 minutes.",
+      "Bakisa madesu na un peu ya leur eau, sima tika ekóla na moto ya moke encore 25 à 30 minutes. matiti doivent être entièrement cuites mpe sans amertume crue.",
+      "Tia muni, ajuster la consistance mpe salela na ya fufu to ya la chikwangue."
     ],
     "tags": [
       "saka-madesu",
@@ -1398,7 +1398,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     ]
   },
   "salade-kisangani": {
-    "title": "Salade chou-carotte",
+    "title": "Salade ya Kisangani",
     "description": "Salade croquante ya chou mpe carotte, liée à la mayonnaise, relevée au vinaigre mpe garnie d'œufs.",
     "region": "Kisangani",
     "imageAlt": "Salade de chou, carotte et œuf",
@@ -1413,10 +1413,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Muni mpe poivre"
     ],
     "steps": [
-      "Cuire les œufs 10 minutes dans mai frémissante, les refroidir puis les écaler.",
+      "Teká ba makaki 10 minutes dans mai frémissante, les refroidir sima les écaler.",
       "Émincer très finement le chou mpe râper les carottes.",
-      "Couper les œufs en quartiers mpe les disposer sur la salade.",
-      "Réserver au frais 20 minutes avant ya servir."
+      "Kata ba makaki en quartiers mpe les tia sur la salade.",
+      "Tika na pembeni au frais 20 minutes avant ya salela."
     ],
     "tags": [
       "Kisangani",
@@ -1443,10 +1443,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     ],
     "steps": [
       "Piler ensemble ail, le gingembre mpe la moitié ya feuilles ya lumba-lumba.",
-      "Assaisonner le soso avec cette pâte, ya muni mpe ya poivre, puis laisser reposer 20 minutes.",
-      "Faire dorer les morceaux dans mafuta mpe les réserver.",
-      "Remettre le soso, verser mai, couvrir mpe laisser mijoter 35 à 40 minutes.",
-      "Ciseler le reste ya feuilles, les ajouter en fin ya cuisson mpe poursuivre 5 minutes à moto ya moke."
+      "Bongisa monoko soso na cette pâte, ya sel mpe ya poivre, sima tika reposer 20 minutes.",
+      "Bimasisa biteni na mafuta mpe les tika na pembeni.",
+      "Remettre soso, tema mai, funga mpe tika ekóla na moto ya moke 35 à 40 minutes.",
+      "Ciseler oyo etikali ya feuilles, les bakisa en fin ya cuisson mpe poursuivre 5 minutes à feu doux."
     ],
     "tags": [
       "Kasaï monene",
@@ -1476,12 +1476,12 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "250 ml ya mai"
     ],
     "steps": [
-      "Saler mpe poivrer les morceaux ya soso, puis les faire dorer dans mafuta sur toutes les faces.",
-      "Réserver le soso mpe faire revenir aluboka dans la même marmite.",
-      "Ajouter ail mpe le gingembre pilés, puis tomatisi mpe le laurier.",
-      "Laisser la sauce réduire 12 à 15 minutes, jusqu'à ce qu'elle devienne concentrée.",
-      "Remettre le soso, ajouter mai mpe le pili-pili, puis couvrir.",
-      "Laisser mijoter à moto ya moke 30 à 35 minutes. Découvrir en fin ya cuisson si la sauce doit épaissir."
+      "Tia muni mpe poivrer biteni ya poulet, sima les bimasisa na mafuta sur toutes les faces.",
+      "Tika na pembeni soso mpe bimasisa aluboka dans la même marmite.",
+      "Bakisa ail mpe le gingembre pilés, sima tomatisi mpe le laurier.",
+      "Tika la sauce réduire 12 à 15 minutes, jusqu'à ce qu'elle devienne concentrée.",
+      "Remettre soso, bakisa mai mpe le pili-pili, sima funga.",
+      "Tika ekóla na moto ya moke à feu doux 30 à 35 minutes. Défunga en fin ya cuisson si la sauce doit épaissir."
     ],
     "tags": [
       "poulet",
@@ -1510,11 +1510,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1 cube ya bouillon, ya lingi"
     ],
     "steps": [
-      "Saler mpe poivrer le soso. Le faire dorer dans mafuta chaude, puis réserver.",
-      "Dans la même marmite, faire fondre aluboka. Ajouter ail, le cube émietté mpe un fond ya mai.",
-      "Remettre le soso, couvrir mpe mijoter 25 à 30 minutes jusqu'à ce qu'il soit tendre.",
-      "Hors ya feu, mélanger mayonnaise, moutarde, citron mpe pili-pili. Napper le soso encore chaud.",
-      "Remuer délicatement pour enrober sans faire tourner la sauce. Servir avec frites, loso ou salade."
+      "Tia muni mpe poivrer soso. Le bimasisa na mafuta ya moto, sima tika na pembeni.",
+      "Dans la même marmite, bimasisa aluboka. Bakisa ail, le cube émietté mpe un fond ya mai.",
+      "Remettre soso, funga mpe mijoter 25 à 30 minutes jusqu'à ce qu'il soit tendre.",
+      "Hors ya feu, balabala mayonnaise, moutarde, citron mpe pili-pili. Napper soso encore chaud.",
+      "Balabala délicatement pour enrober sans faire tourner la sauce. Salela na frites, riz to salade."
     ],
     "tags": [
       "poulet mayo",
@@ -1545,11 +1545,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "muni, poivre mpe mai"
     ],
     "steps": [
-      "Faire dorer les morceaux ya chèvre dans mafuta. Réserver.",
-      "Faire revenir aluboka, ail mpe gingembre. Ajouter tomatisi mpe laisser réduire 10 minutes.",
-      "Remettre la nyama, le cube, pili-pili mpe ya mai à hauteur. Porter à ébullition.",
-      "Baisser le feu, couvrir mpe mijoter 1 h 15 à 1 h 30, jusqu'à ce que la chèvre soit très tendre.",
-      "Découvrir pour épaissir la sauce si besoin. Servir avec loso, chikwangue ou plantain."
+      "Bimasisa biteni ya chèvre na mafuta. Tika na pembeni.",
+      "Bimasisa oignons, ail mpe gingembre. Bakisa tomatisi mpe tika ekóma moke 10 minutes.",
+      "Remettre nyama, le cube, pili-pili mpe ya mai à hauteur. Bila tii ebukana.",
+      "Baisser le feu, funga mpe mijoter 1 h 15 à 1 h 30, tii la chèvre soit très tendre.",
+      "Défunga pour épaissir la sauce soki esengeli. Salela na riz, chikwangue to plantain."
     ],
     "tags": [
       "chèvre",
@@ -1578,11 +1578,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Piment, muni mpe mai"
     ],
     "steps": [
-      "Faire dorer la nyama dans mafuta par petites quantités. Réserver.",
-      "Faire fondre aluboka, ajouter ail, tomatisi mpe le concentré. Cuire 8 minutes.",
-      "Remettre le bœuf, le laurier, le cube mpe mai à hauteur. Saler légèrement.",
-      "Mijoter à couvert 1 h 15 à 1 h 30, jusqu'à ce que la nyama soit tendre mpe la sauce liée.",
-      "Ajuster pili-pili mpe servir avec loso, fufu ou pommes ya terre."
+      "Bimasisa nyama na mafuta par petites quantités. Tika na pembeni.",
+      "Bimasisa aluboka, bakisa ail, tomatisi mpe le concentré. Teká 8 minutes.",
+      "Remettre le bœuf, le laurier, le cube mpe mai à hauteur. Tia muni moke.",
+      "Mijoter à couvert 1 h 15 à 1 h 30, tii nyama soit tendre mpe la sauce liée.",
+      "Ajuster pili-pili mpe salela na riz, fufu to pommes ya terre."
     ],
     "tags": [
       "bœuf",
@@ -1596,7 +1596,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "poisson-moambe": {
     "title": "Mbisi ya mwambe",
     "description": "Poissons fermes mijotés dans une sauce ya pulpe ya noix ya palme (moambe) — la moambe côté fleuve, distincte ya soso na moambe.",
-    "region": "Kinshasa & bassin du Congo",
+    "region": "Kinshasa mpe bassin ya Congo",
     "imageAlt": "mbisi à la moambe servi avec du loso",
     "prepTime": "min. 25",
     "cookTime": "min. 50",
@@ -1610,11 +1610,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "muni, piment mpe un peu ya mai"
     ],
     "steps": [
-      "Saler mbisi. Le faire dorer rapidement dans mafuta, puis réserver.",
-      "Faire revenir aluboka, ail mpe tomatisi jusqu'à sauce courte.",
-      "Verser la moambe mpe un demi-verre ya mai. Remuer mpe porter à petit frémissement.",
-      "Remettre mbisi, couvrir mpe mijoter 25 à 35 minutes sans trop remuer pour ne pas le briser.",
-      "Rectifier l'assaisonnement mpe servir avec loso blanc ou chikwangue."
+      "Tia muni mbisi. Le bimasisa rapidement na mafuta, sima tika na pembeni.",
+      "Bimasisa oignons, ail mpe tomates jusqu'à sauce courte.",
+      "Tema la moambe mpe un demi-verre ya mai. Balabala mpe porter à petit frémissement.",
+      "Remettre mbisi, funga mpe mijoter 25 à 35 minutes sans trop balabala pour ne pas le briser.",
+      "Rectifier l'assaisonnement mpe salela na riz blanc to chikwangue."
     ],
     "tags": [
       "moambe",
@@ -1627,7 +1627,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "liboke-viande": {
     "title": "Liboké ya ngulu",
     "description": "nyama marinée aux aromates, enveloppée dans ya ndunda ya banane mpe cuite na mvuke — le geste ya liboke appliqué à la nyama, pas au mbisi.",
-    "region": "Bandundu & Kongo-Central",
+    "region": "Bandundu mpe Kongo-Central",
     "imageAlt": "Liboke fermé dans ses feuilles, prêt à cuire",
     "prepTime": "min. 30 + ngonga 1 de marinade",
     "cookTime": "ngonga 1",
@@ -1643,9 +1643,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "4 grandes ndunda ya banane"
     ],
     "steps": [
-      "Mélanger mafuta, ail, gingembre, muni, piment mpe cube. Enrober la nyama mpe mariner 1 heure.",
+      "Balabala huile, ail, gingembre, sel, piment mpe cube. Enrober nyama mpe mariner 1 heure.",
       "Assouplir matiti ya bananier au-dessus ya feu.",
-      "Garnir chaque feuille d'aluboka, tomatisi, poivron mpe nyama. Arroser d'un peu ya mafuta ya palmier.",
+      "Garnir chaque feuille d'oignon, tomate, poivron mpe viande. Arroser d'un peu ya mafuta ya palme.",
       "Fermer en papillote hermétique.",
       "Teká na mvuke to na four à 180 °C na 50 à 60 minutes.",
       "Salela ouvert à table elongo na plantain ou fufu."
@@ -1661,7 +1661,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "sauce-gombo": {
     "title": "Sauce gombo",
     "description": "Gombos frais mijotés jusqu'à la texture filante caractéristique, na tomatisi, aluboka mpe ya lingilement ya mbisi ya fumé ou ya la nyama.",
-    "region": "Kinshasa & Ouest de la RDC",
+    "region": "Kinshasa mpe Ouest ya RDC",
     "imageAlt": "Sauce de gombo (okra) mijotée",
     "prepTime": "min. 20",
     "cookTime": "min. 40",
@@ -1676,10 +1676,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     ],
     "steps": [
       "Sukola les gombos, couper les extrémités mpe les trancher en rondelles.",
-      "Faire revenir aluboka mpe ail dans mafuta, ajouter tomatisi mpe cuire 5 minutes.",
-      "Incorporer les gombos, un fond ya mai mpe mbisi fumé s'il est utilisé.",
-      "Mijoter à feu moyen 25 à 30 minutes, en remuant ya temps en temps, jusqu'à la texture désirée.",
-      "Saler, pimenter mpe servir avec loso ou fufu."
+      "Bimasisa oignon mpe ail na mafuta, bakisa tomatisi mpe teká 5 minutes.",
+      "Bakisa les gombos, un fond ya mai mpe mbisi fumé s'il est utilisé.",
+      "Mijoter à feu moyen 25 à 30 minutes, na kobabalala ya temps en temps, jusqu'à la texture désirée.",
+      "Tia muni, pimenter mpe salela na riz to fufu."
     ],
     "tags": [
       "gombo",
@@ -1692,7 +1692,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "kossa-kossa": {
     "title": "Kossa-kossa",
     "description": "Crevettes séchées réhydratées puis ebilisami na tomatisi, aluboka mpe pili-pili, une sauce iodée ya quotidien congolais.",
-    "region": "Kinshasa & bassin du Congo",
+    "region": "Kinshasa mpe bassin ya Congo",
     "imageAlt": "Crevettes séchées utilisées en cuisine",
     "prepTime": "min. 20 + min. 30 de kobomba",
     "cookTime": "min. 35",
@@ -1706,11 +1706,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "muni mpe mai"
     ],
     "steps": [
-      "Rincer puis faire tremper les crevettes 30 minutes. Les égoutter.",
-      "Faire revenir aluboka mpe ail dans mafuta. Ajouter tomatisi mpe pili-pili.",
-      "Incorporer les crevettes mpe un peu ya mai. Mijoter 25 minutes.",
-      "\"Goûter avant ya saler : les crevettes séchées sont déjà iodées.\"",
-      "Servir avec loso, chikwangue ou plantain."
+      "Rincer sima tia na mai les crevettes 30 minutes. longola mai.",
+      "Bimasisa oignons mpe ail na mafuta. Bakisa tomatisi mpe pili-pili.",
+      "Bakisa les crevettes mpe un peu ya mai. Mijoter 25 minutes.",
+      "\"Goûter avant ya tia muni : les crevettes séchées sont déjà iodées.\"",
+      "Salela na riz, chikwangue to plantain."
     ],
     "tags": [
       "crevettes",
@@ -1736,10 +1736,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Piment, muni mpe poivre"
     ],
     "steps": [
-      "Essuyer le foie, retirer les nerfs visibles. Saler, poivrer mpe citronner légèrement.",
-      "Chauffer mafuta à moto ya makasi. Saisir le foie 2 à 3 minutes ya chaque côté. Réserver.",
-      "Faire revenir rapidement aluboka mpe ail dans la poêle.",
-      "Remettre le foie, ajouter pili-pili, remuer 1 à 2 minutes sans trop cuire.",
+      "Essuyer le foie, longola les nerfs visibles. Tia muni, poivrer mpe citronner moke.",
+      "Fútbisa mafuta à feu vif. Saisir le foie 2 à 3 minutes ya chaque côté. Tika na pembeni.",
+      "Bimasisa rapidement aluboka mpe ail dans la poêle.",
+      "Remettre le foie, bakisa pili-pili, balabala 1 à 2 minutes sans trop teká.",
       "Salela aussitôt elongo na pain, frites ou loso."
     ],
     "tags": [
@@ -1769,11 +1769,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Piment, muni mpe poivre"
     ],
     "steps": [
-      "Préparer une marinade avec aluboka râpé, ail, gingembre, citron, mafuta, muni, poivre mpe piment.",
-      "Enrober le porc mpe laisser mariner 2 heures au frais.",
-      "Précuire à la marmite 20 à 25 minutes avec un peu ya mai mpe la marinade.",
-      "Égoutter, puis braiser sur ya braises moyennes 20 à 30 minutes en badigeonnant ya jus réservé.",
-      "Servir avec aluboka cru, pili-pili mpe chikwangue ou plantain."
+      "Bongisa marinade na oignon râpé, ail, gingembre, citron, huile, sel, poivre mpe piment.",
+      "Enrober le porc mpe tika mariner 2 heures au frais.",
+      "Préteká à la marmite 20 à 25 minutes na un peu ya mai mpe la marinade.",
+      "Égoutter, sima braiser sur ya braises ya kati 20 à 30 minutes en badigeonnant ya jus réservé.",
+      "Salela na oignon cru, pili-pili mpe chikwangue to plantain."
     ],
     "tags": [
       "porc",
@@ -1801,11 +1801,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1 c. à café ya vanille ou zeste ya citron, ya lingi"
     ],
     "steps": [
-      "Délayer la farine dans 250 ml ya mai froide jusqu'à obtenir un mélange sans grumeaux.",
+      "Bakisa mpe balabala la farine dans 250 ml ya mai ya malili jusqu'à obtenir un mélange sans grumeaux.",
       "Bila le reste ya mai tii ebukana avec le muni.",
-      "Verser le mélange farine en pluie en remuant. Cuire 12 à 15 minutes à feu moyen, en remuant sans cesse.",
-      "Incorporer la pâte d'nguba mpe le sucre. Continuer 5 à 8 minutes jusqu'à une texture crémeuse.",
-      "Parfumer si souhaité. Servir tièya, nature ou avec un filet ya lait."
+      "Tema mélange farine en pluie na kobabalala. Teká 12 à 15 minutes à feu moyen, na kobabalala sans cesse.",
+      "Bakisa la pâte d'arachide mpe le sucre. Continuer 5 à 8 minutes jusqu'à une texture crémeuse.",
+      "Parfumer si souhaité. Salela tièya, nature to na un filet ya lait."
     ],
     "tags": [
       "arachide",
@@ -1818,7 +1818,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "beignets-banane": {
     "title": "Beignets ya libuma",
     "description": "Beignets à la pâte ya banane douce, dorés mpe moelleux — différents ya mikate (pâte levée) mpe ya makemba (plantain frit nature).",
-    "region": "Kinshasa & Ouest de la RDC",
+    "region": "Kinshasa mpe Ouest ya RDC",
     "imageAlt": "Beignets de banane dorés",
     "prepTime": "min. 15",
     "cookTime": "min. 20",
@@ -1834,10 +1834,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     ],
     "steps": [
       "Écraser les bananes en purée lisse.",
-      "Ajouter l'œuf, le sucre, le muni mpe la vanille. Mélanger.",
-      "Incorporer la farine mpe la levure chimique jusqu'à une pâte épaisse qui tombe ya la cuillère.",
-      "Chauffer mafuta à feu moyen. Déposer ya cuillerées ya pâte.",
-      "Frire 2 à 3 minutes ya chaque côté jusqu'à dorure. Égoutter mpe servir tièya."
+      "Bakisa l'œuf, le sucre, muni mpe la vanille. Balabala.",
+      "Bakisa la farine mpe la levure chimique jusqu'à une pâte épaisse qui tombe ya la cuillère.",
+      "Fútbisa mafuta à feu moyen. Tia ya cuillerées ya pâte.",
+      "Frire 2 à 3 minutes ya chaque côté jusqu'à dorure. Égoutter mpe salela tièya."
     ],
     "tags": [
       "banane",
@@ -1865,12 +1865,12 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1 c. à café ya vanille"
     ],
     "steps": [
-      "Préchauffer le four à 180 °C. Beurrer un moule.",
-      "\"Si manioc frais : râper finement, presser légèrement pour enlever l'excès ya mai.\"",
-      "Battre œufs mpe sucre jusqu'à blanchiment. Ajouter mafuta, le lait mpe la vanille.",
-      "Incorporer le manioc (ou la farine), la levure mpe le muni. Mélanger sans trop travailler.",
-      "Verser dans le moule. Cuire 40 à 50 minutes jusqu'à ce qu'un couteau ressort propre.",
-      "Laisser tiédir avant ya démouler. Servir en parts."
+      "Préfútbisa le four à 180 °C. Beurrer un moule.",
+      "\"Si manioc frais : râper finement, presser moke pour enlever l'excès ya mai.\"",
+      "Battre œufs mpe sucre jusqu'à blanchiment. Bakisa mafuta, le lait mpe la vanille.",
+      "Bakisa le manioc (to la farine), la levure mpe muni. Balabala sans trop travailler.",
+      "Tema dans le moule. Teká 40 à 50 minutes jusqu'à ce qu'un couteau ressort propre.",
+      "Tika ekóma mwa malili avant ya démouler. Salela en parts."
     ],
     "tags": [
       "manioc",
@@ -1881,7 +1881,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "body": "Employer uniquement du manioc doux destiné à la consommation. La version à la farine ya manioc est plus régulière ; celle au frais reste plus humide."
   },
   "tangawisi": {
-    "title": "Tangawisi",
+    "title": "Jus ya tangawisi",
     "description": "jus tangawisi (jus ya gingembre) : gingembre frais, piquant mpe acidulé, sucré à convenance — boisson maison ya Kinshasa mpe ya la diaspora.",
     "region": "Kinshasa",
     "imageAlt": "Verre de jus de gingembre frais",
@@ -1895,11 +1895,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1 pincée ya piment, ya lingi"
     ],
     "steps": [
-      "Laver mpe éplucher le gingembre, le couper en morceaux.",
-      "Le mixer avec 500 ml ya mai jusqu'à une purée grossière.",
-      "Ajouter le reste ya mai. Laisser infuser 30 à 60 minutes à température ambiante.",
-      "Filtrer à travers un linge fin ou une passoire fine en pressant bien.",
-      "Sucrer, ajouter le citron (mpe pili-pili si souhaité). Réfrigérer. Servir bien frais."
+      "Sukola mpe éplucher le gingembre, le kata na biteni.",
+      "Le mixer na 500 ml ya mai jusqu'à une purée grossière.",
+      "Bakisa oyo etikali ya mai. Tika infuser 30 à 60 minutes à température ambiante.",
+      "Filtrer à travers un linge fin to une passoire fine en pressant bien.",
+      "Sucrer, bakisa le citron (mpe pili-pili si souhaité). Réfrigérer. Salela bien frais."
     ],
     "tags": [
       "tangawisi",
@@ -1912,9 +1912,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "jus tangawisi — jus ya gingembre"
   },
   "jus-bissap": {
-    "title": "Jus de bissap",
+    "title": "Jus ya bissap",
     "description": "Infusion sucrée ya fleurs d'hibiscus (bissap), rouge profond mpe acidulée — une boisson, distincte ya ngai-ngai cuit en plat.",
-    "region": "Kinshasa & Ouest de la RDC",
+    "region": "Kinshasa mpe Ouest ya RDC",
     "imageAlt": "Verre de jus de bissap rouge",
     "prepTime": "min. 10 + refroidissement",
     "cookTime": "min. 20",
@@ -1926,11 +1926,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Quelques feuilles ya menthe ou un bâton ya vanille, ya lingi"
     ],
     "steps": [
-      "Rincer brièvement les fleurs. Les porter à ébullition dans mai.",
-      "Baisser le feu mpe laisser infuser 15 à 20 minutes.",
+      "Rincer brièvement les fleurs. Les bila tii ebukana dans mai.",
+      "Baisser le feu mpe tika infuser 15 à 20 minutes.",
       "Filtrer. Sucrer encore chaud pour bien dissoudre le sucre.",
-      "Ajouter citron mpe aromates si souhaité. Laisser refroidir puis réfrigérer.",
-      "Servir glacé."
+      "Bakisa citron mpe aromates si souhaité. Tika refroidir sima réfrigérer.",
+      "Salela glacé."
     ],
     "tags": [
       "bissap",
@@ -1941,7 +1941,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "body": "Le bissap boisson n'est pas le ngai-ngai en sauce : mêmes fleurs d'hibiscus, geste différent — infusion sucrée ici, mijotage salé là où le ngai-ngai est un plat.\n\nAutres jus : [mangue](/ln/recettes/jus-mangue/), [ananas](/ln/recettes/jus-ananas/), [passion](/ln/recettes/jus-passion/)."
   },
   "jus-passion": {
-    "title": "Jus de fruit de la passion",
+    "title": "Jus ya passion",
     "description": "Jus frais ya fruits ya la passion, acidulé mpe parfumé — boisson très courante à Kinshasa mpe dans la diaspora.",
     "region": "Kinshasa",
     "imageAlt": "Verre de jus de fruit de la passion",
@@ -1954,10 +1954,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Jus d'½ citron, ya lingi"
     ],
     "steps": [
-      "Couper les fruits en deux mpe récupérer la pulpe (graines comprises).",
-      "Mixer brièvement avec mai, ou presser la pulpe dans mai à la fourchette.",
-      "Filtrer pour un jus plus lisse, ou laisser les graines selon le goût.",
-      "Sucrer, ajouter le citron si souhaité. Goûter mpe ajuster.",
+      "Kata les fruits en deux mpe récupérer la pulpe (graines comprises).",
+      "Mixer brièvement na mai, to presser la pulpe dans mai à la fourchette.",
+      "Filtrer pour un jus plus lisse, to tika les graines selon le goût.",
+      "Sucrer, bakisa le citron si souhaité. Goûter mpe ajuster.",
       "Salela très frais, elongo na ya glaçons."
     ],
     "tags": [
@@ -1986,12 +1986,12 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Mai"
     ],
     "steps": [
-      "Laver matiti, les ébouillanter brièvement si elles sont très amères, puis les hacher finement.",
-      "Faire revenir aluboka mpe ail dans mafuta ya palme jusqu'à ce qu'ils soient fondants.",
-      "Ajouter matiti, bien les enrober ya mafuta, puis mouiller d'un peu ya mai.",
-      "Couvrir mpe mijoter à moto ya moke 1 h à 1 h 15 en remuant souvent, jusqu'à texture crémeuse.",
-      "Incorporer mbisi fumé ou la nyama, le cube, le muni mpe pili-pili. Cuire encore 15 minutes.",
-      "Servir avec bukari, fufu ou loso."
+      "Sukola matiti, les ébouillanter brièvement si elles sont très amères, sima les kata finement.",
+      "Bimasisa oignons mpe ail na mafuta ya palme jusqu'à ce qu'ils soient fondants.",
+      "Bakisa matiti, bien les enrober ya mafuta, sima mouiller d'un peu ya mai.",
+      "Funga mpe mijoter à feu doux 1 h à 1 h 15 na kobabalala souvent, jusqu'à texture crémeuse.",
+      "Bakisa mbisi fumé to nyama, le cube, muni mpe pili-pili. Teká encore 15 minutes.",
+      "Salela na bukari, fufu to riz."
     ],
     "tags": [
       "sombe",
@@ -2067,11 +2067,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1 cube ya bouillon, ya lingi"
     ],
     "steps": [
-      "Mélanger aluboka râpé, ail, gingembre, citron, mafuta, herbes, muni, poivre, pili-pili mpe cube émietté.",
-      "Inciser le soso, l'enrober ya marinade mpe laisser reposer au frais au moins 2 heures.",
-      "Précuire à la marmite 15 à 20 minutes avec un fond ya mai mpe le reste ya marinade, ou passer directement au grill.",
-      "Griller sur braises moyennes (ou rôtir na four à 200 °C) 30 à 40 minutes en arrosant ya jus réservé, jusqu'à peau dorée mpe chair cuite.",
-      "Servir avec sauce pili-pili, aluboka crus, frites ou plantain."
+      "Balabala oignon râpé, ail, gingembre, citron, huile, herbes, sel, poivre, pili-pili mpe cube émietté.",
+      "Inciser soso, l'enrober ya marinade mpe tika reposer au frais au moins 2 heures.",
+      "Préteká à la marmite 15 à 20 minutes na un fond ya mai mpe oyo etikali ya marinade, to passer directement au grill.",
+      "Griller sur braises ya kati (to rôtir au four à 200 °C) 30 à 40 minutes en arrosant ya jus réservé, jusqu'à peau dorée mpe chair cuite.",
+      "Salela na sauce pili-pili, oignons crus, frites to plantain."
     ],
     "tags": [
       "soso ya kotumba",
@@ -2104,12 +2104,12 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Mai"
     ],
     "steps": [
-      "Rincer les tronçons ya queue. Les dorer dans mafuta chaude, puis réserver.",
-      "Dans la même marmite, faire fondre aluboka. Ajouter ail, gingembre, tomatisi mpe concentré.",
-      "Remuer 8 à 10 minutes jusqu'à ce que la sauce commence à réduire.",
-      "Remettre la nyama, ajouter laurier, cube, muni, poivre mpe assez ya mai pour couvrir.",
-      "Couvrir mpe mijoter à moto ya moke 2 h à 2 h 30, en ajoutant un peu ya mai si besoin, jusqu'à nyama très tendre.",
-      "Rectifier l'assaisonnement mpe pili-pili. Servir avec fufu, loso ou chikwangue."
+      "Rincer les tronçons ya queue. Les dorer na mafuta ya moto, sima tika na pembeni.",
+      "Dans la même marmite, bimasisa aluboka. Bakisa ail, gingembre, tomates mpe concentré.",
+      "Balabala 8 à 10 minutes tii la sauce commence à réduire.",
+      "Remettre nyama, bakisa laurier, cube, sel, poivre mpe assez ya mai pour funga.",
+      "Funga mpe mijoter à feu doux 2 h à 2 h 30, en ajoutant un peu ya mai soki esengeli, jusqu'à viande très tendre.",
+      "Rectifier l'assaisonnement mpe pili-pili. Salela na fufu, riz to chikwangue."
     ],
     "tags": [
       "mikila",
@@ -2142,12 +2142,12 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Mai"
     ],
     "steps": [
-      "Faire blanchir les pieds 10 minutes dans mai bouillante, égoutter mpe rincer pour retirer les impuretés.",
-      "Les remettre dans une marmite propre, couvrir ya mai fraîche, ajouter muni, bouquet mpe cube. Porter à ébullition.",
-      "Écumer, puis mijoter 1 h 30 à 2 h jusqu'à ce que la nyama se détache presque ya l'os.",
-      "Dans une poêle, faire revenir aluboka, ail mpe gingembre dans mafuta. Ajouter tomatisi si utilisées.",
-      "Verser ce mélange dans la marmite avec les pieds, ajouter pili-pili mpe poursuivre 20 à 30 minutes à feu moyen.",
-      "Rectifier l'assaisonnement. Servir très chaud avec pain, plantain ou fufu."
+      "Bila mwa tango makolo 10 minutes dans mai bouillante, égoutter mpe rincer pour longola les impuretés.",
+      "Les remettre dans une marmite propre, funga ya mai fraîche, bakisa sel, bouquet mpe cube. Bila tii ebukana.",
+      "Écumer, sima mijoter 1 h 30 à 2 h tii nyama se détache presque ya l'os.",
+      "na poêle, bimasisa oignons, ail mpe gingembre na mafuta. Bakisa tomatisi si utilisées.",
+      "Tema ce mélange dans la marmite na makolo, bakisa pili-pili mpe poursuivre 20 à 30 minutes à feu moyen.",
+      "Rectifier l'assaisonnement. Salela ya moto mingi na pain, plantain to fufu."
     ],
     "tags": [
       "makoso",
@@ -2202,11 +2202,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Pince ya muni (ya lingi)"
     ],
     "steps": [
-      "Couper les extrémités, inciser la peau dans la longueur mpe éplucher les plantains.",
-      "Les couper en tronçons ya 4 à 5 cm.",
-      "Disposer dans un panier vapeur au-dessus d'une mai frémissante (ou plonger dans mai légèrement salée).",
-      "Cuire 20 à 25 minutes jusqu'à ce qu'une lame entre facilement.",
-      "Égoutter si besoin mpe servir chaud avec mbisi, nyama en sauce ou légumes."
+      "Kata les extrémités, inciser la peau dans la longueur mpe éplucher les plantains.",
+      "Les kata en tronçons ya 4 à 5 cm.",
+      "Tia dans un panier vapeur au-dessus d'une eau frémissante (to tia na kati dans mai moke salée).",
+      "Teká 20 à 25 minutes jusqu'à ce qu'une lame entre facilement.",
+      "Égoutter soki esengeli mpe salela chaud na poisson, viande en sauce to légumes."
     ],
     "tags": [
       "plantains vapeur",
@@ -2237,12 +2237,12 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Mai"
     ],
     "steps": [
-      "Faire tremper les haricots une nuit, les égoutter puis les cuire 50 à 60 minutes dans ya mai avec le laurier, jusqu'à tendreté. Saler en fin ya cuisson.",
-      "Faire revenir aluboka mpe ail dans mafuta, ajouter tomatisi mpe laisser réduire 8 minutes.",
-      "Ajouter les haricots égouttés (garder un peu ya mai ya cuisson) mpe le loso rincé.",
-      "Verser ya mai à hauteur (environ 1,5 fois le volume ya loso), mélanger, porter à ébullition.",
-      "Baisser le feu, couvrir mpe cuire 18 à 20 minutes sans remuer, jusqu'à absorption.",
-      "Laisser reposer 5 minutes à couvert, puis égrener à la fourchette. Rectifier le muni."
+      "Tia na mai madesu butu moko, longola mai sima les teká 50 à 60 minutes dans ya mai na le laurier, jusqu'à tendreté. Tia muni en fin ya cuisson.",
+      "Bimasisa oignons mpe ail na mafuta, bakisa tomatisi mpe tika ekóma moke 8 minutes.",
+      "Bakisa madesu égouttés (garder un peu ya mai ya cuisson) mpe le riz rincé.",
+      "Tema ya mai à hauteur (pene 1,5 fois le volume ya riz), balabala, bila tii ebukana.",
+      "Baisser le feu, funga mpe teká 18 à 20 minutes sans balabala, jusqu'à absorption.",
+      "Tika reposer 5 minutes à couvert, sima égrener à la fourchette. Rectifier muni."
     ],
     "tags": [
       "loso na madesu",
@@ -2255,7 +2255,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "loso na haricots"
   },
   "sauce-pili-pili": {
-    "title": "Sauce pili-pili",
+    "title": "Sauce ya pili-pili",
     "description": "Sauce pili-pili : origine ya condiment pimenté d'Afrique centrale mpe recette — piments frais mixés na ail, aluboka mpe un filet d'mafuta, pour grillades mpe mbisi.",
     "region": "Na RDC mobimba",
     "imageAlt": "Sauce pimentée rouge type piri-piri / pili-pili",
@@ -2272,12 +2272,12 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "2 c. à soupe ya mai"
     ],
     "steps": [
-      "Laver les piments. Retirer une partie ya graines pour adoucir, si besoin.",
-      "Mixer piments, ail, aluboka, tomatisi (si utilisée), citron, muni mpe mai jusqu'à une pâte coarse.",
-      "Faire chauffer mafuta à feu moyen dans une petite casserole.",
-      "Verser la pâte, remuer 8 à 10 minutes jusqu'à ce que l'odeur crue parte mpe que la sauce épaississe légèrement.",
-      "Goûter, rectifier le muni. Laisser refroidir puis mettre en bocal au frais.",
-      "Servir en petite quantité à côté ya grillades mpe ya poissons."
+      "Sukola pili-pili. Longola une partie ya graines pour adoucir, soki esengeli.",
+      "Mixer piments, ail, oignon, tomate (si utilisée), citron, sel mpe eau jusqu'à une pâte coarse.",
+      "Fútbisa mafuta à feu moyen na casserole moke.",
+      "Tema la pâte, balabala 8 à 10 minutes tii l'odeur crue parte mpe que la sauce épaississe moke.",
+      "Goûter, rectifier muni. Tika refroidir sima mettre en bocal au frais.",
+      "Salela en petite quantité à côté ya grillades mpe ya poissons."
     ],
     "tags": [
       "pili-pili",
@@ -2307,11 +2307,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "80 ml ya mai"
     ],
     "steps": [
-      "Si les sambaza sont séchés, les rincer rapidement deux ou trois fois puis bien les égoutter.",
-      "Chauffer la moitié ya mafuta mpe faire revenir mbisi 5 à 7 minutes jusqu'à ce qu'ils soient croustillants. Réserver.",
-      "Ajouter le reste ya mafuta, faire fondre aluboka, puis incorporer ail, tomatisi mpe pili-pili.",
-      "Cuire la sauce 8 à 10 minutes, ajouter mai mpe remettre délicatement les sambaza.",
-      "Mijoter na sanza 5 minutes, rectifier le muni mpe le poivre. Servir avec bukari ou loso."
+      "Si les sambaza sont séchés, sukola rapidement deux to trois fois sima bien longola mai.",
+      "Fútbisa la moitié ya mafuta mpe bimasisa mbisi 5 à 7 minutes jusqu'à ce qu'ils soient croustillants. Tika na pembeni.",
+      "Bakisa oyo etikali ya mafuta, bimasisa aluboka, sima bakisa ail, tomatisi mpe pili-pili.",
+      "Teká la sauce 8 à 10 minutes, bakisa mai mpe remettre délicatement les sambaza.",
+      "Mijoter à découvert 5 minutes, rectifier muni mpe le poivre. Salela na bukari to riz."
     ],
     "tags": [
       "sambaza",
@@ -2341,11 +2341,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "150 ml ya mai"
     ],
     "steps": [
-      "Trier mpe laver matiti makenda mingi. Émincer grossièrement, garder bikondo ya molle.",
-      "Faire revenir aluboka dans mafuta, ajouter ail, tomatisi mpe pili-pili. Laisser réduire 8 minutes.",
-      "Incorporer matiti mpe mai, saler, couvrir.",
-      "Cuire 12 à 15 minutes en remuant, jusqu'à ce que matiti soient tendres mpe la sauce courte.",
-      "Rectifier le muni. Servir avec fufu, loso ou chikwangue."
+      "Trier mpe sukola matiti plusieurs fois. Émincer grossièrement, garder les tiges tendres.",
+      "Bimasisa aluboka na mafuta, bakisa ail, tomatisi mpe pili-pili. tika ekóma moke 8 minutes.",
+      "Bakisa matiti mpe mai, tia muni, funga.",
+      "Teká 12 à 15 minutes na kobabalala, tii matiti soient tendres mpe la sauce courte.",
+      "Rectifier muni. Salela na fufu, riz to chikwangue."
     ],
     "tags": [
       "ndunda",
@@ -2360,7 +2360,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "poisson-fume-tomates": {
     "title": "Mbisi ya fumé",
     "description": "mbisi ya fumé aux tomatisi : mbisi ya fumé réhydraté puis mijoté dans une sauce ya tomatisi-aluboka — bilei ya quotidien autour ya fleuve Congo, ekeseni na makayabu salé.",
-    "region": "Kinshasa & bassin du Congo",
+    "region": "Kinshasa mpe bassin ya Congo",
     "imageAlt": "mbisi ya fumé prêt à cuisiner",
     "prepTime": "min. 25 + min. 30 de kobomba",
     "cookTime": "min. 40",
@@ -2376,11 +2376,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "200 ml ya mai"
     ],
     "steps": [
-      "Faire tremper mbisi fumé 20 à 30 minutes dans ya mai tièya. Égoutter, retirer les arêtes grossières mpe émietter ou couper en portions.",
-      "Faire revenir aluboka dans mafuta, ajouter ail, tomatisi mpe pili-pili. Laisser réduire 10 minutes.",
-      "Déposer mbisi dans la sauce, verser mai mpe le cube émietté si utilisé.",
-      "Couvrir mpe mijoter 20 à 25 minutes à moto ya moke, sans trop remuer.",
-      "Goûter avant ya saler. Poivrer mpe servir avec chikwangue, fufu ou loso."
+      "Tia na mai mbisi fumé 20 à 30 minutes dans ya mai tièya. Égoutter, longola les arêtes grossières mpe émietter to kata en portions.",
+      "Bimasisa aluboka na mafuta, bakisa ail, tomatisi mpe pili-pili. tika ekóma moke 10 minutes.",
+      "Tia mbisi dans la sauce, tema mai mpe le cube émietté si utilisé.",
+      "Funga mpe mijoter 20 à 25 minutes à feu doux, sans trop balabala.",
+      "Goûter avant ya tia muni. Poivrer mpe salela na chikwangue, fufu to riz."
     ],
     "tags": [
       "poisson fumé",
@@ -2395,7 +2395,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "aubergines-africaines": {
     "title": "Aubergines africaines en sauce",
     "description": "aubergines africaines (garden eggs) ebilisami na tomatisi, aluboka mpe un peu d'mafuta — légume ya marché congolais, souvent servi na fufu ou loso.",
-    "region": "Kinshasa & Ouest de la RDC",
+    "region": "Kinshasa mpe Ouest ya RDC",
     "imageAlt": "Aubergines africaines (garden eggs) fraîches",
     "prepTime": "min. 20",
     "cookTime": "min. 35",
@@ -2410,11 +2410,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "150 ml ya mai"
     ],
     "steps": [
-      "Couper les aubergines en deux ou en quartiers. Les faire blanchir 5 minutes dans mai bouillante salée, puis égoutter.",
+      "Kata les aubergines en deux to en quartiers. Les bila mwa tango 5 minutes dans mai bouillante salée, sima égoutter.",
       "Bimasisa aluboka na mafuta, ajouter ail, tomatisi mpe pili-pili. Réduire 8 à 10 minutes.",
-      "Incorporer les aubergines mpe mai. Saler légèrement.",
-      "Couvrir mpe mijoter 20 minutes à moto ya moke jusqu'à ce que les aubergines soient tendres mpe la sauce liée.",
-      "Rectifier le muni. Servir avec fufu, loso ou plantain."
+      "Bakisa les aubergines mpe mai. Tia muni moke.",
+      "Funga mpe mijoter 20 minutes à feu doux tii les aubergines soient tendres mpe la sauce liée.",
+      "Rectifier muni. Salela na fufu, riz to plantain."
     ],
     "tags": [
       "aubergines africaines",
@@ -2427,7 +2427,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "aubergines africaines (garden eggs)"
   },
   "igname-bouillie": {
-    "title": "Igname bouillie",
+    "title": "Mbala ya kobila",
     "description": "igname bouillie : tubercules cuits à mai jusqu'à tendreté, servis natures ou na sauce courte — accompagnement simple encore peu documenté dans le catalogue.",
     "region": "Na RDC mobimba",
     "imageAlt": "Morceaux d'igname bouillie",
@@ -2440,10 +2440,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Jus ya ½ citron, ya lingi (mai ya cuisson)"
     ],
     "steps": [
-      "\"Éplucher l'igname soigneusement (la peau peut irriter : travailler avec ya gants si besoin). Couper en gros morceaux.\"",
-      "Plonger dans une casserole ya mai froide salée, éventuellement avec le citron.",
-      "Porter à ébullition mpe cuire 25 à 35 minutes jusqu'à ce qu'une lame entre facilement.",
-      "Égoutter. Servir chaud nature, avec une sauce ya tomatisi, ya mbisi ou un filet ya mafuta mpe pili-pili."
+      "\"Éplucher l'igname soigneusement (la peau peut irriter : travailler na ya gants soki esengeli). Kata en gros morceaux.\"",
+      "tia na kati dans une casserole ya mai ya malili salée, éventuellement na le citron.",
+      "Bila tii ebukana mpe teká 25 à 35 minutes jusqu'à ce qu'une lame entre facilement.",
+      "Égoutter. Salela chaud nature, na une sauce tomate, ya poisson to un filet ya mafuta mpe pili-pili."
     ],
     "tags": [
       "igname",
@@ -2456,9 +2456,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "igname bouillie"
   },
   "taro-mijote": {
-    "title": "Taro mijoté",
+    "title": "Taro ya kobila",
     "description": "taro (malanga) mijoté : tubercules attendris puis cuits dans une sauce ya tomatisi-aluboka — bilei ya la Cuvette mpe ya forêts, ndeko ya féculents ya catalogue.",
-    "region": "Cuvette ya centrale",
+    "region": "Cuvette ya kati",
     "imageAlt": "Tubercules de taro",
     "prepTime": "min. 25",
     "cookTime": "min. 45",
@@ -2473,10 +2473,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "300 ml ya mai"
     ],
     "steps": [
-      "Couper le taro en morceaux ya kati. Le faire blanchir 10 minutes dans mai bouillante, puis égoutter (certains taros piquent la gorge s'ils sont crus).",
-      "Faire revenir aluboka dans mafuta, ajouter ail, tomatisi mpe pili-pili. Réduire 8 minutes.",
-      "Ajouter le taro mpe mai, saler. Couvrir mpe mijoter 25 à 30 minutes à moto ya moke jusqu'à tendreté.",
-      "Remuer délicatement en fin ya cuisson pour lier la sauce sans écraser tous les morceaux.",
+      "Kata le taro na biteni ya kati. Le bila mwa tango 10 minutes dans mai bouillante, sima égoutter (certains taros piquent la gorge s'ils sont crus).",
+      "Bimasisa aluboka na mafuta, bakisa ail, tomatisi mpe pili-pili. Réduire 8 minutes.",
+      "Bakisa le taro mpe mai, tia muni. Funga mpe mijoter 25 à 30 minutes à feu doux jusqu'à tendreté.",
+      "Balabala délicatement en fin ya cuisson pour lier la sauce sans écraser tous biteni.",
       "Salela chaud elongo na mbisi, nyama ou seul comme plat ya légumes."
     ],
     "tags": [
@@ -2492,7 +2492,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "jus-mangue": {
     "title": "Mai ya manga",
     "description": "jus ya mangue : mangues mûres mixées na ya mai mpe un peu ya sucre — boisson ya saison à Kinshasa, cousine ya jus ya passion mpe ya bissap.",
-    "region": "Kinshasa & Ouest de la RDC",
+    "region": "Kinshasa mpe Ouest ya RDC",
     "imageAlt": "Verre de jus de mangue",
     "prepTime": "min. 15",
     "cookTime": "min. 0",
@@ -2503,10 +2503,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Jus d'½ citron, ya lingi"
     ],
     "steps": [
-      "Sukola les mangues, les peler mpe retirer le noyau. Couper la chair en morceaux.",
-      "Mixer avec mai jusqu'à obtenir un jus homogène.",
-      "\"Goûter : sucrer si besoin, ajouter le citron pour relever.\"",
-      "Filtrer pour un jus plus lisse, ou laisser la pulpe selon le goût.",
+      "Sukola les mangues, les peler mpe retirer le noyau. Kata la chair en morceaux.",
+      "Mixer na mai jusqu'à obtenir un jus homogène.",
+      "\"Goûter : sucrer soki esengeli, bakisa le citron pour relever.\"",
+      "Filtrer pour un jus plus lisse, to tika la pulpe selon le goût.",
       "Salela très frais, elongo na ya glaçons."
     ],
     "tags": [
@@ -2522,7 +2522,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "jus-ananas": {
     "title": "Mai ya ananas",
     "description": "jus d'ananas : ananas frais mixé na ya mai — boisson acidulée mpe parfumée, classique ya marchés mpe ya maisons ya Kinshasa.",
-    "region": "Kinshasa & Ouest de la RDC",
+    "region": "Kinshasa mpe Ouest ya RDC",
     "imageAlt": "Verre de jus d'ananas frais",
     "prepTime": "min. 20",
     "cookTime": "min. 0",
@@ -2533,11 +2533,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Jus d'½ citron, ya lingi"
     ],
     "steps": [
-      "Éplucher l'ananas, retirer le cœur fibreux si besoin, couper la chair en cubes.",
-      "Mixer avec mai jusqu'à consistance fluide.",
-      "Filtrer à travers une passoire fine pour un jus plus clair, ou garder la pulpe.",
+      "Éplucher l'ananas, longola le cœur fibreux soki esengeli, kata nyama ya mbuma en cubes.",
+      "Mixer na mai jusqu'à consistance fluide.",
+      "Filtrer à travers une passoire fine pour un jus plus clair, to garder la pulpe.",
       "Sucrer mpe citronner selon le goût.",
-      "Servir glacé."
+      "Salela glacé."
     ],
     "tags": [
       "ananas",
@@ -2549,9 +2549,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "jus d'ananas"
   },
   "jus-safou": {
-    "title": "Jus de safou",
+    "title": "Jus ya nsafu",
     "description": "jus ya safou : pulpe ya nsafu mixée na ya mai mpe un peu ya sucre — boisson ya saison à l'Ouest ya la RDC, distincte ya nsafu grillés.",
-    "region": "RDC ya bwé",
+    "region": "Ouest ya RDC",
     "imageAlt": "Verre de jus de fruits à la pulpe",
     "prepTime": "min. 20",
     "cookTime": "min. 5",
@@ -2562,11 +2562,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1 pincée ya muni, ya lingi"
     ],
     "steps": [
-      "Rincer les nsafu. Les plonger 3 à 5 minutes dans ya mai juste bouillante pour assouplir la chair (ou les griller brièvement).",
-      "Ouvrir, retirer le noyau mpe récupérer toute la pulpe.",
-      "Mixer la pulpe avec mai jusqu'à obtenir une boisson crémeuse.",
-      "Sucrer, ajouter une pincée ya muni si souhaité. Goûter mpe ajuster.",
-      "Servir tièya ou frais ; remuer avant ya boire (la pulpe se dépose)."
+      "Rincer les nsafu. Les tia na kati 3 à 5 minutes dans ya mai juste bouillante pour assouplir nyama ya mbuma (to les griller brièvement).",
+      "Ouvrir, longola mokuwa mpe récupérer toute la pulpe.",
+      "Mixer la pulpe na mai jusqu'à obtenir une boisson crémeuse.",
+      "Sucrer, bakisa une pincée ya muni si souhaité. Goûter mpe ajuster.",
+      "Salela tièya to frais ; balabala avant ya boire (la pulpe se dépose)."
     ],
     "tags": [
       "safou",
@@ -2595,11 +2595,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Muni"
     ],
     "steps": [
-      "Faire cuire les œufs au plat ou en omelette fine. Saler légèrement.",
-      "Si vous utilisez ya saucisses, les faire dorer à la poêle ; sinon réchauffer la nyama grillée.",
+      "Teká ba makaki na plat to en omelette fine. Tia muni moke.",
+      "Si vous utilisez ya saucisses, les bimasisa à la poêle ; sinon réfútbisa nyama grillée.",
       "Ouvrir les pains sans les séparer complètement. Étaler généreusement la mayonnaise.",
-      "Garnir d'œuf, ya saucisse ou ya nyama, d'aluboka si souhaité.",
-      "Saupoudrer ya piment. Servir aussitôt, encore tièya."
+      "Garnir d'œuf, ya saucisse to ya viande, d'oignon si souhaité.",
+      "Saupoudrer ya piment. Salela aussitôt, encore tièya."
     ],
     "tags": [
       "pain mayonnaise",
@@ -2629,10 +2629,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     ],
     "steps": [
       "Presser le manioc râpé dans un torchon pour enlever l'excès ya mai.",
-      "Mélanger manioc, farine, sucre, muni, levure mpe œuf jusqu'à une pâte qui se tient.",
-      "Chauffer mafuta à feu moyen. Former ya petites galettes ou cuillerées.",
+      "Balabala manioc, farine, sucre, sel, levure mpe œuf jusqu'à une pâte qui se tient.",
+      "Fútbisa mafuta à feu moyen. Former ya petites galettes to cuillerées.",
       "Frire 3 à 4 minutes ya chaque côté jusqu'à dorure croustillante.",
-      "Égoutter sur papier. Servir tièya, nature ou avec une pâte d'nguba."
+      "Égoutter sur papier. Salela tièya, nature to na une pâte d'arachide."
     ],
     "tags": [
       "manioc",
@@ -2644,7 +2644,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "beignets ya manioc"
   },
   "bouillie-mais": {
-    "title": "Bouillie de maïs",
+    "title": "Bouillie ya maïs",
     "description": "bouillie ya maïs : farine ya maïs cuite à mai jusqu'à texture crémeuse, sucrée — petit-déjeuner mpe goûter, distincte ya la bouillie d'nguba.",
     "region": "Na RDC mobimba",
     "imageAlt": "Bol de bouillie de maïs (uji) crémeuse",
@@ -2659,11 +2659,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Lait, pour servir, ya lingi"
     ],
     "steps": [
-      "Délayer la farine dans 250 ml ya mai froide jusqu'à un mélange sans grumeaux.",
+      "Bakisa mpe balabala la farine dans 250 ml ya mai ya malili jusqu'à un mélange sans grumeaux.",
       "Bila le reste ya mai tii ebukana avec le muni.",
-      "Verser le mélange farine en pluie en remuant vivement.",
-      "Cuire 12 à 15 minutes à feu moyen, en remuant sans cesse, jusqu'à texture crémeuse.",
-      "Incorporer le sucre mpe le parfum. Servir tièya, nature ou avec un filet ya lait."
+      "Tema mélange farine en pluie na kobabalala vivement.",
+      "Teká 12 à 15 minutes à feu moyen, na kobabalala sans cesse, jusqu'à texture crémeuse.",
+      "Bakisa le sucre mpe le parfum. Salela tièya, nature to na un filet ya lait."
     ],
     "tags": [
       "maïs",
@@ -2675,9 +2675,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "bouillie ya maïs"
   },
   "capitaine-braise": {
-    "title": "Capitaine braisé",
+    "title": "Capitaine ya kotumba",
     "description": "mbisi capitaine braisé : perche ya Nil entière marinée aux aromates mpe grillée jusqu'à la peau fumée — grillade ya fleuve, distincte ya mbisi ya Kinkole.",
-    "region": "Kinshasa & bassin du Congo",
+    "region": "Kinshasa mpe bassin ya Congo",
     "imageAlt": "Gros mbisi braisé servi avec accompagnements",
     "prepTime": "min. 30 + ngonga 1 de marinade",
     "cookTime": "min. 35",
@@ -2692,11 +2692,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1 cube ya bouillon, ya lingi"
     ],
     "steps": [
-      "Inciser mbisi ya chaque côté. Mélanger aluboka râpé, ail, gingembre, citron, mafuta, muni, poivre, pili-pili mpe cube émietté.",
+      "Inciser mbisi ya chaque côté. Balabala oignon râpé, ail, gingembre, citron, huile, sel, poivre, pili-pili mpe cube émietté.",
       "Enrober le capitaine, farcir un peu la cavité mpe mariner au frais au moins 1 heure.",
-      "Précuire à la marmite 10 minutes avec un fond ya mai mpe le reste ya marinade, ou passer directement au grill.",
-      "Braiser sur braises moyennes 20 à 25 minutes en retournant mpe en badigeonnant ya jus.",
-      "Servir avec plantain, chikwangue, aluboka cru mpe sauce pili-pili."
+      "Préteká à la marmite 10 minutes na un fond ya mai mpe oyo etikali ya marinade, to passer directement au grill.",
+      "Braiser sur braises ya kati 20 à 25 minutes en retournant mpe en badigeonnant ya jus.",
+      "Salela na plantain, chikwangue, oignon cru mpe sauce pili-pili."
     ],
     "tags": [
       "capitaine",
@@ -2727,10 +2727,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Farine pour paner légèrement, ya lingi"
     ],
     "steps": [
-      "Saler, poivrer mpe citronner mbisi. Fariner légèrement si on veut une croûte.",
-      "Faire dorer mbisi dans mafuta chaude (ou le griller). Réserver au chaud.",
-      "Faire fondre aluboka mpe ail dans un fond ya mafuta. Déglacer d'un trait ya mai.",
-      "Hors ya feu, mélanger mayonnaise, moutarde, citron mpe pili-pili. Napper mbisi encore chaud.",
+      "Tia muni, poivrer mpe citronner mbisi. Fariner moke si on veut une croûte.",
+      "Bimasisa mbisi na mafuta ya moto (to le griller). Tika na pembeni au chaud.",
+      "Bimasisa aluboka mpe ail dans un fond ya mafuta. longola na d'un trait ya mai.",
+      "Hors ya feu, balabala mayonnaise, moutarde, citron mpe pili-pili. Napper mbisi encore chaud.",
       "Salela aussitôt elongo na frites, loso ou pain."
     ],
     "tags": [
@@ -2762,11 +2762,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1 feuille ya laurier, ya lingi"
     ],
     "steps": [
-      "Faire dorer les morceaux ya porc dans mafuta. Réserver.",
-      "Faire fondre aluboka, ajouter ail puis tomatisi. Laisser réduire 8 à 10 minutes.",
-      "Remettre le porc, le cube, le laurier, mai, muni, poivre mpe pili-pili.",
-      "Couvrir mpe mijoter à moto ya moke 50 à 60 minutes jusqu'à ce que la nyama soit tendre mpe la sauce liée.",
-      "Rectifier l'assaisonnement. Servir avec loso, fufu, chikwangue ou plantain."
+      "Bimasisa biteni ya porc na mafuta. Tika na pembeni.",
+      "Bimasisa aluboka, bakisa ail sima tomatisi. tika ekóma moke 8 à 10 minutes.",
+      "Remettre le porc, le cube, le laurier, mai, sel, poivre mpe pili-pili.",
+      "Funga mpe mijoter à feu doux 50 à 60 minutes tii nyama soit tendre mpe la sauce liée.",
+      "Rectifier l'assaisonnement. Salela na riz, fufu, chikwangue to plantain."
     ],
     "tags": [
       "ngulu",
@@ -2796,11 +2796,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1 cube ya bouillon, ya lingi"
     ],
     "steps": [
-      "Préparer une marinade avec aluboka râpé, ail, gingembre, citron, mafuta, muni, poivre, pili-pili mpe cube.",
+      "Bongisa marinade na oignon râpé, ail, gingembre, citron, huile, sel, poivre, pili-pili mpe cube.",
       "Enrober le bœuf mpe mariner au frais au moins 2 heures.",
-      "Précuire à la marmite 15 à 20 minutes avec un fond ya mai mpe la marinade.",
-      "Égoutter puis griller sur braises moyennes 15 à 20 minutes en badigeonnant ya jus.",
-      "Servir avec aluboka cru, sauce pili-pili, frites ou chikwangue."
+      "Préteká à la marmite 15 à 20 minutes na un fond ya mai mpe la marinade.",
+      "Égoutter sima griller sur braises ya kati 15 à 20 minutes en badigeonnant ya jus.",
+      "Salela na oignon cru, sauce pili-pili, frites to chikwangue."
     ],
     "tags": [
       "bœuf",
@@ -2830,10 +2830,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1 c. à soupe ya jus ya citron, ya lingi"
     ],
     "steps": [
-      "Rincer le loso. Le cuire à mai salée jusqu'à absorption (environ 18 minutes). Égrener mpe laisser tiédir légèrement.",
-      "Mélanger mayonnaise, ail, moutarde, citron, pili-pili mpe poivre.",
-      "Incorporer la sauce au loso encore chaud, ou servir le loso mpe napper au dernier moment.",
-      "Goûter mpe ajuster le muni. Servir avec soso, mbisi, brochettes ou seul."
+      "Rincer le riz. Le teká à mai salée jusqu'à absorption (pene 18 minutes). Égrener mpe tika ekóma mwa malili moke.",
+      "Balabala mayonnaise, ail, moutarde, citron, pili-pili mpe poivre.",
+      "Bakisa la sauce au riz encore chaud, to salela le riz mpe napper au dernier moment.",
+      "Goûter mpe ajuster muni. Salela na poulet, poisson, brochettes to seul."
     ],
     "tags": [
       "loso",
@@ -2863,10 +2863,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "mafuta pour friture"
     ],
     "steps": [
-      "Assaisonner le soso avec muni, poivre, pili-pili mpe ail. Laisser reposer 15 minutes.",
-      "Fariner chaque morceau, passer dans l'œuf, puis dans la chapelure en pressant bien.",
-      "Chauffer mafuta à feu moyen-vif. Frire les morceaux 6 à 8 minutes par côté jusqu'à doré mpe cuisson à cœur.",
-      "Égoutter sur papier absorbant. Servir chaud avec sauce pili-pili, mayonnaise ou ketchup."
+      "Bongisa monoko soso na sel, poivre, pili-pili mpe ail. Tika reposer 15 minutes.",
+      "Fariner chaque morceau, passer dans l'œuf, sima dans la chapelure en pressant bien.",
+      "Fútbisa mafuta à feu moyen-vif. Frire biteni 6 à 8 minutes par côté jusqu'à doré mpe cuisson à cœur.",
+      "Égoutter sur papier absorbant. Salela chaud na sauce pili-pili, mayonnaise to ketchup."
     ],
     "tags": [
       "poulet pané",
@@ -2879,7 +2879,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "soso pané kinshasa"
   },
   "saucisse-frites": {
-    "title": "Saucisse-frites",
+    "title": "Saucisse na frites",
     "description": "saucisse-frites : saucisses dorées servies na ya frites croustillantes — combo street food incontournable ya Kinshasa.",
     "region": "Kinshasa",
     "imageAlt": "Saucisse servie avec des frites",
@@ -2894,9 +2894,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1 aluboka émincé, ya lingi"
     ],
     "steps": [
-      "Éplucher les pommes ya terre, les couper en frites, rincer mpe bien sécher.",
-      "Faire chauffer mafuta. Blanchir les frites 5 à 6 minutes à feu moyen, égoutter. Remonter le feu mpe les redorer 3 à 4 minutes. Saler.",
-      "Dans une poêle ou mafuta, faire dorer les saucisses 8 à 10 minutes en les piquant légèrement.",
+      "Éplucher les pommes ya terre, les kata en frites, rincer mpe bien sécher.",
+      "Fútbisa mafuta. Blanchir ba frites 5 à 6 minutes à feu moyen, égoutter. bakisa moto mpe bimasisa lisusu 3 à 4 minutes. Tia muni.",
+      "na poêle to mafuta, bimasisa les saucisses 8 à 10 minutes en les piquant moke.",
       "Salela saucisses mpe frites ensemble, elongo na aluboka, pili-pili ou ketchup."
     ],
     "tags": [
@@ -2926,7 +2926,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Brochettes en bois, trempées dans mai"
     ],
     "steps": [
-      "Mélanger aluboka, ail, citron, mafuta, muni, poivre mpe pili-pili. Enrober le foie mpe mariner 30 minutes au frais.",
+      "Balabala oignon, ail, citron, huile, sel, poivre mpe pili-pili. Enrober le foie mpe mariner 30 minutes au frais.",
       "Enfiler les dés sur les brochettes sans trop serrer.",
       "\"Griller sur braises vives 3 à 4 minutes par côté : le foie doit rester rosée à l'intérieur.\"",
       "Salela aussitôt elongo na aluboka cru, pili-pili mpe pain ou frites."
@@ -2944,7 +2944,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "dongo-dongo": {
     "title": "Dongo-dongo",
     "description": "dongo-dongo : gombos mijotés na mbisi ya fumé jusqu'à une sauce filante mpe iodée — bilei ya quotidien, distinct ya la sauce gombo sans fumé.",
-    "region": "Kinshasa & bassin du Congo",
+    "region": "Kinshasa mpe bassin ya Congo",
     "imageAlt": "Sauce de gombo servie avec du mbisi",
     "prepTime": "min. 25",
     "cookTime": "min. 45",
@@ -2959,10 +2959,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     ],
     "steps": [
       "Sukola les gombos, couper les extrémités mpe les trancher en rondelles.",
-      "Faire tremper brièvement mbisi fumé si trop salé, l'égoutter mpe le détailler.",
-      "Faire revenir aluboka mpe ail dans mafuta, ajouter tomatisi 5 minutes.",
-      "Incorporer gombos, mbisi mpe un fond ya mai. Mijoter 30 à 35 minutes en remuant.",
-      "Saler en fin ya cuisson (le fumé sale déjà). Servir avec loso, fufu ou chikwangue."
+      "Tia na mai brièvement mbisi fumé si trop salé, l'égoutter mpe le détailler.",
+      "Bimasisa oignons mpe ail na mafuta, bakisa tomatisi 5 minutes.",
+      "Bakisa gombos, poisson mpe un fond ya mai. Mijoter 30 à 35 minutes na kobabalala.",
+      "Tia muni en fin ya cuisson (le fumé sale déjà). Salela na riz, fufu to chikwangue."
     ],
     "tags": [
       "dongo-dongo",
@@ -2992,11 +2992,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "100 g ya mbisi ya fumé ou ya nyama, ya lingi"
     ],
     "steps": [
-      "Faire fondre aluboka dans mafuta, ajouter ail mpe tomatisi. Cuire 8 minutes.",
-      "Délayer la pâte d'nguba avec mai chaude jusqu'à obtenir un lait épais, sans grumeaux.",
-      "Verser dans la marmite, ajouter le fumé s'il y en a. Mijoter à moto ya moke 20 à 25 minutes en remuant.",
-      "Saler mpe pimenter. La sauce doit nappe la cuillère sans brûler au fond.",
-      "Servir avec loso, fufu, chikwangue, plantain ou légumes."
+      "Bimasisa aluboka na mafuta, bakisa ail mpe tomatisi. Teká 8 minutes.",
+      "Bakisa mpe balabala la pâte d'arachide na mai ya moto jusqu'à obtenir un lait épais, sans grumeaux.",
+      "Tema dans la marmite, bakisa le fumé s'il y en a. Mijoter à feu doux 20 à 25 minutes na kobabalala.",
+      "Tia muni mpe pimenter. La sauce doit nappe la cuillère sans brûler au fond.",
+      "Salela na riz, fufu, chikwangue, plantain to légumes."
     ],
     "tags": [
       "sauce arachide",
@@ -3026,10 +3026,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "muni, pili-pili"
     ],
     "steps": [
-      "Saler, poivrer mpe citronner mbisi. Le faire dorer à la poêle ou le braiser. Réserver.",
-      "Éplucher les plantains, les couper en tranches mpe les frire jusqu'à doré. Égoutter mpe saler.",
-      "\"Option sauce courte : faire revenir aluboka mpe ail, ajouter tomatisi mpe un fond ya mai, 8 minutes. Napper mbisi.\"",
-      "Dresser makemba mpe mbisi dans la même assiette. Servir aussitôt."
+      "Tia muni, poivrer mpe citronner mbisi. Le bimasisa à la poêle to le braiser. Tika na pembeni.",
+      "Éplucher les plantains, les kata en tranches mpe les frire jusqu'à doré. Égoutter mpe tia muni.",
+      "\"Option sauce courte : bimasisa aluboka mpe ail, bakisa tomatisi mpe un fond ya mai, 8 minutes. Napper mbisi.\"",
+      "Dresser makemba mpe mbisi dans la même assiette. Salela aussitôt."
     ],
     "tags": [
       "makemba",
@@ -3042,9 +3042,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "plantains frits au mbisi"
   },
   "chikwangue-grillee": {
-    "title": "Chikwangue grillée",
+    "title": "Kwanga ya kotumba",
     "description": "chikwangue grillée : tranches ya kwanga passées sur braises ou poêle jusqu'à croûte fumée — geste à part ya la chikwangue vapeur.",
-    "region": "Bassin du Congo & Kinshasa",
+    "region": "Bassin ya Congo mpe Kinshasa",
     "imageAlt": "Tranches de chikwangue (kwanga) coupées, prêtes à passer sur braises ou poêle",
     "prepTime": "min. 5",
     "cookTime": "min. 10",
@@ -3055,10 +3055,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Sauce pili-pili, pour servir"
     ],
     "steps": [
-      "Déballer la chikwangue mpe la couper en tranches d'un bon centimètre.",
-      "Faire chauffer une poêle ou ya braises. Badigeonner légèrement ya mafuta si besoin.",
+      "Déballer la chikwangue mpe la kata en tranches d'un bon centimètre.",
+      "Fútbisa poêle to ya braises. Badigeonner moke ya mafuta soki esengeli.",
       "Griller les tranches 3 à 4 minutes par face jusqu'à marquage mpe léger croustillant.",
-      "Saler très peu. Servir chaud avec pondu, mbisi, nyama en sauce ou pili-pili."
+      "Tia muni très peu. Salela chaud na pondu, poisson, viande en sauce to pili-pili."
     ],
     "tags": [
       "chikwangue",
@@ -3071,9 +3071,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "chikwangue grillée"
   },
   "courge-sauce": {
-    "title": "Courge en sauce",
+    "title": "Courge na sauce",
     "description": "courge en sauce : courge jaune ebilisami na aluboka, tomatisi mpe un trait d'mafuta — bilei ya légume, distinct ya feuilles mujibujibu mpe ya la mbika.",
-    "region": "Kinshasa & Ouest de la RDC",
+    "region": "Kinshasa mpe Ouest ya RDC",
     "imageAlt": "Légumes mijotés en sauce dans un plat",
     "prepTime": "min. 20",
     "cookTime": "min. 40",
@@ -3088,11 +3088,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "80 g d'nguba pilées, ya lingi"
     ],
     "steps": [
-      "Faire fondre aluboka dans mafuta, ajouter ail mpe tomatisi. Cuire 8 minutes.",
-      "Ajouter les cubes ya courge, mai, muni mpe pili-pili. Couvrir mpe mijoter 25 à 30 minutes.",
-      "Quand la courge est tendre, écraser légèrement une partie pour lier la sauce.",
-      "Incorporer nguba mikuatami en option, cuire encore 5 minutes.",
-      "Servir avec loso, fufu ou chikwangue."
+      "Bimasisa aluboka na mafuta, bakisa ail mpe tomatisi. Teká 8 minutes.",
+      "Bakisa les cubes ya courge, mai, sel mpe pili-pili. Funga mpe mijoter 25 à 30 minutes.",
+      "Quand la courge est tendre, écraser moke une partie pour lier la sauce.",
+      "Bakisa nguba pilées en option, teká encore 5 minutes.",
+      "Salela na riz, fufu to chikwangue."
     ],
     "tags": [
       "courge",
@@ -3105,9 +3105,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "courge jaune en sauce"
   },
   "haricots-verts-palme": {
-    "title": "Haricots verts à l'huile de palme",
+    "title": "Haricots verts na mafuta ya palmier",
     "description": "haricots verts à mafuta ya palme : haricots frais sautés na aluboka mpe tomatisi — accompagnement vif, distinct ya madesu (haricots secs).",
-    "region": "Kinshasa & Ouest de la RDC",
+    "region": "Kinshasa mpe Ouest ya RDC",
     "imageAlt": "Haricots verts cuits à la poêle",
     "prepTime": "min. 15",
     "cookTime": "min. 20",
@@ -3121,10 +3121,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "50 ml ya mai"
     ],
     "steps": [
-      "Laver les haricots, les couper en tronçons si trop longs. Blanchir 4 minutes dans mai bouillante salée, égoutter.",
-      "Chauffer mafuta ya palme. Faire fondre aluboka, ajouter ail mpe tomatisi 5 minutes.",
-      "\"Incorporer les haricots mpe mai. Couvrir 8 à 10 minutes : ils doivent rester un peu croquants.\"",
-      "Saler, pimenter. Servir avec loso, mbisi ou nyama."
+      "Sukola madesu, les kata en tronçons si trop longs. Blanchir 4 minutes dans mai bouillante salée, égoutter.",
+      "Fútbisa mafuta ya palme. Bimasisa aluboka, bakisa ail mpe tomatisi 5 minutes.",
+      "\"Bakisa madesu mpe mai. Funga 8 à 10 minutes : ils doivent rester un peu croquants.\"",
+      "Tia muni, pimenter. Salela na riz, poisson to viande."
     ],
     "tags": [
       "haricots verts",
@@ -3139,7 +3139,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "ndagala-tomates": {
     "title": "Ndagala na tomatisi",
     "description": "ndagala aux tomatisi : petits poissons ya lac Kivu (frais ou séchés) kotumbami sima mijotés dans une sauce ya tomatisi — classique ya l'Est, ekeseni na kapenta / sambaza ya Katanga.",
-    "region": "Nord-Kivu & Sud-Kivu",
+    "region": "Nord-Kivu mpe Sud-Kivu",
     "imageAlt": "Petits poissons séchés de lac type ndagala",
     "prepTime": "min. 20",
     "cookTime": "min. 30",
@@ -3154,11 +3154,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "100 ml ya mai"
     ],
     "steps": [
-      "Si les ndagala sont séchés, les rincer rapidement deux ou trois fois puis bien les égoutter. Saler très peu.",
-      "Fútbisa la moitié ya mafuta mpe bimasisa mbisi 5 à 8 minutes. Réserver.",
-      "Ajouter le reste ya mafuta, faire fondre aluboka, puis incorporer ail, tomatisi mpe pili-pili.",
+      "Si les ndagala sont séchés, sukola rapidement deux to trois fois sima bien longola mai. Tia muni très peu.",
+      "Fútbisa la moitié ya mafuta mpe bimasisa mbisi 5 à 8 minutes. Tika na pembeni.",
+      "Bakisa oyo etikali ya mafuta, bimasisa aluboka, sima bakisa ail, tomatisi mpe pili-pili.",
       "Teká sauce 10 minutes, tema mai mpe zongisa délicatement les ndagala.",
-      "Mijoter na sanza 5 minutes. Servir avec bukari, loso, plantain ou fufu."
+      "Mijoter à découvert 5 minutes. Salela na bukari, riz, plantain to fufu."
     ],
     "tags": [
       "ndagala",
@@ -3171,9 +3171,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "ndagala na tomatisi — petits poissons ya Kivu"
   },
   "poisson-kivu-grille": {
-    "title": "Poisson du Kivu grillé",
+    "title": "Mbisi ya Kivu ya kotumba",
     "description": "mbisi ya lac Kivu grillé : mbisi entier mariné aux aromates puis grillé jusqu'à peau fumée — grillade ya l'Est, distincte ya braise ya Kinkole.",
-    "region": "Nord-Kivu & Sud-Kivu",
+    "region": "Nord-Kivu mpe Sud-Kivu",
     "imageAlt": "mbisi entier grillé, peau dorée",
     "prepTime": "min. 25 + ngonga 1 de marinade",
     "cookTime": "min. 30",
@@ -3187,10 +3187,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Pili-pili, muni mpe poivre"
     ],
     "steps": [
-      "Inciser mbisi. Mélanger aluboka râpé, ail, gingembre, citron, mafuta, muni, poivre mpe pili-pili.",
+      "Inciser mbisi. Balabala oignon râpé, ail, gingembre, citron, huile, sel, poivre mpe pili-pili.",
       "Enrober mbisi, farcir un peu la cavité mpe mariner au frais au moins 1 heure.",
-      "Griller sur braises moyennes 25 à 30 minutes en retournant mpe en badigeonnant ya jus.",
-      "Servir avec plantain, frites, loso ou ndagala en accompagnement ya sauce."
+      "Griller sur braises ya kati 25 à 30 minutes en retournant mpe en badigeonnant ya jus.",
+      "Salela na plantain, frites, riz to ndagala en accompagnement ya sauce."
     ],
     "tags": [
       "lac Kivu",
@@ -3205,7 +3205,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "kabambale": {
     "title": "Kabambale",
     "description": "kabambale : mbisi séché réhydraté puis ebilisami na aluboka mpe tomatisi — conserve ya bassin, distincte ya mbisi ya fumé frais en sauce.",
-    "region": "Bassin du Congo & Cuvette",
+    "region": "Bassin ya Congo mpe Cuvette",
     "imageAlt": "Gros mbisi-chat séché (kabambale)",
     "prepTime": "min. 30 + ngonga 1 de kobomba",
     "cookTime": "min. 40",
@@ -3219,10 +3219,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "250 ml ya mai"
     ],
     "steps": [
-      "Faire tremper le kabambale 45 à 60 minutes dans mai tièya, changer mai une fois. Égoutter mpe détailler.",
-      "Faire fondre aluboka dans mafuta, ajouter ail mpe tomatisi. Cuire 8 minutes.",
-      "Incorporer mbisi mpe mai. Mijoter 25 à 30 minutes à moto ya moke.",
-      "Goûter avant ya saler (le séché est souvent déjà salé). Pimenter. Servir avec loso, fufu ou chikwangue."
+      "Tia na mai le kabambale 45 à 60 minutes dans mai tièya, changer mai une fois. Égoutter mpe détailler.",
+      "Bimasisa aluboka na mafuta, bakisa ail mpe tomatisi. Teká 8 minutes.",
+      "Bakisa mbisi mpe mai. Mijoter 25 à 30 minutes à feu doux.",
+      "Goûter avant ya tia muni (le séché est souvent déjà salé). Pimenter. Salela na riz, fufu to chikwangue."
     ],
     "tags": [
       "kabambale",
@@ -3237,7 +3237,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "missole": {
     "title": "Missole",
     "description": "missole (misolè) : lamelles ya mbisi séché réhydratées puis mijotées en sauce courte — produit ya conserve ya quotidien, ekeseni na kabambale en pièces.",
-    "region": "Kinshasa & bassin du Congo",
+    "region": "Kinshasa mpe bassin ya Congo",
     "imageAlt": "mbisi séché en vente au marché",
     "prepTime": "min. 25 + min. 45 de kobomba",
     "cookTime": "min. 35",
@@ -3252,10 +3252,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1 c. à soupe ya jus ya citron, ya lingi"
     ],
     "steps": [
-      "Faire tremper le missole 30 à 45 minutes, rincer mpe égoutter. Citronner légèrement si le goût est très fort.",
+      "Tia na mai le missole 30 à 45 minutes, rincer mpe égoutter. Citronner moke si le goût est très fort.",
       "Bimasisa aluboka mpe ail na mafuta, ajouter tomatisi 6 à 8 minutes.",
-      "Incorporer le missole mpe mai. Mijoter 20 à 25 minutes à moto ya moke.",
-      "Rectifier le muni en dernier. Servir avec loso, fufu, plantain ou chikwangue."
+      "Bakisa le missole mpe mai. Mijoter 20 à 25 minutes à feu doux.",
+      "Rectifier muni en dernier. Salela na riz, fufu, plantain to chikwangue."
     ],
     "tags": [
       "missole",
@@ -3282,9 +3282,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     ],
     "steps": [
       "Sukola les patates douces. Les cuire entières en robe ya champs ou épluchées mpe coupées en gros morceaux.",
-      "Couvrir ya mai froide salée, porter à ébullition mpe cuire 25 à 35 minutes jusqu'à tendreté.",
-      "Égoutter. Servir nature, avec un filet ya mafuta, ou en accompagnement ya mbisi mpe sauces.",
-      "\"Variante : rôtir na four ou sur braises 40 minutes pour une peau caramélisée.\""
+      "Funga ya mai ya malili salée, bila tii ebukana mpe teká 25 à 35 minutes jusqu'à tendreté.",
+      "Égoutter. Salela nature, na un filet ya mafuta, to en accompagnement ya poisson mpe sauces.",
+      "\"Variante : rôtir na four to sur braises 40 minutes pour une peau caramélisée.\""
     ],
     "tags": [
       "mbala",
@@ -3297,7 +3297,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "mbala — patate douce"
   },
   "beignets-igname": {
-    "title": "Beignets d'igname",
+    "title": "Beignet ya mbala",
     "description": "beignets d'igname : igname râpée ou écrasée, assaisonnée mpe frite en galettes — goûter distinct ya l'igname bouillie mpe ya beignets ya manioc.",
     "region": "Na RDC mobimba",
     "imageAlt": "Beignets d'igname dorés",
@@ -3313,9 +3313,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "mafuta ya friture"
     ],
     "steps": [
-      "Râper l'igname finement ou la cuire à demi puis l'écraser. Essorer légèrement si très humide.",
-      "Mélanger avec l'œuf, la farine si besoin, mpe soit aluboka + muni (salé), soit sucre (doux).",
-      "Chauffer mafuta à feu moyen. Déposer ya cuillerées ya pâte. Aplatir légèrement.",
+      "Râper l'igname finement to la teká à demi sima l'écraser. Essorer moke si très humide.",
+      "Balabala na l'œuf, la farine soki esengeli, mpe soit oignon + sel (salé), soit sucre (doux).",
+      "Fútbisa mafuta à feu moyen. Tia ya cuillerées ya pâte. Aplatir moke.",
       "Frire 3 à 4 minutes par face jusqu'à doré. Égoutter sur papier.",
       "Salela chaud, nature ou elongo na une sauce ya tomatisi / pili-pili (version salée)."
     ],
@@ -3330,7 +3330,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "beignets d'igname"
   },
   "bananes-douces-vapeur": {
-    "title": "Bananes douces à la vapeur",
+    "title": "Banane ya mvuke",
     "description": "bananes douces na mvuke : bananes dessert cuites na mvuke jusqu'à fondre — goûter simple, distinct ya plantains (makemba / vapeur).",
     "region": "Na RDC mobimba",
     "imageAlt": "Bananes mûres cuites, servies en accompagnement",
@@ -3343,10 +3343,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Une noix ya beurre ou un filet ya mafuta, ya lingi"
     ],
     "steps": [
-      "Laver les bananes. Les cuire en robe (peau) ou épluchées, selon l'habitude ya foyer.",
-      "Disposer dans un panier vapeur au-dessus d'une mai frémissante.",
-      "Cuire 15 à 20 minutes jusqu'à ce qu'elles soient tendres.",
-      "Éplucher si cuites en robe. Servir tièya, nature ou avec un peu ya beurre / sucre."
+      "Sukola les bananes. Les teká en robe (peau) to épluchées, selon l'habitude ya foyer.",
+      "Tia dans un panier vapeur au-dessus d'une eau frémissante.",
+      "Teká 15 à 20 minutes jusqu'à ce qu'elles soient tendres.",
+      "Éplucher si cuites en robe. Salela tièya, nature to na un peu ya beurre / sucre."
     ],
     "tags": [
       "banane douce",
@@ -3377,12 +3377,12 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "mafuta ya friture"
     ],
     "steps": [
-      "Mélanger farine, sucre, muni mpe levure (ou baking powder). Ajouter l'œuf s'il y en a, mafuta mpe le liquide tièya jusqu'à une pâte souple.",
-      "Pétrir 5 minutes. Couvrir mpe laisser lever 45 minutes (ou reposer 20 minutes si baking powder).",
-      "Abaisser sur un plan fariné, découper en losanges ou rectangles d'environ 1 cm d'épaisseur.",
-      "Faire chauffer mafuta à feu moyen. Plonger les andazi sans surcharger.",
+      "Balabala farine, sucre, sel mpe levure (to baking powder). Bakisa l'œuf s'il y en a, mafuta mpe le liquide tièya jusqu'à une pâte souple.",
+      "Pétrir 5 minutes. Funga mpe tika lever 45 minutes (to reposer 20 minutes si baking powder).",
+      "Abaisser sur un plan fariné, dékata en losanges to rectangles d'pene 1 cm d'épaisseur.",
+      "Fútbisa mafuta à feu moyen. tia na kati les andazi kozanga kotonda mingi.",
       "Frire 2 à 3 minutes ya chaque côté jusqu'à une belle dorure. Égoutter.",
-      "Servir tièya, nature, au thé ou au café."
+      "Salela tièya, nature, au thé to au café."
     ],
     "tags": [
       "andazi",
@@ -3395,7 +3395,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "andazi / mandazi — beignets ya lac Tanganyika"
   },
   "mukeke-grille": {
-    "title": "Mukeke grillé",
+    "title": "Mukeke ya kotumba",
     "description": "mukeke grillé : gros mbisi ya lac Tanganyika mariné puis cuit au feu ou na four — geste ya fête mpe ya marché à l'Est (Kalemie, rives ya lac).",
     "region": "Haut-Katanga mpe Tanganyika",
     "imageAlt": "Gros mbisi du lac Tanganyika sur un marché près du port",
@@ -3412,12 +3412,12 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Quelques brins ya persil ou coriandre, ya lingi"
     ],
     "steps": [
-      "Rincer mbisi, le sécher. Inciser la chair sans traverser la peau.",
-      "Mélanger citron, ail, aluboka, mafuta, gingembre, muni, poivre mpe pili-pili. Badigeonner l'intérieur mpe l'extérieur. Laisser mariner 30 minutes.",
-      "Préparer un feu ya braises ou un four à 200 °C.",
-      "Griller 15 à 20 minutes ya chaque côté (ou 30–35 minutes na four), en badigeonnant ya marinade.",
-      "Vérifier que la chair se détache facilement. Parsemer d'herbes si disponibles.",
-      "Servir avec bugali, bukari, plantain ou loso, mpe une sauce ya tomatisi ou pili-pili à part."
+      "Rincer mbisi, le sécher. Inciser nyama ya mbuma sans traverser la peau.",
+      "Balabala citron, ail, oignon, huile, gingembre, sel, poivre mpe pili-pili. Badigeonner l'intérieur mpe l'extérieur. Tika mariner 30 minutes.",
+      "Bongisa un feu ya braises to four à 200 °C.",
+      "Griller 15 à 20 minutes ya chaque côté (to 30–35 minutes au four), en badigeonnant ya marinade.",
+      "Vérifier que nyama ya mbuma se détache facilement. Parsemer d'herbes si disponibles.",
+      "Salela na bugali, bukari, plantain to riz, mpe une sauce tomate to pili-pili à part."
     ],
     "tags": [
       "mukeke",
@@ -3430,9 +3430,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "mukeke grillé — mbisi ya lac Tanganyika"
   },
   "pilau-kivu": {
-    "title": "Pilau du Kivu",
+    "title": "Pilau ya Kivu",
     "description": "pilau (pilaw) : loso cuit dans un bouillon d'épices na nyama ou légumes — plat d'influence est-africaine très présent au Nord mpe Sud-Kivu.",
-    "region": "Nord-Kivu & Sud-Kivu",
+    "region": "Nord-Kivu mpe Sud-Kivu",
     "imageAlt": "Assiette de pilau, loso épicé",
     "prepTime": "min. 25",
     "cookTime": "min. 45",
@@ -3451,12 +3451,12 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "muni, poivre, pili-pili"
     ],
     "steps": [
-      "Faire revenir la nyama dans mafuta jusqu'à coloration. Réserver.",
-      "Dans la même marmite, fondre aluboka, ajouter ail, tomatisi mpe épices 5 minutes.",
-      "Remettre la nyama, couvrir d'un peu ya bouillon mpe mijoter 15 minutes.",
-      "Ajouter le loso, le reste ya liquide salé ; le niveau doit dépasser le loso d'un doigt.",
-      "Porter à ébullition, couvrir à moto ya moke 18–20 minutes sans remuer.",
-      "Laisser reposer 5 minutes couvert, égrener à la fourchette mpe servir."
+      "Bimasisa nyama na mafuta jusqu'à coloration. Tika na pembeni.",
+      "Dans la même marmite, fondre aluboka, bakisa ail, tomates mpe épices 5 minutes.",
+      "Remettre nyama, funga d'un peu ya bouillon mpe mijoter 15 minutes.",
+      "Bakisa le riz, oyo etikali ya liquide salé ; le niveau doit dépasser le riz d'un doigt.",
+      "Bila tii ebukana, funga à feu doux 18–20 minutes sans balabala.",
+      "Tika reposer 5 minutes couvert, égrener à la fourchette mpe salela."
     ],
     "tags": [
       "pilau",
@@ -3469,9 +3469,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "pilau — loso épicé ya Kivu"
   },
   "haricots-maharage": {
-    "title": "Maharage na tomatisi",
+    "title": "Madesu ya maharage",
     "description": "maharage : haricots rouges mijotés à la tomatisi mpe à aluboka — accompagnement quotidien au Kivu, souvent servi na ya bugali.",
-    "region": "Nord-Kivu & Sud-Kivu",
+    "region": "Nord-Kivu mpe Sud-Kivu",
     "imageAlt": "Haricots servis avec une pâte de maïs",
     "prepTime": "min. 15 (+ kobomba si secs)",
     "cookTime": "ngonga 1 min. 15",
@@ -3486,11 +3486,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "mai ou bouillon"
     ],
     "steps": [
-      "\"Si secs : cuire les haricots dans une grande mai jusqu'à tendreté (45–60 min). Égoutter en réservant un peu ya jus.\"",
-      "Faire fondre aluboka mpe ail dans mafuta, ajouter tomatisi mpe épices 8 minutes.",
-      "Incorporer les haricots mpe un peu ya jus. Mijoter 15–20 minutes à couvert.",
-      "Rectifier le muni. La sauce doit nappe les grains sans être trop liquide.",
-      "Servir avec bugali, loso ou plantain."
+      "\"Si secs : teká madesu dans une grande mai jusqu'à tendreté (45–60 min). Égoutter na kotika na pembeni un peu ya jus.\"",
+      "Bimasisa oignons mpe ail na mafuta, bakisa tomates mpe épices 8 minutes.",
+      "Bakisa madesu mpe un peu ya jus. Mijoter 15–20 minutes à couvert.",
+      "Rectifier muni. La sauce doit nappe les grains sans être trop liquide.",
+      "Salela na bugali, riz to plantain."
     ],
     "tags": [
       "maharage",
@@ -3503,9 +3503,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "maharage — haricots ya l'Est"
   },
   "chou-mijote-est": {
-    "title": "Chou mijoté de l'Est",
+    "title": "Chou ya kobila",
     "description": "chou mijoté : chou blanc revenu puis cuit na aluboka mpe tomatisi — légume simple ya quotidien à l'Est, servi na bugali ou loso.",
-    "region": "Nord-Kivu & Sud-Kivu",
+    "region": "Nord-Kivu mpe Sud-Kivu",
     "imageAlt": "Chou cuit servi à côté d'une pâte de maïs",
     "prepTime": "min. 15",
     "cookTime": "min. 25",
@@ -3519,10 +3519,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "80 ml ya mai"
     ],
     "steps": [
-      "Faire fondre aluboka mpe ail dans mafuta. Ajouter tomatisi 5 minutes.",
-      "Incorporer le chou, saler, poivrer. Remuer.",
-      "Ajouter mai, couvrir mpe mijoter 15–20 minutes jusqu'à tendreté désirée.",
-      "Découvrir 2 minutes si trop ya mai. Rectifier l'assaisonnement.",
+      "Bimasisa oignons mpe ail na mafuta. Bakisa tomates 5 minutes.",
+      "Bakisa le chou, tia muni, poivrer. Balabala.",
+      "Bakisa mai, funga mpe mijoter 15–20 minutes jusqu'à tendreté désirée.",
+      "Défunga 2 minutes si trop ya mai. Rectifier l'assaisonnement.",
       "Salela chaud elongo na bugali, loso ou nyama grillée."
     ],
     "tags": [
@@ -3538,7 +3538,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "sukuma-est": {
     "title": "Sukuma",
     "description": "sukuma (sukuma wiki) : feuilles type chou frisé ou verdure ya marché revenues à aluboka — légume express ya Kivu mpe ya l'Est swahilophone.",
-    "region": "Nord-Kivu & Sud-Kivu",
+    "region": "Nord-Kivu mpe Sud-Kivu",
     "imageAlt": "Sukuma wiki servi avec une pâte de maïs",
     "prepTime": "min. 15",
     "cookTime": "min. 15",
@@ -3551,10 +3551,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "muni, poivre, pili-pili"
     ],
     "steps": [
-      "Faire revenir aluboka mpe ail dans mafuta jusqu'à translucides.",
-      "Ajouter tomatisi s'il y en a, 3 minutes.",
-      "Incorporer le sukuma encore humide ya lavage. Couvrir 5–8 minutes.",
-      "Remuer, saler, poivrer. matiti doivent rester vertes mpe tendres, pas noires.",
+      "Bimasisa oignon mpe ail na mafuta jusqu'à translucides.",
+      "Bakisa tomatisi s'il y en a, 3 minutes.",
+      "Bakisa le sukuma encore humide ya lavage. Funga 5–8 minutes.",
+      "Balabala, tia muni, poivrer. matiti doivent rester vertes mpe tendres, pas noires.",
       "Salela aussitôt elongo na bugali ou loso."
     ],
     "tags": [
@@ -3568,9 +3568,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "sukuma wiki — feuilles vertes ya l'Est"
   },
   "tilapia-bugali": {
-    "title": "Tilapia au bugali",
+    "title": "Tilapia na bugali",
     "description": "tilapia grillé ou poêlé servi na ya bugali — duo mbisi ya lac + pâte ya maïs courant au Kivu mpe sur les grands lacs.",
-    "region": "Nord-Kivu & Sud-Kivu",
+    "region": "Nord-Kivu mpe Sud-Kivu",
     "imageAlt": "Tilapia servi avec une pâte de maïs type bugali",
     "prepTime": "min. 20",
     "cookTime": "min. 30",
@@ -3584,11 +3584,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Bugali pour servir (voir fiche bugali)"
     ],
     "steps": [
-      "Inciser les tilapias, les frotter ya citron, ail, muni, poivre mpe pili-pili. Reposer 15 minutes.",
-      "Huiler mpe faire griller ou poêler 8–12 minutes ya chaque côté selon l'épaisseur.",
-      "Faire revenir rapidement les rondelles d'aluboka à part, ya lingi.",
-      "Préparer le bugali pendant la cuisson ya mbisi.",
-      "Servir mbisi sur ou à côté ya bugali, aluboka mpe citron à part."
+      "Inciser les tilapias, les frotter ya citron, ail, sel, poivre mpe pili-pili. Reposer 15 minutes.",
+      "Huiler mpe kotumba to poêler 8–12 minutes ya chaque côté selon l'épaisseur.",
+      "Bimasisa rapidement les rondelles d'oignon à part, ya lingi.",
+      "Bongisa le bugali na koteka ya poisson.",
+      "Salela mbisi sur to à côté ya bugali, oignons mpe citron à part."
     ],
     "tags": [
       "tilapia",
@@ -3616,11 +3616,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Jus d'un demi-citron, ya lingi"
     ],
     "steps": [
-      "Vérifier que les mbinzo sont propres (sans résidus d'arbre). Les rincer rapidement mpe égoutter.",
-      "Faire chauffer mafuta, revenir aluboka mpe ail 2 minutes.",
-      "Ajouter les mbinzo, saler, poivrer, pimenter. Remuer sur moto ya makasi 8–12 minutes jusqu'à ce qu'elles soient bien saisies.",
+      "Vérifier que les mbinzo sont propres (sans résidus d'arbre). sukola rapidement mpe égoutter.",
+      "Fútbisa mafuta, revenir oignon mpe ail 2 minutes.",
+      "Bakisa les mbinzo, tia muni, poivrer, pimenter. Balabala sur feu vif 8–12 minutes jusqu'à ce qu'elles soient bien saisies.",
       "Citronner en fin ya cuisson si désiré.",
-      "Servir avec bidia / bukari, chikwangue ou loso, mpe un légume vert."
+      "Salela na bidia / bukari, chikwangue to riz, mpe un légume vert."
     ],
     "tags": [
       "mbinzo",
@@ -3647,9 +3647,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "steps": [
       "Choisir ya mbala fermes, ya calibre moyen.",
       "\"Sous la braise : les enfouir dans les cendres chaudes 35–45 minutes en les retournant.\"",
-      "\"na four : 200 °C, 40 minutes environ, éventuellement badigeonnées d'un peu ya mafuta.\"",
-      "Vérifier la tendreté avec la pointe d'un couteau.",
-      "Fendre, saler légèrement, servir nature ou avec une sauce."
+      "\"na four : 200 °C, 40 minutes pene, éventuellement badigeonnées d'un peu ya mafuta.\"",
+      "Vérifier la tendreté na la pointe d'un couteau.",
+      "Fendre, tia muni moke, salela nature to na une sauce."
     ],
     "tags": [
       "mbala",
@@ -3680,11 +3680,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Mai"
     ],
     "steps": [
-      "\"Blanchir les pieds 10 minutes dans une grande mai. Égoutter, rincer.\"",
-      "Faire revenir aluboka mpe ail dans mafuta, ajouter tomatisi 5 minutes.",
-      "Ajouter les pieds, couvrir ya mai, laurier, muni. Mijoter à couvert 1 h 30 à 2 h jusqu'à tendreté.",
-      "\"Éplucher les pommes ya terre, les couper en gros morceaux. Les ajouter 25–30 minutes avant la fin.\"",
-      "Rectifier muni mpe piment. La sauce doit nappe sans être trop liquide.",
+      "\"Blanchir makolo 10 minutes dans une grande mai. Égoutter, rincer.\"",
+      "Bimasisa oignons mpe ail na mafuta, bakisa tomatisi 5 minutes.",
+      "Bakisa makolo, funga ya mai, laurier, sel. Mijoter à couvert 1 h 30 à 2 h jusqu'à tendreté.",
+      "\"Éplucher les pommes ya terre, les kata en gros morceaux. Les bakisa 25–30 minutes avant la fin.\"",
+      "Rectifier sel mpe piment. La sauce doit nappe sans être trop liquide.",
       "Salela chaud, elongo na bidia / bukari ou ya pain."
     ],
     "tags": [
@@ -3715,12 +3715,12 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "muni, poivre, pili-pili"
     ],
     "steps": [
-      "Assaisonner la chèvre (muni, poivre, ail écrasé, gingembre). Reposer 20 minutes.",
-      "Faire dorer les morceaux dans mafuta. Réserver.",
-      "Faire fondre aluboka, ajouter tomatisi 8 minutes.",
-      "Remettre la nyama, verser mai. Couvrir mpe mijoter 1 h à 1 h 15 à moto ya moke.",
-      "Rectifier l'assaisonnement. La nyama doit se détacher facilement.",
-      "Servir avec bidia / bukari, loso ou chikwangue."
+      "Bongisa monoko la chèvre (sel, poivre, ail écrasé, gingembre). Reposer 20 minutes.",
+      "Bimasisa biteni na mafuta. Tika na pembeni.",
+      "Bimasisa aluboka, bakisa tomatisi 8 minutes.",
+      "Remettre nyama, tema mai. Funga mpe mijoter 1 h à 1 h 15 à feu doux.",
+      "Rectifier l'assaisonnement. nyama doit se détacher facilement.",
+      "Salela na bidia / bukari, riz to chikwangue."
     ],
     "tags": [
       "ntaba",
@@ -3749,11 +3749,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Mai"
     ],
     "steps": [
-      "\"Si secs : cuire les haricots jusqu'à tendreté (45–60 min). Égoutter en réservant ya jus.\"",
-      "Faire revenir aluboka dans mafuta, ajouter tomatisi 6 minutes.",
-      "Incorporer nguba mikuatami mpe un peu ya jus. Remuer jusqu'à une sauce crémeuse.",
-      "Ajouter les haricots. Mijoter 15–20 minutes à moto ya moke.",
-      "Saler, pimenter. Servir avec bidia, loso ou plantain."
+      "\"Si secs : teká madesu jusqu'à tendreté (45–60 min). Égoutter na kotika na pembeni ya jus.\"",
+      "Bimasisa oignons na mafuta, bakisa tomates 6 minutes.",
+      "Bakisa nguba pilées mpe un peu ya jus. Balabala jusqu'à une sauce crémeuse.",
+      "Bakisa madesu. Mijoter 15–20 minutes à feu doux.",
+      "Tia muni, pimenter. Salela na bidia, riz to plantain."
     ],
     "tags": [
       "haricots",
@@ -3784,10 +3784,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     ],
     "steps": [
       "Tremper mbisi 30–40 minutes. Rincer, égoutter. Citronner si le goût est très fort.",
-      "Faire revenir aluboka mpe ail, ajouter tomatisi 8 minutes.",
-      "Ajouter mbisi mpe mai. Mijoter doucement 20–25 minutes.",
-      "Saler en fin (le fumé est déjà salé). Pimenter.",
-      "Servir avec bidia / bukari, chikwangue ou loso."
+      "Bimasisa oignons mpe ail, bakisa tomates 8 minutes.",
+      "Bakisa mbisi mpe mai. Mijoter doucement 20–25 minutes.",
+      "Tia muni en fin (le fumé est déjà salé). Pimenter.",
+      "Salela na bidia / bukari, chikwangue to riz."
     ],
     "tags": [
       "poisson fumé",
@@ -3799,7 +3799,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "mbisi ya fumé — sauce courte ya Kasaï"
   },
   "pommes-sautees-katanga": {
-    "title": "Pommes de terre sautées",
+    "title": "Pommes ya kosala na Katanga",
     "description": "pommes ya terre sautées : cubes dorés à aluboka — accompagnement ya quotidien à Lubumbashi mpe au Katanga monene.",
     "region": "Katanga monene",
     "imageAlt": "Pommes de terre dans un plat congolais",
@@ -3813,11 +3813,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Persil ou aluboka vert, ya lingi"
     ],
     "steps": [
-      "Éplucher les pommes ya terre, les couper en cubes. Blanchir 8–10 minutes, égoutter.",
-      "Faire chauffer mafuta. Dorer les cubes à feu moyen en remuant.",
-      "Ajouter aluboka, poursuivre jusqu'à ce qu'ils soient fondants mpe les pommes bien dorées.",
-      "Saler, poivrer. Parsemer d'herbes si disponibles.",
-      "Servir avec nyama grillée, mbisi ou un légume (matembele, sombe)."
+      "Éplucher les pommes ya terre, les kata en cubes. Blanchir 8–10 minutes, égoutter.",
+      "Fútbisa mafuta. Dorer les cubes à feu moyen na kobabalala.",
+      "Bakisa aluboka, poursuivre jusqu'à ce qu'ils soient fondants mpe les pommes bien dorées.",
+      "Tia muni, poivrer. Parsemer d'herbes si disponibles.",
+      "Salela na viande grillée, poisson to un légume (matembele, sombe)."
     ],
     "tags": [
       "pommes de terre",
@@ -3846,11 +3846,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Brochettes en bois"
     ],
     "steps": [
-      "Couper la nyama en cubes réguliers.",
-      "Mélanger aluboka, ail, gingembre, mafuta, citron, muni, poivre, piment. Enrober. Mariner 1 h au frais.",
+      "Kata nyama en cubes réguliers.",
+      "Balabala oignon, ail, gingembre, huile, citron, sel, poivre, piment. Enrober. Mariner 1 h au frais.",
       "Enfiler sur les brochettes sans trop serrer.",
-      "Griller sur braises moyennes 12–15 minutes en retournant.",
-      "Servir avec aluboka crus, pili-pili, etazi / andazi, ou frites."
+      "Griller sur braises ya kati 12–15 minutes en retournant.",
+      "Salela na oignons crus, pili-pili, etazi / andazi, to frites."
     ],
     "tags": [
       "brochettes",
@@ -3863,7 +3863,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "brochettes Lubumbashi — street food katanga"
   },
   "viande-sechee-tomates": {
-    "title": "Viande séchée na tomatisi",
+    "title": "Nyama ya kokauka na tomatisi",
     "description": "nyama séchée aux tomatisi : morceaux réhydratés puis mijotés — protéine ya conserve ya Katanga monene mpe ya plateaux.",
     "region": "Katanga monene",
     "imageAlt": "Table de repas congolais avec sauces et accompagnements",
@@ -3879,11 +3879,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "400 ml ya mai"
     ],
     "steps": [
-      "Tremper la nyama 45–60 minutes dans ya mai tièya. Rincer, découper en morceaux.",
-      "Faire revenir aluboka mpe ail, ajouter tomatisi 8 minutes.",
-      "Ajouter la nyama mpe mai. Mijoter à couvert 35–45 minutes jusqu'à tendreté.",
-      "Rectifier le muni (souvent déjà salée). Pimenter.",
-      "Servir avec bukari, pommes ya terre ou loso."
+      "Tremper nyama 45–60 minutes dans ya mai tièya. Rincer, dékata na biteni.",
+      "Bimasisa oignons mpe ail, bakisa tomates 8 minutes.",
+      "Bakisa nyama mpe mai. Mijoter à couvert 35–45 minutes jusqu'à tendreté.",
+      "Rectifier muni (souvent déjà salée). Pimenter.",
+      "Salela na bukari, pommes ya terre to riz."
     ],
     "tags": [
       "viande séchée",
@@ -3912,11 +3912,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "300 ml ya mai pour la sauce"
     ],
     "steps": [
-      "Cuire le loso à mai salée. Égoutter, réserver au chaud.",
-      "Faire dorer la nyama dans mafuta. Réserver.",
-      "Faire fondre aluboka mpe ail, ajouter tomatisi 8 minutes.",
-      "Remettre la nyama, verser mai. Mijoter 25–30 minutes.",
-      "Assaisonner. Servir la sauce sur ou à côté ya loso."
+      "Teká le riz à mai salée. Égoutter, tika na pembeni au chaud.",
+      "Bimasisa nyama na mafuta. Tika na pembeni.",
+      "Bimasisa oignons mpe ail, bakisa tomates 8 minutes.",
+      "Remettre nyama, tema mai. Mijoter 25–30 minutes.",
+      "Bongisa monoko. Salela la sauce sur to à côté ya riz."
     ],
     "tags": [
       "loso",
@@ -3929,9 +3929,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "loso sauce ya tomatisi — Katanga"
   },
   "sambousa-pommes": {
-    "title": "Sambousa aux pommes de terre",
+    "title": "Sambousa ya pommes",
     "description": "sambousa aux pommes ya terre : chaussons frits farcis — encas ya rue à Goma mpe dans l'Est, ndeko ya samosas d'Afrique ya l'Est.",
-    "region": "Nord-Kivu & Sud-Kivu",
+    "region": "Nord-Kivu mpe Sud-Kivu",
     "imageAlt": "Vendeur de sambousa aux pommes de terre à Goma",
     "prepTime": "min. 40",
     "cookTime": "min. 25",
@@ -3946,9 +3946,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "mafuta ya friture"
     ],
     "steps": [
-      "Cuire les pommes ya terre, les écraser grossièrement.",
-      "Faire revenir aluboka mpe ail, ajouter épices, puis les pommes. Assaisonner. Laisser refroidir.",
-      "Découper la pâte en rectangles. Déposer une cuillerée ya farce, plier en triangle. Sceller à mai.",
+      "Teká les pommes ya terre, les écraser grossièrement.",
+      "Bimasisa oignon mpe ail, bakisa épices, sima les pommes. Bongisa monoko. Tika refroidir.",
+      "Dékata la pâte en rectangles. Tia une cuillerée ya farce, plier en triangle. Sceller à mai.",
       "Frire à feu moyen jusqu'à dorure (2–3 min par face). Égoutter.",
       "Salela chauds, éventuellement elongo na une sauce ya tomatisi ou pili-pili."
     ],
@@ -3980,11 +3980,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "250 ml ya mai"
     ],
     "steps": [
-      "Faire dorer les morceaux ya bœuf dans mafuta. Réserver.",
-      "Dans la même marmite, faire revenir aluboka mpe ail, ajouter tomatisi jusqu'à sauce epaisse.",
-      "Remettre la nyama, verser la moambe mpe mai. Couvrir.",
-      "Mijoter à moto ya moke 1 h 15 à 1 h 30 en remuant, jusqu'à ce que la nyama soit tendre mpe la sauce nappe.",
-      "Rectifier muni mpe piment. Servir avec loso, fufu ou chikwangue."
+      "Bimasisa biteni ya bœuf na mafuta. Tika na pembeni.",
+      "Dans la même marmite, bimasisa oignons mpe ail, bakisa tomatisi jusqu'à sauce épaisse.",
+      "Remettre nyama, tema la moambe mpe mai. Funga.",
+      "Mijoter à feu doux 1 h 15 à 1 h 30 na kobabalala, tii nyama soit tendre mpe la sauce nappe.",
+      "Rectifier sel mpe piment. Salela na riz, fufu to chikwangue."
     ],
     "tags": [
       "moambe",
@@ -4015,11 +4015,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Mai"
     ],
     "steps": [
-      "Laver mpe hacher finement matiti (ou utiliser un pondu déjà pilé). Ébouillanter brièvement si elles sont très amères.",
-      "Faire revenir aluboka mpe ail dans mafuta ya palme. Ajouter tomatisi s'il y en a.",
-      "Incorporer le pondu, bien l'enrober ya mafuta, mouiller d'un peu ya mai. Couvrir mpe mijoter 45 minutes à moto ya moke en remuant.",
-      "Ajouter mbisi (frais déjà salé, ou fumé en morceaux) mpe le cube. Poursuivre 25 à 35 minutes jusqu'à texture crémeuse.",
-      "Rectifier l'assaisonnement. Servir avec fufu, chikwangue ou loso."
+      "Sukola mpe kata finement matiti (to utiliser un pondu déjà pilé). Ébouillanter brièvement si elles sont très amères.",
+      "Bimasisa oignons mpe ail na mafuta ya palme. Bakisa tomatisi s'il y en a.",
+      "Bakisa le pondu, bien l'enrober ya mafuta, mouiller d'un peu ya mai. Funga mpe mijoter 45 minutes à feu doux na kobabalala.",
+      "Bakisa mbisi (frais déjà salé, to fumé na biteni) mpe le cube. Poursuivre 25 à 35 minutes jusqu'à texture crémeuse.",
+      "Rectifier l'assaisonnement. Salela na fufu, chikwangue to riz."
     ],
     "tags": [
       "pondu",
@@ -4049,11 +4049,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "700 ml ya mai pour le loso"
     ],
     "steps": [
-      "Faire dorer mbisi assaisonné dans mafuta. Réserver.",
-      "Dans la même marmite, faire fondre aluboka mpe ail, ajouter tomatisi 8 minutes.",
+      "Bimasisa mbisi assaisonné na mafuta. Tika na pembeni.",
+      "Dans la même marmite, bimasisa oignons mpe ail, bakisa tomatisi 8 minutes.",
       "Remettre mbisi, mouiller d'un demi-verre ya mai, mijoter 10 minutes à couvert.",
-      "À part (ou dans une seconde marmite), cuire le loso dans mai salée jusqu'à absorption.",
-      "Servir le loso nappé ya sauce mpe ya mbisi, ou mélanger doucement en fin ya cuisson si l'on veut un plat unique."
+      "À part (to dans une seconde marmite), teká le riz dans mai salée jusqu'à absorption.",
+      "Salela le riz nappé ya sauce mpe ya poisson, to balabala doucement en fin ya cuisson si l'on veut un plat unique."
     ],
     "tags": [
       "loso na mbisi",
@@ -4068,7 +4068,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "ngolo-grille": {
     "title": "Ngolo grillé",
     "description": "ngolo grillé : mbisi-chat mariné puis cuit sur braises — geste ya braise, distinct ya la pepe soupe ya ngolo.",
-    "region": "Kinshasa & bassin du Congo",
+    "region": "Kinshasa mpe bassin ya Congo",
     "imageAlt": "mbisi-chat africain (Clarias), espèce du ngolo",
     "prepTime": "min. 25 + min. 30 de marinade",
     "cookTime": "min. 25",
@@ -4082,11 +4082,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1 cube ya bouillon, émietté (ya lingi)"
     ],
     "steps": [
-      "Inciser la chair. Mélanger aluboka, ail, citron, mafuta, muni, poivre, pili-pili mpe cube. Enrober mbisi. Mariner 30 minutes au frais.",
-      "Préparer ya braises moyennes (ou un gril très chaud).",
+      "Inciser nyama ya mbuma. Balabala oignon, ail, citron, huile, sel, poivre, pili-pili mpe cube. Enrober mbisi. Mariner 30 minutes au frais.",
+      "Bongisa ya braises ya kati (to grille ya moto mingi).",
       "Griller mbisi 10 à 14 minutes par côté selon l'épaisseur, en badigeonnant ya marinade.",
-      "La chair doit se détacher facilement sans être sèche.",
-      "Servir avec aluboka crus, pili-pili, chikwangue, plantain ou loso."
+      "nyama ya mbuma doit se détacher facilement sans être sèche.",
+      "Salela na oignons crus, pili-pili, chikwangue, plantain to riz."
     ],
     "tags": [
       "ngolo",
@@ -4101,12 +4101,12 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "crevettes-fleuve": {
     "title": "Crevettes ya ebale",
     "description": "crevettes ya Congo en sauce ya tomatisi mpe aluboka — bilei ya bassin fluvial, plus rare dans les catalogues mais courant quand le marché en a.",
-    "region": "Basen ya Congo",
+    "region": "Bassin ya Congo",
     "imageAlt": "Crevettes mijotées en sauce, illustration du plat",
     "prepTime": "min. 20",
     "cookTime": "min. 30",
     "ingredients": [
-      "600 g ya crevettes ya mai douce (ou crevettes moyennes décortiquées)",
+      "600 g ya crevettes ya mai douce (ou crevettes ya kati décortiquées)",
       "Aluboka 2, mikatami",
       "3 tomatisi, mibetami",
       "3 mikolo ya ail",
@@ -4116,11 +4116,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Jus d'un demi-citron (ya lingi)"
     ],
     "steps": [
-      "Nettoyer les crevettes (ôter le boyau). Les saler légèrement.",
-      "Faire revenir aluboka mpe ail dans mafuta, ajouter tomatisi 8 minutes.",
-      "Incorporer les crevettes, pili-pili mpe mai. Mijoter 12 à 15 minutes à feu moyen — elles doivent rester tendres.",
-      "Rectifier le muni. Un filet ya citron en fin ya cuisson relève le goût.",
-      "Servir avec loso, chikwangue ou plantain."
+      "Nettoyer les crevettes (ôter le boyau). Les tia muni moke.",
+      "Bimasisa oignons mpe ail na mafuta, bakisa tomatisi 8 minutes.",
+      "Bakisa les crevettes, pili-pili mpe mai. Mijoter 12 à 15 minutes à feu moyen — elles doivent rester tendres.",
+      "Rectifier muni. Un filet ya citron en fin ya cuisson relève le goût.",
+      "Salela na riz, chikwangue to plantain."
     ],
     "tags": [
       "crevettes",
@@ -4151,8 +4151,8 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "4 ndunda ya banane monene (ou papier cuisson + papier alu)"
     ],
     "steps": [
-      "Mélanger tous les légumes avec mafuta, le muni, le poivre, pili-pili mpe le cube émietté.",
-      "Assouplir matiti ya bananier au-dessus d'une flamme ou na mvuke.",
+      "Balabala tous les légumes na mafuta, muni, le poivre, pili-pili mpe le cube émietté.",
+      "Assouplir matiti ya bananier au-dessus d'une flamme to à la vapeur.",
       "Répartir la farce en 4 papillotes. Fermer hermétiquement.",
       "Teká na mvuke to na four à 180 °C na 35 à 40 minutes.",
       "Salela les liboke ouverts à table, elongo na loso ou chikwangue."
@@ -4186,10 +4186,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "8 brochettes en bois, trempées"
     ],
     "steps": [
-      "Mélanger aluboka râpé, ail, gingembre, citron, mafuta, muni, poivre mpe pili-pili. Enrober la nyama. Mariner 1 h au frais.",
-      "Enfiler 4 à 5 cubes par brochette, sans trop serrer. Alterner avec ya rondelles d'aluboka si désiré.",
-      "Griller sur braises moyennes 15 à 20 minutes en retournant, jusqu'à croûte fumée mpe cœur encore juteux.",
-      "Servir avec aluboka cru, sauce pili-pili, frites ou pain."
+      "Balabala oignon râpé, ail, gingembre, citron, huile, sel, poivre mpe pili-pili. Enrober nyama. Mariner 1 h au frais.",
+      "Enfiler 4 à 5 cubes par brochette, sans trop serrer. Alterner na ya rondelles d'oignon si désiré.",
+      "Griller sur braises ya kati 15 à 20 minutes en retournant, jusqu'à croûte fumée mpe cœur encore juteux.",
+      "Salela na oignon cru, sauce pili-pili, frites to pain."
     ],
     "tags": [
       "brochettes",
@@ -4219,9 +4219,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "8 brochettes en bois, trempées"
     ],
     "steps": [
-      "Mélanger aluboka, ail, citron, mafuta, paprika, muni, poivre mpe pili-pili. Enrober le soso. Mariner 45 minutes.",
+      "Balabala oignon, ail, citron, huile, paprika, sel, poivre mpe pili-pili. Enrober soso. Mariner 45 minutes.",
       "Enfiler les cubes. Essuyer l'excès ya marinade pour qu'ils grillent bien.",
-      "Griller 12 à 15 minutes sur braises moyennes en tournant souvent — la chair doit rester moelleuse.",
+      "Griller 12 à 15 minutes sur braises ya kati en tournant souvent — nyama ya mbuma doit rester moelleuse.",
       "Salela aussitôt elongo na aluboka, pili-pili mpe frites ou loso."
     ],
     "tags": [
@@ -4252,11 +4252,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1 cube ya bouillon, ya lingi"
     ],
     "steps": [
-      "Préparer la marinade (aluboka râpé, ail, gingembre, citron, mafuta, muni, poivre, pili-pili, cube).",
+      "Bongisa la marinade (oignon râpé, ail, gingembre, citron, huile, sel, poivre, pili-pili, cube).",
       "Enrober le porc mpe mariner au frais au moins 2 heures.",
-      "Précuire 15 minutes à la marmite avec un fond ya mai mpe la marinade, pour attendrir.",
-      "Égoutter puis griller sur braises moyennes 25 à 30 minutes en badigeonnant, jusqu'à croûte dorée mpe chair cuite.",
-      "Servir avec aluboka cru, sauce pili-pili, frites ou plantain."
+      "Préteká 15 minutes à la marmite na un fond ya mai mpe la marinade, pour attendrir.",
+      "Égoutter sima griller sur braises ya kati 25 à 30 minutes en badigeonnant, jusqu'à croûte dorée mpe chair cuite.",
+      "Salela na oignon cru, sauce pili-pili, frites to plantain."
     ],
     "tags": [
       "porc",
@@ -4269,7 +4269,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "porc grillé — kotumba"
   },
   "tripes-mijotees": {
-    "title": "Tripes mijotées",
+    "title": "Matumbo ya kobila",
     "description": "tripes mijotées à la tomatisi mpe à aluboka — plat d'abats ya quotidien / street food kinshasaise, longuement cuit.",
     "region": "Kinshasa",
     "imageAlt": "Tripes mijotées en sauce, illustration du plat",
@@ -4286,11 +4286,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1,5 l ya mai"
     ],
     "steps": [
-      "Blanchir les tripes 10 minutes dans une grande mai. Égoutter, rincer.",
-      "Les couvrir ya mai fraîche, saler légèrement, ajouter le laurier. Mijoter 1 h 15 à 1 h 30 jusqu'à tendreté. Égoutter en réservant un peu ya bouillon.",
-      "Faire revenir aluboka mpe ail dans mafuta, ajouter tomatisi 8 minutes.",
-      "Incorporer les tripes mpe un peu ya bouillon. Mijoter encore 20 à 25 minutes. Pimenter.",
-      "Servir avec loso, frites, pain ou chikwangue."
+      "Blanchir les tripes 10 minutes dans une grande eau. Égoutter, rincer.",
+      "Les funga ya mai fraîche, tia muni moke, bakisa le laurier. Mijoter 1 h 15 à 1 h 30 jusqu'à tendreté. Égoutter na kotika na pembeni un peu ya bouillon.",
+      "Bimasisa oignons mpe ail na mafuta, bakisa tomatisi 8 minutes.",
+      "Bakisa les tripes mpe un peu ya bouillon. Mijoter encore 20 à 25 minutes. Pimenter.",
+      "Salela na riz, frites, pain to chikwangue."
     ],
     "tags": [
       "tripes",
@@ -4321,11 +4321,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "3 l ya mai pour les pâtes"
     ],
     "steps": [
-      "Faire revenir aluboka mpe ail dans mafuta. Ajouter la nyama hachée mpe la faire colorer (ou réserver les sardines pour la fin).",
-      "Incorporer tomatisi, le cube, muni, poivre mpe pili-pili. Mijoter 15 minutes jusqu'à sauce epaisse.",
-      "Cuire les spaghetti al dente dans une grande mai salée. Égoutter.",
-      "Mélanger pâtes mpe sauce (ajouter les sardines émiettées à ce moment si on les utilise).",
-      "Salela chaud, éventuellement elongo na un œuf au plat ou ya pili-pili."
+      "Bimasisa oignons mpe ail na mafuta. Bakisa nyama hachée mpe la faire colorer (to tika na pembeni les sardines pour la fin).",
+      "Bakisa tomatisi, le cube, sel, poivre mpe pili-pili. Mijoter 15 minutes jusqu'à sauce épaisse.",
+      "Teká les spaghetti al dente dans une grande eau salée. Égoutter.",
+      "Balabala pâtes mpe sauce (bakisa les sardines émiettées à ce moment si on les utilise).",
+      "Salela chaud, éventuellement elongo na un œuf na plat ou ya pili-pili."
     ],
     "tags": [
       "spaghetti",
@@ -4352,10 +4352,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Pili-pili pour servir"
     ],
     "steps": [
-      "Éplucher les patates douces. Les couper en bâtonnets ou en rondelles d'environ 1 cm.",
-      "\"ya lingi : les rincer mpe bien les sécher pour une friture plus croustillante.\"",
-      "Chauffer mafuta à feu moyen. Frire par petites quantités 6 à 10 minutes jusqu'à doré.",
-      "Égoutter sur papier. Saler aussitôt. Servir avec pili-pili ou une sauce ya tomatisi."
+      "Éplucher les patates douces. Les kata en bâtonnets to en rondelles d'pene 1 cm.",
+      "\"ya lingi : sukola mpe bien les sécher pour une friture plus croustillante.\"",
+      "Fútbisa mafuta à feu moyen. Frire par petites quantités 6 à 10 minutes jusqu'à doré.",
+      "Égoutter sur papier. Tia muni aussitôt. Salela na pili-pili to une sauce tomate."
     ],
     "tags": [
       "patate douce",
@@ -4370,7 +4370,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "fufu-plantain": {
     "title": "Fufu ya libuma",
     "description": "fufu ya plantain : plantains bouillis puis pilés en pâte ya pete — féculent ya bassin / Cuvette, cousin ya lituma mpe ya fufu ya manioc.",
-    "region": "Cuvette ya centrale",
+    "region": "Cuvette ya kati",
     "imageAlt": "Foutou / fufu de banane plantain en boule",
     "prepTime": "min. 10",
     "cookTime": "min. 35",
@@ -4380,10 +4380,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1 c. à café ya muni"
     ],
     "steps": [
-      "Éplucher les plantains. Les couper en tronçons. Les cuire dans une mai légèrement salée 20 à 25 minutes jusqu'à tendreté.",
+      "Éplucher les plantains. Les kata en tronçons. Les teká dans une eau moke salée 20 à 25 minutes jusqu'à tendreté.",
       "Égoutter en gardant un peu ya mai ya cuisson.",
-      "Piler au mortier (ou robot) en ajoutant mai chaude petit à petit, jusqu'à une pâte ya pete mpe élastique.",
-      "Former ya baboule. Servir aussitôt avec sauce, mbisi ou nyama."
+      "Piler au mortier (to robot) en ajoutant mai ya moto petit à petit, jusqu'à une pâte lisse mpe élastique.",
+      "Former ya boules. Salela aussitôt na sauce, poisson to viande."
     ],
     "tags": [
       "fufu",
@@ -4396,7 +4396,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "fufu ya plantain — pâte banane"
   },
   "manioc-frites": {
-    "title": "Manioc frit (bâtons)",
+    "title": "Manioc ya kokalinga",
     "description": "manioc frit en bâtonnets : manioc précuit puis doré à mafuta — accompagnement / street food, ekeseni na manioc grillé mpe ya beignets ya manioc.",
     "region": "Na RDC mobimba",
     "imageAlt": "Bâtonnets de manioc frits",
@@ -4409,10 +4409,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Pili-pili pour servir"
     ],
     "steps": [
-      "Éplucher le manioc, retirer la fibre centrale, couper en bâtonnets.",
-      "Cuire 15 à 20 minutes dans une mai salée jusqu'à tendreté sans se défaire. Égoutter mpe sécher.",
-      "Chauffer mafuta. Frire les bâtonnets par petites quantités 5 à 8 minutes jusqu'à doré.",
-      "Égoutter, saler. Servir chaud avec pili-pili ou mbisi grillé."
+      "Éplucher le manioc, longola la fibre centrale, kata en bâtonnets.",
+      "Teká 15 à 20 minutes dans une eau salée jusqu'à tendreté sans se défaire. Égoutter mpe sécher.",
+      "Fútbisa mafuta. Frire les bâtonnets par petites quantités 5 à 8 minutes jusqu'à doré.",
+      "Égoutter, tia muni. Salela chaud na pili-pili to poisson grillé."
     ],
     "tags": [
       "manioc",
@@ -4425,9 +4425,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "manioc frit — bâtonnets"
   },
   "mais-grille": {
-    "title": "Maïs grillé",
+    "title": "Maïs ya kotumba",
     "description": "maïs grillé : épis grillés sur braises jusqu'à grains fumés — encas ya rue mpe d'Est, distinct ya la bouillie ya maïs.",
-    "region": "Nord-Kivu & Sud-Kivu",
+    "region": "Nord-Kivu mpe Sud-Kivu",
     "imageAlt": "Épis de maïs grillés",
     "prepTime": "min. 5",
     "cookTime": "min. 20",
@@ -4438,9 +4438,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Pili-pili ou citron pour servir"
     ],
     "steps": [
-      "Retirer une partie ya spathes si besoin, garder une fine couche pour protéger, ou griller à nu.",
-      "Poser les épis sur braises moyennes. Tourner toutes les 3 à 4 minutes pendant 15 à 20 minutes.",
-      "Badigeonner d'un peu ya mafuta en fin ya cuisson si désiré. Saler.",
+      "Longola une partie ya spathes soki esengeli, garder une fine couche pour protéger, to griller à nu.",
+      "Poser les épis sur braises ya kati. Tourner toutes les 3 à 4 minutes na 15 à 20 minutes.",
+      "Badigeonner d'un peu ya mafuta en fin ya cuisson si désiré. Tia muni.",
       "Salela chaud elongo na pili-pili ou un filet ya citron."
     ],
     "tags": [
@@ -4454,7 +4454,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "maïs grillé — épis sur braises"
   },
   "mais-bouilli": {
-    "title": "Maïs bouilli",
+    "title": "Maïs ya kobila",
     "description": "maïs bouilli : épis cuits dans une mai salée jusqu'à grains tendres — accompagnement / encas simple, ekeseni na maïs grillé.",
     "region": "Na RDC mobimba",
     "imageAlt": "Épis de maïs bouillis",
@@ -4466,9 +4466,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1 c. à café ya muni"
     ],
     "steps": [
-      "Éplucher les épis. Les plonger dans une grande casserole ya mai salée.",
-      "Porter à ébullition mpe cuire 25 à 35 minutes jusqu'à ce que les grains soient tendres.",
-      "Égoutter. Servir chaud nature, avec un peu ya muni ou ya beurre / mafuta."
+      "Éplucher les épis. Les tia na kati dans une grande casserole ya mai salée.",
+      "Bila tii ebukana mpe teká 25 à 35 minutes tii les grains soient tendres.",
+      "Égoutter. Salela chaud nature, na un peu ya muni to ya beurre / huile."
     ],
     "tags": [
       "maïs",
@@ -4482,7 +4482,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "igname-sauce": {
     "title": "Igname ya sauce",
     "description": "igname en sauce : igname bouillie puis nappée d'une sauce ya tomatisi-aluboka — plat / accompagnement ya Centre mpe ya la Cuvette, au-delà ya l'igname nature.",
-    "region": "Cuvette ya centrale",
+    "region": "Cuvette ya kati",
     "imageAlt": "Igname mijotée en sauce, illustration du plat",
     "prepTime": "min. 20",
     "cookTime": "min. 50",
@@ -4497,10 +4497,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Poivre, pili-pili"
     ],
     "steps": [
-      "Éplucher l'igname, la couper en gros morceaux. La cuire 25 minutes dans une mai salée jusqu'à tendreté. Égoutter.",
-      "Faire revenir aluboka mpe ail dans mafuta, ajouter tomatisi 8 minutes.",
-      "Incorporer l'igname mpe mai. Mijoter 15 minutes à moto ya moke pour que la sauce nappe les morceaux.",
-      "Rectifier muni mpe piment. Servir chaud, éventuellement avec mbisi ya fumé à part."
+      "Éplucher l'igname, la kata en gros morceaux. La teká 25 minutes dans une eau salée jusqu'à tendreté. Égoutter.",
+      "Bimasisa oignons mpe ail na mafuta, bakisa tomatisi 8 minutes.",
+      "Bakisa l'igname mpe mai. Mijoter 15 minutes à feu doux pour que la sauce nappe biteni.",
+      "Rectifier sel mpe piment. Salela chaud, éventuellement na poisson fumé à part."
     ],
     "tags": [
       "igname",
@@ -4530,11 +4530,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "muni, poivre, pili-pili"
     ],
     "steps": [
-      "Inciser mbisi. Le frotter ya citron, muni, poivre, ail mpe pili-pili. Mariner 20 minutes.",
-      "Faire revenir aluboka dans mafuta 5 minutes. Ajouter tomatisi mpe cube. Réduire 8 minutes.",
-      "Poser mbisi dans la sauce, ajouter mai. Couvrir mpe mijoter 20 à 25 minutes à feu moyen, en arrosant.",
-      "Rectifier l'assaisonnement. La chair doit se détacher facilement.",
-      "Servir avec loso, plantain ou chikwangue, mpe idéalement une [salade chou-carotte](/recettes/salade-kisangani/)."
+      "Inciser mbisi. Le frotter ya citron, sel, poivre, ail mpe pili-pili. Mariner 20 minutes.",
+      "Bimasisa aluboka na mafuta 5 minutes. Bakisa tomates mpe cube. Réduire 8 minutes.",
+      "Poser mbisi dans la sauce, bakisa mai. Funga mpe mijoter 20 à 25 minutes à feu moyen, en arrosant.",
+      "Rectifier l'assaisonnement. nyama ya mbuma doit se détacher facilement.",
+      "Salela na riz, plantain to chikwangue, mpe idéalement une [salade chou-carotte](/recettes/salade-kisangani/)."
     ],
     "tags": [
       "Kisangani",
@@ -4564,10 +4564,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1 à 2 bâtons ya kwanga / chikwangue pour servir"
     ],
     "steps": [
-      "Faire revenir aluboka mpe ail dans mafuta 5 minutes. Ajouter tomatisi, saler, poivrer. Réduire 8 minutes.",
-      "Incorporer mbisi mpe mai. Mijoter couvert 15 à 20 minutes à moto ya moke jusqu'à ce que la chair soit cuite.",
-      "Découvrir en fin ya cuisson pour napper d'une sauce courte. Ajuster pili-pili.",
-      "Réchauffer ou griller légèrement la kwanga (voir aussi [chikwangue grillée](/recettes/chikwangue-grillee/)).",
+      "Bimasisa oignons mpe ail na mafuta 5 minutes. Bakisa tomatisi, tia muni, poivrer. Réduire 8 minutes.",
+      "Bakisa mbisi mpe mai. Mijoter couvert 15 à 20 minutes à feu doux tii nyama ya mbuma soit cuite.",
+      "Défunga en fin ya cuisson pour napper d'une sauce courte. Ajuster pili-pili.",
+      "Réfútbisa to griller moke la kwanga (voir aussi [chikwangue grillée](/recettes/chikwangue-grillee/)).",
       "Salela mbisi mpe sa sauce elongo na ya tranches ya kwanga pour prendre la sauce."
     ],
     "tags": [
@@ -4583,7 +4583,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "nsafu-sauce": {
     "title": "Nsafu ya sauce",
     "description": "nsafu en sauce : safous assouplis puis liés à une sauce aluboka-tomatisi courte — version mijotée, distincte ya nsafu grillés.",
-    "region": "RDC ya bwé",
+    "region": "Ouest ya RDC",
     "imageAlt": "Chair de nsafu / safou assouplie, prête à lier",
     "prepTime": "min. 15",
     "cookTime": "min. 25",
@@ -4596,10 +4596,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "muni, pili-pili"
     ],
     "steps": [
-      "Assouplir les nsafu 5 à 8 minutes na mvuke ou dans une mai frémissante (peau qui cèya). Égoutter, ouvrir, retirer les noyaux, récupérer la chair.",
-      "Faire revenir aluboka dans mafuta 4 minutes. Ajouter tomatisi, saler. Réduire 6 minutes.",
-      "Incorporer la chair ya nsafu mpe mai. Mijoter 8 à 10 minutes à moto ya moke en écrasant légèrement pour lier — la sauce doit rester crémeuse, pas trop liquide.",
-      "Rectifier muni mpe piment. Servir chaud avec plantain, loso ou kwanga."
+      "Assouplir les nsafu 5 à 8 minutes à la vapeur to dans une eau frémissante (peau qui cèya). Égoutter, ouvrir, longola les noyaux, récupérer nyama ya mbuma.",
+      "Bimasisa aluboka na mafuta 4 minutes. Bakisa tomatisi, tia muni. Réduire 6 minutes.",
+      "Bakisa nyama ya mbuma ya nsafu mpe mai. Mijoter 8 à 10 minutes à feu doux en écrasant moke pour lier — la sauce doit rester crémeuse, pas trop liquide.",
+      "Rectifier sel mpe piment. Salela chaud na plantain, riz to kwanga."
     ],
     "tags": [
       "nsafu",
@@ -4614,7 +4614,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "nyama-bugali-kivu": {
     "title": "Nyama na bugali",
     "description": "nyama au bugali (en swahili / lingala ya table : nyama na bugali) — nyama en sauce na pâte ya maïs ya Kivu.",
-    "region": "Nord-Kivu & Sud-Kivu",
+    "region": "Nord-Kivu mpe Sud-Kivu",
     "imageAlt": "Assiette ugali / bugali avec nyama en sauce",
     "prepTime": "min. 25",
     "cookTime": "ngonga 1 min. 15",
@@ -4631,11 +4631,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Bugali pour servir (voir fiches bugali / bukari)"
     ],
     "steps": [
-      "Faire revenir la nyama dans mafuta jusqu'à coloration, 8 à 10 minutes. Réserver.",
-      "Dans la même casserole, faire fondre aluboka 5 minutes. Ajouter ail, gingembre, tomatisi mpe cube. Réduire 8 minutes.",
-      "Remettre la nyama, ajouter mai. Saler légèrement. Couvrir mpe mijoter 50 à 60 minutes à moto ya moke jusqu'à tendreté.",
-      "Découvrir pour épaissir la sauce si besoin. Rectifier piment mpe muni.",
-      "Préparer le bugali à part. Servir la nyama nappée à côté ou sur le bugali, éventuellement avec [sukuma](/recettes/sukuma-est/)."
+      "Bimasisa nyama na mafuta jusqu'à coloration, 8 à 10 minutes. Tika na pembeni.",
+      "Dans la même casserole, bimasisa aluboka 5 minutes. Bakisa ail, gingembre, tomates mpe cube. Réduire 8 minutes.",
+      "Remettre nyama, bakisa mai. Tia muni moke. Funga mpe mijoter 50 à 60 minutes à feu doux jusqu'à tendreté.",
+      "Défunga pour épaissir la sauce soki esengeli. Rectifier piment mpe sel.",
+      "Bongisa le bugali à part. Salela nyama nappée à côté to sur le bugali, éventuellement na [sukuma](/recettes/sukuma-est/)."
     ],
     "tags": [
       "nyama",
@@ -4664,11 +4664,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "4 ndunda ya banane monene (ou papier cuisson + papier alu)"
     ],
     "steps": [
-      "Employer uniquement ya champignons cultivés ou formellement identifiés comme comestibles. Les nettoyer mpe les couper en morceaux.",
-      "Mélanger champignons, aluboka, tomatisi, ail, mafuta, muni, poivre, piment mpe cube.",
-      "Assouplir matiti ya bananier au-dessus d'une flamme ou na mvuke.",
+      "Employer uniquement ya champignons cultivés to formellement identifiés comme comestibles. Les nettoyer mpe les kata na biteni.",
+      "Balabala champignons, oignon, tomate, ail, huile, sel, poivre, piment mpe cube.",
+      "Assouplir matiti ya bananier au-dessus d'une flamme to à la vapeur.",
       "Répartir en 4 papillotes. Fermer hermétiquement.",
-      "Teká na mvuke to na four à 180 °C na 35 à 40 minutes. Servir ouverts à table avec chikwangue ou loso."
+      "Teká na mvuke to na four à 180 °C na 35 à 40 minutes. Salela ouverts à table avec chikwangue ou loso."
     ],
     "tags": [
       "liboke",
@@ -4683,7 +4683,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "taro-sauce": {
     "title": "Taro ya nguba",
     "description": "taro en sauce nguba : taro blanchi puis nappé d'une sauce aux nguba — variante Cuvette, distincte ya taro mijoté tomatisi.",
-    "region": "Cuvette ya centrale",
+    "region": "Cuvette ya kati",
     "imageAlt": "Tubercules de taro / malanga",
     "prepTime": "min. 25",
     "cookTime": "min. 50",
@@ -4698,11 +4698,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "muni, pili-pili"
     ],
     "steps": [
-      "Couper le taro en morceaux. Blanchir 10 minutes dans mai bouillante, égoutter (certains taros irritent s'ils sont crus).",
-      "Faire revenir aluboka mpe ail dans mafuta 4 minutes. Ajouter tomatisi si utilisées, 5 minutes.",
-      "Diluer la pâte d'nguba dans mai chaude jusqu'à consistance lisse. Verser dans la casserole. Saler.",
-      "Ajouter le taro. Mijoter 25 à 30 minutes à moto ya moke en remuant souvent pour éviter que la sauce accroche, jusqu'à tendreté.",
-      "Rectifier piment. Servir chaud, éventuellement avec mbisi ya fumé à part."
+      "Kata le taro na biteni. Blanchir 10 minutes dans mai bouillante, égoutter (certains taros irritent s'ils sont crus).",
+      "Bimasisa oignon mpe ail na mafuta 4 minutes. Bakisa tomatisi si utilisées, 5 minutes.",
+      "Diluer la pâte d'arachide dans mai ya moto jusqu'à consistance lisse. Tema dans la casserole. Tia muni.",
+      "Bakisa le taro. Mijoter 25 à 30 minutes à feu doux na kobabalala souvent pour éviter que la sauce accroche, jusqu'à tendreté.",
+      "Rectifier piment. Salela chaud, éventuellement na poisson fumé à part."
     ],
     "tags": [
       "taro",
@@ -4717,7 +4717,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "jus-tamarin": {
     "title": "Mai ya tamarin",
     "description": "jus ya tamarin : pulpe ya tamarinier diluée, sucrée mpe filtrée — boisson acidulée ya Kinshasa mpe ya l'Ouest, à côté ya bissap mpe ya tangawisi.",
-    "region": "Kinshasa & Ouest de la RDC",
+    "region": "Kinshasa mpe Ouest ya RDC",
     "imageAlt": "Verre de jus de tamarin frais",
     "prepTime": "min. 15 + refroidissement",
     "cookTime": "min. 10",
@@ -4729,10 +4729,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Une pincée ya muni (ya lingi, pour relever)"
     ],
     "steps": [
-      "Faire tremper la pulpe dans 500 ml ya mai tièya 10 minutes. Malaxer pour détacher la chair ya fibres mpe graines.",
-      "Ajouter le reste ya mai. Filtrer au chinois ou à la passoire fine en pressant bien.",
-      "Sucrer encore tièya ou à froid jusqu'au goût. Ajouter citron mpe muni si désiré.",
-      "Réfrigérer au moins 1 heure. Servir glacé."
+      "Tia na mai la pulpe dans 500 ml ya mai tièya 10 minutes. Malaxer pour détacher nyama ya mbuma ya fibres mpe graines.",
+      "Bakisa oyo etikali ya mai. Filtrer au chinois to à la passoire fine en pressant bien.",
+      "Sucrer encore tièya to à froid jusqu'au goût. Bakisa citron mpe sel si désiré.",
+      "Réfrigérer au moins 1 heure. Salela glacé."
     ],
     "tags": [
       "tamarin",
@@ -4757,11 +4757,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Une pincée ya sucre seulement si le lot est très acide (ya lingi)"
     ],
     "steps": [
-      "\"Ne pas taper un palmier ni fermenter ya sève soi-même : risque sanitaire mpe réglementaire. S'approvisionner uniquement en malafu déjà conditionné ou vendu frais par un circuit connu.\"",
+      "\"Ne pas taper un palmier ni fermenter ya sève soi-même : risque sanitaire mpe réglementaire. S'approvisionner uniquement en malafu déjà conditionné to vendu frais par un circuit connu.\"",
       "\"Choisir un lot ya jour : odeur franche ya sève fermentée légère, sans moisissure ni goût ya solvant.\"",
-      "\"Servir frais, éventuellement légèrement frais au réfrigérateur (quelques heures). Ne pas faire bouillir : la chaleur casse le profil.\"",
-      "Consommer le jour même ou le lendemain au plus tard ; jeter si l'odeur tourne ou si un film inhabituel apparaît.",
-      "\"Accorder avec grillades, [mbisi na kwanga](/recettes/mbisi-na-kwanga/), [nsafu](/recettes/nsafu-grilles/) ou goûter nature. Boisson alcoolisée : réservée aux adultes.\""
+      "\"Salela frais, éventuellement moke frais au réfrigérateur (quelques heures). Ne pas bila : la chaleur casse le profil.\"",
+      "Consommer le jour même to le lendemain au plus tard ; jeter si l'odeur tourne to si un film inhabituel apparaît.",
+      "\"Accorder na grillades, [mbisi na kwanga](/recettes/mbisi-na-kwanga/), [nsafu](/recettes/nsafu-grilles/) to goûter nature. Boisson alcoolisée : réservée aux adultes.\""
     ],
     "tags": [
       "malafu",
@@ -4791,11 +4791,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1 c. à café ya vanille"
     ],
     "steps": [
-      "Préchauffer le four à 180 °C. Beurrer un moule.",
-      "Battre œufs mpe sucre jusqu'à blanchiment. Ajouter la pâte d'nguba, le lait mpe la vanille.",
-      "Incorporer la farine, la levure mpe le muni. Mélanger juste jusqu'à homogénéité.",
-      "Verser dans le moule. Cuire 35 à 45 minutes jusqu'à ce qu'un couteau ressort propre.",
-      "Laisser tiédir avant ya démouler. Servir en parts, nature ou avec un peu ya lait."
+      "Préfútbisa le four à 180 °C. Beurrer un moule.",
+      "Battre œufs mpe sucre jusqu'à blanchiment. Bakisa la pâte d'arachide, le lait mpe la vanille.",
+      "Bakisa la farine, la levure mpe muni. Balabala juste jusqu'à homogénéité.",
+      "Tema dans le moule. Teká 35 à 45 minutes jusqu'à ce qu'un couteau ressort propre.",
+      "Tika ekóma mwa malili avant ya démouler. Salela en parts, nature to na un peu ya lait."
     ],
     "tags": [
       "arachide",
@@ -4822,11 +4822,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1/2 c. à café ya vanille ou une pincée ya muscade (ya lingi)"
     ],
     "steps": [
-      "Éplucher les bananes. Les couper en deux dans la longueur ou en tronçons biais.",
-      "Dans une poêle large, faire fondre le sucre avec mai à feu moyen jusqu'à un caramel blond (ne pas brûler).",
-      "Hors ya feu, ajouter le beurre mpe le muni ; remuer (attention aux éclaboussures). Remettre à moto ya moke.",
-      "Poser les bananes. Cuire 2 à 3 minutes par face en les nappant ya caramel.",
-      "Parfumer à la vanille si désiré. Servir tièya, éventuellement avec lait caillé ou glace."
+      "Éplucher les bananes. Les kata en deux dans la longueur to en tronçons biais.",
+      "na poêle large, bimasisa le sucre na mai à feu moyen jusqu'à un caramel blond (ne pas brûler).",
+      "Hors ya feu, bakisa le beurre mpe muni ; balabala (attention aux éclaboussures). Remettre à feu doux.",
+      "Poser les bananes. Teká 2 à 3 minutes par face en les nappant ya caramel.",
+      "Parfumer à la vanille si désiré. Salela tièya, éventuellement na lait caillé to glace."
     ],
     "tags": [
       "banane",
@@ -4852,10 +4852,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     ],
     "steps": [
       "\"Hygiène : récipient mpe ustensiles très propres. Ne pas utiliser ya lait déjà douteux.\"",
-      "Tiédir le lait jusqu'à environ 37–40 °C (tièya au doigt, pas brûlant). Hors ya feu.",
-      "Incorporer les ferments en mélangeant doucement. Couvrir d'un linge propre.",
-      "Laisser à température ambiante tièya 12 à 24 heures jusqu'à prise (texture ya yaourt souple). Puis réfrigérer.",
-      "Servir froid, nature ou légèrement sucré. Jeter en cas d'odeur anormale, ya moisissure ou ya séparation inhabituelle."
+      "ekóma mwa malili le lait jusqu'à pene 37–40 °C (tièya au doigt, pas brûlant). Hors ya feu.",
+      "Bakisa les ferments en mélangeant doucement. Funga d'un linge propre.",
+      "Tika à température ambiante tièya 12 à 24 heures jusqu'à prise (texture ya yaourt souple). Puis réfrigérer.",
+      "Salela froid, nature to moke sucré. Jeter en cas d'odeur anormale, ya moisissure to ya séparation inhabituelle."
     ],
     "tags": [
       "lait",
@@ -4882,11 +4882,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1 c. à café ya beurre ou ya mafuta (ya lingi, pour démoulage)"
     ],
     "steps": [
-      "Faire griller nguba à sec dans une poêle 5 à 8 minutes en remuant. Laisser tiédir ; frotter pour enlever une partie ya peaux si désiré.",
-      "Beurrer légèrement une plaque ou un plat.",
-      "Bila sucre mpe mai tii ebukana sans remuer trop tôt. Cuire jusqu'à caramel blond soutenu.",
-      "Hors ya feu, ajouter muni mpe nguba. Mélanger vite pour enrober.",
-      "Étaler sur la plaque. Laisser durcir, puis casser en morceaux. Stocker au sec."
+      "Kotumba nguba à sec na poêle 5 à 8 minutes na kobabalala. Tika ekóma mwa malili ; kobalola mpo na kolongola une partie ya peaux si désiré.",
+      "Beurrer moke une plaque to un plat.",
+      "Bila sukali mpe mai tii ebukana sans remuer trop tôt. Teká jusqu'à caramel blond soutenu.",
+      "Hors ya feu, bakisa sel mpe arachides. Balabala vite pour enrober.",
+      "Étaler sur la plaque. Tika durcir, sima casser na biteni. Stocker au sec."
     ],
     "tags": [
       "arachide",
@@ -4901,12 +4901,12 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   "crevettes-grillees": {
     "title": "Crevettes ya kotumba",
     "description": "crevettes grillées : crevettes marinées puis cuites sur braises ou poêle très chaude — geste braise, distinct ya crevettes ya fleuve en sauce.",
-    "region": "Kinshasa & bassin du Congo",
+    "region": "Kinshasa mpe bassin ya Congo",
     "imageAlt": "Brochettes de crevettes grillées",
     "prepTime": "min. 20 + min. 20 de marinade",
     "cookTime": "min. 10",
     "ingredients": [
-      "700 g ya crevettes moyennes (fraîches ou décongelées), décortiquées ou non",
+      "700 g ya crevettes ya kati (fraîches ou décongelées), décortiquées ou non",
       "Jus ya 2 citrons",
       "3 mikolo ya ail, mikatami",
       "2 lukwakulu ya mafuta",
@@ -4914,9 +4914,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "1 aluboka, na rondelles (ya lingi, pour servir)"
     ],
     "steps": [
-      "Nettoyer les crevettes (ôter le boyau). Les mélanger avec citron, ail, mafuta, muni, poivre mpe pili-pili. Mariner 20 minutes au frais.",
-      "Préparer ya braises vives ou une poêle/gril très chaud.",
-      "Griller 2 à 3 minutes par face jusqu'à rose mpe légèrement marquées — ne pas dessécher.",
+      "Nettoyer les crevettes (ôter le boyau). Les balabala na citron, ail, huile, sel, poivre mpe pili-pili. Mariner 20 minutes au frais.",
+      "Bongisa ya braises vives to poêle/gril ya moto mingi.",
+      "Griller 2 à 3 minutes par face jusqu'à rose mpe moke marquées — ne pas dessécher.",
       "Salela aussitôt elongo na aluboka, citron, pili-pili, plantain ou loso."
     ],
     "tags": [
@@ -4930,7 +4930,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "crevettes grillées — braises"
   },
   "cotes-porc": {
-    "title": "Côtes de porc braisées",
+    "title": "Côtes ya ngulu",
     "description": "côtes ya porc braisées : travers marinés puis précuits mpe finis sur braises — pièce ya grillade, distincte ya porc ya kotumba mpe ya porc braisé en morceaux.",
     "region": "Kinshasa",
     "imageAlt": "Côtes de porc / travers grillés",
@@ -4948,10 +4948,10 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "200 ml ya mai pour la précuisson"
     ],
     "steps": [
-      "Mélanger aluboka râpé, ail, gingembre, citron, mafuta, cube, muni, poivre mpe pili-pili. Enrober les côtes. Mariner 2 heures au frais.",
-      "Précuire à couvert 35 à 45 minutes avec mai mpe la marinade jusqu'à ce que la nyama commence à se détacher.",
-      "Égoutter en réservant le jus. Braiser sur braises moyennes 20 à 25 minutes en badigeonnant, jusqu'à croûte dorée.",
-      "Servir avec aluboka crus, pili-pili, chikwangue ou plantain."
+      "Balabala oignon râpé, ail, gingembre, citron, huile, cube, sel, poivre mpe pili-pili. Enrober les côtes. Mariner 2 heures au frais.",
+      "Préteká à couvert 35 à 45 minutes na mai mpe la marinade tii nyama commence à se détacher.",
+      "Égoutter na kotika na pembeni le jus. Braiser sur braises ya kati 20 à 25 minutes en badigeonnant, jusqu'à croûte dorée.",
+      "Salela na oignons crus, pili-pili, chikwangue to plantain."
     ],
     "tags": [
       "porc",
@@ -4983,11 +4983,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "muni, poivre, pili-pili"
     ],
     "steps": [
-      "Dorer les tronçons ya queue dans mafuta 8 à 10 minutes. Réserver.",
-      "Faire fondre aluboka 5 minutes. Ajouter ail, gingembre mpe tomatisi si utilisées. Réduire 8 minutes.",
-      "Remettre la nyama, ajouter assez ya mai pour couvrir à moitié, le cube, muni mpe poivre. Couvrir mpe mijoter 1 h 30 à moto ya moke.",
-      "Diluer la pâte d'nguba dans un peu ya bouillon chaud. Verser dans la marmite. Mijoter encore 45 à 60 minutes en remuant souvent, jusqu'à nyama très tendre mpe sauce epaisse.",
-      "Rectifier piment. Servir avec fufu, loso ou chikwangue."
+      "Dorer les tronçons ya queue na mafuta 8 à 10 minutes. Tika na pembeni.",
+      "Bimasisa aluboka 5 minutes. Bakisa ail, gingembre mpe tomates si utilisées. Réduire 8 minutes.",
+      "Remettre nyama, bakisa assez ya mai pour funga à moitié, le cube, sel mpe poivre. Funga mpe mijoter 1 h 30 à feu doux.",
+      "Diluer la pâte d'arachide dans un peu ya bouillon chaud. Tema dans la marmite. Mijoter encore 45 à 60 minutes na kobabalala souvent, jusqu'à viande très tendre mpe sauce épaisse.",
+      "Rectifier piment. Salela na fufu, riz to chikwangue."
     ],
     "tags": [
       "mikila",
@@ -5017,11 +5017,11 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "100 ml ya mai"
     ],
     "steps": [
-      "Faire fondre aluboka mpe ail dans mafuta 5 minutes. Ajouter tomatisi mpe cube 5 minutes.",
-      "Incorporer le chou, saler, poivrer. Remuer pour enrober.",
-      "Ajouter mai, couvrir mpe mijoter 18 à 25 minutes jusqu'à tendreté (Kinshasa le préfère souvent un peu plus cuit que croquant).",
-      "Découvrir 2 minutes si trop ya mai. Rectifier piment.",
-      "Servir avec loso, fufu, mbisi ou nyama grillée."
+      "Bimasisa oignons mpe ail na mafuta 5 minutes. Bakisa tomates mpe cube 5 minutes.",
+      "Bakisa le chou, tia muni, poivrer. Balabala pour enrober.",
+      "Bakisa mai, funga mpe mijoter 18 à 25 minutes jusqu'à tendreté (Kinshasa le préfère souvent un peu plus cuit que croquant).",
+      "Défunga 2 minutes si trop ya mai. Rectifier piment.",
+      "Salela na riz, fufu, poisson to viande grillée."
     ],
     "tags": [
       "chou",

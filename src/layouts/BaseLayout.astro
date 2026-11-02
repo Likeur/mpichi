@@ -218,7 +218,7 @@ const googleSiteVerification =
       </filter>
     </svg>
 
-    <main class="flex-1">
+    <main class="flex-1" data-page-main>
       <slot />
     </main>
 
@@ -321,13 +321,19 @@ const googleSiteVerification =
         document.documentElement.classList.remove('has-motion');
       }
 
+      /** Catalogue index (/recettes, /en/recettes, /ln/recettes) — native scroll for filter UI. */
+      function isRecipeCatalogPath(pathname: string): boolean {
+        return /^\/(?:en\/|ln\/)?recettes\/?$/.test(pathname);
+      }
+
       function initMotion() {
         teardownMotion();
 
         const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const skipSmoothScroll = isRecipeCatalogPath(window.location.pathname);
         primeRevealTargets();
 
-        if (!reduceMotion) {
+        if (!reduceMotion && !skipSmoothScroll) {
           locomotiveStartTimer = window.setTimeout(() => {
             locomotiveStartTimer = undefined;
             locomotive = new LocomotiveScroll({

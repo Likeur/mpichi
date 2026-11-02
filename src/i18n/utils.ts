@@ -6,6 +6,7 @@ import { recipeTranslationsLn } from './recipes-ln';
 import { guideTranslationsEn } from './guides-en';
 import { guideTranslationsLn } from './guides-ln';
 import { slugFromRecipeId } from '../lib/recipe-theme';
+import { localizedRegionLabel } from '../lib/taxonomy/index';
 
 const recipeTranslationsByLocale = {
   en: recipeTranslationsEn,
@@ -30,16 +31,30 @@ export function schemaLanguage(locale: Locale): string {
   return 'fr-CD';
 }
 
+/** Short adjective for recipeCuisine schema. */
 export function cuisineLabel(locale: Locale): string {
   if (locale === 'en') return 'Congolese';
   if (locale === 'ln') return 'ya Congo';
   return 'Congolaise';
 }
 
+/** Full topic name for CollectionPage / WebPage about. */
+export function cuisineTopicLabel(locale: Locale): string {
+  if (locale === 'en') return 'Congolese cuisine';
+  if (locale === 'ln') return 'Bilei ya Congo';
+  return 'Cuisine congolaise';
+}
+
 export function countryLabel(locale: Locale): string {
   if (locale === 'en') return 'Democratic Republic of the Congo';
-  if (locale === 'ln') return 'République démocratique du Congo';
+  if (locale === 'ln') return 'Republiki demokratiki ya Kongo';
   return 'République démocratique du Congo';
+}
+
+export function featuredListLabel(locale: Locale): string {
+  if (locale === 'en') return 'Featured Congolese recipes';
+  if (locale === 'ln') return 'Ba recettes ya Congo oyo batyá liboso';
+  return 'Recettes congolaises mises en avant';
 }
 
 export function localePath(path: string, locale: Locale = defaultLocale): string {
@@ -153,7 +168,12 @@ export function localizeRecipe(
     title: translated?.title ?? base.title,
     seoTitle: translated?.seoTitle ?? base.seoTitle,
     description: translated?.description ?? base.description,
-    region: translated?.region ?? base.region,
+    region:
+      locale === 'fr'
+        ? base.region
+        : (localizedRegionLabel(base.region, locale) ??
+          translated?.region ??
+          base.region),
     imageAlt: translated?.imageAlt ?? base.imageAlt,
     prepTime: translated?.prepTime ?? base.prepTime,
     cookTime: translated?.cookTime ?? base.cookTime,

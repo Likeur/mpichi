@@ -45,7 +45,8 @@
       "match": [
         "Kinshasa & bassin du Congo",
         "Kinshasa & fleuve Congo",
-        "Bassin du Congo & Kinshasa"
+        "Bassin du Congo & Kinshasa",
+        "Bassin du Congo et Kinshasa"
       ]
     },
     {
@@ -103,7 +104,8 @@
       "match": [
         "Grand Bandundu",
         "Bandundu & Kongo-Central",
-        "Bas-Congo & Bandundu"
+        "Bas-Congo & Bandundu",
+        "Bas-Congo et Bandundu"
       ]
     },
     {
@@ -116,6 +118,7 @@
       "match": [
         "Bassin du Congo",
         "Bassin du Congo & Cuvette",
+        "Bassin du Congo et Cuvette",
         "Forêts du bassin du Congo"
       ]
     },
@@ -128,7 +131,8 @@
       },
       "match": [
         "Cuvette centrale",
-        "Cuvette centrale & Kongo-Central"
+        "Cuvette centrale & Kongo-Central",
+        "Cuvette centrale et Kongo-Central"
       ]
     },
     {

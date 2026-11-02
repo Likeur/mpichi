@@ -28,20 +28,37 @@ export const REGION_FR: Record<string, string> = {
   'Grand Katanga': 'Katanga monene',
   'Grand Bandundu': 'Bandundu monene',
   'Toute la RDC': 'Na RDC mobimba',
-  'Cuvette centrale': 'Cuvette ya centrale',
-  'Bassin du Congo': 'Basen ya Congo',
-  'Ouest de la RDC': 'RDC ya bwé',
+  'Cuvette centrale': 'Cuvette ya kati',
+  'Bassin du Congo': 'Bassin ya Congo',
+  'Ouest de la RDC': 'Ouest ya RDC',
   'Sud-est de la RDC': 'RDC ya sud-est',
-  'Nord-Kivu et Sud-Kivu': 'Kivu ya nord mpe sud',
-  'Nord et Sud Kivu': 'Kivu ya nord mpe sud',
+  'Sud-Est de la RDC': 'RDC ya sud-est',
+  'Nord-Kivu et Sud-Kivu': 'Nord-Kivu mpe Sud-Kivu',
+  'Nord-Kivu & Sud-Kivu': 'Nord-Kivu mpe Sud-Kivu',
+  'Nord et Sud Kivu': 'Nord-Kivu mpe Sud-Kivu',
   'Kinshasa et Cuvette': 'Kinshasa mpe Cuvette',
+  'Kinshasa & Cuvette': 'Kinshasa mpe Cuvette',
   'Kinshasa et Kongo-Central': 'Kinshasa mpe Kongo-Central',
+  'Kinshasa & Kongo-Central': 'Kinshasa mpe Kongo-Central',
+  'Kinshasa & Ouest de la RDC': 'Kinshasa mpe Ouest ya RDC',
+  'Kinshasa & bassin du Congo': 'Kinshasa mpe bassin ya Congo',
+  'Kinshasa & fleuve Congo': 'Kinshasa mpe ebale ya Congo',
+  'Kinshasa · Kinkole': 'Kinshasa · Kinkole',
   'Bas-Congo et Bandundu': 'Bas-Congo mpe Bandundu',
   'Bas-Congo & Bandundu': 'Bas-Congo mpe Bandundu',
+  'Bandundu & Kongo-Central': 'Bandundu mpe Kongo-Central',
+  'Bassin du Congo & Cuvette': 'Bassin ya Congo mpe Cuvette',
+  'Bassin du Congo & Kinshasa': 'Bassin ya Congo mpe Kinshasa',
+  'Cuvette centrale & Kongo-Central': 'Cuvette ya kati mpe Kongo-Central',
+  'Forêts du bassin du Congo': 'Mituya ya bassin ya Congo',
   'Haut-Katanga': 'Haut-Katanga',
   'Haut-Katanga & Tanganyika': 'Haut-Katanga mpe Tanganyika',
   'Kasai-Central': 'Kasaï-Central',
+  'Kasaï-Central': 'Kasaï-Central',
+  'Kongo Central': 'Kongo-Central',
   'Kongo-Central': 'Kongo-Central',
+  Kisangani: 'Kisangani',
+  Kinshasa: 'Kinshasa',
 };
 
 let _lnAliases: Record<string, string[]> | null = null;
@@ -448,12 +465,181 @@ function translateFrIngredientLine(s: string): string {
   return t;
 }
 
+/** Last-resort FR kitchen lexicon when no exact/rule match. */
+function fallthroughFrKitchen(s: string): string {
+  let t = s;
+  const verbs: [RegExp, string][] = [
+    [/\bMélanger\b/g, 'Balabala'],
+    [/\bmélanger\b/g, 'balabala'],
+    [/\bAjouter\b/g, 'Bakisa'],
+    [/\bajouter\b/g, 'bakisa'],
+    [/\bIncorporer\b/g, 'Bakisa'],
+    [/\bincorporer\b/g, 'bakisa'],
+    [/\bCuire\b/g, 'Teká'],
+    [/\bcuire\b/g, 'teká'],
+    [/\bLaver\b/g, 'Sukola'],
+    [/\blaver\b/g, 'sukola'],
+    [/\bCouper\b/g, 'Kata'],
+    [/\bcouper\b/g, 'kata'],
+    [/\bÉmincer\b/g, 'Kata moke'],
+    [/\bémincer\b/g, 'kata moke'],
+    [/\bHacher\b/g, 'Kata'],
+    [/\bhacher\b/g, 'kata'],
+    [/\bÉgoutter\b/g, 'Longola mai'],
+    [/\bégoutter\b/g, 'longola mai'],
+    [/\bAssaisonner\b/g, 'Bongisa monoko'],
+    [/\bassaisonner\b/g, 'bongisa monoko'],
+    [/\bServir\b/g, 'Salela'],
+    [/\bservir\b/g, 'salela'],
+    [/\bRetirer\b/g, 'Longola'],
+    [/\bretirer\b/g, 'longola'],
+    [/\bRéserver\b/g, 'Tika na pembeni'],
+    [/\bréserver\b/g, 'tika na pembeni'],
+    [/\bRemuer\b/g, 'Balabala'],
+    [/\bremuer\b/g, 'balabala'],
+    [/\bVerser\b/g, 'Tema'],
+    [/\bverser\b/g, 'tema'],
+    [/\bDéposer\b/g, 'Tia'],
+    [/\bdéposer\b/g, 'tia'],
+    [/\bDisposer\b/g, 'Tia'],
+    [/\bdisposer\b/g, 'tia'],
+    [/\bLaisser mijoter\b/g, 'Tika ekóla na moto ya moke'],
+    [/\blaisser mijoter\b/g, 'tika ekóla na moto ya moke'],
+    [/\bLaisser\b/g, 'Tika'],
+    [/\blaisser\b/g, 'tika'],
+    [/\bFaire revenir\b/g, 'Bimasisa'],
+    [/\bfaire revenir\b/g, 'bimasisa'],
+    [/\bFaire dorer\b/g, 'Bimasisa'],
+    [/\bfaire dorer\b/g, 'bimasisa'],
+    [/\bFaire fondre\b/g, 'Bimasisa'],
+    [/\bfaire fondre\b/g, 'bimasisa'],
+    [/\bFaire blanchir\b/g, 'Bila mwa tango'],
+    [/\bfaire blanchir\b/g, 'bila mwa tango'],
+    [/\bFaire griller\b/g, 'Kotumba'],
+    [/\bfaire griller\b/g, 'kotumba'],
+    [/\bFaire chauffer\b/g, 'Fútbisa'],
+    [/\bfaire chauffer\b/g, 'fútbisa'],
+    [/\bFaire cuire\b/g, 'Teká'],
+    [/\bfaire cuire\b/g, 'teká'],
+    [/Faire fútbisa/gi, 'Fútbisa'],
+    [/Faire teká/gi, 'Teká'],
+    [/\bFaire tremper\b/g, 'Tia na mai'],
+    [/\bfaire tremper\b/g, 'tia na mai'],
+    [/\bFaire bouillir\b/g, 'Bila'],
+    [/\bfaire bouillir\b/g, 'bila'],
+    [/\bPréparer\b/g, 'Bongisa'],
+    [/\bpréparer\b/g, 'bongisa'],
+    [/\bRéserver\b/g, 'Tika na pembeni'],
+    [/\bréserver\b/g, 'tika na pembeni'],
+    [/\ben réservant\b/gi, 'na kotika na pembeni'],
+    [/\blégèrement\b/gi, 'moke'],
+    [/\bla grille\b/gi, 'grille'],
+    [/\ble noyau\b/gi, 'mokuwa'],
+    [/\bla chair\b/gi, 'nyama ya mbuma'],
+    [/\ben morceaux\b/gi, 'na biteni'],
+    [/\bune marinade\b/gi, 'marinade'],
+    [/\bles mangues\b/gi, 'manga'],
+    [/\bles peler\b/gi, 'longola ekóti'],
+    [/\bles pieds\b/gi, 'makolo'],
+    [/\bdans mai bouillante\b/gi, 'na mai oyo ebukani'],
+    [/\bdans une petite casserole\b/gi, 'na casserole moke'],
+    [/\bà feu moyen\b/gi, 'na moto ya kati'],
+    [/\bà sec\b/gi, 'kozanga mafuta'],
+    [/\bdans une poêle\b/gi, 'na poêle'],
+    [/\bsans remuer trop tôt\b/gi, 'kozanga kobabalala noki'],
+    [/\bjusqu'à caramel\b/gi, 'tii caramel'],
+    [/\bjusqu’à caramel\b/gi, 'tii caramel'],
+    [/\bun feu ya braises\b/gi, 'moto ya makála'],
+    [/\bya braises\b/gi, 'ya makála'],
+    [/\bun four\b/gi, 'four'],
+    [/\bà part\b/gi, 'na pembeni'],
+    [/\béventuellement\b/gi, 'soki okoki'],
+    [/\bouverts à table\b/gi, 'ba fungolami na mesa'],
+    [/\btiédir\b/gi, 'ekóma mwa malili'],
+    [/\bfrotter pour enlever\b/gi, 'kobalola mpo na kolongola'],
+    [/\bune partie ya peaux\b/gi, 'eteni ya ba peaux'],
+    [/\bsi désiré\b/gi, 'soki olingi'],
+    [/\bsi besoin\b/gi, 'soki esengeli'],
+    [/\bsans surcharger\b/gi, 'kozanga kotonda mingi'],
+    [/\bplonger\b/gi, 'tia na kati'],
+    [/\bremonter le feu\b/gi, 'bakisa moto'],
+    [/\bles redorer\b/gi, 'bimasisa lisusu'],
+    [/\bdéglacer\b/gi, 'longola na'],
+    [/\bd'un trait ya mai\b/gi, 'na mwa mai'],
+    [/\btika réduire\b/gi, 'tika ekóma moke'],
+    [/\btika tiédir\b/gi, 'tika ekóma mwa malili'],
+    [/\bDélayer\b/g, 'Bakisa mpe balabala'],
+    [/\bdélayer\b/g, 'bakisa mpe balabala'],
+    [/\bPorter à frémissement\b/g, 'Bila tii etambola moke'],
+    [/\bporter à frémissement\b/g, 'bila tii etambola moke'],
+    [/\bPorter à ébullition\b/g, 'Bila tii ebukana'],
+    [/\bporter à ébullition\b/g, 'bila tii ebukana'],
+    [/\bles haricots\b/gi, 'madesu'],
+    [/\bles morceaux\b/gi, 'biteni'],
+    [/\ble mélange\b/gi, 'mélange'],
+    [/\ble reste\b/gi, 'oyo etikali'],
+    [/\bfroide\b/gi, 'ya malili'],
+    [/\bchaude\b/gi, 'ya moto'],
+    [/\ben remuant\b/gi, 'na kobabalala'],
+    [/\bles égoutter\b/gi, 'longola mai'],
+    [/\bles rincer\b/gi, 'sukola'],
+    [/\bune nuit\b/gi, 'butu moko'],
+    [/\bChauffer\b/g, 'Fútbisa'],
+    [/\bchauffer\b/g, 'fútbisa'],
+    [/\bCouvrir\b/g, 'Funga'],
+    [/\bcouvrir\b/g, 'funga'],
+    [/\bSaler\b/g, 'Tia muni'],
+    [/\bsaler\b/g, 'tia muni'],
+    [/\bPoursuivre la cuisson\b/g, 'Kobakisela koteka'],
+    [/\bpoursuivre la cuisson\b/g, 'kobakisela koteka'],
+    [/\bjusqu'à ce que\b/gi, 'tii'],
+    [/\bjusqu’à ce que\b/gi, 'tii'],
+    [/\bpuis\b/g, 'sima'],
+    [/\bensuite\b/g, 'sima'],
+    [/\benfine\b/g, 'na nsuka'],
+    [/\bpendant\b/g, 'na'],
+    [/\benviron\b/g, 'pene'],
+    [/\bfacultatif\b/gi, 'ya lingi'],
+    [/\bà découvert\b/gi, 'na sanza'],
+    [/\bdans l'huile\b/gi, 'na mafuta'],
+    [/\bdans l’huile\b/gi, 'na mafuta'],
+    [/\bd'eau\b/gi, 'ya mai'],
+    [/\bd’eau\b/gi, 'ya mai'],
+    [/\bles oignons?\b/gi, 'aluboka'],
+    [/\bl'oignon\b/gi, 'aluboka'],
+    [/\bl’oignon\b/gi, 'aluboka'],
+    [/\bles tomates?\b/gi, 'tomatisi'],
+    [/\bla tomate\b/gi, 'tomatisi'],
+    [/\ble piment\b/gi, 'pili-pili'],
+    [/\bles piments?\b/gi, 'pili-pili'],
+    [/\ble sel\b/gi, 'muni'],
+    [/\bde sel\b/gi, 'ya muni'],
+    [/\bl'eau\b/gi, 'mai'],
+    [/\bl’eau\b/gi, 'mai'],
+    [/\ble poulet\b/gi, 'soso'],
+    [/\bla viande\b/gi, 'nyama'],
+    [/\ble poisson\b/gi, 'mbisi'],
+    [/\bles poissons?\b/gi, 'mbisi'],
+    [/\bles arachides?\b/gi, 'nguba'],
+    [/\bles feuilles\b/gi, 'matiti'],
+    [/\bavec\b/g, 'na'],
+    [/\bet\b/g, 'mpe'],
+    [/\bou\b/g, 'to'],
+  ];
+  for (const [re, rep] of verbs) t = t.replace(re, rep);
+  return t;
+}
+
 export function translateFrStep(line: string): string {
   const t = normApostrophe(line).trim();
   if (FR_STEP_EXACT[t]) return FR_STEP_EXACT[t];
   const ruled = applyFrStepRules(t);
   if (ruled !== t) return ruled;
-  return translateFrIngredientLine(t);
+  // Prefer kitchen fallthrough over ingredient-line heuristics for full sentences.
+  if (/[.!?]$/.test(t) || /^(Laver|Ajouter|Cuire|Mélanger|Faire|Servir|Assaisonner|Laisser|Verser|Couper|Incorporer|Égoutter|Retirer|Chauffer|Porter|Réserver|Remuer|Déposer|Disposer|Poursuivre|Saler|Couvrir)/i.test(t)) {
+    return fallthroughFrKitchen(t);
+  }
+  return fallthroughFrKitchen(translateFrIngredientLine(t));
 }
 
 export function translateEnStep(line: string): string {
@@ -814,6 +1000,22 @@ export function pickAndTranslateIngredients(
 
 export function polishLn(s: string): string {
   let t = s;
+  t = t.replace(/Faire fútbisa/gi, 'Fútbisa');
+  t = t.replace(/Faire teká/gi, 'Teká');
+  t = t.replace(/Faire fondre/gi, 'Bimasisa');
+  t = t.replace(/Faire blanchir/gi, 'Bila mwa tango');
+  t = t.replace(/Faire griller/gi, 'Kotumba');
+  t = t.replace(/Faire revenir/gi, 'Bimasisa');
+  t = t.replace(/Faire dorer/gi, 'Bimasisa');
+  t = t.replace(/Faire cuire/gi, 'Teká');
+  t = t.replace(/\bau plat\b/gi, 'na plat');
+  t = t.replace(/\bPréparer\b/g, 'Bongisa');
+  t = t.replace(/\bpréparer\b/g, 'bongisa');
+  t = t.replace(/\bRéserver\.?/g, 'Tika na pembeni.');
+  t = t.replace(/\bréserver\b/g, 'tika na pembeni');
+  t = t.replace(/\bServir\b/g, 'Salela');
+  t = t.replace(/\bCuire\b/g, 'Teká');
+  t = t.replace(/\bCouper\b/g, 'Kata');
   t = t.replace(/\bet\b/gi, 'mpe');
   t = t.replace(/\bdu\b/gi, 'ya');
   t = t.replace(/\bdes\b/gi, 'ya');
@@ -833,6 +1035,7 @@ export function polishLn(s: string): string {
   t = t.replace(/^mai$/i, 'Mai');
   t = t.replace(/optionnel/gi, 'ya lingi');
   t = t.replace(/hachés|écrasées|émincés/gi, 'mikatami');
+  t = t.replace(/moyennes?/gi, 'ya kati');
   t = t.replace(/moyens/gi, 'ya kati');
   t = t.replace(/red palm mafuta/gi, 'mafuta ya palmier rouge');
   t = t.replace(/Banana leaves/gi, 'Ndunda ya banane');
@@ -840,6 +1043,19 @@ export function polishLn(s: string): string {
   t = t.replace(/\bmariné aux épices\b/gi, 'bongisami na espece');
   t = t.replace(/\bdu quotidien\b/gi, 'ya mokolo na mokolo');
   t = t.replace(/\btrès répandu\b/gi, 'ezwami mingi');
+  t = t.replace(/\bl'huile\b/gi, 'mafuta');
+  t = t.replace(/\bl’huile\b/gi, 'mafuta');
+  t = t.replace(/\bl'ail\b/gi, 'ail');
+  t = t.replace(/\bl’ail\b/gi, 'ail');
+  t = t.replace(/\ble concentré\b/gi, 'concentré');
+  t = t.replace(/\bles œufs\b/gi, 'ba makaki');
+  t = t.replace(/\bles frites\b/gi, 'ba frites');
+  t = t.replace(/\bune poêle\b/gi, 'poêle');
+  t = t.replace(/\bun gril\b/gi, 'grille');
+  t = t.replace(/\btrès chaud\b/gi, 'ya moto mingi');
+  t = t.replace(/\bla cuisson\b/gi, 'koteka');
+  t = t.replace(/\bla moitié\b/gi, 'ndámbo');
+  t = t.replace(/\bsucre mpe mai\b/gi, 'sukali mpe mai');
   return t.trim().replace(/\s{2,}/g, ' ');
 }
 

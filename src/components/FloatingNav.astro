@@ -98,7 +98,7 @@ const mobileLinks = [
               class="nav-ink-muted inline-flex items-center gap-1 transition-colors"
               aria-label={t('nav.lang')}
               aria-expanded="false"
-              aria-haspopup="listbox"
+              aria-haspopup="menu"
               data-lang-menu-trigger
             >
               <span data-lang-menu-label>{localeLabels[lang]}</span>
@@ -117,7 +117,7 @@ const mobileLinks = [
               data-lang-menu-panel
               data-state="closed"
               hidden
-              role="listbox"
+              role="menu"
               aria-label={t('nav.lang')}
             >
               {
@@ -130,8 +130,8 @@ const mobileLinks = [
                         ? 'text-white'
                         : 'text-creme-100/55 hover:text-white',
                     ]}
-                    role="option"
-                    aria-selected={option.current}
+                    role="menuitem"
+                    aria-current={option.current ? 'true' : undefined}
                     hreflang={option.locale}
                     data-lang-switch
                     data-nav-link={option.current ? undefined : ''}
@@ -153,7 +153,7 @@ const mobileLinks = [
             class="nav-ink-muted inline-flex items-center gap-1 text-[10px] font-medium uppercase tracking-[0.16em] transition-colors"
             aria-label={t('nav.lang')}
             aria-expanded="false"
-            aria-haspopup="listbox"
+            aria-haspopup="menu"
             data-lang-menu-trigger
           >
             <span data-lang-menu-label>{localeLabels[lang]}</span>
@@ -172,7 +172,7 @@ const mobileLinks = [
             data-lang-menu-panel
             data-state="closed"
             hidden
-            role="listbox"
+            role="menu"
             aria-label={t('nav.lang')}
           >
             {
@@ -185,8 +185,8 @@ const mobileLinks = [
                       ? 'text-white'
                       : 'text-creme-100/55 hover:text-white',
                   ]}
-                  role="option"
-                  aria-selected={option.current}
+                  role="menuitem"
+                  aria-current={option.current ? 'true' : undefined}
                   hreflang={option.locale}
                   data-lang-switch
                 >
@@ -299,7 +299,7 @@ const mobileLinks = [
           class="inline-flex items-center gap-1.5 text-[11px] font-medium uppercase tracking-[0.18em] text-creme-100/45 hover:text-white transition-colors"
           aria-label={t('nav.lang')}
           aria-expanded="false"
-          aria-haspopup="listbox"
+          aria-haspopup="menu"
           data-lang-menu-trigger
         >
           <span data-lang-menu-label>{localeLabels[lang]}</span>
@@ -318,7 +318,7 @@ const mobileLinks = [
           data-lang-menu-panel
           data-state="closed"
           hidden
-          role="listbox"
+          role="menu"
           aria-label={t('nav.lang')}
         >
           {
@@ -331,8 +331,8 @@ const mobileLinks = [
                     ? 'text-white'
                     : 'text-creme-100/45 hover:text-white',
                 ]}
-                role="option"
-                aria-selected={option.current}
+                role="menuitem"
+                aria-current={option.current ? 'true' : undefined}
                 hreflang={option.locale}
                 data-nav-link
                 data-lang-switch
@@ -495,6 +495,13 @@ const mobileLinks = [
       if (bar) bar.dataset.navHidden = value;
     };
 
+    const pageMain = document.querySelector<HTMLElement>('[data-page-main]');
+
+    const focusableIn = (root: HTMLElement) =>
+      [...root.querySelectorAll<HTMLElement>(
+        'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
+      )].filter((el) => !el.hasAttribute('disabled') && el.getAttribute('aria-hidden') !== 'true');
+
     const setOpen = (open: boolean) => {
       toggle.setAttribute('aria-expanded', String(open));
       toggle.setAttribute('aria-label', open ? closeLabel : openLabel);
@@ -502,7 +509,17 @@ const mobileLinks = [
       panel.dataset.state = open ? 'open' : 'closed';
       panel.hidden = !open;
       document.documentElement.classList.toggle('nav-open', open);
-      if (open) setHidden(false);
+      if (pageMain) {
+        if (open) pageMain.setAttribute('inert', '');
+        else pageMain.removeAttribute('inert');
+      }
+      if (open) {
+        setHidden(false);
+        requestAnimationFrame(() => {
+          const first = focusableIn(panel)[0];
+          first?.focus();
+        });
+      }
       updateTone();
 
       if (lines.top && lines.mid && lines.bot) {
@@ -556,11 +573,33 @@ const mobileLinks = [
     };
 
     const onKeydown = (event: KeyboardEvent) => {
-      if (event.key !== 'Escape') return;
-      closeAllLangMenus();
-      if (toggle.getAttribute('aria-expanded') === 'true') {
-        setOpen(false);
-        toggle.focus();
+      const navOpen = toggle.getAttribute('aria-expanded') === 'true';
+
+      if (event.key === 'Escape') {
+        closeAllLangMenus();
+        if (navOpen) {
+          setOpen(false);
+          toggle.focus();
+        }
+        return;
+      }
+
+      if (event.key !== 'Tab' || !navOpen) return;
+
+      const focusables = focusableIn(panel);
+      if (focusables.length === 0) return;
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+      const active = document.activeElement as HTMLElement | null;
+
+      if (event.shiftKey) {
+        if (active === first || (active && !panel.contains(active))) {
+          event.preventDefault();
+          last.focus();
+        }
+      } else if (active === last || (active && !panel.contains(active))) {
+        event.preventDefault();
+        first.focus();
       }
     };
 
@@ -607,6 +646,8 @@ const mobileLinks = [
           ?.removeEventListener('click', onLangTriggerClick);
       });
       toneObserver.disconnect();
+      pageMain?.removeAttribute('inert');
+      document.documentElement.classList.remove('nav-open');
     };
   }
 
@@ -663,7 +704,7 @@ const mobileLinks = [
   }
 
   [data-site-nav][data-nav-on='light'] [data-lang-menu-panel] a:hover,
-  [data-site-nav][data-nav-on='light'] [data-lang-menu-panel] a[aria-selected='true'] {
+  [data-site-nav][data-nav-on='light'] [data-lang-menu-panel] a[aria-current='true'] {
     color: #120c09;
   }
 

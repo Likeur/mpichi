@@ -4,7 +4,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import EditorialRecipeCard from '../../components/EditorialRecipeCard.astro';
 import FilterDropdown from '../../components/FilterDropdown.astro';
 import type { Locale } from '../../i18n/config';
-import { localePath, localizeRecipe, recipeCountLabel, useTranslations, schemaLanguage} from '../../i18n/utils';
+import {
+  cuisineTopicLabel,
+  localePath,
+  localizeRecipe,
+  recipeCountLabel,
+  schemaLanguage,
+  useTranslations,
+} from '../../i18n/utils';
 import type { UiKey } from '../../i18n/ui';
 import { absoluteUrl } from '../../lib/site';
 import { pageCanonical, resolveOrigin } from '../../lib/seo';
@@ -72,7 +79,7 @@ const catalogJsonLd = {
   isPartOf: { '@id': `${origin}/#website` },
   about: {
     '@type': 'Thing',
-    name: lang === 'en' ? 'Congolese cuisine' : lang === 'ln' ? 'Bilei ya Congo' : 'Cuisine congolaise',
+    name: cuisineTopicLabel(lang),
   },
   mainEntity: {
     '@type': 'ItemList',
@@ -100,7 +107,7 @@ const catalogJsonLd = {
     data-recipe-search
     data-count-singular={countSingular}
     data-count-plural={countPlural}
-    data-page-size="9"
+    data-page-size="15"
     data-page-label={t('recipes.page')}
   >
   <section class="pt-28 pb-10 bg-earth-dark border-b border-white/10">
@@ -269,7 +276,7 @@ const catalogJsonLd = {
     const singular = root.dataset.countSingular ?? '{n}';
     const plural = root.dataset.countPlural ?? '{n}';
     const pageLabelTemplate = root.dataset.pageLabel ?? 'Page {current} / {total}';
-    const pageSize = Math.max(1, Number(root.dataset.pageSize ?? 9) || 9);
+    const pageSize = Math.max(1, Number(root.dataset.pageSize ?? 15) || 15);
 
     if (
       !input ||

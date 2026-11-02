@@ -2,7 +2,13 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EditorialRecipeCard from '../../components/EditorialRecipeCard.astro';
 import type { Locale } from '../../i18n/config';
-import { localePath, recipeCountLabel, useTranslations, schemaLanguage} from '../../i18n/utils';
+import {
+  countryLabel,
+  localePath,
+  recipeCountLabel,
+  schemaLanguage,
+  useTranslations,
+} from '../../i18n/utils';
 import { absoluteUrl } from '../../lib/site';
 import { pageCanonical, resolveOrigin } from '../../lib/seo';
 import { getRegionTaxonomies, type RegionTaxonomy } from '../../lib/taxonomy';
@@ -41,7 +47,7 @@ const collectionJsonLd = {
     name: region.label,
     containedInPlace: {
       '@type': 'Country',
-      name: lang === 'en' ? 'Democratic Republic of the Congo' : 'République démocratique du Congo',
+      name: countryLabel(lang),
     },
   },
   mainEntity: {

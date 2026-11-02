@@ -629,17 +629,17 @@ export const ui = {
     'favorites.title': 'Ba oyo nabombí',
     'favorites.hero': 'Ba recettes oyo obombí.',
     'favorites.intro':
-      'Ba recettes oyo obombí na appareil na yo. Elongwani te na Mpichi.',
-    'favorites.description': 'Ba recettes oyo obombí na appareil na yo na Mpichi.',
+      'Ba recettes oyo obombí na telefóni to ordinateur na yo. Elongwani te na Mpichi.',
+    'favorites.description': 'Ba recettes oyo obombí na telefóni to ordinateur na yo na Mpichi.',
     'favorites.add': 'Kobakisa na ba oyo nabombí',
     'favorites.remove': 'Kolongola na ba oyo nabombí',
     'favorites.empty': 'Recette moko te ebombami naino.',
     'favorites.emptyHint': 'Tala kataloge mpe fina na motéma mpo na kobomba moko.',
     'favorites.browse': 'Tala ba recettes',
-    'favorites.toastAdded': 'Ebombami na favoris',
-    'favorites.toastRemoved': 'Elongolami na favoris',
-    'favorites.toastError': 'Kobomba favoris ekoki te',
-    'pwa.offlineReady': 'Kataloge eyangelami offline',
+    'favorites.toastAdded': 'Ebombami malamu',
+    'favorites.toastRemoved': 'Elongolami malamu',
+    'favorites.toastError': 'Kobomba yango ekoki te',
+    'pwa.offlineReady': 'Kataloge eyangelami kozanga internet',
     'pwa.needRefresh': 'Version ya sika ezali',
     'pwa.reload': 'Kobongola lisusu',
     'pwa.dismiss': 'Kokanga',
@@ -648,7 +648,7 @@ export const ui = {
     'footer.explore': 'Kotála',
     'footer.info': 'Sango',
     'footer.legal': 'Bilembo ya mibeko',
-    'footer.privacy': 'Seacré',
+    'footer.privacy': 'Bobateli ya sango',
     'footer.photoCredits': 'Ba crédits ya bilili',
     'footer.photoCreditsBody':
       'Bilili na ba licences Creative Commons.\nCrédit ya ndenge na ndenge na recette moko na moko.',
@@ -658,7 +658,7 @@ export const ui = {
     'home.hero.cta': 'Yeba ba recettes nyonso',
     'home.hero.mpichi.title': 'Mpichi,\nbilei lokola elikya.',
     'home.hero.mpichi.summary':
-      'Kataloge ya bomoi oyo ekómisi ba recettes ya République démocratique du Congo, ba gestes na yango mpe biteni na yango.',
+      'Kataloge ya bomoi oyo ekómisi ba recettes ya Republiki demokratiki ya Kongo, ba gestes na yango mpe biteni na yango.',
     'home.hero.liboke.title': 'Liboke,\nebale na mesa.',
     'home.hero.liboke.summary':
       'Mbisi, biloko ya nsolo, mpe nsúsu ya lokasa ebelisami na makála.',
@@ -675,7 +675,7 @@ export const ui = {
       'Mpichi ekomaka ba recettes ndenge basalaka yango : na ba gestes, ba souvenirs, ba saisons, mpe oyo bazwi na zando. Libota moko na moko epesi motuya na yango, tango na yango, mpe mongongo na yango.',
     'home.heritage.cta': 'Yeba ba recettes',
     'home.heritage.alt':
-      'Mwasi azali kobuka farine na Masi-Manimba, République démocratique du Congo',
+      'Mwasi azali kobuka farine na Masi-Manimba, Republiki demokratiki ya Kongo',
     'home.process.title': 'Recette ebandaka liboso ya marmite.',
     'home.process.01.title': 'Zando',
     'home.process.01.body':
@@ -727,7 +727,7 @@ export const ui = {
     'recipes.favoritesResume': 'Ozali na ba recettes oyo obombí —',
     'home.south.title': 'Bilei ya sud.',
     'home.south.body':
-      'Kapenta, matembele, bukari, sambaza — ba gestes ya Katanga mpe Lubumbashi, esika Mpichi ezwaka déjà ba lecteurs.',
+      'Kapenta, matembele, bukari, sambaza — ba gestes ya Katanga mpe Lubumbashi, esika Mpichi ezwaka naino ba batángi.',
     'home.south.cta': 'Tala Katanga monene',
     'home.hubs.title': 'Kótá na eteni.',
     'home.hubs.regions': 'Biteni',
@@ -805,7 +805,7 @@ export const ui = {
       'Mituna oyo batúnaka mingi na kataloge ya Mpichi ya ba recettes ya Congo mpe ndenge ya kosala éditorial.',
     'faq.q1': 'Mpichi ezali nini?',
     'faq.a1':
-      'Mpichi ezali site éditorial oyo ekómisi ba recettes ya Congo na République démocratique du Congo. Lokasa moko na moko ekomaka bilei na ba gestes na yango, eteni, mpe contexte ya bolakisi, na lifalansé, anglais mpe lingála.',
+      'Mpichi ezali site éditorial oyo ekómisi ba recettes ya Congo na Republiki demokratiki ya Kongo. Lokasa moko na moko ekomaka bilei na ba gestes na yango, eteni, mpe contexte ya bolakisi, na lifalansé, anglais mpe lingála.',
     'faq.q2': 'Ba recettes ezali ndenge moko na RDC mobimba?',
     'faq.a2':
       'Te. Bilei moko ebongwanaka na eteni, saison, zando, mpe milakisi ya libota. Mpichi elakisi ndenge moko kati ya basusu mpe elobaka mibu ya eteni soki eyebani.',
@@ -844,7 +844,7 @@ export const ui = {
     'propose.photo': 'Lien ya photo (ya lingi)',
     'propose.photoPlaceholder': 'https://…',
     'propose.photoHint':
-      'Soki ozali déjà na elili online (Wikimedia Commons, Drive public, etc.), tia lien awa.',
+      'Soki ozali naino na elili online (Wikimedia Commons, Drive public, etc.), tia lien awa.',
     'propose.photoContact': 'Mpo na kotinda photo ya bilei (fichier), contactez ngai na',
     'propose.photoContactEmail': 'email',
     'propose.photoContactOr': 'to',
@@ -873,7 +873,7 @@ export const ui = {
     'legal.description': 'Bilembo ya mibeko ya site éditorial ya Mpichi.',
     'legal.edition.title': 'Mokomi ya site',
     'legal.edition.p1':
-      'Mpichi ezali projet éditorial ya indépendance oyo etali bilei ya République démocratique du Congo. Esálami mpe ebimisami na RDC na Likeur.',
+      'Mpichi ezali projet éditorial ya indépendance oyo etali bilei ya Republiki demokratiki ya Kongo. Esálami mpe ebimisami na RDC na Likeur.',
     'legal.edition.p2':
       'Mpo na liteya nyonso oyo etali site, okoki contactez mokomi na',
     'legal.hosting.title': 'Hébergement',
@@ -885,26 +885,26 @@ export const ui = {
     'legal.liability.title': 'Responsabilité',
     'legal.liability.body':
       'Ba recettes epesami mpo na culture mpe sango. Milakisi ya bilei ekoki kobongwana euti na libota moko tii na mosusu, mpe moto moko azali responsable ya kopona biloko, kobomba, allergies, mpe koteka.',
-    'privacy.title': 'Politique ya seacré',
-    'privacy.hero': 'Seacré.',
+    'privacy.title': 'Politiki ya bobateli ya sango',
+    'privacy.hero': 'Bobateli ya sango.',
     'privacy.intro':
-      'Vue claire ya ba données oyo basalelaka tango ozali kotála Mpichi.',
-    'privacy.description': 'Politique ya seacré ya site Mpichi.',
+      'Sango polele na ndenge basalelaka ba données tango ozali kotála Mpichi.',
+    'privacy.description': 'Politiki ya bobateli ya sango ya site Mpichi.',
     'privacy.data.title': 'Ba données oyo bazwaka',
     'privacy.data.body':
-      'Mpichi ezali na comptes ya utilisateurs te to esika ya ba commentaires. Soki osalelaka lokasa « Kopesa recette », nkombo na yo, email, mpe contenu ya proposition elongwani na Formspree tii na équipe éditoriale, kaka mpo na kosala message na yo.',
-    'privacy.local.title': 'Stockage ya local',
+      'Mpichi ezali na comptes ya basali te to esika ya ba commentaires. Soki osalelaka lokasa « Kopesa recette », nkombo na yo, email, mpe makomi ya proposition elongwani na Formspree tii na équipe éditoriale, kaka mpo na kosala message na yo.',
+    'privacy.local.title': 'Kobomba na telefóni to ordinateur',
     'privacy.local.body':
-      'Navigateur na yo ekoki kobomba ba recettes oyo obombí na local, mpe soki esengeli, position na yo na kataloge. Ba données oyo etikali na appareil na yo mpe elongwani te na Mpichi.',
+      'Navigateur na yo ekoki kobomba ba recettes oyo obombí awa moko, mpe soki esengeli, esika na yo na kataloge. Ba données oyo etikali na telefóni to ordinateur na yo mpe elongwani te na Mpichi.',
     'privacy.external.title': 'Ba services ya libanda',
     'privacy.external.body':
       'Ba fonts euti na Google Fonts mpe bilili mosusu na Wikimedia Commons. Ba propositions ya recettes eleka na Formspree. Na ba chargements to ba envois wana, ba services wana bakoki kozwa sango technique (adresse IP, navigateur, tango ya demande) na ndenge ya politiques na yango.',
-    'privacy.cookies.title': 'Ba cookies mpe analytics',
+    'privacy.cookies.title': 'Ba cookies mpe mesure ya audience',
     'privacy.cookies.body':
-      'Mpichi esalelaka Google Analytics (G-WLFG0GGT90) mpo na mesure ya audience oyo ekangami (ba pages, favoris, boluki na kataloge, propositions, partages). Cookie ya publicité moko te. Okoki kokanga mesure na paramètres ya navigateur to ba extensions ya seacré.',
+      'Mpichi esalelaka Google Analytics (G-WLFG0GGT90) mpo na mesure ya audience oyo ekangami (ba pages, ba oyo nabombí, boluki na kataloge, propositions, partages). Cookie ya publicité moko te. Okoki kokanga mesure na paramètres ya navigateur to ba extensions ya bobateli.',
     'privacy.contact.title': 'Mituna na yo',
     'privacy.contact.body':
-      'Mpo na mituna nyonso oyo etali seacré, contactez mokomi na',
+      'Mpo na mituna nyonso oyo etali bobateli ya sango, contactez mokomi na',
     'notFound.title': 'Lokasa ezwami te',
     'notFound.hero': 'Lokasa oyo ezali kobunga.',
     'notFound.intro':

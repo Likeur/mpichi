@@ -4,13 +4,15 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "dev": "astro dev --port 4321 --strictPort --host 127.0.0.1",
+    "dev": "astro dev --port 4321 --strictPort --host",
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
     "ci": "npm run check && npm run build",
     "astro": "astro",
-    "export-dataset": "npm --prefix mpichi-dataset run export"
+    "export-dataset": "npm --prefix mpichi-dataset run export",
+    "generate:ln": "npx tsx scripts/generate-ln-i18n.mts",
+    "validate:ln": "npx tsx scripts/validate-ln.mts"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",

@@ -94,7 +94,7 @@ export function websiteJsonLd(locale: Locale, origin: string) {
     fr: 'Cuisine congolaise',
     en: 'Congolese cuisine',
     ln: 'Bilei ya Congo',
-  } as const;
+  } as const; // keep in sync with cuisineTopicLabel()
   const inLanguage = { fr: 'fr-CD', en: 'en', ln: 'ln' } as const;
 
   return {
