@@ -22,6 +22,7 @@ tags:
   - Kinshasa
 relatedRecipes:
   - brochettes-foie
+  - rognons-saute
   - kamundele
   - sauce-pili-pili
   - loso-mayonnaise

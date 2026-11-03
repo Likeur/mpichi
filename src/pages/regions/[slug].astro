@@ -12,6 +12,8 @@ import {
 import { absoluteUrl } from '../../lib/site';
 import { pageCanonical, resolveOrigin } from '../../lib/seo';
 import { getRegionTaxonomies, type RegionTaxonomy } from '../../lib/taxonomy';
+import { regionIdFromKey } from '../../lib/taxonomy/index';
+import { getRegionHubCopy } from '../../lib/hub-seo';
 
 export async function getStaticPaths() {
   const regions = await getRegionTaxonomies('fr');
@@ -34,12 +36,17 @@ const origin = resolveOrigin(Astro.site);
 const pageUrl = pageCanonical(Astro.url.pathname, origin);
 const ogRecipe = region.recipes[0]?.localized;
 const countLabel = recipeCountLabel(lang, region.recipes.length);
+const hub = getRegionHubCopy(regionIdFromKey(region.key), lang);
+const pageTitle = hub?.title ?? region.label;
+const pageDescription =
+  hub?.description ?? t('regions.detailDescription', { region: region.label });
+const pageIntro = hub?.intro ?? t('regions.detailIntro');
 
 const collectionJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: region.label,
-  description: t('regions.detailDescription', { region: region.label }),
+  name: pageTitle,
+  description: pageDescription,
   url: pageUrl,
   inLanguage: schemaLanguage(lang),
   about: {
@@ -89,8 +96,8 @@ const breadcrumbJsonLd = {
 ---
 
 <BaseLayout
-  title={region.label}
-  description={t('regions.detailDescription', { region: region.label })}
+  title={pageTitle}
+  description={pageDescription}
   lang={lang}
   image={ogRecipe?.image}
   imageAlt={ogRecipe?.imageAlt}
@@ -108,10 +115,10 @@ const breadcrumbJsonLd = {
       </a>
       <div class="mt-8 grid lg:grid-cols-12 gap-8 items-end" data-stagger>
         <div class="lg:col-span-8">
-          <h1 class="text-display-hero">{region.label}</h1>
+          <h1 class="text-display-hero">{pageTitle}</h1>
         </div>
         <p class="lg:col-span-4 text-sm leading-6 text-creme-200/60 max-w-md">
-          {t('regions.detailIntro')}
+          {pageIntro}
         </p>
       </div>
       <p class="mt-10 text-[9px] uppercase tracking-[.16em] text-creme-200/35">{countLabel}</p>

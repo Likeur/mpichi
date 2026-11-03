@@ -27,9 +27,9 @@ Règle : **1 cluster = 1 URL principale**. Les secondaires soutiennent ; elles n
 | 4 | Accompagnements de base | How-to | fiches + évent. guide | `renforcer` | P1 |
 | 5 | Street food Kinshasa | Info + how-to | fiches | `renforcer` | P1 |
 | 6 | Boissons | How-to | fiches + `/categories/boisson/` | `renforcer` | P2 |
-| 7 | Régions | Info | `/regions/…` | `renforcer` | P2 |
-| 8 | Catégories | Navigational | `/categories/…` | `renforcer` | P2 |
-| 9 | Diaspora / substitutions | How-to | `/guides/marche/` (+ pages à créer) | `renforcer` / `créer` | P1 |
+| 7 | Régions | Info | `/regions/…` | `ok` (hubs copy) | P2 |
+| 8 | Catégories | Navigational | `/categories/…` | `ok` (hubs copy) | P2 |
+| 9 | Diaspora / substitutions | How-to | `/guides/diaspora/` (+ `/guides/marche/`) | `ok` | P1 |
 | 10 | Patrimoine / « qu’est-ce que » | Info | `/faq/` + accueil | `ok` | P2 |
 | 11 | Anglais (miroir) | Info + how-to | `/en/…` | `renforcer` | P1 |
 
@@ -40,7 +40,7 @@ Règle : **1 cluster = 1 URL principale**. Les secondaires soutiennent ; elles n
 | Mot-clé principal | Secondaires | URL | Statut |
 | --- | --- | --- | --- |
 | catalogue recettes congolaises | répertoire recettes RDC, site recettes congolaises | `/` | `ok` |
-| recettes congolaises | cuisine congolaise, plats congolais | `/recettes/` | `renforcer` |
+| recettes congolaises | cuisine congolaise, plats congolais | `/recettes/` | `ok` (aliases search) |
 | cuisine de la RDC | cuisine République démocratique du Congo | `/` | `soutien` (meta + corps) |
 
 **Liens internes** : Accueil → Catalogue → 3–5 plats phares → Guides.
@@ -123,6 +123,21 @@ Une fiche = un plat. Primaires = nom du plat + « recette ».
 | mikila arachide | queue bœuf arachide | `/recettes/mikila-arachide/` | `ok` (vague F) |
 | chou Kinshasa | chou mijoté capital | `/recettes/chou-kinshasa/` | `ok` (vague F) |
 | comment faire le fufu | fufu manioc bugali | `/guides/fufu/` | `ok` (vague F) |
+| poulet aux haricots | soso na madesu | `/recettes/soso-na-madesu/` | `ok` (vague G) |
+| riz au poulet | loso na soso | `/recettes/loso-na-soso/` | `ok` (vague G) |
+| pondu au porc | pondu ya ngulu | `/recettes/pondu-ngulu/` | `ok` (vague G) |
+| queue de bœuf | oxtail congolaise | `/recettes/queue-boeuf-sauce/` | `ok` (vague G) |
+| plantains frits poulet | makemba na soso | `/recettes/makemba-na-soso/` | `ok` (vague G) |
+| beignets de haricots | akara, kosai | `/recettes/beignets-haricot/` | `ok` (vague G) |
+| poulet entier grillé | poulet braise entier | `/recettes/soso-grille-entier/` | `ok` (vague L) |
+| rognons sautés | abats kinshasa | `/recettes/rognons-saute/` | `ok` (vague L) |
+| langue de bœuf | langue sauce | `/recettes/langue-boeuf-sauce/` | `ok` (vague L) |
+| plantain grillé arachide | makemba grillé nguba | `/recettes/plantain-grille-arachide/` | `ok` (vague L) |
+| jus gingembre ananas | tangawisi ananas | `/recettes/jus-gingembre-ananas/` | `ok` (vague K) |
+| thé citronnelle | infusion citronnelle | `/recettes/the-citronnelle/` | `ok` (vague K) |
+| bouillie de manioc | cassava porridge | `/recettes/bouillie-manioc/` | `ok` (vague K) |
+| gâteau banane | cake banane | `/recettes/gateau-banane/` | `ok` (vague K) |
+| galettes de maïs | galettes maïs | `/recettes/galettes-mais/` | `ok` (vague K) |
 
 **Vague 1 livrée** (2026-10-21) : pondu, moambe-poulet, liboke-poisson, fumbwa, mikate, poisson-braise-kinkole, pepe-soupe-ya-ngolo, chikwangue.
 
@@ -146,7 +161,13 @@ Une fiche = un plat. Primaires = nom du plat + « recette ».
 
 **Vague F / vague 6 livrée** (2026-11-02) — renfort + polish : crevettes-grillees, cotes-porc, mikila-arachide, chou-kinshasa + guide `/guides/fufu/` + ship dataset v1.6.0.
 
-**Suite** : hubs régions / catégories si besoin ; releases mineures suivantes.
+**Vague G livrée** (2026-11-03) — quotidien Kinshasa / diaspora : `soso-na-madesu`, `loso-na-soso`, `pondu-ngulu`, `queue-boeuf-sauce`, `makemba-na-soso`, `beignets-haricot`.
+
+**Vague L livrée** (2026-11-03) — street & braise : `soso-grille-entier`, `rognons-saute`, `langue-boeuf-sauce`, `plantain-grille-arachide`.
+
+**Vague K livrée** (2026-11-03) — boissons & douceurs : `jus-gingembre-ananas`, `the-citronnelle`, `bouillie-manioc`, `gateau-banane`, `galettes-mais`.
+
+**Suite** : vagues H+ (sauces/feuilles, Bandundu) ; releases mineures suivantes.
 
 ---
 
@@ -219,12 +240,12 @@ Pages déjà générées depuis le frontmatter `region` (slugs taxonomie).
 
 | Mot-clé principal | URL indicative | Statut |
 | --- | --- | --- |
-| recettes kinshasa / cuisine kinshasa | `/regions/kinshasa/` | `renforcer` |
-| cuisine kasaï / recettes kasaï | `/regions/grand-kasai/` (+ kasaï-central) | `renforcer` |
-| cuisine katanga / bukari katanga | `/regions/grand-katanga/` | `renforcer` |
-| cuisine kongo-central | `/regions/kongo-central/` | `renforcer` |
-| cuisine bassin du congo | `/regions/bassin-du-congo/` | `renforcer` |
-| index régions | `/regions/` | `renforcer` |
+| recettes kinshasa / cuisine kinshasa | `/regions/kinshasa/` | `ok` (hub title/intro) |
+| cuisine kasaï / recettes kasaï | `/regions/grand-kasai/` (+ kasaï-central) | `ok` (hub title/intro) |
+| cuisine katanga / bukari katanga | `/regions/grand-katanga/` | `ok` (hub title/intro) |
+| cuisine kongo-central | `/regions/kongo-central/` | `ok` (hub title/intro) |
+| cuisine bassin du congo | `/regions/bassin-du-congo/` | `ok` (hub title/intro) |
+| index régions | `/regions/` | `ok` |
 
 **Attention** : beaucoup de régions hybrides (« Kinshasa & … ») — ne pas créer 1 mot-clé Google par combinaison. Prioriser les hub : Kinshasa, Grand Kasaï, Grand Katanga, Kongo-Central, Bassin du Congo, Toute la RDC.
 
@@ -234,11 +255,11 @@ Pages déjà générées depuis le frontmatter `region` (slugs taxonomie).
 
 | Mot-clé principal | URL | Statut |
 | --- | --- | --- |
-| plats congolais | `/categories/plat/` | `renforcer` |
-| accompagnements congolais | `/categories/accompagnement/` | `renforcer` |
-| boissons congolaises | `/categories/boisson/` | `renforcer` |
-| desserts congolais | `/categories/dessert/` | `renforcer` |
-| index catégories | `/categories/` | `renforcer` |
+| plats congolais | `/categories/plat/` | `ok` (hub title/intro) |
+| accompagnements congolais | `/categories/accompagnement/` | `ok` (hub title/intro) |
+| boissons congolaises | `/categories/boisson/` | `ok` (hub title/intro) |
+| desserts congolais | `/categories/dessert/` | `ok` (hub title/intro) |
+| index catégories | `/categories/` | `ok` |
 
 ---
 
@@ -246,9 +267,9 @@ Pages déjà générées depuis le frontmatter `region` (slugs taxonomie).
 
 | Mot-clé principal | Secondaires | URL | Statut |
 | --- | --- | --- | --- |
-| ingrédients cuisine congolaise europe | où acheter feuilles de manioc, pondu surgelé | `/guides/marche/` | `renforcer` |
-| recette pondu belgique / france | substitutions diaspora | `/guides/pondu/` + `/guides/marche/` | `soutien` |
-| épicerie africaine recettes congo | — | `créer` évent. `/guides/diaspora/` | `créer` |
+| ingrédients cuisine congolaise europe | où acheter feuilles de manioc, pondu surgelé | `/guides/diaspora/` (+ `/guides/marche/`) | `ok` |
+| recette pondu belgique / france | substitutions diaspora | `/guides/pondu/` + `/guides/diaspora/` | `soutien` |
+| épicerie africaine recettes congo | — | `/guides/diaspora/` | `ok` |
 
 ---
 

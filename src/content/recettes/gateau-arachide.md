@@ -21,6 +21,7 @@ tags:
   - goûter
 relatedRecipes:
   - gateau-manioc
+  - gateau-banane
   - bouillie-arachide
   - bonbons-arachide
   - sauce-arachide

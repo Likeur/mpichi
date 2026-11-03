@@ -11,6 +11,7 @@ relatedRecipes:
   - liboke-poisson
   - poisson-braise-kinkole
   - biteku-teku-kasai
+  - pondu
 order: 3
 ---
 
@@ -28,4 +29,4 @@ Pas de poisson fumé ? Certaines familles passent au séché ([makayabu](/recett
 
 Documenter une recette, c’est aussi documenter ce trajet. Les quantités aident à démarrer ; le geste et le marché corrigent ensuite. C’est pourquoi nos fiches précisent une région quand elle est connue, et pourquoi les guides insistent sur le contexte plutôt que sur une norme unique.
 
-Cuisiner congolais ailleurs, c’est souvent chercher l’épicerie africaine qui rapproche ce marché — puis adapter, comme on l’a toujours fait. Parcourir le [catalogue des recettes](/recettes/).
+Cuisiner congolais ailleurs, c’est souvent chercher l’épicerie africaine qui rapproche ce marché — puis adapter, comme on l’a toujours fait. Guide dédié : [cuisiner en diaspora](/guides/diaspora/). Parcourir le [catalogue des recettes](/recettes/).

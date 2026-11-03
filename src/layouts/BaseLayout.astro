@@ -126,6 +126,12 @@ const googleSiteVerification =
     <link rel="alternate" hreflang="x-default" href={alternates.fr} />
     <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM instructions" />
     <link rel="alternate" type="text/plain" href="/llms-full.txt" title="Full recipe index for LLMs" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={t('footer.rss')}
+      href={localePath('/rss.xml', lang)}
+    />
     <link rel="author" type="text/plain" href="/humans.txt" />
     <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
     {pwaInfo ? <Fragment set:html={pwaInfo.webManifest.linkTag} /> : <link rel="manifest" href="/site.webmanifest" />}
@@ -247,6 +253,7 @@ const googleSiteVerification =
           <p class="mb-2 text-creme-200/35">{t('footer.info')}</p>
           <a href={localePath('/mentions-legales', lang)} class="hover:text-white transition-colors">{t('footer.legal')}</a>
           <a href={localePath('/confidentialite', lang)} class="hover:text-white transition-colors">{t('footer.privacy')}</a>
+          <a href={localePath('/rss.xml', lang)} class="hover:text-white transition-colors">{t('footer.rss')}</a>
         </div>
         <div class="text-[10px] uppercase tracking-[.16em]">
           <p class="mb-5 text-creme-200/35">{t('footer.photoCredits')}</p>

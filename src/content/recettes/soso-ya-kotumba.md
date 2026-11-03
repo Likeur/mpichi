@@ -22,6 +22,7 @@ tags:
   - street food
 relatedRecipes:
   - poulet-mayo
+  - soso-grille-entier
   - sauce-pili-pili
   - porc-braise
   - porc-ya-kotumba

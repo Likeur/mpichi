@@ -22,6 +22,8 @@ tags:
   - rapide
 relatedRecipes:
   - makemba-na-mbisi
+  - makemba-na-soso
+  - plantain-grille-arachide
   - plantains-vapeur
   - lituma
 

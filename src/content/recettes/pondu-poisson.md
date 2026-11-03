@@ -22,6 +22,7 @@ tags:
   - huile de palme
 relatedRecipes:
   - pondu
+  - pondu-ngulu
   - saka-madesu
   - poisson-fume-tomates
   - chikwangue

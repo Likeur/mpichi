@@ -23,6 +23,7 @@ relatedRecipes:
   - jus-mangue
   - jus-passion
   - tangawisi
+  - jus-gingembre-ananas
 ingredients:
   - 1 ananas mûr (environ 1 kg)
   - 500 ml d’eau froide

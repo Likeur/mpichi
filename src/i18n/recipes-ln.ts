@@ -4031,6 +4031,213 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "body": "Le **pondu au mbisi** (en lingala : *pondu ya mbisi*) place mbisi au centre, là où la fiche [pondu](/ln/recettes/pondu/) le laisse optionnel. Même famille de feuilles : [saka-madesu](/ln/recettes/saka-madesu/).",
     "seoTitle": "pondu au mbisi"
   },
+  "soso-na-madesu": {
+    "title": "Soso na madesu",
+    "description": "soso aux haricots (en lingala : soso na madesu) : soso ebilisami na ya madesu — assiette ya quotidien en RDC.",
+    "region": "Kinshasa",
+    "imageAlt": "Assiette de haricots et soso en sauce",
+    "prepTime": "min. 25 + ngonga 8 de kobomba",
+    "cookTime": "ngonga 1 min. 30",
+    "ingredients": [
+      "1 soso kata na biteni (environ 1,2 kg)",
+      "400 g ya haricots rouges ou bruns secs",
+      "Aluboka 3, mikatami",
+      "3 tomatisi, mibetami",
+      "3 mikolo ya ail, mikatami",
+      "3 c. à soupe ya mafuta ya palmier rouge (ou mafuta neutre)",
+      "1 feuille ya laurier",
+      "1 cube ya bouillon",
+      "muni, pili-pili mpe mai"
+    ],
+    "steps": [
+      "Tia na mai madesu butu moko, longola mai sima les teká 50 à 60 minutes na le laurier jusqu'à tendreté. Tia muni en fin ya cuisson.",
+      "Bimasisa biteni ya poulet na mafuta. Tika na pembeni.",
+      "Bimasisa aluboka, bakisa ail mpe tomatisi. Teká 8 à 10 minutes.",
+      "Remettre soso, le cube mpe un peu ya mai. Mijoter 25 minutes à couvert.",
+      "Bakisa madesu égouttés na une louche ya leur eau. Poursuivre 20 minutes jusqu'à sauce liée.",
+      "Rectifier sel mpe pili-pili. Salela na riz, fufu to plantains."
+    ],
+    "tags": [
+      "soso na madesu",
+      "poulet",
+      "madesu",
+      "haricots",
+      "mokolo na mokolo"
+    ],
+    "body": "Le **soso aux haricots** (en lingala : *soso na madesu*) marie deux classiques de table : le [soso en sauce](/ln/recettes/soso-ya-sauce/) et les [madesu](/ln/recettes/madesu/). Moins « un seul plat loso-haricots » que [loso na madesu](/ln/recettes/loso-na-madesu/), plus de nyama que [saka-madesu](/ln/recettes/saka-madesu/).",
+    "seoTitle": "soso na haricots (soso na madesu)"
+  },
+  "loso-na-soso": {
+    "title": "Loso na soso",
+    "description": "loso au soso (en lingala : loso na soso) : loso cuit na ya soso en sauce — assiette simple ya Kinshasa.",
+    "region": "Kinshasa",
+    "imageAlt": "loso et morceaux de soso en sauce rouge",
+    "prepTime": "min. 25",
+    "cookTime": "min. 50",
+    "ingredients": [
+      "1 soso kata na biteni (environ 1,2 kg)",
+      "400 g ya loso",
+      "Aluboka 2, mikatami",
+      "3 tomatisi, mibetami",
+      "3 mikolo ya ail",
+      "3 lukwakulu ya mafuta",
+      "1 cube ya bouillon",
+      "muni, pili-pili mpe mai"
+    ],
+    "steps": [
+      "Bimasisa soso na mafuta. Tika na pembeni.",
+      "Bimasisa aluboka, bakisa ail mpe tomatisi. Teká 8 minutes.",
+      "Remettre soso, le cube mpe ya mai à hauteur. Mijoter 20 minutes.",
+      "Bakisa le riz rincé. Ajuster mai (pene 1,5 fois le volume ya riz). Balabala doucement.",
+      "Funga mpe teká 18 à 20 minutes à feu doux sans balabala, jusqu'à absorption.",
+      "Tika reposer 5 minutes. Égrener mpe salela."
+    ],
+    "tags": [
+      "loso na soso",
+      "riz",
+      "poulet",
+      "Kinshasa",
+      "mokolo na mokolo"
+    ],
+    "body": "Le **loso au soso** (en lingala : *loso na soso*) est le Ndeko du [loso au mbisi](/ln/recettes/loso-na-mbisi/) : un seul plat, sauce et grain ensemble. Pour le soso sans loso : [soso ya sauce](/ln/recettes/soso-ya-sauce/).",
+    "seoTitle": "loso au soso (loso na soso)"
+  },
+  "pondu-ngulu": {
+    "title": "Pondu ya ngulu",
+    "description": "pondu au porc (en lingala : pondu ya ngulu) : matabisi ya manioc (pondu) ebilisami na ya porc — variante ya pondu.",
+    "region": "Kinshasa mpe Cuvette",
+    "imageAlt": "matabisi ya manioc (pondu) fraîches, base du pondu au porc",
+    "prepTime": "min. 40",
+    "cookTime": "ngonga 1 min. 40",
+    "ingredients": [
+      "2 kg ya matabisi ya manioc (pondu), ya sika to congelé",
+      "700 g ya porc (épaule ou côtes) en morceaux",
+      "200 ml ya mafuta ya palmier rouge",
+      "3 aluboka, mikatami",
+      "4 mikolo ya ail, mikatami",
+      "2 tomatisi, mibetami (ya lingi)",
+      "2 cubes ya bouillon",
+      "muni mpe pili-pili",
+      "Mai"
+    ],
+    "steps": [
+      "Sukola mpe kata finement matiti (to utiliser un pondu déjà pilé). Ébouillanter brièvement si elles sont très amères.",
+      "Bimasisa le porc dans un peu ya mafuta ya palme. Tika na pembeni.",
+      "Bimasisa oignons mpe ail dans oyo etikali ya mafuta. Bakisa tomatisi s'il y en a.",
+      "Bakisa le pondu, bien l'enrober ya mafuta, mouiller d'un peu ya mai. Funga mpe mijoter 40 minutes à feu doux na kobabalala.",
+      "Remettre le porc mpe le cube. Poursuivre 35 à 45 minutes jusqu'à texture crémeuse mpe viande tendre.",
+      "Rectifier l'assaisonnement. Salela na fufu, chikwangue to riz."
+    ],
+    "tags": [
+      "pondu",
+      "pondu ya ngulu",
+      "saka-saka",
+      "porc",
+      "mafuta ya palmier"
+    ],
+    "body": "Le **pondu au porc** (en lingala : *pondu ya ngulu*) place le porc au centre, comme le [pondu au mbisi](/ln/recettes/pondu-mbisi/) le fait avec mbisi. Fiche de base : [pondu](/ln/recettes/pondu/). Porc seul en sauce : [ngulu ya sauce](/ln/recettes/ngulu-ya-sauce/).",
+    "seoTitle": "pondu au porc (pondu ya ngulu)"
+  },
+  "queue-boeuf-sauce": {
+    "title": "Queue ya ngombe",
+    "description": "queue ya bœuf en sauce : mijoté long tomatisi-aluboka — bilei ya fête mpe ya dimanche en RDC.",
+    "region": "Kinshasa",
+    "imageAlt": "Queue de bœuf cuite, prête pour une sauce longue",
+    "prepTime": "min. 25",
+    "cookTime": "ngonga 2 min. 30",
+    "ingredients": [
+      "1,5 kg ya queue ya bœuf, découpée en tronçons",
+      "Aluboka 3, mikatami",
+      "4 tomatisi, mibetami",
+      "3 mikolo ya ail",
+      "2 c. à soupe ya concentré ya tomatisi",
+      "3 lukwakulu ya mafuta",
+      "1 feuille ya laurier",
+      "2 cubes ya bouillon",
+      "muni, pili-pili mpe mai"
+    ],
+    "steps": [
+      "Bien rincer les tronçons. Les bimasisa na mafuta par petites quantités. Tika na pembeni.",
+      "Bimasisa aluboka, bakisa ail, tomatisi mpe le concentré. Teká 10 minutes.",
+      "Remettre la queue, le laurier, les cubes mpe mai à hauteur. Tia muni moke.",
+      "Mijoter à couvert 2 h à 2 h 30 à feu doux, jusqu'à viande très tendre mpe sauce liée. Bakisa ya mai soki esengeli.",
+      "Rectifier piment mpe sel. Salela na riz, fufu to plantains."
+    ],
+    "tags": [
+      "queue de bœuf",
+      "oxtail",
+      "sauce",
+      "fête",
+      "mijoté"
+    ],
+    "body": "La **queue de bœuf en sauce** demande du temps : collagène et sauce longue. Plus festive que la [nyama en sauce](/ln/recettes/nyama-ya-sauce/) du quotidien, dans la même famille de mijotés que les [tripes](/ln/recettes/tripes-mijotees/).",
+    "seoTitle": "queue ya bœuf en sauce"
+  },
+  "makemba-na-soso": {
+    "title": "Makemba na soso",
+    "description": "plantains frits au soso (en lingala : makemba na soso) — duo plantain mpe soso.",
+    "region": "Na RDC mobimba",
+    "imageAlt": "soso frit servi avec accompagnement de banane plantain",
+    "prepTime": "min. 20",
+    "cookTime": "min. 40",
+    "ingredients": [
+      "4 bananes plantain ya polelees",
+      "800 g ya soso (cuisses ou morceaux)",
+      "mafuta ya friture",
+      "1 aluboka, mikatami",
+      "2 tomatisi, mibetami",
+      "2 mikolo ya ail",
+      "Jus ya 1 citron",
+      "muni, pili-pili"
+    ],
+    "steps": [
+      "Tia muni, citronner mpe éventuellement poivrer soso. Le bimasisa à la poêle to le braiser. Tika na pembeni.",
+      "Éplucher les plantains, les kata en tranches mpe les frire jusqu'à doré. Égoutter mpe tia muni.",
+      "\"Option sauce courte : bimasisa aluboka mpe ail, bakisa tomatisi mpe un fond ya mai, 8 minutes. Napper le soso.\"",
+      "Dresser makemba mpe soso dans la même assiette. Salela aussitôt."
+    ],
+    "tags": [
+      "makemba",
+      "soso",
+      "plantain",
+      "poulet",
+      "assiette"
+    ],
+    "body": "Les **plantains frits au soso** (en lingala : *makemba na soso*) sont le pendant soso de [makemba na mbisi](/ln/recettes/makemba-na-mbisi/) : mariage d'assiette entre [makemba](/ln/recettes/makemba/) et un soso du catalogue.",
+    "seoTitle": "plantains frits au soso (makemba na soso)"
+  },
+  "beignets-haricot": {
+    "title": "Beignets ya madesu",
+    "description": "beignets ya haricots : pâte ya haricots frits (akara / kosai) — goûter mpe street food, ndeko ya mikate.",
+    "region": "Kinshasa mpe Ouest ya RDC",
+    "imageAlt": "Beignets de haricots frits dorés dans une assiette",
+    "prepTime": "min. 30 + ngonga 8 de kobomba",
+    "cookTime": "min. 25",
+    "ingredients": [
+      "400 g ya haricots blancs ou noirs à œil (décortiqués ya préférence)",
+      "1 petit aluboka",
+      "1 petit piment (ya lingi)",
+      "1 c. à café ya muni",
+      "Mai",
+      "mafuta ya friture"
+    ],
+    "steps": [
+      "Tia na mai madesu butu moko. longola mai, longola autant que possible les peaux.",
+      "Mixer haricots, oignon, piment mpe sel na un peu ya mai jusqu'à pâte épaisse mpe lisse (pas trop liquide).",
+      "Fútbisa mafuta à feu moyen. Prélever ya cuillerées ya pâte mpe les tia na kati kozanga kotonda mingi.",
+      "Frire jusqu'à doré uniforme en retournant. Égoutter sur papier.",
+      "Salela tièya, nature ou elongo na une sauce pili-pili."
+    ],
+    "tags": [
+      "beignets haricot",
+      "akara",
+      "kosai",
+      "street food",
+      "goûter"
+    ],
+    "body": "Les **beignets de haricots** (souvent appelés *akara* ou *kosai* en Afrique de l'Ouest, présents aussi sur les étals congolais) sont une alternative aux [mikate](/ln/recettes/mikate/) : même geste de friture, base légumineuse. À boire : [tangawisi](/ln/recettes/tangawisi/).",
+    "seoTitle": "beignets ya haricots congolais"
+  },
   "loso-na-mbisi": {
     "title": "Loso na mbisi",
     "description": "loso au mbisi (en lingala : loso na mbisi) : loso ebilisami na ya mbisi — classique ya table kinshasaise.",
@@ -5032,5 +5239,298 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     ],
     "body": "Le **chou Kinshasa** est le Ndeko capital du [chou mijoté de l'Est](/ln/recettes/chou-mijote-est/) : même légume, plus souvent mafuta ya palmier et cube. Salade croquante autre ville : [salade Kisangani](/ln/recettes/salade-kisangani/). Vert feuille : [ndunda](/ln/recettes/ndunda/).",
     "seoTitle": "chou mijoté — style Kinshasa"
+  },
+  "soso-grille-entier": {
+    "title": "Poulet entier à la braise",
+    "description": "soso entier à la braise : volaille ouverte à plat, marinée mpe grillée entière — présentation ya rue mpe ya partage à Kinshasa.",
+    "region": "Kinshasa",
+    "imageAlt": "soso entier assaisonné, rôti / grillé",
+    "prepTime": "min. 30 + ngonga 3 de marinade",
+    "cookTime": "ngonga 1",
+    "ingredients": [
+      "1 soso entier (environ 1,5 à 1,8 kg)",
+      "2 aluboka, dont un râpé",
+      "5 mikolo ya ail, mikatami",
+      "3 cm ya gingembre, râpé",
+      "Jus ya 2 citrons",
+      "4 lukwakulu ya mafuta",
+      "1 c. à café ya thym ou herbes",
+      "Pili-pili, muni mpe poivre",
+      "1 cube ya bouillon, ya lingi"
+    ],
+    "steps": [
+      "Ouvrir soso à plat (kata le long ya dos, aplatir le bréchet) pour une cuisson uniforme.",
+      "Balabala oignon râpé, ail, gingembre, citron, huile, herbes, sel, poivre, pili-pili mpe cube émietté.",
+      "Enrober soso, glisser la marinade sous la peau. Tika na pembeni au frais au moins 3 heures.",
+      "\"Griller sur braises ya kati, côté peau d'abord, 45 à 60 minutes en retournant mpe en arrosant. Alternativement : four à 200 °C.\"",
+      "Vérifier que le jus ya la cuisse coule clair. Salela entier à table na pili-pili mpe oignons crus."
+    ],
+    "tags": [
+      "poulet entier",
+      "braise",
+      "street food",
+      "Kinshasa",
+      "grillade"
+    ],
+    "body": "Le **soso entier à la braise** insiste sur la volaille ouverte et présentée entière — geste de partage / étal. Les morceaux et la marinade courte restent sur [soso ya kotumba](/ln/recettes/soso-ya-kotumba/). Mayo : [soso mayo](/ln/recettes/soso-mayo/). Condiment : [sauce pili-pili](/ln/recettes/sauce-pili-pili/).",
+    "seoTitle": "soso entier grillé — street food Kinshasa"
+  },
+  "rognons-saute": {
+    "title": "Rognons sautés",
+    "description": "rognons sautés : abats rapidement saisis na aluboka mpe piment — street food mpe plat express à côté ya foie.",
+    "region": "Kinshasa",
+    "imageAlt": "Rognons sautés en sauce avec aluboka",
+    "prepTime": "min. 20",
+    "cookTime": "min. 20",
+    "ingredients": [
+      "600 g ya rognons ya bœuf (ou ya porc), bien nettoyés",
+      "Aluboka 2, mikatami",
+      "2 mikolo ya ail, mikatami",
+      "2 lukwakulu ya mafuta",
+      "1 c. à soupe ya jus ya citron ou vinaigre",
+      "1 tomatisi, concassée (ya lingi)",
+      "Piment, muni mpe poivre"
+    ],
+    "steps": [
+      "Ouvrir les rognons, longola le gras blanc mpe les canaux. Kata en tranches to dés. Citronner, tia muni.",
+      "Fútbisa mafuta à feu vif. Saisir les rognons 3 à 4 minutes sans les entasser. Tika na pembeni.",
+      "Bimasisa oignons mpe ail. Bakisa tomatisi si utilisée, 5 minutes.",
+      "Remettre les rognons, pimenter, balabala 2 à 3 minutes — ne pas trop teká.",
+      "Salela aussitôt elongo na pain, frites ou loso."
+    ],
+    "tags": [
+      "rognons",
+      "abats",
+      "poêle",
+      "Kinshasa",
+      "street food"
+    ],
+    "body": "Comme le [foie sauté](/ln/recettes/foie-boeuf-saute/), les **rognons** durcissent s'ils restent trop longtemps sur le feu. Autres abats : [tripes mijotées](/ln/recettes/tripes-mijotees/), [brochettes de foie](/ln/recettes/brochettes-foie/).",
+    "seoTitle": "rognons sautés — abats Kinshasa"
+  },
+  "langue-boeuf-sauce": {
+    "title": "Monoko ya ngombe",
+    "description": "langue ya bœuf en sauce : langue longuement bouillie puis mijotée tomatisi-aluboka — bilei ya fête en RDC.",
+    "region": "Kinshasa",
+    "imageAlt": "Langue de bœuf cuite, tranchée, prête pour la sauce",
+    "prepTime": "min. 30",
+    "cookTime": "ngonga 3",
+    "ingredients": [
+      "1 langue ya bœuf (environ 1,2 à 1,5 kg)",
+      "Aluboka 3, mikatami",
+      "4 tomatisi, mibetami",
+      "4 mikolo ya ail",
+      "2 c. à soupe ya concentré ya tomatisi",
+      "3 lukwakulu ya mafuta",
+      "1 feuille ya laurier",
+      "2 cubes ya bouillon",
+      "muni, pili-pili mpe mai",
+      "1 aluboka mpe 1 carotte pour le bouillon (ya lingi)"
+    ],
+    "steps": [
+      "Rincer la langue. La funga ya mai ya malili na laurier, oignon mpe carotte. Bila tii ebukana, écumer, mijoter 2 h à 2 h 30 jusqu'à tendreté.",
+      "Égoutter, tika ekóma mwa malili, longola la peau. Kata en tranches épaisses.",
+      "Bimasisa aluboka na mafuta, bakisa ail, tomates mpe concentré. Teká 10 minutes.",
+      "Remettre la langue, les cubes mpe un peu ya bouillon ya cuisson. Mijoter 30 à 40 minutes.",
+      "Rectifier sel mpe piment. Salela na riz, fufu to plantains."
+    ],
+    "tags": [
+      "langue",
+      "bœuf",
+      "sauce",
+      "fête",
+      "abats"
+    ],
+    "body": "La **langue de bœuf en sauce** est un mijoté de fête : long bouillon, puis sauce. Même famille longue que la [queue de bœuf](/ln/recettes/queue-boeuf-sauce/) et la [nyama en sauce](/ln/recettes/nyama-ya-sauce/).",
+    "seoTitle": "langue ya bœuf en sauce"
+  },
+  "plantain-grille-arachide": {
+    "title": "Plantain grillé à l'arachide",
+    "description": "plantain grillé à l'nguba : plantains sur braises ou grill, servis na pâte d'nguba — goûter mpe apéro ya rue / diaspora.",
+    "region": "Na RDC mobimba",
+    "imageAlt": "Tranches de plantain grillées",
+    "prepTime": "min. 10",
+    "cookTime": "min. 20",
+    "ingredients": [
+      "4 bananes plantain ya polelees mais fermes",
+      "150 g ya pâte d'nguba (ou nguba grillées pilées)",
+      "1 pincée ya muni",
+      "Pili-pili ou sucre (selon le goût)",
+      "mafuta pour badigeonner (ya lingi)"
+    ],
+    "steps": [
+      "Éplucher les plantains, les kata en deux dans la longueur to en gros tronçons.",
+      "Badigeonner moke ya mafuta soki esengeli. Griller sur braises to grill moyen 15 à 20 minutes en tournant, jusqu'à marques mpe chair tendre.",
+      "Bongisa monoko la pâte d'arachide d'une pincée ya muni (mpe pili-pili to sucre selon l'habitude).",
+      "Salela les plantains chauds elongo na la pâte à côté ou en léger nappage."
+    ],
+    "tags": [
+      "plantain",
+      "grillé",
+      "arachide",
+      "goûter",
+      "street food"
+    ],
+    "body": "Le **plantain grillé à l'nguba** est un goûter de braise, distinct des [makemba](/ln/recettes/makemba/) frits. Même famille d'encas que le [maïs grillé](/ln/recettes/mais-grille/) ; douceur nguba aussi dans les [bonbons nguba](/ln/recettes/bonbons-nguba/).",
+    "seoTitle": "plantain grillé nguba — goûter diaspora"
+  },
+  "jus-gingembre-ananas": {
+    "title": "Tangawisi ya ananas",
+    "description": "jus gingembre-ananas : tangawisi enrichi d'ananas frais — boisson piquante mpe fruitée, très demandée en RDC mpe en diaspora.",
+    "region": "Kinshasa",
+    "imageAlt": "Jus d'ananas en préparation, base du mélange gingembre-ananas",
+    "prepTime": "min. 25 + min. 30 de kobomba",
+    "cookTime": "min. 0",
+    "ingredients": [
+      "200 g ya gingembre frais",
+      "½ ananas mûr (environ 400 g ya chair)",
+      "1,5 l ya mai",
+      "80 à 120 g ya sucre",
+      "Jus d'1 citron",
+      "1 pincée ya piment, ya lingi"
+    ],
+    "steps": [
+      "Sukola mpe éplucher le gingembre ; éplucher l'ananas mpe couper la chair en cubes.",
+      "Mixer gingembre mpe ananas na 500 ml ya mai jusqu'à purée grossière.",
+      "Bakisa oyo etikali ya mai. Tika reposer 20 à 30 minutes.",
+      "Filtrer à travers un linge fin en pressant bien.",
+      "Sucrer, bakisa le citron (mpe pili-pili si souhaité). Réfrigérer. Salela glacé."
+    ],
+    "tags": [
+      "gingembre",
+      "ananas",
+      "tangawisi",
+      "jus",
+      "boisson"
+    ],
+    "body": "Le **jus gingembre-ananas** est la variante fruitée du [tangawisi](/ln/recettes/tangawisi/) : même piquant, plus de douceur d'ananas. Jus d'ananas seul : [jus d'ananas](/ln/recettes/jus-ananas/).",
+    "seoTitle": "jus gingembre ananas — tangawisi à l'ananas"
+  },
+  "the-citronnelle": {
+    "title": "Thé ya citronnelle",
+    "description": "thé à la citronnelle : tiges fraîches infusées à mai chaude — boisson maison simple, chaude ou glacée.",
+    "region": "Na RDC mobimba",
+    "imageAlt": "Tasse de thé / infusion à la citronnelle",
+    "prepTime": "min. 5",
+    "cookTime": "min. 15",
+    "ingredients": [
+      "4 à 6 tiges ya citronnelle fraîche",
+      "1 l ya mai",
+      "30 à 50 g ya sucre ou miel, ya lingi",
+      "Tranches ya citron ou gingembre, ya lingi"
+    ],
+    "steps": [
+      "Sukola les tiges, les écraser moke au dos d'un couteau, les kata en tronçons.",
+      "Porter mai à ébullition. Bakisa la citronnelle (mpe le gingembre si utilisé).",
+      "Baisser le feu mpe tika infuser 10 à 15 minutes à couvert.",
+      "Filtrer. Sucrer selon le goût.",
+      "Salela chaud, to tika refroidir mpe salela glacé."
+    ],
+    "tags": [
+      "citronnelle",
+      "thé",
+      "infusion",
+      "boisson",
+      "maison"
+    ],
+    "body": "Le **thé à la citronnelle** est l'infusion du jardin / du marché — sans le piquant du [tangawisi](/ln/recettes/tangawisi/). On le croise souvent glacé en saison chaude, à côté du [bissap](/ln/recettes/jus-bissap/).",
+    "seoTitle": "thé citronnelle — infusion maison"
+  },
+  "bouillie-manioc": {
+    "title": "Bouillie ya manioc",
+    "description": "bouillie ya manioc : farine ya manioc cuite à mai jusqu'à texture crémeuse, sucrée — petit-déjeuner mpe goûter, distincte ya la bouillie ya maïs.",
+    "region": "Na RDC mobimba",
+    "imageAlt": "Bouillie de manioc en cours de cuisson dans une casserole",
+    "prepTime": "min. 5",
+    "cookTime": "min. 20",
+    "ingredients": [
+      "150 g ya farine ya manioc fine",
+      "1 l ya mai",
+      "60 à 80 g ya sucre",
+      "1 pincée ya muni",
+      "1 c. à café ya vanille ou zeste ya citron, ya lingi",
+      "Lait, pour servir, ya lingi"
+    ],
+    "steps": [
+      "Bakisa mpe balabala la farine dans 250 ml ya mai ya malili jusqu'à un mélange sans grumeaux.",
+      "Bila le reste ya mai tii ebukana avec le muni.",
+      "Tema mélange farine en pluie na kobabalala vivement.",
+      "Teká 12 à 15 minutes à feu moyen, na kobabalala sans cesse, jusqu'à texture crémeuse.",
+      "Bakisa le sucre mpe le parfum. Salela tièya, nature to na un filet ya lait."
+    ],
+    "tags": [
+      "manioc",
+      "bouillie",
+      "petit-déjeuner",
+      "goûter"
+    ],
+    "body": "La **bouillie de manioc** reprend le geste de la [bouillie de maïs](/ln/recettes/bouillie-mais/) avec une autre farine — plus neutre, parfois un peu élastique. À ne pas confondre avec la pâte salée [fufu de manioc](/ln/recettes/fufu-manioc/). Cousine nguba : [bouillie d'nguba](/ln/recettes/bouillie-nguba/).",
+    "seoTitle": "bouillie ya manioc"
+  },
+  "gateau-banane": {
+    "title": "Gâteau ya libuma",
+    "description": "gâteau à la banane : cake moelleux aux bananes mikatami — dessert / goûter nationwide, cousin ya gâteau nguba mpe ya gâteau manioc.",
+    "region": "Na RDC mobimba",
+    "imageAlt": "Gâteau à la banane coupé en parts",
+    "prepTime": "min. 20",
+    "cookTime": "min. 45",
+    "ingredients": [
+      "3 bananes bien mûres (ou plantains très mûrs), mikatami",
+      "200 g ya farine ya blé",
+      "120 g ya sucre",
+      "2 œufs",
+      "80 ml ya mafuta neutre (ou 100 g ya beurre fondu)",
+      "1 sachet ya levure chimique (11 g)",
+      "1 pincée ya muni",
+      "1 c. à café ya vanille"
+    ],
+    "steps": [
+      "Préfútbisa le four à 180 °C. Beurrer un moule.",
+      "Écraser les bananes. Battre œufs mpe sucre, bakisa huile, bananes mpe vanille.",
+      "Bakisa la farine, la levure mpe muni. Balabala juste jusqu'à homogénéité.",
+      "Tema dans le moule. Teká 40 à 50 minutes jusqu'à ce qu'un couteau ressort propre.",
+      "Tika ekóma mwa malili avant ya démouler. Salela en parts."
+    ],
+    "tags": [
+      "banane",
+      "gâteau",
+      "dessert",
+      "goûter"
+    ],
+    "body": "Le **gâteau à la banane** utilise les fruits trop mûrs du marché — distinct des [bananes au caramel](/ln/recettes/bananes-caramel/) et des [beignets de banane](/ln/recettes/beignets-banane/). Autres cakes : [gâteau nguba](/ln/recettes/gateau-nguba/), [gâteau manioc](/ln/recettes/gateau-manioc/).",
+    "seoTitle": "gâteau banane — cake plantain ou banane douce"
+  },
+  "galettes-mais": {
+    "title": "Galettes ya maïs",
+    "description": "galettes ya maïs : pâte ya farine ya maïs poêlée ou légèrement frite — goûter mpe street food, distinctes ya maïs grillé en épi.",
+    "region": "Na RDC mobimba",
+    "imageAlt": "Pain / galette à base de maïs, doré",
+    "prepTime": "min. 15",
+    "cookTime": "min. 25",
+    "ingredients": [
+      "250 g ya farine ya maïs fine",
+      "50 g ya farine ya blé (pour lier), ya lingi",
+      "2 œufs",
+      "200 ml ya mai ou ya lait",
+      "40 g ya sucre",
+      "1 pincée ya muni",
+      "1 c. à café ya levure chimique",
+      "mafuta pour la poêle"
+    ],
+    "steps": [
+      "Balabala farines, sucre, sel mpe levure.",
+      "Bakisa ba makaki sima mai (to le lait) jusqu'à une pâte épaisse tombante.",
+      "Fútbisa un filet ya mafuta na poêle à feu moyen.",
+      "Tia ya cuillerées ya pâte, aplatir moke. Teká 3 à 4 minutes ya chaque côté jusqu'à doré.",
+      "Égoutter sur papier. Salela tièya, nature to na un peu ya sucre / pâte d'arachide."
+    ],
+    "tags": [
+      "maïs",
+      "galettes",
+      "goûter",
+      "street food"
+    ],
+    "body": "Les **galettes de maïs** sont le goûter poêlé — pas l'épi du [maïs grillé](/ln/recettes/mais-grille/) ni la crème de la [bouillie de maïs](/ln/recettes/bouillie-mais/). Cousins frits : [mikate](/ln/recettes/mikate/), [beignets de manioc](/ln/recettes/beignets-manioc/).",
+    "seoTitle": "galettes ya maïs — goûter street"
   }
 };

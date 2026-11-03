@@ -39,6 +39,7 @@ export const ui = {
     'footer.info': 'Informations',
     'footer.legal': 'Mentions légales',
     'footer.privacy': 'Confidentialité',
+    'footer.rss': 'Flux RSS',
     'footer.photoCredits': 'Crédits photo',
     'footer.photoCreditsBody':
       'Photographies sous licences Creative Commons.\nCrédit détaillé sur chaque recette.',
@@ -82,10 +83,10 @@ export const ui = {
     'home.carnet.body':
       'Trois portes d’entrée dans une cuisine congolaise plurielle, de la feuille de manioc au poisson du fleuve.',
     'recipes.title': 'Recettes',
-    'recipes.pageTitle': 'Catalogue de recettes congolaises',
+    'recipes.pageTitle': 'Recettes congolaises — catalogue searchable',
     'recipes.hero': 'Les recettes.',
     'recipes.intro':
-      'Le catalogue Mpichi répertorie des plats du quotidien et des jours de fête, documentés avec leurs gestes, leur région et leur histoire.',
+      'Recherchez par nom local (saka-saka, mwamba, kwanga…) ou par région : le catalogue Mpichi répertorie gestes, territoires et histoires.',
     'recipes.count': '{n} recette',
     'recipes.countPlural': '{n} recettes',
     'recipes.catalog': 'Tout le catalogue',
@@ -96,7 +97,7 @@ export const ui = {
     'recipes.noMatch': 'Aucune recette ne correspond à cette recherche.',
     'recipes.meta': '{prep} de préparation · {cook} de cuisson',
     'recipes.description':
-      'Catalogue qui répertorie les recettes congolaises de la RDC : recherche, filtres par région et catégorie, fiches détaillées.',
+      'Recettes congolaises de la RDC : recherche (noms locaux inclus), filtres région et catégorie, fiches détaillées — catalogue Mpichi.',
     'recipes.filters': 'Filtres',
     'recipes.filterCategory': 'Catégorie',
     'recipes.filterDifficulty': 'Niveau',
@@ -126,8 +127,9 @@ export const ui = {
     'regions.title': 'Régions',
     'regions.hero': 'Les régions.',
     'regions.intro':
-      'Un même geste change de rive en rive. Parcourez le répertoire par territoire.',
-    'regions.description': 'Recettes congolaises classées par région sur Mpichi.',
+      'Kinshasa, Kasaï, Katanga, Kongo-Central, bassin du Congo… : hubs régionaux pour explorer le catalogue.',
+    'regions.description':
+      'Recettes congolaises par région — Kinshasa, Grand Kasaï, Katanga et autres territoires sur Mpichi.',
     'regions.empty': 'Aucune région documentée pour le moment.',
     'regions.back': '← Toutes les régions',
     'regions.detailIntro':
@@ -136,8 +138,9 @@ export const ui = {
     'categories.title': 'Catégories',
     'categories.hero': 'Les catégories.',
     'categories.intro':
-      'Plats, accompagnements, boissons et desserts pour entrer dans le répertoire autrement.',
-    'categories.description': 'Recettes congolaises classées par catégorie sur Mpichi.',
+      'Plats, accompagnements, boissons et desserts : quatre portes d’entrée dans le répertoire.',
+    'categories.description':
+      'Plats, accompagnements, boissons et desserts congolais — catégories du catalogue Mpichi.',
     'categories.empty': 'Aucune catégorie pour le moment.',
     'categories.back': '← Toutes les catégories',
     'categories.detailIntro': 'Recettes de cette catégorie dans le répertoire Mpichi.',
@@ -345,6 +348,7 @@ export const ui = {
     'footer.info': 'Information',
     'footer.legal': 'Legal notice',
     'footer.privacy': 'Privacy',
+    'footer.rss': 'RSS feed',
     'footer.photoCredits': 'Photo credits',
     'footer.photoCreditsBody':
       'Photographs under Creative Commons licenses.\nDetailed credit on each recipe.',
@@ -388,10 +392,10 @@ export const ui = {
     'home.carnet.body':
       'Three doorways into a plural Congolese cuisine, from cassava leaves to river fish.',
     'recipes.title': 'Recipes',
-    'recipes.pageTitle': 'Catalogue of Congolese recipes',
+    'recipes.pageTitle': 'Congolese recipes — searchable catalogue',
     'recipes.hero': 'The recipes.',
     'recipes.intro':
-      'The Mpichi catalogue lists everyday and festive dishes, documented with their gestures, their region, and their story.',
+      'Search by local name (saka-saka, mwamba, kwanga…) or by region: the Mpichi catalogue lists gestures, territories, and stories.',
     'recipes.count': '{n} recipe',
     'recipes.countPlural': '{n} recipes',
     'recipes.catalog': 'The full catalogue',
@@ -402,7 +406,7 @@ export const ui = {
     'recipes.noMatch': 'No recipe matches this search.',
     'recipes.meta': '{prep} prep · {cook} cook',
     'recipes.description':
-      'A catalogue that lists Congolese recipes from the DRC: search, filters by region and category, detailed recipe pages.',
+      'Congolese recipes from the DRC: search (local names included), region and category filters, detailed cards — Mpichi catalogue.',
     'recipes.filters': 'Filters',
     'recipes.filterCategory': 'Category',
     'recipes.filterDifficulty': 'Level',
@@ -432,8 +436,9 @@ export const ui = {
     'regions.title': 'Regions',
     'regions.hero': 'The regions.',
     'regions.intro':
-      'The same gesture shifts from one shore to another. Browse the repertoire by territory.',
-    'regions.description': 'Congolese recipes organised by region on Mpichi.',
+      'Kinshasa, Kasai, Katanga, Kongo-Central, Congo Basin…: regional hubs to explore the catalogue.',
+    'regions.description':
+      'Congolese recipes by region — Kinshasa, Greater Kasai, Katanga and other territories on Mpichi.',
     'regions.empty': 'No regions documented yet.',
     'regions.back': '← All regions',
     'regions.detailIntro':
@@ -442,8 +447,9 @@ export const ui = {
     'categories.title': 'Categories',
     'categories.hero': 'The categories.',
     'categories.intro':
-      'Mains, sides, drinks and desserts — another way into the repertoire.',
-    'categories.description': 'Congolese recipes organised by category on Mpichi.',
+      'Mains, sides, drinks and desserts: four doors into the repertoire.',
+    'categories.description':
+      'Congolese mains, sides, drinks and desserts — Mpichi catalogue categories.',
     'categories.empty': 'No categories yet.',
     'categories.back': '← All categories',
     'categories.detailIntro': 'Recipes in this category from the Mpichi repertoire.',
@@ -649,6 +655,7 @@ export const ui = {
     'footer.info': 'Sango',
     'footer.legal': 'Bilembo ya mibeko',
     'footer.privacy': 'Bobateli ya sango',
+    'footer.rss': 'Flux RSS',
     'footer.photoCredits': 'Ba crédits ya bilili',
     'footer.photoCreditsBody':
       'Bilili na ba licences Creative Commons.\nCrédit ya ndenge na ndenge na recette moko na moko.',
@@ -692,10 +699,10 @@ export const ui = {
     'home.carnet.body':
       'Bikuke misato na bilei ya Congo ya ndenge mingi, euti na matabisi ya manioc tii na mbisi ya ebale.',
     'recipes.title': 'Ba recettes',
-    'recipes.pageTitle': 'Kataloge ya ba recettes ya Congo',
+    'recipes.pageTitle': 'Ba recettes ya Congo — kataloge ya boluki',
     'recipes.hero': 'Ba recettes.',
     'recipes.intro':
-      'Kataloge ya Mpichi ekómisi bilei ya mokolo mpe ya fête, ekomami na ba gestes na yango, eteni na yango, mpe lisolo na yango.',
+      'Luka na nkombo ya mboka (saka-saka, mwamba, kwanga…) to na eteni : kataloge ya Mpichi ekómisi ba gestes, biteni mpe ba lisolo.',
     'recipes.count': 'recette {n}',
     'recipes.countPlural': 'ba recettes {n}',
     'recipes.catalog': 'Kataloge mobimba',
@@ -706,7 +713,7 @@ export const ui = {
     'recipes.noMatch': 'Recette moko te elandi boluki oyo.',
     'recipes.meta': 'kobongisa {prep} · koteka {cook}',
     'recipes.description':
-      'Kataloge oyo ekómisi ba recettes ya Congo na RDC : boluki, ba filtres na eteni mpe catégorie, ba lokasa ya recette ya ndenge na ndenge.',
+      'Ba recettes ya Congo na RDC : boluki (nkombo ya mboka mpe), ba filtres ya eteni mpe catégorie, ba lokasa ya ndenge na ndenge — kataloge Mpichi.',
     'recipes.filters': 'Ba filtres',
     'recipes.filterCategory': 'Catégorie',
     'recipes.filterDifficulty': 'Niveau',
@@ -736,8 +743,9 @@ export const ui = {
     'regions.title': 'Biteni',
     'regions.hero': 'Biteni.',
     'regions.intro':
-      'Geste moko ebongwanaka euti na libongo moko tii na mosusu. Tala répertoire na eteni.',
-    'regions.description': 'Ba recettes ya Congo eponami na eteni na Mpichi.',
+      'Kinshasa, Kasaï, Katanga, Kongo-Central, bassin ya Congo… : ba hubs ya eteni mpo na kotála kataloge.',
+    'regions.description':
+      'Ba recettes ya Congo na eteni — Kinshasa, Kasaï monene, Katanga mpe biteni mosusu na Mpichi.',
     'regions.empty': 'Eteni moko te ekomami naino.',
     'regions.back': '← Biteni nyonso',
     'regions.detailIntro':
@@ -746,8 +754,9 @@ export const ui = {
     'categories.title': 'Ba catégories',
     'categories.hero': 'Ba catégories.',
     'categories.intro':
-      'Ba plats, ba accompagnements, ba boissons mpe ba desserts — nzela mosusu ya kótá na répertoire.',
-    'categories.description': 'Ba recettes ya Congo eponami na catégorie na Mpichi.',
+      'Ba plats, ba accompagnements, ba boissons mpe ba desserts : porte munei ya kótá na répertoire.',
+    'categories.description':
+      'Ba plats, ba accompagnements, ba boissons mpe ba desserts ya Congo — ba catégories ya kataloge Mpichi.',
     'categories.empty': 'Catégorie moko te naino.',
     'categories.back': '← Ba catégories nyonso',
     'categories.detailIntro': 'Ba recettes ya catégorie oyo na répertoire ya Mpichi.',

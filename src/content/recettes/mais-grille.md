@@ -23,6 +23,7 @@ tags:
 relatedRecipes:
   - mais-bouilli
   - bouillie-mais
+  - galettes-mais
   - bukari-katanga
   - sukuma-est
 ingredients:

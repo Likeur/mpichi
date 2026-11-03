@@ -23,6 +23,7 @@ tags:
 relatedRecipes:
   - beignets-banane
   - beignets-manioc
+  - beignets-haricot
   - tangawisi
 video:
   youtube: https://www.youtube.com/watch?v=tdNfm_lZ2aM

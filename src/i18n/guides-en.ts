@@ -75,7 +75,7 @@ No smoked fish? Some families switch to dried fish (makayabu), others go vegetar
 
 Documenting a recipe also means documenting that journey. Quantities help you start; gesture and market correct what follows. That is why our cards name a region when it is known, and why these guides insist on context rather than a single norm.
 
-Cooking Congolese food elsewhere often means finding the African grocery that brings that market closer — then adapting, as people always have.`,
+Cooking Congolese food elsewhere often means finding the African grocery that brings that market closer — then adapting, as people always have. Dedicated guide: [cooking in the diaspora](/en/guides/diaspora/).`,
   },
   fufu: {
     title: 'Fufu, the everyday paste',
@@ -103,5 +103,43 @@ Fufu is almost never eaten alone: [pondu](/en/recettes/pondu/), [moambe](/en/rec
 ## What Mpichi documents
 
 Separate cards so distinct gestures are not merged (boiled ≠ fried, cassava ≠ maize). This guide orients; the recipes give proportions. See also the [market guide](/en/guides/marche/) for flours and diaspora substitutions.`,
+  },
+  diaspora: {
+    title: 'Cooking Congolese food in the diaspora',
+    seoTitle: 'African grocery stores and Congolese cooking substitutions (FR/BE)',
+    description:
+      'Where to buy cassava leaves, palm oil, and smoked fish in France and Belgium — honest substitutions for Congolese cooking outside the DRC.',
+    intro:
+      'Far from a Kinshasa market, the meal often starts in an African grocery — then in the gestures you adapt.',
+    imageAlt: 'An opened liboke in its leaves, ready to eat',
+    body: `Cooking **Congolese food in France or Belgium** is not copying Kinshasa: it is recovering the gestures with what African groceries, frozen aisles, and supermarkets allow. Mpichi documents those paths without presenting them as a “less authentic” version.
+
+## Where to look
+
+In larger cities (Paris, Brussels, Liège, Lyon…), **African and Afro-Caribbean groceries** remain the first stop: cassava leaves (pondu / saka-saka) fresh or frozen, red palm oil, cassava flour, stock cubes, chillies, smoked or salted fish ([makayabu](/en/recettes/makayabu/)). Supermarket “world food” aisles sometimes help (hibiscus, ginger, peanuts).
+
+The [market guide](/en/guides/marche/) explains how to read a stall; here we start from what is **findable outside the DRC**.
+
+## Substitutions that hold
+
+| At a market in the DRC | In the diaspora (honest option) |
+| --- | --- |
+| Fresh cassava leaves | Frozen (thaw, squeeze) — longer cooking |
+| Banana leaves (liboke) | Baking paper + foil |
+| Artisanal smoked fish | Imported smoked/dried, or [makayabu](/en/recettes/makayabu/) |
+| Fresh moambe | Tin or sachet — truly simmer |
+| Cassava / maize flour | Same flour in Afro aisles; bugali/bukari gesture unchanged |
+
+No greens? Some households switch to spinach or other leaves for a weekday meal — Mpichi notes that as an **adaptation**, not as an equivalent of [pondu](/en/recettes/pondu/).
+
+## Two gestures to keep
+
+Time and palm oil (when you have it) often matter more than the exact brand. A tinned [moambe](/en/guides/moambe/) that simmers for an hour is closer to the table than a rushed version. A well-worked [fufu](/en/guides/fufu/) still carries the sauce even if the flour came from a European pack.
+
+## Go further
+
+- [Recipe catalogue](/en/recettes/) — also search under local names (saka-saka, mwamba, kwanga…)
+- [Pondu guide](/en/guides/pondu/) and [market guide](/en/guides/marche/) for gesture detail
+- Suggest a diaspora variant via [Propose a recipe](/en/proposer/)`,
   },
 };

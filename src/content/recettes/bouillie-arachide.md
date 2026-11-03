@@ -22,6 +22,7 @@ relatedRecipes:
   - gateau-arachide
   - bonbons-arachide
   - bouillie-mais
+  - bouillie-manioc
   - mikate
   - beignets-banane
 ingredients:

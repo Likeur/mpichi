@@ -26,6 +26,7 @@ relatedRecipes:
   - fufu-manioc
   - saka-madesu
   - pondu-poisson
+  - pondu-ngulu
 
 video:
   youtube: https://www.youtube.com/watch?v=F8FIY5xvJIU

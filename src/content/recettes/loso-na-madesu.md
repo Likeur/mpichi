@@ -25,6 +25,7 @@ relatedRecipes:
   - saka-madesu
   - loso-petits-pois
   - loso-na-mbisi
+  - loso-na-soso
 ingredients:
   - 400 g de haricots rouges ou bruns secs
   - 400 g de riz

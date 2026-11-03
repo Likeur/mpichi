@@ -75,7 +75,7 @@ Mbisi ya fumé ezali te ? Mabota mosusu bakweya na makayabu, basusu bakende na m
 
 Kokoma recette elobaka lisusu mobembo wana. Mituya epesaka point ya kobanda ; geste mpe zando babongisaka oyo elandaka. Yango wana ba cartes na biso balobaka biteni soki eye, mpe yango wana ba guides oyo batia makambo na contexte na esika ya norme moko.
 
-Kobika bilei congolais na esika mosusu elobaka mbala mingi kozwa magasin africain oyo azo pene na zando — sima kobongisa, lokola bato basalaka ntango nyonso.`,
+Kobika bilei congolais na esika mosusu elobaka mbala mingi kozwa magasin africain oyo azo pene na zando — sima kobongisa, lokola bato basalaka ntango nyonso. Guide ya sika : [koteka na diaspora](/ln/guides/diaspora/).`,
   },
   fufu: {
     title: 'Fufu, pâte ya mokolo na mokolo',
@@ -103,5 +103,43 @@ Fufu ekolyamaka mbala mingi te : [pondu](/ln/recettes/pondu/), [moambe](/ln/rece
 ## Oyo Mpichi etángi
 
 Ba cartes etí kozanga kokanga ba gestes oyo ekeseni (bouilli ≠ frit, manioc ≠ maïs). Guide oyo ezali orientation ; recettes epesi ba proportions. Tala lisusu [guide ya zando](/ln/guides/marche/) mpo na ba farines mpe ba remplacements na diaspora.`,
+  },
+  diaspora: {
+    title: 'Koteka bilei ya Congo na diaspora',
+    seoTitle: 'Magasin africain mpe ba remplacements ya bilei ya Congo (FR/BE)',
+    description:
+      'Esika ya kosomba matabisi ya manioc, mafuta ya palmier, mbisi ya fumé na France mpe Belgique — ba remplacements ya solo mpo na koteka congo libanda ya RDC.',
+    intro:
+      'Mosika na zando ya Kinshasa, bilei ebandaka mbala mingi na magasin africain — sima na ba gestes oyo obongisaka.',
+    imageAlt: 'Liboke efungwami na ndunda na yango, esengeli kolya',
+    body: `Koteka **bilei ya Congo na France to Belgique** ezali te kopima Kinshasa : ezali kozwa ba gestes na oyo magasin africain, congelé mpe supermarché epesi. Mpichi ekomaka ba nzela oyo kozanga koloba ezali version « ya mabe ».
+
+## Esika ya koluka
+
+Na ba engumba monene (Paris, Bruxelles, Liège, Lyon…), **ba magasins africains mpe afro-caribéens** ezali esika ya liboso : matabisi ya manioc (pondu / saka-saka) ya sika to ya congelé, mafuta ya palmier rouge, farine ya manioc, cube, pili-pili, mbisi ya fumé to ya muni ([makayabu](/ln/recettes/makayabu/)). Ba rayons « monde » ya ba grandes surfaces bakoki kosalisa (bissap, gingembre, nguba).
+
+[Guide ya zando](/ln/guides/marche/) elakisi ndenge ya kotánga étal ; awa tobandaka na oyo **ezwami libanda ya RDC**.
+
+## Ba remplacements oyo ekanga
+
+| Na zando na RDC | Na diaspora (ndenge ya solo) |
+| --- | --- |
+| Matabisi ya manioc ya sika | Congelé (fungola, kama) — tango ya koteka eleki |
+| Ndunda ya banane (liboke) | Papier cuisson mpe alu |
+| Mbisi ya fumé ya artisan | Fumé/séché ya import, to [makayabu](/ln/recettes/makayabu/) |
+| Moambe ya sika | Boîte to sachet — tika ekóla solo |
+| Farine ya manioc / maïs | Farine moko na rayon afro ; geste ya bugali/bukari moko |
+
+Matiti ezali te ? Mabota mosusu bakweya na épinard to matiti mosusu mpo na bilei ya mpokwa — Mpichi etángi yango lokola **adaptation**, te lokola ndeko moko ya [pondu](/ln/recettes/pondu/).
+
+## Ba gestes mibale ya kobomba
+
+Tango mpe mafuta ya palmier (soki ezali) basalaka mingi koleka marque. [Moambe](/ln/guides/moambe/) ya boîte oyo ebilisami ngonga moko epene na mesa koleka version ya noki. [Fufu](/ln/guides/fufu/) oyo esálami malamu etyaka sauce ata soki farine euti na sachet ya Europe.
+
+## Kokoba
+
+- [Kataloge ya ba recettes](/ln/recettes/) — luka mpe na nkombo ya mboka (saka-saka, mwamba, kwanga…)
+- [Guide ya pondu](/ln/guides/pondu/) mpe [guide ya zando](/ln/guides/marche/) mpo na ba gestes
+- Pesa variante ya diaspora na [Kopesa recette](/ln/proposer/)`,
   },
 };

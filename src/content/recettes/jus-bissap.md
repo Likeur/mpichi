@@ -24,6 +24,7 @@ relatedRecipes:
   - jus-ananas
   - jus-passion
   - tangawisi
+  - the-citronnelle
 video:
   youtube: https://www.youtube.com/watch?v=2cUQilpkRBA
   title: Jus de bissap (hibiscus)

@@ -22,6 +22,7 @@ tags:
   - assiette
 relatedRecipes:
   - makemba
+  - makemba-na-soso
   - poisson-braise-kinkole
   - mbisi-ya-kokalinga
 ingredients:

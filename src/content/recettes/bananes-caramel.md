@@ -23,6 +23,7 @@ relatedRecipes:
   - beignets-banane
   - bananes-douces-vapeur
   - gateau-arachide
+  - gateau-banane
   - mikate
 ingredients:
   - 4 bananes douces mûres mais fermes

@@ -20,6 +20,7 @@ tags:
   - friture
 relatedRecipes:
   - bananes-caramel
+  - gateau-banane
   - mikate
   - beignets-manioc
   - bouillie-mais

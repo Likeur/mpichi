@@ -23,6 +23,8 @@ relatedRecipes:
   - mais-bouilli
   - mais-grille
   - bouillie-arachide
+  - bouillie-manioc
+  - galettes-mais
   - mikate
   - tangawisi
 ingredients:

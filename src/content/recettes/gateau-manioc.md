@@ -20,6 +20,7 @@ tags:
   - goûter
 relatedRecipes:
   - gateau-arachide
+  - gateau-banane
   - beignets-manioc
   - bouillie-mais
 ingredients:

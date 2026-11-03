@@ -16,6 +16,7 @@ import type { UiKey } from '../../i18n/ui';
 import { absoluteUrl } from '../../lib/site';
 import { pageCanonical, resolveOrigin } from '../../lib/seo';
 import { slugFromRecipeId } from '../../lib/recipe-theme';
+import { aliasSearchBlob } from '../../lib/aliases';
 
 interface Props {
   lang?: Locale;
@@ -34,6 +35,7 @@ const getSearchText = (item: (typeof recipes)[number]) =>
     item.localized.region,
     item.localized.category,
     ...item.localized.tags,
+    aliasSearchBlob(item.localized.slug),
   ]
     .filter(Boolean)
     .join(' ');

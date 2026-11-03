@@ -21,10 +21,12 @@ tags:
   - boisson
   - Kinshasa
 relatedRecipes:
+  - jus-gingembre-ananas
   - jus-tamarin
   - jus-bissap
   - jus-ananas
   - jus-mangue
+  - the-citronnelle
   - mikate
 video:
   youtube: https://www.youtube.com/watch?v=Pl2Sbd2CoV4

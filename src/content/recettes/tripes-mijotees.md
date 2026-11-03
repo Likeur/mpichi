@@ -22,6 +22,8 @@ tags:
   - quotidien
 relatedRecipes:
   - foie-boeuf-saute
+  - rognons-saute
+  - langue-boeuf-sauce
   - brochettes-foie
   - viande-ya-sauce
   - makosso-pommes

@@ -7,6 +7,7 @@ import { localePath, recipeCountLabel, useTranslations, schemaLanguage} from '..
 import { absoluteUrl } from '../../lib/site';
 import { pageCanonical, resolveOrigin } from '../../lib/seo';
 import { getCategoryTaxonomies, type CategoryTaxonomy, type RecipeCategory } from '../../lib/taxonomy';
+import { getCategoryHubCopy } from '../../lib/hub-seo';
 
 export async function getStaticPaths() {
   const categories = await getCategoryTaxonomies('fr');
@@ -26,6 +27,10 @@ const t = useTranslations(lang);
 const categories = await getCategoryTaxonomies(lang);
 const category = categories.find((item) => item.slug === Astro.props.categorySlug) as CategoryTaxonomy;
 const label = t(`category.${category.slug}` as UiKey);
+const hub = getCategoryHubCopy(category.slug, lang);
+const pageTitle = hub.title;
+const pageDescription = hub.description;
+const pageIntro = hub.intro;
 const origin = resolveOrigin(Astro.site);
 const pageUrl = pageCanonical(Astro.url.pathname, origin);
 const ogRecipe = category.recipes[0]?.localized;
@@ -34,8 +39,8 @@ const countLabel = recipeCountLabel(lang, category.recipes.length);
 const collectionJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: label,
-  description: t('categories.detailDescription', { category: label }),
+  name: pageTitle,
+  description: pageDescription,
   url: pageUrl,
   inLanguage: schemaLanguage(lang),
   mainEntity: {
@@ -77,8 +82,8 @@ const breadcrumbJsonLd = {
 ---
 
 <BaseLayout
-  title={label}
-  description={t('categories.detailDescription', { category: label })}
+  title={pageTitle}
+  description={pageDescription}
   lang={lang}
   image={ogRecipe?.image}
   imageAlt={ogRecipe?.imageAlt}
@@ -96,10 +101,10 @@ const breadcrumbJsonLd = {
       </a>
       <div class="mt-8 grid lg:grid-cols-12 gap-8 items-end" data-stagger>
         <div class="lg:col-span-8">
-          <h1 class="text-display-hero">{label}</h1>
+          <h1 class="text-display-hero">{pageTitle}</h1>
         </div>
         <p class="lg:col-span-4 text-sm leading-6 text-creme-200/60 max-w-md">
-          {t('categories.detailIntro')}
+          {pageIntro}
         </p>
       </div>
       <p class="mt-10 text-[9px] uppercase tracking-[.16em] text-creme-200/35">{countLabel}</p>

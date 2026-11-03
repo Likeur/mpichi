@@ -24,6 +24,7 @@ relatedRecipes:
   - haricots-verts-palme
   - loso-na-madesu
   - saka-madesu
+  - soso-na-madesu
 
 video:
   youtube: https://www.youtube.com/watch?v=jV-tYOLILH0
