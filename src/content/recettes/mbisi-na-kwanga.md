@@ -3,11 +3,11 @@ title: Poisson et chikwangue
 seoTitle: "Recette poisson et chikwangue — Kongo-Central"
 description: "Recette de poisson servi avec chikwangue (en lingala : mbisi na kwanga) — duo classique du Kongo-Central."
 region: Kongo-Central
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Kwanga.jpg?width=1600
-imageAlt: Kwanga / chikwangue, pain de manioc
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Plat%20de%20piron%20au%20bar%20brais%C3%A9.jpg?width=1600
+imageAlt: Poisson braisé servi avec pâtes de manioc
 imagePosition: center
-imageCredit: OussamaHamama — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Kwanga.jpg
+imageCredit: "Chado07 — Wikimedia Commons, CC BY-SA 4.0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Plat_de_piron_au_bar_brais%C3%A9.jpg
 category: plat
 prepTime: 20 min
 cookTime: 40 min

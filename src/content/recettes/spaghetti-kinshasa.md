@@ -1,7 +1,7 @@
 ---
-title: Spaghetti Kinshasa
-seoTitle: Recette spaghetti Kinshasa — pâtes sauce locale
-description: "Recette de spaghetti à la kinshasaise : pâtes nappées d’une sauce tomate-oignon souvent enrichie de viande hachée ou de sardines — street food / table du quotidien."
+title: Spaghetti sauce tomate
+seoTitle: Recette spaghetti sauce tomate — pâtes
+description: "Recette de spaghetti sauce tomate : pâtes nappées d’une sauce tomate-oignon souvent enrichie de viande hachée ou de sardines — street food / table du quotidien."
 region: Kinshasa
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Spaghetti_bolognese.jpg?width=1600
 imageAlt: Spaghetti en sauce tomate, illustration du plat kinshasa
@@ -44,4 +44,4 @@ steps:
   - Servir chaud, éventuellement avec un œuf au plat ou du pili-pili.
 ---
 
-Les **spaghetti Kinshasa** empruntent le format pâtes italiennes à une sauce locale tomate-oignon — cousin urbain du [loso mayonnaise](/recettes/loso-mayonnaise/) et du [loso na madesu](/recettes/loso-na-madesu/). Autre assiette express : [saucisse-frites](/recettes/saucisse-frites/).
+Les **spaghetti sauce tomate** empruntent le format pâtes italiennes à une sauce locale tomate-oignon — cousin urbain du [loso mayonnaise](/recettes/loso-mayonnaise/) et du [loso na madesu](/recettes/loso-na-madesu/). Autre assiette express : [saucisse-frites](/recettes/saucisse-frites/).

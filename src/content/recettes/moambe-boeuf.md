@@ -3,11 +3,11 @@ title: Bœuf à la moambe
 seoTitle: Recette bœuf à la moambe
 description: "Recette du bœuf à la moambe : viande mijotée dans la pulpe de noix de palme — variante viande du grand classique congolaise."
 region: Toute la RDC
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Sauce_graine.jpg?width=1600
-imageAlt: Sauce graine / moambe onctueuse, base du bœuf à la moambe
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Foutou%20sauce%20graine%20et%20queue%20de%20boeuf.jpg?width=1600
+imageAlt: "Sauce graine / moambe avec viande, servie avec foutou"
 imagePosition: center
-imageCredit: Aboukam — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Sauce_graine.jpg
+imageCredit: "Cyriac Gbogou — Wikimedia Commons, CC BY-SA 4.0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Foutou_sauce_graine_et_queue_de_boeuf.jpg
 category: plat
 prepTime: 25 min
 cookTime: 1 h 30

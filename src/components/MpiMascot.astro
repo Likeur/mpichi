@@ -1,0 +1,87 @@
+---
+interface Props {
+  class?: string;
+  /** Visible caption under the figure (e.g. “Mpi”). */
+  label?: string;
+  /** Accessible name when the figure is meaningful. */
+  alt?: string;
+  size?: 'sm' | 'md' | 'lg';
+}
+
+const { class: className = '', label, alt, size = 'md' } = Astro.props;
+const accessibleName = alt ?? label;
+const shineId = `mpi-shine-${Math.random().toString(36).slice(2, 9)}`;
+const sizes = {
+  sm: 'h-16 w-14',
+  md: 'h-24 w-[5.25rem]',
+  lg: 'h-36 w-[7.75rem]',
+} as const;
+---
+
+<figure
+  class:list={['mpi-mascot relative inline-flex flex-col items-center', sizes[size], className]}
+  data-mpi
+>
+  <svg
+    viewBox="0 0 88 112"
+    class="h-full w-full overflow-visible"
+    role={accessibleName ? 'img' : 'presentation'}
+    aria-label={accessibleName}
+    aria-hidden={accessibleName ? undefined : 'true'}
+  >
+    <g class="mpi-spoon" transform="translate(58 28) rotate(18)">
+      <ellipse cx="7" cy="6" rx="7.5" ry="9" fill="#ddc8b7"></ellipse>
+      <ellipse cx="7" cy="5" rx="4.5" ry="5.5" fill="#efe5da" opacity=".55"></ellipse>
+      <rect x="5" y="14" width="4" height="34" rx="2" fill="#b9957f"></rect>
+    </g>
+
+    <g class="mpi-body">
+      <path
+        d="M44 6c14.5 0 26 11.5 26 26v36c0 14.5-11.5 26-26 26S18 82.5 18 68V32C18 17.5 29.5 6 44 6Z"
+        fill="#c91f32"></path>
+      <path
+        d="M44 6c14.5 0 26 11.5 26 26v36c0 14.5-11.5 26-26 26S18 82.5 18 68V32C18 17.5 29.5 6 44 6Z"
+        fill={`url(#${shineId})`}
+        opacity=".35"></path>
+      <path
+        d="M30 34c8-6 20-6 28 0"
+        stroke="#efe5da"
+        stroke-width="1.6"
+        stroke-linecap="round"
+        opacity=".72"
+        fill="none"></path>
+      <g class="mpi-eyes" fill="#2a1b15">
+        <circle cx="36" cy="46" r="3.2"></circle>
+        <circle cx="52" cy="46" r="3.2"></circle>
+        <circle cx="37.1" cy="45" r="1" fill="#f5f0e9"></circle>
+        <circle cx="53.1" cy="45" r="1" fill="#f5f0e9"></circle>
+      </g>
+      <path
+        d="M37 56c3.2 4.2 10.8 4.2 14 0"
+        stroke="#f5f0e9"
+        stroke-width="2"
+        stroke-linecap="round"
+        fill="none"></path>
+      <circle cx="30.5" cy="52.5" r="3.2" fill="#941522" opacity=".45"></circle>
+      <circle cx="57.5" cy="52.5" r="3.2" fill="#941522" opacity=".45"></circle>
+      <ellipse cx="44" cy="72" rx="9" ry="6" fill="#f5f0e9" opacity=".14"></ellipse>
+    </g>
+
+    <g class="mpi-feet" fill="#941522">
+      <ellipse cx="36" cy="102" rx="7" ry="3.2"></ellipse>
+      <ellipse cx="52" cy="102" rx="7" ry="3.2"></ellipse>
+    </g>
+
+    <defs>
+      <linearGradient id={shineId} x1="30" y1="10" x2="70" y2="100" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#f5f0e9" stop-opacity=".55"></stop>
+        <stop offset="1" stop-color="#c91f32" stop-opacity="0"></stop>
+      </linearGradient>
+    </defs>
+  </svg>
+  {
+    label && (
+      <figcaption class="mt-2 text-[9px] uppercase tracking-[.18em] text-current/45">{label}</figcaption>
+    )
+  }
+</figure>

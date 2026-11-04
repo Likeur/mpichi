@@ -2,11 +2,11 @@
 title: Mujibujibu
 description: Feuilles de courge lentement mijotées avec arachides fraîches moulues et poisson fumé.
 region: Kasaï-Central
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/African%20pumpkin%20leaves.%2007.jpg?width=1600
-imageAlt: Jeunes feuilles de courge africaines utilisées pour le mujibujibu
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Amala%20served%20with%20ewedu(Pumpkin%20leaf)%20and%20beef.jpg?width=1600
+imageAlt: Feuilles de courge cuites (mujibujibu / ewedu) servies avec viande et pâte
 imagePosition: center
-imageCredit: Denis Kasozi — Wikimedia Commons, CC BY 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:African_pumpkin_leaves._07.jpg
+imageCredit: "Aderiqueza — Wikimedia Commons, CC BY-SA 4.0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Amala_served_with_ewedu(Pumpkin_leaf)_and_beef.jpg
 category: plat
 prepTime: 30 min
 cookTime: 45 min

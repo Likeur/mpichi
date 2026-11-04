@@ -3,11 +3,11 @@ title: Pondu au porc
 seoTitle: "Recette pondu au porc (pondu ya ngulu)"
 description: "Recette de pondu au porc (en lingala : pondu ya ngulu) : feuilles de manioc mijotées avec du porc — variante du pondu."
 region: Kinshasa & Cuvette
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Cassava%20leaves.jpg?width=1600
-imageAlt: Feuilles de manioc fraîches, base du pondu au porc
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Sombe%20sauce%20with%20meat%20and%20ovacado%2001.jpg?width=1600
+imageAlt: "Feuilles de manioc mijotées avec de la viande, servies en plat"
 imagePosition: center
-imageCredit: Guwo Josephine — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Cassava_leaves.jpg
+imageCredit: "BalukuBrian — Wikimedia Commons, CC BY-SA 4.0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Sombe_sauce_with_meat_and_ovacado_01.jpg
 category: plat
 prepTime: 40 min
 cookTime: 1 h 40

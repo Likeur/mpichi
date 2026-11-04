@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EditorialRecipeCard from '../../components/EditorialRecipeCard.astro';
 import PillButton from '../../components/PillButton.astro';
+import MpiMascot from '../../components/MpiMascot.astro';
 import type { Locale } from '../../i18n/config';
 import { localePath, localizeRecipe, recipeCountLabel, useTranslations } from '../../i18n/utils';
 
@@ -43,6 +44,9 @@ const countPlural = t('recipes.countPlural', { n: '00' }).replace('00', '{n}');
   <section class="bg-creme-100 py-12 sm:py-16">
     <div class="px-grid-margin max-w-[1200px] mx-auto">
       <div data-favorites-empty class="py-16 text-center">
+        <div class="mb-8 flex justify-center text-earth-900/40">
+          <MpiMascot size="lg" label={t('mascot.name')} alt={t('mascot.alt')} />
+        </div>
         <p class="font-display text-3xl font-light text-earth-900/55">{t('favorites.empty')}</p>
         <p class="mt-4 text-sm text-earth-900/50">{t('favorites.emptyHint')}</p>
         <div class="mt-10 flex justify-center">

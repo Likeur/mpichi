@@ -1,7 +1,7 @@
 ---
-title: Pilau du Kivu
-seoTitle: Recette pilau — riz épicé du Kivu
-description: "Recette de pilau (pilaw) : riz cuit dans un bouillon d’épices avec viande ou légumes — plat d’influence est-africaine très présent au Nord et Sud-Kivu."
+title: Pilau
+seoTitle: Recette pilau — riz épicé
+description: "Recette de pilau (pilaw) : riz cuit dans un bouillon d’épices avec viande ou légumes — plat d’influence est-africaine très présent à l’Est."
 region: Nord-Kivu & Sud-Kivu
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Pilau.jpg?width=1600
 imageAlt: Assiette de pilau, riz épicé

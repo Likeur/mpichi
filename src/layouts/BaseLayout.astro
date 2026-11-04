@@ -5,6 +5,7 @@ import FloatingNav from '../components/FloatingNav.astro';
 import FavoritesInit from '../components/FavoritesInit.astro';
 import AnalyticsInit from '../components/AnalyticsInit.astro';
 import PwaRegister from '../components/PwaRegister.astro';
+import MpiMascot from '../components/MpiMascot.astro';
 import { ClientRouter } from 'astro:transitions';
 import { pwaInfo } from 'virtual:pwa-info';
 import type { Locale } from '../i18n/config';
@@ -234,7 +235,15 @@ const googleSiteVerification =
         data-stagger
       >
         <div class="max-w-md">
-          <p class="font-display text-5xl font-light tracking-tight text-creme-100">Mpichi</p>
+          <div class="flex items-end gap-5">
+            <MpiMascot
+              size="md"
+              label={t('mascot.name')}
+              alt={t('mascot.alt')}
+              class="text-creme-200/50 shrink-0 -mb-1"
+            />
+            <p class="font-display text-5xl font-light tracking-tight text-creme-100 pb-1">Mpichi</p>
+          </div>
           <p class="mt-5 text-sm leading-relaxed text-creme-200/60">
             {t('footer.tagline')}
           </p>
@@ -282,7 +291,24 @@ const googleSiteVerification =
             Likeur
           </a>
         </p>
-        <p class="sm:text-right">Lubumbashi · RDC</p>
+        <p class="flex items-center gap-4 sm:justify-end">
+          <span>Lubumbashi · RDC</span>
+          <a
+            href="https://github.com/Likeur/mpichi"
+            target="_blank"
+            rel="noreferrer"
+            class="text-creme-200/55 transition-colors hover:text-white"
+            aria-label={t('footer.github')}
+            title={t('footer.github')}
+          >
+            <svg viewBox="0 0 24 24" class="size-4" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M12 2C6.477 2 2 6.584 2 12.253c0 4.53 2.865 8.37 6.839 9.724.5.094.682-.222.682-.482 0-.237-.009-.866-.014-1.7-2.782.615-3.369-1.37-3.369-1.37-.454-1.178-1.11-1.492-1.11-1.492-.908-.635.069-.622.069-.622 1.003.072 1.53 1.05 1.53 1.05.892 1.563 2.341 1.112 2.91.85.092-.66.35-1.112.636-1.367-2.22-.259-4.555-1.137-4.555-5.062 0-1.118.39-2.033 1.029-2.75-.103-.26-.446-1.302.098-2.713 0 0 .84-.275 2.75 1.05A9.35 9.35 0 0 1 12 7.11a9.35 9.35 0 0 1 2.504.345c1.909-1.325 2.748-1.05 2.748-1.05.546 1.411.203 2.453.1 2.713.64.717 1.028 1.632 1.028 2.75 0 3.936-2.339 4.8-4.566 5.054.359.317.679.943.679 1.902 0 1.372-.012 2.478-.012 2.815 0 .263.18.58.688.481A10.03 10.03 0 0 0 22 12.253C22 6.584 17.523 2 12 2Z"
+              />
+            </svg>
+          </a>
+        </p>
       </div>
     </footer>
 

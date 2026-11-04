@@ -3,11 +3,11 @@ title: Pondu au poisson
 seoTitle: "Recette pondu au poisson"
 description: "Recette de pondu au poisson (en lingala : pondu ya mbisi) : feuilles de manioc mijotées avec du poisson — variante du pondu."
 region: Kinshasa & Cuvette
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Feuilles_de_manioc.jpg?width=1600
-imageAlt: Feuilles de manioc fraîches, base du pondu au poisson
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Fuufuu%20with%20dried%20fish%20and%20cassava%20leaves.JPG?width=1600
+imageAlt: Pondu (feuilles de manioc) servi avec poisson séché et fufu
 imagePosition: center
-imageCredit: PrintyKiss — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Feuilles_de_manioc.jpg
+imageCredit: "Ochyengomondi — Wikimedia Commons, CC BY-SA 4.0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Fuufuu_with_dried_fish_and_cassava_leaves.JPG
 category: plat
 prepTime: 40 min
 cookTime: 1 h 30

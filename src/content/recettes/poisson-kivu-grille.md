@@ -1,13 +1,13 @@
 ---
-title: Poisson du Kivu grillé
-seoTitle: Recette poisson du lac Kivu grillé
-description: "Recette de poisson du lac Kivu grillé : poisson entier mariné aux aromates puis grillé jusqu’à peau fumée — grillade de l’Est, distincte du braise de Kinkole."
+title: Poisson de lac grillé
+seoTitle: Recette poisson de lac grillé
+description: "Recette de poisson de lac grillé : poisson entier mariné aux aromates puis grillé jusqu’à peau fumée — grillade lacustre de l’Est, distincte du braise de fleuve."
 region: Nord-Kivu & Sud-Kivu
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Poisson%20brais%C3%A9%20%C3%A0%20Kinkole.jpg?width=1400
-imageAlt: Poisson entier grillé, peau dorée
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Grilled%20Tilapia%202.jpg?width=1400
+imageAlt: Tilapia entier grillé à la peau noircie, servi en barquette
 imagePosition: center
-imageCredit: Gra2mb — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Poisson_brais%C3%A9_%C3%A0_Kinkole.jpg
+imageCredit: Umuhiera — Wikimedia Commons, CC0
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Grilled_Tilapia_2.jpg
 category: plat
 prepTime: 25 min + 1 h de marinade
 cookTime: 30 min

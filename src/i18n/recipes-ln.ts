@@ -27,7 +27,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Biteku-teku (lenga-lenga)",
     "description": "Biteku-teku (lenga-lenga) : matiti ya biteku-teku ebilisami na aluboka, tomatisi mpe nguba — bilei ya Kasaï monene, ndeko ya ndunda ya Kinshasa.",
     "region": "Kasaï monene",
-    "imageAlt": "Matiti ya biteku-teku ya sika mpo na koteka",
+    "imageAlt": "Feuilles vertes type amarante / biteku-teku cuites, esalemi elongo na une pâte",
     "prepTime": "min. 20",
     "cookTime": "min. 25",
     "ingredients": [
@@ -286,7 +286,6 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
         "id": "sans-poisson",
         "title": "Without smoked fish",
         "description": "Peanut sauce and leaves alone — fully plant-based.",
-        "imageAlt": "Fumbwa peanut sauce served with fufu",
         "ingredients": [
           "500 g ya shredded fumbwa leaves",
           "200 g ya unsweetened peanut paste",
@@ -332,7 +331,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Brochette ya kamundele",
     "description": "kamundele : brochettes ya bœuf marinées aux aromates mpe grillées sur braises — street food emblématique ya Kinshasa.",
     "region": "Kinshasa",
-    "imageAlt": "Assiette de kamundele, brochettes de bœuf marinées, avec frites et légumes",
+    "imageAlt": "Brochettes de bœuf type kamundele grillées sur braises",
     "prepTime": "min. 25 + ngonga 1 de marinade",
     "cookTime": "min. 15",
     "ingredients": [
@@ -365,7 +364,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Kapenta na tomatisi",
     "description": "Kapenta na tomatisi : mbisi mike (ya sika to kokauka) kotumbami sima na sauce ya tomatisi-aluboka — classique ya Haut-Katanga mpe Tanganyika.",
     "region": "Haut-Katanga mpe Tanganyika",
-    "imageAlt": "Kapenta mike elakisami mpo na bilei",
+    "imageAlt": "Kapenta mijotés servis avec une pâte de maïs (sadza)",
     "prepTime": "min. 20",
     "cookTime": "min. 30",
     "ingredients": [
@@ -398,7 +397,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Liboke ya mbisi",
     "description": "Liboke ya mbisi (maboke) : mbisi oyo bongisaki na espece, ekangami na ndunda ya banane mpe ebilisami na mvuke — na nuka malamu mpe ya pétrole.",
     "region": "Bas-Congo mpe Bandundu",
-    "imageAlt": "Liboke efungwami na ndunda na yango, esengeli kolya",
+    "imageAlt": "Liboke / maboke de mbisi (capitaine) servi avec plantains frits",
     "prepTime": "min. 30",
     "cookTime": "min. 45",
     "ingredients": [
@@ -522,7 +521,6 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
         "id": "poisson-fume",
         "title": "With smoked fish",
         "description": "Beans enriched with smoked fish — a savourier everyday plate.",
-        "imageAlt": "Bowl of cooked red beans",
         "ingredients": [
           "500 g ya dried red to brown beans",
           "200 g ya smoked mbisi",
@@ -958,7 +956,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Mujibujibu",
     "description": "Feuilles ya courge lentement ebilisami na nguba fraîches moulues mpe mbisi ya fumé.",
     "region": "Kasaï-Central",
-    "imageAlt": "Jeunes feuilles de courge africaines mpo na le mujibujibu",
+    "imageAlt": "Feuilles de courge cuites (mujibujibu / ewedu) esalemi elongo na nyama et pâte",
     "prepTime": "min. 30",
     "cookTime": "min. 45",
     "ingredients": [
@@ -1048,7 +1046,6 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
         "id": "vegetal",
         "title": "Without fish",
         "description": "Fully plant-based ngai-ngai — leaf acidity stays centre stage.",
-        "imageAlt": "Simmered ngai-ngai served in a dish",
         "ingredients": [
           "500 g ya ngai-ngai leaves",
           "2 tomatisi, mibetami",
@@ -1091,7 +1088,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Nsafu ya kotumba",
     "description": "Fruits ya safoutier doucement chauffés jusqu'à ce que leur peau violette s'assouplisse mpe que leur chair devienne crémeuse.",
     "region": "Ouest ya RDC",
-    "imageAlt": "Nsafu violets tournés pendant leur cuisson sur une grille",
+    "imageAlt": "Safou / nsafu cuits servis dans un plat chaud",
     "prepTime": "min. 5",
     "cookTime": "min. 10",
     "ingredients": [
@@ -1628,7 +1625,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Liboké ya ngulu",
     "description": "nyama marinée aux aromates, enveloppée dans ya ndunda ya banane mpe cuite na mvuke — le geste ya liboke appliqué à la nyama, pas au mbisi.",
     "region": "Bandundu mpe Kongo-Central",
-    "imageAlt": "Liboke fermé dans ses feuilles, prêt à cuire",
+    "imageAlt": "Papillote type liboke / luwombo ouverte, servie avec accompagnement",
     "prepTime": "min. 30 + ngonga 1 de marinade",
     "cookTime": "ngonga 1",
     "ingredients": [
@@ -2293,7 +2290,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Sambaza na tomatisi",
     "description": "sambaza : petits poissons ya lac Tanganyika kotumbami sima mijotés dans une sauce ya tomatisi-aluboka — classique ya l'Est ya la RDC, cousin ya kapenta.",
     "region": "Haut-Katanga mpe Tanganyika",
-    "imageAlt": "Petits poissons de lac type sambaza / kapenta",
+    "imageAlt": "Petits poissons de lac type sambaza / kapenta servis avec une pâte de maïs",
     "prepTime": "min. 20",
     "cookTime": "min. 25",
     "ingredients": [
@@ -2361,7 +2358,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Mbisi ya fumé",
     "description": "mbisi ya fumé aux tomatisi : mbisi ya fumé réhydraté puis mijoté dans une sauce ya tomatisi-aluboka — bilei ya quotidien autour ya fleuve Congo, ekeseni na makayabu salé.",
     "region": "Kinshasa mpe bassin ya Congo",
-    "imageAlt": "mbisi ya fumé prêt à cuisiner",
+    "imageAlt": "mbisi ya fumé mijoté dans une sauce, prêt à servir",
     "prepTime": "min. 25 + min. 30 de kobomba",
     "cookTime": "min. 40",
     "ingredients": [
@@ -2396,7 +2393,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Aubergines africaines en sauce",
     "description": "aubergines africaines (garden eggs) ebilisami na tomatisi, aluboka mpe un peu d'mafuta — légume ya marché congolais, souvent servi na fufu ou loso.",
     "region": "Kinshasa mpe Ouest ya RDC",
-    "imageAlt": "Aubergines africaines (garden eggs) fraîches",
+    "imageAlt": "Sauce d'aubergines africaines (garden eggs) servie avec igname",
     "prepTime": "min. 20",
     "cookTime": "min. 35",
     "ingredients": [
@@ -2647,7 +2644,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Bouillie ya maïs",
     "description": "bouillie ya maïs : farine ya maïs cuite à mai jusqu'à texture crémeuse, sucrée — petit-déjeuner mpe goûter, distincte ya la bouillie d'nguba.",
     "region": "Na RDC mobimba",
-    "imageAlt": "Bol de bouillie de maïs (uji) crémeuse",
+    "imageAlt": "Bol de bouillie de maïs crémeuse",
     "prepTime": "min. 5",
     "cookTime": "min. 20",
     "ingredients": [
@@ -2678,7 +2675,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Capitaine ya kotumba",
     "description": "mbisi capitaine braisé : perche ya Nil entière marinée aux aromates mpe grillée jusqu'à la peau fumée — grillade ya fleuve, distincte ya mbisi ya Kinkole.",
     "region": "Kinshasa mpe bassin ya Congo",
-    "imageAlt": "Gros mbisi braisé servi avec accompagnements",
+    "imageAlt": "Gros poissons marinés en train de griller sur la braise",
     "prepTime": "min. 30 + ngonga 1 de marinade",
     "cookTime": "min. 35",
     "ingredients": [
@@ -2747,7 +2744,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Ngulu ya sauce",
     "description": "porc en sauce (en lingala : ngulu ya sauce) : porc mijoté tomatisi-aluboka — ekeseni na porc grillé.",
     "region": "Kinshasa",
-    "imageAlt": "Porc cuit, prêt à être servi en sauce",
+    "imageAlt": "Porc braisé / mijoté, prêt à servir en sauce",
     "prepTime": "min. 25",
     "cookTime": "ngonga 1 min. 15",
     "ingredients": [
@@ -2782,7 +2779,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Boeuf ya kotumba",
     "description": "bœuf grillé (en lingala : boeuf ya kotumba) : morceaux marinés puis cuits sur braises — grillade kin, distincte ya petites brochettes kamundele.",
     "region": "Kinshasa",
-    "imageAlt": "nyama de bœuf grillée servie en portion",
+    "imageAlt": "nyama de bœuf grillée sur braises (nyama choma / kotumba)",
     "prepTime": "min. 25 + ngonga 2 de marinade",
     "cookTime": "min. 40",
     "ingredients": [
@@ -3045,7 +3042,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Kwanga ya kotumba",
     "description": "chikwangue grillée : tranches ya kwanga passées sur braises ou poêle jusqu'à croûte fumée — geste à part ya la chikwangue vapeur.",
     "region": "Bassin ya Congo mpe Kinshasa",
-    "imageAlt": "Tranches de chikwangue (kwanga) coupées, prêtes à passer sur braises ou poêle",
+    "imageAlt": "Tranches de chikwangue (kwanga) coupées, prêtes à griller",
     "prepTime": "min. 5",
     "cookTime": "min. 10",
     "ingredients": [
@@ -3140,7 +3137,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Ndagala na tomatisi",
     "description": "ndagala aux tomatisi : petits poissons ya lac Kivu (frais ou séchés) kotumbami sima mijotés dans une sauce ya tomatisi — classique ya l'Est, ekeseni na kapenta / sambaza ya Katanga.",
     "region": "Nord-Kivu mpe Sud-Kivu",
-    "imageAlt": "Petits poissons séchés de lac type ndagala",
+    "imageAlt": "Ndagala / omena cuits servis avec légumes et pâte de maïs",
     "prepTime": "min. 20",
     "cookTime": "min. 30",
     "ingredients": [
@@ -3172,9 +3169,9 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   },
   "poisson-kivu-grille": {
     "title": "Mbisi ya Kivu ya kotumba",
-    "description": "mbisi ya lac Kivu grillé : mbisi entier mariné aux aromates puis grillé jusqu'à peau fumée — grillade ya l'Est, distincte ya braise ya Kinkole.",
+    "description": "mbisi ya lac grillé : mbisi entier mariné aux aromates puis grillé jusqu'à peau fumée — grillade lacustre ya l'Est, distincte ya braise ya fleuve.",
     "region": "Nord-Kivu mpe Sud-Kivu",
-    "imageAlt": "mbisi entier grillé, peau dorée",
+    "imageAlt": "Tilapia entier grillé à la peau noircie, servi en barquette",
     "prepTime": "min. 25 + ngonga 1 de marinade",
     "cookTime": "min. 30",
     "ingredients": [
@@ -3200,7 +3197,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Goma"
     ],
     "body": "Autour de **Goma** et de Bukavu, mbisi de lac se grille souvent entier, avec une marinade citron-ail proche des grillades de Kinshasa. La fiche [mbisi braisé à Kinkole](/ln/recettes/mbisi-braise-kinkole/) documente le geste fluvial de la capitale ; ici l'ancrage est **lacustre, Est**.",
-    "seoTitle": "mbisi ya lac Kivu grillé"
+    "seoTitle": "mbisi ya lac grillé"
   },
   "kabambale": {
     "title": "Kabambale",
@@ -3271,7 +3268,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Mbala",
     "description": "mbala : patates douces bouillies ou rôties jusqu'à fondre — tubercule ya quotidien, distinct ya feuilles matembele.",
     "region": "Na RDC mobimba",
-    "imageAlt": "Patates douces (mbala) bouillies, chair jaune",
+    "imageAlt": "Patates douces (mbala) rôties / cuites, prêtes à servir",
     "prepTime": "min. 10",
     "cookTime": "min. 30",
     "ingredients": [
@@ -3359,8 +3356,8 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "seoTitle": "bananes douces na vapeur"
   },
   "andazi-tanganyika": {
-    "title": "Andazi du Tanganyika",
-    "description": "andazi (mandazi) : beignets ya farine légèrement sucrés frits jusqu'à dorer — encas ya quotidien à Kalemie mpe autour ya lac Tanganyika.",
+    "title": "Andazi",
+    "description": "andazi (mandazi) : beignets ya farine légèrement sucrés frits jusqu'à dorer — encas ya quotidien autour ya lac Tanganyika.",
     "region": "Haut-Katanga mpe Tanganyika",
     "imageAlt": "Andazi frais tout juste frits, lac Tanganyika",
     "prepTime": "min. 25 + min. 45 kobomba",
@@ -3392,7 +3389,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Kalemie"
     ],
     "body": "Les **andazi** (singulier *andazi*, aussi *mandazi* en swahili) sont les beignets du quotidien sur la rive congolaise du Tanganyika — Kalemie en tête. Moins sucrés que certains beignets de ville, ils se mangent au petit déjeuner ou en collation.\n\nCousins : [mikate](/ln/recettes/mikate/), [beignets de manioc](/ln/recettes/beignets-manioc/). Boisson locale : [munkoyo](/ln/recettes/munkoyo/).",
-    "seoTitle": "andazi / mandazi — beignets ya lac Tanganyika"
+    "seoTitle": "andazi / mandazi — beignets"
   },
   "mukeke-grille": {
     "title": "Mukeke ya kotumba",
@@ -3426,12 +3423,12 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "Est",
       "Kalemie"
     ],
-    "body": "Le **mukeke** désigne, selon les marchés, un grand mbisi du **lac Tanganyika** — pièce de fête quand le port en reçoit. Le geste reste simple : citron, ail, feu. Les petits poissons du même lac sont plutôt [sambaza](/ln/recettes/sambaza/) ou [kapenta](/ln/recettes/kapenta-tomatisi/).\n\nAu Kivu, le Ndeko grillé : [mbisi du Kivu](/ln/recettes/mbisi-kivu-grille/).",
+    "body": "Le **mukeke** désigne, selon les marchés, un grand mbisi du **lac Tanganyika** — pièce de fête quand le port en reçoit. Le geste reste simple : citron, ail, feu. Les petits poissons du même lac sont plutôt [sambaza](/ln/recettes/sambaza/) ou [kapenta](/ln/recettes/kapenta-tomatisi/).\n\nAu Kivu, le Ndeko grillé : [mbisi de lac grillé](/ln/recettes/mbisi-kivu-grille/).",
     "seoTitle": "mukeke grillé — mbisi ya lac Tanganyika"
   },
   "pilau-kivu": {
     "title": "Pilau ya Kivu",
-    "description": "pilau (pilaw) : loso cuit dans un bouillon d'épices na nyama ou légumes — plat d'influence est-africaine très présent au Nord mpe Sud-Kivu.",
+    "description": "pilau (pilaw) : loso cuit dans un bouillon d'épices na nyama ou légumes — plat d'influence est-africaine très présent à l'Est.",
     "region": "Nord-Kivu mpe Sud-Kivu",
     "imageAlt": "Assiette de pilau, loso épicé",
     "prepTime": "min. 25",
@@ -3466,7 +3463,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "épices"
     ],
     "body": "Le **pilau** (ou *pilaw*) circule dans l'Est swahilophone : épices, loso, nyama. Au Kivu il côtoie le [bugali](/ln/recettes/bukari-katanga/) et les plats de lac. Ce n'est pas le [loso mayonnaise](/ln/recettes/loso-mayonnaise/) de Kinshasa : ici le loso boit le bouillon d'épices.\n\nPhoto d'ambiance est-africaine (crédit Commons) — le geste reste celui des foyers de Goma, Bukavu et alentours.",
-    "seoTitle": "pilau — loso épicé ya Kivu"
+    "seoTitle": "pilau — loso épicé"
   },
   "haricots-maharage": {
     "title": "Madesu ya maharage",
@@ -3504,7 +3501,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   },
   "chou-mijote-est": {
     "title": "Chou ya kobila",
-    "description": "chou mijoté : chou blanc revenu puis cuit na aluboka mpe tomatisi — légume simple ya quotidien à l'Est, servi na bugali ou loso.",
+    "description": "chou mijoté : chou blanc revenu puis cuit na aluboka mpe tomatisi — légume simple ya quotidien, servi na bugali ou loso.",
     "region": "Nord-Kivu mpe Sud-Kivu",
     "imageAlt": "Chou cuit servi à côté d'une pâte de maïs",
     "prepTime": "min. 15",
@@ -3533,7 +3530,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "accompagnement"
     ],
     "body": "Le **chou mijoté** est un légume de table à l'Est, moins chanté que le [pondu](/ln/recettes/pondu/) mais très présent dès que le marché en propose. On le pose à côté du [bugali](/ln/recettes/bukari-katanga/). Autre vert du quotidien swahili : [sukuma](/ln/recettes/sukuma-est/).",
-    "seoTitle": "chou mijoté — accompagnement Kivu / Est"
+    "seoTitle": "chou mijoté — accompagnement"
   },
   "sukuma-est": {
     "title": "Sukuma",
@@ -3604,7 +3601,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Mbinzo grillées",
     "description": "mbinzo grillées : chenilles comestibles grossièrement assaisonnées mpe saisies à la poêle ou au feu — protéine ya saison au Kasaï mpe au Katanga.",
     "region": "Kasaï monene",
-    "imageAlt": "Chenilles comestibles (mbinzo / ngala) séchées, prêtes à saisir à la poêle",
+    "imageAlt": "Mbinzo (chenilles) cuites, esalemi elongo na accompagnements",
     "prepTime": "min. 20",
     "cookTime": "min. 15",
     "ingredients": [
@@ -3769,7 +3766,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Mbisi ya fumé",
     "description": "mbisi ya fumé en sauce courte : trempé, mijoté à la tomatisi — protéine ya garde-manger au Kasaï, servie na le bidia.",
     "region": "Kasaï monene",
-    "imageAlt": "Panier de poissons séchés / fumés sur un marché congolais",
+    "imageAlt": "mbisi ya fumé cuit en sauce, servi en plat",
     "prepTime": "min. 20 + min. 40 kobomba",
     "cookTime": "min. 35",
     "ingredients": [
@@ -3827,40 +3824,6 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     ],
     "body": "Au **Grand Katanga**, la pomme de terre complète le [bukari](/ln/recettes/bukari-katanga/) sans le remplacer — surtout en ville. Pour un plat plus long : [makosso aux pommes](/ln/recettes/makosso-pommes/). Légume de la région : [matembele](/ln/recettes/matembele-katanga/).",
     "seoTitle": "pommes ya terre sautées — Katanga"
-  },
-  "brochettes-lubumbashi": {
-    "title": "Brochettes de Lubumbashi",
-    "description": "brochettes ya Lubumbashi : bœuf mariné mpe grillé sur braises — street food ya Katanga monene, cousine ya kamundele ya Kinshasa.",
-    "region": "Katanga monene",
-    "imageAlt": "Brochettes de bœuf marinées avec accompagnements",
-    "prepTime": "min. 25 + ngonga 1 marinade",
-    "cookTime": "min. 15",
-    "ingredients": [
-      "700 g ya bœuf (tranche à brochettes)",
-      "1 aluboka, râpé",
-      "3 mikolo ya ail",
-      "1 c. à café ya gingembre râpé",
-      "2 lukwakulu ya mafuta",
-      "1 c. à soupe ya jus ya citron",
-      "muni, poivre, pili-pili",
-      "Brochettes en bois"
-    ],
-    "steps": [
-      "Kata nyama en cubes réguliers.",
-      "Balabala oignon, ail, gingembre, huile, citron, sel, poivre, piment. Enrober. Mariner 1 h au frais.",
-      "Enfiler sur les brochettes sans trop serrer.",
-      "Griller sur braises ya kati 12–15 minutes en retournant.",
-      "Salela na oignons crus, pili-pili, etazi / andazi, to frites."
-    ],
-    "tags": [
-      "brochettes",
-      "Lubumbashi",
-      "Katanga",
-      "street food",
-      "bœuf"
-    ],
-    "body": "À **Lubumbashi**, les brochettes de rue ont le même geste que les [kamundele](/ln/recettes/kamundele/) de Kinshasa — marinade, braises, partage. Accompagnement local : [andazi](/ln/recettes/andazi-tanganyika/) ou [bukari](/ln/recettes/bukari-katanga/). Photo Commons : même famille de brochettes congolaises (crédit indiqué).",
-    "seoTitle": "brochettes Lubumbashi — street food katanga"
   },
   "viande-sechee-tomates": {
     "title": "Nyama ya kokauka na tomatisi",
@@ -3932,7 +3895,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Sambousa ya pommes",
     "description": "sambousa aux pommes ya terre : chaussons frits farcis — encas ya rue à Goma mpe dans l'Est, ndeko ya samosas d'Afrique ya l'Est.",
     "region": "Nord-Kivu mpe Sud-Kivu",
-    "imageAlt": "Vendeur de sambousa aux pommes de terre à Goma",
+    "imageAlt": "Sambousa / samosas dorés servis avec sauces",
     "prepTime": "min. 40",
     "cookTime": "min. 25",
     "ingredients": [
@@ -3966,7 +3929,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Mwambe ya ngombe",
     "description": "bœuf na moambe : nyama mijotée dans la pulpe ya noix ya palme (moambe) — variante nyama ya grand classique congolaise.",
     "region": "Na RDC mobimba",
-    "imageAlt": "Sauce graine / moambe onctueuse, base du bœuf à la moambe",
+    "imageAlt": "Sauce graine / moambe avec nyama, servie avec foutou",
     "prepTime": "min. 25",
     "cookTime": "ngonga 1 min. 30",
     "ingredients": [
@@ -4000,7 +3963,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Pondu ya mbisi",
     "description": "pondu au mbisi (en lingala : pondu ya mbisi) : matabisi ya manioc (pondu) ebilisami na ya mbisi — variante ya pondu.",
     "region": "Kinshasa mpe Cuvette",
-    "imageAlt": "matabisi ya manioc (pondu) fraîches, base du pondu au mbisi",
+    "imageAlt": "Pondu (matabisi ya manioc (pondu)) servi avec mbisi séché et fufu",
     "prepTime": "min. 40",
     "cookTime": "ngonga 1 min. 30",
     "ingredients": [
@@ -4106,7 +4069,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Pondu ya ngulu",
     "description": "pondu au porc (en lingala : pondu ya ngulu) : matabisi ya manioc (pondu) ebilisami na ya porc — variante ya pondu.",
     "region": "Kinshasa mpe Cuvette",
-    "imageAlt": "matabisi ya manioc (pondu) fraîches, base du pondu au porc",
+    "imageAlt": "matabisi ya manioc (pondu) mijotées avec de la nyama, servies en plat",
     "prepTime": "min. 40",
     "cookTime": "ngonga 1 min. 40",
     "ingredients": [
@@ -4142,7 +4105,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Queue ya ngombe",
     "description": "queue ya bœuf en sauce : mijoté long tomatisi-aluboka — bilei ya fête mpe ya dimanche en RDC.",
     "region": "Kinshasa",
-    "imageAlt": "Queue de bœuf cuite, prête pour une sauce longue",
+    "imageAlt": "Queue de bœuf en sauce servie avec du manioc",
     "prepTime": "min. 25",
     "cookTime": "ngonga 2 min. 30",
     "ingredients": [
@@ -4276,7 +4239,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Ngolo grillé",
     "description": "ngolo grillé : mbisi-chat mariné puis cuit sur braises — geste ya braise, distinct ya la pepe soupe ya ngolo.",
     "region": "Kinshasa mpe bassin ya Congo",
-    "imageAlt": "mbisi-chat africain (Clarias), espèce du ngolo",
+    "imageAlt": "mbisi-chat (ngolo / silure) préparé et servi",
     "prepTime": "min. 25 + min. 30 de marinade",
     "cookTime": "min. 25",
     "ingredients": [
@@ -4377,42 +4340,68 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   },
   "brochettes-boeuf": {
     "title": "Brochettes ya ngombe",
-    "description": "brochettes ya bœuf : gros cubes marinés mpe grillés — portion ya table / braise, distincte ya petites kamundele ya rue.",
-    "region": "Kinshasa",
+    "description": "brochettes ya bœuf : cubes marinés mpe grillés sur braises — street food mpe table, ya Kinshasa au Katanga (mishikaki), distinctes ya petites kamundele.",
+    "region": "Kinshasa & Grand Katanga",
     "imageAlt": "Brochettes de nyama grillées sur braises",
     "prepTime": "min. 25 + ngonga 1 de marinade",
     "cookTime": "min. 20",
     "ingredients": [
-      "800 g ya bœuf (rumsteck ou basse côte), en cubes ya 2–3 cm",
-      "2 aluboka, dont un râpé",
-      "3 mikolo ya ail, mikatami",
-      "1 c. à café ya gingembre râpé",
-      "30 ml ya jus ya citron",
-      "3 lukwakulu ya mafuta",
-      "muni, poivre, pili-pili",
-      "8 brochettes en bois, trempées"
+      "800 g ya beef (rump to chuck), in 2–3 cm cubes",
+      "2 aluboka, one grated",
+      "3 mikolo ya ail, mibetami",
+      "1 tsp grated ginger",
+      "30 ml ya lemon juice",
+      "3 tbsp mafuta",
+      "muni, pepper, pili-pili",
+      "8 wooden skewers, soaked"
     ],
     "steps": [
-      "Balabala oignon râpé, ail, gingembre, citron, huile, sel, poivre mpe pili-pili. Enrober nyama. Mariner 1 h au frais.",
-      "Enfiler 4 à 5 cubes par brochette, sans trop serrer. Alterner na ya rondelles d'oignon si désiré.",
-      "Griller sur braises ya kati 15 à 20 minutes en retournant, jusqu'à croûte fumée mpe cœur encore juteux.",
-      "Salela na oignon cru, sauce pili-pili, frites to pain."
+      "Mix grated aluboka, garlic, ginger, lemon, mafuta, muni, pepper mpe pili-pili. Coat the meat. Marinate 1 h cold.",
+      "Thread 4–5 cubes per skewer, not too tightly. aluboka rounds optional.",
+      "Grill over medium coals 15–20 minutes, turning, tii smoked crust mpe juicy centre.",
+      "Salela elongo na raw aluboka, pili-pili sauce, fries to bread."
     ],
     "tags": [
       "brochettes",
       "bœuf",
       "street food",
       "grillade",
-      "Kinshasa"
+      "mishikaki",
+      "Kinshasa",
+      "Katanga"
     ],
-    "body": "Les **brochettes de bœuf** de table sont plus généreuses que les [kamundele](/ln/recettes/kamundele/) (petits cubes de rue). Autre bœuf braise : [bœuf ya kotumba](/ln/recettes/boeuf-ya-kotumba/). Variante foie : [brochettes de foie](/ln/recettes/brochettes-foie/).",
-    "seoTitle": "brochettes ya bœuf — grillade Kinshasa"
+    "body": "Les **brochettes de bœuf** sont le bâton de nyama grillée — plus généreuses que les [kamundele](/ln/recettes/kamundele/) (petits cubes de rue). Au Katanga on dit aussi *mishikaki* (voir variante). Autre bœuf braise : [bœuf grillé](/ln/recettes/boeuf-ya-kotumba/). Variante foie : [brochettes de foie](/ln/recettes/brochettes-foie/). Accompagnements Est : [andazi](/ln/recettes/andazi-tanganyika/), [bukari](/ln/recettes/bukari-katanga/).",
+    "seoTitle": "brochettes ya bœuf — grillade",
+    "variants": [
+      {
+        "id": "brochettes-lubumbashi",
+        "title": "Street skewers (mishikaki)",
+        "description": "In Greater Katanga (Lubumbashi), the same beef + coals gesture is often called mishikaki — slightly smaller cubes, often with andazi or bukari.",
+        "ingredients": [
+          "700 g ya beef (skewer cut)",
+          "1 aluboka, grated",
+          "3 mikolo ya ail",
+          "1 tsp grated ginger",
+          "2 tbsp mafuta",
+          "1 tbsp lemon juice",
+          "muni, pepper, pili-pili",
+          "Wooden skewers"
+        ],
+        "steps": [
+          "Cut the meat into even cubes.",
+          "Mix aluboka, garlic, ginger, mafuta, lemon, muni, pepper, chili. Coat. Marinate 1 hour cold.",
+          "Thread onto skewers without packing too tight.",
+          "Grill over medium coals 12–15 minutes, turning.",
+          "Salela elongo na raw onions, pili-pili, andazi, to fries."
+        ]
+      }
+    ]
   },
   "brochettes-poulet": {
     "title": "Brochettes ya soso",
     "description": "brochettes ya soso : dés marinés mpe grillés — encas ya braise kinshasaise, à côté ya soso ya kotumba en pièces.",
     "region": "Kinshasa",
-    "imageAlt": "Brochette de volaille grillée",
+    "imageAlt": "Brochettes de soso marinées en fin de cuisson sur le grill",
     "prepTime": "min. 20 + min. 45 de marinade",
     "cookTime": "min. 15",
     "ingredients": [
@@ -4511,7 +4500,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   },
   "spaghetti-kinshasa": {
     "title": "Spaghetti ya Kinshasa",
-    "description": "spaghetti à la kinshasaise : pâtes nappées d'une sauce ya tomatisi-aluboka souvent enrichie ya nyama hachée ou ya sardines — street food / table ya quotidien.",
+    "description": "spaghetti sauce ya tomatisi : pâtes nappées d'une sauce ya tomatisi-aluboka souvent enrichie ya nyama hachée ou ya sardines — street food / table ya quotidien.",
     "region": "Kinshasa",
     "imageAlt": "Spaghetti en sauce ya tomatisi, illustration du plat kinshasa",
     "prepTime": "min. 15",
@@ -4542,8 +4531,8 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "mokolo na mokolo",
       "tomatisi"
     ],
-    "body": "Les **spaghetti Kinshasa** empruntent le format pâtes italiennes à une sauce locale tomatisi-aluboka — Ndeko urbain du [loso mayonnaise](/ln/recettes/loso-mayonnaise/) et du [loso na madesu](/ln/recettes/loso-na-madesu/). Autre assiette express : [saucisse-frites](/ln/recettes/saucisse-frites/).",
-    "seoTitle": "spaghetti Kinshasa — pâtes sauce locale"
+    "body": "Les **spaghetti sauce ya tomatisi** empruntent le format pâtes italiennes à une sauce locale tomatisi-aluboka — Ndeko urbain du [loso mayonnaise](/ln/recettes/loso-mayonnaise/) et du [loso na madesu](/ln/recettes/loso-na-madesu/). Autre assiette express : [saucisse-frites](/ln/recettes/saucisse-frites/).",
+    "seoTitle": "spaghetti sauce ya tomatisi — pâtes"
   },
   "patate-douce-frite": {
     "title": "Patate douce frite",
@@ -4635,7 +4624,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Maïs ya kotumba",
     "description": "maïs grillé : épis grillés sur braises jusqu'à grains fumés — encas ya rue mpe d'Est, distinct ya la bouillie ya maïs.",
     "region": "Nord-Kivu mpe Sud-Kivu",
-    "imageAlt": "Épis de maïs grillés",
+    "imageAlt": "Épis de maïs grillés sur braises, prêts à servir",
     "prepTime": "min. 5",
     "cookTime": "min. 20",
     "ingredients": [
@@ -4664,7 +4653,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Maïs ya kobila",
     "description": "maïs bouilli : épis cuits dans une mai salée jusqu'à grains tendres — accompagnement / encas simple, ekeseni na maïs grillé.",
     "region": "Na RDC mobimba",
-    "imageAlt": "Épis de maïs bouillis",
+    "imageAlt": "Épis de maïs bouillis prêts à servir",
     "prepTime": "min. 5",
     "cookTime": "min. 30",
     "ingredients": [
@@ -4720,7 +4709,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   },
   "poisson-kisangani": {
     "title": "Mbisi ya Kisangani",
-    "description": "mbisi Kisangani : mbisi d'mai douce mariné puis mijoté tomatisi-aluboka — assiette ya fleuve Congo à Kisangani, à côté ya la salade locale.",
+    "description": "mbisi mijoté : mbisi d'mai douce mariné puis mijoté tomatisi-aluboka — assiette ya fleuve Congo, à côté ya la salade chou-carotte.",
     "region": "Kisangani",
     "imageAlt": "mbisi grillé / cuit, illustration d'un plat de fleuve",
     "prepTime": "min. 25 + min. 20 de marinade",
@@ -4750,14 +4739,14 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "mijoté",
       "tomatisi"
     ],
-    "body": "Le **mbisi Kisangani** porte le geste mijoté du marché du fleuve : moins « braise pure » que le [mbisi de Kinkole](/ln/recettes/mbisi-braise-kinkole/), plus sauce que le [ngolo grillé](/ln/recettes/ngolo-grille/). Sur la même table locale : [salade Kisangani](/ln/recettes/salade-kisangani/).",
-    "seoTitle": "mbisi Kisangani — mijoté ya fleuve"
+    "body": "Le **mbisi mijoté** porte le geste sauce ya tomatisi du marché du fleuve : moins « braise pure » que le [mbisi braisé](/ln/recettes/mbisi-braise-kinkole/), plus sauce que le [ngolo grillé](/ln/recettes/ngolo-grille/). Sur la même table : [salade chou-carotte](/ln/recettes/salade-kisangani/).",
+    "seoTitle": "mbisi mijoté — sauce ya tomatisi ya fleuve"
   },
   "mbisi-na-kwanga": {
     "title": "Mbisi na chikwangue",
     "description": "mbisi servi na chikwangue (en lingala : mbisi na kwanga) — duo classique ya Kongo-Central.",
     "region": "Kongo-Central",
-    "imageAlt": "Kwanga / chikwangue, pain de manioc",
+    "imageAlt": "mbisi braisé servi avec pâtes de manioc",
     "prepTime": "min. 20",
     "cookTime": "min. 40",
     "ingredients": [
@@ -4791,7 +4780,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Nsafu ya sauce",
     "description": "nsafu en sauce : safous assouplis puis liés à une sauce aluboka-tomatisi courte — version mijotée, distincte ya nsafu grillés.",
     "region": "Ouest ya RDC",
-    "imageAlt": "Chair de nsafu / safou assouplie, prête à lier",
+    "imageAlt": "Plat avec safou / nsafu cuits, maïs et nguba",
     "prepTime": "min. 15",
     "cookTime": "min. 25",
     "ingredients": [
@@ -5208,7 +5197,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
   },
   "chou-kinshasa": {
     "title": "Chou ya Kinshasa",
-    "description": "chou mijoté façon Kinshasa : chou blanc à aluboka, tomatisi mpe un peu d'mafuta ya palmier — légume ya table capital, ekeseni na chou mijoté ya l'Est.",
+    "description": "chou mijoté à mafuta ya palme : chou blanc à aluboka, tomatisi mpe un peu d'mafuta ya palmier — légume ya table, ekeseni na chou mijoté plus simple ya l'Est.",
     "region": "Kinshasa",
     "imageAlt": "Chou mijoté en sauce",
     "prepTime": "min. 15",
@@ -5237,8 +5226,8 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
       "accompagnement",
       "mokolo na mokolo"
     ],
-    "body": "Le **chou Kinshasa** est le Ndeko capital du [chou mijoté de l'Est](/ln/recettes/chou-mijote-est/) : même légume, plus souvent mafuta ya palmier et cube. Salade croquante autre ville : [salade Kisangani](/ln/recettes/salade-kisangani/). Vert feuille : [ndunda](/ln/recettes/ndunda/).",
-    "seoTitle": "chou mijoté — style Kinshasa"
+    "body": "Le **chou mijoté à mafuta de palme** est le Ndeko du [chou mijoté](/ln/recettes/chou-mijote-est/) : même légume, plus souvent mafuta ya palmier et cube. Salade croquante : [salade chou-carotte](/ln/recettes/salade-kisangani/). Vert feuille : [ndunda](/ln/recettes/ndunda/).",
+    "seoTitle": "chou mijoté à mafuta ya palme"
   },
   "soso-grille-entier": {
     "title": "Poulet entier à la braise",
@@ -5312,7 +5301,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Monoko ya ngombe",
     "description": "langue ya bœuf en sauce : langue longuement bouillie puis mijotée tomatisi-aluboka — bilei ya fête en RDC.",
     "region": "Kinshasa",
-    "imageAlt": "Langue de bœuf cuite, tranchée, prête pour la sauce",
+    "imageAlt": "Langue de bœuf en sauce, dressée en assiette",
     "prepTime": "min. 30",
     "cookTime": "ngonga 3",
     "ingredients": [
@@ -5378,7 +5367,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Tangawisi ya ananas",
     "description": "jus gingembre-ananas : tangawisi enrichi d'ananas frais — boisson piquante mpe fruitée, très demandée en RDC mpe en diaspora.",
     "region": "Kinshasa",
-    "imageAlt": "Jus d'ananas en préparation, base du mélange gingembre-ananas",
+    "imageAlt": "Verre de jus d'ananas doré, base fruitée du jus gingembre-ananas",
     "prepTime": "min. 25 + min. 30 de kobomba",
     "cookTime": "min. 0",
     "ingredients": [
@@ -5440,7 +5429,7 @@ export const recipeTranslationsLn: Record<string, RecipeTranslation> = {
     "title": "Bouillie ya manioc",
     "description": "bouillie ya manioc : farine ya manioc cuite à mai jusqu'à texture crémeuse, sucrée — petit-déjeuner mpe goûter, distincte ya la bouillie ya maïs.",
     "region": "Na RDC mobimba",
-    "imageAlt": "Bouillie de manioc en cours de cuisson dans une casserole",
+    "imageAlt": "Bol de bouillie crémeuse servie (geste proche de la bouillie de manioc)",
     "prepTime": "min. 5",
     "cookTime": "min. 20",
     "ingredients": [

@@ -12,6 +12,9 @@ export default defineConfig({
     '/recettes/bugali-kivu': '/recettes/bukari-katanga/',
     '/en/recettes/bugali-kivu': '/en/recettes/bukari-katanga/',
     '/ln/recettes/bugali-kivu': '/ln/recettes/bukari-katanga/',
+    '/recettes/brochettes-lubumbashi': '/recettes/brochettes-boeuf/',
+    '/en/recettes/brochettes-lubumbashi': '/en/recettes/brochettes-boeuf/',
+    '/ln/recettes/brochettes-lubumbashi': '/ln/recettes/brochettes-boeuf/',
   },
   devToolbar: {
     enabled: false,

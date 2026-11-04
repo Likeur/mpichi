@@ -2,11 +2,11 @@
 title: Nsafu grillés
 description: Fruits du safoutier doucement chauffés jusqu’à ce que leur peau violette s’assouplisse et que leur chair devienne crémeuse.
 region: Ouest de la RDC
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Dacryodes%20edulis%20-%20Nsafu%20-%20fruit%20preparation.jpg?width=1600
-imageAlt: Nsafu violets tournés pendant leur cuisson sur une grille
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Bouillon%20de%20girel%20au%20safous(3).jpg?width=1600
+imageAlt: Safou / nsafu cuits servis dans un plat chaud
 imagePosition: center
-imageCredit: T.K. Naliaka — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Dacryodes_edulis_-_Nsafu_-_fruit_preparation.jpg
+imageCredit: "LE MOSAR DE L'ECONOMIE — Wikimedia Commons, CC0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Bouillon_de_girel_au_safous(3).jpg
 category: accompagnement
 prepTime: 5 min
 cookTime: 10 min

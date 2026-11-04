@@ -3,11 +3,11 @@ title: Bœuf grillé
 seoTitle: "Recette bœuf grillé — kotumba"
 description: "Recette de bœuf grillé (en lingala : boeuf ya kotumba) : morceaux marinés puis cuits sur braises — grillade kin, distincte des petites brochettes kamundele."
 region: Kinshasa
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Kamundele.jpg?width=1600
-imageAlt: Viande de bœuf grillée servie en portion
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Nyama%20choma%20barbeque.jpg?width=1600
+imageAlt: Viande de bœuf grillée sur braises (nyama choma / kotumba)
 imagePosition: center
-imageCredit: Fanny Schertzer — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Kamundele.jpg
+imageCredit: "safaritravelplus — Wikimedia Commons, CC0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Nyama_choma_barbeque.jpg
 category: plat
 prepTime: 25 min + 2 h de marinade
 cookTime: 40 min

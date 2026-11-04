@@ -3,11 +3,11 @@ title: Bouillie de manioc
 seoTitle: "Recette bouillie de manioc"
 description: "Recette de bouillie de manioc : farine de manioc cuite à l’eau jusqu’à texture crémeuse, sucrée — petit-déjeuner et goûter, distincte de la bouillie de maïs."
 region: Toute la RDC
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Cooking%20cassava%20porridge.jpg?width=1600
-imageAlt: Bouillie de manioc en cours de cuisson dans une casserole
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Bouillie%20d'Aklui%20de%20ma%C3%AFs%20avec%20beignets.jpg?width=1600
+imageAlt: Bol de bouillie crémeuse servie (geste proche de la bouillie de manioc)
 imagePosition: center
-imageCredit: Rwebogora — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Cooking_cassava_porridge.jpg
+imageCredit: "Sènabine — Wikimedia Commons, CC BY-SA 4.0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Bouillie_d'Aklui_de_maïs_avec_beignets.jpg
 category: dessert
 prepTime: 5 min
 cookTime: 20 min

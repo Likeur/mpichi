@@ -3,11 +3,11 @@ title: Ngolo grillé
 seoTitle: Recette ngolo grillé — poisson-chat
 description: "Recette de ngolo grillé : poisson-chat mariné puis cuit sur braises — geste de braise, distinct de la pepe soupe ya ngolo."
 region: Kinshasa & bassin du Congo
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Clarias_gariepinus.jpg?width=1600
-imageAlt: Poisson-chat africain (Clarias), espèce du ngolo
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Poisson%20chat%20%C3%A0%20la%20Nanga'aise.jpg?width=1600
+imageAlt: Poisson-chat (ngolo / silure) préparé et servi
 imagePosition: center
-imageCredit: Wikimedia Commons — domaine public
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Clarias_gariepinus.jpg
+imageCredit: "Coco lago — Wikimedia Commons, CC BY-SA 4.0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Poisson_chat_à_la_Nanga'aise.jpg
 category: plat
 prepTime: 25 min + 30 min de marinade
 cookTime: 25 min

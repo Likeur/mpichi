@@ -3,11 +3,11 @@ title: Porc en sauce
 seoTitle: "Recette porc en sauce"
 description: "Recette de porc en sauce (en lingala : ngulu ya sauce) : porc mijoté tomate-oignon — distinct du porc grillé."
 region: Kinshasa
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Cochon%20en%20feu.jpg?width=1600
-imageAlt: Porc cuit, prêt à être servi en sauce
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Porc%20brais%C3%A9%202.jpg?width=1600
+imageAlt: "Porc braisé / mijoté, prêt à servir en sauce"
 imagePosition: center
-imageCredit: WINEUR — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Cochon_en_feu.jpg
+imageCredit: "Cardorel zoko — Wikimedia Commons, CC0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Porc_braisé_2.jpg
 category: plat
 prepTime: 25 min
 cookTime: 1 h 15

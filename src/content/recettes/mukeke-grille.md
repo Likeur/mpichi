@@ -44,4 +44,4 @@ steps:
 
 Le **mukeke** désigne, selon les marchés, un grand poisson du **lac Tanganyika** — pièce de fête quand le port en reçoit. Le geste reste simple : citron, ail, feu. Les petits poissons du même lac sont plutôt [sambaza](/recettes/sambaza/) ou [kapenta](/recettes/kapenta-tomates/).
 
-Au Kivu, le cousin grillé : [poisson du Kivu](/recettes/poisson-kivu-grille/).
+Au Kivu, le cousin grillé : [poisson de lac grillé](/recettes/poisson-kivu-grille/).

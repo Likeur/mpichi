@@ -3,11 +3,11 @@ title: Jus gingembre-ananas
 seoTitle: "Recette jus gingembre ananas — tangawisi à l’ananas"
 description: "Recette de jus gingembre-ananas : tangawisi enrichi d’ananas frais — boisson piquante et fruitée, très demandée en RDC et en diaspora."
 region: Kinshasa
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Omunanansi%20Juice%20Boiling.jpg?width=1600
-imageAlt: Jus d’ananas en préparation, base du mélange gingembre-ananas
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Refreshing%2C%20golden%20pineapple%20juice.jpg?width=1600
+imageAlt: "Verre de jus d’ananas doré, base fruitée du jus gingembre-ananas"
 imagePosition: center
-imageCredit: Fiktube — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Omunanansi_Juice_Boiling.jpg
+imageCredit: "Black Lyn — Wikimedia Commons, CC BY-SA 4.0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Refreshing,_golden_pineapple_juice.jpg
 category: boisson
 prepTime: 25 min + 30 min de repos
 cookTime: 0 min

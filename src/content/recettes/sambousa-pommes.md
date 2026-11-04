@@ -3,11 +3,11 @@ title: Sambousa aux pommes de terre
 seoTitle: Recette sambousa — chaussons pomme de terre (Goma / Est)
 description: "Recette de sambousa aux pommes de terre : chaussons frits farcis — encas de rue à Goma et dans l’Est, cousin des samosas d’Afrique de l’Est."
 region: Nord-Kivu & Sud-Kivu
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Un%20vendeur%20de%20Sambousa%20en%20pomme%20de%20terre%20dans%20la%20ville%20de%20Goma.jpg?width=1600
-imageAlt: Vendeur de sambousa aux pommes de terre à Goma
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Samosa%20with%20tamarind%20chutney%20and%20tomato%20sauce.jpg?width=1600
+imageAlt: Sambousa / samosas dorés servis avec sauces
 imagePosition: center
-imageCredit: Même à l'ouest — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Un_vendeur_de_Sambousa_en_pomme_de_terre_dans_la_ville_de_Goma.jpg
+imageCredit: "Madhura Vaze — Wikimedia Commons, CC BY-SA 4.0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Samosa_with_tamarind_chutney_and_tomato_sauce.jpg
 category: accompagnement
 prepTime: 40 min
 cookTime: 25 min

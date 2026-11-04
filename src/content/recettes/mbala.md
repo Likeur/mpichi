@@ -3,11 +3,11 @@ title: Mbala
 seoTitle: Recette mbala — patate douce
 description: "Recette de mbala : patates douces bouillies ou rôties jusqu’à fondre — tubercule du quotidien, distinct des feuilles matembele."
 region: Toute la RDC
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Sweet%20potato.jpg?width=1600
-imageAlt: Patates douces (mbala) bouillies, chair jaune
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Roasted%20kampala%20potatoes.jpg?width=1600
+imageAlt: "Patates douces (mbala) rôties / cuites, prêtes à servir"
 imagePosition: center
-imageCredit: Kwabena — Wikimedia Commons, CC BY 3.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Sweet_potato.jpg
+imageCredit: "PPSseremba — Wikimedia Commons, CC BY-SA 4.0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Roasted_kampala_potatoes.jpg
 category: accompagnement
 prepTime: 10 min
 cookTime: 30 min

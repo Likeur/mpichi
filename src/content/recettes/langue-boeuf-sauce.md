@@ -3,11 +3,11 @@ title: Langue de bœuf en sauce
 seoTitle: "Recette langue de bœuf en sauce"
 description: "Recette de langue de bœuf en sauce : langue longuement bouillie puis mijotée tomate-oignon — plat de fête en RDC."
 region: Kinshasa
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Rinderzunge%20zubereitet.jpg?width=1600
-imageAlt: Langue de bœuf cuite, tranchée, prête pour la sauce
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Zunge%20Madeirasosse%20Kl%C3%B6sse.JPG?width=1600
+imageAlt: "Langue de bœuf en sauce, dressée en assiette"
 imagePosition: center
-imageCredit: WormforEnnio — Wikimedia Commons, domaine public
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Rinderzunge_zubereitet.jpg
+imageCredit: "Benreis — Wikimedia Commons, CC BY 3.0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Zunge_Madeirasosse_Klösse.JPG
 category: plat
 prepTime: 30 min
 cookTime: 3 h

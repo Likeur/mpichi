@@ -3,11 +3,11 @@ title: Capitaine braisé
 seoTitle: Recette poisson capitaine braisé — perche du Nil
 description: "Recette de poisson capitaine braisé : perche du Nil entière marinée aux aromates et grillée jusqu’à la peau fumée — grillade de fleuve, distincte du poisson de Kinkole."
 region: Kinshasa & bassin du Congo
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Poisson%20brais%C3%A9%20%C3%A0%20Kinkole.jpg?width=1400
-imageAlt: Gros poisson braisé servi avec accompagnements
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Spicy%20grilled%20tilapia.jpg?width=1400
+imageAlt: Gros poissons marinés en train de griller sur la braise
 imagePosition: center
-imageCredit: Gra2mb — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Poisson_brais%C3%A9_%C3%A0_Kinkole.jpg
+imageCredit: Penwills — Wikimedia Commons, CC BY-SA 4.0
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Spicy_grilled_tilapia.jpg
 category: plat
 prepTime: 30 min + 1 h de marinade
 cookTime: 35 min

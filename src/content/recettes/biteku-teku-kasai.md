@@ -3,11 +3,11 @@ title: Biteku-teku
 seoTitle: Recette biteku-teku / lenga-lenga — amarante du Kasaï
 description: "Recette de biteku-teku (lenga-lenga) : amarante mijotée avec oignon, tomate et arachide — plat du Grand Kasaï, cousin des ndunda de Kinshasa."
 region: Grand Kasaï
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Amaranth%20Greens%20%28Doodo%29.jpg?width=1600
-imageAlt: Feuilles fraîches d’amarante utilisées pour le biteku-teku
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Akawunga%20n'edoodo.jpg?width=1600
+imageAlt: "Feuilles vertes type amarante / biteku-teku cuites, servies avec une pâte"
 imagePosition: center
-imageCredit: Nabunje Leticia — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Amaranth_Greens_(Doodo).jpg
+imageCredit: "Kateregga1 — Wikimedia Commons, CC BY-SA 4.0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Akawunga_n'edoodo.jpg
 category: plat
 prepTime: 20 min
 cookTime: 25 min

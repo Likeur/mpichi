@@ -1,7 +1,7 @@
 ---
-title: Poisson Kisangani
-seoTitle: Recette poisson Kisangani — mijoté du fleuve
-description: "Recette de poisson Kisangani : poisson d’eau douce mariné puis mijoté tomate-oignon — assiette du fleuve Congo à Kisangani, à côté de la salade locale."
+title: Poisson mijoté
+seoTitle: Recette poisson mijoté — sauce tomate du fleuve
+description: "Recette de poisson mijoté : poisson d’eau douce mariné puis mijoté tomate-oignon — assiette du fleuve Congo, à côté de la salade chou-carotte."
 region: Kisangani
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Grilled_fish.jpg?width=1600
 imageAlt: Poisson grillé / cuit, illustration d’un plat de fleuve
@@ -43,4 +43,4 @@ steps:
   - Servir avec riz, plantain ou chikwangue, et idéalement une [salade chou-carotte](/recettes/salade-kisangani/).
 ---
 
-Le **poisson Kisangani** porte le geste mijoté du marché du fleuve : moins « braise pure » que le [poisson de Kinkole](/recettes/poisson-braise-kinkole/), plus sauce que le [ngolo grillé](/recettes/ngolo-grille/). Sur la même table locale : [salade Kisangani](/recettes/salade-kisangani/).
+Le **poisson mijoté** porte le geste sauce tomate du marché du fleuve : moins « braise pure » que le [poisson braisé](/recettes/poisson-braise-kinkole/), plus sauce que le [ngolo grillé](/recettes/ngolo-grille/). Sur la même table : [salade chou-carotte](/recettes/salade-kisangani/).

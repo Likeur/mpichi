@@ -3,11 +3,11 @@ title: Poisson fumé au bidia
 seoTitle: Recette poisson fumé — sauce courte du Kasaï
 description: "Recette de poisson fumé en sauce courte : trempé, mijoté à la tomate — protéine de garde-manger au Kasaï, servie avec le bidia."
 region: Grand Kasaï
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Fish%20of%20Congo%20River%20-%20dried%20market%20basket%208.jpg?width=1600
-imageAlt: Panier de poissons séchés / fumés sur un marché congolais
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Sauce%20d'%C3%A9pinard%20avec%20le%20poisson%20fum%C3%A9%20et%20la%20patte%20d'arachide.jpg?width=1600
+imageAlt: "Poisson fumé cuit en sauce, servi en plat"
 imagePosition: center
-imageCredit: T.K. Naliaka — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Fish_of_Congo_River_-_dried_market_basket_8.jpg
+imageCredit: "Lucia236 — Wikimedia Commons, CC BY-SA 4.0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Sauce_d'épinard_avec_le_poisson_fumé_et_la_patte_d'arachide.jpg
 category: plat
 prepTime: 20 min + 40 min trempage
 cookTime: 35 min

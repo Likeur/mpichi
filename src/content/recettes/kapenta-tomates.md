@@ -3,11 +3,11 @@ title: Kapenta aux tomates
 seoTitle: Recette kapenta aux tomates
 description: "Recette de kapenta aux tomates : petits poissons (frais ou séchés) poêlés puis nappés d’une sauce tomate-oignon — classique du Haut-Katanga et du Tanganyika."
 region: Haut-Katanga & Tanganyika
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Kapenta%2004.jpg?width=1600
-imageAlt: Petits poissons kapenta préparés pour un repas
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Stewed%20Capenta%20and%20Sadza(as%20it%20is%20known%20in%20Zimbabwe)%20dish.JPG?width=1600
+imageAlt: Kapenta mijotés servis avec une pâte de maïs (sadza)
 imagePosition: center
-imageCredit: Shark2025 — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Kapenta_04.jpg
+imageCredit: "Simz711 — Wikimedia Commons, CC BY-SA 4.0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Stewed_Capenta_and_Sadza(as_it_is_known_in_Zimbabwe)_dish.JPG
 category: plat
 prepTime: 20 min
 cookTime: 30 min

@@ -3,11 +3,11 @@ title: Maïs grillé
 seoTitle: Recette maïs grillé — épis sur braises
 description: "Recette de maïs grillé : épis grillés sur braises jusqu’à grains fumés — encas de rue et d’Est, distinct de la bouillie de maïs."
 region: Nord-Kivu & Sud-Kivu
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Roasted_corn.jpg?width=1600
-imageAlt: Épis de maïs grillés
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Grilled%20sweet%20corn%20on%20display%20on%20a%20braiistand.jpg?width=1600
+imageAlt: "Épis de maïs grillés sur braises, prêts à servir"
 imagePosition: center
-imageCredit: daSupremo — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Roasted_corn.jpg
+imageCredit: "Olgatladi2020 — Wikimedia Commons, CC BY-SA 4.0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Grilled_sweet_corn_on_display_on_a_braiistand.jpg
 category: accompagnement
 prepTime: 5 min
 cookTime: 20 min

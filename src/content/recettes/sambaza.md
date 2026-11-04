@@ -3,11 +3,11 @@ title: Sambaza aux tomates
 seoTitle: Recette sambaza — petits poissons du Tanganyika
 description: "Recette de sambaza : petits poissons du lac Tanganyika poêlés puis mijotés dans une sauce tomate-oignon — classique de l’Est de la RDC, cousin du kapenta."
 region: Haut-Katanga & Tanganyika
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Kapenta.jpg?width=1600
-imageAlt: Petits poissons de lac type sambaza / kapenta
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/An%20Example%20of%20Kapenta%20And%20Sadza(as%20it%20is%20known%20in%20Zimbabwe).JPG?width=1600
+imageAlt: Petits poissons de lac type sambaza / kapenta servis avec une pâte de maïs
 imagePosition: center
-imageCredit: Moses Zaso — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Kapenta.jpg
+imageCredit: "Simz711 — Wikimedia Commons, CC BY-SA 4.0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:An_Example_of_Kapenta_And_Sadza(as_it_is_known_in_Zimbabwe).JPG
 category: plat
 prepTime: 20 min
 cookTime: 25 min

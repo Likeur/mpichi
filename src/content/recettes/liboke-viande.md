@@ -2,11 +2,11 @@
 title: Liboke de viande
 description: Viande marinée aux aromates, enveloppée dans des feuilles de bananier et cuite à la vapeur — le geste du liboke appliqué à la viande, pas au poisson.
 region: Bandundu & Kongo-Central
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Haumania%20liebrechtsiana%20-%20leaf%20pouch%20for%20libok%C3%A9.jpg?width=1600
-imageAlt: Liboke fermé dans ses feuilles, prêt à cuire
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Matooke%20and%20Luwombo%20prepared%20chicken.JPG?width=1600
+imageAlt: "Papillote type liboke / luwombo ouverte, servie avec accompagnement"
 imagePosition: center
-imageCredit: T.K. Naliaka — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Haumania_liebrechtsiana_-_leaf_pouch_for_libok%C3%A9.jpg
+imageCredit: "Namuganyi — Wikimedia Commons, CC BY-SA 4.0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Matooke_and_Luwombo_prepared_chicken.JPG
 category: plat
 prepTime: 30 min + 1 h de marinade
 cookTime: 1 h

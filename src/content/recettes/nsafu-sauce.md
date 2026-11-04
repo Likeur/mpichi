@@ -3,11 +3,11 @@ title: Nsafu en sauce
 seoTitle: Recette nsafu / safou en sauce
 description: "Recette de nsafu en sauce : safous assouplis puis liés à une sauce oignon-tomate courte — version mijotée, distincte des nsafu grillés."
 region: Ouest de la RDC
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Nsafu%20-%20softened%20scraped%20fruit%20of%20Dacryodes%20edulis%20-%20safoutier%2C%20African%20plum%20or%20pear%2C%20butterfruit.jpg?width=1600
-imageAlt: Chair de nsafu / safou assouplie, prête à lier
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Photo%20d'un%20plat%20africain%20compos%C3%A9%20de%20ma%C3%AFs%20plus%20l'arachide%20et%20le%20safou.jpg?width=1600
+imageAlt: "Plat avec safou / nsafu cuits, maïs et arachide"
 imagePosition: center
-imageCredit: Piki-photow — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Nsafu_-_softened_scraped_fruit_of_Dacryodes_edulis_-_safoutier,_African_plum_or_pear,_butterfruit.jpg
+imageCredit: "Pangou Stephane — Wikimedia Commons, CC0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Photo_d'un_plat_africain_composé_de_maïs_plus_l'arachide_et_le_safou.jpg
 category: plat
 prepTime: 15 min
 cookTime: 25 min

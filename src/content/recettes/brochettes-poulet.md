@@ -3,11 +3,11 @@ title: Brochettes de poulet
 seoTitle: Recette brochettes de poulet — street food
 description: "Recette de brochettes de poulet : dés marinés et grillés — encas de braise kinshasaise, à côté du soso ya kotumba en pièces."
 region: Kinshasa
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Brochette.jpg?width=1600
-imageAlt: Brochette de volaille grillée
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Brochettes%20de%20poulet%20marin%C3%A9%20en%20fin%20de%20cuisson%20au%20barbecue%20(avril%202020).jpg?width=1600
+imageAlt: Brochettes de poulet marinées en fin de cuisson sur le grill
 imagePosition: center
-imageCredit: NIHEREWENIMANA Richard — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Brochette.jpg
+imageCredit: "Benoît Prieur — Wikimedia Commons, CC0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Brochettes_de_poulet_mariné_en_fin_de_cuisson_au_barbecue_(avril_2020).jpg
 category: plat
 prepTime: 20 min + 45 min de marinade
 cookTime: 15 min

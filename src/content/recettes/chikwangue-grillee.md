@@ -4,10 +4,10 @@ seoTitle: Recette chikwangue grillée
 description: "Recette de chikwangue grillée : tranches de kwanga passées sur braises ou poêle jusqu’à croûte fumée — geste à part de la chikwangue vapeur."
 region: Bassin du Congo & Kinshasa
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Kikwanga%20(chikwangue)%20%C3%A0%20la%20fa%C3%A7on%20de%20la%20RDC%20mais%20sans%20sauce%20et%20coup%C3%A9.jpg?width=1600
-imageAlt: Tranches de chikwangue (kwanga) coupées, prêtes à passer sur braises ou poêle
+imageAlt: "Tranches de chikwangue (kwanga) coupées, prêtes à griller"
 imagePosition: center
-imageCredit: Lyokoï — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Kikwanga_(chikwangue)_%C3%A0_la_fa%C3%A7on_de_la_RDC_mais_sans_sauce_et_coup%C3%A9.jpg
+imageCredit: "Lyokoï — Wikimedia Commons, CC BY-SA 4.0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Kikwanga_(chikwangue)_à_la_façon_de_la_RDC_mais_sans_sauce_et_coupé.jpg
 category: accompagnement
 prepTime: 5 min
 cookTime: 10 min

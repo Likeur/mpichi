@@ -3,11 +3,11 @@ title: Kamundele
 seoTitle: Recette kamundele — brochettes kinshasa
 description: "Recette de kamundele : brochettes de bœuf marinées aux aromates et grillées sur braises — street food emblématique de Kinshasa."
 region: Kinshasa
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Kamundele.jpg?width=1600
-imageAlt: Assiette de kamundele, brochettes de bœuf marinées, avec frites et légumes
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Brochettes.jpg?width=1600
+imageAlt: Brochettes de bœuf type kamundele grillées sur braises
 imagePosition: center
-imageCredit: Fanny Schertzer — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Kamundele.jpg
+imageCredit: "François Terrier — Wikimedia Commons, CC BY 2.0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Brochettes.jpg
 category: plat
 prepTime: 25 min + 1 h de marinade
 cookTime: 15 min

@@ -1,7 +1,7 @@
 ---
-title: Chou mijoté de l’Est
-seoTitle: Recette chou mijoté — accompagnement Kivu / Est
-description: "Recette de chou mijoté : chou blanc revenu puis cuit avec oignon et tomate — légume simple du quotidien à l’Est, servi avec bugali ou riz."
+title: Chou mijoté
+seoTitle: Recette chou mijoté — accompagnement
+description: "Recette de chou mijoté : chou blanc revenu puis cuit avec oignon et tomate — légume simple du quotidien, servi avec bugali ou riz."
 region: Nord-Kivu & Sud-Kivu
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Ugali%20and%20cabbage.jpg?width=1600
 imageAlt: Chou cuit servi à côté d’une pâte de maïs

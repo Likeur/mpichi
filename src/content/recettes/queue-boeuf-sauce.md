@@ -3,11 +3,11 @@ title: Queue de bœuf en sauce
 seoTitle: "Recette queue de bœuf en sauce"
 description: "Recette de queue de bœuf en sauce : mijoté long tomate-oignon — plat de fête et de dimanche en RDC."
 region: Kinshasa
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Oxtail.jpg?width=1600
-imageAlt: Queue de bœuf cuite, prête pour une sauce longue
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Deux%20plats%20queue%20de%20boeuf%20avec%20le%20manioc.jpg?width=1600
+imageAlt: Queue de bœuf en sauce servie avec du manioc
 imagePosition: center
-imageCredit: FotoosVanRobin — Wikimedia Commons, CC BY-SA 2.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Oxtail.jpg
+imageCredit: "Lucia236 — Wikimedia Commons, CC BY-SA 4.0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Deux_plats_queue_de_boeuf_avec_le_manioc.jpg
 category: plat
 prepTime: 25 min
 cookTime: 2 h 30

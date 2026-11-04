@@ -3,11 +3,11 @@ title: Poisson fumé aux tomates
 seoTitle: Recette poisson fumé aux tomates
 description: "Recette de poisson fumé aux tomates : poisson fumé réhydraté puis mijoté dans une sauce tomate-oignon — plat du quotidien autour du fleuve Congo, distinct du makayabu salé."
 region: Kinshasa & bassin du Congo
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Smoked%20fish.jpg?width=1600
-imageAlt: Poisson fumé prêt à cuisiner
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Du%20poisson%20fum%C3%A9%20dans%20la%20sauce%20de%20D%C3%A9wl%C3%A9.jpg?width=1600
+imageAlt: "Poisson fumé mijoté dans une sauce, prêt à servir"
 imagePosition: center
-imageCredit: Daniela — Wikimedia Commons, CC BY 2.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Smoked_fish.jpg
+imageCredit: "ASSIELOU Marcel — Wikimedia Commons, CC0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Du_poisson_fumé_dans_la_sauce_de_Déwlé.jpg
 category: plat
 prepTime: 25 min + 30 min de trempage
 cookTime: 40 min

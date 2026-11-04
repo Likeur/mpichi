@@ -46,6 +46,9 @@ export const ui = {
     'footer.madeWith': 'Fait avec',
     'footer.love': 'amour',
     'footer.inDrcBy': 'en RDC par',
+    'footer.github': 'Dépôt GitHub Mpichi',
+    'mascot.name': 'Mpi',
+    'mascot.alt': 'Mpi, la mascotte de Mpichi',
     'home.hero.cta': 'Découvrir toutes les recettes',
     'home.hero.mpichi.title': 'Mpichi,\nla cuisine en héritage.',
     'home.hero.mpichi.summary':
@@ -355,6 +358,9 @@ export const ui = {
     'footer.madeWith': 'Made with',
     'footer.love': 'love',
     'footer.inDrcBy': 'in the DRC by',
+    'footer.github': 'Mpichi GitHub repository',
+    'mascot.name': 'Mpi',
+    'mascot.alt': 'Mpi, the Mpichi mascot',
     'home.hero.cta': 'Discover all recipes',
     'home.hero.mpichi.title': 'Mpichi,\ncuisine as heritage.',
     'home.hero.mpichi.summary':
@@ -662,6 +668,9 @@ export const ui = {
     'footer.madeWith': 'Esalemi na',
     'footer.love': 'bolingo',
     'footer.inDrcBy': 'RDC, epai ya',
+    'footer.github': 'Dépôt GitHub ya Mpichi',
+    'mascot.name': 'Mpi',
+    'mascot.alt': 'Mpi, mascotte ya Mpichi',
     'home.hero.cta': 'Yeba ba recettes nyonso',
     'home.hero.mpichi.title': 'Mpichi,\nbilei lokola elikya.',
     'home.hero.mpichi.summary':

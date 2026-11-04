@@ -3,11 +3,11 @@ title: Maïs bouilli
 seoTitle: Recette maïs bouilli — épis à l’eau
 description: "Recette de maïs bouilli : épis cuits dans une eau salée jusqu’à grains tendres — accompagnement / encas simple, distinct du maïs grillé."
 region: Toute la RDC
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Boiled_corn.jpg?width=1600
-imageAlt: Épis de maïs bouillis
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Boiled%20maize%20chibage.jpg?width=1600
+imageAlt: Épis de maïs bouillis prêts à servir
 imagePosition: center
-imageCredit: Zak Raha — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Boiled_corn.jpg
+imageCredit: "Ncube01 — Wikimedia Commons, CC BY-SA 4.0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Boiled_maize_chibage.jpg
 category: accompagnement
 prepTime: 5 min
 cookTime: 30 min

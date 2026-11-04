@@ -3,11 +3,11 @@ title: Ndagala aux tomates
 seoTitle: Recette ndagala aux tomates — petits poissons du Kivu
 description: "Recette de ndagala aux tomates : petits poissons du lac Kivu (frais ou séchés) poêlés puis mijotés dans une sauce tomate — classique de l’Est, distinct du kapenta / sambaza du Katanga."
 region: Nord-Kivu & Sud-Kivu
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Kigoma%27s%20small%20dried%20sardines%20-%20fish%20in%20a%20local%20market.jpg?width=1600
-imageAlt: Petits poissons séchés de lac type ndagala
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Meal%20of%20Omena%2C%20Vegetables%20and%20Ugali.jpg?width=1600
+imageAlt: Ndagala / omena cuits servis avec légumes et pâte de maïs
 imagePosition: center
-imageCredit: Erasmus Kamugisha — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Kigoma%27s_small_dried_sardines_-_fish_in_a_local_market.jpg
+imageCredit: "VictorOchieng — Wikimedia Commons, CC BY-SA 4.0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Meal_of_Omena,_Vegetables_and_Ugali.jpg
 category: plat
 prepTime: 20 min
 cookTime: 30 min

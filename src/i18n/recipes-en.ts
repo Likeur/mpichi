@@ -28,7 +28,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     "seoTitle": "Biteku-teku / lenga-lenga recipe — Kasai amaranth",
     "description": "Biteku-teku (lenga-lenga) recipe: amaranth simmered with onion, tomato and peanut — Greater Kasai dish, cousin to Kinshasa ndunda.",
     "region": "Greater Kasai",
-    "imageAlt": "Fresh amaranth leaves used for biteku-teku",
+    "imageAlt": "Cooked amaranth-style greens served with maize meal",
     "prepTime": "20 min",
     "cookTime": "25 min",
     "ingredients": [
@@ -288,7 +288,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
         id: "sans-poisson",
         title: "Without smoked fish",
         description: "Peanut sauce and leaves alone — fully plant-based.",
-        imageAlt: "Fumbwa peanut sauce served with fufu",
+        imageAlt: "",
         ingredients: [
           "500 g shredded fumbwa leaves",
           "200 g unsweetened peanut paste",
@@ -368,7 +368,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     "seoTitle": "Kapenta with tomatoes recipe",
     "description": "Kapenta with tomatoes recipe: small fish (fresh or dried) fried then simmered in tomato-onion sauce — Haut-Katanga and Tanganyika classic.",
     "region": "Haut-Katanga & Tanganyika",
-    "imageAlt": "Dried kapenta fish",
+    "imageAlt": "Stewed kapenta served with maize meal (sadza)",
     "prepTime": "20 min",
     "cookTime": "30 min",
     "ingredients": [
@@ -524,7 +524,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
         id: "poisson-fume",
         title: "With smoked fish",
         description: "Beans enriched with smoked fish — a savourier everyday plate.",
-        imageAlt: "Bowl of cooked red beans",
+        imageAlt: "",
         ingredients: [
           "500 g dried red or brown beans",
           "200 g smoked fish",
@@ -957,7 +957,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     "title": "Mujibujibu",
     "description": "Pumpkin leaves slowly simmered with freshly ground peanuts and smoked fish.",
     "region": "Kasai-Central",
-    "imageAlt": "Fresh African pumpkin leaves",
+    "imageAlt": "Cooked pumpkin-leaf greens with beef and swallow",
     "prepTime": "30 min",
     "cookTime": "45 min",
     "ingredients": [
@@ -1046,7 +1046,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
         id: "vegetal",
         title: "Without fish",
         description: "Fully plant-based ngai-ngai — leaf acidity stays centre stage.",
-        imageAlt: "Simmered ngai-ngai served in a dish",
+        imageAlt: "",
         ingredients: [
           "500 g ngai-ngai leaves",
           "2 tomatoes, crushed",
@@ -1606,7 +1606,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Meat marinated with aromatics, wrapped in banana leaves and steamed — the liboke gesture applied to meat, not fish.",
     region: "Bandundu & Kongo-Central",
-    imageAlt: "Closed liboke pouch in leaves, ready to cook",
+    imageAlt: "Opened leaf parcel (liboke / luwombo style) served with a side",
     prepTime: "30 min + 1 h marinating",
     cookTime: "1 h",
     ingredients: [
@@ -2185,7 +2185,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Sambaza recipe: small Lake Tanganyika fish pan-fried then simmered in a tomato-onion sauce — eastern DRC classic, cousin to kapenta.",
     region: "Haut-Katanga & Tanganyika",
-    imageAlt: "Small lake fish like sambaza / kapenta",
+    imageAlt: "Lake fish (sambaza / kapenta style) served with maize meal",
     prepTime: "20 min",
     cookTime: "25 min",
     ingredients: [
@@ -2243,7 +2243,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Smoked fish with tomatoes recipe: smoked fish soaked then simmered in a tomato-onion sauce — everyday Congo River plate, distinct from salted makayabu.",
     region: "Kinshasa & Congo Basin",
-    imageAlt: "Smoked fish ready to cook",
+    imageAlt: "Smoked fish simmered in sauce, ready to serve",
     prepTime: "25 min + 30 min soaking",
     cookTime: "40 min",
     ingredients: [
@@ -2273,7 +2273,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "African eggplant (garden eggs) recipe: simmered with tomato, onion and a little oil — a Congolese market vegetable, often served with fufu or rice.",
     region: "Kinshasa & Western DRC",
-    imageAlt: "Fresh African eggplants (garden eggs)",
+    imageAlt: "African eggplant (garden egg) stew served with boiled yam",
     prepTime: "20 min",
     cookTime: "35 min",
     ingredients: [
@@ -2486,7 +2486,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Maize porridge recipe: fine maize flour cooked in water until creamy, then sweetened — breakfast and snack, distinct from peanut porridge.",
     region: "Across the DRC",
-    imageAlt: "Bowl of creamy maize porridge (uji)",
+    imageAlt: "Bowl of creamy maize porridge",
     prepTime: "5 min",
     cookTime: "20 min",
     ingredients: [
@@ -2513,7 +2513,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Braised / grilled capitaine fish recipe: whole Nile perch marinated with aromatics and grilled until the skin is smoky — river grillade, distinct from generic Kinkole braised fish.",
     region: "Kinshasa & Congo Basin",
-    imageAlt: "Large grilled fish served with sides",
+    imageAlt: "Large marinated fish grilling over coals",
     prepTime: "30 min + 1 h marinade",
     cookTime: "35 min",
     ingredients: [
@@ -2572,7 +2572,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Pork in sauce recipe (Lingala: ngulu ya sauce): pork simmered with tomato and onion — distinct from grilled pork.",
     region: "Kinshasa",
-    imageAlt: "Cooked pork ready to serve in sauce",
+    imageAlt: "Braised pork ready to serve in sauce",
     prepTime: "25 min",
     cookTime: "1 h 15",
     ingredients: [
@@ -2602,7 +2602,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Grilled beef recipe (Lingala: boeuf ya kotumba): marinated pieces cooked over coals — Kinshasa grillade, distinct from small kamundele skewers.",
     region: "Kinshasa",
-    imageAlt: "Grilled beef served as a portion",
+    imageAlt: "Beef grilled over coals (nyama choma / kotumba)",
     prepTime: "25 min + 2 h marinade",
     cookTime: "40 min",
     ingredients: [
@@ -2825,7 +2825,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Grilled chikwangue recipe: kwanga slices finished on coals or in a pan until smoky and crusty — a separate gesture from steamed chikwangue.",
     region: "Congo Basin & Kinshasa",
-    imageAlt: "Sliced chikwangue (kwanga), ready to finish on coals or in a pan",
+    imageAlt: "Sliced Congolese chikwangue (kwanga), ready to grill",
     prepTime: "5 min",
     cookTime: "10 min",
     ingredients: [
@@ -2905,7 +2905,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Ndagala with tomatoes recipe: Lake Kivu small fish (fresh or dried) fried then simmered in tomato sauce — Eastern classic, distinct from Katanga kapenta / sambaza.",
     region: "North Kivu & South Kivu",
-    imageAlt: "Small dried lake fish like ndagala",
+    imageAlt: "Cooked omena / ndagala with vegetables and ugali",
     prepTime: "20 min",
     cookTime: "30 min",
     ingredients: [
@@ -2929,12 +2929,12 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     body: "Ndagala are the small fish tied especially to Lake Kivu and the East. The gesture resembles Kapenta or Tanganyika sambaza, but the name, market and regional anchor differ.",
   },
   "poisson-kivu-grille": {
-    title: "Grilled Lake Kivu fish",
-    seoTitle: "Grilled Lake Kivu fish recipe",
+    title: "Grilled lake fish",
+    seoTitle: "Grilled lake fish recipe",
     description:
-      "Grilled Lake Kivu fish recipe: whole lake fish marinated with aromatics then grilled until the skin is smoky — Eastern grillade, distinct from Kinkole river braise.",
+      "Grilled lake fish recipe: whole lake fish marinated with aromatics then grilled until the skin is smoky — Eastern lacustrine grillade, distinct from river braise.",
     region: "North Kivu & South Kivu",
-    imageAlt: "Whole grilled fish with golden skin",
+    imageAlt: "Whole grilled tilapia with charred skin in a takeaway tray",
     prepTime: "25 min + 1 h marinade",
     cookTime: "30 min",
     ingredients: [
@@ -3016,7 +3016,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Mbala recipe: sweet potatoes boiled or roasted until soft — everyday tuber, distinct from matembele leaves.",
     region: "Across the DRC",
-    imageAlt: "Boiled sweet potatoes (mbala), yellow flesh",
+    imageAlt: "Roasted sweet potatoes (mbala), ready to serve",
     prepTime: "10 min",
     cookTime: "30 min",
     ingredients: [
@@ -3087,10 +3087,10 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     body: "Sweet bananas are not plantains: sweeter and softer. Steamed plantains and makemba stay on the savoury starch side; this is the light snack or dessert.",
   },
   "andazi-tanganyika": {
-    title: "Tanganyika andazi",
-    seoTitle: "Andazi / mandazi recipe — Tanganyika fritters",
+    title: "Andazi",
+    seoTitle: "Andazi / mandazi recipe — fritters",
     description:
-      "Andazi (mandazi) recipe: lightly sweet flour fritters fried until golden — everyday snack in Kalemie and around Lake Tanganyika.",
+      "Andazi (mandazi) recipe: lightly sweet flour fritters fried until golden — everyday snack around Lake Tanganyika.",
     region: "Haut-Katanga & Tanganyika",
     imageAlt: "Fresh andazi just fried, Lake Tanganyika",
     prepTime: "25 min + 45 min rest",
@@ -3145,13 +3145,13 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Serve with bugali, bukari, plantain or rice, and tomato or pili-pili sauce on the side.",
     ],
     tags: ["mukeke", "Tanganyika", "grilled fish", "East", "Kalemie"],
-    body: "Mukeke, on many markets, means a large **Lake Tanganyika** fish—a feast piece when the port lands it. The gesture stays simple: lemon, garlic, fire. Smaller fish from the same lake are [sambaza](/en/recettes/sambaza/) or [kapenta](/en/recettes/kapenta-tomates/).\n\nIn Kivu, the grilled cousin: [Kivu fish](/en/recettes/poisson-kivu-grille/).",
+    body: "Mukeke, on many markets, means a large **Lake Tanganyika** fish—a feast piece when the port lands it. The gesture stays simple: lemon, garlic, fire. Smaller fish from the same lake are [sambaza](/en/recettes/sambaza/) or [kapenta](/en/recettes/kapenta-tomates/).\n\nIn Kivu, the grilled cousin: [grilled lake fish](/en/recettes/poisson-kivu-grille/).",
   },
   "pilau-kivu": {
-    title: "Kivu pilau",
-    seoTitle: "Pilau recipe — spiced rice from Kivu",
+    title: "Pilau",
+    seoTitle: "Pilau recipe — spiced rice",
     description:
-      "Pilau (pilaw) recipe: rice cooked in a spiced broth with meat or vegetables — East African–influenced dish common in North and South Kivu.",
+      "Pilau (pilaw) recipe: rice cooked in a spiced broth with meat or vegetables — East African–influenced dish common in the East.",
     region: "North Kivu & South Kivu",
     imageAlt: "Plate of pilau, spiced rice",
     prepTime: "25 min",
@@ -3211,10 +3211,10 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     body: "Maharage (Swahili) are Eastern beans, cousins of Western [madesu](/en/recettes/madesu/). In Kivu they often sit with [bugali](/en/recettes/bukari-katanga/). Less peanut sauce than some Kasai plates: tomato, onion, patience.",
   },
   "chou-mijote-est": {
-    title: "Eastern simmered cabbage",
-    seoTitle: "Simmered cabbage recipe — Kivu / East side",
+    title: "Simmered cabbage",
+    seoTitle: "Simmered cabbage recipe — side",
     description:
-      "Simmered cabbage recipe: white cabbage softened with onion and tomato — simple everyday Eastern green, served with bugali or rice.",
+      "Simmered cabbage recipe: white cabbage softened with onion and tomato — simple everyday green, served with bugali or rice.",
     region: "North Kivu & South Kivu",
     imageAlt: "Cooked cabbage served beside maize paste",
     prepTime: "15 min",
@@ -3299,7 +3299,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Grilled mbinzo recipe: edible caterpillars roughly seasoned and seared in a pan or over fire — seasonal protein in Kasai and Katanga.",
     region: "Greater Kasai",
-    imageAlt: "Dried edible caterpillars (mbinzo / ngala), ready to sear in a pan",
+    imageAlt: "Cooked edible caterpillars (mbinzo) served with sides",
     prepTime: "20 min",
     cookTime: "15 min",
     ingredients: [
@@ -3439,7 +3439,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Smoked fish in a short sauce: soaked, simmered with tomato — pantry protein in Kasai, served with bidia.",
     region: "Greater Kasai",
-    imageAlt: "Basket of dried / smoked fish at a Congolese market",
+    imageAlt: "Smoked fish cooked in sauce, plated",
     prepTime: "20 min + 40 min soak",
     cookTime: "35 min",
     ingredients: [
@@ -3487,35 +3487,6 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     ],
     tags: ["potatoes", "Katanga", "Lubumbashi", "side"],
     body: "In **Greater Katanga**, potato complements [bukari](/en/recettes/bukari-katanga/) without replacing it—especially in town. For a longer dish: [makosso with potatoes](/en/recettes/makosso-pommes/). Regional green: [matembele](/en/recettes/matembele-katanga/).",
-  },
-  "brochettes-lubumbashi": {
-    title: "Lubumbashi skewers",
-    seoTitle: "Lubumbashi skewers recipe — Katanga street food",
-    description:
-      "Lubumbashi skewers recipe: marinated beef grilled over coals — Greater Katanga street food, cousin to Kinshasa kamundele.",
-    region: "Greater Katanga",
-    imageAlt: "Marinated beef skewers with sides",
-    prepTime: "25 min + 1 h marinade",
-    cookTime: "15 min",
-    ingredients: [
-      "700 g beef (skewer cut)",
-      "1 onion, grated",
-      "3 garlic cloves",
-      "1 tsp grated ginger",
-      "2 tbsp oil",
-      "1 tbsp lemon juice",
-      "Salt, pepper, pili-pili",
-      "Wooden skewers",
-    ],
-    steps: [
-      "Cut the meat into even cubes.",
-      "Mix onion, garlic, ginger, oil, lemon, salt, pepper, chili. Coat. Marinate 1 hour cold.",
-      "Thread onto skewers without packing too tight.",
-      "Grill over medium coals 12–15 minutes, turning.",
-      "Serve with raw onions, pili-pili, andazi, or fries.",
-    ],
-    tags: ["skewers", "Lubumbashi", "Katanga", "street food", "beef"],
-    body: "In **Lubumbashi**, street skewers share the gesture of Kinshasa [kamundele](/en/recettes/kamundele/)—marinade, coals, sharing. Local side: [andazi](/en/recettes/andazi-tanganyika/) or [bukari](/en/recettes/bukari-katanga/). Commons photo: same Congolese skewer family (credit on the page).",
   },
   "viande-sechee-tomates": {
     title: "Dried meat with tomatoes",
@@ -3580,7 +3551,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Potato sambousa recipe: fried stuffed pastries — street snack in Goma and the East, cousin to East African samosas.",
     region: "North & South Kivu",
-    imageAlt: "Potato sambousa seller in Goma",
+    imageAlt: "Golden sambousa / samosas served with sauces",
     prepTime: "40 min",
     cookTime: "25 min",
     ingredients: [
@@ -3609,7 +3580,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Beef moambe recipe: stewing beef simmered in palm-nut pulp — the meat counterpart to chicken and fish moambe.",
     region: "Across the DRC",
-    imageAlt: "Palm-nut / sauce graine base for beef moambe",
+    imageAlt: "Palm-nut moambe-style sauce with meat and foutou",
     prepTime: "25 min",
     cookTime: "1 h 30",
     ingredients: [
@@ -3638,7 +3609,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Pondu with fish recipe (Lingala: pondu ya mbisi): cassava leaves simmered with fish — a pondu variant.",
     region: "Kinshasa & Cuvette",
-    imageAlt: "Fresh cassava leaves for pondu with fish",
+    imageAlt: "Cassava-leaf pondu with dried fish and fufu",
     prepTime: "40 min",
     cookTime: "1 h 30",
     ingredients: [
@@ -3729,7 +3700,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Pondu with pork recipe (Lingala: pondu ya ngulu): cassava leaves simmered with pork — a pondu variant.",
     region: "Kinshasa & Cuvette",
-    imageAlt: "Fresh cassava leaves for pondu with pork",
+    imageAlt: "Cassava-leaf stew with meat, plated",
     prepTime: "40 min",
     cookTime: "1 h 40",
     ingredients: [
@@ -3760,7 +3731,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Oxtail in sauce recipe: a long tomato-onion simmer — a feast and Sunday dish in the DRC.",
     region: "Kinshasa",
-    imageAlt: "Cooked oxtail ready for a long sauce",
+    imageAlt: "Oxtail in sauce served with cassava",
     prepTime: "25 min",
     cookTime: "2 h 30",
     ingredients: [
@@ -3874,7 +3845,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Grilled ngolo recipe: marinated African catfish cooked over coals — the grill gesture, distinct from pepe soupe ya ngolo.",
     region: "Kinshasa & Congo Basin",
-    imageAlt: "African catfish (Clarias), the ngolo fish",
+    imageAlt: "Prepared African catfish (ngolo), served",
     prepTime: "25 min + 30 min marinade",
     cookTime: "25 min",
     ingredients: [
@@ -3957,10 +3928,10 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
   },
   "brochettes-boeuf": {
     title: "Beef skewers",
-    seoTitle: "Beef skewers recipe — Kinshasa grill",
+    seoTitle: "Beef skewers recipe — grill",
     description:
-      "Beef skewers recipe: larger marinated cubes grilled over coals — a table portion, distinct from small street kamundele.",
-    region: "Kinshasa",
+      "Beef skewers recipe: marinated cubes grilled over coals — street and table, from Kinshasa to Katanga (mishikaki), distinct from small kamundele.",
+    region: "Kinshasa & Greater Katanga",
     imageAlt: "Meat skewers grilling over coals",
     prepTime: "25 min + 1 h marinade",
     cookTime: "20 min",
@@ -3980,8 +3951,33 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Grill over medium coals 15–20 minutes, turning, until smoked crust and juicy centre.",
       "Serve with raw onion, pili-pili sauce, fries or bread.",
     ],
-    tags: ["skewers", "beef", "street food", "grill", "Kinshasa"],
-    body: "**Beef skewers** at the table are more generous than [kamundele](/en/recettes/kamundele/) (tiny street cubes). Other grilled beef: [boeuf ya kotumba](/en/recettes/boeuf-ya-kotumba/). Liver: [liver skewers](/en/recettes/brochettes-foie/).",
+    tags: ["skewers", "beef", "street food", "grill", "mishikaki", "Kinshasa", "Katanga"],
+    variants: [
+      {
+        id: "brochettes-lubumbashi",
+        title: "Street skewers (mishikaki)",
+        description:
+          "In Greater Katanga (Lubumbashi), the same beef + coals gesture is often called mishikaki — slightly smaller cubes, often with andazi or bukari.",
+        ingredients: [
+          "700 g beef (skewer cut)",
+          "1 onion, grated",
+          "3 garlic cloves",
+          "1 tsp grated ginger",
+          "2 tbsp oil",
+          "1 tbsp lemon juice",
+          "Salt, pepper, pili-pili",
+          "Wooden skewers",
+        ],
+        steps: [
+          "Cut the meat into even cubes.",
+          "Mix onion, garlic, ginger, oil, lemon, salt, pepper, chili. Coat. Marinate 1 hour cold.",
+          "Thread onto skewers without packing too tight.",
+          "Grill over medium coals 12–15 minutes, turning.",
+          "Serve with raw onions, pili-pili, andazi, or fries.",
+        ],
+      },
+    ],
+    body: "**Beef skewers** are the grilled meat stick — more generous than [kamundele](/en/recettes/kamundele/) (tiny street cubes). In Katanga also *mishikaki* (see variant). Other grilled beef: [grilled beef](/en/recettes/boeuf-ya-kotumba/). Liver: [liver skewers](/en/recettes/brochettes-foie/). Eastern sides: [andazi](/en/recettes/andazi-tanganyika/), [bukari](/en/recettes/bukari-katanga/).",
   },
   "brochettes-poulet": {
     title: "Chicken skewers",
@@ -3989,7 +3985,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Chicken skewers recipe: marinated cubes grilled over coals — Kinshasa stick snack beside whole-piece soso ya kotumba.",
     region: "Kinshasa",
-    imageAlt: "Grilled poultry skewer",
+    imageAlt: "Marinated chicken skewers finishing on the barbecue",
     prepTime: "20 min + 45 min marinade",
     cookTime: "15 min",
     ingredients: [
@@ -4070,12 +4066,12 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     body: "**Simmered tripe** sits among Kinshasa offal plates beside [sautéed beef liver](/en/recettes/foie-boeuf-saute/) and [liver skewers](/en/recettes/brochettes-foie/). Another long offal simmer: [makosso](/en/recettes/makosso-pommes/).",
   },
   "spaghetti-kinshasa": {
-    title: "Kinshasa spaghetti",
-    seoTitle: "Kinshasa spaghetti recipe — local tomato sauce",
+    title: "Spaghetti with tomato sauce",
+    seoTitle: "Spaghetti with tomato sauce recipe",
     description:
-      "Kinshasa-style spaghetti: pasta in tomato-onion sauce often enriched with minced meat or sardines — everyday / street plate.",
+      "Spaghetti with tomato sauce: pasta in tomato-onion sauce often enriched with minced meat or sardines — everyday / street plate.",
     region: "Kinshasa",
-    imageAlt: "Spaghetti in tomato sauce, illustrative Kinshasa plate",
+    imageAlt: "Spaghetti in tomato sauce",
     prepTime: "15 min",
     cookTime: "30 min",
     ingredients: [
@@ -4097,7 +4093,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Serve hot, optionally with a fried egg or extra pili-pili.",
     ],
     tags: ["spaghetti", "pasta", "Kinshasa", "street food", "everyday", "tomato"],
-    body: "**Kinshasa spaghetti** borrows the Italian pasta shape for a local tomato-onion sauce — urban cousin of [loso mayonnaise](/en/recettes/loso-mayonnaise/) and [loso na madesu](/en/recettes/loso-na-madesu/). Another quick plate: [sausage and fries](/en/recettes/saucisse-frites/).",
+    body: "**Spaghetti with tomato sauce** borrows the Italian pasta shape for a local tomato-onion sauce — urban cousin of [loso mayonnaise](/en/recettes/loso-mayonnaise/) and [loso na madesu](/en/recettes/loso-na-madesu/). Another quick plate: [sausage and fries](/en/recettes/saucisse-frites/).",
   },
   "patate-douce-frite": {
     title: "Fried sweet potato",
@@ -4176,7 +4172,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Grilled maize recipe: cobs grilled over coals until smoky — Eastern / street snack, distinct from maize porridge.",
     region: "North & South Kivu",
-    imageAlt: "Grilled maize cobs",
+    imageAlt: "Grilled maize cobs on coals, ready to serve",
     prepTime: "5 min",
     cookTime: "20 min",
     ingredients: [
@@ -4200,7 +4196,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Boiled maize recipe: cobs cooked in salted water until tender — simple side / snack, distinct from grilled maize.",
     region: "Across the DRC",
-    imageAlt: "Boiled maize cobs",
+    imageAlt: "Boiled maize cobs ready to serve",
     prepTime: "5 min",
     cookTime: "30 min",
     ingredients: [
@@ -4245,10 +4241,10 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     body: "**Yam in sauce** extends [boiled yam](/en/recettes/igname-bouillie/): same tuber, tomato sauce that carries the plate. Other simmered tuber: [simmered taro](/en/recettes/taro-mijote/). Fried snack: [yam fritters](/en/recettes/beignets-igname/).",
   },
   "poisson-kisangani": {
-    title: "Kisangani fish",
-    seoTitle: "Kisangani fish recipe — river stew",
+    title: "Simmered fish",
+    seoTitle: "Simmered fish recipe — river tomato sauce",
     description:
-      "Kisangani fish recipe: freshwater fish marinated then simmered in tomato-onion sauce — Congo River plate in Kisangani, beside the local salad.",
+      "Simmered fish recipe: freshwater fish marinated then simmered in tomato-onion sauce — Congo River plate, beside cabbage-carrot salad.",
     region: "Kisangani",
     imageAlt: "Cooked fish, illustrative river plate",
     prepTime: "25 min + 20 min marinade",
@@ -4272,7 +4268,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Serve with rice, plantain or chikwangue, ideally with [Kisangani cabbage-carrot salad](/en/recettes/salade-kisangani/).",
     ],
     tags: ["Kisangani", "fish", "river", "simmered", "tomato"],
-    body: "**Kisangani fish** is the city’s simmered river-market plate: less pure grill than [Kinkole braised fish](/en/recettes/poisson-braise-kinkole/), saucier than [grilled ngolo](/en/recettes/ngolo-grille/). Same local table: [Kisangani salad](/en/recettes/salade-kisangani/).",
+    body: "**Simmered fish** is the river-market tomato-sauce plate: less pure grill than [braised fish](/en/recettes/poisson-braise-kinkole/), saucier than [grilled ngolo](/en/recettes/ngolo-grille/). Same local table: [cabbage-carrot salad](/en/recettes/salade-kisangani/).",
   },
   "mbisi-na-kwanga": {
     title: "Fish with chikwangue",
@@ -4280,7 +4276,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Fish with chikwangue recipe (Lingala: mbisi na kwanga) — classic Kongo-Central duo.",
     region: "Kongo-Central",
-    imageAlt: "Kwanga / chikwangue cassava bread",
+    imageAlt: "Braised fish served with cassava paste mounds",
     prepTime: "20 min",
     cookTime: "40 min",
     ingredients: [
@@ -4309,7 +4305,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Nsafu in sauce recipe: softened safou pulp bound into a short onion-tomato sauce — simmered take, distinct from grilled nsafu.",
     region: "Western DRC",
-    imageAlt: "Softened nsafu / safou pulp ready to bind",
+    imageAlt: "Plate with cooked safou / nsafu, maize and peanut",
     prepTime: "15 min",
     cookTime: "25 min",
     ingredients: [
@@ -4660,10 +4656,10 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     body: "**Mikila with peanut** keeps the oxtail of [mikila](/en/recettes/mikila/) (tomato sauce) but follows [peanut sauce](/en/recettes/sauce-arachide/) logic. Long cook, melting collagen — feast or diaspora table.",
   },
   "chou-kinshasa": {
-    title: "Kinshasa simmered cabbage",
-    seoTitle: "Simmered cabbage recipe — Kinshasa style",
+    title: "Simmered cabbage with palm oil",
+    seoTitle: "Simmered cabbage with palm oil recipe",
     description:
-      "Kinshasa-style simmered cabbage: white cabbage with onion, tomato and a little palm oil — capital table green, distinct from Eastern simmered cabbage.",
+      "Simmered cabbage with palm oil: white cabbage with onion, tomato and a little palm oil — table green, distinct from the simpler Eastern simmered cabbage.",
     region: "Kinshasa",
     imageAlt: "Cabbage simmered in sauce",
     prepTime: "15 min",
@@ -4686,7 +4682,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
       "Serve with rice, fufu, fish or grilled meat.",
     ],
     tags: ["cabbage", "Kinshasa", "vegetables", "side", "everyday"],
-    body: "**Kinshasa cabbage** is the capital cousin of [Eastern simmered cabbage](/en/recettes/chou-mijote-est/): same vegetable, more often palm oil and cube. Crunchy salad in another city: [Kisangani salad](/en/recettes/salade-kisangani/). Leaf green: [ndunda](/en/recettes/ndunda/).",
+    body: "**Simmered cabbage with palm oil** is the cousin of [simmered cabbage](/en/recettes/chou-mijote-est/): same vegetable, more often palm oil and cube. Crunchy salad: [cabbage-carrot salad](/en/recettes/salade-kisangani/). Leaf green: [ndunda](/en/recettes/ndunda/).",
   },
   "soso-grille-entier": {
     title: "Whole grilled chicken",
@@ -4752,7 +4748,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Beef tongue in sauce recipe: tongue long-boiled then simmered with tomato and onion — a feast dish in the DRC.",
     region: "Kinshasa",
-    imageAlt: "Cooked beef tongue, sliced, ready for sauce",
+    imageAlt: "Beef tongue in sauce, plated",
     prepTime: "30 min",
     cookTime: "3 h",
     ingredients: [
@@ -4808,7 +4804,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Ginger-pineapple juice recipe: tangawisi enriched with fresh pineapple — a spicy, fruity drink popular in the DRC and the diaspora.",
     region: "Kinshasa",
-    imageAlt: "Pineapple juice being prepared, base of the ginger-pineapple mix",
+    imageAlt: "Glass of golden pineapple juice, base of ginger-pineapple juice",
     prepTime: "25 min + 30 min resting",
     cookTime: "0 min",
     ingredients: [
@@ -4860,7 +4856,7 @@ export const recipeTranslationsEn: Record<string, RecipeTranslation> = {
     description:
       "Cassava porridge recipe: cassava flour cooked in water to a creamy texture, sweetened — breakfast and snack, distinct from maize porridge.",
     region: "Across the DRC",
-    imageAlt: "Cassava porridge cooking in a pot",
+    imageAlt: "Bowl of creamy porridge served (gesture close to cassava porridge)",
     prepTime: "5 min",
     cookTime: "20 min",
     ingredients: [

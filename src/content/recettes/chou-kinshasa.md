@@ -1,7 +1,7 @@
 ---
-title: Chou mijoté Kinshasa
-seoTitle: Recette chou mijoté — style Kinshasa
-description: "Recette de chou mijoté façon Kinshasa : chou blanc à l’oignon, tomate et un peu d’huile de palme — légume de table capital, distinct du chou mijoté de l’Est."
+title: Chou mijoté à l’huile de palme
+seoTitle: Recette chou mijoté à l’huile de palme
+description: "Recette de chou mijoté à l’huile de palme : chou blanc à l’oignon, tomate et un peu d’huile de palme — légume de table, distinct du chou mijoté plus simple de l’Est."
 region: Kinshasa
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Cabbage%20Stew.jpg?width=1600
 imageAlt: Chou mijoté en sauce
@@ -42,4 +42,4 @@ steps:
   - Servir avec riz, fufu, poisson ou viande grillée.
 ---
 
-Le **chou Kinshasa** est le cousin capital du [chou mijoté de l’Est](/recettes/chou-mijote-est/) : même légume, plus souvent huile de palme et cube. Salade croquante autre ville : [salade Kisangani](/recettes/salade-kisangani/). Vert feuille : [ndunda](/recettes/ndunda/).
+Le **chou mijoté à l’huile de palme** est le cousin du [chou mijoté](/recettes/chou-mijote-est/) : même légume, plus souvent huile de palme et cube. Salade croquante : [salade chou-carotte](/recettes/salade-kisangani/). Vert feuille : [ndunda](/recettes/ndunda/).

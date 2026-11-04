@@ -3,11 +3,11 @@ title: Mbinzo grillées
 seoTitle: Recette mbinzo grillées — chenilles comestibles
 description: "Recette de mbinzo grillées : chenilles comestibles grossièrement assaisonnées et saisies à la poêle ou au feu — protéine de saison au Kasaï et au Katanga."
 region: Grand Kasaï
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Ngala%20-%20edible%20caterpillars%20-%20Imbrasia%20forda%20-%20Cirina%20forda%2C%20DR%20Congo%20(cropped).jpg?width=1600
-imageAlt: Chenilles comestibles (mbinzo / ngala) séchées, prêtes à saisir à la poêle
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Mbika%20na%20mbinzo%20-%20porridge%20with%20caterpillars%2004.jpg?width=1600
+imageAlt: "Mbinzo (chenilles) cuites, servies avec accompagnements"
 imagePosition: center
-imageCredit: T.K. Naliaka — Wikimedia Commons, CC BY-SA 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:Ngala_-_edible_caterpillars_-_Imbrasia_forda_-_Cirina_forda,_DR_Congo_(cropped).jpg
+imageCredit: "T.K. Naliaka — Wikimedia Commons, CC BY-SA 4.0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Mbika_na_mbinzo_-_porridge_with_caterpillars_04.jpg
 category: plat
 prepTime: 20 min
 cookTime: 15 min

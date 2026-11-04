@@ -3,11 +3,11 @@ title: Aubergines africaines en sauce
 seoTitle: Recette aubergines africaines (garden eggs)
 description: "Recette d’aubergines africaines (garden eggs) mijotées avec tomate, oignon et un peu d’huile — légume du marché congolais, souvent servi avec fufu ou riz."
 region: Kinshasa & Ouest de la RDC
-image: https://commons.wikimedia.org/wiki/Special:Redirect/file/African%20eggplant.jpg?width=1600
-imageAlt: Aubergines africaines (garden eggs) fraîches
+image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Boiled%20Yam%20with%20garden%20egg%20stew.jpg?width=1600
+imageAlt: Sauce d’aubergines africaines (garden eggs) servie avec igname
 imagePosition: center
-imageCredit: Adellah owobusingye — Wikimedia Commons, CC BY 4.0
-imageCreditUrl: https://commons.wikimedia.org/wiki/File:African_eggplant.jpg
+imageCredit: "Umuhiera — Wikimedia Commons, CC0"
+imageCreditUrl: https://commons.wikimedia.org/wiki/File:Boiled_Yam_with_garden_egg_stew.jpg
 category: plat
 prepTime: 20 min
 cookTime: 35 min

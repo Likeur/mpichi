@@ -1,7 +1,7 @@
 ---
-title: Andazi du Tanganyika
-seoTitle: Recette andazi / mandazi — beignets du lac Tanganyika
-description: "Recette d’andazi (mandazi) : beignets de farine légèrement sucrés frits jusqu’à dorer — encas du quotidien à Kalemie et autour du lac Tanganyika."
+title: Andazi
+seoTitle: Recette andazi / mandazi — beignets
+description: "Recette d’andazi (mandazi) : beignets de farine légèrement sucrés frits jusqu’à dorer — encas du quotidien autour du lac Tanganyika."
 region: Haut-Katanga & Tanganyika
 image: https://commons.wikimedia.org/wiki/Special:Redirect/file/Andazi.jpg?width=1600
 imageAlt: Andazi frais tout juste frits, lac Tanganyika

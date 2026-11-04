@@ -386,6 +386,60 @@ html[data-recipe-transition]::view-transition-new(recipe-image) {
   }
 }
 
+/* Mpi mascot — light presence, no noise */
+.mpi-mascot .mpi-body {
+  transform-origin: 44px 70px;
+}
+
+.mpi-mascot .mpi-spoon {
+  transform-origin: 7px 40px;
+}
+
+.has-motion .mpi-mascot .mpi-body {
+  animation: mpi-bob 3.6s ease-in-out infinite;
+}
+
+.has-motion .mpi-mascot .mpi-spoon {
+  animation: mpi-spoon 3.6s ease-in-out infinite;
+}
+
+.has-motion .mpi-mascot .mpi-eyes {
+  animation: mpi-blink 5.2s ease-in-out infinite;
+  transform-origin: 44px 46px;
+}
+
+@keyframes mpi-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes mpi-spoon {
+  0%,
+  100% {
+    transform: translate(58px, 28px) rotate(18deg);
+  }
+  50% {
+    transform: translate(58px, 26px) rotate(26deg);
+  }
+}
+
+@keyframes mpi-blink {
+  0%,
+  42%,
+  48%,
+  100% {
+    transform: scaleY(1);
+  }
+  45% {
+    transform: scaleY(0.12);
+  }
+}
+
 @media print {
   @page {
     margin: 1.4cm;
