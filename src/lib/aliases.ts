@@ -1,4 +1,5 @@
-import raw from '../../mpichi-dataset/enrichment/aliases.json';
+/** Vendored mirror of `mpichi-dataset/enrichment/aliases.json` (dataset repo is gitignored). */
+import raw from '../data/aliases.json';
 
 export type AliasEntry = {
   name: string;

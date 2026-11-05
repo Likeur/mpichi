@@ -10,7 +10,7 @@ Copier la checklist du type de modif et cocher avant de clôturer.
 - [ ] Image Commons ou locale + `imageAlt` + `imageCredit` + `imageCreditUrl`
 - [ ] `relatedRecipes` vers des slugs existants
 - [ ] Entrée `src/i18n/recipes-en.ts` (tous les champs utiles + `body` + `imageAlt`)
-- [ ] Alias dans `mpichi-dataset/enrichment/aliases.json` (≥1 nom utile, `lang` renseigné)
+- [ ] Alias dans `mpichi-dataset/enrichment/aliases.json` (≥1 nom utile, `lang` renseigné) + mirror `src/data/aliases.json` via `export-dataset`
 - [ ] Steps/ingredients avec `:` → strings YAML quotées
 - [ ] `npm run check`
 - [ ] `npm run export-dataset` && `npm --prefix mpichi-dataset run validate`
@@ -91,8 +91,9 @@ steps: []
 - [ ] Éditer `mpichi-dataset/enrichment/aliases.json`
 - [ ] Schéma : `name` + `lang` ; optionnel `note`, `region_hint`, `script`
 - [ ] Pas d’alias inventé / trompeur
-- [ ] `npm --prefix mpichi-dataset run export` (depuis site : `npm run export-dataset`)
+- [ ] `npm run export-dataset` (export + **sync** vers `src/data/aliases.json` pour Vercel)
 - [ ] `npm --prefix mpichi-dataset run validate`
+- [ ] Committer aussi `src/data/aliases.json` (le dossier `mpichi-dataset/` est gitignored sur le site)
 - [ ] `CHANGELOG.md` `[Unreleased]` **toujours**
 - [ ] Si release / ship : checklist G (bump version + **HF**)
 

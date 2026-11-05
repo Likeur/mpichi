@@ -10,7 +10,8 @@
     "check": "astro check",
     "ci": "npm run check && npm run build",
     "astro": "astro",
-    "export-dataset": "npm --prefix mpichi-dataset run export",
+    "sync-aliases": "cp mpichi-dataset/enrichment/aliases.json src/data/aliases.json",
+    "export-dataset": "npm --prefix mpichi-dataset run export && npm run sync-aliases",
     "generate:ln": "npx tsx scripts/generate-ln-i18n.mts",
     "validate:ln": "npx tsx scripts/validate-ln.mts"
   },
