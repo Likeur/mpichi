@@ -119,6 +119,14 @@ export const ui = {
     'recipes.chipKinshasa': 'Kinshasa',
     'recipes.chipKasai': 'Grand Kasaï',
     'recipes.favoritesResume': 'Vous avez des recettes enregistrées —',
+    'recipes.shuffle.title': 'Une recette au hasard.',
+    'recipes.shuffle.intro':
+      'Aucune idée de quoi cuisiner aujourd’hui ? Lancez le tirage : les plats défilent, Mpichi en choisit un pour vous.',
+    'recipes.shuffle.start': 'Lancer le tirage',
+    'recipes.shuffle.spinning': 'Ça tourne…',
+    'recipes.shuffle.again': 'Encore une fois',
+    'recipes.shuffle.open': 'Voir la recette',
+    'recipes.shuffle.result': 'À cuisiner aujourd’hui',
     'home.south.title': 'Cuisine du Sud.',
     'home.south.body':
       'Kapenta, matembele, bukari, sambaza — les gestes du Katanga et de Lubumbashi, là où Mpichi trouve déjà son public.',
@@ -431,6 +439,14 @@ export const ui = {
     'recipes.chipKinshasa': 'Kinshasa',
     'recipes.chipKasai': 'Greater Kasai',
     'recipes.favoritesResume': 'You have saved recipes —',
+    'recipes.shuffle.title': 'A random recipe.',
+    'recipes.shuffle.intro':
+      'No idea what to cook today? Spin the reel — dishes scroll past, Mpichi picks one for you.',
+    'recipes.shuffle.start': 'Spin for a dish',
+    'recipes.shuffle.spinning': 'Spinning…',
+    'recipes.shuffle.again': 'Spin again',
+    'recipes.shuffle.open': 'Open the recipe',
+    'recipes.shuffle.result': 'Cook this today',
     'home.south.title': 'Southern cuisine.',
     'home.south.body':
       'Kapenta, matembele, bukari, sambaza — Katanga and Lubumbashi gestures, where Mpichi already finds its audience.',
@@ -741,6 +757,14 @@ export const ui = {
     'recipes.chipKinshasa': 'Kinshasa',
     'recipes.chipKasai': 'Kasaï monene',
     'recipes.favoritesResume': 'Ozali na ba recettes oyo obombí —',
+    'recipes.shuffle.title': 'Recette ya hasard.',
+    'recipes.shuffle.intro':
+      'Oyebi te nini okoteka lelo? Bandela : ba plats ekotambola, Mpichi ekopona moko mpo na yo.',
+    'recipes.shuffle.start': 'Bandela tirage',
+    'recipes.shuffle.spinning': 'Ezali kotambola…',
+    'recipes.shuffle.again': 'Lisusu',
+    'recipes.shuffle.open': 'Tala recette',
+    'recipes.shuffle.result': 'Tokoteka yango lelo',
     'home.south.title': 'Bilei ya sud.',
     'home.south.body':
       'Kapenta, matembele, bukari, sambaza — ba gestes ya Katanga mpe Lubumbashi, esika Mpichi ezwaka naino ba batángi.',

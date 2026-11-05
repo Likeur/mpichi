@@ -1,0 +1,629 @@
+---
+export type ShuffleRecipe = {
+  slug: string;
+  title: string;
+  region: string;
+  image: string;
+  imageAlt: string;
+  href: string;
+};
+
+interface Props {
+  recipes: ShuffleRecipe[];
+  title: string;
+  intro: string;
+  startLabel: string;
+  spinningLabel: string;
+  againLabel: string;
+  openLabel: string;
+  resultLabel: string;
+}
+
+const {
+  recipes,
+  title,
+  intro,
+  startLabel,
+  spinningLabel,
+  againLabel,
+  openLabel,
+  resultLabel,
+} = Astro.props;
+
+const payload = JSON.stringify(recipes);
+---
+
+{
+  recipes.length > 0 && (
+    <section
+      class="recipe-shuffle bg-creme-50 border-b border-earth-900/10"
+      data-recipe-shuffle
+      aria-labelledby="recipe-shuffle-heading"
+    >
+      <div class="px-grid-margin max-w-[720px] mx-auto py-16 sm:py-20 text-center">
+        <h2
+          id="recipe-shuffle-heading"
+          class="font-display text-[clamp(2rem,5vw,3.25rem)] font-light leading-[1.1] tracking-[-0.02em] text-earth-900"
+        >
+          {title}
+        </h2>
+        <p class="mt-4 text-sm leading-6 text-earth-900/55 max-w-md mx-auto">
+          {intro}
+        </p>
+
+        <div class="recipe-shuffle__stage mt-10" data-shuffle-stage data-state="idle">
+          <div class="recipe-shuffle__viewport" data-shuffle-viewport aria-hidden="true">
+            <div class="recipe-shuffle__window" aria-hidden="true"></div>
+            <div class="recipe-shuffle__reel" data-shuffle-reel></div>
+          </div>
+
+          <div class="recipe-shuffle__result" data-shuffle-result hidden>
+            <p class="recipe-shuffle__eyebrow">{resultLabel}</p>
+            <a class="recipe-shuffle__pick" data-shuffle-link href="#">
+              <img
+                class="recipe-shuffle__pick-image"
+                data-shuffle-image
+                src=""
+                alt=""
+                width="720"
+                height="480"
+                decoding="async"
+              />
+              <span class="recipe-shuffle__pick-copy">
+                <span class="recipe-shuffle__pick-title" data-shuffle-title></span>
+                <span class="recipe-shuffle__pick-region" data-shuffle-region></span>
+              </span>
+            </a>
+            <a class="recipe-shuffle__open" data-shuffle-open href="#">{openLabel}</a>
+          </div>
+
+          <div class="recipe-shuffle__actions">
+            <button
+              type="button"
+              class="recipe-shuffle__launch"
+              data-shuffle-start
+              aria-live="polite"
+            >
+              <span data-shuffle-start-label>{startLabel}</span>
+            </button>
+            <button type="button" class="recipe-shuffle__again" data-shuffle-again hidden>
+              {againLabel}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <script type="application/json" data-shuffle-data set:html={payload} />
+      <span class="sr-only" data-shuffle-spinning-label>{spinningLabel}</span>
+      <span class="sr-only" data-shuffle-start-label-text>{startLabel}</span>
+    </section>
+  )
+}
+
+<style>
+  .recipe-shuffle__stage {
+    position: relative;
+    min-height: 11rem;
+  }
+
+  .recipe-shuffle__viewport {
+    display: none;
+    position: relative;
+    height: 12rem;
+    margin: 0 auto 1.5rem;
+    max-width: 24rem;
+    overflow: hidden;
+    background: color-mix(in oklab, var(--color-earth-900) 4%, var(--color-creme-50));
+    mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      #000 16%,
+      #000 84%,
+      transparent 100%
+    );
+  }
+
+  .recipe-shuffle__stage[data-state='spinning'] .recipe-shuffle__viewport {
+    display: block;
+  }
+
+  .recipe-shuffle__window {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 3.85rem;
+    transform: translateY(-50%);
+    z-index: 2;
+    pointer-events: none;
+    border-top: 1px solid color-mix(in oklab, var(--color-mpichi-red) 55%, transparent);
+    border-bottom: 1px solid color-mix(in oklab, var(--color-mpichi-red) 55%, transparent);
+    background: color-mix(in oklab, var(--color-mpichi-red) 5%, transparent);
+  }
+
+  .recipe-shuffle__reel {
+    display: flex;
+    flex-direction: column;
+    will-change: transform, filter;
+    filter: blur(0);
+  }
+
+  .recipe-shuffle__stage[data-state='spinning'] .recipe-shuffle__reel {
+    filter: blur(1.1px);
+  }
+
+  .recipe-shuffle__stage[data-settling='true'] .recipe-shuffle__reel {
+    filter: blur(0.25px);
+  }
+
+  .recipe-shuffle__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.85rem;
+    flex: 0 0 3.85rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .recipe-shuffle__slide-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.15rem, 3.4vw, 1.45rem);
+    font-weight: 400;
+    line-height: 1.15;
+    color: color-mix(in oklab, var(--color-earth-900) 48%, transparent);
+  }
+
+  .recipe-shuffle__slide.is-active .recipe-shuffle__slide-title {
+    color: var(--color-earth-900);
+  }
+
+  .recipe-shuffle__result {
+    margin: 0 auto 1.5rem;
+    max-width: 22rem;
+    text-align: left;
+    opacity: 1;
+  }
+
+  .recipe-shuffle__result.is-revealing .recipe-shuffle__eyebrow,
+  .recipe-shuffle__result.is-revealing .recipe-shuffle__pick,
+  .recipe-shuffle__result.is-revealing .recipe-shuffle__open {
+    animation: shuffle-reveal 480ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .recipe-shuffle__result.is-revealing .recipe-shuffle__pick {
+    animation-delay: 40ms;
+  }
+
+  .recipe-shuffle__result.is-revealing .recipe-shuffle__open {
+    animation-delay: 110ms;
+  }
+
+  @keyframes shuffle-reveal {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .recipe-shuffle__eyebrow {
+    margin: 0 0 0.75rem;
+    font-size: 0.5625rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: color-mix(in oklab, var(--color-earth-900) 45%, transparent);
+  }
+
+  .recipe-shuffle__pick {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .recipe-shuffle__pick-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    background: var(--color-aged-oak);
+  }
+
+  .recipe-shuffle__pick-copy {
+    display: block;
+    margin-top: 0.85rem;
+  }
+
+  .recipe-shuffle__pick-title {
+    display: block;
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 1.85rem);
+    font-weight: 400;
+    line-height: 1.15;
+    color: var(--color-earth-900);
+  }
+
+  .recipe-shuffle__pick-region {
+    display: block;
+    margin-top: 0.35rem;
+    font-size: 0.5625rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: color-mix(in oklab, var(--color-earth-900) 45%, transparent);
+  }
+
+  .recipe-shuffle__open {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.6875rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-mpichi-red);
+    border-bottom: 1px solid color-mix(in oklab, var(--color-mpichi-red) 35%, transparent);
+    padding-bottom: 0.15rem;
+    transition: border-color 180ms ease, color 180ms ease;
+  }
+
+  .recipe-shuffle__open:hover {
+    color: var(--color-mpichi-red-dark);
+    border-bottom-color: var(--color-mpichi-red-dark);
+  }
+
+  .recipe-shuffle__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.85rem;
+  }
+
+  .recipe-shuffle__launch {
+    min-width: min(100%, 16rem);
+    padding: 1rem 1.75rem;
+    border: 0;
+    background: var(--color-earth-900);
+    color: var(--color-creme-50);
+    font-size: 0.6875rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    transition:
+      background 180ms ease,
+      transform 180ms ease;
+  }
+
+  .recipe-shuffle__launch:hover:not(:disabled) {
+    background: var(--color-aged-oak);
+  }
+
+  .recipe-shuffle__launch:active:not(:disabled) {
+    transform: scale(0.985);
+  }
+
+  .recipe-shuffle__launch:disabled {
+    opacity: 0.72;
+    cursor: wait;
+  }
+
+  .recipe-shuffle__again {
+    min-width: min(100%, 16rem);
+    padding: 1rem 1.75rem;
+    border: 1px solid color-mix(in oklab, var(--color-earth-900) 22%, transparent);
+    background: transparent;
+    font-size: 0.6875rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--color-earth-900);
+    transition: background 180ms ease, border-color 180ms ease;
+  }
+
+  .recipe-shuffle__again:hover {
+    background: color-mix(in oklab, var(--color-earth-900) 5%, transparent);
+    border-color: color-mix(in oklab, var(--color-earth-900) 40%, transparent);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .recipe-shuffle__viewport {
+      display: none !important;
+    }
+
+    .recipe-shuffle__result.is-revealing .recipe-shuffle__eyebrow,
+    .recipe-shuffle__result.is-revealing .recipe-shuffle__pick,
+    .recipe-shuffle__result.is-revealing .recipe-shuffle__open {
+      animation: none;
+    }
+  }
+</style>
+
+<script>
+  import { trackEvent } from '../lib/analytics';
+
+  type ShuffleRecipe = {
+    slug: string;
+    title: string;
+    region: string;
+    image: string;
+    imageAlt: string;
+    href: string;
+  };
+
+  const SLIDE_H = 61.6; // 3.85rem fallback if layout not ready
+
+  function parseRecipes(root: HTMLElement): ShuffleRecipe[] {
+    const node = root.querySelector<HTMLScriptElement>('[data-shuffle-data]');
+    if (!node?.textContent) return [];
+    try {
+      const data = JSON.parse(node.textContent) as ShuffleRecipe[];
+      return Array.isArray(data) ? data.filter((r) => r?.slug && r?.href) : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function pickWinner(pool: ShuffleRecipe[], excludeSlug?: string): ShuffleRecipe {
+    if (pool.length === 1) return pool[0];
+    const filtered = excludeSlug ? pool.filter((r) => r.slug !== excludeSlug) : pool;
+    const source = filtered.length > 0 ? filtered : pool;
+    return source[Math.floor(Math.random() * source.length)];
+  }
+
+  function buildStrip(pool: ShuffleRecipe[], winner: ShuffleRecipe, count = 42): ShuffleRecipe[] {
+    const strip: ShuffleRecipe[] = [];
+    let prev = '';
+    for (let i = 0; i < count - 1; i++) {
+      let next = pool[Math.floor(Math.random() * pool.length)];
+      let guard = 0;
+      while (next.slug === prev && pool.length > 1 && guard < 6) {
+        next = pool[Math.floor(Math.random() * pool.length)];
+        guard += 1;
+      }
+      strip.push(next);
+      prev = next.slug;
+    }
+    strip.push(winner);
+    return strip;
+  }
+
+  function renderReel(reel: HTMLElement, strip: ShuffleRecipe[]) {
+    reel.replaceChildren(
+      ...strip.map((recipe) => {
+        const slide = document.createElement('div');
+        slide.className = 'recipe-shuffle__slide';
+        const title = document.createElement('span');
+        title.className = 'recipe-shuffle__slide-title';
+        title.textContent = recipe.title;
+        slide.append(title);
+        return slide;
+      }),
+    );
+  }
+
+  function createTickAudio() {
+    let ctx: AudioContext | null = null;
+
+    const ensure = () => {
+      if (!ctx) ctx = new AudioContext();
+      if (ctx.state === 'suspended') void ctx.resume();
+      return ctx;
+    };
+
+    return {
+      tick(intensity = 0.5) {
+        try {
+          const audio = ensure();
+          const t0 = audio.currentTime;
+          const osc = audio.createOscillator();
+          const gain = audio.createGain();
+          osc.type = 'square';
+          osc.frequency.value = 780 + intensity * 420;
+          gain.gain.setValueAtTime(0.0001, t0);
+          gain.gain.exponentialRampToValueAtTime(0.035 * intensity, t0 + 0.008);
+          gain.gain.exponentialRampToValueAtTime(0.0001, t0 + 0.045);
+          osc.connect(gain);
+          gain.connect(audio.destination);
+          osc.start(t0);
+          osc.stop(t0 + 0.05);
+        } catch {
+          /* silent */
+        }
+      },
+      land() {
+        try {
+          const audio = ensure();
+          const t0 = audio.currentTime;
+          const osc = audio.createOscillator();
+          const gain = audio.createGain();
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(220, t0);
+          osc.frequency.exponentialRampToValueAtTime(110, t0 + 0.18);
+          gain.gain.setValueAtTime(0.0001, t0);
+          gain.gain.exponentialRampToValueAtTime(0.05, t0 + 0.02);
+          gain.gain.exponentialRampToValueAtTime(0.0001, t0 + 0.22);
+          osc.connect(gain);
+          gain.connect(audio.destination);
+          osc.start(t0);
+          osc.stop(t0 + 0.24);
+        } catch {
+          /* silent */
+        }
+      },
+    };
+  }
+
+  function casinoEase(t: number) {
+    const clamped = Math.min(1, Math.max(0, t));
+    return 1 - Math.pow(1 - clamped, 5);
+  }
+
+  function showResult(
+    root: HTMLElement,
+    recipe: ShuffleRecipe,
+    startBtn: HTMLButtonElement,
+    againBtn: HTMLButtonElement,
+  ) {
+    const result = root.querySelector<HTMLElement>('[data-shuffle-result]');
+    const link = root.querySelector<HTMLAnchorElement>('[data-shuffle-link]');
+    const open = root.querySelector<HTMLAnchorElement>('[data-shuffle-open]');
+    const image = root.querySelector<HTMLImageElement>('[data-shuffle-image]');
+    const title = root.querySelector<HTMLElement>('[data-shuffle-title]');
+    const region = root.querySelector<HTMLElement>('[data-shuffle-region]');
+    if (!result || !link || !open || !image || !title || !region) return;
+
+    result.classList.remove('is-revealing');
+    title.textContent = recipe.title;
+    region.textContent = recipe.region;
+    region.hidden = !recipe.region;
+    link.href = recipe.href;
+    open.href = recipe.href;
+
+    // Photo only at reveal time.
+    image.removeAttribute('src');
+    image.alt = recipe.imageAlt || recipe.title;
+    image.src = recipe.image;
+
+    result.hidden = false;
+    startBtn.hidden = true;
+    againBtn.hidden = false;
+
+    // Force reflow then animate in (opacity never stuck at 0).
+    void result.offsetWidth;
+    result.classList.add('is-revealing');
+  }
+
+  function initShuffle(root: HTMLElement) {
+    if (root.dataset.ready === 'true') return;
+    root.dataset.ready = 'true';
+
+    const pool = parseRecipes(root);
+    if (pool.length === 0) return;
+
+    const stage = root.querySelector<HTMLElement>('[data-shuffle-stage]');
+    const viewport = root.querySelector<HTMLElement>('[data-shuffle-viewport]');
+    const reel = root.querySelector<HTMLElement>('[data-shuffle-reel]');
+    const start = root.querySelector<HTMLButtonElement>('[data-shuffle-start]');
+    const again = root.querySelector<HTMLButtonElement>('[data-shuffle-again]');
+    const result = root.querySelector<HTMLElement>('[data-shuffle-result]');
+    const startLabel = root.querySelector('[data-shuffle-start-label]');
+    const spinningText =
+      root.querySelector('[data-shuffle-spinning-label]')?.textContent?.trim() ?? '';
+    const idleText =
+      root.querySelector('[data-shuffle-start-label-text]')?.textContent?.trim() ??
+      startLabel?.textContent?.trim() ??
+      '';
+
+    if (!stage || !viewport || !reel || !start || !again || !result || !startLabel) return;
+
+    let busy = false;
+    let lastSlug: string | undefined;
+    let raf = 0;
+    const ticks = createTickAudio();
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const setIdleLabel = () => {
+      startLabel.textContent = idleText;
+      start.disabled = false;
+    };
+
+    const markActiveSlide = (index: number) => {
+      reel.querySelectorAll('.recipe-shuffle__slide').forEach((slide, i) => {
+        slide.classList.toggle('is-active', i === index);
+      });
+    };
+
+    const run = () => {
+      if (busy) return;
+      busy = true;
+      start.disabled = true;
+      startLabel.textContent = spinningText;
+      again.hidden = true;
+      start.hidden = false;
+      result.hidden = true;
+      result.classList.remove('is-revealing');
+      stage.dataset.state = 'spinning';
+      stage.dataset.settling = 'false';
+
+      const winner = pickWinner(pool, lastSlug);
+      lastSlug = winner.slug;
+      trackEvent('recipe_shuffle', { recipe_slug: winner.slug });
+
+      if (reduceMotion) {
+        stage.dataset.state = 'result';
+        showResult(root, winner, start, again);
+        setIdleLabel();
+        busy = false;
+        return;
+      }
+
+      const strip = buildStrip(pool, winner);
+      renderReel(reel, strip);
+      // Must measure after display:block (spinning state).
+      void viewport.offsetHeight;
+      const slideHeight =
+        reel.firstElementChild?.getBoundingClientRect().height || SLIDE_H;
+      const viewportHeight = viewport.getBoundingClientRect().height;
+      // Center the winning (last) slide in the red window.
+      const winnerIndex = strip.length - 1;
+      const targetY = viewportHeight / 2 - (winnerIndex * slideHeight + slideHeight / 2);
+
+      reel.style.transform = 'translate3d(0,0,0)';
+      markActiveSlide(0);
+
+      const duration = 3200;
+      const started = performance.now();
+      let lastTickIndex = -1;
+
+      const frame = (now: number) => {
+        const t = Math.min(1, (now - started) / duration);
+        const eased = casinoEase(t);
+        const y = targetY * eased;
+        reel.style.transform = `translate3d(0, ${y}px, 0)`;
+
+        const centerOffset = viewportHeight / 2 - slideHeight / 2;
+        const index = Math.min(
+          winnerIndex,
+          Math.max(0, Math.round((-y + centerOffset) / slideHeight)),
+        );
+        markActiveSlide(index);
+
+        if (index !== lastTickIndex) {
+          lastTickIndex = index;
+          ticks.tick(0.35 + (1 - t) * 0.65);
+        }
+
+        if (t > 0.72) stage.dataset.settling = 'true';
+
+        if (t < 1) {
+          raf = requestAnimationFrame(frame);
+          return;
+        }
+
+        stage.dataset.settling = 'false';
+        markActiveSlide(winnerIndex);
+        ticks.land();
+
+        // Brief beat on the landed title, then reveal photo result.
+        window.setTimeout(() => {
+          stage.dataset.state = 'result';
+          showResult(root, winner, start, again);
+          setIdleLabel();
+          busy = false;
+        }, 280);
+      };
+
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(frame);
+    };
+
+    start.addEventListener('click', run);
+    again.addEventListener('click', run);
+  }
+
+  function boot() {
+    document.querySelectorAll<HTMLElement>('[data-recipe-shuffle]').forEach(initShuffle);
+  }
+
+  boot();
+  document.addEventListener('astro:page-load', boot);
+</script>

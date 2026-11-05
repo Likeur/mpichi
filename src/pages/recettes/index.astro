@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EditorialRecipeCard from '../../components/EditorialRecipeCard.astro';
 import FilterDropdown from '../../components/FilterDropdown.astro';
+import RecipeShuffle from '../../components/RecipeShuffle.astro';
 import type { Locale } from '../../i18n/config';
 import {
   cuisineTopicLabel,
@@ -68,6 +69,16 @@ const countLabel = recipeCountLabel(lang, recipes.length);
 const countSingular = t('recipes.count', { n: '00' }).replace('00', '{n}');
 const countPlural = t('recipes.countPlural', { n: '00' }).replace('00', '{n}');
 const ogRecipe = recipes.find(({ recipe }) => recipe.data.featured)?.localized ?? recipes[0]?.localized;
+const shuffleRecipes = recipes
+  .filter(({ localized }) => localized.category === 'plat')
+  .map(({ localized }) => ({
+    slug: localized.slug,
+    title: localized.title,
+    region: localized.region ?? '',
+    image: localized.image,
+    imageAlt: localized.imageAlt,
+    href: localePath(`/recettes/${localized.slug}`, lang),
+  }));
 
 const origin = resolveOrigin(Astro.site);
 const pageUrl = pageCanonical(Astro.url.pathname, origin);
@@ -252,6 +263,17 @@ const catalogJsonLd = {
       </nav>
     </div>
   </section>
+
+  <RecipeShuffle
+    recipes={shuffleRecipes}
+    title={t('recipes.shuffle.title')}
+    intro={t('recipes.shuffle.intro')}
+    startLabel={t('recipes.shuffle.start')}
+    spinningLabel={t('recipes.shuffle.spinning')}
+    againLabel={t('recipes.shuffle.again')}
+    openLabel={t('recipes.shuffle.open')}
+    resultLabel={t('recipes.shuffle.result')}
+  />
   </div>
 </BaseLayout>
 
