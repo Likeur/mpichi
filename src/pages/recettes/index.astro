@@ -123,7 +123,7 @@ const catalogJsonLd = {
     data-page-size="15"
     data-page-label={t('recipes.page')}
   >
-  <section class="pt-28 pb-10 bg-earth-dark border-b border-white/10">
+  <section class="relative z-40 pt-28 pb-10 bg-earth-dark border-b border-white/10">
     <div class="px-grid-margin max-w-[1200px] mx-auto w-full">
       <div class="grid lg:grid-cols-12 gap-8 items-end" data-stagger>
         <div class="lg:col-span-8">
@@ -367,6 +367,7 @@ const catalogJsonLd = {
       if (!trigger || !panel || panel.dataset.state === 'closed' && panel.hidden) return;
 
       trigger.setAttribute('aria-expanded', 'false');
+      dropdown.dataset.open = 'false';
       if (chevron) chevron.dataset.open = 'false';
       panel.dataset.state = 'closed';
 
@@ -403,6 +404,7 @@ const catalogJsonLd = {
       if (!trigger || !panel) return;
 
       trigger.setAttribute('aria-expanded', 'true');
+      dropdown.dataset.open = 'true';
       if (chevron) chevron.dataset.open = 'true';
       panel.hidden = false;
       panel.dataset.state = 'closed';

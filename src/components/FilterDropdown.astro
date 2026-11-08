@@ -19,7 +19,7 @@ const display = selected?.label ?? allLabel;
 const onDark = tone === 'cream';
 ---
 
-<div class="relative min-w-0" data-dropdown data-dropdown-name={name} data-dropdown-value={value}>
+<div class="relative z-0 min-w-0 data-[open=true]:z-50" data-dropdown data-dropdown-name={name} data-dropdown-value={value}>
   <span
     class:list={[
       'mb-3 block text-[9px] uppercase tracking-[.16em]',
@@ -58,7 +58,7 @@ const onDark = tone === 'cream';
     </svg>
   </button>
   <ul
-    class="dropdown-panel absolute left-0 right-0 top-[calc(100%+0.4rem)] z-30 max-h-64 origin-top overflow-y-auto border border-earth-900/10 bg-creme-50 py-2 shadow-[0_18px_40px_rgba(42,27,21,0.12)]"
+    class="dropdown-panel absolute left-0 right-0 top-[calc(100%+0.4rem)] z-50 max-h-64 origin-top overflow-y-auto border border-earth-900/10 bg-creme-50 py-2 shadow-[0_18px_40px_rgba(42,27,21,0.12)]"
     data-dropdown-panel
     data-state="closed"
     role="listbox"
